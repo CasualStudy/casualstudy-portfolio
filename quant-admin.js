@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (allPapers.length > 0) return; // Already loaded
 
         try {
-            const response = await fetch('data/papers_database.json');
+            const response = await fetch('data/papers_database.json?t=' + new Date().getTime());
             if (!response.ok) throw new Error('Failed to load JSON');
             const data = await response.json();
             
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderCards(allPapers);
         } catch (err) {
             console.error(err);
-            papersContainer.innerHTML = '<p style="color:red; text-align:center;">Failed to load Intelligence Feed. Ensure data/papers_database.json exists.</p>';
+            papersContainer.innerHTML = '<p style="color:red; text-align:center;">Failed to load Intelligence Feed. Error: ' + err.message + '</p>';
         }
     }
 
