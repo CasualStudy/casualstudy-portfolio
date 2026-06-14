@@ -268,6 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchMoreBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 雷达扫描中...';
             fetchMoreBtn.disabled = true;
 
+            
             try {
                 const response = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/daily_research.yml/dispatches', {
                     method: 'POST',
@@ -285,10 +286,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    alert("📡 雷达扫描已启动！\n\n云端爬虫正在抓取 GitHub/arXiv/OpenAlex 最新论文，\n并且 DeepSeek 正在进行严格的交易策略相关性过滤。\n\n过滤清洗完成后，全新的数据会自动推送到当前仓库，请在 3-5 分钟后刷新页面！");
-                    fetchMoreBtn.innerHTML = '<i data-lucide="check"></i> 扫描任务已指派';
-                    fetchMoreBtn.style.color = '#00ff88';
+                    alert("📡 雷达扫描已启动！系统正在后台进行全网抓取和 AI 过滤。
+
+请不要关闭此页面，按钮会实时追踪进度。");
+                    fetchMoreBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 云端任务排队中...';
+                    
+                    // Start Polling
+                    setTimeout(async () => {
+                        try {
+                            // Fetch the latest run
+                            const runsRes = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/daily_research.yml/runs?per_page=1', {
+                                headers: { 'Authorization': 'token ' + currentToken }
+                            });
+                            const runsData = await runsRes.json();
+                            if (runsData.workflow_runs && runsData.workflow_runs.length > 0) {
+                                const runId = runsData.workflow_runs[0].id;
+                                fetchMoreBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> AI 正在全网清洗... (用时约3分钟)';
+                                
+                                const pollInterval = setInterval(async () => {
+                                    const statusRes = await fetch(`https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/runs/${runId}`, {
+                                        headers: { 'Authorization': 'token ' + currentToken }
+                                    });
+                                    const statusData = await statusRes.json();
+                                    
+                                    if (statusData.status === 'completed') {
+                                        clearInterval(pollInterval);
+                                        if (statusData.conclusion === 'success') {
+                                            fetchMoreBtn.innerHTML = '<i data-lucide="check-circle"></i> 扫描完成！点击刷新';
+                                            fetchMoreBtn.style.background = '#00ff88';
+                                            fetchMoreBtn.style.color = '#000';
+                                            fetchMoreBtn.disabled = false;
+                                            // Optional alert
+                                            alert("🎉 云端扫描与过滤已全部完成！
+全新的干货策略已同步至数据库，即将为您刷新页面。");
+                                            location.reload(true);
+                                        } else {
+                                            fetchMoreBtn.innerHTML = '<i data-lucide="alert-triangle"></i> 扫描异常终止';
+                                            fetchMoreBtn.style.color = '#ff4444';
+                                            alert("❌ 云端扫描任务失败，可能是由于网络波动或请求超限，请稍后重试。");
+                                            fetchMoreBtn.disabled = false;
+                                        }
+                                        lucide.createIcons();
+                                    }
+                                }, 10000); // Check every 10 seconds
+                            }
+                        } catch (e) {
+                            console.error("Failed to track workflow:", e);
+                        }
+                    }, 5000); // Wait 5s before first check to ensure workflow is registered
                 } else {
+
                     const errText = await response.text();
                     alert(`❌ 启动失败: ${response.status} ${response.statusText}\n请确认 Token 具备 workflow 权限。`);
                     fetchMoreBtn.innerHTML = originalText;
