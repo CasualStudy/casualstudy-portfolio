@@ -345,6 +345,89 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             lucide.createIcons();
         });
+    // OpenAlex Deep Scan button
+    const openalexDeepBtn = document.getElementById('openalex-deep-btn');
+    if (openalexDeepBtn) {
+        openalexDeepBtn.addEventListener('click', async () => {
+            if (!currentToken.startsWith('ghp_')) {
+                alert("⚠️ 安全锁定：\n必须使用真实的 GitHub Token 才能唤醒深度挖掘。");
+                return;
+            }
+
+            const originalText = openalexDeepBtn.innerHTML;
+            openalexDeepBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 深度挖掘中...';
+            openalexDeepBtn.disabled = true;
+
+            try {
+                const response = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/openalex_deep_scan.yml/dispatches', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Authorization': 'token ' + currentToken,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: { github_token: currentToken }
+                    })
+                });
+
+                if (response.ok) {
+                    alert("🔬 OpenAlex 深度挖掘已启动！\n\n系统正在按 Topic T11186（金融市场与算法交易）+ 引用量 + 开放获取三重过滤，扫描历史3个月窗口。\n\n预计耗时约 2-4 分钟。");
+                    openalexDeepBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 云端任务排队中...';
+
+                    setTimeout(async () => {
+                        try {
+                            const runsRes = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/openalex_deep_scan.yml/runs?per_page=1', {
+                                headers: { 'Authorization': 'token ' + currentToken }
+                            });
+                            const runsData = await runsRes.json();
+                            if (runsData.workflow_runs && runsData.workflow_runs.length > 0) {
+                                const runId = runsData.workflow_runs[0].id;
+                                openalexDeepBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> AI 正在筛选学术论文... (约3分钟)';
+
+                                const pollInterval = setInterval(async () => {
+                                    const statusRes = await fetch(`https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/runs/${runId}`, {
+                                        headers: { 'Authorization': 'token ' + currentToken }
+                                    });
+                                    const statusData = await statusRes.json();
+
+                                    if (statusData.status === 'completed') {
+                                        clearInterval(pollInterval);
+                                        if (statusData.conclusion === 'success') {
+                                            openalexDeepBtn.innerHTML = '<i data-lucide="check-circle"></i> 挖掘完成！点击刷新';
+                                            openalexDeepBtn.style.background = '#00ff88';
+                                            openalexDeepBtn.style.color = '#000';
+                                            openalexDeepBtn.disabled = false;
+                                            alert("🎉 OpenAlex 深度挖掘完成！\n高引用量的交易策略学术论文已同步至数据库。");
+                                            location.reload(true);
+                                        } else {
+                                            openalexDeepBtn.innerHTML = '<i data-lucide="alert-triangle"></i> 挖掘异常终止';
+                                            openalexDeepBtn.style.color = '#ff4444';
+                                            alert("❌ 深度挖掘任务失败，请稍后重试。");
+                                            openalexDeepBtn.disabled = false;
+                                        }
+                                        lucide.createIcons();
+                                    }
+                                }, 10000);
+                            }
+                        } catch (e) {
+                            console.error("Failed to track deep scan workflow:", e);
+                        }
+                    }, 5000);
+                } else {
+                    const errText = await response.text();
+                    alert(`❌ 启动失败: ${response.status} ${response.statusText}\n请确认 Token 具备 workflow 权限。`);
+                    openalexDeepBtn.innerHTML = originalText;
+                    openalexDeepBtn.disabled = false;
+                }
+            } catch (error) {
+                alert(`❌ 网络错误: ${error}`);
+                openalexDeepBtn.innerHTML = originalText;
+                openalexDeepBtn.disabled = false;
+            }
+            lucide.createIcons();
+        });
     }
 
 });
