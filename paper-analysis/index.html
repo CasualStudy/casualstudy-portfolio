@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantitative Paper Analysis - CasualStudy023</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Rich background wallpaper -->
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
+            <div class="nav-links">
+                <a href="../index.html" class="lang-text" data-en="Home" data-zh="返回主页">Home</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 120px;">
+        <section class="section-container">
+            <div class="section-header">
+                <h2 class="lang-text" data-en="Quantitative Paper Analysis" data-zh="量化论文分析库">Quantitative Paper Analysis</h2>
+                <p class="lang-text" data-en="Deep dives into SSRN and Quantpedia trading strategies, replicated and analyzed." data-zh="深入剖析 SSRN 和 Quantpedia 前沿交易策略，代码复现与实证分析。">Deep dives into SSRN and Quantpedia trading strategies, replicated and analyzed.</p>
+            </div>
+            
+            <div class="grid projects-grid" id="papers-container">
+                <!-- Paper cards injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
