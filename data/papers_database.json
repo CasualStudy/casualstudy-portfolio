@@ -480,21 +480,6 @@
         }
     },
     {
-        "id": "openalex_W7153396949",
-        "title_en": "[OpenAlex Paper] Mécanismes internes de gouvernance et internationalisation : quelles leçons pour les moyennes entreprises à capitaux camerounais ?",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I164?lang=fr",
-        "excerpt_en": "The objective of this study is to identify the effect of internal governance mechanisms on the internationalization decisions decision of medium-sized enterprises in Cameroon. To achieve this, data were collected from a survey of 136 medium-sized enterprises located in the Littoral and Central regions between 2017 and 2020. Analysis of these data using Sargan tests, autocorrelation tests and generalized method of moments (GMM) regression revealed that the presence of independent external directors, board size, and dual board structure positively and significantly influence the international development of medium-sized enterprises in Cameroon. Conversely, capital concentration and the presence of institutional investors do not affect the international expansion decisions of the companies in the sample. These results corroborate those of Fredrich et al. (2022) and Bužavaitė and Korsakienė (2022), and confirm the contribution of board characteristics to the internationalization decision-making of companies in Cameroon JEL Codes : G30, G32, L25",
-        "date_scraped": "2026-06-14T23:12:28.646969",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本研究旨在识别内部治理机制对喀麦隆中小企业国际化决策的影响。通过对2017至2020年间位于沿海和中部地区的136家中小企业进行问卷调查，并采用Sargan检验、自相关检验和广义矩估计（GMM）回归分析数据，发现独立外部董事的存在、董事会规模以及双重董事会结构对企业的国际化发展具有显著正向影响。相反，资本集中度和机构投资者的存在并未影响样本企业的国际扩张决策。这些结果与Fredrich等人（2022）以及Bužavaitė和Korsakienė（2022）的研究一致，证实了董事会特征对喀麦隆企业国际化决策的贡献。",
-            "core_factors": "独立外部董事比例、董事会规模、双重董事会结构",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 2
-        }
-    },
-    {
         "id": "openalex_W7140018608",
         "title_en": "[OpenAlex Paper] L’enchantement de la planification territoriale par le design fiction : les cas de Grand Paris et Grand Londres",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I162?lang=fr",
