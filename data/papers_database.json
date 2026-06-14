@@ -493,5 +493,140 @@
             "performance_metrics": "原文摘要未提供具体回测数据",
             "practical_score": 1
         }
+    },
+    {
+        "id": "openalex_W7128525619",
+        "title_en": "[OpenAlex Paper] Fundamental Analysis based on Copula Entropy",
+        "source_url": "https://openalex.org/W7128525619",
+        "excerpt_en": "The efficient market hypothesis asserts that all accessible information is completely integrated into security prices. As a quintessential example, fundamental analysis (or financial statements analysis) provides investors with a comprehensive understanding of the operations of listed companies, thereby facilitating trading strategies in the security markets. However, a crucial issue for financial reports is the inconsistent number of disclosed financial items. Specifically, there might be significant variations in the financial statement items disclosed by different companies in the same period, or even differences in the financial statement items disclosed by the same company in different quarters, which makes it difficult to construct models using all the available data. In another academic domain, the entropy of the copula function (or Copula Entropy) serves as an information proxy to measure the dependency between two variables. Our aim is to utilize as much information from quarterly financial reports as possible to generate trading strategies. We adopt the data in the Wholesale Trade and Retail Trade sectors in North American stock markets as single-industry samples to avoid inter-industry effects during modelling, with the period ranging from January 1st, 1991, to September 30th, 2022, totalling 128 quarters. Firstly, we design an exhaustive framework for data preprocessing. The processes include data collection, feature extraction, data integration, data cleaning, data transformation, and variable selection in sequence. Notably, we also employ Copula Entropy for feature selection in models. Subsequently, we utilize the data from the previous four-quarter sliding windows as training data and predict the 30-day accumulated stock excess returns after the financial announcement day by means of two commonly used basic regression models and two classification models in financial research. Simultaneously, we assess the information content in each sliding window through Copula Entropy in 10 distinct settings. Additionally, we refine the Copula Entropy approach to measure the information content of financial statements. Finally, we construct portfolios based on both predictive outcomes and information content. The core concept is to gauge the reliability of predictive results based on information content. The more available information there is, the more reliable the results will be. As a result, over 51.25% of information-based portfolios are more profitable than benchmark portfolios, depending on the choice of the k-Nearest Neighbour parameter for estimating Copula Entropy, model selection, and trading strategies. Our refined Copula Entropy methods generate higher buy-and-hold abnormal returns on average than the basic ones. Experimental results suggest that portfolios based on information content are valid in simple models and have the potential to emerge as a new essential type of portfolios.",
+        "date_scraped": "2026-06-14T18:25:03.371369",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "本文利用Copula熵度量财务报表中的信息含量，并基于预测结果和信息含量构建投资组合。在北美批发贸易和零售贸易行业的数据测试中，超过51.25%的信息组合优于基准，表明该方法在简单模型中有效。",
+            "core_factors": "Copula熵作为信息含量的度量，用于特征选择和评估预测可靠性；基于财务数据的回归和分类模型预测30天超额收益。",
+            "replication_parameters": "训练窗口：过去4个季度；预测周期：财报公告后30天；资产范围：北美批发贸易和零售贸易行业股票；回测期间：1991年1月至2022年9月；Copula熵估计使用k近邻参数。",
+            "performance_metrics": "51.25%的信息组合盈利优于基准；精化Copula熵方法平均获得更高的买入持有异常收益。无具体夏普比率或最大回撤数据。"
+        }
+    },
+    {
+        "id": "openalex_W7126010369",
+        "title_en": "[OpenAlex Paper] Portfolio Optimisation under Transaction Costs with Recursive Preferences",
+        "source_url": "https://discovery.ucl.ac.uk/id/eprint/10220585/",
+        "excerpt_en": "The Merton investment-consumption problem is fundamental, both in the field of finance and in stochastic control. An important extension of the problem adds transaction costs, which is highly relevant from a financial perspective but also challenging from a control perspective because the solution now involves singular control. A further significant extension takes us from additive utility to stochastic differential utility (SDU), which allows time preferences and risk preferences to be disentangled. In this paper, we study this extended version of the Merton problem with proportional transaction costs and Epstein-Zin SDU. We fully characterise all parameter combinations for which the problem is well posed (which may depend on the level of transaction costs) and provide a full verification argument that relies on no additional technical assumptions and uses primal methods only. Even in the special case of (additive) power utility, our arguments are significantly simpler, more elegant and more far-reaching than the ones in the extant literature. This means that we can easily analyse aspects of the problem which previously have been very challenging, including comparative statics, boundary cases which heretofore have required separate treatment and the situation beyond the small transaction cost regime. A key and novel idea is to parametrise consumption and the value function in terms of the shadow fraction of wealth, which may be of much wider applicability.",
+        "date_scraped": "2026-06-14T18:25:03.371424",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 50,
+            "chinese_summary": "本文研究了具有比例交易成本和Epstein-Zin随机微分效用的Merton投资-消费问题，完全刻画了问题适定的参数条件，并通过一种新的财富影子份额参数化方法给出了简洁的验证论证。",
+            "core_factors": "Optimal portfolio and consumption policy under proportional transaction costs and Epstein-Zin preferences",
+            "replication_parameters": "Not explicitly stated; theoretical parameters include transaction cost rate, risk aversion, elasticity of intertemporal substitution, and discount rate.",
+            "performance_metrics": "No specific backtest data provided; the paper provides theoretical verification and comparative statics."
+        }
+    },
+    {
+        "id": "openalex_W7164715552",
+        "title_en": "[OpenAlex Paper] Mitigating Attention Bias in Index-Fund Investment: AI-Enabled Decision Support for Retail Investors",
+        "source_url": "https://aisel.aisnet.org/pacis2026/blockfintech/blockfintech/1",
+        "excerpt_en": "In information-intensive and high-noise stock markets, investors often face information overload and rely on heuristics and selective attention, which can lead to cognitive biases and reduced decision quality. AI can process vast datasets, identify non-linear patterns, and provide real-time decision support, offering opportunities to improve investment decision-making. Through a progressive systematic literature review, this study finds that incorporating cognitive-bias mechanisms as design drivers in AI-enabled investment artifacts has not been studied, and research on AI-enabled decision support in the index-fund context remains limited. The review identifies attention bias as a focal mechanism, particularly salient for retail investors. Based on these findings, this study develops a conceptual AI-enabled decision support artifact for index fund investment to mitigate retail investors’ attention bias and improve decision quality. A system dynamics simulation provides preliminary directional validation, and an evaluation agenda is outlined for future artifact development and evaluation.",
+        "date_scraped": "2026-06-14T18:25:03.371468",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 40,
+            "chinese_summary": "本文通过系统性文献综述发现现有AI投资工具未充分整合认知偏差机制，针对指数基金零售投资者的注意力偏差问题，提出一个AI驱动的决策支持概念模型，并通过系统动力学模拟进行初步验证。",
+            "core_factors": "注意力偏差缓解机制，AI驱动的实时决策支持",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided; only preliminary system dynamics simulation results mentioned"
+        }
+    },
+    {
+        "id": "openalex_W7163853026",
+        "title_en": "[OpenAlex Paper] The Humble Crumble: Predictive Analytics And Market Fairness",
+        "source_url": "https://aisel.aisnet.org/treos_ecis2026/105",
+        "excerpt_en": "This paper examines how a financial exchange (IEX) integrates socio-technical mechanisms to promote fairness in high-frequency trading environments.Our study focuses on the IEX's Crumbling Quote Indicator (CQI), a predictive algorithm designed to mitigate predatory high-speed strategies and protect long-term investors.By reverse-engineering the CQI from its published model coefficients and applying dimensionality reduction, we trace how the algorithm's internal logic evolved across two successive versions, transitioning from simple, discrete signals toward complex, multi-venue patterns.This illustrates a broader paradox of fairness by design: as protective mechanisms grow more sophisticated, they risk quietly shifting the relevant advantage from raw transmission speed to real-time analytical sophistication, continuously redefining algorithmic fairness as a moving target.",
+        "date_scraped": "2026-06-14T18:25:03.371489",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "本文研究IEX交易所的崩溃报价指标（CQI），一种用于高频交易环境中检测报价即将崩溃的预测算法，并探讨其设计中的公平性悖论。随着算法从简单信号演变为复杂模式，公平性被持续重新定义。",
+            "core_factors": "崩溃报价指标（CQI）：基于报价更新模式检测报价即将被撤回或更改的信号，用于缓解掠夺性高频交易策略。",
+            "replication_parameters": "Not explicitly stated in abstract; paper mentions reverse-engineering from published model coefficients.",
+            "performance_metrics": "No specific backtest data provided in abstract."
+        }
+    },
+    {
+        "id": "openalex_W7164595845",
+        "title_en": "[OpenAlex Paper] Peer Review Report For: The Reflection of Cryptocurrencies Prices Volatility on US Financial Markets as a Factor in Investment Portfolio Optimization: An Experimental Study in The American Financial Markets [version 1; peer review: 1 approved with reservations]",
+        "source_url": "https://doi.org/10.5256/f1000research.191324.r488776",
+        "excerpt_en": "The research aims to provide a comprehensive overview of the theoretical frameworks that define the nature of the relationship between cryptocurrencies and their volatility with the performance of financial market indices. It also aims to explain and analyze the mechanism of this potential influence on a sample of US financial markets for the period (2020-2024), by adopting the Autoregressive Distributed Lag (ARDL) methodology introduced by (Pesaran et al., 2009) The research assessment results revealed the positive impact of Bitcoin and Tether on the performance of all US stock market indices, perhaps indicating that they act as an investment asset that supports financial market growth, especially in the long term. This suggests the possibility of considering Bitcoin and Tether as a guiding indicator for the performance of investment portfolios. In contrast, Ethereum's negative performance on all indices suggests investors may shift away from it to other currencies or traditional assets. This may be interpreted as a potential hedging tool during certain periods, making it a haven during adverse market conditions. This indicates - as the research suggested - the need to develop clearer regulatory frameworks that allow Bitcoin and Tether to be integrated alongside traditional investment products in investment portfolios.",
+        "date_scraped": "2026-06-14T18:25:03.371553",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 65,
+            "chinese_summary": "该研究通过自回归分布滞后（ARDL）方法分析了2020-2024年间加密货币（比特币、以太坊、泰达币）波动对美国股市指数的影响。结果表明比特币和泰达币对市场有正向长期影响，可作为投资组合的引导指标，而以太坊表现为负相关，可能具备对冲功能。",
+            "core_factors": "比特币和泰达币对美股指数具有正向长期影响，以太坊具有负向影响；加密货币波动作为投资组合优化和避险的参考因子。",
+            "replication_parameters": "研究期间为2020-2024年，使用ARDL模型，数据样本为美国金融市场指数与加密货币价格。具体调仓频率和资产范围未明确说明。",
+            "performance_metrics": "No specific backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7164682091",
+        "title_en": "[OpenAlex Paper] A multimodal data-driven ensemble deep reinforcement learning model for automated cryptocurrency trading",
+        "source_url": "https://doi.org/10.1007/s41060-026-01175-w",
+        "excerpt_en": "No abstract available.",
+        "date_scraped": "2026-06-14T18:25:03.371555",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 70,
+            "chinese_summary": "该论文提出了一种多模态数据驱动的集成深度强化学习模型，用于自动加密货币交易，旨在提高交易决策的稳健性和收益。",
+            "core_factors": "多模态数据（如价格、成交量、订单簿、社交媒体情绪等）作为状态输入，深度强化学习（如DQN、PPO等）作为决策框架。",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7164663705",
+        "title_en": "[OpenAlex Paper] Deep Reinforcement Learning and Sentiment-Aware Approaches for Risk-Adjusted Portfolio Optimization",
+        "source_url": "https://doi.org/10.1007/978-3-032-29003-8_15",
+        "excerpt_en": "No abstract available.",
+        "date_scraped": "2026-06-14T18:25:03.371557",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "该论文提出利用深度强化学习和情感感知方法进行风险调整的资产组合优化，旨在提升投资组合的风险调整后收益。",
+            "core_factors": "Sentiment signals from textual data, Deep Reinforcement Learning (DRL) agents",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7164539531",
+        "title_en": "[OpenAlex Paper] Impact of Training Dataset Scaling on Synthetic Financial Data Fidelity in Diffusion Models",
+        "source_url": "https://doi.org/10.5281/zenodo.20656939",
+        "excerpt_en": "Synthetic financial data provides a practical solution to the privacy, accessibility, and reproducibility challenges that often constrain empirical research in quantitative finance. This paper investigates the use of deep generative models, specifically Time-series Generative Adversarial Networks (TimeGAN) and Variational Autoencoders (VAEs) to generate realistic synthetic financial return series for portfolio construction and risk modeling applications. Using historical daily returns from the S and P 500 as a benchmark, we generate synthetic datasets under comparable market conditions and eva Research goal: What is the impact of scaling the training dataset size on the fidelity of synthetic financial data generated by diffusion models, as evaluated by their ability to preserve key statistical properties (e.g., autocorrelation, volatility) when used in portfolio optimization benchmarks? Autonomous synthesis report generated by SOVEREIGN Research Kernel. Tribunal consensus score: 8.8/10.",
+        "date_scraped": "2026-06-14T18:25:03.371597",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 65,
+            "chinese_summary": "该论文研究了训练数据集规模对扩散模型生成合成金融数据保真度的影响，使用S&P 500历史日收益率作为基准，通过保留统计特性（如自相关、波动性）和投资组合优化基准来评估数据质量。研究表明，合成数据可用于投资组合构建和风险管理，但具体性能指标未在摘要中给出。",
+            "core_factors": "训练数据集规模对合成金融数据保真度的影响，通过保留关键统计特性（如自相关、波动性）和投资组合优化基准进行评估。",
+            "replication_parameters": "Not explicitly stated (使用S&P 500历史日收益率，但具体回看周期、再平衡频率等未指定)",
+            "performance_metrics": "No specific backtest data provided (论文通过统计特性和投资组合优化基准评估保真度，但未提供具体数值指标)"
+        }
+    },
+    {
+        "id": "openalex_W7164526558",
+        "title_en": "[OpenAlex Paper] Mean-CVaR portfolio optimization with decision dependent distribution of losses under fixed dependence structure",
+        "source_url": "https://doi.org/10.1007/s12351-026-01071-y",
+        "excerpt_en": "No abstract available.",
+        "date_scraped": "2026-06-14T18:25:03.371630",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "该论文研究均值-条件风险价值（CVaR）投资组合优化，考虑损失分布依赖于决策且固定相依结构，旨在通过风险控制提升投资组合表现。为量化风险管理提供了理论框架。",
+            "core_factors": "Mean-CVaR优化，决策依赖的损失分布，固定相依结构。",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
+        }
     }
 ]
