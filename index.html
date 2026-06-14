@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasualStudy023 - Portfolio</title>
+    <meta name="description" content="Personal website of @casualstudy023 featuring X posts, projects, and data analysis.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Rich background wallpaper for glass to refract -->
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">CasualStudy023</a>
+            <div class="nav-links">
+                <a href="#posts">Posts</a>
+                <a href="#projects">Projects</a>
+                <a href="#analysis">Analysis</a>
+            </div>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
+                <i data-lucide="twitter"></i> Follow
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content glass-panel">
+                <div class="profile-avatar">
+                    <i data-lucide="user" class="avatar-icon"></i>
+                </div>
+                <h1>Hello, I'm <span class="highlight">CasualStudy023</span></h1>
+                <p class="hero-desc">Sharing thoughts on tech, building cool projects, and diving deep into data analysis. Welcome to my digital space.</p>
+                
+                <div class="hero-actions">
+                    <a href="https://x.com/casualstudy023" target="_blank" class="btn primary-btn" id="hero-x-btn">
+                        <i data-lucide="twitter"></i> Read my X Posts
+                    </a>
+                    <a href="#" target="_blank" class="btn glass-btn" id="hero-discord-btn">
+                        <i data-lucide="message-square"></i> Join Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="posts" class="section-container">
+            <div class="section-header">
+                <h2>Recent from X</h2>
+                <p>My latest thoughts, threads, and articles.</p>
+            </div>
+            <div class="item-card" style="padding: 0; overflow: hidden; height: 600px;">
+                <!-- Official X (Twitter) Timeline Embed -->
+                <a class="twitter-timeline" data-height="600" data-theme="light" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/casualstudy023?ref_src=twsrc%5Etfw">Tweets by casualstudy023</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Things I've built and experimented with.</p>
+            </div>
+            <div class="grid projects-grid" id="projects-container">
+                <!-- Projects injected by JS -->
+            </div>
+        </section>
+
+        <section id="analysis" class="section-container">
+            <div class="section-header">
+                <h2>Data Analysis</h2>
+                <p>Insights derived from data.</p>
+            </div>
+            <div class="grid analysis-grid" id="analysis-container">
+                <!-- Analysis injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 CasualStudy023. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                    <i data-lucide="message-square"></i>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
