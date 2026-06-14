@@ -192,13 +192,97 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Global function for the Replicate button
-    window.triggerReplication = function(paperId) {
+    window.triggerReplication = async function(paperId) {
         if (!currentToken.startsWith('ghp_')) {
-            alert("Error: Only a valid GitHub Token can deploy the remote Agent.\n\nLocal Test Mode: Simulating deployment for " + paperId + "...");
+            alert("⚠️ 安全锁定：\n要唤醒云端 Agent，你必须输入真实的 GitHub Token 作为指挥官密钥（现在的密码只是本地演示）。");
             return;
         }
 
-        // In production, this would make a fetch() POST to GitHub Actions workflow_dispatch
-        alert("🚀 成功唤醒远程 Agent！\n\n指令已通过 Token 下发至 GitHub Actions。\n\n[目标 ID]: " + paperId + "\n[任务]: 获取数据 -> 编写复现代码 -> 运行回测 -> 生成 HTML 报告。\n\nAgent 完成后，自动生成的 HTML 会同步到你的主页！");
+        const btn = event.currentTarget;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i data-lucide="loader" class="spin"></i> Agent 唤醒中...';
+        btn.disabled = true;
+
+        try {
+            const response = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/replicate.yml/dispatches', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                    'Authorization': 'token ' + currentToken,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ref: 'main',
+                    inputs: {
+                        paper_id: paperId,
+                        github_token: currentToken
+                    }
+                })
+            });
+
+            if (response.ok) {
+                alert(`🚀 指令已送达云端！\n\nAgent 正在后台为论文 [${paperId}] 编写代码并生成 HTML。\n请耐心等待 1-2 分钟，生成的研报将自动推送至您的公开主页！`);
+                btn.innerHTML = '<i data-lucide="check"></i> 任务已指派';
+                btn.style.background = 'linear-gradient(135deg, #00c6ff, #0072ff)';
+            } else {
+                const errText = await response.text();
+                alert(`❌ 唤醒失败: ${response.status} ${response.statusText}\n请确认 Token 是否具备 workflow 权限。`);
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
+        } catch (error) {
+            alert(`❌ 网络错误: ${error}`);
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }
+        lucide.createIcons();
     };
 });
+
+    // Fetch More Papers Logic
+    const fetchMoreBtn = document.getElementById('fetch-more-btn');
+    if (fetchMoreBtn) {
+        fetchMoreBtn.addEventListener('click', async () => {
+            if (!currentToken.startsWith('ghp_')) {
+                alert("⚠️ 安全锁定：\n必须使用真实的 GitHub Token 才能唤醒云端雷达。");
+                return;
+            }
+
+            const originalText = fetchMoreBtn.innerHTML;
+            fetchMoreBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 雷达扫描中...';
+            fetchMoreBtn.disabled = true;
+
+            try {
+                const response = await fetch('https://api.github.com/repos/CasualStudy/quant-scraper-backend/actions/workflows/daily_research.yml/dispatches', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Authorization': 'token ' + currentToken,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: {
+                            github_token: currentToken
+                        }
+                    })
+                });
+
+                if (response.ok) {
+                    alert("📡 雷达扫描已启动！\n\n云端爬虫正在抓取 GitHub/arXiv/OpenAlex 最新论文，\n并且 DeepSeek 正在进行严格的交易策略相关性过滤。\n\n过滤清洗完成后，全新的数据会自动推送到当前仓库，请在 3-5 分钟后刷新页面！");
+                    fetchMoreBtn.innerHTML = '<i data-lucide="check"></i> 扫描任务已指派';
+                    fetchMoreBtn.style.color = '#00ff88';
+                } else {
+                    const errText = await response.text();
+                    alert(`❌ 启动失败: ${response.status} ${response.statusText}\n请确认 Token 具备 workflow 权限。`);
+                    fetchMoreBtn.innerHTML = originalText;
+                    fetchMoreBtn.disabled = false;
+                }
+            } catch (error) {
+                alert(`❌ 网络错误: ${error}`);
+                fetchMoreBtn.innerHTML = originalText;
+                fetchMoreBtn.disabled = false;
+            }
+            lucide.createIcons();
+        });
+    }

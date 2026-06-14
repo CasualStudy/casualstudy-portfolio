@@ -56,14 +56,19 @@
                         <button class="filter-btn" data-source="OpenAlex">SSRN/OpenAlex</button>
                     </div>
                     
-                    <div class="sort-controls" style="display: flex; gap: 10px; align-items: center;">
-                        <span style="font-size: 0.85rem; color: var(--text-secondary);"><i data-lucide="arrow-up-down" style="width:14px; height:14px;"></i> Sort by:</span>
-                        <select id="sort-select" class="glass-input" style="background: rgba(255,255,255,0.5); border: var(--glass-border); border-radius: 10px; padding: 6px 12px; outline: none; font-family: inherit; color: var(--text-primary);">
-                            <option value="score_desc">P-Score (High to Low)</option>
-                            <option value="score_asc">P-Score (Low to High)</option>
-                            <option value="date_desc">Date (Newest First)</option>
-                            <option value="date_asc">Date (Oldest First)</option>
-                        </select>
+                    <div class="controls" style="display: flex; gap: 15px; align-items: center;">
+                        <button id="fetch-more-btn" class="btn glass-btn" style="padding: 6px 12px; display: flex; align-items: center; gap: 5px; color: #00c6ff; border-color: rgba(0,198,255,0.3);">
+                            <i data-lucide="radar" style="width:16px; height:16px;"></i> 扫描新论文
+                        </button>
+                        <div class="sort-controls" style="display: flex; gap: 10px; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-secondary);"><i data-lucide="arrow-up-down" style="width:14px; height:14px;"></i> Sort by:</span>
+                            <select id="sort-select" class="glass-input" style="background: rgba(255,255,255,0.5); border: var(--glass-border); border-radius: 10px; padding: 6px 12px; outline: none; font-family: inherit; color: var(--text-primary);">
+                                <option value="score_desc">P-Score (High to Low)</option>
+                                <option value="score_asc">P-Score (Low to High)</option>
+                                <option value="date_desc">Date (Newest First)</option>
+                                <option value="date_asc">Date (Oldest First)</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
