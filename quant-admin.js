@@ -286,9 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    alert("📡 雷达扫描已启动！系统正在后台进行全网抓取和 AI 过滤。
-
-请不要关闭此页面，按钮会实时追踪进度。");
+                    alert("📡 雷达扫描已启动！系统正在后台进行全网抓取和 AI 过滤。\n\n请不要关闭此页面，按钮会实时追踪进度。");
                     fetchMoreBtn.innerHTML = '<i data-lucide="loader" class="spin"></i> 云端任务排队中...';
                     
                     // Start Polling
@@ -317,8 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             fetchMoreBtn.style.color = '#000';
                                             fetchMoreBtn.disabled = false;
                                             // Optional alert
-                                            alert("🎉 云端扫描与过滤已全部完成！
-全新的干货策略已同步至数据库，即将为您刷新页面。");
+                                            alert("🎉 云端扫描与过滤已全部完成！\n全新的干货策略已同步至数据库，即将为您刷新页面。");
                                             location.reload(true);
                                         } else {
                                             fetchMoreBtn.innerHTML = '<i data-lucide="alert-triangle"></i> 扫描异常终止';
