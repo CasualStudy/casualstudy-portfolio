@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    const sortSelect = document.getElementById('sort-select');
+
     function renderCards(papers) {
         papersContainer.innerHTML = '';
         
@@ -75,67 +77,117 @@ document.addEventListener('DOMContentLoaded', () => {
             if (paper.source === 'arXiv') badgeClass = 'badge-arxiv';
             if (paper.source === 'OpenAlex') badgeClass = 'badge-openalex';
 
-            const card = document.createElement('div');
-            card.className = 'glass-panel quant-card';
+            const item = document.createElement('div');
+            item.className = 'glass-panel quant-list-item';
             
-            card.innerHTML = `
-                <div class="quant-card-header">
-                    <span class="quant-source-badge ${badgeClass}">${paper.source}</span>
-                    <div class="quant-score">
-                        ${analysis.practical_score} <span>P-Score</span>
+            const dateStr = paper.date_scraped ? new Date(paper.date_scraped).toLocaleDateString() : 'Unknown Date';
+
+            item.innerHTML = `
+                <div class="quant-item-header">
+                    <div class="quant-item-score">
+                        ${analysis.practical_score}
+                        <span>P-Score</span>
+                    </div>
+                    <div class="quant-item-main">
+                        <div class="quant-item-meta">
+                            <span class="quant-source-badge ${badgeClass}">${paper.source}</span>
+                            <span><i data-lucide="calendar" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i> ${dateStr}</span>
+                        </div>
+                        <h3 class="quant-title" style="margin-top: 4px; font-size: 1.05rem;">
+                            ${paper.title_en}
+                        </h3>
+                    </div>
+                    <div>
+                        <i data-lucide="chevron-down" class="expand-icon" style="color: var(--text-secondary);"></i>
                     </div>
                 </div>
-                
-                <h3 class="quant-title">
-                    <a href="${paper.source_url}" target="_blank" style="color: inherit; text-decoration: none;">
-                        ${paper.title_en} <i data-lucide="external-link" style="width:14px; height:14px; opacity:0.5;"></i>
-                    </a>
-                </h3>
 
-                <div class="quant-section">
-                    <h4><i data-lucide="brain-circuit"></i> AI Summary</h4>
-                    <p>${analysis.chinese_summary}</p>
+                <div class="quant-item-details">
+                    <div class="quant-details-grid">
+                        <div class="quant-section">
+                            <h4><i data-lucide="brain-circuit"></i> AI Summary</h4>
+                            <p>${analysis.chinese_summary}</p>
+                        </div>
+                        <div class="quant-section">
+                            <h4><i data-lucide="cpu"></i> Core Factors & Logic</h4>
+                            <p>${analysis.core_factors}</p>
+                        </div>
+                        <div class="quant-section">
+                            <h4><i data-lucide="sliders-horizontal"></i> Replication Params</h4>
+                            <p>${analysis.replication_parameters}</p>
+                        </div>
+                        <div class="quant-section">
+                            <h4><i data-lucide="line-chart"></i> Performance Metrics</h4>
+                            <p>${analysis.performance_metrics}</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 10px;">
+                        <a href="${paper.source_url}" target="_blank" class="btn glass-btn" style="padding: 10px 20px; text-decoration: none;">
+                            <i data-lucide="external-link" style="width:16px; height:16px;"></i> View Original
+                        </a>
+                        <button class="btn replicate-btn" style="width: auto; padding: 10px 24px; margin: 0;" onclick="event.stopPropagation(); triggerReplication('${paper.id}')">
+                            <i data-lucide="bot" style="width:18px; height:18px;"></i> 唤醒 Agent 尝试复现
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="quant-section">
-                    <h4><i data-lucide="cpu"></i> Core Factors & Logic</h4>
-                    <p>${analysis.core_factors}</p>
-                </div>
-
-                <div class="quant-section">
-                    <h4><i data-lucide="sliders-horizontal"></i> Replication Params</h4>
-                    <p>${analysis.replication_parameters}</p>
-                </div>
-                
-                <div class="quant-section">
-                    <h4><i data-lucide="line-chart"></i> Performance Metrics</h4>
-                    <p>${analysis.performance_metrics}</p>
-                </div>
-
-                <button class="replicate-btn" onclick="triggerReplication('${paper.id}')">
-                    <i data-lucide="bot"></i> 唤醒 Agent 尝试复现
-                </button>
             `;
             
-            papersContainer.appendChild(card);
+            // Toggle details
+            item.addEventListener('click', () => {
+                const isExpanded = item.classList.contains('expanded');
+                // Close others if you want accordion behavior, or comment out to allow multiple opens
+                document.querySelectorAll('.quant-list-item').forEach(el => {
+                    el.classList.remove('expanded');
+                    const icon = el.querySelector('.expand-icon');
+                    if (icon) icon.style.transform = 'rotate(0deg)';
+                });
+                
+                if (!isExpanded) {
+                    item.classList.add('expanded');
+                    const icon = item.querySelector('.expand-icon');
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                }
+            });
+            
+            papersContainer.appendChild(item);
         });
         
         lucide.createIcons();
     }
 
-    // Filter Logic
+    // Sorting and Filtering Logic
+    let currentSourceFilter = 'All';
+
+    function applyFiltersAndSort() {
+        // 1. Filter
+        let result = allPapers;
+        if (currentSourceFilter !== 'All') {
+            result = result.filter(p => p.source === currentSourceFilter);
+        }
+
+        // 2. Sort
+        const sortVal = sortSelect.value;
+        result.sort((a, b) => {
+            if (sortVal === 'score_desc') return b.ai_analysis.practical_score - a.ai_analysis.practical_score;
+            if (sortVal === 'score_asc') return a.ai_analysis.practical_score - b.ai_analysis.practical_score;
+            
+            const dateA = new Date(a.date_scraped || 0).getTime();
+            const dateB = new Date(b.date_scraped || 0).getTime();
+            if (sortVal === 'date_desc') return dateB - dateA;
+            if (sortVal === 'date_asc') return dateA - dateB;
+        });
+
+        renderCards(result);
+    }
+
+    sortSelect.addEventListener('change', applyFiltersAndSort);
+
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
-            const source = btn.dataset.source;
-            if (source === 'All') {
-                renderCards(allPapers);
-            } else {
-                const filtered = allPapers.filter(p => p.source === source);
-                renderCards(filtered);
-            }
+            currentSourceFilter = btn.dataset.source;
+            applyFiltersAndSort();
         });
     });
 

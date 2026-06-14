@@ -48,16 +48,28 @@
                 <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Intelligence Feed</h1>
                 <p style="color: var(--text-secondary); margin-bottom: 30px;">Latest academic papers, GitHub replications, and SSRN factors.</p>
                 
-                <div class="filters glass-panel" style="display: flex; gap: 10px; padding: 10px; border-radius: 20px; margin-bottom: 30px;">
-                    <button class="filter-btn active" data-source="All">All</button>
-                    <button class="filter-btn" data-source="GitHub">GitHub Repo</button>
-                    <button class="filter-btn" data-source="arXiv">arXiv Paper</button>
-                    <button class="filter-btn" data-source="OpenAlex">SSRN/OpenAlex</button>
+                <div class="controls-bar glass-panel" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-radius: 20px; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
+                    <div class="filters" style="display: flex; gap: 10px;">
+                        <button class="filter-btn active" data-source="All">All</button>
+                        <button class="filter-btn" data-source="GitHub">GitHub Repo</button>
+                        <button class="filter-btn" data-source="arXiv">arXiv Paper</button>
+                        <button class="filter-btn" data-source="OpenAlex">SSRN/OpenAlex</button>
+                    </div>
+                    
+                    <div class="sort-controls" style="display: flex; gap: 10px; align-items: center;">
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);"><i data-lucide="arrow-up-down" style="width:14px; height:14px;"></i> Sort by:</span>
+                        <select id="sort-select" class="glass-input" style="background: rgba(255,255,255,0.5); border: var(--glass-border); border-radius: 10px; padding: 6px 12px; outline: none; font-family: inherit; color: var(--text-primary);">
+                            <option value="score_desc">P-Score (High to Low)</option>
+                            <option value="score_asc">P-Score (Low to High)</option>
+                            <option value="date_desc">Date (Newest First)</option>
+                            <option value="date_asc">Date (Oldest First)</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid quant-grid" id="papers-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px;">
-                <!-- Cards injected by JS -->
+            <div class="quant-list" id="papers-container" style="display: flex; flex-direction: column; gap: 16px;">
+                <!-- List items injected by JS -->
             </div>
         </main>
     </div>
