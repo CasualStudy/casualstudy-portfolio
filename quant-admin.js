@@ -237,7 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         lucide.createIcons();
     };
-});
 
     // Fetch More Papers Logic
     const fetchMoreBtn = document.getElementById('fetch-more-btn');
@@ -286,3 +285,5 @@ document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
         });
     }
+
+});
