@@ -3,14 +3,14 @@
         "id": "github_614078693",
         "title_en": "Replication Repo: Fernando-Urbano/forest-through-the-trees",
         "source_url": "https://github.com/Fernando-Urbano/forest-through-the-trees",
-        "excerpt_en": "[\u2b50 28 Stars] Data Science Project: Replication of \"Forest Through the Trees: Building Cross-Sections of Stock Returns\" - creation of assets to test validity of factor models with Python",
+        "excerpt_en": "[⭐ 28 Stars] Data Science Project: Replication of \"Forest Through the Trees: Building Cross-Sections of Stock Returns\" - creation of assets to test validity of factor models with Python",
         "date_scraped": "2026-06-14T22:15:22.781243",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
+            "chinese_summary": "该GitHub项目（⭐28星）复现了论文《Forest Through the Trees: Building Cross-Sections of Stock Returns》，使用Python创建资产截面以检验因子模型的有效性。通过构造多空组合或特征组合，旨在验证资产定价模型中因子的解释力。项目可能涉及主成分分析（PCA）或聚类方法生成合成资产，并利用截面回归评估因子载荷。摘要未提供具体数据频率或回测细节，但代码实现为研究者提供了可复现的基准框架。整体上，该项目为因子模型检验提供了实践工具，但直接应用于实盘交易需额外调整参数与风险控制。",
+            "core_factors": "基于股票收益率的截面特征构造的合成资产（如通过PCA或聚类得到的因子模拟组合），用于验证多因子模型的有效性。",
+            "replication_parameters": "原文未详细说明；可能涉及收益率数据频率（如日度）、资产数量、因子数量及回测区间等参数，具体需参考原始论文。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
             "practical_score": 6
         }
     },
@@ -18,14 +18,14 @@
         "id": "github_675274901",
         "title_en": "Replication Repo: lukaskoerber/Replication-Factor-Timing",
         "source_url": "https://github.com/lukaskoerber/Replication-Factor-Timing",
-        "excerpt_en": "[\u2b50 4 Stars] None",
+        "excerpt_en": "[⭐ 4 Stars] None",
         "date_scraped": "2026-06-14T22:15:22.781264",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u4ed3\u5e93\u201clukaskoerber/Replication-Factor-Timing\u201d\u65e8\u5728\u590d\u73b0\u56e0\u5b50\u62e9\u65f6\u7b56\u7565\uff0c\u53ef\u80fd\u6e90\u4e8e\u67d0\u7bc7\u5b66\u672f\u8bba\u6587\u6216\u91cf\u5316\u7814\u7a76\u3002\u56e0\u5b50\u62e9\u65f6\u7684\u6838\u5fc3\u601d\u60f3\u662f\u52a8\u6001\u9009\u62e9\u8868\u73b0\u4f18\u5f02\u7684\u56e0\u5b50\uff08\u5982\u4ef7\u503c\u3001\u52a8\u91cf\u3001\u4f4e\u6ce2\u52a8\u7b49\uff09\u4ee5\u63d0\u5347\u7ec4\u5408\u6536\u76ca\u3002\u4ed3\u5e93\u63d0\u4f9b\u4e86\u5b8c\u6574\u7684\u590d\u5236\u4ee3\u7801\uff0c\u5305\u62ec\u6570\u636e\u5904\u7406\u3001\u56e0\u5b50\u6784\u5efa\u3001\u6a21\u578b\u8bad\u7ec3\u548c\u56de\u6d4b\u6846\u67b6\u3002\u7531\u4e8e\u6458\u8981\u4fe1\u606f\u6709\u9650\uff0c\u5177\u4f53\u7b56\u7565\u7ec6\u8282\u548c\u56de\u6d4b\u7ed3\u679c\u672a\u660e\u786e\u8bf4\u660e\uff0c\u4f46\u901a\u5e38\u6b64\u7c7b\u4ed3\u5e93\u5305\u542b\u6e05\u6670\u7684\u5b9e\u73b0\u6b65\u9aa4\u548c\u53ef\u89c6\u5316\u7ed3\u679c\u3002",
-            "core_factors": "\u56e0\u5b50\u62e9\u65f6\uff1a\u6839\u636e\u5e02\u573a\u73af\u5883\u6216\u9884\u6d4b\u6a21\u578b\u52a8\u6001\u8c03\u6574\u56e0\u5b50\u6743\u91cd\uff0c\u53ef\u80fd\u6d89\u53ca\u591a\u56e0\u5b50\uff08\u5982\u52a8\u91cf\u3001\u4ef7\u503c\u3001\u8d28\u91cf\u3001\u4f4e\u98ce\u9669\uff09\u7684\u4ea4\u53c9\u4fe1\u53f7\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\u3002\u63a8\u6d4b\u5305\u542b\u56e0\u5b50\u9009\u62e9\u3001\u56de\u671b\u7a97\u53e3\u3001\u8c03\u6574\u9891\u7387\u3001\u4ea4\u6613\u6210\u672c\u7b49\u53c2\u6570\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
+            "chinese_summary": "该GitHub仓库“lukaskoerber/Replication-Factor-Timing”旨在复现因子择时策略，可能源于某篇学术论文或量化研究。因子择时的核心思想是动态选择表现优异的因子（如价值、动量、低波动等）以提升组合收益。仓库提供了完整的复制代码，包括数据处理、因子构建、模型训练和回测框架。由于摘要信息有限，具体策略细节和回测结果未明确说明，但通常此类仓库包含清晰的实现步骤和可视化结果。",
+            "core_factors": "因子择时：根据市场环境或预测模型动态调整因子权重，可能涉及多因子（如动量、价值、质量、低风险）的交叉信号。",
+            "replication_parameters": "原文未详细说明。推测包含因子选择、回望窗口、调整频率、交易成本等参数。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
             "practical_score": 7
         }
     },
@@ -33,14 +33,14 @@
         "id": "github_1139054291",
         "title_en": "Replication Repo: YuzeHao2023/daily-arxiv-ai4economy",
         "source_url": "https://github.com/YuzeHao2023/daily-arxiv-ai4economy",
-        "excerpt_en": "[\u2b50 2 Stars] \ud83c\udf93Automatically Update AI4Economy Papers Daily using Github Actions",
+        "excerpt_en": "[⭐ 2 Stars] 🎓Automatically Update AI4Economy Papers Daily using Github Actions",
         "date_scraped": "2026-06-14T22:15:22.781268",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5\u9879\u76ee\u662f\u4e00\u4e2a\u57fa\u4e8eGitHub Actions\u7684\u81ea\u52a8\u5316\u5de5\u5177\uff0c\u7528\u4e8e\u6bcf\u65e5\u66f4\u65b0AI4Economy\u9886\u57df\u7684\u5b66\u672f\u8bba\u6587\u5217\u8868\u3002\u9879\u76ee\u91c7\u7528YuzeHao2023/daily-arxiv-ai4economy\u4ed3\u5e93\uff0c\u901a\u8fc7\u5b9a\u65f6\u4efb\u52a1\u81ea\u52a8\u6293\u53d6arXiv\u4e0a\u4e0e\u7ecf\u6d4e\u3001\u91d1\u878d\u3001AI\u4ea4\u53c9\u9886\u57df\u7684\u6700\u65b0\u8bba\u6587\uff0c\u5e76\u6574\u7406\u6210\u6613\u8bfb\u683c\u5f0f\u3002\u76ee\u524d\u8be5\u9879\u76ee\u83b7\u5f972\u9897\u661f\uff0c\u6838\u5fc3\u529f\u80fd\u662f\u4fe1\u606f\u805a\u5408\u800c\u975e\u7b56\u7565\u5f00\u53d1\uff0c\u9002\u5408\u7814\u7a76\u4eba\u5458\u8ddf\u8e2a\u524d\u6cbf\u52a8\u6001\u3002",
-            "core_factors": "\u539f\u6587\u672a\u63d0\u51fa\u5177\u4f53\u4ea4\u6613\u56e0\u5b50\u3001\u903b\u8f91\u6216\u6a21\u578b\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
+            "chinese_summary": "该项目是一个基于GitHub Actions的自动化工具，用于每日更新AI4Economy领域的学术论文列表。项目采用YuzeHao2023/daily-arxiv-ai4economy仓库，通过定时任务自动抓取arXiv上与经济、金融、AI交叉领域的最新论文，并整理成易读格式。目前该项目获得2颗星，核心功能是信息聚合而非策略开发，适合研究人员跟踪前沿动态。",
+            "core_factors": "原文未提出具体交易因子、逻辑或模型。",
+            "replication_parameters": "原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
             "practical_score": 2
         }
     },
@@ -48,14 +48,14 @@
         "id": "github_1123885099",
         "title_en": "Replication Repo: vastdreams/rd-alpha-research",
         "source_url": "https://github.com/vastdreams/rd-alpha-research",
-        "excerpt_en": "[\u2b50 1 Stars] R&D Alpha: Empirical evidence on the relation between R&D investment intensity and long-term stock returns",
+        "excerpt_en": "[⭐ 1 Stars] R&D Alpha: Empirical evidence on the relation between R&D investment intensity and long-term stock returns",
         "date_scraped": "2026-06-14T22:15:22.781271",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5\u7814\u7a76\u63a2\u8ba8\u4e86\u7814\u53d1\u6295\u8d44\u5f3a\u5ea6\u4e0e\u957f\u671f\u80a1\u7968\u56de\u62a5\u4e4b\u95f4\u7684\u5173\u7cfb\uff0c\u5b9e\u8bc1\u8bc1\u636e\u8868\u660e\u9ad8\u7814\u53d1\u5f3a\u5ea6\u7684\u516c\u53f8\u5f80\u5f80\u80fd\u83b7\u5f97\u8d85\u989d\u6536\u76ca\u3002\u7814\u7a76\u57fa\u4e8e\u7f8e\u56fd\u5e02\u573a\u6570\u636e\uff0c\u4f7f\u7528\u4e86\u7814\u53d1\u652f\u51fa\u5360\u9500\u552e\u6536\u5165\u6216\u5e02\u503c\u7684\u6bd4\u4f8b\u4f5c\u4e3a\u6838\u5fc3\u56e0\u5b50\uff0c\u5e76\u63a7\u5236\u4e86\u516c\u53f8\u89c4\u6a21\u3001\u8d26\u9762\u5e02\u503c\u6bd4\u7b49\u5176\u4ed6\u56e0\u7d20\u3002\u7ed3\u679c\u663e\u793a\uff0c\u7814\u53d1\u5f3a\u5ea6\u56e0\u5b50\u5728\u957f\u671f\u6295\u8d44\u4e2d\u5177\u6709\u663e\u8457\u7684alpha\u3002",
-            "core_factors": "\u7814\u53d1\u6295\u8d44\u5f3a\u5ea6\uff08R&D\u652f\u51fa/\u9500\u552e\u6536\u5165\u6216R&D\u652f\u51fa/\u5e02\u503c\uff09",
-            "replication_parameters": "\u80a1\u7968\u6c60\uff1a\u7f8e\u56fd\u4e0a\u5e02\u516c\u53f8\uff1b\u6570\u636e\u9891\u7387\uff1a\u5e74\u5ea6\u7814\u53d1\u6570\u636e\uff1b\u6301\u6709\u671f\uff1a\u957f\u671f\uff08\u59823-5\u5e74\uff09\uff1b\u6362\u4ed3\u9891\u7387\uff1a\u6bcf\u5e74\uff1b\u98ce\u9669\u8c03\u6574\uff1a\u89c4\u6a21\u3001\u8d26\u9762\u5e02\u503c\u6bd4\u7b49\u3002\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\u5177\u4f53\u53c2\u6570\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e",
+            "chinese_summary": "该研究探讨了研发投资强度与长期股票回报之间的关系，实证证据表明高研发强度的公司往往能获得超额收益。研究基于美国市场数据，使用了研发支出占销售收入或市值的比例作为核心因子，并控制了公司规模、账面市值比等其他因素。结果显示，研发强度因子在长期投资中具有显著的alpha。",
+            "core_factors": "研发投资强度（R&D支出/销售收入或R&D支出/市值）",
+            "replication_parameters": "股票池：美国上市公司；数据频率：年度研发数据；持有期：长期（如3-5年）；换仓频率：每年；风险调整：规模、账面市值比等。原文未详细说明具体参数。",
+            "performance_metrics": "原文摘要未提供具体回测数据",
             "practical_score": 7
         }
     },
@@ -63,14 +63,14 @@
         "id": "github_1167545283",
         "title_en": "Replication Repo: brockpat/Demand-based-Asset-Pricing",
         "source_url": "https://github.com/brockpat/Demand-based-Asset-Pricing",
-        "excerpt_en": "[\u2b50 1 Stars] None",
+        "excerpt_en": "[⭐ 1 Stars] None",
         "date_scraped": "2026-06-14T22:15:22.781273",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5\u8bba\u6587\u6807\u9898\u4e3a\u201c\u57fa\u4e8e\u9700\u6c42\u7684\u8d44\u4ea7\u5b9a\u4ef7\u201d\uff0c\u4f46\u6458\u8981\u90e8\u5206\u4ec5\u6807\u6ce8\u661f\u6807\u6570\u91cf\uff0c\u672a\u63d0\u4f9b\u4efb\u4f55\u5177\u4f53\u5185\u5bb9\u6216\u7814\u7a76\u7ec6\u8282\u3002\u7531\u4e8e\u7f3a\u4e4f\u5b9e\u8d28\u6027\u4fe1\u606f\uff0c\u65e0\u6cd5\u8fdb\u884c\u6df1\u5165\u5206\u6790\u6216\u603b\u7ed3\u3002",
-            "core_factors": "\u539f\u6587\u6458\u8981\u672a\u8bf4\u660e",
-            "replication_parameters": "\u539f\u6587\u6458\u8981\u672a\u8bf4\u660e",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e",
+            "chinese_summary": "该论文标题为“基于需求的资产定价”，但摘要部分仅标注星标数量，未提供任何具体内容或研究细节。由于缺乏实质性信息，无法进行深入分析或总结。",
+            "core_factors": "原文摘要未说明",
+            "replication_parameters": "原文摘要未说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
             "practical_score": 1
         }
     },
@@ -78,75 +78,75 @@
         "id": "github_603100013",
         "title_en": "Replication Repo: weylandshane/Momentum-Strategy-Project",
         "source_url": "https://github.com/weylandshane/Momentum-Strategy-Project",
-        "excerpt_en": "[\u2b50 0 Stars] Testing the effectiveness of momentum factor investing",
+        "excerpt_en": "[⭐ 0 Stars] Testing the effectiveness of momentum factor investing",
         "date_scraped": "2026-06-14T22:15:22.781276",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 85
+            "chinese_summary": "本项目旨在通过回测验证动量因子在股票投资中的有效性。动量因子策略通常基于过去一段时间（如6-12个月）的价格表现，买入过去表现较好的股票，卖出表现较差的股票。项目在GitHub上开源，但摘要未提供具体实现细节或回测结果。整体而言，该研究聚焦于经典动量因子在中国的适用性检验。",
+            "core_factors": "动量因子：基于股票过去一段时间（如6-12个月）的累计收益率，选取高动量股票做多，低动量股票做空。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 7
         }
     },
     {
         "id": "github_332795285",
         "title_en": "Replication Repo: olivier2311/Quantropy",
         "source_url": "https://github.com/olivier2311/Quantropy",
-        "excerpt_en": "[\u2b50 0 Stars] API to scrape financial data, perform fundamental and technical analysis, construct portfolios as well as optimize allocation and backtest performance",
+        "excerpt_en": "[⭐ 0 Stars] API to scrape financial data, perform fundamental and technical analysis, construct portfolios as well as optimize allocation and backtest performance",
         "date_scraped": "2026-06-14T22:15:22.781278",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 86
+            "chinese_summary": "该GitHub仓库（olivier2311/Quantropy）提供了一个用于量化金融分析的API工具。其主要功能包括：爬取金融数据、执行基本面和技术分析、构建投资组合、优化资产配置以及回测策略表现。该工具旨在为量化研究者提供从数据获取到策略评估的一站式解决方案，适合用于快速原型开发和策略验证。但摘要中未提及具体的交易因子或模型创新。",
+            "core_factors": "原文未提出具体核心因子或模型，仅提及支持基本面和技术的通用分析方法。",
+            "replication_parameters": "原文未详细说明具体参数、数据频率或因子。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 7
         }
     },
     {
         "id": "github_705260468",
         "title_en": "Replication Repo: zhuolonghao/factor_investing",
         "source_url": "https://github.com/zhuolonghao/factor_investing",
-        "excerpt_en": "[\u2b50 0 Stars] None",
+        "excerpt_en": "[⭐ 0 Stars] None",
         "date_scraped": "2026-06-14T22:15:22.781280",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 87
+            "chinese_summary": "该GitHub仓库名为zhuolonghao/factor_investing，但摘要仅显示“None”，未提供任何具体研究内容或描述。因此无法进行有效总结。",
+            "core_factors": "原文未详细说明",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "github_1038032500",
         "title_en": "Replication Repo: dsarkar10/fama-french-replication",
         "source_url": "https://github.com/dsarkar10/fama-french-replication",
-        "excerpt_en": "[\u2b50 0 Stars] A Python implementation of the Fama-French 'Size' (SMB) and 'Value' (HML) factor investing models, from data acquisition to statistical analysis.",
+        "excerpt_en": "[⭐ 0 Stars] A Python implementation of the Fama-French 'Size' (SMB) and 'Value' (HML) factor investing models, from data acquisition to statistical analysis.",
         "date_scraped": "2026-06-14T22:15:22.781282",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 88
+            "chinese_summary": "该项目是Fama-French三因子模型中规模因子(SMB)和价值因子(HML)的Python实现，涵盖了从数据获取到统计分析的全流程。代码位于GitHub仓库dsarkar10/fama-french-replication，但缺乏详细文档和回测结果。该实现旨在为量化研究者提供一个可复现的因子构建工具，但实用性受限于原始论文的公开方法。",
+            "core_factors": "规模因子(SMB)和价值因子(HML)，基于Fama-French三因子模型。",
+            "replication_parameters": "原文未详细说明。通常需要公司市值、账面市值比数据，分组构建投资组合，频率可能为月度。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 5
         }
     },
     {
         "id": "github_1267361592",
         "title_en": "Replication Repo: Darsh-Bansal/Alpha-factor-research-engine",
         "source_url": "https://github.com/Darsh-Bansal/Alpha-factor-research-engine",
-        "excerpt_en": "[\u2b50 0 Stars] None",
+        "excerpt_en": "[⭐ 0 Stars] None",
         "date_scraped": "2026-06-14T22:15:22.781284",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 89
+            "chinese_summary": "该仓库为Darsh-Bansal的Alpha因子研究引擎的复现项目，但摘要未提供任何具体信息，仅有仓库名称和星标数量（0星），无法评估其实质内容。",
+            "core_factors": "原文未详细说明",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
@@ -157,11 +157,11 @@
         "date_scraped": "2026-06-14T23:02:57.940970",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 90
+            "chinese_summary": "本文提出一种基于递减条件风险价值（CVaR）约束的目标日期基金（TDF）设计框架，明确以回报为目标并直接控制组合风险。监管或发起人设定CVaR下滑路径，赋予组合经理灵活性以达到目标收益率，该收益率由养老金设计参数（如退休年龄、缴费率、工作年限、预期寿命和替代率目标）外生决定。与传统的资产类别限制方法不同，该方法不假设经理每期选择最优组合，而是每月从满足CVaR约束的组合集中随机抽取，从而保守评估下滑路径的成功概率。此外，引入两个绩效指标：达到目标收益的概率和整个TDF生命周期内的累积风险。作为概念验证，将该框架应用于智利2025年养老金改革，使用9种智利和全球资产类别及40年积累期。结果表明，风险开始下降的过渡年龄是最关键的设计参数，而缴费密度构成硬约束：低于临界阈值时，仅靠组合设计无法补偿结构性低缴费。该框架适用于任何以明确回报为目标的目标日期基金设计。",
+            "core_factors": "核心逻辑：基于递减CVaR约束的动态资产配置框架。通过设定随年龄下降的CVaR上限，在控制下行风险的同时追求给定目标收益率。每月从可行集中随机抽取组合，而非优化选择，以保守估计成功概率。",
+            "replication_parameters": "参数：退休年龄、缴费率、工作年限、预期寿命、替代率目标；CVaR下滑路径（关键参数：风险开始下降的过渡年龄）；资产类别（9种智利和全球资产）；数据频率：月度；时间跨度：40年积累期。",
+            "performance_metrics": "原文摘要未提供具体回测数据。绩效指标包括：达到目标收益的概率、累积风险（未量化具体数值）。",
+            "practical_score": 7
         }
     },
     {
@@ -172,26 +172,26 @@
         "date_scraped": "2026-06-14T23:02:57.940987",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 91
+            "chinese_summary": "本文针对算法交易中实时价格冲击检测问题，提出了一种基于交易行为与不利市场事件时序同步性的因果关系识别方法。传统方法要么依赖实时滑点监控（统计上昂贵且无法区分因果），要么使用事后大样本估计的静态规则。新方法通过统计检验交易行为后不利事件发生时间的“意外性”来判断是否存在价格冲击和信息泄漏。作者承认该方法假设快速出现的不利事件由自身交易触发，并强调需要真实执行数据进行验证。该论文为量化交易中的冲击成本控制提供了新视角，但尚缺乏实证回测结果。",
+            "core_factors": "核心因子是交易行为与后续不利市场事件之间的时间同步性异常，即交易动作后不利事件发生速度的统计显著性。逻辑是：如果交易后很快出现不利价格变动，且这种快于随机预期的程度显著，则表明该交易产生了市场冲击或信息泄露。",
+            "replication_parameters": "原文摘要未详细说明具体参数，但需包含：交易动作时间戳、市场事件（如价格变动、成交量）序列、时间窗口长度（用于定义“后续”）、统计显著性阈值、以及可能用于对比的随机基准模型。数据频率应为逐笔或高频数据。",
+            "performance_metrics": "原文摘要未提供具体回测数据，仅提出需要真实执行数据验证。无收益率、胜率或夏普比率等指标。",
+            "practical_score": 6
         }
     },
     {
         "id": "arxiv_2606.12612v1",
         "title_en": "[Academic Paper] The Mathematics of Heuristic Portfolio Optimization (HPO)",
         "source_url": "http://arxiv.org/abs/2606.12612v1",
-        "excerpt_en": "Practitioners allocate capital with forecast-light rules such as equal weight, inverse volatility, risk parity, HRP, and return-adjusted HRP (RA-HRP). This paper develops \\emph{Heuristic Portfolio Optimization} (HPO): an information-restricted projection of the Markowitz/tangency solution onto a stable rule class. The implied-return principle, $\\mathbf{w}$ is maximum-Sharpe iff $\\mathbf\u03bc_e \\propto \\mathbf\u03a3\\mathbf{w}$, gives closed-form optimality sets for leading heuristics and exposes the Schur-complement substitutions behind HRP. For RA-HRP, we introduce fixed-tree cluster-Sharpe recursion, unit-free HRP--RA-HRP interpolation, tangency conditions, conditional-risk splits, and pathwise/KL decompositions of weight distortion. First-order Sharpe calculus expresses the marginal value of return information as nodewise alphas against HRP and yields a linear KL trust budget. We formalize generic HPO maps, define the implied-return defect, prove that it equals squared Sharpe inefficiency, characterize tree-HPO coincidence by nodewise mass ratios, and give a bias--variance decomposition for estimated rules. Finally, HPO is embedded into Reinforcement Learning Portfolio Optimization (RLPO): every HPO map induces a deterministic stationary policy; static HPO is the $\u03b3=0$ no-friction face of the Bellman problem; RA-HRP supplies a hierarchical policy prior; and dynamic improvement is warranted when continuation value exceeds myopic HPO defect plus frictions. A performance-difference identity prices the myopic value gap, gives an $\\varepsilon/(1-\u03b3)$ myopia bound, and identifies nodewise alphas as policy-gradient coordinates of the hierarchical actor. Thus HPO is the static optimality layer and RLPO the dynamic control layer. The conditions are GRS-testable, extend to mean--CVaR and expected utility under ellipticity, and become Kelly-growth conditions in diffusion limits.",
+        "excerpt_en": "Practitioners allocate capital with forecast-light rules such as equal weight, inverse volatility, risk parity, HRP, and return-adjusted HRP (RA-HRP). This paper develops \\emph{Heuristic Portfolio Optimization} (HPO): an information-restricted projection of the Markowitz/tangency solution onto a stable rule class. The implied-return principle, $\\mathbf{w}$ is maximum-Sharpe iff $\\mathbfμ_e \\propto \\mathbfΣ\\mathbf{w}$, gives closed-form optimality sets for leading heuristics and exposes the Schur-complement substitutions behind HRP. For RA-HRP, we introduce fixed-tree cluster-Sharpe recursion, unit-free HRP--RA-HRP interpolation, tangency conditions, conditional-risk splits, and pathwise/KL decompositions of weight distortion. First-order Sharpe calculus expresses the marginal value of return information as nodewise alphas against HRP and yields a linear KL trust budget. We formalize generic HPO maps, define the implied-return defect, prove that it equals squared Sharpe inefficiency, characterize tree-HPO coincidence by nodewise mass ratios, and give a bias--variance decomposition for estimated rules. Finally, HPO is embedded into Reinforcement Learning Portfolio Optimization (RLPO): every HPO map induces a deterministic stationary policy; static HPO is the $γ=0$ no-friction face of the Bellman problem; RA-HRP supplies a hierarchical policy prior; and dynamic improvement is warranted when continuation value exceeds myopic HPO defect plus frictions. A performance-difference identity prices the myopic value gap, gives an $\\varepsilon/(1-γ)$ myopia bound, and identifies nodewise alphas as policy-gradient coordinates of the hierarchical actor. Thus HPO is the static optimality layer and RLPO the dynamic control layer. The conditions are GRS-testable, extend to mean--CVaR and expected utility under ellipticity, and become Kelly-growth conditions in diffusion limits.",
         "date_scraped": "2026-06-14T23:02:57.940992",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 92
+            "chinese_summary": "本文提出启发式投资组合优化（HPO）框架，将Markowitz/切线解投影到稳定的规则类上，涵盖等权重、逆波动率、风险平价、HRP及调整后的RA-HRP等启发式方法。利用隐含收益率原理导出了这些启发式的闭式最优集，揭示了HRP背后的Schur补替代。对于RA-HRP，引入了固定树聚类夏普递归、无单位HRP-RA-HRP插值、切线条件、条件风险分割以及权重扭曲的路径/KL分解。一阶夏普微积分将回报信息的边际价值表示为节点α，并得到线性KL信任预算。HPO被嵌入强化学习投资组合优化（RLPO），静态HPO是Bellman问题的γ=0无摩擦面，RA-HRP提供层次策略先验。性能差异恒等式给出了myopia价值差距，并标识节点α为层次角色的策略梯度坐标。条件可通过GRS检验扩展至均值-CVaR和椭圆分布下的期望效用，在扩散极限下成为Kelly增长条件。",
+            "core_factors": "核心逻辑是通过隐含收益率原理（w最大夏普当且仅当μ_e ∝ Σw）将Markowitz解投影到稳定规则类（如HRP、RA-HRP），利用Schur补替代、固定树聚类夏普递归、条件风险分割等数学工具实现启发式优化，并建立与动态RLPO的联系。",
+            "replication_parameters": "原文未详细说明具体参数和数据频率，但涉及协方差矩阵（Σ）、期望收益率（μ）、层次聚类树结构、风险分割阈值、KL散度预算等。需估计历史收益率和波动率，频率可能为日频或月频。",
+            "performance_metrics": "原文摘要未提供具体回测数据，但理论结果表明HPO可衡量夏普效率损失，并给出了性能差异恒等式与myopia误差界。",
+            "practical_score": 6
         }
     },
     {
@@ -202,11 +202,11 @@
         "date_scraped": "2026-06-14T23:02:57.940995",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 93
+            "chinese_summary": "该论文研究连续时间多资产Black-Scholes市场中的投资问题。资产漂移未知，存在模型模糊性，但投资者拥有先验知识。投资者为模糊厌恶型，采用Maccheroni等(2013)的均值-方差准则，将方差分解为市场风险和模糊风险两部分并赋予不同权重，以平滑方式纳入模糊厌恶。通过新颖方法，在允许学习的自适应策略中求解最优动态投资组合。数值结果表明，模糊厌恶投资者会减少对风险资产的投资，且模型参数显著影响最优策略。",
+            "core_factors": "核心因子为资产漂移的不确定性（模糊性）及投资者对模糊的厌恶程度。通过贝叶斯学习更新漂移信念，并动态调整组合。方差分解为市场风险部分和模糊风险部分，分别赋予不同权重以反映对两类风险的厌恶程度。",
+            "replication_parameters": "需要多资产Black-Scholes模型参数（资产数量、波动率矩阵、无风险利率）、漂移的先验分布（均值与协方差）、贝叶斯学习更新规则、模糊厌恶参数（方差分解权重）。数据频率未明确，但连续时间模型需离散化，建议使用日频或更高频数据。",
+            "performance_metrics": "原文摘要未提供具体回测数据，仅有数值示例说明参数影响，无收益率、胜率、夏普比率等指标。",
+            "practical_score": 5
         }
     },
     {
@@ -217,11 +217,11 @@
         "date_scraped": "2026-06-14T23:02:57.940998",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 94
+            "chinese_summary": "本文扩展了Atmaz（2022）的线性回报外推框架，引入信念更新的饱和性与收益-损失不对称性两个行为现实特征。定义平滑、非线性、非对称的外推函数，并在Heston随机波动率下刻画CRRA投资者的最优投资组合，该组合由情绪扭曲的投机性需求、方差对冲需求和情绪对冲需求三部分构成。通过有限差分ADI方案和深度学习迭代方法求解半线性HJB方程。模型产生四个行为异常：非对称反应、极端衰减、过度交易和福利损失随外推强度增加。核心发现是饱和机制作为内生纠正工具，在原点斜率相同时，非线性外推者的福利损失小于线性者。",
+            "core_factors": "非线性、非对称的外推程度，即投资者对过去收益的过度外推偏差，尤其在收益和损失方向的不同斜率及饱和效应。",
+            "replication_parameters": "需要定义非线性外推函数的形状参数（饱和水平、不对称程度）、Heston随机波动率模型参数（均值回复速度、长期方差、波动率波动率、相关系数）、风险厌恶系数及时间离散化参数。数据频率未明确说明，可能需日频或更高频收益率数据进行估计。原文未详细说明具体参数值。",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 4
         }
     },
     {
@@ -232,11 +232,11 @@
         "date_scraped": "2026-06-14T23:02:57.941001",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 95
+            "chinese_summary": "本文提出了一种基于操作时间（operational time）的反应边界格点模型用于期权定价。作者将连续操作时间u映射到日历时间t，并构建近邻对数价格格点模型，该模型具有状态和时间依赖的转移概率。通过Chapman-Kolmogorov分解推导出离散正向和反向方程，在局部有限方差缩放下收敛到连续伴随对。在价格变量下，反向方程得到广义欧式定价PDE，在风险中性漂移限制和恒定波动率下简化为Black-Scholes-Merton模型。将模型解释为限价订单簿中间价的反应边界模型，将局部波动率识别为活动性调整的风险中性买卖价差反应边界方差。框架分离了操作核、日历时间投影和定价测度选择，阐明了未跨度时钟、跳跃或更新风险如何导致不完全市场定价。",
+            "core_factors": "操作时间（operational time）的映射、状态和时间依赖的转移概率、局部波动率与活动性调整的风险中性买卖价差反应边界方差。",
+            "replication_parameters": "原文未详细说明具体的参数、数据频率或因子，理论框架涉及操作时间到日历时间的映射函数形式、格点设置、转移概率参数化等。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 3
         }
     },
     {
@@ -247,11 +247,11 @@
         "date_scraped": "2026-06-14T23:02:57.941003",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 96
+            "chinese_summary": "本研究利用2005年至2023年的高频沪深300指数数据，提出一个两阶段框架：首先采用体制增强的HARQ模型与马尔可夫切换GJR-GARCH过滤来预测已实现波动率，捕捉长期记忆、非对称性和结构性市场体制；其次，将波动率预测、体制指标及其他预测因子纳入XGBoost模型进行收益预测，并通过严格的前向验证。实证表明，体制感知的波动率预测优于基准HARQ模型，但收益预测较弱且仅集中在低波动体制。简单的交易策略在考虑交易成本后无效，但通过波动率缩放、低波动门控、阈值校准和换手率控制，可以改善防御性经济表现。结论是预测系统的实际价值更多在于将弱状态依赖信号转化为稳健的资产配置规则。",
+            "core_factors": "核心框架为两阶段集成：第一阶段使用体制增强HARQ（HARQ+马尔可夫切换GJR-GARCH）对已实现波动率建模；第二阶段将波动率预测、体制指示变量、以及收益相关预测因子（如过去收益、成交量等）输入XGBoost模型进行收益预测，并采用波动率缩放、低波动门控等实现防御性策略。",
+            "replication_parameters": "数据：沪深300指数2005-2023年高频数据（具体频率未说明）；模型参数：HARQ的滞后阶数（1,5,22天）、马尔可夫切换体制数（未说明）、GJR-GARCH参数；XGBoost超参数（树数量、深度、学习率等）未详细说明；交易成本假设、波动率缩放参数、低波动门控阈值、换手率控制参数均未明确。原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据（如收益率、夏普比率等），仅提到统计上优于HARQ模型，但交易策略在扣除成本后表现不佳。",
+            "practical_score": 6
         }
     },
     {
@@ -262,11 +262,11 @@
         "date_scraped": "2026-06-14T23:02:57.941005",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 97
+            "chinese_summary": "本文对做市商的买卖报价规则进行了公理化。通过八个自然公理和六个环境假设，得出唯一的三参数族：中间报价随库存线性变化，价差分解为库存和逆向选择两部分。三个参数分别可由报价规则的不同矩唯一识别，且识别过程相互解耦。公理体系分为核心四公理、一个结构性选择和三个模块化扩展。两个结构性推论包括：潜在库存成本函数可从限价订单簿恢复，以及存在一个从正常市场到冻结市场的尖锐相变。最后，元定理给出了所有可行结构原语中四个不变特征。这是首个迫使报价规则唯一性的公理化工作。",
+            "core_factors": "核心因子包括：做市商的库存水平、信念、方差、交易强度及知情交易者比例。模型推导出中间报价与库存线性相关，价差分解为库存成本成分和逆向选择成分。",
+            "replication_parameters": "三个关键参数：1) 库存风险厌恶系数（控制中间报价对库存的敏感度）；2) 逆向选择价差系数（与知情交易者比例相关）；3) 非对称信息价差系数（与信念和方差相关）。数据频率需为逐笔交易或高频报价数据，以提取报价规则的矩。",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 6
         }
     },
     {
@@ -277,11 +277,11 @@
         "date_scraped": "2026-06-14T23:02:57.941007",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 98
+            "chinese_summary": "本文针对日频股票组合的深度时间序列模型进行了全面基准测试，提出了一套结合公共窗口十分位组合、随机多准则可接受性分析（SMAA）、部署调整可接受性指数以及带有容量、Beta、行业、风险、杠杆和换手率约束的二次规划层的评估框架。基于2018-2024年CRSP日频股票数据，对15种深度与统计时间序列架构进行了比较。结果表明，TransEnc-8模型取得最高排名第一可接受性（0.352），但所有模型均未超过0.36；在不同偏好、市场状态、特征集和交易成本下，模型排名发生变化。在五种模型的约束组合比较中，TransEnc-8被持续选中。然而，在20个基点的交易成本下，所有模型的约束组合净夏普比率均为负值。该基准测试旨在支持模型选择与诊断，而非直接作为交易策略。",
+            "core_factors": "核心方法为基准测试协议，结合了十分位组合构建、随机多准则可接受性分析（SMAA）、部署调整可接受性指数以及带约束的二次规划（约束包括容量、Beta、行业、风险、杠杆和换手率）。核心逻辑是通过考虑偏好、成本与投资组合约束后的实际可用性来评估模型，而非仅基于预测精度。",
+            "replication_parameters": "数据频率：日频；时间范围：2018-2024；数据源：CRSP日频股票；模型：15种深度与统计时间序列架构；约束条件：容量、Beta、行业、风险、杠杆、换手率；交易成本：20 bps；组合构建：公共窗口十分位组合；评估指标：SMAA排名可接受性、部署调整可接受性指数。具体模型超参数及特征集原文未详细说明。",
+            "performance_metrics": "TransEnc-8模型排名第一可接受性为0.352，所有模型均未超过0.36。在五种模型约束组合比较中，TransEnc-8被选中，但基线约束二次规划在20 bps交易成本下的净夏普比率对所有模型均为负值。原文未提供具体收益率、胜率或Alpha数值。",
+            "practical_score": 4
         }
     },
     {
@@ -292,11 +292,11 @@
         "date_scraped": "2026-06-14T23:02:57.941010",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 99
+            "chinese_summary": "本文提出了一种新的BAVAR-BLED算法，结合贝叶斯平均向量自回归（BAVAR）和椭圆分布Black-Litterman（BLED）模型，并集成到TD3深度强化学习架构中，用于解决市场机制变化和肥尾回报问题。BAVAR通过多尺度时序特征捕捉市场状态，提供机制感知的预期收益和分散矩阵作为BLED的先验输入；BLED使用Student-t分布建模肥尾回报。利用Transformer网络构建观点，CNN估计风险厌恶，动态调整资产配置。在道琼斯30指数成分股十年数据上，该方法实现了夏普比率1.72、Sortino比率2.70和总回报57.26%，显著优于现有方法。",
+            "core_factors": "多尺度时序特征（BAVAR）、机制感知的预期收益和分散矩阵、肥尾分布（Student-t）、Transformer观点构建、CNN风险厌恶估计、TD3强化学习框架。",
+            "replication_parameters": "原文未详细说明具体参数，包括BAVAR的滞后阶数、先验分布、BLED的置信度水平、TD3的学习率、网络结构、交易频率等。数据频率未明确，但推测为日频。",
+            "performance_metrics": "夏普比率1.72，Sortino比率2.70，总回报57.26%。未提供胜率。",
+            "practical_score": 7
         }
     },
     {
@@ -307,11 +307,11 @@
         "date_scraped": "2026-06-14T23:02:57.941012",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 80
+            "chinese_summary": "本文研究了静态增长-防御型风险组合与现金之间的现金覆盖配置问题。风险组合固定为等权重的增长型与防御型ETF篮子（50/50），因此现金覆盖独立于任何动态风格择时策略。目标为未来风险组合相对于现金的超额收益，现金部分使用同期现金利率。作者开发了两个连续滤波器：慢尾补偿滤波器针对风险组合补偿的持续恶化，尤其是现金收益率上升而风险资产不稳定的时期；V型崩溃刹车滤波器针对快速回撤事件及其后的重新入场。两者通过固定最大现金规则结合，每日取两个现金权重的较大值。在2017-2026年窗口上，选择权重的最大现金组合获得20.45%的年化收益率（静态风险组合16.62%），最大回撤从-33.59%改善至-16.77%。更严格的版本结合各组成部分的滚动外样本权重，在主要样本外窗口，扩展最大现金组合获得18.05%的收益率（静态16.09%），最大回撤-22.05%。证据支持模块化连续现金覆盖作为回撤控制工具。",
+            "core_factors": "两个连续滤波器：1）慢尾补偿滤波器，针对风险组合补偿的持续恶化，特别是现金收益率上升而风险资产不稳定的时期；2）V型崩溃刹车滤波器，针对快速回撤事件及后续重新入场。两者通过最大现金规则（取每日较大现金权重）组合。",
+            "replication_parameters": "静态风险组合：等权重增长型与防御型ETF篮子（50/50）。现金部分使用同期现金利率。回测窗口：2017-2026年。滤波器具体参数（如阈值、计算方式）及数据频率（推测为日频）原文未详细说明，需参考原文。",
+            "performance_metrics": "选择权重最大现金组合年化收益率20.45%（静态风险组合16.62%），最大回撤-16.77%（静态-33.59%）；扩展最大现金组合年化收益率18.05%（静态16.09%），最大回撤-22.05%。未提供夏普比率或胜率。",
+            "practical_score": 7
         }
     },
     {
@@ -322,11 +322,11 @@
         "date_scraped": "2026-06-14T23:02:57.941015",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 81
+            "chinese_summary": "该论文构建了一个连续时间平均场模型，研究中心化交易所（CEX）交易活动对权益证明（PoS）区块链生态的影响。模型假设矿工同时扮演PoS验证者和具有价格冲击的CEX交易者。在适当假设下，推导了均衡交易策略的半显式解。数值结果表明，中心化交易可通过市场激励提高质押参与率并促进质押分布的去中心化。此外，论文分析了交易成本和代币供应机制对均衡质押比率和集中度的影响。研究揭示了市场微观结构和中心化流动性对去中心化区块链协议的重要影响。",
+            "core_factors": "核心交易因子为平均场模型下的均衡交易策略，该策略由验证者（矿工）在CEX中的交易行为与PoS质押决策共同决定，涉及价格冲击、交易成本及代币供应机制。",
+            "replication_parameters": "原文未详细说明具体参数，但理论模型包含：价格冲击函数形式、交易成本率、PoS质押收益、代币供应时间表（如通胀率）、验证者数量及分布。数据频率需与连续时间模型匹配（理论框架，未指定）。",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 2
         }
     },
     {
@@ -337,11 +337,11 @@
         "date_scraped": "2026-06-14T23:02:57.941017",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 82
+            "chinese_summary": "本文提出了一种审计黑箱算法决策者的方法，通过将动态策略的累积遗憾分解为每期成本向量与决策之间协方差的和，扩展了Aldridge（2026）的单期恒等式至多期随机动态规划场景。该分解在i.i.d.成本和均值无偏马尔可夫策略下精确成立，并推导了非平稳和时间变化情况的偏差校正。该结果可用于平台机制设计中的福利审计、重复博弈中的政策改进评估，以及采购和广告拍卖中的福利损失量化。轨迹估计量一致、渐近正态，计算复杂度为O(T·nd)，为平台机制、算法投资策略等顺序决策系统提供了可处理的模型外审计工具。",
+            "core_factors": "核心逻辑是通过协方差分解计算遗憾：累积遗憾等于每期成本向量与决策之间协方差的和。这提供了一种无需访问代理私有类型即可评估动态策略福利效果的审计指标。",
+            "replication_parameters": "原文摘要未详细说明具体参数、数据频率或因子，但方法依赖i.i.d.成本假设、均值无偏马尔可夫策略，以及滚动窗口策略的估计误差偏差O(d/w)。实际复制需要定义成本向量（如回报率或损失函数）和决策变量（如投资权重）。",
+            "performance_metrics": "原文摘要未提供具体回测数据，如收益率、胜率、夏普比率或alpha。",
+            "practical_score": 4
         }
     },
     {
@@ -352,11 +352,11 @@
         "date_scraped": "2026-06-14T23:02:57.941020",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 83
+            "chinese_summary": "该论文提出基于欧式看跌期权的p-index风险度量，用于评估投资策略绩效。通过在中国上证50指数和美国标普500指数2018-2023年的数据测试，发现使用公平价格策略时，持有期一周和一月能获得更高收益；行业板块中材料板块年化收益最高。动量与反转策略中，p-ratio-有效-反转策略在中国市场表现最佳（周持有期9.97%），而美国市场则是p-index-有效-动量策略最优（3.69%）。p-index方法在多数情况下优于传统beta方法。",
+            "core_factors": "p-index（基于欧式看跌期权的保险费用度量）、p-ratio（p-index与标的资产价格比值）、持有期（一周、两周、一月）、策略类型（公平价格、动量、反转、有效/无效股票分类）。",
+            "replication_parameters": "需获取标的资产（如SSE 50、S&P 500成分股）的欧式看跌期权价格、无风险利率、到期时间、行权价（保证达到指定收益率δ），以及历史收益率数据。数据频率日/周，时间范围2018-2023。具体期权定价模型及δ参数未详述。",
+            "performance_metrics": "年化收益率：中国市场材料板块最高11.04%（一周持有期）；美国市场p-index-有效-动量策略年化3.69%。其他策略如p-ratio-有效-反转策略9.97%（中国）。未提及夏普比率、胜率或alpha。",
+            "practical_score": 6
         }
     },
     {
@@ -367,11 +367,11 @@
         "date_scraped": "2026-06-14T23:02:57.941022",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 84
+            "chinese_summary": "本文提出TT-DAC-PS（双目标确定性演员-评论家策略平滑）模型，用于最优大宗股票卖出执行。该模型结合双指数移动平均评论家目标、悲观最小备份、TD3类目标策略平滑噪声、延迟演员更新和保守Q正则化，以抑制过估计。探索采用Ornstein-Uhlenbeck噪声，并设计了混合调度方案（含退火、方差调整和学习温度映射）。环境融合Almgren-Chriss交易冲击与限价订单簿价格和成交量，状态归一化，每步成交量上限，并采用效用函数奖励。在10只美国股票的LOB数据上测试，与PPO、SAC、A2C、TWAP、VWAP和AC等基线对比，该模型持续降低平均实现缺额百分比，且方差有竞争力。",
+            "core_factors": "核心交易因子为：1）双指数移动平均评论家目标（twin EMA critic targets）与悲观最小备份（pessimistic min backup）；2）TD3风格目标策略平滑噪声；3）延迟演员更新；4）保守Q正则化；5）混合OU探索噪声（退火、方差调整、SAC温度映射）；6）Almgren-Chriss市场冲击模型与LOB数据融合。共同优化执行滑点。",
+            "replication_parameters": "具体参数原文未详细说明，但需设置：OU噪声初始尺度、退火率、方差调整窗口、温度学习率；评论家与演员网络结构及学习率、目标网络移动平均系数（τ）、策略平滑噪声标准差、保守Q正则化系数、延迟更新频率（演员更新间隔）。数据频率未明确，需基于LOB tick级或分钟级数据。",
+            "performance_metrics": "原文摘要未提供具体回测数据，仅指出模型一致降低平均实现缺额百分比（implementation shortfall percentage）且方差有竞争力，无收益率、胜率、夏普比率或alpha等具体指标。",
+            "practical_score": 5
         }
     },
     {
@@ -382,71 +382,71 @@
         "date_scraped": "2026-06-14T23:12:28.646775",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 85
+            "chinese_summary": "本文探索性地研究了地方当局环境管理控制（EMC）的概念及其背后的实践，以及实施这些实践时所面临的紧张关系。尽管EMC在公共部门中日益受到关注，但似乎面临技术和治理上的困难。作者运用管理工具分析框架和组织悖论理论，旨在刻画地方政府部门中EMC实践的特征及相关张力。研究涉及多个市政当局，探索并描述了它们首次实施EMC的经验。结果不仅归纳了所使用的工具，还揭示了资源管理目标、与社会经济环境的对话以及行为导向之间产生的紧张关系。",
+            "core_factors": "原文未涉及交易因子。本文研究的是公共部门环境管理控制，而非量化交易策略。",
+            "replication_parameters": "原文未详细说明。本文为定性研究，未提供可复制的参数或数据频率。",
+            "performance_metrics": "原文摘要未提供具体回测数据。本文未涉及任何金融绩效指标。",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137708326",
-        "title_en": "[OpenAlex Paper] Teachers\u2019 involvement in the management of schools: example of France and French-speaking Belgium",
+        "title_en": "[OpenAlex Paper] Teachers’ involvement in the management of schools: example of France and French-speaking Belgium",
         "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1a?lang=en",
-        "excerpt_en": "This research analyses change management practices in schools in France and French-speaking Belgium following public education policy (PEP) reforms. With the implementation of a \u201cshared management\u201d system \u2013 both centralised and local \u2013 school principals are now required to involve teachers in school management. We first present diagrams showing the decentralisation of relations between public authorities and school principals to meet this objective. We then draw on a theoretical framework of change management, emphasising organisational and relational dimensions that encourage staff involvement in school management. We present our qualitative and inductive methodological approach applied to data collected through participant observation and semi-structured interviews with school principals, and from reports and laws. The results highlight several obstacles to overcome, relating to the need to rethink human relations at local level. Principals must question their own capacity to manage change and share the priorities required by the PEPs in an adhocratic approach, as public managers with strategic responsibility for human resource management. To move toward effective management and avoid resistance to change, a new stance as a unifying, considerate, and communicative HR manager is needed.",
+        "excerpt_en": "This research analyses change management practices in schools in France and French-speaking Belgium following public education policy (PEP) reforms. With the implementation of a “shared management” system – both centralised and local – school principals are now required to involve teachers in school management. We first present diagrams showing the decentralisation of relations between public authorities and school principals to meet this objective. We then draw on a theoretical framework of change management, emphasising organisational and relational dimensions that encourage staff involvement in school management. We present our qualitative and inductive methodological approach applied to data collected through participant observation and semi-structured interviews with school principals, and from reports and laws. The results highlight several obstacles to overcome, relating to the need to rethink human relations at local level. Principals must question their own capacity to manage change and share the priorities required by the PEPs in an adhocratic approach, as public managers with strategic responsibility for human resource management. To move toward effective management and avoid resistance to change, a new stance as a unifying, considerate, and communicative HR manager is needed.",
         "date_scraped": "2026-06-14T23:12:28.646800",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 86
+            "chinese_summary": "本文分析了法国和法语区比利时在学校管理改革中实施“共享管理”制度的情况，探讨了校长如何通过变革管理让教师参与学校管理。研究采用定性方法，通过参与式观察和半结构化访谈收集数据，揭示了地方层面重新思考人际关系的必要性，强调校长需转变角色为统一、体贴且善于沟通的人力资源管理者，以克服变革阻力并有效实施公共教育政策。",
+            "core_factors": "此文为教育管理研究，不涉及交易因子。",
+            "replication_parameters": "不适用",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137590217",
         "title_en": "[OpenAlex Paper] The Role of Social Media Influencers in Promoting Therapeutic Compliance: Implications for Public Health Policy",
         "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1b?lang=fr",
-        "excerpt_en": "Treatment adherence (hereafter, adherence) is critical to achieving positive therapeutic outcomes, whereas non-adherence remains a major public health challenge that hinders recovery and increases healthcare expenditures. As social media has become a prominent channel for information consumption and sharing, social media influencers (SMIs) may play an important role in enhancing adherence. Yet the mechanisms through which engagement with SMIs promotes adherence are not well understood. Drawing on the source attractiveness model, this study posits that influencer characteristics \u2013 specifically social attractiveness and perceived credibility \u2013 shape evaluations of health messages and, in turn, persuade followers toward adherence. We examine the relationship between SMI social attractiveness and adherence, test the mediating roles of perceived authenticity and perceived expertise, and explore the moderating role of SMI message type. Using survey data from 475 participants, we find that SMI social attractiveness positively predicts treatment adherence, and this effect is mediated by followers\u2019 perceptions of influencer authenticity and expertise. These findings suggest that SMIs can contribute meaningfully to public health communication by encouraging adherence, with the potential to alleviate both fiscal pressures and infrastructural burdens on health systems.",
+        "excerpt_en": "Treatment adherence (hereafter, adherence) is critical to achieving positive therapeutic outcomes, whereas non-adherence remains a major public health challenge that hinders recovery and increases healthcare expenditures. As social media has become a prominent channel for information consumption and sharing, social media influencers (SMIs) may play an important role in enhancing adherence. Yet the mechanisms through which engagement with SMIs promotes adherence are not well understood. Drawing on the source attractiveness model, this study posits that influencer characteristics – specifically social attractiveness and perceived credibility – shape evaluations of health messages and, in turn, persuade followers toward adherence. We examine the relationship between SMI social attractiveness and adherence, test the mediating roles of perceived authenticity and perceived expertise, and explore the moderating role of SMI message type. Using survey data from 475 participants, we find that SMI social attractiveness positively predicts treatment adherence, and this effect is mediated by followers’ perceptions of influencer authenticity and expertise. These findings suggest that SMIs can contribute meaningfully to public health communication by encouraging adherence, with the potential to alleviate both fiscal pressures and infrastructural burdens on health systems.",
         "date_scraped": "2026-06-14T23:12:28.646815",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 87
+            "chinese_summary": "该论文研究社交媒体影响者（SMI）如何通过其社会吸引力和感知可信度促进治疗依从性。基于来源吸引力模型，作者假设SMI的社会吸引力通过感知真实性和专业性的中介作用正向影响依从性，并考察信息类型的调节作用。通过对475名参与者的调查数据进行分析，发现SMI的社会吸引力确实正向预测治疗依从性，且该效应由感知真实性和专业性中介。研究结果对公共卫生政策具有启示意义，表明SMI可成为促进治疗依从性的有效工具，有助于减轻医疗系统负担。但该研究不涉及金融交易或量化投资。",
+            "core_factors": "论文未提出任何金融交易因子。其核心概念涉及社交媒体影响者的社会吸引力、感知真实性、感知专业性以及信息类型，但这些属于行为科学范畴，无法直接用于量化交易。",
+            "replication_parameters": "原文未详细说明任何量化交易参数。调查数据为475名参与者的一次性问卷调查，无时间序列数据或高频指标。",
+            "performance_metrics": "原文摘要未提供具体回测数据或金融绩效指标（如收益率、夏普比率等）。",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7162828992",
         "title_en": "[OpenAlex Paper] A collaborative and participatory approach to public service innovation: Health sector dynamics and outlook",
         "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-I38?lang=en",
-        "excerpt_en": "This article explores the dynamics of collaborative and participatory innovations in public health services using Chen et al.\u2019s (2020) typology. Based on a mixed survey of projects awarded under the national \u201cDroits des usagers de la sant\u00e9\u201d initiative, the study finds that user participation primarily generates operational and capacity-oriented innovations frequently involving external partnerships. The analysis highlights the crucial interactions between internal and external dynamics, identifying essential conditions for successful innovations: effective mobilization of internal resources, robust institutional support, and early and active user involvement. However, the study also identifies limitations in citizen engagement, particularly in the evaluation phase of innovations. The article concludes by suggesting avenues for enhancing full co-creation processes in public services to maximize public value.",
+        "excerpt_en": "This article explores the dynamics of collaborative and participatory innovations in public health services using Chen et al.’s (2020) typology. Based on a mixed survey of projects awarded under the national “Droits des usagers de la santé” initiative, the study finds that user participation primarily generates operational and capacity-oriented innovations frequently involving external partnerships. The analysis highlights the crucial interactions between internal and external dynamics, identifying essential conditions for successful innovations: effective mobilization of internal resources, robust institutional support, and early and active user involvement. However, the study also identifies limitations in citizen engagement, particularly in the evaluation phase of innovations. The article concludes by suggesting avenues for enhancing full co-creation processes in public services to maximize public value.",
         "date_scraped": "2026-06-14T23:12:28.646825",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 88
+            "chinese_summary": "本文探索了公共卫生服务中合作与参与式创新的动力机制，基于Chen等人（2020）的分类法。通过对“Droits des usagers de la santé”国家计划下获奖项目的混合调查，研究发现用户参与主要产生运营和能力导向的创新，且常涉及外部合作。分析强调了内外动态交互的关键作用，识别出成功的必要条件：有效调动内部资源、强有力的制度支持以及用户早期积极介入。然而，研究也指出公民参与在创新评估阶段的局限性。文章最后提出了在公共服务中增强完整共创过程以最大化公共价值的建议。",
+            "core_factors": "原文未提取量化交易因子，论文主题为公共卫生服务创新。",
+            "replication_parameters": "原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137577846",
         "title_en": "[OpenAlex Paper] Is the university an enabling environment? A qualitative study examining the impact of university disability policy for staff",
         "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1q?lang=en",
-        "excerpt_en": "This study aims to address the university social responsibility (USR) in France by examining disability policy for staff. The concept of an enabling environment is utilized, grounded in the capabilities approach. The aim is to understand how a French university fosters an enabling environment, on the one hand, to facilitate the disclosure of disability and, on the other hand, to promote participation in the institution\u2019s disability policy. The present study employs a qualitative methodology, encompassing both primary and secondary data collection. A thematic content analysis is then conducted, utilising QDA Miner software. The results demonstrate the processes ranging from mobilizable resources to achievements. Some positive conversion factors are highlighted (e.g., the visibility of disability ambassadors), but also some negative ones (e.g., lack of time). It is evident that capabilities are observed, thereby strengthening the power of staff to take steps towards recognition as a disabled worker or to engage in the university\u2019s disability policy (e.g., participation in DuoDay).",
+        "excerpt_en": "This study aims to address the university social responsibility (USR) in France by examining disability policy for staff. The concept of an enabling environment is utilized, grounded in the capabilities approach. The aim is to understand how a French university fosters an enabling environment, on the one hand, to facilitate the disclosure of disability and, on the other hand, to promote participation in the institution’s disability policy. The present study employs a qualitative methodology, encompassing both primary and secondary data collection. A thematic content analysis is then conducted, utilising QDA Miner software. The results demonstrate the processes ranging from mobilizable resources to achievements. Some positive conversion factors are highlighted (e.g., the visibility of disability ambassadors), but also some negative ones (e.g., lack of time). It is evident that capabilities are observed, thereby strengthening the power of staff to take steps towards recognition as a disabled worker or to engage in the university’s disability policy (e.g., participation in DuoDay).",
         "date_scraped": "2026-06-14T23:12:28.646837",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 89
+            "chinese_summary": "本研究探讨法国大学作为雇主对残疾员工的支持政策，基于能力方法分析大学如何构建“赋能环境”。通过定性研究（包括访谈和文档分析），发现积极转化因素（如残疾大使的可见性）和消极因素（如时间不足）。结果显示，员工的能力得到增强，有助于他们公开残疾身份或参与大学残疾政策（如DuoDay活动）。该研究聚焦于社会责任而非金融表现。",
+            "core_factors": "该论文非金融交易研究，无核心交易因子。",
+            "replication_parameters": "原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 1
         }
     },
     {
@@ -457,11 +457,11 @@
         "date_scraped": "2026-06-14T23:12:28.646845",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 90
+            "chinese_summary": "本文以法国西部一家公立医院为案例，采用定性研究方法（包括访谈、直接观察和合规审计），深入分析了医疗风险废物（HCRW）和非危害性医疗废物（NHCW）的管理现状。研究重点考察了废物分类、风险控制、可追溯性及法规遵循情况，并提出了改善废物管理流程的建议。该研究为医疗机构优化废物处理策略提供了实践参考。",
+            "core_factors": "本文非金融交易类研究，未涉及交易因子或量化模型。",
+            "replication_parameters": "原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 1
         }
     },
     {
@@ -472,131 +472,131 @@
         "date_scraped": "2026-06-14T23:12:28.646866",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 91
+            "chinese_summary": "该论文研究了二甲基胍基戊酸（DMGV）在代谢综合征（MetS）中的作用。通过生物催化合成高纯度DMGV标准品，并建立HPLC-MS/MS定量方法，测定健康人和MetS患者血浆中DMGV浓度。发现ADGV（DMGV异构体）与血甘油三酯密切相关，并能促进脂质积累和脂肪酸合成。在高尿酸血症和胰岛素敏感性受损时，ADGV水平上调，表明其在MetS进展中具有重要作用。该研究为MetS的预防和治疗提供了新思路。",
+            "core_factors": "论文核心因子为ADGV（DMGV异构体）的血浆浓度，及其与甘油三酯代谢的关联。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7131234215",
         "title_en": "[OpenAlex Paper] An investigation of the relationship between transformational and transactional leadership, organizational commitment and wellness in policing: a mixed methods approach",
         "source_url": "https://doi.org/10.48683/1926.00128573>",
-        "excerpt_en": "Policing is a stressful profession, and effective leadership is needed to mitigate the effects of organizational stressors that make it one of the most hazardous occupations in the world. Evidence suggests that transformational and transactional leadership can influence the health outcomes and commitment levels of officers, but much of the research and strategies are derived from large jurisdictions and have failed to account for smaller resource constrained contexts. Therefore, the viability of these strategies in smaller jurisdictions such as those in the Caribbean are understudied. Studies have tended to apply quantitative methodologies, which do not give officers a voice to fully capture their contextual experiences that ultimately shape their work related outcomes. To address this gap, more context specific research is needed which captures the voice of officers and investigates how leadership directly impacts organizational commitment and wellness in smaller jurisdictions. These insights will be critical in developing leadership strategies that are more inclusive, culturally relevant and effective in Caribbean policing. Using an explanatory mixed methods design, survey data were gathered from 269 police officers through a web-based questionnaire that comprised items from the Multifactor Leadership Questionnaire, Total Commitment Employment Survey, and the Perceived Wellness Survey. The quantitative data were analyzed through multivariate analysis techniques including correlation and regression analysis. This was followed by a qualitative component where data were collected from 12 officers through semi-structured interviews and examined through thematic analysis. Findings reveal that transformational leadership was negatively related to affective and normative commitment as well as spiritual and intellectual wellness. In contrast, transactional leadership that is typified by rewards and consequences was positively related to both outcomes. The results also confirmed that continuance commitment, which is associated with an employee\u2019s need to stay with an organization due to benefits or lack of alternatives, moderated the relationship between leadership (transactional and transformational) and wellness. These results challenge the efficacy of transformational leadership in a Caribbean policing context and suggest that leadership may be contextual when examining its effect on commitment and wellness.",
+        "excerpt_en": "Policing is a stressful profession, and effective leadership is needed to mitigate the effects of organizational stressors that make it one of the most hazardous occupations in the world. Evidence suggests that transformational and transactional leadership can influence the health outcomes and commitment levels of officers, but much of the research and strategies are derived from large jurisdictions and have failed to account for smaller resource constrained contexts. Therefore, the viability of these strategies in smaller jurisdictions such as those in the Caribbean are understudied. Studies have tended to apply quantitative methodologies, which do not give officers a voice to fully capture their contextual experiences that ultimately shape their work related outcomes. To address this gap, more context specific research is needed which captures the voice of officers and investigates how leadership directly impacts organizational commitment and wellness in smaller jurisdictions. These insights will be critical in developing leadership strategies that are more inclusive, culturally relevant and effective in Caribbean policing. Using an explanatory mixed methods design, survey data were gathered from 269 police officers through a web-based questionnaire that comprised items from the Multifactor Leadership Questionnaire, Total Commitment Employment Survey, and the Perceived Wellness Survey. The quantitative data were analyzed through multivariate analysis techniques including correlation and regression analysis. This was followed by a qualitative component where data were collected from 12 officers through semi-structured interviews and examined through thematic analysis. Findings reveal that transformational leadership was negatively related to affective and normative commitment as well as spiritual and intellectual wellness. In contrast, transactional leadership that is typified by rewards and consequences was positively related to both outcomes. The results also confirmed that continuance commitment, which is associated with an employee’s need to stay with an organization due to benefits or lack of alternatives, moderated the relationship between leadership (transactional and transformational) and wellness. These results challenge the efficacy of transformational leadership in a Caribbean policing context and suggest that leadership may be contextual when examining its effect on commitment and wellness.",
         "date_scraped": "2026-06-14T23:12:28.646892",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 92
+            "chinese_summary": "本文采用混合方法研究加勒比地区小型警察机构中变革型与交易型领导对组织承诺和健康的影响。对269名警察进行问卷调查，并对12名进行半结构化访谈。定量分析表明，变革型领导与情感承诺、规范承诺及精神、智力健康呈负相关；而交易型领导（基于奖惩）与这些结果正相关。持续承诺调节了领导类型与健康的关系。研究挑战变革型领导在该情境下的有效性，强调领导风格的背景依赖性。",
+            "core_factors": "领导风格（变革型与交易型）对员工承诺和健康的影响，非传统金融因子。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137759281",
-        "title_en": "[OpenAlex Paper] Une \u00e9tude a posteriori de la construction de l\u2019intention entrepreneuriale chez les entrepreneurs agricoles d\u2019Afrique subsaharienne",
+        "title_en": "[OpenAlex Paper] Une étude a posteriori de la construction de l’intention entrepreneuriale chez les entrepreneurs agricoles d’Afrique subsaharienne",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2025-0-page-I150?lang=fr",
         "excerpt_en": "The literature on entrepreneurial intention has mostly examined the factors capable of predicting entrepreneurial action, and rarely those that actually led to it. This research therefore focuses on the factors that favored the transition to entrepreneurial action, in the specific context of Sub-Saharan Africa, and within the specific sector of agriculture. Using two embedded case studies, and within a comprehensive approach, we examine the ex-post influence of the 3 components of the theory of planned behavior on the entrepreneurial decision. Social norms are the least influential component, due to the lack of positive recognition for entrepreneurs and agriculture. Personal attitude, a favorable component, highlights the roles of family and academic education. Finally, the behavioral control component positively influences the transition to actio through preparation and extended stay in the informal mode, which turns out to be a genuine strategic choice.",
         "date_scraped": "2026-06-14T23:12:28.646902",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 93
+            "chinese_summary": "本文基于计划行为理论，通过嵌入式案例研究，分析了撒哈拉以南非洲农业创业者从创业意向到实际创业行动的影响因素。研究发现，社会规范对创业决策影响最小，因为创业和农业缺乏正面认可；个人态度受家庭和学术教育影响较大，是积极因素；行为控制通过准备和在非正式模式中的长期经验积极促进实际行动，这种非正式模式被视为一种战略选择。",
+            "core_factors": "计划行为理论的三要素：个人态度、社会规范和行为控制。具体而言，个人态度（家庭和学术教育的影响）和行为控制（准备与非正式长期经验）是关键驱动因素。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7153402517",
-        "title_en": "[OpenAlex Paper] Le projet design comme moyen de stimuler l\u2019intention entrepreneuriale",
+        "title_en": "[OpenAlex Paper] Le projet design comme moyen de stimuler l’intention entrepreneuriale",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I165?lang=fr",
         "excerpt_en": "Entrepreneurship is a complex process initiated by an intention that leads to business creation. In Tunisia, it plays an essential role in the employability of young graduates and contributes to economic growth. Design, a creative discipline based on active project pedagogy, provides fertile ground for innovation and entrepreneurship. This research examines the extent to which project-based pedagogy in design and the ESSTED ecosystem foster the emergence of entrepreneurial intention. The study adopts a qualitative exploratory approach, based on semi-structured interviews with ten graduates who became entrepreneurs, supplemented by a thematic analysis. The results reveal internal and external factors influencing this intention. The experience of institutional projects, structured around Design Thinking and project-based pedagogy, appears as a major lever for developing the skills, attitudes, and aptitudes necessary for entrepreneurship. JEL Codes : A22, O35, M12, M14",
         "date_scraped": "2026-06-14T23:12:28.646913",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 94
+            "chinese_summary": "本文探讨了基于设计思维的项目教学法如何促进突尼斯年轻毕业生的创业意图。研究采用定性方法，通过半结构化访谈和主题分析，发现设计项目经验与创业意愿正相关，内部因素（如技能、态度）和外部因素（如生态系统支持）均起重要作用。结论强调设计项目教学是培养创业能力的关键杠杆。",
+            "core_factors": "本文与量化交易无关，未提出交易因子或策略。",
+            "replication_parameters": "原文未详细说明。",
+            "performance_metrics": "原文摘要未提供具体回测数据。",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137390646",
         "title_en": "[OpenAlex Paper] Exploring the Entrepreneurial Intentions of Academic Inventors in an Emerging Context: The Case of Morocco",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2025-0-page-I153?lang=fr",
-        "excerpt_en": "This study investigates the entrepreneurial intentions of academic inventors in Morocco, an emerging economy where the establishment of university-based ventures remains exceptionally rare, despite a notable increase in patenting activity within Moroccan universities over the past decade. Based on 16 semi-structured interviews, the research applies thematic content analysis (TCA) to identify the key factors that shape these intentions. The findings highlight that, beyond legal, financial, and structural challenges, inventors\u2019 perceptions and beliefs about the business world, their academic roles, and their professional identities deeply influence entrepreneurial intentions. In particular, those identified as \u201cunintentional inventors\u201d demonstrate a strong emotional commitment to their academic mission, hold ambiguous or conflicting relationships with money, and perceive entrepreneurship as fundamentally incompatible with their professional roles. JEL Codes: L26, O31, O31, O34.",
+        "excerpt_en": "This study investigates the entrepreneurial intentions of academic inventors in Morocco, an emerging economy where the establishment of university-based ventures remains exceptionally rare, despite a notable increase in patenting activity within Moroccan universities over the past decade. Based on 16 semi-structured interviews, the research applies thematic content analysis (TCA) to identify the key factors that shape these intentions. The findings highlight that, beyond legal, financial, and structural challenges, inventors’ perceptions and beliefs about the business world, their academic roles, and their professional identities deeply influence entrepreneurial intentions. In particular, those identified as “unintentional inventors” demonstrate a strong emotional commitment to their academic mission, hold ambiguous or conflicting relationships with money, and perceive entrepreneurship as fundamentally incompatible with their professional roles. JEL Codes: L26, O31, O31, O34.",
         "date_scraped": "2026-06-14T23:12:28.646923",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 95
+            "chinese_summary": "本研究探讨了新兴经济体摩洛哥的学术发明家创业意愿。尽管过去十年摩洛哥大学专利申请显著增加，但大学衍生企业仍然极为罕见。基于16个半结构化访谈和主题内容分析，研究发现，除了法律、财务和结构挑战外，发明家对商业世界的认知、信念、学术角色认同和专业身份深刻影响其创业意愿。特别是“非故意发明家”对学术使命有强烈情感承诺，对金钱关系模糊或冲突，并认为创业与职业角色根本不相容。",
+            "core_factors": "创业意愿的核心驱动因素包括：对商业世界的认知和信念、对学术角色的认同、专业身份冲突、对金钱的态度、法律与结构障碍。",
+            "replication_parameters": "原文未详细说明（定性研究，无定量参数或频率）。",
+            "performance_metrics": "原文摘要未提供具体回测数据（非交易策略研究）。",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7137519157",
         "title_en": "[OpenAlex Paper] The Enlightenment of an Entrepreneur: A Multidisciplinary Exploration of Management, Psychology and Economic Theology",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I157?lang=fr",
-        "excerpt_en": "This conceptual paper explores how Economic Theology\u2019s ideas of calling, oikonomia, and entrepreneurship can enhance entrepreneurs\u2019 ability to navigate sustainability transitions. Integrating concepts from various disciplines, it reimagines entrepreneurship as an iterative learning process that addresses societal challenges. The paper analyses existing Religion of Work theories, providing societal, psychological, and anthropological insights. It elucidates the concept of calling in entrepreneurship, suggesting that work can have transcendent meaning and purpose. Additionally, it examines boundaryless careers and the significance of work, portraying entrepreneurship as a profession with humanitarian and spiritual dimensions. The paper outlines fundamental beliefs and frameworks for societal contribution through entrepreneurship, emphasizing the individual-in-society perspective. It advocates for entrepreneurs as moral agents aligned with community values and proposes a shift from viewing economic actions as mere resource allocation to recognizing entrepreneurial action as an expression of human agency. JEL Codes: B5",
+        "excerpt_en": "This conceptual paper explores how Economic Theology’s ideas of calling, oikonomia, and entrepreneurship can enhance entrepreneurs’ ability to navigate sustainability transitions. Integrating concepts from various disciplines, it reimagines entrepreneurship as an iterative learning process that addresses societal challenges. The paper analyses existing Religion of Work theories, providing societal, psychological, and anthropological insights. It elucidates the concept of calling in entrepreneurship, suggesting that work can have transcendent meaning and purpose. Additionally, it examines boundaryless careers and the significance of work, portraying entrepreneurship as a profession with humanitarian and spiritual dimensions. The paper outlines fundamental beliefs and frameworks for societal contribution through entrepreneurship, emphasizing the individual-in-society perspective. It advocates for entrepreneurs as moral agents aligned with community values and proposes a shift from viewing economic actions as mere resource allocation to recognizing entrepreneurial action as an expression of human agency. JEL Codes: B5",
         "date_scraped": "2026-06-14T23:12:28.646933",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 96
+            "chinese_summary": "本文是一篇概念性论文，跨学科探索了经济神学中的召唤、经济学与创业等概念如何增强企业家应对可持续转型的能力。通过整合管理学、心理学与经济神学，将创业重新构想为应对社会挑战的迭代学习过程。论文分析了现有的“工作宗教”理论，从社会、心理和人类学角度阐释了创业中的召唤概念，认为工作具有超越性的意义和目的。此外，探讨了无边界职业和工作意义，将创业描绘为具有人道和精神维度的职业。论文强调企业家作为与社区价值观一致的道德代理，主张将经济行动从资源分配转向人类能动性的表达。JEL代码：B5。",
+            "core_factors": "无量化交易因子",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7160491385",
         "title_en": "[OpenAlex Paper] Lipid Nanoparticle-mediated siRNA Delivery Targeting TERT for Glioblastoma Treatment",
         "source_url": "https://knowledge.lancashire.ac.uk/id/eprint/59253/2/Thesis%20Submission%20Form_Hazare_Ouarti_2026.docx",
-        "excerpt_en": "Glioblastoma (GBM) is the most aggressive and treatment-resistant primary brain tumour, with a dismal 5-year survival rate of only 3\u20136%. Despite advances in surgical resection, chemotherapy, and radiotherapy. The poor prognosis of GBM is largely attributed to its highly infiltrative nature and the ongoing challenge of delivering therapeutic agents across the blood-brain barrier (BBB) while minimizing systemic toxicity and off-target effects. Telomerase reverse transcriptase (TERT) is frequently upregulated in GBM and plays a critical role in tumour cell immortality and resistance to apoptosis, making it a compelling target for gene-silencing strategies. Small interfering RNA (siRNA) has emerged as a promising therapeutic modality for specific gene knockdown; however, its clinical application is limited by rapid degradation in biological fluids, poor cellular uptake, and inefficient endosomal escape. Recent advances in lipid nanoparticle (LNP) technology have provided a robust platform for the delivery of nucleic acids, including siRNA, offering enhanced stability, biocompatibility, and efficient transfection. LNPs, typically less than 100 nm in diameter, can encapsulate siRNA, protect it from enzymatic degradation, and facilitate its transport across the BBB via endocytosis, thereby improving delivery to tumour cells. In this study, we investigated the therapeutic potential of LNP-encapsulated siRNA targeting TERT in GBM cell line. LNP-siRNA TERT complexes were synthesized and characterized for size, encapsulation efficiency, and release kinetics. GBM cell lines were treated with LNP-siRNA TERT, and gene silencing efficacy was assessed using quantitative RT-PCR and Western blot analysis. Cell viability and apoptosis were evaluated using MTT assay and immunofluorescence staining. Our results demonstrate that LNP-mediated delivery of siRNA TERT leads to robust and specific knockdown of TERT mRNA and protein levels in GBM cells. This gene silencing was associated with significant reductions in cell viability, indicating effective disruption of TERT-driven oncogenic processes. Encapsulation and release studies revealed that LNPs provided sustained siRNA delivery, with maximal gene silencing and cytotoxic effects observed at 48 hours post-treatment, suggesting a potential window of saturation and optimal therapeutic impact. In summary, the findings highlight the potential of LNP-based siRNA delivery systems to overcome the major barriers associated with RNAi therapeutics in GBM, including instability, poor cellular uptake, and limited BBB penetration. Targeted silencing of TERT via LNP-encapsulated siRNA offers a promising approach for the development of more effective and specific therapies for GBM, with the potential to improve patient outcomes.",
+        "excerpt_en": "Glioblastoma (GBM) is the most aggressive and treatment-resistant primary brain tumour, with a dismal 5-year survival rate of only 3–6%. Despite advances in surgical resection, chemotherapy, and radiotherapy. The poor prognosis of GBM is largely attributed to its highly infiltrative nature and the ongoing challenge of delivering therapeutic agents across the blood-brain barrier (BBB) while minimizing systemic toxicity and off-target effects. Telomerase reverse transcriptase (TERT) is frequently upregulated in GBM and plays a critical role in tumour cell immortality and resistance to apoptosis, making it a compelling target for gene-silencing strategies. Small interfering RNA (siRNA) has emerged as a promising therapeutic modality for specific gene knockdown; however, its clinical application is limited by rapid degradation in biological fluids, poor cellular uptake, and inefficient endosomal escape. Recent advances in lipid nanoparticle (LNP) technology have provided a robust platform for the delivery of nucleic acids, including siRNA, offering enhanced stability, biocompatibility, and efficient transfection. LNPs, typically less than 100 nm in diameter, can encapsulate siRNA, protect it from enzymatic degradation, and facilitate its transport across the BBB via endocytosis, thereby improving delivery to tumour cells. In this study, we investigated the therapeutic potential of LNP-encapsulated siRNA targeting TERT in GBM cell line. LNP-siRNA TERT complexes were synthesized and characterized for size, encapsulation efficiency, and release kinetics. GBM cell lines were treated with LNP-siRNA TERT, and gene silencing efficacy was assessed using quantitative RT-PCR and Western blot analysis. Cell viability and apoptosis were evaluated using MTT assay and immunofluorescence staining. Our results demonstrate that LNP-mediated delivery of siRNA TERT leads to robust and specific knockdown of TERT mRNA and protein levels in GBM cells. This gene silencing was associated with significant reductions in cell viability, indicating effective disruption of TERT-driven oncogenic processes. Encapsulation and release studies revealed that LNPs provided sustained siRNA delivery, with maximal gene silencing and cytotoxic effects observed at 48 hours post-treatment, suggesting a potential window of saturation and optimal therapeutic impact. In summary, the findings highlight the potential of LNP-based siRNA delivery systems to overcome the major barriers associated with RNAi therapeutics in GBM, including instability, poor cellular uptake, and limited BBB penetration. Targeted silencing of TERT via LNP-encapsulated siRNA offers a promising approach for the development of more effective and specific therapies for GBM, with the potential to improve patient outcomes.",
         "date_scraped": "2026-06-14T23:12:28.646957",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 97
+            "chinese_summary": "该论文研究了脂质纳米颗粒（LNP）递送靶向端粒酶逆转录酶（TERT）的小干扰RNA（siRNA）用于治疗胶质母细胞瘤（GBM）。实验合成了LNP-siRNA TERT复合物，在GBM细胞系中检测到TERT mRNA和蛋白水平显著降低，细胞活力下降，表明基因沉默有效。结论认为LNP-siRNA TERT有望克服GBM治疗中的血脑屏障和递送难题，为开发新疗法提供基础。",
+            "core_factors": "无交易因子；核心逻辑为利用脂质纳米颗粒递送siRNA沉默TERT基因以抑制肿瘤细胞增殖。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     },
     {
         "id": "openalex_W7153396949",
-        "title_en": "[OpenAlex Paper] M\u00e9canismes internes de gouvernance et internationalisation : quelles le\u00e7ons pour les moyennes entreprises \u00e0 capitaux camerounais ?",
+        "title_en": "[OpenAlex Paper] Mécanismes internes de gouvernance et internationalisation : quelles leçons pour les moyennes entreprises à capitaux camerounais ?",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I164?lang=fr",
-        "excerpt_en": "The objective of this study is to identify the effect of internal governance mechanisms on the internationalization decisions decision of medium-sized enterprises in Cameroon. To achieve this, data were collected from a survey of 136 medium-sized enterprises located in the Littoral and Central regions between 2017 and 2020. Analysis of these data using Sargan tests, autocorrelation tests and generalized method of moments (GMM) regression revealed that the presence of independent external directors, board size, and dual board structure positively and significantly influence the international development of medium-sized enterprises in Cameroon. Conversely, capital concentration and the presence of institutional investors do not affect the international expansion decisions of the companies in the sample. These results corroborate those of Fredrich et al. (2022) and Bu\u017eavait\u0117 and Korsakien\u0117 (2022), and confirm the contribution of board characteristics to the internationalization decision-making of companies in Cameroon JEL Codes : G30, G32, L25",
+        "excerpt_en": "The objective of this study is to identify the effect of internal governance mechanisms on the internationalization decisions decision of medium-sized enterprises in Cameroon. To achieve this, data were collected from a survey of 136 medium-sized enterprises located in the Littoral and Central regions between 2017 and 2020. Analysis of these data using Sargan tests, autocorrelation tests and generalized method of moments (GMM) regression revealed that the presence of independent external directors, board size, and dual board structure positively and significantly influence the international development of medium-sized enterprises in Cameroon. Conversely, capital concentration and the presence of institutional investors do not affect the international expansion decisions of the companies in the sample. These results corroborate those of Fredrich et al. (2022) and Bužavaitė and Korsakienė (2022), and confirm the contribution of board characteristics to the internationalization decision-making of companies in Cameroon JEL Codes : G30, G32, L25",
         "date_scraped": "2026-06-14T23:12:28.646969",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 98
+            "chinese_summary": "本研究旨在识别内部治理机制对喀麦隆中小企业国际化决策的影响。通过对2017至2020年间位于沿海和中部地区的136家中小企业进行问卷调查，并采用Sargan检验、自相关检验和广义矩估计（GMM）回归分析数据，发现独立外部董事的存在、董事会规模以及双重董事会结构对企业的国际化发展具有显著正向影响。相反，资本集中度和机构投资者的存在并未影响样本企业的国际扩张决策。这些结果与Fredrich等人（2022）以及Bužavaitė和Korsakienė（2022）的研究一致，证实了董事会特征对喀麦隆企业国际化决策的贡献。",
+            "core_factors": "独立外部董事比例、董事会规模、双重董事会结构",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 2
         }
     },
     {
         "id": "openalex_W7140018608",
-        "title_en": "[OpenAlex Paper] L\u2019enchantement de la planification territoriale par le design fiction : les cas de Grand Paris et Grand Londres",
+        "title_en": "[OpenAlex Paper] L’enchantement de la planification territoriale par le design fiction : les cas de Grand Paris et Grand Londres",
         "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I162?lang=fr",
-        "excerpt_en": "This article draws on Rapha\u00eble Bidault-Waddington\u2019s design fiction work on the future of Greater Paris, as well as other speculative works, to explore the growing influence of fictional speculation in territorial planning and innovation. The analysis focuses on the case of Greater Paris, examining how prospective narratives and artistic imaginaries can shape urban development strategies and generate public support. A comparison with the imaginary of Greater London sheds light on this phenomenon. The article highlights the role of artists and creative approaches in energizing institutional thinking and enriching public debate on the future of territories. In addition, it theorizes the concept of \u201cdesign ficthinking\u201d, the integration of design fiction within design thinking to optimize ideation and prototyping and insert fiction into institutional thinking. Finally, this text highlights the importance of storytelling and enchantment in a context of disenchantment to mobilize actors and give meaning to major collective projects. JEL Codes: O30, O36",
+        "excerpt_en": "This article draws on Raphaële Bidault-Waddington’s design fiction work on the future of Greater Paris, as well as other speculative works, to explore the growing influence of fictional speculation in territorial planning and innovation. The analysis focuses on the case of Greater Paris, examining how prospective narratives and artistic imaginaries can shape urban development strategies and generate public support. A comparison with the imaginary of Greater London sheds light on this phenomenon. The article highlights the role of artists and creative approaches in energizing institutional thinking and enriching public debate on the future of territories. In addition, it theorizes the concept of “design ficthinking”, the integration of design fiction within design thinking to optimize ideation and prototyping and insert fiction into institutional thinking. Finally, this text highlights the importance of storytelling and enchantment in a context of disenchantment to mobilize actors and give meaning to major collective projects. JEL Codes: O30, O36",
         "date_scraped": "2026-06-14T23:12:28.646978",
         "source": "OpenAlex",
         "ai_analysis": {
-            "chinese_summary": "\u8be5GitHub\u9879\u76ee\uff08\u2b5028\u661f\uff09\u590d\u73b0\u4e86\u8bba\u6587\u300aForest Through the Trees: Building Cross-Sections of Stock Returns\u300b\uff0c\u4f7f\u7528Python\u521b\u5efa\u8d44\u4ea7\u622a\u9762\u4ee5\u68c0\u9a8c\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002\u901a\u8fc7\u6784\u9020\u591a\u7a7a\u7ec4\u5408\u6216\u7279\u5f81\u7ec4\u5408\uff0c\u65e8\u5728\u9a8c\u8bc1\u8d44\u4ea7\u5b9a\u4ef7\u6a21\u578b\u4e2d\u56e0\u5b50\u7684\u89e3\u91ca\u529b\u3002\u9879\u76ee\u53ef\u80fd\u6d89\u53ca\u4e3b\u6210\u5206\u5206\u6790\uff08PCA\uff09\u6216\u805a\u7c7b\u65b9\u6cd5\u751f\u6210\u5408\u6210\u8d44\u4ea7\uff0c\u5e76\u5229\u7528\u622a\u9762\u56de\u5f52\u8bc4\u4f30\u56e0\u5b50\u8f7d\u8377\u3002\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u6570\u636e\u9891\u7387\u6216\u56de\u6d4b\u7ec6\u8282\uff0c\u4f46\u4ee3\u7801\u5b9e\u73b0\u4e3a\u7814\u7a76\u8005\u63d0\u4f9b\u4e86\u53ef\u590d\u73b0\u7684\u57fa\u51c6\u6846\u67b6\u3002\u6574\u4f53\u4e0a\uff0c\u8be5\u9879\u76ee\u4e3a\u56e0\u5b50\u6a21\u578b\u68c0\u9a8c\u63d0\u4f9b\u4e86\u5b9e\u8df5\u5de5\u5177\uff0c\u4f46\u76f4\u63a5\u5e94\u7528\u4e8e\u5b9e\u76d8\u4ea4\u6613\u9700\u989d\u5916\u8c03\u6574\u53c2\u6570\u4e0e\u98ce\u9669\u63a7\u5236\u3002",
-            "core_factors": "\u57fa\u4e8e\u80a1\u7968\u6536\u76ca\u7387\u7684\u622a\u9762\u7279\u5f81\u6784\u9020\u7684\u5408\u6210\u8d44\u4ea7\uff08\u5982\u901a\u8fc7PCA\u6216\u805a\u7c7b\u5f97\u5230\u7684\u56e0\u5b50\u6a21\u62df\u7ec4\u5408\uff09\uff0c\u7528\u4e8e\u9a8c\u8bc1\u591a\u56e0\u5b50\u6a21\u578b\u7684\u6709\u6548\u6027\u3002",
-            "replication_parameters": "\u539f\u6587\u672a\u8be6\u7ec6\u8bf4\u660e\uff1b\u53ef\u80fd\u6d89\u53ca\u6536\u76ca\u7387\u6570\u636e\u9891\u7387\uff08\u5982\u65e5\u5ea6\uff09\u3001\u8d44\u4ea7\u6570\u91cf\u3001\u56e0\u5b50\u6570\u91cf\u53ca\u56de\u6d4b\u533a\u95f4\u7b49\u53c2\u6570\uff0c\u5177\u4f53\u9700\u53c2\u8003\u539f\u59cb\u8bba\u6587\u3002",
-            "performance_metrics": "\u539f\u6587\u6458\u8981\u672a\u63d0\u4f9b\u5177\u4f53\u56de\u6d4b\u6570\u636e\u3002",
-            "practical_score": 99
+            "chinese_summary": "本文探讨了设计虚构（design fiction）在领土规划中的运用，主要基于Raphaële Bidault-Waddington对“大巴黎”未来的设计虚构工作。研究指出，前瞻性叙事和艺术想象能够塑造城市发展战略并获得公众支持，并通过与“大伦敦”想象的比较进行阐释。文章强调了艺术家和创意方法在激发机构思维、丰富公共辩论中的作用，并提出“设计虚构思维”（design ficthinking）概念，将设计虚构融入设计思维以优化构思和原型制作。最后，文章强调了在祛魅背景下，叙事和魅力对于动员行动者和赋予大型集体项目意义的重要性。",
+            "core_factors": "非量化金融论文，无核心交易因子。",
+            "replication_parameters": "原文未详细说明",
+            "performance_metrics": "原文摘要未提供具体回测数据",
+            "practical_score": 1
         }
     }
 ]
