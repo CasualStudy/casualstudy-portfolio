@@ -26,6 +26,10 @@
             <h2>System Locked</h2>
             <p>Commander Access Required</p>
             <input type="password" id="passcode-input" placeholder="Enter Token or Passcode" autofocus>
+            <div style="margin-top: 10px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <input type="checkbox" id="remember-token" style="cursor: pointer;">
+                <label for="remember-token" style="color: var(--text-secondary); font-size: 0.85rem; cursor: pointer;">Remember Token</label>
+            </div>
             <button id="unlock-btn" class="btn primary-btn">Authenticate</button>
             <p id="error-msg" class="error-msg"></p>
         </div>
@@ -79,7 +83,7 @@
         </main>
     </div>
 
-    <script src="quant-admin.js?v=2"></script>
+    <script src="quant-admin.js?v=3"></script>
     <script>
         lucide.createIcons();
     </script>

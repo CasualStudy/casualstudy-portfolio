@@ -12,12 +12,29 @@ document.addEventListener('DOMContentLoaded', () => {
     let allPapers = [];
     let currentToken = '';
 
+    // Check for saved token
+    const savedToken = localStorage.getItem('quant_commander_token');
+    if (savedToken) {
+        passcodeInput.value = savedToken;
+        const rememberCheckbox = document.getElementById('remember-token');
+        if (rememberCheckbox) rememberCheckbox.checked = true;
+    }
+
     // Mock Passcode logic
     // We will accept the user's personal passcode or a 'ghp_' token.
     function authenticate() {
         const val = passcodeInput.value.trim();
         if (val === '0402wdz' || val.startsWith('ghp_')) {
             currentToken = val;
+            
+            // Save or clear from localStorage
+            const rememberCheckbox = document.getElementById('remember-token');
+            if (rememberCheckbox && rememberCheckbox.checked) {
+                localStorage.setItem('quant_commander_token', currentToken);
+            } else {
+                localStorage.removeItem('quant_commander_token');
+            }
+
             errorMsg.textContent = '';
             lockScreen.classList.add('hidden');
             setTimeout(() => {
