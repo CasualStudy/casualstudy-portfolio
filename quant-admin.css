@@ -1,0 +1,199 @@
+/* Lock Screen */
+.lock-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px) saturate(2);
+    -webkit-backdrop-filter: blur(50px) saturate(2);
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.lock-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.lock-box {
+    text-align: center;
+    padding: 3rem;
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lock-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.lock-box input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: var(--radius-md);
+    border: var(--glass-border);
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--text-primary);
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    font-family: monospace;
+    transition: var(--transition);
+}
+
+.lock-box input:focus {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.error-msg {
+    color: #ff3b30;
+    font-size: 0.85rem;
+    height: 20px;
+}
+
+/* Dashboard Layout */
+.dashboard-content {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.dashboard-content.hidden {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--text-primary);
+    color: #fff;
+}
+
+/* Quant Paper Card */
+.quant-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quant-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.quant-source-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-github { background: #24292e; color: white; }
+.badge-arxiv { background: #b31b1b; color: white; }
+.badge-openalex { background: #00875a; color: white; }
+
+.quant-score {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.quant-score span {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.quant-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.quant-section {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+.quant-section h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.quant-section h4 i {
+    width: 14px;
+    height: 14px;
+}
+
+/* Replicate Button */
+.replicate-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 14px;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: linear-gradient(135deg, #0071e3, #45b1ff);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 113, 227, 0.3);
+    transition: var(--transition);
+}
+
+.replicate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 113, 227, 0.4);
+    background: linear-gradient(135deg, #0077ed, #5ac0ff);
+}

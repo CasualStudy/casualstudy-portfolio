@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classified - Quant Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quant-admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Rich background wallpaper -->
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Lock Screen Overlay -->
+    <div id="lock-screen" class="lock-screen active">
+        <div class="lock-box glass-panel">
+            <i data-lucide="lock" class="lock-icon"></i>
+            <h2>System Locked</h2>
+            <p>Commander Access Required</p>
+            <input type="password" id="passcode-input" placeholder="Enter Token or Passcode" autofocus>
+            <button id="unlock-btn" class="btn primary-btn">Authenticate</button>
+            <p id="error-msg" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Main Dashboard (Hidden by default) -->
+    <div id="dashboard-content" class="dashboard-content hidden">
+        <nav class="glass-nav">
+            <div class="nav-content">
+                <span class="logo" style="display: flex; align-items: center; gap: 8px;"><i data-lucide="terminal"></i> Quant Hub Admin</span>
+                <div class="nav-links">
+                    <span id="stats-total" class="stat-badge glass-panel" style="padding: 5px 15px; border-radius: 20px; font-weight: 500;">Papers: 0</span>
+                    <button id="lock-sys-btn" class="btn glass-btn" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Lock</button>
+                </div>
+            </div>
+        </nav>
+
+        <main style="padding-top: 100px; padding-bottom: 50px; max-width: 1200px; margin: 0 auto; padding-inline: 5%;">
+            <div class="dashboard-header">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Intelligence Feed</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">Latest academic papers, GitHub replications, and SSRN factors.</p>
+                
+                <div class="filters glass-panel" style="display: flex; gap: 10px; padding: 10px; border-radius: 20px; margin-bottom: 30px;">
+                    <button class="filter-btn active" data-source="All">All</button>
+                    <button class="filter-btn" data-source="GitHub">GitHub Repo</button>
+                    <button class="filter-btn" data-source="arXiv">arXiv Paper</button>
+                    <button class="filter-btn" data-source="OpenAlex">SSRN/OpenAlex</button>
+                </div>
+            </div>
+
+            <div class="grid quant-grid" id="papers-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px;">
+                <!-- Cards injected by JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="quant-admin.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
