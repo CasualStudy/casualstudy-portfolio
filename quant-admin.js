@@ -345,6 +345,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             lucide.createIcons();
         });
+    }   // end if (fetchMoreBtn)
+
     // OpenAlex Deep Scan button
     const openalexDeepBtn = document.getElementById('openalex-deep-btn');
     if (openalexDeepBtn) {
