@@ -21,14 +21,15 @@
     
     <nav class="glass-nav" id="main-nav">
         <div class="nav-content">
-            <a href="#" class="logo">CasualStudy023</a>
+            <a href="#" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
             <div class="nav-links">
 
-                <a href="#projects">Projects</a>
-                <a href="#analysis">Analysis</a>
+                <a href="#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <button id="lang-toggle" class="btn glass-btn" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中 / EN</button>
             </div>
             <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
-                <i data-lucide="twitter"></i> Follow
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
             </a>
         </div>
     </nav>
@@ -39,15 +40,15 @@
                 <div class="profile-avatar">
                     <img src="avatar.jpg" alt="CasualStudy023 Avatar" class="avatar-img">
                 </div>
-                <h1>Hello, I'm <span class="highlight">CasualStudy023</span></h1>
-                <p class="hero-desc">Sharing thoughts on tech, building cool projects, and diving deep into data analysis. Welcome to my digital space.</p>
+                <h1><span class="lang-text" data-en="Hello, I'm" data-zh="你好，我是">Hello, I'm</span> <span class="highlight lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</span></h1>
+                <p class="hero-desc lang-text" data-en="Sharing thoughts on tech, building cool projects, and diving deep into data analysis. Welcome to my digital space." data-zh="分享科技见解，构建有趣的项目，深入挖掘数据分析。欢迎来到我的数字空间。">Sharing thoughts on tech, building cool projects, and diving deep into data analysis. Welcome to my digital space.</p>
                 
                 <div class="hero-actions">
                     <a href="https://x.com/casualstudy023" target="_blank" class="btn primary-btn" id="hero-x-btn">
-                        <i data-lucide="twitter"></i> Read my X Posts
+                        <i data-lucide="twitter"></i> <span class="lang-text" data-en="Read my X Posts" data-zh="阅读我的推文">Read my X Posts</span>
                     </a>
                     <a href="#" target="_blank" class="btn glass-btn" id="hero-discord-btn">
-                        <i data-lucide="message-square"></i> Join Discord
+                        <i data-lucide="message-square"></i> <span class="lang-text" data-en="Join Discord" data-zh="加入 Discord">Join Discord</span>
                     </a>
                 </div>
             </div>
@@ -57,8 +58,8 @@
 
         <section id="projects" class="section-container">
             <div class="section-header">
-                <h2>Projects</h2>
-                <p>Things I've built and experimented with.</p>
+                <h2 class="lang-text" data-en="Projects" data-zh="项目展示">Projects</h2>
+                <p class="lang-text" data-en="Things I've built and experimented with." data-zh="我构建和尝试过的一些东西。">Things I've built and experimented with.</p>
             </div>
             <div class="grid projects-grid" id="projects-container">
                 <!-- Projects injected by JS -->
@@ -67,8 +68,8 @@
 
         <section id="analysis" class="section-container">
             <div class="section-header">
-                <h2>Data Analysis</h2>
-                <p>Insights derived from data.</p>
+                <h2 class="lang-text" data-en="Data Analysis" data-zh="数据分析">Data Analysis</h2>
+                <p class="lang-text" data-en="Insights derived from data." data-zh="从数据中得出的洞察。">Insights derived from data.</p>
             </div>
             <div class="grid analysis-grid" id="analysis-container">
                 <!-- Analysis injected by JS -->
@@ -78,7 +79,7 @@
 
     <footer class="glass-nav glass-footer" id="site-footer">
         <div class="footer-content">
-            <p>&copy; 2024 CasualStudy023. All rights reserved.</p>
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
             <div class="footer-socials">
                 <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
                     <i data-lucide="twitter"></i>
