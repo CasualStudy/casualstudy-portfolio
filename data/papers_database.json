@@ -571,5 +571,425 @@
             "replication_parameters": "Not specified",
             "performance_metrics": "No backtest data provided"
         }
+    },
+    {
+        "id": "arxiv_2606.12612v1",
+        "title_en": "[Academic Paper] The Mathematics of Heuristic Portfolio Optimization (HPO)",
+        "source_url": "http://arxiv.org/abs/2606.12612v1",
+        "excerpt_en": "Practitioners allocate capital with forecast-light rules such as equal weight, inverse volatility, risk parity, HRP, and return-adjusted HRP (RA-HRP). This paper develops \\emph{Heuristic Portfolio Optimization} (HPO): an information-restricted projection of the Markowitz/tangency solution onto a stable rule class. The implied-return principle, $\\mathbf{w}$ is maximum-Sharpe iff $\\mathbfμ_e \\propto \\mathbfΣ\\mathbf{w}$, gives closed-form optimality sets for leading heuristics and exposes the Schur-complement substitutions behind HRP. For RA-HRP, we introduce fixed-tree cluster-Sharpe recursion, unit-free HRP--RA-HRP interpolation, tangency conditions, conditional-risk splits, and pathwise/KL decompositions of weight distortion. First-order Sharpe calculus expresses the marginal value of return information as nodewise alphas against HRP and yields a linear KL trust budget. We formalize generic HPO maps, define the implied-return defect, prove that it equals squared Sharpe inefficiency, characterize tree-HPO coincidence by nodewise mass ratios, and give a bias--variance decomposition for estimated rules. Finally, HPO is embedded into Reinforcement Learning Portfolio Optimization (RLPO): every HPO map induces a deterministic stationary policy; static HPO is the $γ=0$ no-friction face of the Bellman problem; RA-HRP supplies a hierarchical policy prior; and dynamic improvement is warranted when continuation value exceeds myopic HPO defect plus frictions. A performance-difference identity prices the myopic value gap, gives an $\\varepsilon/(1-γ)$ myopia bound, and identifies nodewise alphas as policy-gradient coordinates of the hierarchical actor. Thus HPO is the static optimality layer and RLPO the dynamic control layer. The conditions are GRS-testable, extend to mean--CVaR and expected utility under ellipticity, and become Kelly-growth conditions in diffusion limits.",
+        "pub_date": "2026-06-10",
+        "date_scraped": "2026-06-15T03:14:39.917853",
+        "source": "arXiv",
+        "ai_analysis": {
+            "practical_score": 50,
+            "chinese_summary": "这篇论文提出了一种称为启发式投资组合优化（HPO）的理论框架，将实际中常用的投资组合规则（如等权重、风险平价等）与经典的马科维茨优化联系起来，并扩展到了强化学习投资组合优化（RLPO）。它提供了这些启发式规则的最优性条件和性能差异分解。",
+            "core_factors": "Heuristic portfolio construction (equal weight, risk parity, HRP, RA-HRP), implied-return principle, Schur-complement substitutions, cluster-Sharpe recursion",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7163720533",
+        "title_en": "[OpenAlex Paper] Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning",
+        "source_url": "https://arxiv.org/abs/2606.04574",
+        "excerpt_en": "This study aims to determine whether the application of Deep Reinforcement Learning (DRL) as a specialized execution overlay can enhance pair trading in highly volatile cryptocurrency markets. Although classical implementations of the strategy have proven successful in traditional equities, they frequently exhibit rigidity and suffer from severe divergence risks when applied to high-variance environments. To address this need, this research introduces novel concepts. To construct a robust system, we developed a hierarchical \"Filter-then-Rank\" pair selection methodology and a proprietary \"Fixed Risk, Adaptive Mean\" execution model. The system employs a Proximal Policy Optimization (PPO) agent with a Long Short-Term Memory (LSTM) layer to govern execution decisions within strict deterministic risk management boundaries. Evaluated on 1-hour interval data from the Binance USD-M Futures market, the optimized RL policy achieved an out-of-sample performance that substantially outperformed the heuristic baseline. A stationary circular block bootstrap robustness check confirms that the agent's risk-adjusted outperformance is statistically significant at the 10 percent level. Although falling marginally short of the stricter 5 percent threshold, this result highlights the extreme idiosyncratic variance characteristic of digital assets. Ultimately, this thesis contributes to the quantitative finance literature by introducing a hybrid architecture that combines statistical arbitrage with DRL execution policies. Furthermore, it delivers a novel framework for safe reinforcement learning via deterministic shielding, proving that anchoring a neural policy to statistically robust boundaries successfully mitigates severe divergence risks.",
+        "pub_date": "2026-06-03",
+        "date_scraped": "2026-06-15T03:14:41.495791",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "该论文提出了一种层次化的\"筛选-排序\"配对选择方法和\"固定风险、自适应均值\"执行模型，结合深度强化学习（PPO+LSTM）来优化加密货币市场的配对交易。在Binance USD-M期货1小时数据上，该策略显著优于启发式基线，并通过了10%显著性水平的稳健性检验。",
+            "core_factors": "层次化配对选择（Filter-then-Rank）、固定风险自适应均值执行模型、PPO+LSTM深度强化学习代理",
+            "replication_parameters": "加密货币期货（Binance USD-M），1小时间隔数据，层次化配对选择方法，PPO+LSTM执行策略，确定性风险管理边界",
+            "performance_metrics": "样本外表现显著优于启发式基线；风险调整后超额收益在10%水平上统计显著（圆形块自助法检验）。具体夏普比率或收益率未在摘要中提供。"
+        }
+    },
+    {
+        "id": "openalex_W7163551389",
+        "title_en": "[OpenAlex Paper] Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning",
+        "source_url": "https://doi.org/10.48550/arxiv.2606.04574",
+        "excerpt_en": "This study aims to determine whether the application of Deep Reinforcement Learning (DRL) as a specialized execution overlay can enhance pair trading in highly volatile cryptocurrency markets. Although classical implementations of the strategy have proven successful in traditional equities, they frequently exhibit rigidity and suffer from severe divergence risks when applied to high-variance environments. To address this need, this research introduces novel concepts. To construct a robust system, we developed a hierarchical \"Filter-then-Rank\" pair selection methodology and a proprietary \"Fixed Risk, Adaptive Mean\" execution model. The system employs a Proximal Policy Optimization (PPO) agent with a Long Short-Term Memory (LSTM) layer to govern execution decisions within strict deterministic risk management boundaries. Evaluated on 1-hour interval data from the Binance USD-M Futures market, the optimized RL policy achieved an out-of-sample performance that substantially outperformed the heuristic baseline. A stationary circular block bootstrap robustness check confirms that the agent's risk-adjusted outperformance is statistically significant at the 10 percent level. Although falling marginally short of the stricter 5 percent threshold, this result highlights the extreme idiosyncratic variance characteristic of digital assets. Ultimately, this thesis contributes to the quantitative finance literature by introducing a hybrid architecture that combines statistical arbitrage with DRL execution policies. Furthermore, it delivers a novel framework for safe reinforcement learning via deterministic shielding, proving that anchoring a neural policy to statistically robust boundaries successfully mitigates severe divergence risks.",
+        "pub_date": "2026-06-03",
+        "date_scraped": "2026-06-15T03:14:41.495813",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 72,
+            "chinese_summary": "本研究提出一种深度强化学习增强的加密货币动态多对交易策略。采用'过滤后排序'的配对选择方法和'固定风险、自适应均值'执行模型，PPO代理结合LSTM层在1小时Binance数据上回测，显著优于启发式基准。",
+            "core_factors": "Statistical arbitrage via pair trading enhanced by DRL execution overlay; core method: Proximal Policy Optimization with LSTM for execution decisions.",
+            "replication_parameters": "Cryptocurrency futures (Binance USD-M), 1-hour interval data, 'Filter-then-Rank' pair selection, rebalance frequency not explicitly stated.",
+            "performance_metrics": "Out-of-sample risk-adjusted performance substantially outperformed heuristic baseline; statistical significance at 10% level. No exact Sharpe or return figures reported."
+        }
+    },
+    {
+        "id": "openalex_W7163572011",
+        "title_en": "[OpenAlex Paper] Two-Stage Robust Game Trading Strategy for Multi-Park Integrated Energy Systems Considering Wind and PV Power Uncertainties",
+        "source_url": "https://doaj.org/article/4ab77e717d704527ba9e4d90bd93b8e3",
+        "excerpt_en": "[Objective] The widespread integration of renewable energy into multi-park integrated energy systems （MPIES） exacerbates supply-side fluctuations due to the intrinsic intermittency of renewable resources. These variations directly impact market operations and system stability， imposing dual challenges on market participants： managing uncertainties and ensuring equitable allocation of cooperative benefits.This paper proposes a two-stage robust Stackelberg game trading strategy for MPIES that accounts for uncertainties associated with wind and photovoltaic power.[Methods] First， a stochastic scenario generation method is adopted to construct an adjustable robust uncertainty set for wind and photovoltaic outputs based on multi-scenario weighting. Second， by leveraging strong duality theory and Karush-Kuhn-Tucker （KKT） conditions， the Stackelberg game between the operator and MPIES is reformulated as a mixed-integer linear programming （MILP） problem. Finally， a two-stage robust Stackelberg game model is established from a risk-response perspective， and the column-and-constraint generation （C&amp;CG） algorithm is used to iteratively solve the problem to generate the final trading strategy.[Results] Case studies verify that the proposed strategy enhances the risk-response capabilities of all market entities and reduces deviations in expected returns during the game process.[Conclusions] The proposed strategy achieves the synergistic integration of the Stackelberg game and robust optimization within a two-stage framework， effectively balancing risks and benefits under uncertainties， thereby improving overall decision-making quality and economic robustness of the system.",
+        "pub_date": "2026-06-01",
+        "date_scraped": "2026-06-15T03:14:41.495847",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "本文针对多园区综合能源系统中风电和光伏的不确定性，提出了一种两阶段鲁棒Stackelberg博弈交易策略。该方法通过随机场景生成和强对偶理论将博弈转化为混合整数线性规划问题，并用列与约束生成算法求解，旨在平衡风险与收益，提升系统的经济鲁棒性。",
+            "core_factors": "两阶段鲁棒Stackelberg博弈模型，基于随机场景加权的可调鲁棒不确定集，利用KKT条件和强对偶理论转化为MILP问题",
+            "replication_parameters": "资产类别：多园区综合能源系统（电力、热力等）；回溯期：未指定；调仓频率：未指定；交易标的：园区间能源交易。具体参数未详细说明。",
+            "performance_metrics": "案例研究表明该策略增强了所有市场参与者的风险应对能力，并减少了博弈过程中预期收益的偏差。未提供具体的夏普比率、最大回撤等量化指标。"
+        }
+    },
+    {
+        "id": "openalex_W7163125470",
+        "title_en": "[OpenAlex Paper] ML-Augmented High-Frequency Grid Trading: Strategy-Embedded Labeling, Soft Martingale Execution, and Drawdown Dichotomy Quantification",
+        "source_url": "https://doi.org/10.3390/a19060442",
+        "excerpt_en": "Grid trading is a rule-based Forex execution scheme that places a ladder of buy and sell limit orders at fixed price increments, profiting from price oscillation without a directional forecast. To accelerate recovery, the scheme is commonly paired with Martingale lot scaling, a gambling strategy—distinct from the stochastic-process notion of the same name—that increases the lot size at each adverse price level. This combination achieves a high short-term hit rate but retains a non-zero probability of catastrophic drawdown, a pattern equivalent to the Gambler’s Ruin problem. Attempts to augment grid trading with supervised machine learning face a label-misalignment problem: the usual label “did the price rise or fall at horizon h?” does not capture the path-dependent payoff of a grid that may still profit after an initially adverse move. This paper presents the ML-Augmented High-Frequency Grid Trading System (AHFGTS) and reports three contributions. (i) Strategy-Embedded Labeling (SEL) derives each binary training label from a full forward simulation of the deployed grid over a 15 bar H1 (one-hour) horizon, so the training objective matches the execution objective. (ii) Soft Martingale execution replaces classical 2× doubling with ten sub-linearly scaled lot multipliers generated by linspace(1, 5, 10), cutting four-level cumulative exposure by 63% relative to 2× doubling. (iii) The Drawdown Dichotomy Ratio (DDR = Maximum Equity Drawdown/Maximum Balance Drawdown) is introduced as a scalar risk metric that, to our knowledge, is the first such metric for the gap between floating and realized risk in Martingale-family systems. A twelve-month out-of-sample evaluation on EUR/USD H1 (38 million ticks, 99% modeling quality, 1:500 leverage) produced 444 trades, a 65.77% win rate (z = 6.65, p &lt; 0.0001; Cohen’s h = 0.321), Profit Factor 2.85 (a 90–138% improvement over unfiltered grid baselines), and 442.6% net annual return; DDR was 5.72× (maximum equity drawdown, MED, of 79.97% vs. maximum balance drawdown, MBD, of 13.98%), quantifying the structural Martingale risk that persists after ML augmentation. The study evaluates a single currency pair under 1:500 offshore leverage and should be read as a methodological demonstration of SEL, Soft Martingale, and DDR rather than a universal performance claim.",
+        "pub_date": "2026-06-01",
+        "date_scraped": "2026-06-15T03:14:41.495903",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "提出了一种机器学习增强的高频网格交易系统（AHFGTS），采用策略嵌入标签（SEL）解决标签错位问题，用软马丁格尔执行降低风险暴露，并引入回撤二分比率（DDR）作为风险度量。在欧元/美元H1数据上回测，年回报442.6%，胜率65.77%。",
+            "core_factors": "网格交易策略结合机器学习预测（SEL标签）、软马丁格尔仓位缩放",
+            "replication_parameters": "外汇（EUR/USD），H1时间框架，15根K线预测 horizon，1:500杠杆，单货币对",
+            "performance_metrics": "444笔交易，胜率65.77%（z=6.65, p<0.0001），盈亏比2.85，年化回报442.6%，最大权益回撤79.97%，最大余额回撤13.98%，DDR=5.72"
+        }
+    },
+    {
+        "id": "openalex_W7164323743",
+        "title_en": "[OpenAlex Paper] A wavelet-enhanced dual-branch LipFormer with Hybrid-GRPO for robust algorithmic trading",
+        "source_url": "https://doi.org/10.1016/j.eswa.2026.133198",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-06-01",
+        "date_scraped": "2026-06-15T03:14:41.495911",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 50,
+            "chinese_summary": "提出了一种结合小波变换和改进LipFormer的双分支模型，并采用混合GRPO优化，用于算法交易。",
+            "core_factors": "基于小波增强的特征提取和双分支LipFormer模型的交易信号",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7163053048",
+        "title_en": "[OpenAlex Paper] Based on the Effectiveness of the MA10–MA50 Golden Cross Trading Strategy: Evidence from CATL",
+        "source_url": "https://doi.org/10.54254/2754-1169/2026.gt34107",
+        "excerpt_en": "This paper examines the effectiveness of a moving-average crossover rule based on the MA10–MA50 golden cross by using Contemporary Amperex Technology Co., Limited (CATL) as a single-stock case from China’s A-share market. Using daily data from 11 June 2018 to 31 December 2025 obtained from the CSMAR database, the study constructs a long-only timing strategy that holds CATL when the 10-day moving average is above the 50-day moving average and stays in cash otherwise. Signals are implemented with a one-day lag to avoid look-ahead bias. The strategy is evaluated against a buy-and-hold benchmark from the perspectives of cumulative return, annualized return, annualized volatility, maximum drawdown, Sharpe ratio, transaction-cost sensitivity, parameter robustness, and market-phase dependence. The results show that buy-and-hold delivers higher absolute return over the full sample, whereas the MA10–MA50 strategy provides materially lower volatility and a much smaller maximum drawdown. After introducing a one-way transaction cost of 0.1%, the strategy’s annualized return declines only slightly, while its risk-control advantage remains intact. Additional robustness tests indicate that medium-horizon moving-average combinations perform better than a short-horizon MA5–MA20 rule. Market-phase analysis further shows that the strategy is most valuable in bear markets, where it sharply reduces losses, but it is less competitive in strong bull markets. The evidence suggests that the MA10–MA50 rule is better understood as a risk-management tool than as a pure return-enhancement tool.",
+        "pub_date": "2026-06-01",
+        "date_scraped": "2026-06-15T03:14:41.495929",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 70,
+            "chinese_summary": "本文研究MA10-MA50金叉交易策略在CATL（宁德时代）单只股票上的有效性。策略为当10日均线上穿50日均线时买入持有，否则持有现金，采用日频数据并滞后一天执行。结果显示该策略在降低波动和最大回撤方面优于买入持有，更适合作为风险管理工具。",
+            "core_factors": "移动平均线交叉（MA10与MA50金叉）",
+            "replication_parameters": "资产类别：中国A股（CATL）；回溯期：10日和50日移动平均；再平衡频率：每日（信号触发时）；标的：单只股票",
+            "performance_metrics": "买入持有绝对收益更高，但MA10-MA50策略年化波动率和最大回撤显著降低。加入0.1%单边交易成本后年化收益小幅下降。报告了累计收益、年化收益、年化波动率、最大回撤和夏普比率等指标，具体数值未在摘要中给出。"
+        }
+    },
+    {
+        "id": "openalex_W7162760314",
+        "title_en": "[OpenAlex Paper] Financial asset price prediction and quantitative trading strategy optimization based on deep reinforcement learning",
+        "source_url": "https://doi.org/10.1007/s10791-026-10174-1",
+        "excerpt_en": "Predicting market movements and developing successful trading techniques is difficult due to the nonlinear dynamics and extreme volatility of financial markets. Conventional machine learning (ML) and deep learning (DL) methods, including LSTM (Long Short-Term Memory) and CNN (Convolutional Neural Networks), struggle with real-time decision-making under uncertainty. Traditional supervised forecasting approaches provide price direction signals but lack adaptability in dynamic markets. The objective is to improve the efficiency and precision of predictions and trades. The objective is to improve the efficiency and precision of predictions and trades by integrating deep reinforcement learning (DRL) with stable multi-agent decision optimization. A framework named Multi-Agent Proximal Policy Optimization with Stacked LSTM (MAPPO-SLSTM) is proposed, combining temporal sequence modeling with cooperative reinforcement learning to capture cross-asset dependencies. MAPPO-SLSTM employs a stacked LSTM architecture to encode sequential price signals and a multi-agent PPO scheme with a centralized critic to optimize portfolio-level actions in volatile environments. Historical OHLCV (Open, High, Low, Close, Volume) cryptocurrency data through minute-level granularity is utilized, ensuring sufficient interaction samples for reinforcement learning and convergence. Missing value imputation and Min–Max scaling are applied to normalize market data. Technical indicators, log returns, volatility measures, and dimensionality reduction through Principal Component Analysis (PCA) are incorporated to enrich market states. LSTM layers extract temporal features, the centralized critic evaluates joint policies, and decentralized actors execute optimized buy–hold–sell strategies across multiple assets. The results are evaluated using Python 3.10, with performance assessed through an accuracy of 0.946, and other metrics. The integration of SLSTM with multi-agent PPO establishes a robust framework for adaptive financial trading in highly volatile markets.",
+        "pub_date": "2026-05-29",
+        "date_scraped": "2026-06-15T03:14:41.495947",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 72,
+            "chinese_summary": "该论文提出了一种基于深度强化学习的金融资产价格预测与交易策略优化框架MAPPO-SLSTM，它结合了堆叠LSTM和多智能体近端策略优化（PPO）来捕捉跨资产依赖关系，并利用分钟级加密货币OHLCV数据进行实时交易决策。该模型通过集中式批评家和分布式执行器实现多资产组合的买卖持有策略，取得了94.6%的准确率。核心在于将时序建模与多智能体强化学习协同，以应对高度波动的市场环境。",
+            "core_factors": "Multi-agent deep reinforcement learning (MAPPO) with stacked LSTM for temporal feature extraction, using OHLCV data, technical indicators, log returns, volatility measures, and PCA reduction.",
+            "replication_parameters": "Cryptocurrency market, minute-level OHLCV data, PCA for dimensionality reduction, missing value imputation, Min-Max scaling. Specific lookback period and rebalance frequency not explicitly stated; likely each step is a minute. Universe: multiple crypto assets.",
+            "performance_metrics": "Accuracy of 0.946; other metrics not specified in abstract."
+        }
+    },
+    {
+        "id": "openalex_W7162687901",
+        "title_en": "[OpenAlex Paper] Bounded-Autonomy LLM Agents: A Structural Safety Architecture with a Live Algorithmic-Trading Case Study",
+        "source_url": "https://doi.org/10.21203/rs.3.rs-9829773/v1",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-28",
+        "date_scraped": "2026-06-15T03:14:41.495949",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 70,
+            "chinese_summary": "该论文提出了一种基于受限自主LLM代理的结构安全架构，并通过现场算法交易案例研究进行验证，展示了该架构在实际交易中的应用。",
+            "core_factors": "LLM代理结合受限自主性安全架构用于生成交易决策",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7163543504",
+        "title_en": "[OpenAlex Paper] Point-in-Time Backtesting of Momentum-Trend Equity Strategies: A Formal Bias Taxonomy, ATR Trailing Stop Analysis, and Investor Experience Metrics",
+        "source_url": "https://doi.org/10.20944/preprints202606.0436.v1",
+        "excerpt_en": "Systematic trend-following strategies applied to equity markets are widely studied, yet most reported performance statistics are non-reproducible in live trading. This paper makes three contributions. First, we introduce a formal taxonomy of look-ahead bias organised around point-in-time correctness: a strategy is point-in-time correct if, for every decision time t, its information set lies in the natural filtration Ft. Three bias classes — universe-membership contamination, price-data forward leakage, and stop-exit sequencing violations — are characterised as filtration breaches. Second, we formalise the Average True Range (ATR) trailing stop as a stochastic recurrence and codify its monotonic non-decreasing ratcheting property (Lemma 1), providing a structural per-trade loss bound. Third, we exhibit a closed-form construction (Theorem 2) of two return sequences with identical Sharpe ratio but arbitrarily divergent maximum consecutive negative-year run, establishing investor-experience metrics as independent optimisation objectives. We complement these contributions with an 18-year empirical study (2008–2025) on the NASDAQ-100 with reconstructed point-in-time index constituency (Class I compliant) and an acknowledged residual Class II exposure, applying combinatorially symmetric cross-validation (CSCV) to a 14-configuration ATR-multiplier grid. The grid exhibits a stop-multiplier-insensitive CAGR-flat region across k∈[3.5,7.0](CAGR 10.28–10.39%, net of Dutch progressive tax) and a uniform maximum consecutive negative-year run of 1 across all 14 configurations. The correlation-matrix eigenvalue spectrum of the grid is dominated by a single mode (λ1=13.91 of 14), yielding effective independent-test count Meff=1.09— a near-degeneracy that persists in a parallel grid with the regime classifier disabled (Appendix B), establishing the ATR multiplier as a structurally near-redundant parameter for this strategy class. The associated PBO = 0.933 is the expected consequence of this near-degeneracy under CSCV's maximum-selection rule. The plateau-level performance survives Bonferroni correction at both M=14 and Meff. The combined evidence supports a region-based interpretation of robust strategy parameters in preference to single-point optimisation.",
+        "pub_date": "2026-06-04",
+        "date_scraped": "2026-06-15T03:14:42.823246",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 85,
+            "chinese_summary": "本文研究点对点正确的动量趋势策略，使用ATR trailing stop在NASDAQ-100指数上回测（2008-2025），发现ATR乘数在3.5-7.0范围内CAGR稳定在10.28%-10.39%（税后），且最大连续负收益年数仅为1，策略参数在此区间内稳健。",
+            "core_factors": "趋势跟踪（momentum-trend）信号，结合ATR trailing stop止损机制。",
+            "replication_parameters": "资产类别：NASDAQ-100股指；回溯期：2008-2025年（18年）；ATR trailing stop乘数范围3.5-7.0；再平衡频率未明确指定。",
+            "performance_metrics": "CAGR约10.3%（荷兰累进税后），最大连续负收益年数为1，未报告夏普比率或最大回撤。"
+        }
+    },
+    {
+        "id": "openalex_W7162312164",
+        "title_en": "[OpenAlex Paper] Research on the Design and Consistency Verification of Deterministic Replay Mechanism for Event-Driven Engines in Quantization Backtesting Platforms",
+        "source_url": "https://doi.org/10.38007/nn.2026.050104",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-25",
+        "date_scraped": "2026-06-15T03:14:42.823341",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 35,
+            "chinese_summary": "该论文研究了量化回测平台中事件驱动引擎的确定性重放机制设计与一致性验证方法，旨在提高回测结果的可靠性和可重复性。虽未提出具体交易策略，但对回测系统架构有重要参考价值。",
+            "core_factors": "确定性重放机制、事件驱动引擎、一致性验证",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7162468099",
+        "title_en": "[OpenAlex Paper] A Cross-Framework Consensus Scoring System for US-Listed Equities: Methodology and Five-Year Backtest",
+        "source_url": "https://doi.org/10.5281/zenodo.20393517",
+        "excerpt_en": "This paper documents a deterministic, multi-framework scoring system that grades every US-listed operating equity against seven canonical investor philosophies: Warren Buffett, Benjamin Graham, Philip Fisher, Peter Lynch, Joel Greenblatt, Charles Munger, and Terry Smith. Each framework is implemented as a transparent pillar-weighted rubric that maps a stock's current fundamentals onto a 0 to 100 score, with hard cap deal-breakers applied where an investor's writing identifies explicit disqualifiers. Scores are translated into a five-level grade ladder (A+, A, B, C, D, F). Beyond the seven individual scores, we define a cross-framework consensus signal as the count of frameworks scoring a given stock at B+ or better. We evaluate the historical price performance of cohorts defined by their current consensus tier over a five-year lookback window, compared to the SPDR S&P 500 ETF (SPY). In the canonical cohort of stocks where all seven frameworks currently grade the company at B+ or better (n=47, drawn from a universe of approximately 3,085 stocks), we observe a median five-year price return that exceeds SPY's five-year return by 73.8 percentage points, with 85 percent of the cohort posting positive five-year returns. We disclose methodological limitations including survivorship and look-ahead bias, present per-framework standalone cohort results, and discuss why an ensemble of philosophically distinct lenses might select for business quality more robustly than any single lens. The methodology and scoring engine are fully documented in public source code; a public verdict API and per-ticker pages allow third parties to audit and reproduce any individual stock's score. This is a research artifact, not investment advice.",
+        "pub_date": "2026-05-25",
+        "date_scraped": "2026-06-15T03:14:42.823361",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 70,
+            "chinese_summary": "本文提出一种跨框架共识评分系统，基于七位著名投资者的理念对美股进行评分，并定义共识信号（多数框架评分B+以上）。回测显示，共识最高的47只股票五年收益中位数超过SPY 73.8个百分点。",
+            "core_factors": "多框架共识评分：基于七种经典投资哲学（巴菲特、格雷厄姆、费雪、林奇、格林布拉特、芒格、史密斯）的加权评分系统，共识信号为评分B+以上的框架数量。",
+            "replication_parameters": "US equities (approximately 3,085 stocks), rebalance frequency not specified (likely quarterly or annual), 5-year holding period, lookback window 5 years.",
+            "performance_metrics": "Median 5-year price return beats SPY by 73.8 percentage points; 85% of cohort has positive 5-year returns. No Sharpe or drawdown provided."
+        }
+    },
+    {
+        "id": "openalex_W7162426460",
+        "title_en": "[OpenAlex Paper] A Cross-Framework Consensus Scoring System for US-Listed Equities: Methodology and Five-Year Backtest",
+        "source_url": "https://doi.org/10.5281/zenodo.20393518",
+        "excerpt_en": "This paper documents a deterministic, multi-framework scoring system that grades every US-listed operating equity against seven canonical investor philosophies: Warren Buffett, Benjamin Graham, Philip Fisher, Peter Lynch, Joel Greenblatt, Charles Munger, and Terry Smith. Each framework is implemented as a transparent pillar-weighted rubric that maps a stock's current fundamentals onto a 0 to 100 score, with hard cap deal-breakers applied where an investor's writing identifies explicit disqualifiers. Scores are translated into a five-level grade ladder (A+, A, B, C, D, F). Beyond the seven individual scores, we define a cross-framework consensus signal as the count of frameworks scoring a given stock at B+ or better. We evaluate the historical price performance of cohorts defined by their current consensus tier over a five-year lookback window, compared to the SPDR S&P 500 ETF (SPY). In the canonical cohort of stocks where all seven frameworks currently grade the company at B+ or better (n=47, drawn from a universe of approximately 3,085 stocks), we observe a median five-year price return that exceeds SPY's five-year return by 73.8 percentage points, with 85 percent of the cohort posting positive five-year returns. We disclose methodological limitations including survivorship and look-ahead bias, present per-framework standalone cohort results, and discuss why an ensemble of philosophically distinct lenses might select for business quality more robustly than any single lens. The methodology and scoring engine are fully documented in public source code; a public verdict API and per-ticker pages allow third parties to audit and reproduce any individual stock's score. This is a research artifact, not investment advice.",
+        "pub_date": "2026-05-25",
+        "date_scraped": "2026-06-15T03:14:42.823379",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 85,
+            "chinese_summary": "该论文提出了一种基于七位知名投资者（巴菲特、格雷厄姆、费雪、林奇、格林布拉特、芒格、史密斯）理念的跨框架评分系统，用于对所有美国上市公司进行评级。通过统计各框架给出B+及以上评级的数量作为共识信号，构建投资组合，五年回测显示高共识股票组合的中位收益超过标普500 ETF达73.8个百分点。",
+            "core_factors": "跨框架共识信号：七个投资者哲学框架中给出B+及以上评级的计数。",
+            "replication_parameters": "资产类别：美国股票；宇宙：约3,085只美国上市运营公司；回顾期：五年；再平衡：未明确指定，但可能随基本面数据更新（季度）进行。",
+            "performance_metrics": "共识最高的组合（n=47）五年中位价格收益超出SPY 73.8个百分点，85%的股票获得正收益。"
+        }
+    },
+    {
+        "id": "openalex_W7162465728",
+        "title_en": "[OpenAlex Paper] &lt;p&gt;Deep Reinforcement Learning for Stock, Portfolio, and Crypto Trading: Insights and Trends (2020–2025)&lt;/p&gt;",
+        "source_url": "https://doi.org/10.7759/s44389-026-00083-1",
+        "excerpt_en": "Deep reinforcement learning (DRL) in the field of financial asset trading has undergone a significant transformation from 2020 to 2025 with the increased availability of market data, advancement in deep learning architectures, and the emergence of open ecosystems such as FinRL, FinRL-Meta, and ElegantRL. This survey follows the main trends of DRL usage in stock trading, cryptocurrency, and portfolio investing, with a focus on task-based approach taxonomy, algorithm families, and used environments and toolchains. The research also focuses on methodological flaws in testing, i.e., backtesting bias, splitting data, transaction costs, and overfitting risk. The research indicates that existing literature puts greater emphasis on more risk-based, transparent, and more adaptive models, employing state-of-the-art architectures, such as graph neural networks and transformer, and multimodal data fusion. However, a few limitations remain, such as data drift, reporting bias, and limitations in cross-market generalizability. As a contribution, this work proposes best practices in experimental design, establishes a post-2025 research agenda, and gives a roadmap to the construction of more robust, reproducible, and industry-ready DRL for financial trading.",
+        "pub_date": "2026-05-25",
+        "date_scraped": "2026-06-15T03:14:42.823392",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "本文综述了2020-2025年深度强化学习在股票、加密货币和投资组合交易中的应用，重点介绍了DRL算法、环境（如FinRL）以及方法论缺陷（如回测偏差、过拟合）。提出了实验设计最佳实践和未来研究方向。",
+            "core_factors": "深度强化学习算法（如PPO、DQN、SAC）结合图神经网络和Transformer架构用于生成交易信号。",
+            "replication_parameters": "资产类别：股票、加密货币、投资组合；环境：FinRL、FinRL-Meta、ElegantRL；回溯期和再平衡频率未具体说明。",
+            "performance_metrics": "未提供具体回测数据；讨论了性能挑战和最佳实践。"
+        }
+    },
+    {
+        "id": "openalex_W7162262509",
+        "title_en": "[OpenAlex Paper] Does Overlap-Based Candidate Selection Add Incremental Predictive Value to Intraday Setup Classification? An Empirical Backtest of a Multi-Layer Intraday Signal Pipeline",
+        "source_url": "https://doi.org/10.5281/zenodo.20363105",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-24",
+        "date_scraped": "2026-06-15T03:14:42.823394",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 65,
+            "chinese_summary": "该论文研究重叠候选者选择方法是否能提升日内交易信号分类的预测价值，并通过多层级日内信号管道进行实证回测。提出了一个基于重叠的候选选择策略，以增强日内交易信号的准确性。",
+            "core_factors": "重叠候选者选择、日内信号分类、多层级信号管道",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7162882682",
+        "title_en": "[OpenAlex Paper] Design of a Multi-Quantitative Trading Model for Virtual Power Plants Based on a Depth-First Search Algorithm",
+        "source_url": "https://doi.org/10.66113/jcmse.26586",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-30",
+        "date_scraped": "2026-06-15T03:14:43.946187",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 50,
+            "chinese_summary": "该论文提出了一种基于深度优先搜索算法的虚拟电厂多量化交易模型。该模型旨在优化虚拟电厂在电力市场中的交易策略，可能涉及电价预测或组合优化。由于缺乏详细摘要，具体交易信号和实现细节不详。",
+            "core_factors": "深度优先搜索算法用于虚拟电厂的多量化交易模型，可能结合电力市场特征进行策略优化",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7162682214",
+        "title_en": "[OpenAlex Paper] REGIQUANT: A MULTI-AGENT LLM AND REINFORCEMENT-LEARNING SYSTEM FOR REGIME-AWARE QUANTITATIVE TRADING",
+        "source_url": "https://doi.org/10.56726/irjmets99295",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-28",
+        "date_scraped": "2026-06-15T03:14:43.946275",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 50,
+            "chinese_summary": "提出了一种基于多智能体大语言模型和强化学习的制度感知量化交易系统，通过识别市场制度状态并利用强化学习进行交易决策。",
+            "core_factors": "制度感知（regime-aware）、多智能体大语言模型（LLM）、强化学习（reinforcement learning）",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7162209997",
+        "title_en": "[OpenAlex Paper] Frozen research artifacts for \"Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning\"",
+        "source_url": "https://doi.org/10.5281/zenodo.20355140",
+        "excerpt_en": "Supplementary data for the paper \"Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning\" (Lebiedź & Ślepaczuk, 2026). This deposit contains frozen experiment outputs and intermediate research artifacts used in the study. Source code, configuration, and reproduction instructions are available at:https://github.com/damianlebiedz/pair-trading-with-rl Contents data.zip data/pair_selection/ - monthly ranked cointegrated pair lists used in walk-forward backtests. data/rl_training/ - per-pair backtest trajectories exported for RL training. data/rl_models/ - trained Stable-Baselines3 checkpoints (Recurrent PPO) and VecNormalize statistics. results.zip Parquet outputs for every experiment run cited in the paper (per-pair returns, trades, performance statistics). .hydra/config.yaml and .hydra/overrides.yaml per run - resolved experiment parameters for reproducibility. What is NOT included: data/historical/ - OHLCV from Binance Data Vision. Market data is not redistributed here due to licensing and redistribution concerns. To re-run backtests, download historical prices locally using helpers/data_fetching_pipeline.py from the GitHub repository. execution.log and .hydra/hydra.yaml - omitted from results.zip because they contain local filesystem paths. For detailed instructions on how to automatically download these artifacts, fetch the market data, and reproduce the experiments, please refer to the README file in the project's GitHub repository.",
+        "pub_date": "2026-05-23",
+        "date_scraped": "2026-06-15T03:14:43.946319",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 85,
+            "chinese_summary": "该论文提出了一种基于深度强化学习（Recurrent PPO）的动态多对交易策略，应用于加密货币市场。研究采用月度协整对选择，并结合强化学习进行交易。提供了完整的数据、代码和复现指南。",
+            "core_factors": "深度强化学习（Recurrent PPO）应用于协整配对交易",
+            "replication_parameters": "加密货币（Binance数据），月度协整对选择，强化学习训练使用每对回测轨迹，复现需要下载历史OHLCV数据",
+            "performance_metrics": "No backtest data provided in abstract; performance metrics available in full paper"
+        }
+    },
+    {
+        "id": "openalex_W7162197649",
+        "title_en": "[OpenAlex Paper] Frozen research artifacts for \"Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning\"",
+        "source_url": "https://doi.org/10.5281/zenodo.20355139",
+        "excerpt_en": "Supplementary data for the paper \"Dynamic Multi-Pair Trading Strategy in Cryptocurrency Markets with Deep Reinforcement Learning\" (Lebiedź & Ślepaczuk, 2026). This deposit contains frozen experiment outputs and intermediate research artifacts used in the study. Source code, configuration, and reproduction instructions are available at:https://github.com/damianlebiedz/pair-trading-with-rl Contents data.zip data/pair_selection/ - monthly ranked cointegrated pair lists used in walk-forward backtests. data/rl_training/ - per-pair backtest trajectories exported for RL training. data/rl_models/ - trained Stable-Baselines3 checkpoints (Recurrent PPO) and VecNormalize statistics. results.zip Parquet outputs for every experiment run cited in the paper (per-pair returns, trades, performance statistics). .hydra/config.yaml and .hydra/overrides.yaml per run - resolved experiment parameters for reproducibility. What is NOT included: data/historical/ - OHLCV from Binance Data Vision. Market data is not redistributed here due to licensing and redistribution concerns. To re-run backtests, download historical prices locally using helpers/data_fetching_pipeline.py from the GitHub repository. execution.log and .hydra/hydra.yaml - omitted from results.zip because they contain local filesystem paths. For detailed instructions on how to automatically download these artifacts, fetch the market data, and reproduce the experiments, please refer to the README file in the project's GitHub repository.",
+        "pub_date": "2026-05-23",
+        "date_scraped": "2026-06-15T03:14:43.946359",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "该论文提出了一种基于深度强化学习的加密货币多对交易策略。核心方法包括使用协整检验选择交易对，并用递归PPO算法训练智能体进行配对交易。研究提供了完整的代码和冻结的实验数据以供复现。",
+            "core_factors": "协整配对 + 深度强化学习（Recurrent PPO）",
+            "replication_parameters": "资产类别：加密货币（币安数据）；配对选择：每月协整检验；再平衡频率：每月；交易对：基于协整的多元配对。",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7164483694",
+        "title_en": "[OpenAlex Paper] Pair Trading Analysis of the Semiconductor Stock Market",
+        "source_url": "https://doi.org/10.65161/rec1z9glqijwveohe",
+        "excerpt_en": "No abstract available.",
+        "pub_date": "2026-05-21",
+        "date_scraped": "2026-06-15T03:14:43.946364",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 60,
+            "chinese_summary": "本文分析了半导体股票市场的配对交易策略，通过寻找相关股票对进行多空操作。",
+            "core_factors": "配对交易，统计套利，协整",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7163368995",
+        "title_en": "[OpenAlex Paper] Market Making Strategies under Different Stochastic Price Dynamics",
+        "source_url": "https://doi.org/10.5281/zenodo.20532989",
+        "excerpt_en": "This project aim is to explore and compare two market-making models under different stochastic price dynamics using Steven`s Shift system limit order book simulator, using real market data. The two main models are the Arithmetic Brownian Motion (drift) model and the Ornstein–Uhlenbeck (mean-reversion) model.Our main goal is to analyze and evaluate how these two different price dynamic models perform under the same market conditions and under the same market data. During this project the following performance metrics are profitability, inventory risk, drawdowns, and risk-adjusted returns. Both models generate bid and ask quotes based on a certain stochastic formula, both models assume a certain price dynamic, while incorporating certain parameters such as inventory penalty and risk aversion parameters.The simulation based on the most liquid stocks available AAPL and MSFT, and based on the results, the drift-model generates higher profit and Sharpe ratio, compared to the mean-reversion model, mainly due to holding higher inventory. While mean-reversion models control inventory better, meaning keeping positions closer to neutral. Overall, the results show that selecting a model in market making depends on the required balance between risk and return, including the underlying market conditions.",
+        "pub_date": "2026-06-03",
+        "date_scraped": "2026-06-15T03:14:45.079188",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "本文比较了算术布朗运动（漂移模型）和奥恩斯坦-乌伦贝克（均值回归模型）两种做市策略在真实市场数据下的表现。使用AAPL和MSFT股票进行模拟，评估了盈利能力、库存风险和夏普比率等指标。结果表明漂移模型具有更高的利润和夏普比率，而均值回归模型在库存控制方面更优。",
+            "core_factors": "市场做市策略的买卖价差基于随机价格动态模型（ABM漂移和OU均值回归），结合库存惩罚和风险厌恶参数进行报价生成。",
+            "replication_parameters": "资产类别：美国股票（AAPL, MSFT）；模拟使用连续限价订单簿；参数包括库存惩罚和风险厌恶系数；其他具体参数未详细说明。",
+            "performance_metrics": "漂移模型产生更高的利润和夏普比率，均值回归模型更好地控制库存（保持中性仓位）。具体数值未在摘要中给出。"
+        }
+    },
+    {
+        "id": "openalex_W7163412511",
+        "title_en": "[OpenAlex Paper] Market Making Strategies under Different Stochastic Price Dynamics",
+        "source_url": "https://doi.org/10.5281/zenodo.20532988",
+        "excerpt_en": "This project aim is to explore and compare two market-making models under different stochastic price dynamics using Steven`s Shift system limit order book simulator, using real market data. The two main models are the Arithmetic Brownian Motion (drift) model and the Ornstein–Uhlenbeck (mean-reversion) model.Our main goal is to analyze and evaluate how these two different price dynamic models perform under the same market conditions and under the same market data. During this project the following performance metrics are profitability, inventory risk, drawdowns, and risk-adjusted returns. Both models generate bid and ask quotes based on a certain stochastic formula, both models assume a certain price dynamic, while incorporating certain parameters such as inventory penalty and risk aversion parameters.The simulation based on the most liquid stocks available AAPL and MSFT, and based on the results, the drift-model generates higher profit and Sharpe ratio, compared to the mean-reversion model, mainly due to holding higher inventory. While mean-reversion models control inventory better, meaning keeping positions closer to neutral. Overall, the results show that selecting a model in market making depends on the required balance between risk and return, including the underlying market conditions.",
+        "pub_date": "2026-06-03",
+        "date_scraped": "2026-06-15T03:14:45.079205",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "本项目探索了两种做市策略模型（算术布朗运动漂移模型和奥恩斯坦-乌伦贝克均值回归模型），使用Steven's Shift系统限价订单簿模拟器基于真实市场数据进行对比。评估指标包括盈利性、库存风险、回撤和风险调整后收益。结果表明漂移模型产生更高利润和夏普比率，但均值回归模型更好地控制库存。",
+            "core_factors": "做市策略基于随机价格动态（算术布朗运动漂移或奥恩斯坦-乌伦贝克均值回归），结合库存惩罚和风险厌恶参数生成买卖报价。",
+            "replication_parameters": "资产类别：美国股票（AAPL, MSFT）。模拟使用连续报价更新，未指定回看期。",
+            "performance_metrics": "漂移模型报告了更高的利润和夏普比率，均值回归模型更好地控制库存，但未提供具体数值。"
+        }
+    },
+    {
+        "id": "openalex_W7163148194",
+        "title_en": "[OpenAlex Paper] Sovereign Risk and the &lt;i&gt;Sukuk&lt;/i&gt;-Equity Trade-off in Emerging Markets: Why CDS Spikes Make Shariah Stocks a Relative Safe Haven in Indonesia",
+        "source_url": "https://doi.org/10.52747/aqujie.6.1.536",
+        "excerpt_en": "تتناول هذه الدراسة التوزيع التكتيكي للأصول بين الأسهم المتوافقة مع الشريعة الإسلامية (JII) والصكوك السيادية في إندونيسيا، وتتحدى على وجه الخصوص الافتراض القائل بأن الصكوك تظل بديلاً أكثر أمانًا خلال فترات ارتفاع المخاطر السيادية. باستخدام إطار بلاك-ليترمان، تدمج الدراسة عوائد توازن السوق مع وجهات نظر المستثمرين المستمدة من مقايضة العجز الائتماني السيادي في إندونيسيا (CDS) لخمس سنوات. ويكشف التحليل التجريبي، الذي يغطي الفترة من مارس 2021 إلى مارس 2026، أن الصكوك تُظهر ارتباطاً سلبياً أعلى بشكل ملحوظ مع تقلبات مقايضة عجز الائتمان السيادي (0.401-) مقارنةً بالأسهم المتوافقة مع الشريعة الإسلامية (0.123-). وبعد زيادة بنسبة 3.3% في فروق أسعار مقايضة عجز الائتمان السيادي، يقترح النموذج إعادة توازن جذرية، تتمثل في تحويل الوزن الأمثل للمحفظة من تخصيص محايد للصكوك بنسبة 35% إلى 11.8% فقط. وتشير هذه النتائج إلى أن الأسهم المتوافقة مع الشريعة الإسلامية توفر مرونة فائقة معدلة حسب المخاطر خلال الأزمات الائتمانية السيادية، مما يدحض فعلياً الاعتقاد السائد بأن الصكوك أكثر أماناً من الأسهم في بيئة ذات مخاطر سيادية عالية.",
+        "pub_date": "2026-06-02",
+        "date_scraped": "2026-06-15T03:14:45.079219",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 75,
+            "chinese_summary": "该论文提出基于Black-Litterman模型和印尼主权CDS利差的战术资产配置策略，在伊斯兰股票（JII）和主权伊斯兰债券（sukuk）之间动态调整。实证发现，当主权风险上升时，伊斯兰股票相对于伊斯兰债券表现出更强的风险调整后韧性，因此并非伊斯兰债券始终更安全。",
+            "core_factors": "主权CDS利差作为风险信号，通过Black-Litterman模型形成观点，调整资产配置权重。",
+            "replication_parameters": "资产类别：印尼伊斯兰股票指数（JII）和主权伊斯兰债券；信号变量：5年期主权CDS利差；回望期：未明确指定；再平衡频率：根据CDS变化调整；投资范围：印尼市场。",
+            "performance_metrics": "报告了CDS上升3.3%时，最优伊斯兰债券权重从35%降至11.8%；但未提供夏普比率、最大回撤等具体回测指标。"
+        }
+    },
+    {
+        "id": "openalex_W7163214183",
+        "title_en": "[OpenAlex Paper] Avellaneda-Stoikov and Cartea-Jaimungal as One Framework: A Forced Uniqueness Theorem for Inventory Market Making",
+        "source_url": "https://doi.org/10.48550/arxiv.2606.01477",
+        "excerpt_en": "In inventory market making, the running-penalty coefficient $ϕ$ of the Cartea-Jaimungal framework and the risk-aversion parameter $γ$ of the Avellaneda-Stoikov framework are typically treated as independent free parameters, calibrated separately. We show that they are in fact not independent. A small set of axioms on the market maker's dynamic preference functional, namely cash-additivity, normalization, concavity, strong dynamic consistency, and law-invariance, forces the preference functional to be the entropic certainty-equivalent on liquidation-adjusted terminal wealth, parametrized by a single positive scalar $γ$. The Avellaneda-Stoikov framework is the unique representative of this axiom class. The Cartea-Jaimungal framework is its second-order Taylor expansion in inventory magnitude, with the running coefficient forced to $ϕ= γσ^2/2$ and (under a mild regularity condition on the liquidation cost) the terminal coefficient forced to $α= \\frac{1}{2}L''(0)$. The two frameworks, typically presented as competing alternatives with the choice between them driven by tractability, are different manifestations of a single underlying object. The forced relation is invertible, $γ= 2ϕ/σ^2$, giving a consistency cross-check on independently calibrated desk parameters.",
+        "pub_date": "2026-05-31",
+        "date_scraped": "2026-06-15T03:14:45.079238",
+        "source": "OpenAlex",
+        "ai_analysis": {
+            "practical_score": 45,
+            "chinese_summary": "该论文通过一组公理证明了Avellaneda-Stoikov和Cartea-Jaimungal两种做市商模型本质上是统一的，并且强制了参数之间的具体关系，即ϕ = γσ²/2。这使得做市商在实际校准参数时可以进行一致性检验。",
+            "core_factors": "库存做市商的偏好泛函的公理推导，统一了两个经典框架，强制了风险厌恶参数和运行惩罚系数的关系。",
+            "replication_parameters": "Not specified",
+            "performance_metrics": "No backtest data provided"
+        }
+    },
+    {
+        "id": "openalex_W7163596805",
+        "title_en": "[OpenAlex Paper] Avellaneda-Stoikov and Cartea-Jaimungal as One Framework: A Forced Uniqueness Theorem for Inventory Market Making",
+        "source_url": "https://arxiv.org/abs/2606.01477",
+        "excerpt_en": "In inventory market making, the running-penalty coefficient $ϕ$ of the Cartea-Jaimungal framework and the risk-aversion parameter $γ$ of the Avellaneda-Stoikov framework are typically treated as independent free parameters, calibrated separately. We show that they are in fact not independent. A small set of axioms on the market maker's dynamic preference functional, namely cash-additivity, normalization, concavity, strong dynamic consistency, and law-invariance, forces the preference functional to be the entropic certainty-equivalent on liquidation-adjusted terminal wealth, parametrized by a single positive scalar $γ$. The Avellaneda-Stoikov framework is the unique representative of this axiom class. The Cartea-Jaimungal framework is its second-order Taylor expansion in inventory magnitude, with the running coefficient forced to $ϕ= γσ^2/2$ and (under a mild regularity condition on the liquidation cost) the terminal coefficient forced to $α= \\frac{1}{2}L''(0)$. The two frameworks, typically presented as competing alternatives with the choice between them driven by tractability, are different manifestations of a single underlying object. The forced relation is invertible, $γ= 2ϕ/σ^2$, giving a consistency cross-check on independently calibrated desk parameters.",
+        "pub_date": "2026-05-31",
+        "date_scraped": "2026-06-15T03:14:45.079251",
+        "source": "OpenAlex"
+    },
+    {
+        "id": "openalex_W7162850055",
+        "title_en": "[OpenAlex Paper] Cosmic Economics — IfT II, Quantum Market Making: Elemental Currency in the Vacuum",
+        "source_url": "https://doi.org/10.5281/zenodo.20464632",
+        "excerpt_en": "It from Trade: Cosmic Economics — A Conceptual Translation Layer for the t=∞ Time Ocean Model (Complete Series) This series proposes a cross-disciplinary conceptual translation layer that reinterprets foundational structures in modern physics through the language of economics, markets, and value. Titled It from Trade, the series extends John Archibald Wheeler’s “It from Bit” conjecture by arguing that physical reality emerges not merely from information, but from the exchange of information — and that exchange presupposes a market, a price, and ultimately a customer. The central axiom of the series is the Axiom of Cosmic Customer (ACC): the universe operates as a self-organising economic system, with time as its directional arrow, liquidity as its generative engine, and the desires, aesthetic judgements, and subjective utility of the conscious observer as the ultimate source of value. The series maps 18 key physical phenomena — spanning General Relativity, quantum mechanics, and thermodynamics — onto their economic and behavioural analogues. These include the Big Bang as market opening, gravity as capital concentration (Matthew Effect), black holes as Zero-Entropy Interface (ZEI) bankruptcy terminals, the speed of light as a bandwidth firewall preserving information asymmetry, entropy increase as systemic inflation, and the conscious observer as the final customer who closes the cosmic value loop. It from Trade is developed as the behavioural and motivational layer complementary to the author’s earlier t=∞Time Ocean Model (TOM) series. While TOM provides the computational ontology of the universe (Mother Matrix, Father Body, ZEI), It from Trade supplies the economic and teleological language through which that architecture can be understood as purposeful. The series consists of a Preface and seven substantive papers, plus a Postscript. It does not replace standard physics (ΛCDM, quantum field theory, or general relativity) but offers a structural and behavioural isomorphism framework. Three Alignment Equations with explicit functional forms and falsifiable observational windows are proposed in Paper V. arXiv access code available upon request Contact: panxtam@protonmail.com",
+        "pub_date": "2026-05-30",
+        "date_scraped": "2026-06-15T03:14:45.079277",
+        "source": "OpenAlex"
+    },
+    {
+        "id": "openalex_W7162878063",
+        "title_en": "[OpenAlex Paper] Cosmic Economics — IfT II, Quantum Market Making: Elemental Currency in the Vacuum",
+        "source_url": "https://doi.org/10.5281/zenodo.20464633",
+        "excerpt_en": "It from Trade: Cosmic Economics — A Conceptual Translation Layer for the t=∞ Time Ocean Model (Complete Series) This series proposes a cross-disciplinary conceptual translation layer that reinterprets foundational structures in modern physics through the language of economics, markets, and value. Titled It from Trade, the series extends John Archibald Wheeler’s “It from Bit” conjecture by arguing that physical reality emerges not merely from information, but from the exchange of information — and that exchange presupposes a market, a price, and ultimately a customer. The central axiom of the series is the Axiom of Cosmic Customer (ACC): the universe operates as a self-organising economic system, with time as its directional arrow, liquidity as its generative engine, and the desires, aesthetic judgements, and subjective utility of the conscious observer as the ultimate source of value. The series maps 18 key physical phenomena — spanning General Relativity, quantum mechanics, and thermodynamics — onto their economic and behavioural analogues. These include the Big Bang as market opening, gravity as capital concentration (Matthew Effect), black holes as Zero-Entropy Interface (ZEI) bankruptcy terminals, the speed of light as a bandwidth firewall preserving information asymmetry, entropy increase as systemic inflation, and the conscious observer as the final customer who closes the cosmic value loop. It from Trade is developed as the behavioural and motivational layer complementary to the author’s earlier t=∞Time Ocean Model (TOM) series. While TOM provides the computational ontology of the universe (Mother Matrix, Father Body, ZEI), It from Trade supplies the economic and teleological language through which that architecture can be understood as purposeful. The series consists of a Preface and seven substantive papers, plus a Postscript. It does not replace standard physics (ΛCDM, quantum field theory, or general relativity) but offers a structural and behavioural isomorphism framework. Three Alignment Equations with explicit functional forms and falsifiable observational windows are proposed in Paper V. arXiv access code available upon request Contact: panxtam@protonmail.com",
+        "pub_date": "2026-05-30",
+        "date_scraped": "2026-06-15T03:14:45.079298",
+        "source": "OpenAlex"
+    },
+    {
+        "id": "openalex_W7162765747",
+        "title_en": "[OpenAlex Paper] Artificial Intelligence in Stock Trading and Analysis",
+        "source_url": "https://doi.org/10.70729/se26520224925",
+        "excerpt_en": "The stock market is a challenging environment for predicting price changes because prices continuously fluctuate. Additionally, many internal and external elements impact stock prices, including economic conditions, market performance, and investor behaviour. This research aims to examine historical stock market price data using study examines stock market data collected over different time periods to understand changes in stock prices. Previous market records are analysed to identify trends and patterns related to market behaviour. Different statistical techniques are used to study earlier price movements and estimate possible future changes in stock values. Moving averages and the ARIMA model are used to study market trends and support forecasting. The prediction results are checked using common accuracy measures to compare predicted prices with actual market values. According to the findings from the model analysed, they were able to demonstrate that they have the ability to identify general patterns or effectiveness of stock prices (in addition to making reliable predictions) when there was stability with respect to market conditions. However, it has proven very difficult to predict sudden movements in stock prices caused by unexpected events (e.g., catastrophic natural disasters, terrorist attacks, etc). The study concludes with an emphasis on the efficacy of 'simple' and 'interpretable' models for the evaluation and prediction of the financialand stock markets -and subsequently their ease of application as a credible basis for making decisions.",
+        "pub_date": "2026-05-29",
+        "date_scraped": "2026-06-15T03:14:45.079315",
+        "source": "OpenAlex"
     }
 ]
