@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = 'glass-panel quant-list-item';
             
-            const dateStr = paper.date_scraped ? new Date(paper.date_scraped).toLocaleDateString() : 'Unknown Date';
+            const dateStr = paper.pub_date ? new Date(paper.pub_date).toLocaleDateString() : (paper.date_scraped ? new Date(paper.date_scraped).toLocaleDateString() : 'Unknown Date');
 
             item.innerHTML = `
                 <div class="quant-item-header">

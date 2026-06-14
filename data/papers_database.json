@@ -7,11 +7,11 @@
         "date_scraped": "2026-06-14T22:15:22.781243",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该GitHub项目（⭐28星）复现了论文《Forest Through the Trees: Building Cross-Sections of Stock Returns》，使用Python创建资产截面以检验因子模型的有效性。通过构造多空组合或特征组合，旨在验证资产定价模型中因子的解释力。项目可能涉及主成分分析（PCA）或聚类方法生成合成资产，并利用截面回归评估因子载荷。摘要未提供具体数据频率或回测细节，但代码实现为研究者提供了可复现的基准框架。整体上，该项目为因子模型检验提供了实践工具，但直接应用于实盘交易需额外调整参数与风险控制。",
-            "core_factors": "基于股票收益率的截面特征构造的合成资产（如通过PCA或聚类得到的因子模拟组合），用于验证多因子模型的有效性。",
-            "replication_parameters": "原文未详细说明；可能涉及收益率数据频率（如日度）、资产数量、因子数量及回测区间等参数，具体需参考原始论文。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 6
+            "practical_score": 50,
+            "chinese_summary": "该项目复制了论文《Forest Through the Trees: Building Cross-Sections of Stock Returns》，使用Python创建资产以检验因子模型的有效性，侧重于通过随机森林等方法构建股票收益率的截面数据。",
+            "core_factors": "随机森林等机器学习方法构建的因子模型，可能包括原始论文中的各种股票特征（如动量、价值、规模等）。",
+            "replication_parameters": "未明确说明具体参数，但依赖于原始论文中的回测设定，可能包括特定的股票池和频率。",
+            "performance_metrics": "未提供具体回测数据。项目目的在于复现论文，而非展示绩效。"
         }
     },
     {
@@ -22,11 +22,11 @@
         "date_scraped": "2026-06-14T22:15:22.781264",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该GitHub仓库“lukaskoerber/Replication-Factor-Timing”旨在复现因子择时策略，可能源于某篇学术论文或量化研究。因子择时的核心思想是动态选择表现优异的因子（如价值、动量、低波动等）以提升组合收益。仓库提供了完整的复制代码，包括数据处理、因子构建、模型训练和回测框架。由于摘要信息有限，具体策略细节和回测结果未明确说明，但通常此类仓库包含清晰的实现步骤和可视化结果。",
-            "core_factors": "因子择时：根据市场环境或预测模型动态调整因子权重，可能涉及多因子（如动量、价值、质量、低风险）的交叉信号。",
-            "replication_parameters": "原文未详细说明。推测包含因子选择、回望窗口、调整频率、交易成本等参数。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 7
+            "practical_score": 60,
+            "chinese_summary": "该仓库复现了因子择时策略，旨在通过动态调整因子暴露来提高投资表现。由于缺乏具体细节，实际可行性需进一步验证。",
+            "core_factors": "因子择时信号，可能涉及动量、估值等传统因子及其时间序列预测。",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -37,11 +37,11 @@
         "date_scraped": "2026-06-14T22:15:22.781268",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该项目是一个基于GitHub Actions的自动化工具，用于每日更新AI4Economy领域的学术论文列表。项目采用YuzeHao2023/daily-arxiv-ai4economy仓库，通过定时任务自动抓取arXiv上与经济、金融、AI交叉领域的最新论文，并整理成易读格式。目前该项目获得2颗星，核心功能是信息聚合而非策略开发，适合研究人员跟踪前沿动态。",
-            "core_factors": "原文未提出具体交易因子、逻辑或模型。",
-            "replication_parameters": "原文未详细说明。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 2
+            "practical_score": 10,
+            "chinese_summary": "该项目是一个自动更新AI4Economy论文的仓库，每日抓取arXiv上相关论文。没有提供具体交易策略或因子。",
+            "core_factors": "Not applicable; this is a paper aggregation tool.",
+            "replication_parameters": "Not explicitly stated; it is an automated update script.",
+            "performance_metrics": "No specific backtest data provided."
         }
     },
     {
@@ -52,11 +52,11 @@
         "date_scraped": "2026-06-14T22:15:22.781271",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该研究探讨了研发投资强度与长期股票回报之间的关系，实证证据表明高研发强度的公司往往能获得超额收益。研究基于美国市场数据，使用了研发支出占销售收入或市值的比例作为核心因子，并控制了公司规模、账面市值比等其他因素。结果显示，研发强度因子在长期投资中具有显著的alpha。",
-            "core_factors": "研发投资强度（R&D支出/销售收入或R&D支出/市值）",
-            "replication_parameters": "股票池：美国上市公司；数据频率：年度研发数据；持有期：长期（如3-5年）；换仓频率：每年；风险调整：规模、账面市值比等。原文未详细说明具体参数。",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 7
+            "practical_score": 60,
+            "chinese_summary": "该研究探讨研发投资强度与长期股票回报之间的关系，为研发因子投资提供实证证据。",
+            "core_factors": "研发投资强度（R&D intensity）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -67,11 +67,11 @@
         "date_scraped": "2026-06-14T22:15:22.781273",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该论文标题为“基于需求的资产定价”，但摘要部分仅标注星标数量，未提供任何具体内容或研究细节。由于缺乏实质性信息，无法进行深入分析或总结。",
-            "core_factors": "原文摘要未说明",
-            "replication_parameters": "原文摘要未说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
+            "practical_score": 60,
+            "chinese_summary": "该仓库复现了需求驱动资产定价相关研究，可能涉及基于订单流或投资者情绪的因子模型。但摘要缺失具体细节，实用性需进一步验证。",
+            "core_factors": "需求驱动因子（如订单流不平衡、投资者情绪等）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -82,11 +82,11 @@
         "date_scraped": "2026-06-14T22:15:22.781276",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "本项目旨在通过回测验证动量因子在股票投资中的有效性。动量因子策略通常基于过去一段时间（如6-12个月）的价格表现，买入过去表现较好的股票，卖出表现较差的股票。项目在GitHub上开源，但摘要未提供具体实现细节或回测结果。整体而言，该研究聚焦于经典动量因子在中国的适用性检验。",
-            "core_factors": "动量因子：基于股票过去一段时间（如6-12个月）的累计收益率，选取高动量股票做多，低动量股票做空。",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 7
+            "practical_score": 50,
+            "chinese_summary": "该论文尝试复制动量因子投资策略，评估其有效性。核心因素为价格动量，实际交易可行性中等。",
+            "core_factors": "价格动量（过去收益率）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -97,11 +97,11 @@
         "date_scraped": "2026-06-14T22:15:22.781278",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该GitHub仓库（olivier2311/Quantropy）提供了一个用于量化金融分析的API工具。其主要功能包括：爬取金融数据、执行基本面和技术分析、构建投资组合、优化资产配置以及回测策略表现。该工具旨在为量化研究者提供从数据获取到策略评估的一站式解决方案，适合用于快速原型开发和策略验证。但摘要中未提及具体的交易因子或模型创新。",
-            "core_factors": "原文未提出具体核心因子或模型，仅提及支持基本面和技术的通用分析方法。",
-            "replication_parameters": "原文未详细说明具体参数、数据频率或因子。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 7
+            "practical_score": 60,
+            "chinese_summary": "该项目提供了一个用于金融数据抓取、基本面和技术分析、投资组合构建与优化以及回测的综合API工具包。尽管实用性较强，但缺乏特定策略的创新点，适合作为量化研究的起点。",
+            "core_factors": "多种金融数据来源（API）、基本面指标、技术指标、投资组合优化算法（如均值-方差、风险平价等）",
+            "replication_parameters": "Not explicitly stated（未明确说明具体参数，需用户自定义）",
+            "performance_metrics": "No specific backtest data provided（未提供回测绩效数据）"
         }
     },
     {
@@ -112,11 +112,11 @@
         "date_scraped": "2026-06-14T22:15:22.781280",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该GitHub仓库名为zhuolonghao/factor_investing，但摘要仅显示“None”，未提供任何具体研究内容或描述。因此无法进行有效总结。",
-            "core_factors": "原文未详细说明",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
+            "practical_score": 50,
+            "chinese_summary": "这是一个因子投资策略的复现仓库，但缺乏详细信息，无法评估其实用性。",
+            "core_factors": "因子投资（Factor Investing）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -127,11 +127,11 @@
         "date_scraped": "2026-06-14T22:15:22.781282",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该项目是Fama-French三因子模型中规模因子(SMB)和价值因子(HML)的Python实现，涵盖了从数据获取到统计分析的全流程。代码位于GitHub仓库dsarkar10/fama-french-replication，但缺乏详细文档和回测结果。该实现旨在为量化研究者提供一个可复现的因子构建工具，但实用性受限于原始论文的公开方法。",
-            "core_factors": "规模因子(SMB)和价值因子(HML)，基于Fama-French三因子模型。",
-            "replication_parameters": "原文未详细说明。通常需要公司市值、账面市值比数据，分组构建投资组合，频率可能为月度。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 5
+            "practical_score": 80,
+            "chinese_summary": "该项目使用Python实现了Fama-French三因子模型中的规模因子（SMB）和价值因子（HML），涵盖数据获取到统计分析全过程。对于因子投资研究和实践具有重要参考价值。",
+            "core_factors": "规模因子（SMB）和价值因子（HML）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -142,11 +142,11 @@
         "date_scraped": "2026-06-14T22:15:22.781284",
         "source": "GitHub",
         "ai_analysis": {
-            "chinese_summary": "该仓库为Darsh-Bansal的Alpha因子研究引擎的复现项目，但摘要未提供任何具体信息，仅有仓库名称和星标数量（0星），无法评估其实质内容。",
-            "core_factors": "原文未详细说明",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
+            "practical_score": 60,
+            "chinese_summary": "该项目是一个Alpha因子研究引擎的复制仓库，旨在提供构建和测试量化交易因子的工具。尽管缺乏具体策略细节，但其架构可用于实盘因子挖掘。",
+            "core_factors": "未明确说明，但通常包括动量、价值、质量等常见因子信号。",
+            "replication_parameters": "未明确说明",
+            "performance_metrics": "未提供具体回测数据"
         }
     },
     {
@@ -157,11 +157,11 @@
         "date_scraped": "2026-06-14T23:02:57.940970",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出一种基于递减条件风险价值（CVaR）约束的目标日期基金（TDF）设计框架，明确以回报为目标并直接控制组合风险。监管或发起人设定CVaR下滑路径，赋予组合经理灵活性以达到目标收益率，该收益率由养老金设计参数（如退休年龄、缴费率、工作年限、预期寿命和替代率目标）外生决定。与传统的资产类别限制方法不同，该方法不假设经理每期选择最优组合，而是每月从满足CVaR约束的组合集中随机抽取，从而保守评估下滑路径的成功概率。此外，引入两个绩效指标：达到目标收益的概率和整个TDF生命周期内的累积风险。作为概念验证，将该框架应用于智利2025年养老金改革，使用9种智利和全球资产类别及40年积累期。结果表明，风险开始下降的过渡年龄是最关键的设计参数，而缴费密度构成硬约束：低于临界阈值时，仅靠组合设计无法补偿结构性低缴费。该框架适用于任何以明确回报为目标的目标日期基金设计。",
-            "core_factors": "核心逻辑：基于递减CVaR约束的动态资产配置框架。通过设定随年龄下降的CVaR上限，在控制下行风险的同时追求给定目标收益率。每月从可行集中随机抽取组合，而非优化选择，以保守估计成功概率。",
-            "replication_parameters": "参数：退休年龄、缴费率、工作年限、预期寿命、替代率目标；CVaR下滑路径（关键参数：风险开始下降的过渡年龄）；资产类别（9种智利和全球资产）；数据频率：月度；时间跨度：40年积累期。",
-            "performance_metrics": "原文摘要未提供具体回测数据。绩效指标包括：达到目标收益的概率、累积风险（未量化具体数值）。",
-            "practical_score": 7
+            "practical_score": 70,
+            "chinese_summary": "该论文提出了一种基于递减CVaR约束的靶向日期基金设计框架，通过设定明确的回报目标并随着时间降低风险预算来控制组合风险。应用于智利养老金系统的案例表明，风险降低的过渡年龄是最关键的设计参数，而缴费密度构成了硬约束。",
+            "core_factors": "递减CVaR约束（风险预算）、外生目标回报率（来自养老金设计参数）、从可行组合中随机抽样的分配策略",
+            "replication_parameters": "月度再平衡、40年累积期、资产类别包括9种智利和全球资产、CVaR估计期间未明确说明",
+            "performance_metrics": "未在摘要中提供具体回测数据；论文使用达标概率和累积风险作为绩效指标"
         }
     },
     {
@@ -172,11 +172,11 @@
         "date_scraped": "2026-06-14T23:02:57.940987",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文针对算法交易中实时价格冲击检测问题，提出了一种基于交易行为与不利市场事件时序同步性的因果关系识别方法。传统方法要么依赖实时滑点监控（统计上昂贵且无法区分因果），要么使用事后大样本估计的静态规则。新方法通过统计检验交易行为后不利事件发生时间的“意外性”来判断是否存在价格冲击和信息泄漏。作者承认该方法假设快速出现的不利事件由自身交易触发，并强调需要真实执行数据进行验证。该论文为量化交易中的冲击成本控制提供了新视角，但尚缺乏实证回测结果。",
-            "core_factors": "核心因子是交易行为与后续不利市场事件之间的时间同步性异常，即交易动作后不利事件发生速度的统计显著性。逻辑是：如果交易后很快出现不利价格变动，且这种快于随机预期的程度显著，则表明该交易产生了市场冲击或信息泄露。",
-            "replication_parameters": "原文摘要未详细说明具体参数，但需包含：交易动作时间戳、市场事件（如价格变动、成交量）序列、时间窗口长度（用于定义“后续”）、统计显著性阈值、以及可能用于对比的随机基准模型。数据频率应为逐笔或高频数据。",
-            "performance_metrics": "原文摘要未提供具体回测数据，仅提出需要真实执行数据验证。无收益率、胜率或夏普比率等指标。",
-            "practical_score": 6
+            "practical_score": 40,
+            "chinese_summary": "提出一种实时检测订单对市场价格冲击的方法，通过衡量交易行为后不利市场事件发生的时间同步性来判断因果关系，而非依赖价格滑点。该方法需要真实执行数据验证，尚未经过实证检验。",
+            "core_factors": "交易行为后不利市场事件的时间同步性（统计意外程度）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -187,11 +187,11 @@
         "date_scraped": "2026-06-14T23:02:57.940992",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出启发式投资组合优化（HPO）框架，将Markowitz/切线解投影到稳定的规则类上，涵盖等权重、逆波动率、风险平价、HRP及调整后的RA-HRP等启发式方法。利用隐含收益率原理导出了这些启发式的闭式最优集，揭示了HRP背后的Schur补替代。对于RA-HRP，引入了固定树聚类夏普递归、无单位HRP-RA-HRP插值、切线条件、条件风险分割以及权重扭曲的路径/KL分解。一阶夏普微积分将回报信息的边际价值表示为节点α，并得到线性KL信任预算。HPO被嵌入强化学习投资组合优化（RLPO），静态HPO是Bellman问题的γ=0无摩擦面，RA-HRP提供层次策略先验。性能差异恒等式给出了myopia价值差距，并标识节点α为层次角色的策略梯度坐标。条件可通过GRS检验扩展至均值-CVaR和椭圆分布下的期望效用，在扩散极限下成为Kelly增长条件。",
-            "core_factors": "核心逻辑是通过隐含收益率原理（w最大夏普当且仅当μ_e ∝ Σw）将Markowitz解投影到稳定规则类（如HRP、RA-HRP），利用Schur补替代、固定树聚类夏普递归、条件风险分割等数学工具实现启发式优化，并建立与动态RLPO的联系。",
-            "replication_parameters": "原文未详细说明具体参数和数据频率，但涉及协方差矩阵（Σ）、期望收益率（μ）、层次聚类树结构、风险分割阈值、KL散度预算等。需估计历史收益率和波动率，频率可能为日频或月频。",
-            "performance_metrics": "原文摘要未提供具体回测数据，但理论结果表明HPO可衡量夏普效率损失，并给出了性能差异恒等式与myopia误差界。",
-            "practical_score": 6
+            "practical_score": 60,
+            "chinese_summary": "本文提出启发式投资组合优化（HPO）框架，将市场实践中的等权重、风险平价等规则数学化，并揭示其与马科维茨最优解的关系。通过隐含收益率原理和舒尔补等工具，为规则提供最优性条件和偏差分解。",
+            "core_factors": "启发式规则：等权重、逆波动率、风险平价、层次风险平价（HRP）、调整后HRP（RA-HRP）；隐含收益率原理；舒尔补替代；聚簇夏普递归；第一类夏普微积分",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -202,11 +202,11 @@
         "date_scraped": "2026-06-14T23:02:57.940995",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "该论文研究连续时间多资产Black-Scholes市场中的投资问题。资产漂移未知，存在模型模糊性，但投资者拥有先验知识。投资者为模糊厌恶型，采用Maccheroni等(2013)的均值-方差准则，将方差分解为市场风险和模糊风险两部分并赋予不同权重，以平滑方式纳入模糊厌恶。通过新颖方法，在允许学习的自适应策略中求解最优动态投资组合。数值结果表明，模糊厌恶投资者会减少对风险资产的投资，且模型参数显著影响最优策略。",
-            "core_factors": "核心因子为资产漂移的不确定性（模糊性）及投资者对模糊的厌恶程度。通过贝叶斯学习更新漂移信念，并动态调整组合。方差分解为市场风险部分和模糊风险部分，分别赋予不同权重以反映对两类风险的厌恶程度。",
-            "replication_parameters": "需要多资产Black-Scholes模型参数（资产数量、波动率矩阵、无风险利率）、漂移的先验分布（均值与协方差）、贝叶斯学习更新规则、模糊厌恶参数（方差分解权重）。数据频率未明确，但连续时间模型需离散化，建议使用日频或更高频数据。",
-            "performance_metrics": "原文摘要未提供具体回测数据，仅有数值示例说明参数影响，无收益率、胜率、夏普比率等指标。",
-            "practical_score": 5
+            "practical_score": 30,
+            "chinese_summary": "本文研究存在模型歧义和学习机制下的均值-方差优化问题，提出动态投资策略，数值结果表明歧义厌恶投资者会减少对风险资产的投资。",
+            "core_factors": "模型歧义、学习机制、均值-方差准则（方差分解加权）",
+            "replication_parameters": "连续时间、多资产Black-Scholes市场、先验分布学习，未明确说明回看周期和再平衡频率",
+            "performance_metrics": "无具体回测数据，仅提供参数影响分析的数值结果"
         }
     },
     {
@@ -217,11 +217,11 @@
         "date_scraped": "2026-06-14T23:02:57.940998",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文扩展了Atmaz（2022）的线性回报外推框架，引入信念更新的饱和性与收益-损失不对称性两个行为现实特征。定义平滑、非线性、非对称的外推函数，并在Heston随机波动率下刻画CRRA投资者的最优投资组合，该组合由情绪扭曲的投机性需求、方差对冲需求和情绪对冲需求三部分构成。通过有限差分ADI方案和深度学习迭代方法求解半线性HJB方程。模型产生四个行为异常：非对称反应、极端衰减、过度交易和福利损失随外推强度增加。核心发现是饱和机制作为内生纠正工具，在原点斜率相同时，非线性外推者的福利损失小于线性者。",
-            "core_factors": "非线性、非对称的外推程度，即投资者对过去收益的过度外推偏差，尤其在收益和损失方向的不同斜率及饱和效应。",
-            "replication_parameters": "需要定义非线性外推函数的形状参数（饱和水平、不对称程度）、Heston随机波动率模型参数（均值回复速度、长期方差、波动率波动率、相关系数）、风险厌恶系数及时间离散化参数。数据频率未明确说明，可能需日频或更高频收益率数据进行估计。原文未详细说明具体参数值。",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 4
+            "practical_score": 40,
+            "chinese_summary": "本文扩展了线性回报外推框架，引入非线性不对称外推函数，在随机波动率下求解最优投资组合。模型捕捉了投资者对盈亏的非对称反应和饱和效应，并指出饱和作为内生修正机制能降低福利损失。",
+            "core_factors": "非对称非线性回报外推函数；情绪扭曲的投机需求、方差对冲需求和情绪对冲需求",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -232,11 +232,11 @@
         "date_scraped": "2026-06-14T23:02:57.941001",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出了一种基于操作时间（operational time）的反应边界格点模型用于期权定价。作者将连续操作时间u映射到日历时间t，并构建近邻对数价格格点模型，该模型具有状态和时间依赖的转移概率。通过Chapman-Kolmogorov分解推导出离散正向和反向方程，在局部有限方差缩放下收敛到连续伴随对。在价格变量下，反向方程得到广义欧式定价PDE，在风险中性漂移限制和恒定波动率下简化为Black-Scholes-Merton模型。将模型解释为限价订单簿中间价的反应边界模型，将局部波动率识别为活动性调整的风险中性买卖价差反应边界方差。框架分离了操作核、日历时间投影和定价测度选择，阐明了未跨度时钟、跳跃或更新风险如何导致不完全市场定价。",
-            "core_factors": "操作时间（operational time）的映射、状态和时间依赖的转移概率、局部波动率与活动性调整的风险中性买卖价差反应边界方差。",
-            "replication_parameters": "原文未详细说明具体的参数、数据频率或因子，理论框架涉及操作时间到日历时间的映射函数形式、格点设置、转移概率参数化等。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 3
+            "practical_score": 40,
+            "chinese_summary": "该论文提出了一种基于操作时间的期权定价框架，使用反应边界格点模型将操作时间与日历时间分离，并推导出广义的欧式定价偏微分方程。通过联系限价订单簿中间价，将局部波动率解释为活动调整后的风险中性买卖价差反应边界方差。该框架有助于理解未跨度时钟、跳跃或续延风险导致的不完备市场定价。",
+            "core_factors": "操作时间马尔可夫格点模型，状态和时间依赖的转移概率，活动调整后的反应边界方差。",
+            "replication_parameters": "未明确说明",
+            "performance_metrics": "未提供回测数据"
         }
     },
     {
@@ -247,11 +247,11 @@
         "date_scraped": "2026-06-14T23:02:57.941003",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本研究利用2005年至2023年的高频沪深300指数数据，提出一个两阶段框架：首先采用体制增强的HARQ模型与马尔可夫切换GJR-GARCH过滤来预测已实现波动率，捕捉长期记忆、非对称性和结构性市场体制；其次，将波动率预测、体制指标及其他预测因子纳入XGBoost模型进行收益预测，并通过严格的前向验证。实证表明，体制感知的波动率预测优于基准HARQ模型，但收益预测较弱且仅集中在低波动体制。简单的交易策略在考虑交易成本后无效，但通过波动率缩放、低波动门控、阈值校准和换手率控制，可以改善防御性经济表现。结论是预测系统的实际价值更多在于将弱状态依赖信号转化为稳健的资产配置规则。",
-            "core_factors": "核心框架为两阶段集成：第一阶段使用体制增强HARQ（HARQ+马尔可夫切换GJR-GARCH）对已实现波动率建模；第二阶段将波动率预测、体制指示变量、以及收益相关预测因子（如过去收益、成交量等）输入XGBoost模型进行收益预测，并采用波动率缩放、低波动门控等实现防御性策略。",
-            "replication_parameters": "数据：沪深300指数2005-2023年高频数据（具体频率未说明）；模型参数：HARQ的滞后阶数（1,5,22天）、马尔可夫切换体制数（未说明）、GJR-GARCH参数；XGBoost超参数（树数量、深度、学习率等）未详细说明；交易成本假设、波动率缩放参数、低波动门控阈值、换手率控制参数均未明确。原文未详细说明。",
-            "performance_metrics": "原文摘要未提供具体回测数据（如收益率、夏普比率等），仅提到统计上优于HARQ模型，但交易策略在扣除成本后表现不佳。",
-            "practical_score": 6
+            "practical_score": 65,
+            "chinese_summary": "该研究整合了市场体制下的波动率预测与基于机器学习的收益预测，使用高频沪深300指数数据发现体制感知的波动率模型优于基准，但收益预测性较弱且仅存在于低波动体制。实际交易策略需结合波动率缩放、低波动门控等设计才能提升防御性表现。",
+            "core_factors": "体制感知波动率（体制增强HARQ、马尔可夫切换GJR-GARCH）、波动率预测、体制指标、收益预测因子、低波动门控",
+            "replication_parameters": "Not explicitly stated (使用滚动窗口外推过程，数据区间2005-2023，资产为沪深300指数)",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -262,11 +262,11 @@
         "date_scraped": "2026-06-14T23:02:57.941005",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文对做市商的买卖报价规则进行了公理化。通过八个自然公理和六个环境假设，得出唯一的三参数族：中间报价随库存线性变化，价差分解为库存和逆向选择两部分。三个参数分别可由报价规则的不同矩唯一识别，且识别过程相互解耦。公理体系分为核心四公理、一个结构性选择和三个模块化扩展。两个结构性推论包括：潜在库存成本函数可从限价订单簿恢复，以及存在一个从正常市场到冻结市场的尖锐相变。最后，元定理给出了所有可行结构原语中四个不变特征。这是首个迫使报价规则唯一性的公理化工作。",
-            "core_factors": "核心因子包括：做市商的库存水平、信念、方差、交易强度及知情交易者比例。模型推导出中间报价与库存线性相关，价差分解为库存成本成分和逆向选择成分。",
-            "replication_parameters": "三个关键参数：1) 库存风险厌恶系数（控制中间报价对库存的敏感度）；2) 逆向选择价差系数（与知情交易者比例相关）；3) 非对称信息价差系数（与信念和方差相关）。数据频率需为逐笔交易或高频报价数据，以提取报价规则的矩。",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 6
+            "practical_score": 65,
+            "chinese_summary": "本论文通过公理化方法推导出做市商报价规则，强制得到唯一的三参数族：中间报价为库存的线性函数，买卖价差分解为库存和逆向选择成分。每个参数可由可观测报价规则的不同矩识别，且三个识别相互解耦。研究还揭示了库存成本函数可从限价订单簿恢复，以及功能与冻结状态之间的相变。",
+            "core_factors": "库存（inventory）、信念（belief）、方差（variance）、交易强度（trade intensity）、知情交易者比例（informed-trader fraction）。核心逻辑：中间报价为库存的线性函数，价差分解为库存成分和逆向选择成分，由三参数族决定。",
+            "replication_parameters": "Not explicitly stated for backtesting; 提出的三参数族包括：中间报价对库存的线性斜率、价差中的库存成分系数和逆向选择成分系数。每个参数由可观测报价规则的矩（如均值、协方差等）识别。",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -277,11 +277,11 @@
         "date_scraped": "2026-06-14T23:02:57.941007",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文针对日频股票组合的深度时间序列模型进行了全面基准测试，提出了一套结合公共窗口十分位组合、随机多准则可接受性分析（SMAA）、部署调整可接受性指数以及带有容量、Beta、行业、风险、杠杆和换手率约束的二次规划层的评估框架。基于2018-2024年CRSP日频股票数据，对15种深度与统计时间序列架构进行了比较。结果表明，TransEnc-8模型取得最高排名第一可接受性（0.352），但所有模型均未超过0.36；在不同偏好、市场状态、特征集和交易成本下，模型排名发生变化。在五种模型的约束组合比较中，TransEnc-8被持续选中。然而，在20个基点的交易成本下，所有模型的约束组合净夏普比率均为负值。该基准测试旨在支持模型选择与诊断，而非直接作为交易策略。",
-            "core_factors": "核心方法为基准测试协议，结合了十分位组合构建、随机多准则可接受性分析（SMAA）、部署调整可接受性指数以及带约束的二次规划（约束包括容量、Beta、行业、风险、杠杆和换手率）。核心逻辑是通过考虑偏好、成本与投资组合约束后的实际可用性来评估模型，而非仅基于预测精度。",
-            "replication_parameters": "数据频率：日频；时间范围：2018-2024；数据源：CRSP日频股票；模型：15种深度与统计时间序列架构；约束条件：容量、Beta、行业、风险、杠杆、换手率；交易成本：20 bps；组合构建：公共窗口十分位组合；评估指标：SMAA排名可接受性、部署调整可接受性指数。具体模型超参数及特征集原文未详细说明。",
-            "performance_metrics": "TransEnc-8模型排名第一可接受性为0.352，所有模型均未超过0.36。在五种模型约束组合比较中，TransEnc-8被选中，但基线约束二次规划在20 bps交易成本下的净夏普比率对所有模型均为负值。原文未提供具体收益率、胜率或Alpha数值。",
-            "practical_score": 4
+            "practical_score": 20,
+            "chinese_summary": "该论文构建了一个CRSP日频股票组合基准，评估15种深度和时间序列模型在2018-2024年间的表现，采用约束二次规划层并考虑成本后，所有模型的净夏普比率在20bps时均为负值，表明这些深度模型在真实交易中难以直接产生超额收益。",
+            "core_factors": "使用多标准可接受性分析（SMAA）和部署调整可接受性指数，结合约束二次规划（含容量、beta、行业、风险、杠杆和换手率控制）来评估模型。",
+            "replication_parameters": "数据频率：日频；资产池：CRSP全股票；回测区间：2018-2024；再平衡频率：与decile组合相关，可能每日；投资组合约束：容量、beta、行业、风险、杠杆和换手率。具体lookback period未明确说明。",
+            "performance_metrics": "TransEnc-8模型rank-1可接受性为0.352；约束QP下净夏普比率在20bps时对所有模型为负值；无具体回测数据如夏普比率数值。"
         }
     },
     {
@@ -292,11 +292,11 @@
         "date_scraped": "2026-06-14T23:02:57.941010",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出了一种新的BAVAR-BLED算法，结合贝叶斯平均向量自回归（BAVAR）和椭圆分布Black-Litterman（BLED）模型，并集成到TD3深度强化学习架构中，用于解决市场机制变化和肥尾回报问题。BAVAR通过多尺度时序特征捕捉市场状态，提供机制感知的预期收益和分散矩阵作为BLED的先验输入；BLED使用Student-t分布建模肥尾回报。利用Transformer网络构建观点，CNN估计风险厌恶，动态调整资产配置。在道琼斯30指数成分股十年数据上，该方法实现了夏普比率1.72、Sortino比率2.70和总回报57.26%，显著优于现有方法。",
-            "core_factors": "多尺度时序特征（BAVAR）、机制感知的预期收益和分散矩阵、肥尾分布（Student-t）、Transformer观点构建、CNN风险厌恶估计、TD3强化学习框架。",
-            "replication_parameters": "原文未详细说明具体参数，包括BAVAR的滞后阶数、先验分布、BLED的置信度水平、TD3的学习率、网络结构、交易频率等。数据频率未明确，但推测为日频。",
-            "performance_metrics": "夏普比率1.72，Sortino比率2.70，总回报57.26%。未提供胜率。",
-            "practical_score": 7
+            "practical_score": 75,
+            "chinese_summary": "本文提出BAVAR-BLED算法，结合贝叶斯平均向量自回归（BAVAR）和椭圆分布Black-Litterman模型（BLED），在深度强化学习框架中处理市场制度变化和厚尾收益。在道琼斯工业平均指数29只成分股上，该算法实现了1.72的夏普比率和57.26%的总回报，显著优于现有方法。",
+            "core_factors": "基于BAVAR的多尺度时间特征和市场制度感知的收益期望与分散矩阵估计，作为BLED的先验输入，结合学生t分布处理厚尾收益；利用Transformer构建观点，CNN估计风险厌恶系数，通过TD3进行动态资产配置。",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "夏普比率1.72，索提诺比率2.70，总回报57.26%（十年期间，道琼斯工业平均指数29只成分股）"
         }
     },
     {
@@ -307,11 +307,11 @@
         "date_scraped": "2026-06-14T23:02:57.941012",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文研究了静态增长-防御型风险组合与现金之间的现金覆盖配置问题。风险组合固定为等权重的增长型与防御型ETF篮子（50/50），因此现金覆盖独立于任何动态风格择时策略。目标为未来风险组合相对于现金的超额收益，现金部分使用同期现金利率。作者开发了两个连续滤波器：慢尾补偿滤波器针对风险组合补偿的持续恶化，尤其是现金收益率上升而风险资产不稳定的时期；V型崩溃刹车滤波器针对快速回撤事件及其后的重新入场。两者通过固定最大现金规则结合，每日取两个现金权重的较大值。在2017-2026年窗口上，选择权重的最大现金组合获得20.45%的年化收益率（静态风险组合16.62%），最大回撤从-33.59%改善至-16.77%。更严格的版本结合各组成部分的滚动外样本权重，在主要样本外窗口，扩展最大现金组合获得18.05%的收益率（静态16.09%），最大回撤-22.05%。证据支持模块化连续现金覆盖作为回撤控制工具。",
-            "core_factors": "两个连续滤波器：1）慢尾补偿滤波器，针对风险组合补偿的持续恶化，特别是现金收益率上升而风险资产不稳定的时期；2）V型崩溃刹车滤波器，针对快速回撤事件及后续重新入场。两者通过最大现金规则（取每日较大现金权重）组合。",
-            "replication_parameters": "静态风险组合：等权重增长型与防御型ETF篮子（50/50）。现金部分使用同期现金利率。回测窗口：2017-2026年。滤波器具体参数（如阈值、计算方式）及数据频率（推测为日频）原文未详细说明，需参考原文。",
-            "performance_metrics": "选择权重最大现金组合年化收益率20.45%（静态风险组合16.62%），最大回撤-16.77%（静态-33.59%）；扩展最大现金组合年化收益率18.05%（静态16.09%），最大回撤-22.05%。未提供夏普比率或胜率。",
-            "practical_score": 7
+            "practical_score": 75,
+            "chinese_summary": "该论文研究了一种静态增长-防御风险组合与现金之间的现金覆盖分配问题，开发了两个连续过滤器（慢尾补偿和V型崩溃刹车），并通过最大现金规则组合，显著提高了收益率并降低了最大回撤。",
+            "core_factors": "慢尾补偿滤波器（针对风险组合补偿的持续恶化）和V型崩溃刹车滤波器（针对快速回撤和再入），以及固定最大现金规则。",
+            "replication_parameters": "风险组合为50/50增长和防御ETF篮子；再平衡频率为每日；回看期等参数未明确说明。",
+            "performance_metrics": "最大现金组合在2017-2026年取得20.45%年化收益率（vs 16.62%），最大回撤从-33.59%改善至-16.77%；更严格版本样本外年化收益18.05%（vs 16.09%），最大回撤-22.05%（vs -33.59%）。"
         }
     },
     {
@@ -322,11 +322,11 @@
         "date_scraped": "2026-06-14T23:02:57.941015",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "该论文构建了一个连续时间平均场模型，研究中心化交易所（CEX）交易活动对权益证明（PoS）区块链生态的影响。模型假设矿工同时扮演PoS验证者和具有价格冲击的CEX交易者。在适当假设下，推导了均衡交易策略的半显式解。数值结果表明，中心化交易可通过市场激励提高质押参与率并促进质押分布的去中心化。此外，论文分析了交易成本和代币供应机制对均衡质押比率和集中度的影响。研究揭示了市场微观结构和中心化流动性对去中心化区块链协议的重要影响。",
-            "core_factors": "核心交易因子为平均场模型下的均衡交易策略，该策略由验证者（矿工）在CEX中的交易行为与PoS质押决策共同决定，涉及价格冲击、交易成本及代币供应机制。",
-            "replication_parameters": "原文未详细说明具体参数，但理论模型包含：价格冲击函数形式、交易成本率、PoS质押收益、代币供应时间表（如通胀率）、验证者数量及分布。数据频率需与连续时间模型匹配（理论框架，未指定）。",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 2
+            "practical_score": 30,
+            "chinese_summary": "本文通过建立连续时间均场模型，研究中心化交易所与权益证明（PoS）区块链之间的相互作用。数值结果表明，中心化交易活动可以通过市场激励提高质押参与度并促进质押分布的分散化。",
+            "core_factors": "质押行为、含价格冲击的交易策略、交易成本、代币供应机制",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -337,11 +337,11 @@
         "date_scraped": "2026-06-14T23:02:57.941017",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出了一种审计黑箱算法决策者的方法，通过将动态策略的累积遗憾分解为每期成本向量与决策之间协方差的和，扩展了Aldridge（2026）的单期恒等式至多期随机动态规划场景。该分解在i.i.d.成本和均值无偏马尔可夫策略下精确成立，并推导了非平稳和时间变化情况的偏差校正。该结果可用于平台机制设计中的福利审计、重复博弈中的政策改进评估，以及采购和广告拍卖中的福利损失量化。轨迹估计量一致、渐近正态，计算复杂度为O(T·nd)，为平台机制、算法投资策略等顺序决策系统提供了可处理的模型外审计工具。",
-            "core_factors": "核心逻辑是通过协方差分解计算遗憾：累积遗憾等于每期成本向量与决策之间协方差的和。这提供了一种无需访问代理私有类型即可评估动态策略福利效果的审计指标。",
-            "replication_parameters": "原文摘要未详细说明具体参数、数据频率或因子，但方法依赖i.i.d.成本假设、均值无偏马尔可夫策略，以及滚动窗口策略的估计误差偏差O(d/w)。实际复制需要定义成本向量（如回报率或损失函数）和决策变量（如投资权重）。",
-            "performance_metrics": "原文摘要未提供具体回测数据，如收益率、胜率、夏普比率或alpha。",
-            "practical_score": 4
+            "practical_score": 50,
+            "chinese_summary": "本文研究了黑箱算法决策者的审计问题，提出了动态策略累计遗憾的精确分解公式，可应用于平台机制设计、算法交易策略等序列决策系统的外部绩效审计。该分解提供了无需访问智能体私有类型的福利审计指标，并支持对策略性误报的偏差校正。",
+            "core_factors": "核心交易逻辑或信号：本文的核心贡献是动态策略累计遗憾的协方差分解，用于审计算法交易策略的绩效，而非具体的交易信号。其核心因子是成本向量与决策之间的协方差。",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -352,11 +352,11 @@
         "date_scraped": "2026-06-14T23:02:57.941020",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "该论文提出基于欧式看跌期权的p-index风险度量，用于评估投资策略绩效。通过在中国上证50指数和美国标普500指数2018-2023年的数据测试，发现使用公平价格策略时，持有期一周和一月能获得更高收益；行业板块中材料板块年化收益最高。动量与反转策略中，p-ratio-有效-反转策略在中国市场表现最佳（周持有期9.97%），而美国市场则是p-index-有效-动量策略最优（3.69%）。p-index方法在多数情况下优于传统beta方法。",
-            "core_factors": "p-index（基于欧式看跌期权的保险费用度量）、p-ratio（p-index与标的资产价格比值）、持有期（一周、两周、一月）、策略类型（公平价格、动量、反转、有效/无效股票分类）。",
-            "replication_parameters": "需获取标的资产（如SSE 50、S&P 500成分股）的欧式看跌期权价格、无风险利率、到期时间、行权价（保证达到指定收益率δ），以及历史收益率数据。数据频率日/周，时间范围2018-2023。具体期权定价模型及δ参数未详述。",
-            "performance_metrics": "年化收益率：中国市场材料板块最高11.04%（一周持有期）；美国市场p-index-有效-动量策略年化3.69%。其他策略如p-ratio-有效-反转策略9.97%（中国）。未提及夏普比率、胜率或alpha。",
-            "practical_score": 6
+            "practical_score": 60,
+            "chinese_summary": "本文构建了基于欧式看跌期权的p-index风险度量，应用于中国上证50和美国标普500指数，发现一周和一个月持有期收益较高，材料板块表现最好；p-index动量与反转策略在不同市场条件下有不同表现。",
+            "core_factors": "p-index（基于欧式看跌期权的保险费用度量）、动量、反转",
+            "replication_parameters": "回测期间2018-2023，持有期一周、两周、一个月，资产为中国上证50成分股和美国标普500成分股，再平衡频率未明确但基于持有期",
+            "performance_metrics": "中国材料板块年化收益率：一周11.04%，两周11.93%，一个月10.18%；p-ratio-efficient-contrarian一周年化9.97%；p-index-inefficient-momentum一周年化9.01%；美国p-index-efficient-momentum年化3.69%"
         }
     },
     {
@@ -367,131 +367,11 @@
         "date_scraped": "2026-06-14T23:02:57.941022",
         "source": "arXiv",
         "ai_analysis": {
-            "chinese_summary": "本文提出TT-DAC-PS（双目标确定性演员-评论家策略平滑）模型，用于最优大宗股票卖出执行。该模型结合双指数移动平均评论家目标、悲观最小备份、TD3类目标策略平滑噪声、延迟演员更新和保守Q正则化，以抑制过估计。探索采用Ornstein-Uhlenbeck噪声，并设计了混合调度方案（含退火、方差调整和学习温度映射）。环境融合Almgren-Chriss交易冲击与限价订单簿价格和成交量，状态归一化，每步成交量上限，并采用效用函数奖励。在10只美国股票的LOB数据上测试，与PPO、SAC、A2C、TWAP、VWAP和AC等基线对比，该模型持续降低平均实现缺额百分比，且方差有竞争力。",
-            "core_factors": "核心交易因子为：1）双指数移动平均评论家目标（twin EMA critic targets）与悲观最小备份（pessimistic min backup）；2）TD3风格目标策略平滑噪声；3）延迟演员更新；4）保守Q正则化；5）混合OU探索噪声（退火、方差调整、SAC温度映射）；6）Almgren-Chriss市场冲击模型与LOB数据融合。共同优化执行滑点。",
-            "replication_parameters": "具体参数原文未详细说明，但需设置：OU噪声初始尺度、退火率、方差调整窗口、温度学习率；评论家与演员网络结构及学习率、目标网络移动平均系数（τ）、策略平滑噪声标准差、保守Q正则化系数、延迟更新频率（演员更新间隔）。数据频率未明确，需基于LOB tick级或分钟级数据。",
-            "performance_metrics": "原文摘要未提供具体回测数据，仅指出模型一致降低平均实现缺额百分比（implementation shortfall percentage）且方差有竞争力，无收益率、胜率、夏普比率或alpha等具体指标。",
-            "practical_score": 5
-        }
-    },
-    {
-        "id": "openalex_W7162828992",
-        "title_en": "[OpenAlex Paper] A collaborative and participatory approach to public service innovation: Health sector dynamics and outlook",
-        "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-I38?lang=en",
-        "excerpt_en": "This article explores the dynamics of collaborative and participatory innovations in public health services using Chen et al.’s (2020) typology. Based on a mixed survey of projects awarded under the national “Droits des usagers de la santé” initiative, the study finds that user participation primarily generates operational and capacity-oriented innovations frequently involving external partnerships. The analysis highlights the crucial interactions between internal and external dynamics, identifying essential conditions for successful innovations: effective mobilization of internal resources, robust institutional support, and early and active user involvement. However, the study also identifies limitations in citizen engagement, particularly in the evaluation phase of innovations. The article concludes by suggesting avenues for enhancing full co-creation processes in public services to maximize public value.",
-        "date_scraped": "2026-06-14T23:12:28.646825",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文探索了公共卫生服务中合作与参与式创新的动力机制，基于Chen等人（2020）的分类法。通过对“Droits des usagers de la santé”国家计划下获奖项目的混合调查，研究发现用户参与主要产生运营和能力导向的创新，且常涉及外部合作。分析强调了内外动态交互的关键作用，识别出成功的必要条件：有效调动内部资源、强有力的制度支持以及用户早期积极介入。然而，研究也指出公民参与在创新评估阶段的局限性。文章最后提出了在公共服务中增强完整共创过程以最大化公共价值的建议。",
-            "core_factors": "原文未提取量化交易因子，论文主题为公共卫生服务创新。",
-            "replication_parameters": "原文未详细说明。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7137577846",
-        "title_en": "[OpenAlex Paper] Is the university an enabling environment? A qualitative study examining the impact of university disability policy for staff",
-        "source_url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1q?lang=en",
-        "excerpt_en": "This study aims to address the university social responsibility (USR) in France by examining disability policy for staff. The concept of an enabling environment is utilized, grounded in the capabilities approach. The aim is to understand how a French university fosters an enabling environment, on the one hand, to facilitate the disclosure of disability and, on the other hand, to promote participation in the institution’s disability policy. The present study employs a qualitative methodology, encompassing both primary and secondary data collection. A thematic content analysis is then conducted, utilising QDA Miner software. The results demonstrate the processes ranging from mobilizable resources to achievements. Some positive conversion factors are highlighted (e.g., the visibility of disability ambassadors), but also some negative ones (e.g., lack of time). It is evident that capabilities are observed, thereby strengthening the power of staff to take steps towards recognition as a disabled worker or to engage in the university’s disability policy (e.g., participation in DuoDay).",
-        "date_scraped": "2026-06-14T23:12:28.646837",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本研究探讨法国大学作为雇主对残疾员工的支持政策，基于能力方法分析大学如何构建“赋能环境”。通过定性研究（包括访谈和文档分析），发现积极转化因素（如残疾大使的可见性）和消极因素（如时间不足）。结果显示，员工的能力得到增强，有助于他们公开残疾身份或参与大学残疾政策（如DuoDay活动）。该研究聚焦于社会责任而非金融表现。",
-            "core_factors": "该论文非金融交易研究，无核心交易因子。",
-            "replication_parameters": "原文未详细说明。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7131234215",
-        "title_en": "[OpenAlex Paper] An investigation of the relationship between transformational and transactional leadership, organizational commitment and wellness in policing: a mixed methods approach",
-        "source_url": "https://doi.org/10.48683/1926.00128573>",
-        "excerpt_en": "Policing is a stressful profession, and effective leadership is needed to mitigate the effects of organizational stressors that make it one of the most hazardous occupations in the world. Evidence suggests that transformational and transactional leadership can influence the health outcomes and commitment levels of officers, but much of the research and strategies are derived from large jurisdictions and have failed to account for smaller resource constrained contexts. Therefore, the viability of these strategies in smaller jurisdictions such as those in the Caribbean are understudied. Studies have tended to apply quantitative methodologies, which do not give officers a voice to fully capture their contextual experiences that ultimately shape their work related outcomes. To address this gap, more context specific research is needed which captures the voice of officers and investigates how leadership directly impacts organizational commitment and wellness in smaller jurisdictions. These insights will be critical in developing leadership strategies that are more inclusive, culturally relevant and effective in Caribbean policing. Using an explanatory mixed methods design, survey data were gathered from 269 police officers through a web-based questionnaire that comprised items from the Multifactor Leadership Questionnaire, Total Commitment Employment Survey, and the Perceived Wellness Survey. The quantitative data were analyzed through multivariate analysis techniques including correlation and regression analysis. This was followed by a qualitative component where data were collected from 12 officers through semi-structured interviews and examined through thematic analysis. Findings reveal that transformational leadership was negatively related to affective and normative commitment as well as spiritual and intellectual wellness. In contrast, transactional leadership that is typified by rewards and consequences was positively related to both outcomes. The results also confirmed that continuance commitment, which is associated with an employee’s need to stay with an organization due to benefits or lack of alternatives, moderated the relationship between leadership (transactional and transformational) and wellness. These results challenge the efficacy of transformational leadership in a Caribbean policing context and suggest that leadership may be contextual when examining its effect on commitment and wellness.",
-        "date_scraped": "2026-06-14T23:12:28.646892",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文采用混合方法研究加勒比地区小型警察机构中变革型与交易型领导对组织承诺和健康的影响。对269名警察进行问卷调查，并对12名进行半结构化访谈。定量分析表明，变革型领导与情感承诺、规范承诺及精神、智力健康呈负相关；而交易型领导（基于奖惩）与这些结果正相关。持续承诺调节了领导类型与健康的关系。研究挑战变革型领导在该情境下的有效性，强调领导风格的背景依赖性。",
-            "core_factors": "领导风格（变革型与交易型）对员工承诺和健康的影响，非传统金融因子。",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7137759281",
-        "title_en": "[OpenAlex Paper] Une étude a posteriori de la construction de l’intention entrepreneuriale chez les entrepreneurs agricoles d’Afrique subsaharienne",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2025-0-page-I150?lang=fr",
-        "excerpt_en": "The literature on entrepreneurial intention has mostly examined the factors capable of predicting entrepreneurial action, and rarely those that actually led to it. This research therefore focuses on the factors that favored the transition to entrepreneurial action, in the specific context of Sub-Saharan Africa, and within the specific sector of agriculture. Using two embedded case studies, and within a comprehensive approach, we examine the ex-post influence of the 3 components of the theory of planned behavior on the entrepreneurial decision. Social norms are the least influential component, due to the lack of positive recognition for entrepreneurs and agriculture. Personal attitude, a favorable component, highlights the roles of family and academic education. Finally, the behavioral control component positively influences the transition to actio through preparation and extended stay in the informal mode, which turns out to be a genuine strategic choice.",
-        "date_scraped": "2026-06-14T23:12:28.646902",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文基于计划行为理论，通过嵌入式案例研究，分析了撒哈拉以南非洲农业创业者从创业意向到实际创业行动的影响因素。研究发现，社会规范对创业决策影响最小，因为创业和农业缺乏正面认可；个人态度受家庭和学术教育影响较大，是积极因素；行为控制通过准备和在非正式模式中的长期经验积极促进实际行动，这种非正式模式被视为一种战略选择。",
-            "core_factors": "计划行为理论的三要素：个人态度、社会规范和行为控制。具体而言，个人态度（家庭和学术教育的影响）和行为控制（准备与非正式长期经验）是关键驱动因素。",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7153402517",
-        "title_en": "[OpenAlex Paper] Le projet design comme moyen de stimuler l’intention entrepreneuriale",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I165?lang=fr",
-        "excerpt_en": "Entrepreneurship is a complex process initiated by an intention that leads to business creation. In Tunisia, it plays an essential role in the employability of young graduates and contributes to economic growth. Design, a creative discipline based on active project pedagogy, provides fertile ground for innovation and entrepreneurship. This research examines the extent to which project-based pedagogy in design and the ESSTED ecosystem foster the emergence of entrepreneurial intention. The study adopts a qualitative exploratory approach, based on semi-structured interviews with ten graduates who became entrepreneurs, supplemented by a thematic analysis. The results reveal internal and external factors influencing this intention. The experience of institutional projects, structured around Design Thinking and project-based pedagogy, appears as a major lever for developing the skills, attitudes, and aptitudes necessary for entrepreneurship. JEL Codes : A22, O35, M12, M14",
-        "date_scraped": "2026-06-14T23:12:28.646913",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文探讨了基于设计思维的项目教学法如何促进突尼斯年轻毕业生的创业意图。研究采用定性方法，通过半结构化访谈和主题分析，发现设计项目经验与创业意愿正相关，内部因素（如技能、态度）和外部因素（如生态系统支持）均起重要作用。结论强调设计项目教学是培养创业能力的关键杠杆。",
-            "core_factors": "本文与量化交易无关，未提出交易因子或策略。",
-            "replication_parameters": "原文未详细说明。",
-            "performance_metrics": "原文摘要未提供具体回测数据。",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7137390646",
-        "title_en": "[OpenAlex Paper] Exploring the Entrepreneurial Intentions of Academic Inventors in an Emerging Context: The Case of Morocco",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2025-0-page-I153?lang=fr",
-        "excerpt_en": "This study investigates the entrepreneurial intentions of academic inventors in Morocco, an emerging economy where the establishment of university-based ventures remains exceptionally rare, despite a notable increase in patenting activity within Moroccan universities over the past decade. Based on 16 semi-structured interviews, the research applies thematic content analysis (TCA) to identify the key factors that shape these intentions. The findings highlight that, beyond legal, financial, and structural challenges, inventors’ perceptions and beliefs about the business world, their academic roles, and their professional identities deeply influence entrepreneurial intentions. In particular, those identified as “unintentional inventors” demonstrate a strong emotional commitment to their academic mission, hold ambiguous or conflicting relationships with money, and perceive entrepreneurship as fundamentally incompatible with their professional roles. JEL Codes: L26, O31, O31, O34.",
-        "date_scraped": "2026-06-14T23:12:28.646923",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本研究探讨了新兴经济体摩洛哥的学术发明家创业意愿。尽管过去十年摩洛哥大学专利申请显著增加，但大学衍生企业仍然极为罕见。基于16个半结构化访谈和主题内容分析，研究发现，除了法律、财务和结构挑战外，发明家对商业世界的认知、信念、学术角色认同和专业身份深刻影响其创业意愿。特别是“非故意发明家”对学术使命有强烈情感承诺，对金钱关系模糊或冲突，并认为创业与职业角色根本不相容。",
-            "core_factors": "创业意愿的核心驱动因素包括：对商业世界的认知和信念、对学术角色的认同、专业身份冲突、对金钱的态度、法律与结构障碍。",
-            "replication_parameters": "原文未详细说明（定性研究，无定量参数或频率）。",
-            "performance_metrics": "原文摘要未提供具体回测数据（非交易策略研究）。",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7137519157",
-        "title_en": "[OpenAlex Paper] The Enlightenment of an Entrepreneur: A Multidisciplinary Exploration of Management, Psychology and Economic Theology",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I157?lang=fr",
-        "excerpt_en": "This conceptual paper explores how Economic Theology’s ideas of calling, oikonomia, and entrepreneurship can enhance entrepreneurs’ ability to navigate sustainability transitions. Integrating concepts from various disciplines, it reimagines entrepreneurship as an iterative learning process that addresses societal challenges. The paper analyses existing Religion of Work theories, providing societal, psychological, and anthropological insights. It elucidates the concept of calling in entrepreneurship, suggesting that work can have transcendent meaning and purpose. Additionally, it examines boundaryless careers and the significance of work, portraying entrepreneurship as a profession with humanitarian and spiritual dimensions. The paper outlines fundamental beliefs and frameworks for societal contribution through entrepreneurship, emphasizing the individual-in-society perspective. It advocates for entrepreneurs as moral agents aligned with community values and proposes a shift from viewing economic actions as mere resource allocation to recognizing entrepreneurial action as an expression of human agency. JEL Codes: B5",
-        "date_scraped": "2026-06-14T23:12:28.646933",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文是一篇概念性论文，跨学科探索了经济神学中的召唤、经济学与创业等概念如何增强企业家应对可持续转型的能力。通过整合管理学、心理学与经济神学，将创业重新构想为应对社会挑战的迭代学习过程。论文分析了现有的“工作宗教”理论，从社会、心理和人类学角度阐释了创业中的召唤概念，认为工作具有超越性的意义和目的。此外，探讨了无边界职业和工作意义，将创业描绘为具有人道和精神维度的职业。论文强调企业家作为与社区价值观一致的道德代理，主张将经济行动从资源分配转向人类能动性的表达。JEL代码：B5。",
-            "core_factors": "无量化交易因子",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
-        }
-    },
-    {
-        "id": "openalex_W7140018608",
-        "title_en": "[OpenAlex Paper] L’enchantement de la planification territoriale par le design fiction : les cas de Grand Paris et Grand Londres",
-        "source_url": "https://shs.cairn.info/revue-marche-et-organisations-2026-0-page-I162?lang=fr",
-        "excerpt_en": "This article draws on Raphaële Bidault-Waddington’s design fiction work on the future of Greater Paris, as well as other speculative works, to explore the growing influence of fictional speculation in territorial planning and innovation. The analysis focuses on the case of Greater Paris, examining how prospective narratives and artistic imaginaries can shape urban development strategies and generate public support. A comparison with the imaginary of Greater London sheds light on this phenomenon. The article highlights the role of artists and creative approaches in energizing institutional thinking and enriching public debate on the future of territories. In addition, it theorizes the concept of “design ficthinking”, the integration of design fiction within design thinking to optimize ideation and prototyping and insert fiction into institutional thinking. Finally, this text highlights the importance of storytelling and enchantment in a context of disenchantment to mobilize actors and give meaning to major collective projects. JEL Codes: O30, O36",
-        "date_scraped": "2026-06-14T23:12:28.646978",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "chinese_summary": "本文探讨了设计虚构（design fiction）在领土规划中的运用，主要基于Raphaële Bidault-Waddington对“大巴黎”未来的设计虚构工作。研究指出，前瞻性叙事和艺术想象能够塑造城市发展战略并获得公众支持，并通过与“大伦敦”想象的比较进行阐释。文章强调了艺术家和创意方法在激发机构思维、丰富公共辩论中的作用，并提出“设计虚构思维”（design ficthinking）概念，将设计虚构融入设计思维以优化构思和原型制作。最后，文章强调了在祛魅背景下，叙事和魅力对于动员行动者和赋予大型集体项目意义的重要性。",
-            "core_factors": "非量化金融论文，无核心交易因子。",
-            "replication_parameters": "原文未详细说明",
-            "performance_metrics": "原文摘要未提供具体回测数据",
-            "practical_score": 1
+            "practical_score": 80,
+            "chinese_summary": "本文提出一种名为TT-DAC-PS的强化学习算法，用于优化大额股票卖出执行。该算法结合双目标批评家、策略平滑噪声和保守Q正则化等方法，有效降低了实现缺口，并优于传统执行算法（如TWAP、VWAP）和标准强化学习基准模型。",
+            "core_factors": "强化学习算法基于Almgren-Chriss市场冲击模型和限价订单簿数据的状态特征，通过双目标确定型演员-评论家架构与策略平滑噪声进行交易决策。",
+            "replication_parameters": "资产池：10只美国股票；其他参数如回看周期、再平衡频率等未明确说明。",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
