@@ -7,11 +7,11 @@
         "date_scraped": "2026-06-14T22:15:22.781243",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 50,
-            "chinese_summary": "该项目复制了论文《Forest Through the Trees: Building Cross-Sections of Stock Returns》，使用Python创建资产以检验因子模型的有效性，侧重于通过随机森林等方法构建股票收益率的截面数据。",
-            "core_factors": "随机森林等机器学习方法构建的因子模型，可能包括原始论文中的各种股票特征（如动量、价值、规模等）。",
-            "replication_parameters": "未明确说明具体参数，但依赖于原始论文中的回测设定，可能包括特定的股票池和频率。",
-            "performance_metrics": "未提供具体回测数据。项目目的在于复现论文，而非展示绩效。"
+            "practical_score": 60,
+            "chinese_summary": "该项目复现了文献中构建股票收益率横截面的方法，用于检验因子模型的有效性。通过Python实现资产组合的构建，为因子投资研究提供工具。",
+            "core_factors": "横截面股票收益率因子（如市场、规模、价值、动量等）",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -22,25 +22,10 @@
         "date_scraped": "2026-06-14T22:15:22.781264",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该仓库复现了因子择时策略，旨在通过动态调整因子暴露来提高投资表现。由于缺乏具体细节，实际可行性需进一步验证。",
-            "core_factors": "因子择时信号，可能涉及动量、估值等传统因子及其时间序列预测。",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "github_1139054291",
-        "title_en": "Replication Repo: YuzeHao2023/daily-arxiv-ai4economy",
-        "source_url": "https://github.com/YuzeHao2023/daily-arxiv-ai4economy",
-        "excerpt_en": "[⭐ 2 Stars] 🎓Automatically Update AI4Economy Papers Daily using Github Actions",
-        "date_scraped": "2026-06-14T22:15:22.781268",
-        "source": "GitHub",
-        "ai_analysis": {
-            "practical_score": 10,
-            "chinese_summary": "该项目是一个自动更新AI4Economy论文的仓库，每日抓取arXiv上相关论文。没有提供具体交易策略或因子。",
-            "core_factors": "Not applicable; this is a paper aggregation tool.",
-            "replication_parameters": "Not explicitly stated; it is an automated update script.",
+            "practical_score": 70,
+            "chinese_summary": "该仓库是对因子择时策略的复现，旨在通过择时因子来优化投资组合表现。",
+            "core_factors": "因子择时信号，可能包括动量、估值、波动率等因子。",
+            "replication_parameters": "Not explicitly stated.",
             "performance_metrics": "No specific backtest data provided."
         }
     },
@@ -52,24 +37,9 @@
         "date_scraped": "2026-06-14T22:15:22.781271",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该研究探讨研发投资强度与长期股票回报之间的关系，为研发因子投资提供实证证据。",
-            "core_factors": "研发投资强度（R&D intensity）",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "github_1167545283",
-        "title_en": "Replication Repo: brockpat/Demand-based-Asset-Pricing",
-        "source_url": "https://github.com/brockpat/Demand-based-Asset-Pricing",
-        "excerpt_en": "[⭐ 1 Stars] None",
-        "date_scraped": "2026-06-14T22:15:22.781273",
-        "source": "GitHub",
-        "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该仓库复现了需求驱动资产定价相关研究，可能涉及基于订单流或投资者情绪的因子模型。但摘要缺失具体细节，实用性需进一步验证。",
-            "core_factors": "需求驱动因子（如订单流不平衡、投资者情绪等）",
+            "practical_score": 65,
+            "chinese_summary": "该项目基于R&D投资强度因子，研究其与长期股票收益的关系，属于因子投资策略。通过复制经典论文，验证了高研发投入公司的长期超额收益。",
+            "core_factors": "R&D投资强度 (R&D investment intensity)",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
@@ -83,8 +53,8 @@
         "source": "GitHub",
         "ai_analysis": {
             "practical_score": 50,
-            "chinese_summary": "该论文尝试复制动量因子投资策略，评估其有效性。核心因素为价格动量，实际交易可行性中等。",
-            "core_factors": "价格动量（过去收益率）",
+            "chinese_summary": "该项目通过回测检验动量因子投资策略的有效性，属于因子投资领域的经典策略研究。",
+            "core_factors": "动量因子（momentum factor）",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
@@ -97,11 +67,11 @@
         "date_scraped": "2026-06-14T22:15:22.781278",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该项目提供了一个用于金融数据抓取、基本面和技术分析、投资组合构建与优化以及回测的综合API工具包。尽管实用性较强，但缺乏特定策略的创新点，适合作为量化研究的起点。",
-            "core_factors": "多种金融数据来源（API）、基本面指标、技术指标、投资组合优化算法（如均值-方差、风险平价等）",
-            "replication_parameters": "Not explicitly stated（未明确说明具体参数，需用户自定义）",
-            "performance_metrics": "No specific backtest data provided（未提供回测绩效数据）"
+            "practical_score": 35,
+            "chinese_summary": "这是一个量化交易工具包，提供API用于抓取金融数据、进行基本面和技术面分析、构建投资组合、优化配置以及回测策略。作为一个复制仓库，它缺乏具体策略细节和实证结果。",
+            "core_factors": "未明确指定，但提及基本面和技术面分析信号",
+            "replication_parameters": "未明确说明",
+            "performance_metrics": "未提供具体回测数据"
         }
     },
     {
@@ -113,8 +83,8 @@
         "source": "GitHub",
         "ai_analysis": {
             "practical_score": 50,
-            "chinese_summary": "这是一个因子投资策略的复现仓库，但缺乏详细信息，无法评估其实用性。",
-            "core_factors": "因子投资（Factor Investing）",
+            "chinese_summary": "该项目是一个因子投资策略的复现仓库，旨在复制已知的量化因子模型，但缺乏详细的策略说明和回测数据。",
+            "core_factors": "未明确指定，通常可能包含价值、动量、规模等因子。",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
@@ -127,8 +97,8 @@
         "date_scraped": "2026-06-14T22:15:22.781282",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 80,
-            "chinese_summary": "该项目使用Python实现了Fama-French三因子模型中的规模因子（SMB）和价值因子（HML），涵盖数据获取到统计分析全过程。对于因子投资研究和实践具有重要参考价值。",
+            "practical_score": 70,
+            "chinese_summary": "该项目使用Python实现了Fama-French的规模因子（SMB）和价值因子（HML），包括数据获取和统计分析，为因子投资提供了可复现的工具。",
             "core_factors": "规模因子（SMB）和价值因子（HML）",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
@@ -142,11 +112,11 @@
         "date_scraped": "2026-06-14T22:15:22.781284",
         "source": "GitHub",
         "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该项目是一个Alpha因子研究引擎的复制仓库，旨在提供构建和测试量化交易因子的工具。尽管缺乏具体策略细节，但其架构可用于实盘因子挖掘。",
-            "core_factors": "未明确说明，但通常包括动量、价值、质量等常见因子信号。",
-            "replication_parameters": "未明确说明",
-            "performance_metrics": "未提供具体回测数据"
+            "practical_score": 0,
+            "chinese_summary": "该项目是一个alpha因子研究引擎的复现仓库，但缺乏具体描述和性能数据。",
+            "core_factors": "Not specified",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -157,11 +127,11 @@
         "date_scraped": "2026-06-14T23:02:57.940970",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 70,
-            "chinese_summary": "该论文提出了一种基于递减CVaR约束的靶向日期基金设计框架，通过设定明确的回报目标并随着时间降低风险预算来控制组合风险。应用于智利养老金系统的案例表明，风险降低的过渡年龄是最关键的设计参数，而缴费密度构成了硬约束。",
-            "core_factors": "递减CVaR约束（风险预算）、外生目标回报率（来自养老金设计参数）、从可行组合中随机抽样的分配策略",
-            "replication_parameters": "月度再平衡、40年累积期、资产类别包括9种智利和全球资产、CVaR估计期间未明确说明",
-            "performance_metrics": "未在摘要中提供具体回测数据；论文使用达标概率和累积风险作为绩效指标"
+            "practical_score": 75,
+            "chinese_summary": "提出了一种基于递减条件风险价值（CVaR）约束的目标日期基金设计框架，应用于智利养老金系统。该方法通过随机抽取可行资产配置来保守评估成功概率和累积风险，关键参数为风险下降的过渡年龄。",
+            "core_factors": "递减CVaR约束、目标收益率、资产配置随机抽取、过渡年龄、缴费密度",
+            "replication_parameters": "每月再平衡，40年积累期，九种智利和全球资产类别，过渡年龄为关键设计参数",
+            "performance_metrics": "成功率（达到目标收益的概率）和累积风险值，无具体回测数据"
         }
     },
     {
@@ -172,9 +142,9 @@
         "date_scraped": "2026-06-14T23:02:57.940987",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 40,
-            "chinese_summary": "提出一种实时检测订单对市场价格冲击的方法，通过衡量交易行为后不利市场事件发生的时间同步性来判断因果关系，而非依赖价格滑点。该方法需要真实执行数据验证，尚未经过实证检验。",
-            "core_factors": "交易行为后不利市场事件的时间同步性（统计意外程度）",
+            "practical_score": 60,
+            "chinese_summary": "该论文提出了一种实时价格影响检测方法，通过测量交易者行为与随后不利市场事件的时间同步性来判断因果关系，克服了传统滑点监测无法确定因果关系的局限。该方法需要真实执行数据进行验证。",
+            "core_factors": "时间同步性（交易者行为与不利市场事件之间的统计意外性）",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
@@ -188,8 +158,8 @@
         "source": "arXiv",
         "ai_analysis": {
             "practical_score": 60,
-            "chinese_summary": "本文提出启发式投资组合优化（HPO）框架，将市场实践中的等权重、风险平价等规则数学化，并揭示其与马科维茨最优解的关系。通过隐含收益率原理和舒尔补等工具，为规则提供最优性条件和偏差分解。",
-            "core_factors": "启发式规则：等权重、逆波动率、风险平价、层次风险平价（HRP）、调整后HRP（RA-HRP）；隐含收益率原理；舒尔补替代；聚簇夏普递归；第一类夏普微积分",
+            "chinese_summary": "本文发展了启发式投资组合优化（HPO），将等权重、逆波动率、风险平价、HRP等启发式规则与Markowitz切线组合联系起来，通过隐含收益原理揭示其最优性条件，并扩展到强化学习投资组合优化（RLPO），为静态和动态组合优化提供了理论框架。",
+            "core_factors": "基于协方差矩阵的启发式权重规则（等权重、逆波动率、风险平价、HRP、RA-HRP），隐含收益原理，Schur补替代，树状聚类，节点分层alpha，KL散度预算。",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
@@ -202,11 +172,11 @@
         "date_scraped": "2026-06-14T23:02:57.940995",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 30,
-            "chinese_summary": "本文研究存在模型歧义和学习机制下的均值-方差优化问题，提出动态投资策略，数值结果表明歧义厌恶投资者会减少对风险资产的投资。",
-            "core_factors": "模型歧义、学习机制、均值-方差准则（方差分解加权）",
-            "replication_parameters": "连续时间、多资产Black-Scholes市场、先验分布学习，未明确说明回看周期和再平衡频率",
-            "performance_metrics": "无具体回测数据，仅提供参数影响分析的数值结果"
+            "practical_score": 50,
+            "chinese_summary": "本文研究在存在模型不确定性和学习机制的多资产Black-Scholes市场中，模糊厌恶投资者的动态均值-方差投资组合优化问题。采用平滑模糊厌恶准则，将方差分解并赋予不同权重以区分市场风险和模型不确定性，发现模糊厌恶投资者倾向于减少对风险资产的投资。",
+            "core_factors": "模型不确定性（资产漂移未知）、先验分布、模糊厌恶参数、市场学习",
+            "replication_parameters": "Not explicitly stated",
+            "performance_metrics": "No specific backtest data provided"
         }
     },
     {
@@ -217,26 +187,11 @@
         "date_scraped": "2026-06-14T23:02:57.940998",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 40,
-            "chinese_summary": "本文扩展了线性回报外推框架，引入非线性不对称外推函数，在随机波动率下求解最优投资组合。模型捕捉了投资者对盈亏的非对称反应和饱和效应，并指出饱和作为内生修正机制能降低福利损失。",
-            "core_factors": "非对称非线性回报外推函数；情绪扭曲的投机需求、方差对冲需求和情绪对冲需求",
+            "practical_score": 60,
+            "chinese_summary": "论文将回报外推框架扩展到包含饱和效应与非对称性，并在Heston随机波动率下求解最优投资组合。研究发现饱和机制作为内生的修正因子降低了福利损失，模型还产生了非对称反应、过度交易等行为异常。",
+            "core_factors": "非对称非线性回报外推信号，基于投资者对历史收益的饱和与方向性偏见调整预期，形成情绪扭曲的短视需求、方差对冲需求和情绪对冲需求。",
             "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "arxiv_2606.09564v1",
-        "title_en": "[Academic Paper] Option prices from operational-time reaction-boundary lattices",
-        "source_url": "http://arxiv.org/abs/2606.09564v1",
-        "excerpt_en": "We consider the role of a continuum operational time u and its mapping to calendar time t and how these relate to event time for option pricing problems. We derive option-pricing equations from an operational-time Markov lattice rather than from a calendar-time diffusion. The primitive model is a nearest-neighbour log-price lattice with state- and time-dependent transition probabilities. Its Chapman-Kolmogorov decomposition yields discrete forward and backward equations, which converge under local finite-variance scaling to the usual continuum adjoint pair. In price variables, the backward equation gives a generalized European pricing PDE and reduces to Black-Scholes-Merton under the risk-neutral drift restriction and constant volatility. Interpreted as a reaction-boundary model for limit-order-book mid-prices, the construction identifies local volatility with an activity-rescaled risk-neutral bid-ask reaction-boundary variance. The framework separates the operational kernel, calendar-time projection, and pricing-measure choice, to clarify how unspanned clock, jump, or renewal risks can lead to incomplete-market pricing.",
-        "date_scraped": "2026-06-14T23:02:57.941001",
-        "source": "arXiv",
-        "ai_analysis": {
-            "practical_score": 40,
-            "chinese_summary": "该论文提出了一种基于操作时间的期权定价框架，使用反应边界格点模型将操作时间与日历时间分离，并推导出广义的欧式定价偏微分方程。通过联系限价订单簿中间价，将局部波动率解释为活动调整后的风险中性买卖价差反应边界方差。该框架有助于理解未跨度时钟、跳跃或续延风险导致的不完备市场定价。",
-            "core_factors": "操作时间马尔可夫格点模型，状态和时间依赖的转移概率，活动调整后的反应边界方差。",
-            "replication_parameters": "未明确说明",
-            "performance_metrics": "未提供回测数据"
         }
     },
     {
@@ -247,11 +202,11 @@
         "date_scraped": "2026-06-14T23:02:57.941003",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 65,
-            "chinese_summary": "该研究整合了市场体制下的波动率预测与基于机器学习的收益预测，使用高频沪深300指数数据发现体制感知的波动率模型优于基准，但收益预测性较弱且仅存在于低波动体制。实际交易策略需结合波动率缩放、低波动门控等设计才能提升防御性表现。",
-            "core_factors": "体制感知波动率（体制增强HARQ、马尔可夫切换GJR-GARCH）、波动率预测、体制指标、收益预测因子、低波动门控",
-            "replication_parameters": "Not explicitly stated (使用滚动窗口外推过程，数据区间2005-2023，资产为沪深300指数)",
-            "performance_metrics": "No specific backtest data provided"
+            "practical_score": 60,
+            "chinese_summary": "该研究利用高频CSI 300指数数据，构建了一个两阶段框架：先通过马尔可夫转换GJR-GARCH和HARQ模型进行体制依赖的波动率预测，再结合XGBoost模型预测收益率。结果发现，考虑市场体制的波动率预测表现更优，但收益率预测能力较弱且仅在低波动体制下有效。经过交易成本调整后，朴素交易策略失效，但结合波动率缩放和低波动率阈值控制的精心设计能提升防御性表现。",
+            "core_factors": "体制依赖的波动率预测（HARQ、马尔可夫转换GJR-GARCH）、XGBoost收益率预测，以及波动率缩放、低波动率门控、阈值校准和换手率控制等交易实施规则。",
+            "replication_parameters": "数据：沪深300指数，2005-2023年；高频数据；严格滚动窗外样本流程。但具体回看周期、再平衡频率和资产类别未明确说明。",
+            "performance_metrics": "定性描述：体制感知波动率预测优于基准模型；收益率预测弱且依赖状态；朴素策略在考虑交易成本后失败；精心设计的策略可改善防御性经济表现。未提供具体夏普比率、最大回撤等数值。"
         }
     },
     {
@@ -262,10 +217,10 @@
         "date_scraped": "2026-06-14T23:02:57.941005",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 65,
-            "chinese_summary": "本论文通过公理化方法推导出做市商报价规则，强制得到唯一的三参数族：中间报价为库存的线性函数，买卖价差分解为库存和逆向选择成分。每个参数可由可观测报价规则的不同矩识别，且三个识别相互解耦。研究还揭示了库存成本函数可从限价订单簿恢复，以及功能与冻结状态之间的相变。",
-            "core_factors": "库存（inventory）、信念（belief）、方差（variance）、交易强度（trade intensity）、知情交易者比例（informed-trader fraction）。核心逻辑：中间报价为库存的线性函数，价差分解为库存成分和逆向选择成分，由三参数族决定。",
-            "replication_parameters": "Not explicitly stated for backtesting; 提出的三参数族包括：中间报价对库存的线性斜率、价差中的库存成分系数和逆向选择成分系数。每个参数由可观测报价规则的矩（如均值、协方差等）识别。",
+            "practical_score": 40,
+            "chinese_summary": "本文公理化了做市商的买卖报价规则，通过八个自然公理和六个环境假设，唯一确定了一个三参数报价模型：中间价与存货线性相关，价差分解为存货和逆向选择成分。该研究为市场微观结构提供理论基础，但缺乏实际交易回测数据。",
+            "core_factors": "存货、信念、方差、交易强度、知情交易者比例；中间价与存货线性相关，价差分解为存货和逆向选择成分。",
+            "replication_parameters": "Not explicitly stated",
             "performance_metrics": "No specific backtest data provided"
         }
     },
@@ -277,11 +232,11 @@
         "date_scraped": "2026-06-14T23:02:57.941007",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 20,
-            "chinese_summary": "该论文构建了一个CRSP日频股票组合基准，评估15种深度和时间序列模型在2018-2024年间的表现，采用约束二次规划层并考虑成本后，所有模型的净夏普比率在20bps时均为负值，表明这些深度模型在真实交易中难以直接产生超额收益。",
-            "core_factors": "使用多标准可接受性分析（SMAA）和部署调整可接受性指数，结合约束二次规划（含容量、beta、行业、风险、杠杆和换手率控制）来评估模型。",
-            "replication_parameters": "数据频率：日频；资产池：CRSP全股票；回测区间：2018-2024；再平衡频率：与decile组合相关，可能每日；投资组合约束：容量、beta、行业、风险、杠杆和换手率。具体lookback period未明确说明。",
-            "performance_metrics": "TransEnc-8模型rank-1可接受性为0.352；约束QP下净夏普比率在20bps时对所有模型为负值；无具体回测数据如夏普比率数值。"
+            "practical_score": 30,
+            "chinese_summary": "该论文对15种深度学习和统计时间序列模型在日度股票组合上的表现进行了基准测试，考虑了偏好、成本和组合约束。结果显示没有单一模型在原始基准中占优，且基线约束组合在20个基点交易成本下的净夏普比率为负。",
+            "core_factors": "使用CRSP日度股票数据，构建十分位组合，采用多准则可接受性分析，结合容量、beta、行业、风险、杠杆和换手率控制的约束二次规划层。核心信号来自各个时间序列模型的预测。",
+            "replication_parameters": "回测期2018-2024，日度频率，股票组合采用十分位分组，再平衡频率未明确但可能是日度。资产范围为CRSP股票。约束条件包括容量、beta、行业、风险、杠杆和换手率。",
+            "performance_metrics": "TransEnc-8最大秩1可接受性0.352，无模型超过约0.36。基线约束组合在20个基点交易成本下净夏普比率为负，具体数值未提供。"
         }
     },
     {
@@ -293,10 +248,10 @@
         "source": "arXiv",
         "ai_analysis": {
             "practical_score": 75,
-            "chinese_summary": "本文提出BAVAR-BLED算法，结合贝叶斯平均向量自回归（BAVAR）和椭圆分布Black-Litterman模型（BLED），在深度强化学习框架中处理市场制度变化和厚尾收益。在道琼斯工业平均指数29只成分股上，该算法实现了1.72的夏普比率和57.26%的总回报，显著优于现有方法。",
-            "core_factors": "基于BAVAR的多尺度时间特征和市场制度感知的收益期望与分散矩阵估计，作为BLED的先验输入，结合学生t分布处理厚尾收益；利用Transformer构建观点，CNN估计风险厌恶系数，通过TD3进行动态资产配置。",
+            "chinese_summary": "该论文提出了一种结合贝叶斯平均向量自回归(BAVAR)和椭圆Black-Litterman(BLED)的深度强化学习算法(BAVAR-BLED)来优化投资组合，能够应对市场体制变化和厚尾收益。在道琼斯工业平均指数成分股上，该算法取得了夏普比率1.72、总收益57.26%的优异表现。",
+            "core_factors": "Bayesian-Averaging Vector Autoregressive (BAVAR) for regime-aware return and dispersion estimates, Elliptical Black-Litterman (BLED) using Student's t-distributions, transformer networks for view construction, CNNs for risk-aversion estimates",
             "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "夏普比率1.72，索提诺比率2.70，总回报57.26%（十年期间，道琼斯工业平均指数29只成分股）"
+            "performance_metrics": "Sharpe ratio 1.72, Sortino ratio 2.70, total returns 57.26% over a decade"
         }
     },
     {
@@ -307,41 +262,11 @@
         "date_scraped": "2026-06-14T23:02:57.941012",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 75,
-            "chinese_summary": "该论文研究了一种静态增长-防御风险组合与现金之间的现金覆盖分配问题，开发了两个连续过滤器（慢尾补偿和V型崩溃刹车），并通过最大现金规则组合，显著提高了收益率并降低了最大回撤。",
-            "core_factors": "慢尾补偿滤波器（针对风险组合补偿的持续恶化）和V型崩溃刹车滤波器（针对快速回撤和再入），以及固定最大现金规则。",
-            "replication_parameters": "风险组合为50/50增长和防御ETF篮子；再平衡频率为每日；回看期等参数未明确说明。",
-            "performance_metrics": "最大现金组合在2017-2026年取得20.45%年化收益率（vs 16.62%），最大回撤从-33.59%改善至-16.77%；更严格版本样本外年化收益18.05%（vs 16.09%），最大回撤-22.05%（vs -33.59%）。"
-        }
-    },
-    {
-        "id": "arxiv_2606.09003v1",
-        "title_en": "[Academic Paper] Proof of Stake economy under centralized exchanges--a mean field model",
-        "source_url": "http://arxiv.org/abs/2606.09003v1",
-        "excerpt_en": "We consider the interaction between centralized trading and decentralized Proof of Stake (PoS) blockchain ecosystems. Motivated by the increasing dominance of centralized exchanges and the institutionalization of crypto markets, we study how trading activities on centralized exchanges affect staking behavior, token allocation, and decentralization within a PoS blockchain. We formulate a continuous-time mean field model, where the miners simultaneously act as validators in the PoS protocol and traders in a centralized market with price impact. Under suitable assumptions, we establish the local well-posedness of the mean field system, and derive a semi-explicit characterization of the equilibrium trading strategy. Numerical results suggest that centralized trading activities may enhance staking participation, and promote decentralization of the staking distribution through market incentives. We also study the effects of transaction costs and token supply mechanisms on the equilibrium staking ratio and concentration profile. These results illustrate how market microstructure and centralized liquidity provision can exert significant influence on decentralized blockchain protocols.",
-        "date_scraped": "2026-06-14T23:02:57.941015",
-        "source": "arXiv",
-        "ai_analysis": {
-            "practical_score": 30,
-            "chinese_summary": "本文通过建立连续时间均场模型，研究中心化交易所与权益证明（PoS）区块链之间的相互作用。数值结果表明，中心化交易活动可以通过市场激励提高质押参与度并促进质押分布的分散化。",
-            "core_factors": "质押行为、含价格冲击的交易策略、交易成本、代币供应机制",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "arxiv_2606.08791v1",
-        "title_en": "[Academic Paper] Evaluating AI Investment Strategies",
-        "source_url": "http://arxiv.org/abs/2606.08791v1",
-        "excerpt_en": "We study the problem of auditing a black-box algorithmic decision-maker from observable inputs and outputs alone. Our main result is an exact decomposition: under precisely characterized conditions, the cumulative \\emph{regret} of a dynamic policy equals the sum of per-period covariances between the cost vector and the policy's decision. This extends the single-period identity of Aldridge~(2026) to the full multi-period setting of stochastic dynamic programming.   We prove the identity holds exactly under i.i.d. costs and mean-unbiased Markov policies, derive closed-form bias corrections for non-stationary and time-varying cases, and establish the discounted-horizon analog. A Bellman recursion for the covariance regret functional connects the result to standard reinforcement learning algorithms; for rolling-window policies, the estimation-error bias is $O(d/w)$.   The decomposition has direct implications for algorithmic auditing in strategic environments: in platform mechanism design, it provides a welfare-based audit metric without access to the agent's private type; in repeated games, covariance reduction is a sufficient condition for policy improvement; in procurement and ad auctions, the bias correction quantifies welfare loss from strategic misreporting. The associated trajectory estimator is consistent, asymptotically normal with HAC variance, and computable in $O(T \\cdot nd)$ time. This makes the proposed approach a tractable, model-free audit tool for platform mechanisms, algorithmic portfolio strategies, and any sequential decision system subject to external performance review.",
-        "date_scraped": "2026-06-14T23:02:57.941017",
-        "source": "arXiv",
-        "ai_analysis": {
-            "practical_score": 50,
-            "chinese_summary": "本文研究了黑箱算法决策者的审计问题，提出了动态策略累计遗憾的精确分解公式，可应用于平台机制设计、算法交易策略等序列决策系统的外部绩效审计。该分解提供了无需访问智能体私有类型的福利审计指标，并支持对策略性误报的偏差校正。",
-            "core_factors": "核心交易逻辑或信号：本文的核心贡献是动态策略累计遗憾的协方差分解，用于审计算法交易策略的绩效，而非具体的交易信号。其核心因子是成本向量与决策之间的协方差。",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
+            "practical_score": 85,
+            "chinese_summary": "本文研究一种现金覆盖策略，在静态增长-防御风险组合与生息现金之间动态分配。通过慢尾补偿滤波器和V型崩溃刹车滤波器，结合最大现金规则，显著提高了复合年增长率并降低了最大回撤。",
+            "core_factors": "慢尾补偿滤波器（针对风险组合补偿持续恶化，尤其是现金收益率上升且风险资产不稳定时）和V型崩溃刹车滤波器（针对快速下跌及随后的重新入场）。",
+            "replication_parameters": "风险组合固定为50/50的等权增长和防御ETF篮子；现金权重由两个滤波器独立生成，每日使用较大的现金权重；使用滚动窗口的样本外验证。具体滤波器的参数（如回溯期）未明确说明。",
+            "performance_metrics": "2017-2026年窗口：最大现金组合复合年增长率20.45%对比静态风险组合16.62%，最大回撤-16.77%对比-33.59%。样本外窗口：扩展最大现金组合复合年增长率18.05%对比16.09%，最大回撤-22.05%对比-33.59%。"
         }
     },
     {
@@ -352,11 +277,11 @@
         "date_scraped": "2026-06-14T23:02:57.941020",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "本文构建了基于欧式看跌期权的p-index风险度量，应用于中国上证50和美国标普500指数，发现一周和一个月持有期收益较高，材料板块表现最好；p-index动量与反转策略在不同市场条件下有不同表现。",
-            "core_factors": "p-index（基于欧式看跌期权的保险费用度量）、动量、反转",
-            "replication_parameters": "回测期间2018-2023，持有期一周、两周、一个月，资产为中国上证50成分股和美国标普500成分股，再平衡频率未明确但基于持有期",
-            "performance_metrics": "中国材料板块年化收益率：一周11.04%，两周11.93%，一个月10.18%；p-ratio-efficient-contrarian一周年化9.97%；p-index-inefficient-momentum一周年化9.01%；美国p-index-efficient-momentum年化3.69%"
+            "practical_score": 65,
+            "chinese_summary": "本文提出基于欧式看跌期权的p-index风险度量方法，用于评估投资策略表现。在沪深300和标普500指数上测试了公平价格、动量及反转策略，发现不同策略在不同市场和行业表现各异。p-index方法在策略评估中优于传统beta方法。",
+            "core_factors": "p-index风险度量、欧式看跌期权、公平价格策略、动量策略、反转策略、p-ratio有效/无效分类、MCIRS方法、成交量情绪制度",
+            "replication_parameters": "持有期：一周、两周、一个月；资产池：上证50成分股和标普500成分股；回测区间：2018-2023年；调仓频率：未明确提及，但隐含按周/双周/月",
+            "performance_metrics": "材料行业年化收益率：一周11.04%、两周11.93%、一个月10.18%；p-ratio-有效-反转策略年化收益率9.97%；p-index-无效-动量策略年化9.01%；标普500：p-index-有效-动量策略年化3.69%。无夏普比率或最大回撤数据。"
         }
     },
     {
@@ -367,146 +292,11 @@
         "date_scraped": "2026-06-14T23:02:57.941022",
         "source": "arXiv",
         "ai_analysis": {
-            "practical_score": 80,
-            "chinese_summary": "本文提出一种名为TT-DAC-PS的强化学习算法，用于优化大额股票卖出执行。该算法结合双目标批评家、策略平滑噪声和保守Q正则化等方法，有效降低了实现缺口，并优于传统执行算法（如TWAP、VWAP）和标准强化学习基准模型。",
-            "core_factors": "强化学习算法基于Almgren-Chriss市场冲击模型和限价订单簿数据的状态特征，通过双目标确定型演员-评论家架构与策略平滑噪声进行交易决策。",
-            "replication_parameters": "资产池：10只美国股票；其他参数如回看周期、再平衡频率等未明确说明。",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "openalex_W7128525619",
-        "title_en": "[OpenAlex Paper] Fundamental Analysis based on Copula Entropy",
-        "source_url": "https://openalex.org/W7128525619",
-        "excerpt_en": "The efficient market hypothesis asserts that all accessible information is completely integrated into security prices. As a quintessential example, fundamental analysis (or financial statements analysis) provides investors with a comprehensive understanding of the operations of listed companies, thereby facilitating trading strategies in the security markets. However, a crucial issue for financial reports is the inconsistent number of disclosed financial items. Specifically, there might be significant variations in the financial statement items disclosed by different companies in the same period, or even differences in the financial statement items disclosed by the same company in different quarters, which makes it difficult to construct models using all the available data. In another academic domain, the entropy of the copula function (or Copula Entropy) serves as an information proxy to measure the dependency between two variables. Our aim is to utilize as much information from quarterly financial reports as possible to generate trading strategies. We adopt the data in the Wholesale Trade and Retail Trade sectors in North American stock markets as single-industry samples to avoid inter-industry effects during modelling, with the period ranging from January 1st, 1991, to September 30th, 2022, totalling 128 quarters. Firstly, we design an exhaustive framework for data preprocessing. The processes include data collection, feature extraction, data integration, data cleaning, data transformation, and variable selection in sequence. Notably, we also employ Copula Entropy for feature selection in models. Subsequently, we utilize the data from the previous four-quarter sliding windows as training data and predict the 30-day accumulated stock excess returns after the financial announcement day by means of two commonly used basic regression models and two classification models in financial research. Simultaneously, we assess the information content in each sliding window through Copula Entropy in 10 distinct settings. Additionally, we refine the Copula Entropy approach to measure the information content of financial statements. Finally, we construct portfolios based on both predictive outcomes and information content. The core concept is to gauge the reliability of predictive results based on information content. The more available information there is, the more reliable the results will be. As a result, over 51.25% of information-based portfolios are more profitable than benchmark portfolios, depending on the choice of the k-Nearest Neighbour parameter for estimating Copula Entropy, model selection, and trading strategies. Our refined Copula Entropy methods generate higher buy-and-hold abnormal returns on average than the basic ones. Experimental results suggest that portfolios based on information content are valid in simple models and have the potential to emerge as a new essential type of portfolios.",
-        "date_scraped": "2026-06-14T18:25:03.371369",
-        "source": "OpenAlex",
-        "ai_analysis": {
             "practical_score": 75,
-            "chinese_summary": "本文利用Copula熵度量财务报表中的信息含量，并基于预测结果和信息含量构建投资组合。在北美批发贸易和零售贸易行业的数据测试中，超过51.25%的信息组合优于基准，表明该方法在简单模型中有效。",
-            "core_factors": "Copula熵作为信息含量的度量，用于特征选择和评估预测可靠性；基于财务数据的回归和分类模型预测30天超额收益。",
-            "replication_parameters": "训练窗口：过去4个季度；预测周期：财报公告后30天；资产范围：北美批发贸易和零售贸易行业股票；回测期间：1991年1月至2022年9月；Copula熵估计使用k近邻参数。",
-            "performance_metrics": "51.25%的信息组合盈利优于基准；精化Copula熵方法平均获得更高的买入持有异常收益。无具体夏普比率或最大回撤数据。"
-        }
-    },
-    {
-        "id": "openalex_W7126010369",
-        "title_en": "[OpenAlex Paper] Portfolio Optimisation under Transaction Costs with Recursive Preferences",
-        "source_url": "https://discovery.ucl.ac.uk/id/eprint/10220585/",
-        "excerpt_en": "The Merton investment-consumption problem is fundamental, both in the field of finance and in stochastic control. An important extension of the problem adds transaction costs, which is highly relevant from a financial perspective but also challenging from a control perspective because the solution now involves singular control. A further significant extension takes us from additive utility to stochastic differential utility (SDU), which allows time preferences and risk preferences to be disentangled. In this paper, we study this extended version of the Merton problem with proportional transaction costs and Epstein-Zin SDU. We fully characterise all parameter combinations for which the problem is well posed (which may depend on the level of transaction costs) and provide a full verification argument that relies on no additional technical assumptions and uses primal methods only. Even in the special case of (additive) power utility, our arguments are significantly simpler, more elegant and more far-reaching than the ones in the extant literature. This means that we can easily analyse aspects of the problem which previously have been very challenging, including comparative statics, boundary cases which heretofore have required separate treatment and the situation beyond the small transaction cost regime. A key and novel idea is to parametrise consumption and the value function in terms of the shadow fraction of wealth, which may be of much wider applicability.",
-        "date_scraped": "2026-06-14T18:25:03.371424",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 50,
-            "chinese_summary": "本文研究了具有比例交易成本和Epstein-Zin随机微分效用的Merton投资-消费问题，完全刻画了问题适定的参数条件，并通过一种新的财富影子份额参数化方法给出了简洁的验证论证。",
-            "core_factors": "Optimal portfolio and consumption policy under proportional transaction costs and Epstein-Zin preferences",
-            "replication_parameters": "Not explicitly stated; theoretical parameters include transaction cost rate, risk aversion, elasticity of intertemporal substitution, and discount rate.",
-            "performance_metrics": "No specific backtest data provided; the paper provides theoretical verification and comparative statics."
-        }
-    },
-    {
-        "id": "openalex_W7164715552",
-        "title_en": "[OpenAlex Paper] Mitigating Attention Bias in Index-Fund Investment: AI-Enabled Decision Support for Retail Investors",
-        "source_url": "https://aisel.aisnet.org/pacis2026/blockfintech/blockfintech/1",
-        "excerpt_en": "In information-intensive and high-noise stock markets, investors often face information overload and rely on heuristics and selective attention, which can lead to cognitive biases and reduced decision quality. AI can process vast datasets, identify non-linear patterns, and provide real-time decision support, offering opportunities to improve investment decision-making. Through a progressive systematic literature review, this study finds that incorporating cognitive-bias mechanisms as design drivers in AI-enabled investment artifacts has not been studied, and research on AI-enabled decision support in the index-fund context remains limited. The review identifies attention bias as a focal mechanism, particularly salient for retail investors. Based on these findings, this study develops a conceptual AI-enabled decision support artifact for index fund investment to mitigate retail investors’ attention bias and improve decision quality. A system dynamics simulation provides preliminary directional validation, and an evaluation agenda is outlined for future artifact development and evaluation.",
-        "date_scraped": "2026-06-14T18:25:03.371468",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 40,
-            "chinese_summary": "本文通过系统性文献综述发现现有AI投资工具未充分整合认知偏差机制，针对指数基金零售投资者的注意力偏差问题，提出一个AI驱动的决策支持概念模型，并通过系统动力学模拟进行初步验证。",
-            "core_factors": "注意力偏差缓解机制，AI驱动的实时决策支持",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided; only preliminary system dynamics simulation results mentioned"
-        }
-    },
-    {
-        "id": "openalex_W7163853026",
-        "title_en": "[OpenAlex Paper] The Humble Crumble: Predictive Analytics And Market Fairness",
-        "source_url": "https://aisel.aisnet.org/treos_ecis2026/105",
-        "excerpt_en": "This paper examines how a financial exchange (IEX) integrates socio-technical mechanisms to promote fairness in high-frequency trading environments.Our study focuses on the IEX's Crumbling Quote Indicator (CQI), a predictive algorithm designed to mitigate predatory high-speed strategies and protect long-term investors.By reverse-engineering the CQI from its published model coefficients and applying dimensionality reduction, we trace how the algorithm's internal logic evolved across two successive versions, transitioning from simple, discrete signals toward complex, multi-venue patterns.This illustrates a broader paradox of fairness by design: as protective mechanisms grow more sophisticated, they risk quietly shifting the relevant advantage from raw transmission speed to real-time analytical sophistication, continuously redefining algorithmic fairness as a moving target.",
-        "date_scraped": "2026-06-14T18:25:03.371489",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "本文研究IEX交易所的崩溃报价指标（CQI），一种用于高频交易环境中检测报价即将崩溃的预测算法，并探讨其设计中的公平性悖论。随着算法从简单信号演变为复杂模式，公平性被持续重新定义。",
-            "core_factors": "崩溃报价指标（CQI）：基于报价更新模式检测报价即将被撤回或更改的信号，用于缓解掠夺性高频交易策略。",
-            "replication_parameters": "Not explicitly stated in abstract; paper mentions reverse-engineering from published model coefficients.",
-            "performance_metrics": "No specific backtest data provided in abstract."
-        }
-    },
-    {
-        "id": "openalex_W7164595845",
-        "title_en": "[OpenAlex Paper] Peer Review Report For: The Reflection of Cryptocurrencies Prices Volatility on US Financial Markets as a Factor in Investment Portfolio Optimization: An Experimental Study in The American Financial Markets [version 1; peer review: 1 approved with reservations]",
-        "source_url": "https://doi.org/10.5256/f1000research.191324.r488776",
-        "excerpt_en": "The research aims to provide a comprehensive overview of the theoretical frameworks that define the nature of the relationship between cryptocurrencies and their volatility with the performance of financial market indices. It also aims to explain and analyze the mechanism of this potential influence on a sample of US financial markets for the period (2020-2024), by adopting the Autoregressive Distributed Lag (ARDL) methodology introduced by (Pesaran et al., 2009) The research assessment results revealed the positive impact of Bitcoin and Tether on the performance of all US stock market indices, perhaps indicating that they act as an investment asset that supports financial market growth, especially in the long term. This suggests the possibility of considering Bitcoin and Tether as a guiding indicator for the performance of investment portfolios. In contrast, Ethereum's negative performance on all indices suggests investors may shift away from it to other currencies or traditional assets. This may be interpreted as a potential hedging tool during certain periods, making it a haven during adverse market conditions. This indicates - as the research suggested - the need to develop clearer regulatory frameworks that allow Bitcoin and Tether to be integrated alongside traditional investment products in investment portfolios.",
-        "date_scraped": "2026-06-14T18:25:03.371553",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 65,
-            "chinese_summary": "该研究通过自回归分布滞后（ARDL）方法分析了2020-2024年间加密货币（比特币、以太坊、泰达币）波动对美国股市指数的影响。结果表明比特币和泰达币对市场有正向长期影响，可作为投资组合的引导指标，而以太坊表现为负相关，可能具备对冲功能。",
-            "core_factors": "比特币和泰达币对美股指数具有正向长期影响，以太坊具有负向影响；加密货币波动作为投资组合优化和避险的参考因子。",
-            "replication_parameters": "研究期间为2020-2024年，使用ARDL模型，数据样本为美国金融市场指数与加密货币价格。具体调仓频率和资产范围未明确说明。",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "openalex_W7164682091",
-        "title_en": "[OpenAlex Paper] A multimodal data-driven ensemble deep reinforcement learning model for automated cryptocurrency trading",
-        "source_url": "https://doi.org/10.1007/s41060-026-01175-w",
-        "excerpt_en": "No abstract available.",
-        "date_scraped": "2026-06-14T18:25:03.371555",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 70,
-            "chinese_summary": "该论文提出了一种多模态数据驱动的集成深度强化学习模型，用于自动加密货币交易，旨在提高交易决策的稳健性和收益。",
-            "core_factors": "多模态数据（如价格、成交量、订单簿、社交媒体情绪等）作为状态输入，深度强化学习（如DQN、PPO等）作为决策框架。",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "openalex_W7164663705",
-        "title_en": "[OpenAlex Paper] Deep Reinforcement Learning and Sentiment-Aware Approaches for Risk-Adjusted Portfolio Optimization",
-        "source_url": "https://doi.org/10.1007/978-3-032-29003-8_15",
-        "excerpt_en": "No abstract available.",
-        "date_scraped": "2026-06-14T18:25:03.371557",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该论文提出利用深度强化学习和情感感知方法进行风险调整的资产组合优化，旨在提升投资组合的风险调整后收益。",
-            "core_factors": "Sentiment signals from textual data, Deep Reinforcement Learning (DRL) agents",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
-        }
-    },
-    {
-        "id": "openalex_W7164539531",
-        "title_en": "[OpenAlex Paper] Impact of Training Dataset Scaling on Synthetic Financial Data Fidelity in Diffusion Models",
-        "source_url": "https://doi.org/10.5281/zenodo.20656939",
-        "excerpt_en": "Synthetic financial data provides a practical solution to the privacy, accessibility, and reproducibility challenges that often constrain empirical research in quantitative finance. This paper investigates the use of deep generative models, specifically Time-series Generative Adversarial Networks (TimeGAN) and Variational Autoencoders (VAEs) to generate realistic synthetic financial return series for portfolio construction and risk modeling applications. Using historical daily returns from the S and P 500 as a benchmark, we generate synthetic datasets under comparable market conditions and eva Research goal: What is the impact of scaling the training dataset size on the fidelity of synthetic financial data generated by diffusion models, as evaluated by their ability to preserve key statistical properties (e.g., autocorrelation, volatility) when used in portfolio optimization benchmarks? Autonomous synthesis report generated by SOVEREIGN Research Kernel. Tribunal consensus score: 8.8/10.",
-        "date_scraped": "2026-06-14T18:25:03.371597",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 65,
-            "chinese_summary": "该论文研究了训练数据集规模对扩散模型生成合成金融数据保真度的影响，使用S&P 500历史日收益率作为基准，通过保留统计特性（如自相关、波动性）和投资组合优化基准来评估数据质量。研究表明，合成数据可用于投资组合构建和风险管理，但具体性能指标未在摘要中给出。",
-            "core_factors": "训练数据集规模对合成金融数据保真度的影响，通过保留关键统计特性（如自相关、波动性）和投资组合优化基准进行评估。",
-            "replication_parameters": "Not explicitly stated (使用S&P 500历史日收益率，但具体回看周期、再平衡频率等未指定)",
-            "performance_metrics": "No specific backtest data provided (论文通过统计特性和投资组合优化基准评估保真度，但未提供具体数值指标)"
-        }
-    },
-    {
-        "id": "openalex_W7164526558",
-        "title_en": "[OpenAlex Paper] Mean-CVaR portfolio optimization with decision dependent distribution of losses under fixed dependence structure",
-        "source_url": "https://doi.org/10.1007/s12351-026-01071-y",
-        "excerpt_en": "No abstract available.",
-        "date_scraped": "2026-06-14T18:25:03.371630",
-        "source": "OpenAlex",
-        "ai_analysis": {
-            "practical_score": 60,
-            "chinese_summary": "该论文研究均值-条件风险价值（CVaR）投资组合优化，考虑损失分布依赖于决策且固定相依结构，旨在通过风险控制提升投资组合表现。为量化风险管理提供了理论框架。",
-            "core_factors": "Mean-CVaR优化，决策依赖的损失分布，固定相依结构。",
-            "replication_parameters": "Not explicitly stated",
-            "performance_metrics": "No specific backtest data provided"
+            "chinese_summary": "该论文提出了一种名为TT-DAC-PS的强化学习算法，用于最优交易执行，结合了双目标确定性演员-评论家、策略平滑和保守Q正则化。在十只美国股票的限价订单簿数据上，该算法相比TWAP、VWAP等传统方法以及PPO、SAC等强化学习基线，持续降低了平均的实现短缺百分比。",
+            "core_factors": "双指数移动平均评论家目标、悲观最小备份、TD3风格的目标策略平滑噪声、延迟演员更新、保守Q正则化、Ornstein-Uhlenbeck探索噪声、混合调度（确定性衰减、方差引导调整、SAC风格温度）、Almgren-Chriss市场冲击模型、限价订单簿价格和成交量、归一化状态特征、每步成交量参与上限、基于效用的奖励。",
+            "replication_parameters": "Not explicitly stated; includes episode-wise decay, variance-guided adjustment, SAC-style temperature, AC impact model, LOB data, per-step volume participation caps; asset universe: 10 U.S. stocks.",
+            "performance_metrics": "Mean implementation shortfall percentage reduced with competitive variance; outperforms TWAP, VWAP, AC, PPO, SAC, A2C; no specific numerical data provided in abstract."
         }
     }
 ]
