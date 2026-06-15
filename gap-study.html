@@ -129,20 +129,10 @@
                     <button class="toggle-btn" id="btn-qqq">QQQ</button>
                 </div>
 
-                <h3 style="margin-bottom: 1rem; color: var(--text-main);" class="lang-text" data-en="Today's Market Open" data-zh="今日开盘情况">Today's Market Open</h3>
-                <div class="stats-grid" style="margin-bottom: 3rem;">
-                    <div class="stat-card">
-                        <div class="stat-label lang-text" data-en="Date (NY Time)" data-zh="日期 (纽约时间)">Date (NY Time)</div>
-                        <div class="stat-value" id="today-date">--</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label lang-text" data-en="Classic Gap (vs Prev Close)" data-zh="经典缺口 (对比昨日收盘)">Classic Gap (vs Prev Close)</div>
-                        <div class="stat-value" id="today-classic">--</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label lang-text" data-en="Range Gap (vs Prev High/Low)" data-zh="区间缺口 (对比昨日极值)">Range Gap (vs Prev High/Low)</div>
-                        <div class="stat-value" id="today-range">--</div>
-                    </div>
+                <h3 style="margin-bottom: 1rem; color: var(--text-main);" class="lang-text" data-en="Today's Market Open" data-zh="今日开盘实况">Today's Market Open</h3>
+                <div id="today-narrative-cards" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
+                    <div class="stat-card" id="card-classic" style="text-align: left; line-height: 1.6;"></div>
+                    <div class="stat-card" id="card-range" style="text-align: left; line-height: 1.6;"></div>
                 </div>
 
                 <h3 style="margin-bottom: 1rem; color: var(--text-main);" class="lang-text" data-en="Classic Gap Fill Probability" data-zh="经典缺口回补概率">Classic Gap Fill Probability</h3>
