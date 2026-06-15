@@ -37,15 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             xAxis: {
                 type: 'category',
-                data: periods,
+                data: ['30Y', '10Y', '5Y'],
                 splitArea: { show: true },
-                axisLabel: { color: 'rgba(255, 255, 255, 0.7)' }
+                axisLabel: { color: '#000', fontWeight: 'bold', fontSize: 13 }
             },
             yAxis: {
                 type: 'category',
-                data: buckets,
+                data: ['<0.5%', '0.5%-1%', '1%-2%', '2%-3%', '3%+'],
                 splitArea: { show: true },
-                axisLabel: { color: 'rgba(255, 255, 255, 0.7)' }
+                axisLabel: { color: '#000', fontWeight: 'bold', fontSize: 13 }
             },
             visualMap: {
                 min: 0,
@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 left: 'center',
                 bottom: '0%',
                 inRange: {
-                    // Lighter pastel palette: Light Gray -> Light Blue -> Light Red/Pink
-                    color: ['#e2e8f0', '#93c5fd', '#fca5a5']
+                    // Deepen the colors slightly: Slate 400 -> Blue 400 -> Red 400
+                    color: ['#94a3b8', '#60a5fa', '#f87171']
                 },
-                textStyle: { color: 'rgba(255, 255, 255, 0.7)' }
+                textStyle: { color: '#000', fontWeight: 'bold' }
             },
             series: [{
                 name: title,
