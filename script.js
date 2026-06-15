@@ -136,14 +136,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Discord links alert
+    // Discord links custom modal
+    const discordModal = document.getElementById('discord-modal');
+    const closeBtn = document.getElementById('close-modal-btn');
+
     document.querySelectorAll('a[aria-label="Discord"], #hero-discord-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
-            const msg = currentLang === 'zh' 
-                ? "粉丝不够，暂时没有discord社区！" 
-                : "Not enough fans yet, no Discord community available at the moment!";
-            alert(msg);
+            if (discordModal) {
+                discordModal.classList.add('active');
+            }
         });
     });
+
+    if (closeBtn && discordModal) {
+        closeBtn.addEventListener('click', () => {
+            discordModal.classList.remove('active');
+        });
+        
+        // Click outside to close
+        discordModal.addEventListener('click', (e) => {
+            if (e.target === discordModal) {
+                discordModal.classList.remove('active');
+            }
+        });
+    }
 });
