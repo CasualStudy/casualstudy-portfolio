@@ -81,7 +81,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const formatTodayNarrative = (todayObj, typeStr, statsObj, ticker) => {
-        if (!todayObj) return '<span style="color:var(--text-muted);">No gap or market closed</span>';
+        if (!todayObj) {
+            return `
+                <span class="lang-text" data-en="No gap or market closed" data-zh="未出现缺口或未开盘" style="color:var(--text-muted);">
+                    未出现缺口或未开盘
+                </span>
+            `;
+        }
         
         let dir = typeStr === "Classic" ? todayObj.classic_dir : todayObj.range_dir;
         let b = typeStr === "Classic" ? todayObj.classic_bucket : todayObj.range_bucket;
@@ -89,17 +95,31 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const openPrice = todayObj.open;
         const prevPrice = typeStr === "Classic" ? todayObj.prev_close : (dir === 'Up' ? todayObj.prev_high : todayObj.prev_low);
-        const prevLabel = typeStr === "Classic" ? "昨日收盘价" : (dir === 'Up' ? "昨日最高价" : "昨日最低价");
-        const typeLabel = typeStr === "Classic" ? "经典缺口" : "区间缺口";
-        const noteText = typeStr === "Classic" ? 
+        
+        const prevLabelEn = typeStr === "Classic" ? "yesterday's close" : (dir === 'Up' ? "yesterday's high" : "yesterday's low");
+        const prevLabelZh = typeStr === "Classic" ? "昨日收盘价" : (dir === 'Up' ? "昨日最高价" : "昨日最低价");
+        
+        const typeLabelEn = typeStr === "Classic" ? "Classic Gap" : "Range Gap";
+        const typeLabelZh = typeStr === "Classic" ? "经典缺口" : "区间缺口";
+        
+        const noteTextEn = typeStr === "Classic" ? 
+            "Note: Classic Gap is the difference between today's open and yesterday's close." : 
+            "Note: Range Gap is the difference between today's open and yesterday's high (for gap up) or low (for gap down).";
+        const noteTextZh = typeStr === "Classic" ? 
             "注释：经典缺口是今日开盘价与昨日收盘价的差值。" : 
             "注释：区间缺口是今日开盘价与昨日最高点(向上跳空)或最低点(向下跳空)的差值。";
 
         if (!dir) {
             return `
-                <div style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;">${typeLabel} (${typeStr} Gap)</div>
-                <div style="color:var(--text-muted);">今日 ${ticker} 开盘价 $${openPrice}，${prevLabel} $${prevPrice}，未出现跳空缺口。</div>
-                <div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.8rem;">${noteText}</div>
+                <div style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;" class="lang-text" data-en="${typeLabelEn}" data-zh="${typeLabelZh}">${typeLabelZh}</div>
+                <div style="color:var(--text-muted);">
+                    <span class="lang-text" data-en="Today's ${ticker} open is" data-zh="今日 ${ticker} 开盘价">今日 ${ticker} 开盘价</span> 
+                    <strong>$${openPrice}</strong>, 
+                    <span class="lang-text" data-en="${prevLabelEn} is" data-zh="${prevLabelZh}"> ${prevLabelZh}</span> 
+                    <strong>$${prevPrice}</strong>. 
+                    <span class="lang-text" data-en="No gap detected." data-zh="未出现跳空缺口。">未出现跳空缺口。</span>
+                </div>
+                <div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.8rem;" class="lang-text" data-en="${noteTextEn}" data-zh="${noteTextZh}">${noteTextZh}</div>
             `;
         }
         
@@ -113,17 +133,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return `
             <div style="font-size:1.1rem; font-weight:600; margin-bottom:0.8rem; color:var(--text-main);">
-                今日 ${ticker} 开盘价 <span style="color:#fff;">$${openPrice}</span>，
-                ${prevLabel} <span style="color:#fff;">$${prevPrice}</span>。<br/>
-                今日的${typeLabel}是 <span style="color:${color}; font-weight:bold;">${sign}${pct}% ${arrow}</span>
+                <span class="lang-text" data-en="Today's ${ticker} open is" data-zh="今日 ${ticker} 开盘价">今日 ${ticker} 开盘价</span> 
+                <strong>$${openPrice}</strong>，
+                <span class="lang-text" data-en="${prevLabelEn} is" data-zh="${prevLabelZh}">${prevLabelZh}</span> 
+                <strong>$${prevPrice}</strong>。<br/>
+                <span class="lang-text" data-en="Today's ${typeLabelEn} is" data-zh="今日的${typeLabelZh}是">今日的${typeLabelZh}是</span> 
+                <span style="color:${color}; font-weight:bold;">${sign}${pct}% ${arrow}</span>
             </div>
             <div style="font-size:1rem; color:var(--text-secondary); margin-bottom:0.8rem;">
-                根据过去的统计，过去30年、10年、5年，缺口落在 <span style="color:#fff; font-weight:bold;">${b}</span> 区间时，
-                今天能回补缺口的概率分别是：<br/>
-                <span style="color:var(--accent); font-weight:bold; font-size:1.1rem;">30年: ${prob30Y}% &nbsp;|&nbsp; 10年: ${prob10Y}% &nbsp;|&nbsp; 5年: ${prob5Y}%</span>
+                <span class="lang-text" data-en="Historically, over the past 30Y, 10Y, and 5Y, when the gap falls in the" data-zh="根据过去的统计，过去30年、10年、5年，缺口落在">根据过去的统计，过去30年、10年、5年，缺口落在</span> 
+                <strong style="color:var(--text-main);">${b}</strong> 
+                <span class="lang-text" data-en="range, the probability of the gap filling today is:" data-zh="区间时，今天能回补缺口的概率分别是：">区间时，今天能回补缺口的概率分别是：</span><br/>
+                <span style="color:var(--accent); font-weight:bold; font-size:1.1rem;">
+                    <span class="lang-text" data-en="30Y" data-zh="30年">30年</span>: ${prob30Y}% &nbsp;|&nbsp; 
+                    <span class="lang-text" data-en="10Y" data-zh="10年">10年</span>: ${prob10Y}% &nbsp;|&nbsp; 
+                    <span class="lang-text" data-en="5Y" data-zh="5年">5年</span>: ${prob5Y}%
+                </span>
             </div>
-            <div style="font-size:0.85rem; color:var(--text-muted);">
-                ${noteText}
+            <div style="font-size:0.85rem; color:var(--text-muted);" class="lang-text" data-en="${noteTextEn}" data-zh="${noteTextZh}">
+                ${noteTextZh}
             </div>
         `;
     };
@@ -137,8 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('card-classic').innerHTML = formatTodayNarrative(today, "Classic", data.stats, currentTicker);
             document.getElementById('card-range').innerHTML = formatTodayNarrative(today, "Range", data.stats, currentTicker);
         } else {
-            document.getElementById('card-classic').innerHTML = "Not Available";
-            document.getElementById('card-range').innerHTML = "Not Available";
+            document.getElementById('card-classic').innerHTML = '<span class="lang-text" data-en="Not Available" data-zh="暂无数据">暂无数据</span>';
+            document.getElementById('card-range').innerHTML = '<span class="lang-text" data-en="Not Available" data-zh="暂无数据">暂无数据</span>';
+        }
+        
+        // Trigger translation if the updateLanguage function is available globally from script.js
+        if (typeof updateLanguage === 'function') {
+            updateLanguage();
         }
 
         // Build data arrays for Heatmaps: [x(period), y(bucket), prob, total, filled]
