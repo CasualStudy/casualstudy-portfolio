@@ -64,7 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load papers from JSON
     async function loadPapers(dataset = 'live') {
-        const url = dataset === 'live' ? 'data/papers_database.json' : 'data/hall_of_fame.json';
+        let url = 'data/papers_database.json';
+        if (dataset === 'fame_closed') url = 'data/hall_of_fame.json';
+        if (dataset === 'fame_open') url = 'data/hall_of_fame_open.json';
         papersContainer.innerHTML = '<div style="text-align: center; color: var(--text-secondary); padding: 50px;">Loading data... <i data-lucide="loader-2" class="spin"></i></div>';
         lucide.createIcons();
         try {
@@ -92,23 +94,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const btnLiveFeed = document.getElementById('btn-live-feed');
-    const btnHallOfFame = document.getElementById('btn-hall-of-fame');
+    const btnHallOfFameOpen = document.getElementById('btn-hall-of-fame-open');
+    const btnHallOfFameClosed = document.getElementById('btn-hall-of-fame');
 
-    if (btnLiveFeed && btnHallOfFame) {
+    function updateDatasetButtons(activeBtnId) {
+        const btns = [
+            { el: btnLiveFeed, id: 'btn-live-feed' },
+            { el: btnHallOfFameOpen, id: 'btn-hall-of-fame-open' },
+            { el: btnHallOfFameClosed, id: 'btn-hall-of-fame' }
+        ];
+        btns.forEach(b => {
+            if (!b.el) return;
+            if (b.id === activeBtnId) {
+                b.el.className = 'btn primary-btn';
+                b.el.style.opacity = '1';
+            } else {
+                b.el.className = 'btn glass-btn';
+                b.el.style.opacity = '0.6';
+            }
+        });
+    }
+
+    if (btnLiveFeed) {
         btnLiveFeed.addEventListener('click', () => {
-            btnLiveFeed.className = 'btn primary-btn';
-            btnLiveFeed.style.opacity = '1';
-            btnHallOfFame.className = 'btn glass-btn';
-            btnHallOfFame.style.opacity = '0.6';
+            updateDatasetButtons('btn-live-feed');
             loadPapers('live');
         });
-
-        btnHallOfFame.addEventListener('click', () => {
-            btnHallOfFame.className = 'btn primary-btn';
-            btnHallOfFame.style.opacity = '1';
-            btnLiveFeed.className = 'btn glass-btn';
-            btnLiveFeed.style.opacity = '0.6';
-            loadPapers('fame');
+    }
+    if (btnHallOfFameOpen) {
+        btnHallOfFameOpen.addEventListener('click', () => {
+            updateDatasetButtons('btn-hall-of-fame-open');
+            loadPapers('fame_open');
+        });
+    }
+    if (btnHallOfFameClosed) {
+        btnHallOfFameClosed.addEventListener('click', () => {
+            updateDatasetButtons('btn-hall-of-fame');
+            loadPapers('fame_closed');
         });
     }
 
