@@ -53,10 +53,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                         type: 'dashed'
                     }
                 },
-                backgroundColor: 'rgba(19, 23, 34, 0.9)', // TV dark tooltip
+                backgroundColor: 'rgba(255, 255, 255, 0.95)', // Light tooltip background for black text
                 borderColor: '#2B2B43',
                 textStyle: {
-                    color: '#FFFFFF',
+                    color: '#000000',
+                    fontWeight: 'bold',
                     fontSize: 12
                 },
                 padding: [8, 12]
@@ -64,7 +65,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             legend: {
                 data: ['Fear & Greed Index', 'S&P 500'],
                 textStyle: {
-                    color: '#FFFFFF',
+                    color: '#000000',
+                    fontWeight: 'bold',
                     fontSize: 12
                 },
                 top: 0,
@@ -94,11 +96,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                     backgroundColor: 'rgba(43, 43, 67, 0.2)',
                     fillerColor: 'rgba(41, 98, 255, 0.1)',
                     handleStyle: {
-                        color: '#FFFFFF',
-                        borderColor: '#2B2B43'
+                        color: '#000000',
+                        borderColor: '#000000'
                     },
                     textStyle: {
-                        color: '#FFFFFF'
+                        color: '#000000',
+                        fontWeight: 'bold'
                     }
                 }
             ],
@@ -107,7 +110,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     type: 'category',
                     data: data.dates,
                     axisLabel: {
-                        color: '#FFFFFF' // Solid white text
+                        color: '#000000',
+                        fontWeight: 'bold'
                     },
                     axisLine: {
                         show: false
@@ -133,11 +137,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                     max: 100,
                     interval: 20,
                     nameTextStyle: {
-                        color: '#FFFFFF',
+                        color: '#000000',
+                        fontWeight: 'bold',
                         padding: [0, 0, 0, 20]
                     },
                     axisLabel: {
-                        color: '#FFFFFF'
+                        color: '#000000',
+                        fontWeight: 'bold'
                     },
                     axisLine: {
                         show: false
@@ -160,11 +166,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                     min: 'dataMin',
                     max: 'dataMax',
                     nameTextStyle: {
-                        color: '#FFFFFF',
+                        color: '#000000',
+                        fontWeight: 'bold',
                         padding: [0, 20, 0, 0]
                     },
                     axisLabel: {
-                        color: '#FFFFFF'
+                        color: '#000000',
+                        fontWeight: 'bold'
                     },
                     axisLine: {
                         show: false
