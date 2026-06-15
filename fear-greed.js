@@ -191,7 +191,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value.toFixed(2);
+                            if (value == null) return '-';
+                            if (typeof value === 'number') return value.toFixed(2);
+                            return value;
                         }
                     }
                 },
@@ -208,10 +210,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     tooltip: {
                         valueFormatter: function (value) {
+                            if (value == null) return '-';
                             // ECharts candlestick value is an array: [open, close, low, high]
-                            if (Array.isArray(value)) {
-                                return `Open: ${value[0].toFixed(2)}  Close: ${value[1].toFixed(2)}  Low: ${value[2].toFixed(2)}  High: ${value[3].toFixed(2)}`;
+                            if (Array.isArray(value) && value.length >= 4) {
+                                return `Open: ${Number(value[0]).toFixed(2)}  Close: ${Number(value[1]).toFixed(2)}  Low: ${Number(value[2]).toFixed(2)}  High: ${Number(value[3]).toFixed(2)}`;
                             }
+                            if (typeof value === 'number') return value.toFixed(2);
                             return value;
                         }
                     }
