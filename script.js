@@ -135,4 +135,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Discord links alert
+    document.querySelectorAll('a[aria-label="Discord"], #hero-discord-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const msg = currentLang === 'zh' 
+                ? "粉丝不够，暂时没有discord社区！" 
+                : "Not enough fans yet, no Discord community available at the moment!";
+            alert(msg);
+        });
+    });
 });
