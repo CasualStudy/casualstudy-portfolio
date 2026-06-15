@@ -169,9 +169,14 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('card-range').innerHTML = '<span class="lang-text" data-en="Not Available" data-zh="暂无数据">暂无数据</span>';
         }
         
-        // Trigger translation if the updateLanguage function is available globally from script.js
-        if (typeof updateLanguage === 'function') {
-            updateLanguage();
+        // Trigger translation manually since script.js's function is not global
+        const currentLang = localStorage.getItem("siteLang") || "en";
+        const cards = document.getElementById('today-narrative-cards');
+        if (cards) {
+            cards.querySelectorAll('.lang-text').forEach(el => {
+                const text = currentLang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+                if (text) el.innerHTML = text;
+            });
         }
 
         // Build data arrays for Heatmaps: [x(period), y(bucket), prob, total, filled]
