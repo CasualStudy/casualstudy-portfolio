@@ -594,16 +594,16 @@ main {
 }
 
 .glass-modal {
-    background: rgba(255, 255, 255, 0.3); /* Whiter, less transparent glass */
+    background: rgba(255, 255, 255, 0.75); /* White + semi-transparent */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: var(--glass-border);
-    border-radius: 20px; /* Force explicitly rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
     padding: 3rem;
     max-width: 400px;
     width: 90%;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(20px);
     transition: all 0.3s ease;
 }
@@ -615,11 +615,11 @@ main {
 .glass-modal h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--text-main);
+    color: #111111; /* Dark text for bright background */
 }
 
 .glass-modal p {
-    color: var(--text-muted);
+    color: #333333; /* Dark text for bright background */
     font-size: 1.1rem;
     line-height: 1.5;
 }
