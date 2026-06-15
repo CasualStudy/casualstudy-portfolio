@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Update stat cards
         document.getElementById("stat-date").textContent = data.latest.date;
-        document.getElementById("stat-fng").textContent = data.latest.fng;
-        document.getElementById("stat-spx").textContent = data.latest.spx.toLocaleString();
+        document.getElementById("stat-fng").textContent = Number(data.latest.fng).toFixed(2);
+        document.getElementById("stat-spx").textContent = Number(data.latest.spx).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
         
         const sentimentEl = document.getElementById("stat-sentiment");
         sentimentEl.textContent = data.latest.sentiment;
@@ -187,6 +187,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                     lineStyle: {
                         width: 1.5,
                         color: '#2962FF' // TradingView Blue
+                    },
+                    tooltip: {
+                        valueFormatter: function (value) {
+                            return value.toFixed(2);
+                        }
                     }
                 },
                 {
@@ -199,6 +204,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                         color0: '#EF5350', // TradingView Red (Down)
                         borderColor: '#26A69A',
                         borderColor0: '#EF5350'
+                    },
+                    tooltip: {
+                        valueFormatter: function (value) {
+                            // ECharts candlestick value is an array: [open, close, low, high]
+                            if (Array.isArray(value)) {
+                                return `Open: ${value[0].toFixed(2)}  Close: ${value[1].toFixed(2)}  Low: ${value[2].toFixed(2)}  High: ${value[3].toFixed(2)}`;
+                            }
+                            return value;
+                        }
                     }
                 }
             ]
