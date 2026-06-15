@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear & Greed Index - CasualStudy023</title>
+    <meta name="description" content="S&P 500 vs Fear and Greed Index tracking.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Include ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        .chart-container {
+            width: 100%;
+            height: 600px;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ECharts dark mode optimizations */
+        @media (prefers-color-scheme: dark) {
+            .stat-card {
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rich background wallpaper -->
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
+            <div class="nav-links">
+                <a href="index.html#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="index.html#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <a href="paper-analysis/index.html" class="lang-text" data-en="Papers" data-zh="论文研究">Papers</a>
+                <a href="fear-greed.html" class="lang-text" data-en="Fear & Greed" data-zh="恐慌贪婪指数" style="color: var(--accent); font-weight: 600;">Fear & Greed</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-container" style="padding-top: 2rem;">
+            <div class="glass-panel" style="padding: 3rem; margin-top: 2rem;">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="lang-text" data-en="Fear & Greed Index vs S&P 500" data-zh="恐慌与贪婪指数 vs 标普500">Fear & Greed Index vs S&P 500</h2>
+                    <p class="lang-text" data-en="Daily updated data comparing market sentiment against index performance." data-zh="每日更新数据：对比市场情绪与大盘表现。">Daily updated data comparing market sentiment against index performance.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Latest Date" data-zh="更新日期">Latest Date</div>
+                        <div class="stat-value" id="stat-date">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Fear & Greed" data-zh="恐慌与贪婪指数">Fear & Greed</div>
+                        <div class="stat-value" id="stat-fng">--</div>
+                        <div class="stat-label" id="stat-sentiment" style="color: var(--text-primary); margin-top: 0.5rem; font-weight: 600;">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="S&P 500" data-zh="标普 500">S&P 500</div>
+                        <div class="stat-value" id="stat-spx">--</div>
+                    </div>
+                </div>
+
+                <div id="chart" class="chart-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                    <i data-lucide="message-square"></i>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="fear-greed.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
