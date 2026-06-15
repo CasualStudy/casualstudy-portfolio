@@ -153,23 +153,30 @@ def export_json(df_fng, df_spx):
 
     df_fng = df_fng[df_fng["Fear Greed"] != 0]
 
-    df_merged = df_fng[["Fear Greed"]].join(df_spx[["close"]], how="inner")
-    df_merged.columns = ["Fear Greed", "SPX"]
+    df_merged = df_fng[["Fear Greed"]].join(df_spx[["open", "high", "low", "close"]], how="inner")
+    df_merged.columns = ["Fear Greed", "open", "high", "low", "close"]
     df_merged.dropna(subset=["Fear Greed"], inplace=True)
     
     # Fill any NaN SPX values with forward fill, just in case
-    df_merged["SPX"] = df_merged["SPX"].ffill()
+    df_merged["open"] = df_merged["open"].ffill()
+    df_merged["high"] = df_merged["high"].ffill()
+    df_merged["low"] = df_merged["low"].ffill()
+    df_merged["close"] = df_merged["close"].ffill()
     df_merged.dropna(inplace=True)
 
     # Format for JSON output
+    # Candlestick data format in ECharts: [open, close, lowest, highest] (or we can pass them as objects)
+    # Actually ECharts candlestick default is: [open, close, lowest, highest]
+    spx_ohlc = df_merged.apply(lambda row: [row["open"], row["close"], row["low"], row["high"]], axis=1).tolist()
+
     data = {
         "dates": df_merged.index.strftime("%Y-%m-%d").tolist(),
         "fng": df_merged["Fear Greed"].tolist(),
-        "spx": df_merged["SPX"].tolist(),
+        "spx_ohlc": spx_ohlc,
         "latest": {
             "date": df_merged.index[-1].strftime("%Y-%m-%d"),
             "fng": round(df_merged["Fear Greed"].iloc[-1], 1),
-            "spx": round(df_merged["SPX"].iloc[-1], 2),
+            "spx": round(df_merged["close"].iloc[-1], 2),
             "sentiment": get_sentiment(df_merged["Fear Greed"].iloc[-1])
         }
     }

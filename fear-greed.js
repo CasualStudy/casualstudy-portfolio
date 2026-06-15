@@ -191,13 +191,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                 },
                 {
                     name: 'S&P 500',
-                    type: 'line',
+                    type: 'candlestick',
                     yAxisIndex: 1,
-                    data: data.spx,
-                    showSymbol: false,
-                    lineStyle: {
-                        width: 1.5,
-                        color: '#FF9800' // TradingView Orange
+                    data: data.spx_ohlc,
+                    itemStyle: {
+                        color: '#26A69A', // TradingView Green (Up)
+                        color0: '#EF5350', // TradingView Red (Down)
+                        borderColor: '#26A69A',
+                        borderColor0: '#EF5350'
                     }
                 }
             ]
