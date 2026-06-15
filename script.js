@@ -43,12 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
             link: "fear-greed.html"
         },
         {
-            title_en: "Analysis 2 (TBD)",
-            title_zh: "分析 2 (TBD)",
-            excerpt_en: "TBD - Coming soon.",
-            excerpt_zh: "敬请期待 - 建设中。",
-            tools: "TBD",
-            icon: "pie-chart"
+            title_en: "Index Gap Fill Probability",
+            title_zh: "指数跳空缺口回补概率",
+            excerpt_en: "Daily updated heatmaps analyzing the probability of SPY & QQQ gap fills based on 30 years of historical data.",
+            excerpt_zh: "每日更新的热力图，基于30年历史数据分析 SPY 与 QQQ 的跳空缺口回补概率。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "bar-chart-2",
+            link: "gap-study.html"
         },
         {
             title_en: "Analysis 3 (TBD)",
