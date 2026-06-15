@@ -55,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 left: 'center',
                 bottom: '0%',
                 inRange: {
-                    color: ['#1a1a2e', '#457b9d', '#e63946']
+                    // Soft dark mode palette: Slate -> Indigo -> Pink
+                    color: ['rgba(30, 41, 59, 0.6)', 'rgba(99, 102, 241, 0.7)', 'rgba(236, 72, 153, 0.8)']
                 },
                 textStyle: { color: 'rgba(255, 255, 255, 0.7)' }
             },
