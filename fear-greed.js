@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         const option = {
             backgroundColor: 'transparent',
-            color: ['#2962FF', '#FF9800'], // TradingView style blue and orange
+            color: ['#FF9800', '#2962FF'], // SPX Orange, FNG Blue
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
                     type: 'cross',
                     label: {
-                        backgroundColor: '#2B2B43', // TV axis label color
+                        backgroundColor: '#2B2B43',
                         color: '#D1D4DC'
                     },
                     lineStyle: {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         type: 'dashed'
                     }
                 },
-                backgroundColor: 'rgba(19, 23, 34, 0.9)', // TV dark tooltip
+                backgroundColor: 'rgba(19, 23, 34, 0.9)',
                 borderColor: '#2B2B43',
                 textStyle: {
                     color: '#D1D4DC',
@@ -61,8 +61,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 },
                 padding: [8, 12]
             },
+            axisPointer: {
+                link: { xAxisIndex: 'all' },
+                label: { backgroundColor: '#777' }
+            },
             legend: {
-                data: ['Fear & Greed Index', 'S&P 500'],
+                data: ['S&P 500', 'Fear & Greed Index'],
                 textStyle: {
                     color: '#D1D4DC',
                     fontSize: 12
@@ -71,22 +75,35 @@ document.addEventListener("DOMContentLoaded", async () => {
                 left: 'left',
                 icon: 'circle'
             },
-            grid: {
-                left: '2%',
-                right: '5%',
-                bottom: '10%',
-                top: '12%',
-                containLabel: true
-            },
+            grid: [
+                {
+                    // SPX Grid (Top)
+                    left: '2%',
+                    right: '5%',
+                    top: '10%',
+                    height: '50%',
+                    containLabel: true
+                },
+                {
+                    // FNG Grid (Bottom)
+                    left: '2%',
+                    right: '5%',
+                    top: '65%',
+                    height: '25%',
+                    containLabel: true
+                }
+            ],
             dataZoom: [
                 {
                     type: 'inside',
+                    xAxisIndex: [0, 1],
                     start: 80,
                     end: 100
                 },
                 {
                     show: true,
                     type: 'slider',
+                    xAxisIndex: [0, 1],
                     bottom: 0,
                     start: 80,
                     end: 100,
@@ -104,17 +121,33 @@ document.addEventListener("DOMContentLoaded", async () => {
             ],
             xAxis: [
                 {
+                    // SPX xAxis
                     type: 'category',
                     data: data.dates,
+                    gridIndex: 0,
                     axisLabel: {
-                        color: '#787B86' // TV muted text
+                        show: false // Hide labels for top chart
                     },
-                    axisLine: {
-                        show: false
+                    axisLine: { show: false },
+                    axisTick: { show: false },
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: 'rgba(43, 43, 67, 0.5)',
+                            type: 'solid'
+                        }
+                    }
+                },
+                {
+                    // FNG xAxis
+                    type: 'category',
+                    data: data.dates,
+                    gridIndex: 1,
+                    axisLabel: {
+                        color: '#787B86'
                     },
-                    axisTick: {
-                        show: false
-                    },
+                    axisLine: { show: false },
+                    axisTick: { show: false },
                     splitLine: {
                         show: true,
                         lineStyle: {
@@ -126,25 +159,20 @@ document.addEventListener("DOMContentLoaded", async () => {
             ],
             yAxis: [
                 {
+                    // SPX yAxis
                     type: 'value',
-                    name: 'Fear & Greed',
-                    position: 'left',
-                    min: 0,
-                    max: 100,
-                    interval: 20,
+                    name: 'S&P 500',
+                    gridIndex: 0,
+                    position: 'right',
+                    min: 'dataMin',
+                    max: 'dataMax',
                     nameTextStyle: {
                         color: '#787B86',
-                        padding: [0, 0, 0, 20]
+                        padding: [0, 20, 0, 0]
                     },
-                    axisLabel: {
-                        color: '#787B86'
-                    },
-                    axisLine: {
-                        show: false
-                    },
-                    axisTick: {
-                        show: false
-                    },
+                    axisLabel: { color: '#787B86' },
+                    axisLine: { show: false },
+                    axisTick: { show: false },
                     splitLine: {
                         show: true,
                         lineStyle: {
@@ -154,51 +182,54 @@ document.addEventListener("DOMContentLoaded", async () => {
                     }
                 },
                 {
+                    // FNG yAxis
                     type: 'value',
-                    name: 'S&P 500',
+                    name: 'Fear & Greed',
+                    gridIndex: 1,
                     position: 'right',
-                    min: 'dataMin',
-                    max: 'dataMax',
+                    min: 0,
+                    max: 100,
+                    interval: 25,
                     nameTextStyle: {
                         color: '#787B86',
-                        padding: [0, 20, 0, 0]
+                        padding: [0, 0, 0, 20]
                     },
-                    axisLabel: {
-                        color: '#787B86'
-                    },
-                    axisLine: {
-                        show: false
-                    },
-                    axisTick: {
-                        show: false
-                    },
+                    axisLabel: { color: '#787B86' },
+                    axisLine: { show: false },
+                    axisTick: { show: false },
                     splitLine: {
-                        show: false
+                        show: true,
+                        lineStyle: {
+                            color: 'rgba(43, 43, 67, 0.5)',
+                            type: 'solid'
+                        }
                     }
                 }
             ],
             series: [
                 {
+                    name: 'S&P 500',
+                    type: 'candlestick',
+                    xAxisIndex: 0,
+                    yAxisIndex: 0,
+                    data: data.spx_ohlc,
+                    itemStyle: {
+                        color: '#26A69A',
+                        color0: '#EF5350',
+                        borderColor: '#26A69A',
+                        borderColor0: '#EF5350'
+                    }
+                },
+                {
                     name: 'Fear & Greed Index',
                     type: 'line',
-                    yAxisIndex: 0,
+                    xAxisIndex: 1,
+                    yAxisIndex: 1,
                     data: data.fng,
                     showSymbol: false,
                     lineStyle: {
                         width: 1.5,
-                        color: '#2962FF' // TradingView Blue
-                    }
-                },
-                {
-                    name: 'S&P 500',
-                    type: 'candlestick',
-                    yAxisIndex: 1,
-                    data: data.spx_ohlc,
-                    itemStyle: {
-                        color: '#26A69A', // TradingView Green (Up)
-                        color0: '#EF5350', // TradingView Red (Down)
-                        borderColor: '#26A69A',
-                        borderColor0: '#EF5350'
+                        color: '#2962FF'
                     }
                 }
             ]
