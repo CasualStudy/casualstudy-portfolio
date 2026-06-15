@@ -183,7 +183,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     type: 'line',
                     yAxisIndex: 0,
                     data: data.fng,
-                    showSymbol: false,
+                    symbol: 'circle',
+                    symbolSize: 4,
                     lineStyle: {
                         width: 1.5,
                         color: '#2962FF' // TradingView Blue
