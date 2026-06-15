@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 left: 'center',
                 bottom: '0%',
                 inRange: {
-                    // Soft dark mode palette: Slate -> Indigo -> Pink
-                    color: ['rgba(30, 41, 59, 0.6)', 'rgba(99, 102, 241, 0.7)', 'rgba(236, 72, 153, 0.8)']
+                    // Lighter pastel palette: Light Gray -> Light Blue -> Light Red/Pink
+                    color: ['#e2e8f0', '#93c5fd', '#fca5a5']
                 },
                 textStyle: { color: 'rgba(255, 255, 255, 0.7)' }
             },
@@ -69,7 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     formatter: function(params) {
                         return params.data[2] > 0 ? params.data[2] + '%' : '-';
                     },
-                    color: '#fff'
+                    color: '#111',
+                    fontSize: 15,
+                    fontWeight: 'bold'
                 },
                 emphasis: {
                     itemStyle: {
