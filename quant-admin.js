@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="quant-item-meta">
                             <span class="quant-source-badge ${badgeClass}">${paper.source}</span>
                             <span><i data-lucide="calendar" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i> ${dateStr}</span>
+                            ${paper.cited_by_count !== undefined ? `<span><i data-lucide="book-open" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i> ${paper.cited_by_count} Citations</span>` : ''}
                         </div>
                         <h3 class="quant-title" style="margin-top: 4px; font-size: 1.05rem;">
                             ${paper.title_en}
@@ -188,6 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (sortVal === 'score_desc') return b.ai_analysis.practical_score - a.ai_analysis.practical_score;
             if (sortVal === 'score_asc') return a.ai_analysis.practical_score - b.ai_analysis.practical_score;
             
+            if (sortVal === 'citations_desc') return (b.cited_by_count || 0) - (a.cited_by_count || 0);
+            if (sortVal === 'citations_asc') return (a.cited_by_count || 0) - (b.cited_by_count || 0);
+
             const dateA = new Date(a.date_scraped || 0).getTime();
             const dateB = new Date(b.date_scraped || 0).getTime();
             if (sortVal === 'date_desc') return dateB - dateA;
