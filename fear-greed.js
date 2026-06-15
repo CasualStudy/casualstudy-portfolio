@@ -30,53 +30,52 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Initialize ECharts
         const chartDom = document.getElementById('chart');
-        // Check if dark mode is preferred for theme
-        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const myChart = echarts.init(chartDom, isDarkMode ? 'dark' : null);
-        
-        // ECharts uses transparent backgrounds by default, which is perfect for our glassmorphism
+        // TradingView dark theme base
+        const myChart = echarts.init(chartDom);
         
         const option = {
             backgroundColor: 'transparent',
+            color: ['#2962FF', '#FF9800'], // TradingView style blue and orange
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
                     type: 'cross',
-                    crossStyle: {
-                        color: '#999'
-                    }
-                },
-                backgroundColor: 'rgba(25, 25, 30, 0.8)',
-                borderColor: 'rgba(255, 255, 255, 0.1)',
-                textStyle: {
-                    color: '#fff'
-                }
-            },
-            toolbox: {
-                feature: {
-                    dataZoom: {
-                        yAxisIndex: 'none'
+                    label: {
+                        backgroundColor: '#2B2B43', // TV axis label color
+                        color: '#D1D4DC'
                     },
-                    restore: {},
-                    saveAsImage: {
-                        name: 'Fear_and_Greed_vs_SPX'
+                    lineStyle: {
+                        color: '#2B2B43',
+                        type: 'dashed'
+                    },
+                    crossStyle: {
+                        color: '#2B2B43',
+                        type: 'dashed'
                     }
                 },
-                iconStyle: {
-                    borderColor: 'var(--text-primary)'
-                }
+                backgroundColor: 'rgba(19, 23, 34, 0.9)', // TV dark tooltip
+                borderColor: '#2B2B43',
+                textStyle: {
+                    color: '#D1D4DC',
+                    fontSize: 12
+                },
+                padding: [8, 12]
             },
             legend: {
                 data: ['Fear & Greed Index', 'S&P 500'],
                 textStyle: {
-                    color: 'var(--text-primary)'
+                    color: '#D1D4DC',
+                    fontSize: 12
                 },
-                top: 0
+                top: 0,
+                left: 'left',
+                icon: 'circle'
             },
             grid: {
-                left: '3%',
-                right: '4%',
+                left: '2%',
+                right: '5%',
                 bottom: '10%',
+                top: '12%',
                 containLabel: true
             },
             dataZoom: [
@@ -91,8 +90,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                     bottom: 0,
                     start: 80,
                     end: 100,
+                    borderColor: 'transparent',
+                    backgroundColor: 'rgba(43, 43, 67, 0.2)',
+                    fillerColor: 'rgba(41, 98, 255, 0.1)',
+                    handleStyle: {
+                        color: '#D1D4DC',
+                        borderColor: '#2B2B43'
+                    },
                     textStyle: {
-                        color: 'var(--text-primary)'
+                        color: '#D1D4DC'
                     }
                 }
             ],
@@ -100,12 +106,20 @@ document.addEventListener("DOMContentLoaded", async () => {
                 {
                     type: 'category',
                     data: data.dates,
-                    axisPointer: {
-                        type: 'shadow'
+                    axisLabel: {
+                        color: '#787B86' // TV muted text
                     },
                     axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: true,
                         lineStyle: {
-                            color: 'var(--text-secondary)'
+                            color: 'rgba(43, 43, 67, 0.5)',
+                            type: 'solid'
                         }
                     }
                 }
@@ -114,84 +128,77 @@ document.addEventListener("DOMContentLoaded", async () => {
                 {
                     type: 'value',
                     name: 'Fear & Greed',
+                    position: 'left',
                     min: 0,
                     max: 100,
                     interval: 20,
+                    nameTextStyle: {
+                        color: '#787B86',
+                        padding: [0, 0, 0, 20]
+                    },
                     axisLabel: {
-                        formatter: '{value}'
+                        color: '#787B86'
                     },
                     axisLine: {
-                        show: true,
-                        lineStyle: {
-                            color: '#0071e3'
-                        }
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
                     },
                     splitLine: {
-                        show: false
+                        show: true,
+                        lineStyle: {
+                            color: 'rgba(43, 43, 67, 0.5)',
+                            type: 'solid'
+                        }
                     }
                 },
                 {
                     type: 'value',
                     name: 'S&P 500',
+                    position: 'right',
                     min: 'dataMin',
                     max: 'dataMax',
+                    nameTextStyle: {
+                        color: '#787B86',
+                        padding: [0, 20, 0, 0]
+                    },
                     axisLabel: {
-                        formatter: '{value}'
+                        color: '#787B86'
                     },
                     axisLine: {
-                        show: true,
-                        lineStyle: {
-                            color: '#ff6b35'
-                        }
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
                     },
                     splitLine: {
-                        lineStyle: {
-                            color: 'rgba(255, 255, 255, 0.1)',
-                            type: 'dashed'
-                        }
+                        show: false
                     }
                 }
             ],
-            visualMap: {
-                show: false,
-                pieces: [
-                    {gt: 0, lte: 25, color: 'rgba(255, 77, 79, 0.8)'},   // Extreme Fear
-                    {gt: 25, lte: 45, color: 'rgba(250, 173, 20, 0.8)'},  // Fear
-                    {gt: 45, lte: 55, color: 'rgba(250, 219, 20, 0.8)'},  // Neutral
-                    {gt: 55, lte: 75, color: 'rgba(82, 196, 26, 0.8)'},   // Greed
-                    {gt: 75, lte: 100, color: 'rgba(56, 158, 13, 0.8)'}   // Extreme Greed
-                ],
-                seriesIndex: 0
-            },
             series: [
                 {
                     name: 'Fear & Greed Index',
                     type: 'line',
                     yAxisIndex: 0,
                     data: data.fng,
-                    smooth: true,
+                    showSymbol: false,
                     lineStyle: {
-                        width: 2
-                    },
-                    areaStyle: {
-                        opacity: 0.1
-                    },
-                    symbol: 'none'
+                        width: 1.5,
+                        color: '#2962FF' // TradingView Blue
+                    }
                 },
                 {
                     name: 'S&P 500',
                     type: 'line',
                     yAxisIndex: 1,
                     data: data.spx,
-                    smooth: true,
+                    showSymbol: false,
                     lineStyle: {
-                        width: 2,
-                        color: '#ff6b35'
-                    },
-                    itemStyle: {
-                        color: '#ff6b35'
-                    },
-                    symbol: 'none'
+                        width: 1.5,
+                        color: '#FF9800' // TradingView Orange
+                    }
                 }
             ]
         };
@@ -205,6 +212,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     } catch (error) {
         console.error("Error loading Fear & Greed data:", error);
-        document.getElementById('chart').innerHTML = `<div style="color: red; text-align: center; padding-top: 2rem;">Failed to load data. Please ensure you have run the update script.</div>`;
+        document.getElementById('chart').innerHTML = `<div style="color: #ff4d4f; text-align: center; padding-top: 2rem;">Failed to load data. Please ensure you have run the update script.</div>`;
     }
 });
