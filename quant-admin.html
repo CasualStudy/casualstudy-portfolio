@@ -50,7 +50,12 @@
         <main style="padding-top: 100px; padding-bottom: 50px; max-width: 1200px; margin: 0 auto; padding-inline: 5%;">
             <div class="dashboard-header">
                 <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Intelligence Feed</h1>
-                <p style="color: var(--text-secondary); margin-bottom: 30px;">Latest academic papers, GitHub replications, and SSRN factors.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Latest academic papers, GitHub replications, and SSRN factors.</p>
+                
+                <div class="dataset-toggle" style="display: flex; gap: 10px; margin-bottom: 20px; max-width: 600px;">
+                    <button id="btn-live-feed" class="btn primary-btn" style="flex: 1; justify-content: center; border-radius: 10px;">Live Feed (Latest)</button>
+                    <button id="btn-hall-of-fame" class="btn glass-btn" style="flex: 1; justify-content: center; border-radius: 10px; opacity: 0.6;">Hall of Fame (Top Cited)</button>
+                </div>
                 
                 <div class="controls-bar glass-panel" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; border-radius: 20px; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
                     <div class="filters" style="display: flex; gap: 10px;">
@@ -88,7 +93,7 @@
         </main>
     </div>
 
-    <script src="quant-admin.js?v=9"></script>
+    <script src="quant-admin.js?v=10"></script>
     <script>
         lucide.createIcons();
     </script>

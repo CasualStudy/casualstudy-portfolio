@@ -63,22 +63,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Load papers from JSON
-    async function loadPapers() {
-        if (allPapers.length > 0) return; // Already loaded
-
+    async function loadPapers(dataset = 'live') {
+        const url = dataset === 'live' ? 'data/papers_database.json' : 'data/hall_of_fame.json';
+        papersContainer.innerHTML = '<div style="text-align: center; color: var(--text-secondary); padding: 50px;">Loading data... <i data-lucide="loader-2" class="spin"></i></div>';
+        lucide.createIcons();
         try {
-            const response = await fetch('data/papers_database.json?t=' + new Date().getTime());
+            const response = await fetch(url + '?t=' + new Date().getTime());
             if (!response.ok) throw new Error('Failed to load JSON');
             const data = await response.json();
             
             // Only show papers that have been analyzed by AI
             allPapers = data.filter(p => p.ai_analysis).sort((a, b) => b.ai_analysis.practical_score - a.ai_analysis.practical_score);
             statsTotal.textContent = `Papers: ${allPapers.length}`;
+            
+            // Reset filters and sort
+            currentSourceFilter = 'All';
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.source === 'All') btn.classList.add('active');
+            });
+            sortSelect.value = 'score_desc';
+            
             renderCards(allPapers);
         } catch (err) {
             console.error(err);
             papersContainer.innerHTML = '<p style="color:red; text-align:center;">Failed to load Intelligence Feed. Error: ' + err.message + '</p>';
         }
+    }
+
+    const btnLiveFeed = document.getElementById('btn-live-feed');
+    const btnHallOfFame = document.getElementById('btn-hall-of-fame');
+
+    if (btnLiveFeed && btnHallOfFame) {
+        btnLiveFeed.addEventListener('click', () => {
+            btnLiveFeed.className = 'btn primary-btn';
+            btnLiveFeed.style.opacity = '1';
+            btnHallOfFame.className = 'btn glass-btn';
+            btnHallOfFame.style.opacity = '0.6';
+            loadPapers('live');
+        });
+
+        btnHallOfFame.addEventListener('click', () => {
+            btnHallOfFame.className = 'btn primary-btn';
+            btnHallOfFame.style.opacity = '1';
+            btnLiveFeed.className = 'btn glass-btn';
+            btnLiveFeed.style.opacity = '0.6';
+            loadPapers('fame');
+        });
     }
 
     const sortSelect = document.getElementById('sort-select');
