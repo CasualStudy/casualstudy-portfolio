@@ -48,6 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
             excerpt_zh: "抓取并分析社交媒体情绪，以预测短期股票波动。",
             tools: "NLP, Scikit-Learn",
             icon: "trending-up"
+        },
+        {
+            title_en: "Fear & Greed Index vs S&P 500",
+            title_zh: "恐慌与贪婪指数 vs 标普500",
+            excerpt_en: "Daily updated interactive chart comparing market sentiment against S&P 500 performance.",
+            excerpt_zh: "每日更新的交互式图表，对比市场情绪与标普500表现。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "line-chart",
+            link: "fear-greed.html"
         }
     ];
 
@@ -75,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${excerpt}</p>
                 <div class="card-footer">
                     <span>${footerInfo}</span>
-                    <a href="#" class="read-more">${linkText} <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    <a href="${item.link || '#'}" class="read-more">${linkText} <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
                 </div>
             `;
             container.appendChild(card);
