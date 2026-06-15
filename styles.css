@@ -594,7 +594,7 @@ main {
 }
 
 .glass-modal {
-    background: rgba(30, 30, 45, 0.85); /* Less transparent dark background */
+    background: rgba(255, 255, 255, 0.3); /* Whiter, less transparent glass */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: var(--glass-border);
