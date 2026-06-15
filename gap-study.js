@@ -80,16 +80,37 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     };
 
-    const formatTodayText = (data) => {
+    const formatTodayText = (data, typeStr, statsObj) => {
         if (!data) return '<span style="color:var(--text-muted);">No gap or market closed</span>';
         let dir = data.dir || '';
         let b = data.bucket || '';
-        let pct = data.pct || '';
+        let pct = data.pct !== undefined ? data.pct : '';
         if (!dir) return '<span style="color:var(--text-muted);">No Gap</span>';
         
         let color = dir === 'Up' ? '#4CAF50' : '#F44336';
         let arrow = dir === 'Up' ? '↑' : '↓';
-        return `<span style="color:${color}; font-weight:bold;">Gap ${dir} ${arrow}</span><br/><span style="font-size:0.9rem; color:var(--text-secondary);">${b}</span>`;
+        let sign = dir === 'Up' ? '+' : '-';
+        
+        // Fetch historical stats for this specific bucket
+        let prob5Y = statsObj["5Y"][typeStr][dir][b]?.prob || 0;
+        let prob10Y = statsObj["10Y"][typeStr][dir][b]?.prob || 0;
+        let prob30Y = statsObj["30Y"][typeStr][dir][b]?.prob || 0;
+
+        return `
+            <div style="font-size:1.1rem; margin-bottom: 0.5rem;">
+                <span style="color:${color}; font-weight:bold;">Gap ${dir} ${arrow}</span>
+                <span style="color:var(--text-primary); font-weight:bold; margin-left: 0.5rem;">${sign}${pct}%</span>
+            </div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 0.5rem;">
+                Range: ${b}
+            </div>
+            <div style="font-size:0.85rem; color:var(--text-muted); background: rgba(0,0,0,0.2); padding: 0.5rem; border-radius: 5px; text-align: left;">
+                <div style="margin-bottom: 2px;"><strong>Fill Prob. for this range:</strong></div>
+                <div>Past 5Y: <span style="color:var(--accent); font-weight:bold;">${prob5Y}%</span></div>
+                <div>Past 10Y: <span style="color:var(--accent); font-weight:bold;">${prob10Y}%</span></div>
+                <div>Past 30Y: <span style="color:var(--accent); font-weight:bold;">${prob30Y}%</span></div>
+            </div>
+        `;
     };
 
     const updateUI = () => {
@@ -103,13 +124,15 @@ document.addEventListener("DOMContentLoaded", () => {
             
             document.getElementById('today-classic').innerHTML = formatTodayText({
                 dir: today.classic_dir,
-                bucket: today.classic_bucket
-            });
+                bucket: today.classic_bucket,
+                pct: today.classic_pct
+            }, "Classic", data.stats);
             
             document.getElementById('today-range').innerHTML = formatTodayText({
                 dir: today.range_dir,
-                bucket: today.range_bucket
-            });
+                bucket: today.range_bucket,
+                pct: today.range_pct
+            }, "Range", data.stats);
         } else {
             document.getElementById('today-date').textContent = "Not Available";
             document.getElementById('today-classic').textContent = "--";

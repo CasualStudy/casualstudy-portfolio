@@ -170,8 +170,10 @@ def main():
             today_summary = {
                 "date": today_str,
                 "classic_dir": today_data["classic_dir"],
+                "classic_pct": round(today_data["classic_pct"], 2),
                 "classic_bucket": today_data["classic_bucket"],
                 "range_dir": today_data["range_dir"],
+                "range_pct": round(today_data["range_pct"], 2),
                 "range_bucket": today_data["range_bucket"],
                 "open": round(today_data["open"], 2),
                 "prev_close": round(today_data["prev_close"], 2),
