@@ -1,5 +1,6 @@
 let currentData = null;
 let currentIndex = 'SPX';
+let currentPostTimeframe = 'post1m';
 
 document.addEventListener('DOMContentLoaded', () => {
     // If translations exist globally from script.js, merge our local ones
@@ -79,62 +80,68 @@ function renderContent(stats) {
 
     // 2. Render Stat Cards
     const container = document.getElementById('stats-container');
-    container.innerHTML = '';
     
-    const periods = ["20Y", "10Y", "1Y"];
-    periods.forEach(period => {
-        const s = stats[period];
-        if (!s) return;
-        
-        let title = dict.series_20y;
-        if (period === "10Y") title = dict.series_10y;
-        if (period === "1Y") title = dict.series_1y;
-        
-        const cardHtml = `
-            <div class="stat-card">
-                <div class="stat-header">
-                    <span class="stat-title">${title} (${s.count})</span>
-                    <span class="stat-period">${dict.stat_pre}</span>
-                </div>
-                <div class="stat-metrics">
-                    <div class="metric">
-                        <span class="metric-label">${dict.metric_avg}</span>
-                        <span class="metric-value ${s.pre_avg >= 0 ? 'positive' : 'negative'}">${s.pre_avg > 0 ? '+' : ''}${s.pre_avg}%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">${dict.metric_win}</span>
-                        <span class="metric-value" style="color: #111827">${s.pre_win}%</span>
-                    </div>
-                </div>
-                
-                <div class="stat-header" style="margin-top: 1.5rem">
-                    <span class="stat-period">${dict.stat_post1m}</span>
-                </div>
-                <div class="stat-metrics">
-                    <div class="metric">
-                        <span class="metric-label">${dict.metric_avg}</span>
-                        <span class="metric-value ${s.post1m_avg >= 0 ? 'positive' : 'negative'}">${s.post1m_avg > 0 ? '+' : ''}${s.post1m_avg}%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">${dict.metric_win}</span>
-                        <span class="metric-value" style="color: #111827">${s.post1m_win}%</span>
-                    </div>
-                </div>
+    container.innerHTML = `
+        <div class="stat-card wide-card">
+            <div class="stat-header">
+                <h3 class="stat-title">${dict.card_pre_title}</h3>
             </div>
-        `;
-        container.innerHTML += cardHtml;
+            <div class="metrics-grid">
+                ${renderColumn(stats["20Y"], dict.series_20y, 'pre', dict)}
+                ${renderColumn(stats["10Y"], dict.series_10y, 'pre', dict)}
+                ${renderColumn(stats["1Y"], dict.series_1y, 'pre', dict)}
+            </div>
+        </div>
+        
+        <div class="stat-card wide-card">
+            <div class="stat-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <h3 class="stat-title">${dict.card_post_title}</h3>
+                <select id="post-timeframe-select" class="styled-select">
+                    <option value="post1w" ${currentPostTimeframe === 'post1w' ? 'selected' : ''}>${dict.select_1w}</option>
+                    <option value="post1m" ${currentPostTimeframe === 'post1m' ? 'selected' : ''}>${dict.select_1m}</option>
+                    <option value="post1y" ${currentPostTimeframe === 'post1y' ? 'selected' : ''}>${dict.select_1y}</option>
+                </select>
+            </div>
+            <div class="metrics-grid">
+                ${renderColumn(stats["20Y"], dict.series_20y, currentPostTimeframe, dict)}
+                ${renderColumn(stats["10Y"], dict.series_10y, currentPostTimeframe, dict)}
+                ${renderColumn(stats["1Y"], dict.series_1y, currentPostTimeframe, dict)}
+            </div>
+        </div>
+    `;
+
+    document.getElementById('post-timeframe-select').addEventListener('change', (e) => {
+        currentPostTimeframe = e.target.value;
+        renderContent(stats);
     });
 
     // 3. Render ECharts
     renderCharts(stats, dict);
 }
 
+function renderColumn(s, title, prefix, dict) {
+    if (!s) return '<div></div>';
+    return `
+        <div class="metrics-column">
+            <div class="metrics-column-title">${title} (${s.count})</div>
+            <div class="metric">
+                <span class="metric-label">${dict.metric_avg}</span>
+                <span class="metric-value ${s[prefix + '_avg'] >= 0 ? 'positive' : 'negative'}">${s[prefix + '_avg'] > 0 ? '+' : ''}${s[prefix + '_avg']}%</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">${dict.metric_win}</span>
+                <span class="metric-value" style="color: #111827">${s[prefix + '_win']}%</span>
+            </div>
+        </div>
+    `;
+}
+
 function renderCharts(stats, dict) {
-    const s1 = stats["1Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
-    const s10 = stats["10Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
-    const s20 = stats["20Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
+    const s1 = stats["1Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, post1y_avg:0, pre_win:0, post1w_win:0, post1m_win:0, post1y_win:0};
+    const s10 = stats["10Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, post1y_avg:0, pre_win:0, post1w_win:0, post1m_win:0, post1y_win:0};
+    const s20 = stats["20Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, post1y_avg:0, pre_win:0, post1w_win:0, post1m_win:0, post1y_win:0};
     
-    const xLabels = [dict.stat_pre, dict.stat_post1w, dict.stat_post1m];
+    const xLabels = [dict.stat_pre, dict.select_1w, dict.select_1m, dict.select_1y];
     
     // Theme colors matching dark mode
     const color1Y = '#f472b6'; // Pink
@@ -190,21 +197,21 @@ function renderCharts(stats, dict) {
             {
                 name: dict.series_20y,
                 type: 'bar',
-                data: [s20.pre_avg, s20.post1w_avg, s20.post1m_avg],
+                data: [s20.pre_avg, s20.post1w_avg, s20.post1m_avg, s20.post1y_avg],
                 itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
-                data: [s10.pre_avg, s10.post1w_avg, s10.post1m_avg],
+                data: [s10.pre_avg, s10.post1w_avg, s10.post1m_avg, s10.post1y_avg],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
-                data: [s1.pre_avg, s1.post1w_avg, s1.post1m_avg],
+                data: [s1.pre_avg, s1.post1w_avg, s1.post1m_avg, s1.post1y_avg],
                 itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             }
@@ -232,21 +239,21 @@ function renderCharts(stats, dict) {
             {
                 name: dict.series_20y,
                 type: 'bar',
-                data: [s20.pre_win, s20.post1w_win, s20.post1m_win],
+                data: [s20.pre_win, s20.post1w_win, s20.post1m_win, s20.post1y_win],
                 itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
-                data: [s10.pre_win, s10.post1w_win, s10.post1m_win],
+                data: [s10.pre_win, s10.post1w_win, s10.post1m_win, s10.post1y_win],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
-                data: [s1.pre_win, s1.post1w_win, s1.post1m_win],
+                data: [s1.pre_win, s1.post1w_win, s1.post1m_win, s1.post1y_win],
                 itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
                 label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             }

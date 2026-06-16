@@ -53,9 +53,9 @@ def calculate_returns(additions):
     recent_additions = [item for item in additions if item[0] >= cutoff_20y]
     
     results = {
-        "1Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []},
-        "10Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []},
-        "20Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []}
+        "1Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": [], "post1y_ret": []},
+        "10Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": [], "post1y_ret": []},
+        "20Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": [], "post1y_ret": []}
     }
     
     print(f"Calculating statistics for {len(recent_additions)} events...")
@@ -80,31 +80,45 @@ def calculate_returns(additions):
             eff_dt = future_dates[0]
             loc = df.index.get_loc(eff_dt)
             
-            if loc < 5 or loc + 21 >= len(df):
+            if loc < 5:
                 continue
                 
             p_pre = df.iloc[loc - 5]['Close']
             p_eff = df.iloc[loc]['Close']
-            p_post1w = df.iloc[loc + 5]['Close']
-            p_post1m = df.iloc[loc + 21]['Close']
             
             ret_pre = (p_eff - p_pre) / p_pre
-            ret_post1w = (p_post1w - p_eff) / p_eff
-            ret_post1m = (p_post1m - p_eff) / p_eff
-            
             results["20Y"]["pre_ret"].append((ret_pre, ticker))
-            results["20Y"]["post1w_ret"].append((ret_post1w, ticker))
-            results["20Y"]["post1m_ret"].append((ret_post1m, ticker))
-            
             if eff_date >= cutoff_10y:
                 results["10Y"]["pre_ret"].append((ret_pre, ticker))
-                results["10Y"]["post1w_ret"].append((ret_post1w, ticker))
-                results["10Y"]["post1m_ret"].append((ret_post1m, ticker))
-            
             if eff_date >= cutoff_1y:
                 results["1Y"]["pre_ret"].append((ret_pre, ticker))
-                results["1Y"]["post1w_ret"].append((ret_post1w, ticker))
-                results["1Y"]["post1m_ret"].append((ret_post1m, ticker))
+
+            if loc + 5 < len(df):
+                p_post1w = df.iloc[loc + 5]['Close']
+                ret_post1w = (p_post1w - p_eff) / p_eff
+                results["20Y"]["post1w_ret"].append((ret_post1w, ticker))
+                if eff_date >= cutoff_10y:
+                    results["10Y"]["post1w_ret"].append((ret_post1w, ticker))
+                if eff_date >= cutoff_1y:
+                    results["1Y"]["post1w_ret"].append((ret_post1w, ticker))
+                    
+            if loc + 21 < len(df):
+                p_post1m = df.iloc[loc + 21]['Close']
+                ret_post1m = (p_post1m - p_eff) / p_eff
+                results["20Y"]["post1m_ret"].append((ret_post1m, ticker))
+                if eff_date >= cutoff_10y:
+                    results["10Y"]["post1m_ret"].append((ret_post1m, ticker))
+                if eff_date >= cutoff_1y:
+                    results["1Y"]["post1m_ret"].append((ret_post1m, ticker))
+                    
+            if loc + 252 < len(df):
+                p_post1y = df.iloc[loc + 252]['Close']
+                ret_post1y = (p_post1y - p_eff) / p_eff
+                results["20Y"]["post1y_ret"].append((ret_post1y, ticker))
+                if eff_date >= cutoff_10y:
+                    results["10Y"]["post1y_ret"].append((ret_post1y, ticker))
+                if eff_date >= cutoff_1y:
+                    results["1Y"]["post1y_ret"].append((ret_post1y, ticker))
                 
         except Exception as e:
             continue
@@ -119,18 +133,26 @@ def calculate_returns(additions):
         pre_rets = [x[0] for x in d["pre_ret"]]
         pre_avg = sum(pre_rets) / count
         pre_win = sum(1 for x in pre_rets if x > 0) / count
-        pre_max = max(d["pre_ret"], key=lambda x: x[0])
-        pre_min = min(d["pre_ret"], key=lambda x: x[0])
+        pre_max = max(d["pre_ret"], key=lambda x: x[0]) if pre_rets else (0, "N/A")
+        pre_min = min(d["pre_ret"], key=lambda x: x[0]) if pre_rets else (0, "N/A")
         
         post1w_rets = [x[0] for x in d["post1w_ret"]]
-        post1w_avg = sum(post1w_rets) / count
-        post1w_win = sum(1 for x in post1w_rets if x > 0) / count
+        post1w_avg = sum(post1w_rets) / len(post1w_rets) if post1w_rets else 0
+        post1w_win = sum(1 for x in post1w_rets if x > 0) / len(post1w_rets) if post1w_rets else 0
+        post1w_max = max(d["post1w_ret"], key=lambda x: x[0]) if post1w_rets else (0, "N/A")
+        post1w_min = min(d["post1w_ret"], key=lambda x: x[0]) if post1w_rets else (0, "N/A")
         
         post1m_rets = [x[0] for x in d["post1m_ret"]]
-        post1m_avg = sum(post1m_rets) / count
-        post1m_win = sum(1 for x in post1m_rets if x > 0) / count
-        post1m_max = max(d["post1m_ret"], key=lambda x: x[0])
-        post1m_min = min(d["post1m_ret"], key=lambda x: x[0])
+        post1m_avg = sum(post1m_rets) / len(post1m_rets) if post1m_rets else 0
+        post1m_win = sum(1 for x in post1m_rets if x > 0) / len(post1m_rets) if post1m_rets else 0
+        post1m_max = max(d["post1m_ret"], key=lambda x: x[0]) if post1m_rets else (0, "N/A")
+        post1m_min = min(d["post1m_ret"], key=lambda x: x[0]) if post1m_rets else (0, "N/A")
+        
+        post1y_rets = [x[0] for x in d["post1y_ret"]]
+        post1y_avg = sum(post1y_rets) / len(post1y_rets) if post1y_rets else 0
+        post1y_win = sum(1 for x in post1y_rets if x > 0) / len(post1y_rets) if post1y_rets else 0
+        post1y_max = max(d["post1y_ret"], key=lambda x: x[0]) if post1y_rets else (0, "N/A")
+        post1y_min = min(d["post1y_ret"], key=lambda x: x[0]) if post1y_rets else (0, "N/A")
         
         stats[period] = {
             "count": count,
@@ -140,14 +162,28 @@ def calculate_returns(additions):
             "pre_max_ticker": pre_max[1],
             "pre_min_val": round(pre_min[0] * 100, 2),
             "pre_min_ticker": pre_min[1],
+            
             "post1w_avg": round(post1w_avg * 100, 2),
             "post1w_win": round(post1w_win * 100, 1),
+            "post1w_max_val": round(post1w_max[0] * 100, 2),
+            "post1w_max_ticker": post1w_max[1],
+            "post1w_min_val": round(post1w_min[0] * 100, 2),
+            "post1w_min_ticker": post1w_min[1],
+            
             "post1m_avg": round(post1m_avg * 100, 2),
             "post1m_win": round(post1m_win * 100, 1),
             "post1m_max_val": round(post1m_max[0] * 100, 2),
             "post1m_max_ticker": post1m_max[1],
             "post1m_min_val": round(post1m_min[0] * 100, 2),
-            "post1m_min_ticker": post1m_min[1]
+            "post1m_min_ticker": post1m_min[1],
+            
+            "post1y_avg": round(post1y_avg * 100, 2),
+            "post1y_win": round(post1y_win * 100, 1),
+            "post1y_max_val": round(post1y_max[0] * 100, 2),
+            "post1y_max_ticker": post1y_max[1],
+            "post1y_min_val": round(post1y_min[0] * 100, 2),
+            "post1y_min_ticker": post1y_min[1]
+
         }
         
     return stats
