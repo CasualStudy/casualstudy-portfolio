@@ -1,23 +1,23 @@
 {
-  "last_updated": "Loading real data...",
-  "stats": {
-    "10Y": {
-      "count": 0,
-      "pre_avg": 0,
-      "pre_win": 0,
-      "post1w_avg": 0,
-      "post1w_win": 0,
-      "post1m_avg": 0,
-      "post1m_win": 0
-    },
-    "20Y": {
-      "count": 0,
-      "pre_avg": 0,
-      "pre_win": 0,
-      "post1w_avg": 0,
-      "post1w_win": 0,
-      "post1m_avg": 0,
-      "post1m_win": 0
+    "last_updated": "2026-06-16 14:16:39 NY Time",
+    "stats": {
+        "10Y": {
+            "count": 168,
+            "pre_avg": 1.57,
+            "pre_win": 60.7,
+            "post1w_avg": -0.98,
+            "post1w_win": 44.0,
+            "post1m_avg": 0.39,
+            "post1m_win": 51.2
+        },
+        "20Y": {
+            "count": 271,
+            "pre_avg": 1.41,
+            "pre_win": 59.8,
+            "post1w_avg": -0.59,
+            "post1w_win": 43.5,
+            "post1m_avg": -0.14,
+            "post1m_win": 49.8
+        }
     }
-  }
 }
