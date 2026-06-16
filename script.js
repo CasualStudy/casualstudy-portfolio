@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // Default language
-    let currentLang = localStorage.getItem("siteLang") || "en";
+    let currentLang = localStorage.getItem("siteLang");
+    if (!currentLang) {
+        currentLang = navigator.language.toLowerCase().includes("zh") ? "zh" : "en";
+    }
 
     // Mock Data for Projects
     const projects = [
