@@ -172,19 +172,22 @@ function renderCharts(stats, dict) {
                 name: dict.series_20y,
                 type: 'bar',
                 data: [s20.pre_avg, s20.post1w_avg, s20.post1m_avg],
-                itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
                 data: [s10.pre_avg, s10.post1w_avg, s10.post1m_avg],
-                itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
                 data: [s1.pre_avg, s1.post1w_avg, s1.post1m_avg],
-                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             }
         ]
     });
@@ -211,19 +214,22 @@ function renderCharts(stats, dict) {
                 name: dict.series_20y,
                 type: 'bar',
                 data: [s20.pre_win, s20.post1w_win, s20.post1m_win],
-                itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
                 data: [s10.pre_win, s10.post1w_win, s10.post1m_win],
-                itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
                 data: [s1.pre_win, s1.post1w_win, s1.post1m_win],
-                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] }
+                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
+                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
             }
         ]
     });
