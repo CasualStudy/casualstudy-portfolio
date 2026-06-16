@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="inclusion_title">Index Inclusion Effect</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        .inclusion-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-section p {
+            color: #9ca3af;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .note {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #fca5a5;
+            text-align: left;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .stat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #e5e7eb;
+        }
+
+        .stat-period {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            font-weight: 500;
+        }
+
+        .stat-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .metric {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .positive { color: #10b981; }
+        .negative { color: #ef4444; }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .chart-box {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 400px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Narrative Box */
+        .narrative-box {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .narrative-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+        }
+
+        .narrative-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="dark">
+    <!-- Navbar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">DataPortfolio</a>
+            <div class="nav-links">
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="fear-greed.html" data-i18n="nav_fear_greed">Fear & Greed</a>
+                <a href="gap-study.html" data-i18n="nav_gap_study">Gap Study</a>
+                <a href="inclusion-study.html" class="active" data-i18n="nav_inclusion">Inclusion Effect</a>
+            </div>
+            <button class="lang-toggle" onclick="toggleLanguage()">EN / 中文</button>
+        </div>
+    </nav>
+
+    <main class="inclusion-container">
+        <div class="header-section">
+            <h1 data-i18n="inclusion_title">S&P 500 Index Inclusion Effect</h1>
+            <p data-i18n="inclusion_desc">Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.</p>
+            <div class="note" data-i18n="inclusion_disclaimer">
+                <strong>Important Data Note:</strong> Due to the proprietary nature of official "Announcement Dates" (when S&P publicly announces a change), this analysis uses the "Effective Date" (when the stock actually joins the index) as the primary anchor. To estimate the "Announcement Effect", we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.
+            </div>
+        </div>
+
+        <div class="narrative-box" id="narrative-content">
+            <p>Loading narrative...</p>
+        </div>
+
+        <div class="stats-grid" id="stats-container">
+            <!-- Dynamically populated -->
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-box" id="avg-return-chart"></div>
+            <div class="chart-box" id="win-rate-chart"></div>
+        </div>
+
+        <div class="last-updated" id="last-updated">Last updated: Loading...</div>
+    </main>
+
+    <!-- Base dictionary for dynamic inclusion texts -->
+    <script>
+        const inclusionDict = {
+            "en": {
+                "inclusion_title": "S&P 500 Index Inclusion Effect",
+                "inclusion_desc": "Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.",
+                "inclusion_disclaimer": "<strong>Important Data Note:</strong> Due to the proprietary nature of official 'Announcement Dates' (when S&P publicly announces a change), this analysis uses the 'Effective Date' (when the stock actually joins the index) as the primary anchor. To estimate the 'Announcement Effect', we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.",
+                "stat_pre": "Pre-Inclusion (T-5 to T=0)",
+                "stat_post1w": "Post-Inclusion (T=0 to T+1W)",
+                "stat_post1m": "Post-Inclusion (T=0 to T+1M)",
+                "metric_avg": "Avg Return",
+                "metric_win": "Win Rate (>0%)",
+                "chart_return_title": "Average Returns by Time Window",
+                "chart_win_title": "Win Rate by Time Window",
+                "series_10y": "Past 10 Years",
+                "series_20y": "Past 20 Years"
+            },
+            "zh": {
+                "inclusion_title": "标普500指数纳入效应",
+                "inclusion_desc": "分析历史上被纳入标普500指数的股票表现。我们研究了生效日之前的价格走势，以及纳入后1周和1个月的收益率。",
+                "inclusion_disclaimer": "<strong>重要数据说明：</strong> 由于官方“宣布日”（标普公开发布调整新闻的日子）属于受保护的商业数据，本分析使用“生效日”（股票正式加入指数的日子）作为核心锚点。为了估算“宣布效应”，我们使用生效日前5个交易日（T-5至T=0）的收益率，作为宣布日大涨的模糊替代指标。",
+                "stat_pre": "纳入前 (T-5 至 T=0)",
+                "stat_post1w": "纳入后 (T=0 至 T+1周)",
+                "stat_post1m": "纳入后 (T=0 至 T+1月)",
+                "metric_avg": "平均涨跌幅",
+                "metric_win": "上涨概率",
+                "chart_return_title": "各时间窗口平均涨跌幅",
+                "chart_win_title": "各时间窗口上涨概率",
+                "series_10y": "过去 10 年",
+                "series_20y": "过去 20 年"
+            }
+        };
+
+        // Merge into global dictionary if it exists, otherwise wait for script.js
+        window.pageDict = inclusionDict;
+    </script>
+    <script src="script.js"></script>
+    <script src="inclusion-study.js"></script>
+</body>
+</html>

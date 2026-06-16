@@ -52,12 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
             link: "gap-study.html"
         },
         {
-            title_en: "Analysis 3 (TBD)",
-            title_zh: "分析 3 (TBD)",
-            excerpt_en: "TBD - Coming soon.",
-            excerpt_zh: "敬请期待 - 建设中。",
-            tools: "TBD",
-            icon: "trending-up"
+            title_en: "Index Inclusion Effect",
+            title_zh: "指数纳入效应",
+            excerpt_en: "Analysis of post-inclusion performance for stocks added to the S&P 500.",
+            excerpt_zh: "标普500成分股被纳入前后的表现统计。",
+            tools: "ECharts, Python",
+            icon: "trending-up",
+            link: "inclusion-study.html"
         }
     ];
 
