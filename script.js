@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
             currentLang = currentLang === "en" ? "zh" : "en";
             localStorage.setItem("siteLang", currentLang);
             renderAll();
+            window.dispatchEvent(new Event('languageChanged'));
         });
     }
 

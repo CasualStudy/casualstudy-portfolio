@@ -10,22 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/inclusion_data.json')
         .then(response => response.json())
         .then(data => {
-            const lang = localStorage.getItem('language') || 'en';
-            document.getElementById('last-updated').textContent = lang === 'zh' 
-                ? `最后更新: ${data.last_updated}` 
-                : `Last updated: ${data.last_updated}`;
-            renderContent(data.stats);
-
-            // Re-render narrative when language changes
-            const originalToggle = window.toggleLanguage;
-            window.toggleLanguage = () => {
-                if(originalToggle) originalToggle();
-                const newLang = localStorage.getItem('language') || 'en';
-                document.getElementById('last-updated').textContent = newLang === 'zh' 
+            const updateTextAndRender = () => {
+                const lang = localStorage.getItem('siteLang') || 'en';
+                document.getElementById('last-updated').textContent = lang === 'zh' 
                     ? `最后更新: ${data.last_updated}` 
                     : `Last updated: ${data.last_updated}`;
-                renderContent(data.stats); // Re-generate narrative and cards with new language
+                renderContent(data.stats);
             };
+
+            updateTextAndRender();
+
+            window.addEventListener('languageChanged', () => {
+                updateTextAndRender();
+            });
         })
         .catch(err => {
             console.error('Failed to load inclusion data:', err);
@@ -34,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderContent(stats) {
-    const lang = localStorage.getItem('language') || 'en';
+    const lang = localStorage.getItem('siteLang') || 'en';
     const dict = window.translations ? window.translations[lang] : window.pageDict[lang];
     
     // We expect stats to have "1Y", "10Y" and "20Y"
@@ -160,9 +157,9 @@ function renderCharts(stats, dict) {
             text: dict.chart_return_title,
             textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
             left: 'center',
-            top: -5
+            top: 0
         },
-        grid: { ...commonOptions.grid, top: 40 },
+        grid: { ...commonOptions.grid, top: 60 },
         yAxis: {
             ...commonOptions.yAxis,
             axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
@@ -200,9 +197,9 @@ function renderCharts(stats, dict) {
             text: dict.chart_win_title,
             textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
             left: 'center',
-            top: -5
+            top: 0
         },
-        grid: { ...commonOptions.grid, top: 40 },
+        grid: { ...commonOptions.grid, top: 60 },
         yAxis: {
             ...commonOptions.yAxis,
             min: 0,
