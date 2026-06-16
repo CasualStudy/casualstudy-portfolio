@@ -128,7 +128,7 @@ function renderCharts(stats, dict) {
         },
         legend: {
             textStyle: { color: '#111827', fontWeight: 600 },
-            top: 0
+            top: 30
         },
         grid: {
             left: '3%',
@@ -159,7 +159,7 @@ function renderCharts(stats, dict) {
             left: 'center',
             top: 0
         },
-        grid: { ...commonOptions.grid, top: 60 },
+        grid: { ...commonOptions.grid, top: 80 },
         yAxis: {
             ...commonOptions.yAxis,
             axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
@@ -199,7 +199,7 @@ function renderCharts(stats, dict) {
             left: 'center',
             top: 0
         },
-        grid: { ...commonOptions.grid, top: 60 },
+        grid: { ...commonOptions.grid, top: 80 },
         yAxis: {
             ...commonOptions.yAxis,
             min: 0,
