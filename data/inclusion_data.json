@@ -1,32 +1,56 @@
 {
-    "last_updated": "2026-06-16 14:29:28 NY Time",
+    "last_updated": "2026-06-16 15:15:20 NY Time",
     "stats": {
         "1Y": {
             "count": 21,
             "pre_avg": 5.1,
             "pre_win": 76.2,
+            "pre_max_val": 16.66,
+            "pre_max_ticker": "LITE",
+            "pre_min_val": -4.23,
+            "pre_min_ticker": "SATS",
             "post1w_avg": -1.53,
             "post1w_win": 28.6,
             "post1m_avg": 4.32,
-            "post1m_win": 57.1
+            "post1m_win": 57.1,
+            "post1m_max_val": 37.41,
+            "post1m_max_ticker": "COHR",
+            "post1m_min_val": -31.49,
+            "post1m_min_ticker": "TTD"
         },
         "10Y": {
             "count": 168,
             "pre_avg": 1.57,
             "pre_win": 60.7,
+            "pre_max_val": 30.18,
+            "pre_max_ticker": "MRNA",
+            "pre_min_val": -19.2,
+            "pre_min_ticker": "VNT",
             "post1w_avg": -0.98,
             "post1w_win": 44.0,
             "post1m_avg": 0.39,
-            "post1m_win": 51.2
+            "post1m_win": 51.2,
+            "post1m_max_val": 37.41,
+            "post1m_max_ticker": "COHR",
+            "post1m_min_val": -32.93,
+            "post1m_min_ticker": "WBD"
         },
         "20Y": {
             "count": 271,
             "pre_avg": 1.41,
             "pre_win": 59.8,
+            "pre_max_val": 30.18,
+            "pre_max_ticker": "MRNA",
+            "pre_min_val": -19.2,
+            "pre_min_ticker": "VNT",
             "post1w_avg": -0.59,
             "post1w_win": 43.5,
             "post1m_avg": -0.14,
-            "post1m_win": 49.8
+            "post1m_win": 49.8,
+            "post1m_max_val": 37.41,
+            "post1m_max_ticker": "COHR",
+            "post1m_min_val": -34.04,
+            "post1m_min_ticker": "CRM"
         }
     }
 }
