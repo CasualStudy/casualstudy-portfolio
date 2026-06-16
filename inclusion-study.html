@@ -3,41 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="inclusion_title">Index Inclusion Effect</title>
-    <link rel="stylesheet" href="index.css">
+    <title>S&P 500 Index Inclusion Effect - CasualStudy023</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .inclusion-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .header-section {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .header-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .header-section p {
-            color: #9ca3af;
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
+        /* Specific overrides for this page while keeping base styles.css */
         .note {
             background: rgba(239, 68, 68, 0.1);
             border-left: 4px solid #ef4444;
@@ -168,53 +140,89 @@
         }
     </style>
 </head>
-<body class="dark">
-    <!-- Navbar (Same as index.html) -->
-    <nav class="navbar">
+<body>
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
         <div class="nav-content">
-            <a href="index.html" class="nav-logo">DataPortfolio</a>
+            <a href="index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
             <div class="nav-links">
-                <a href="index.html" data-i18n="nav_home">Home</a>
-                <a href="fear-greed.html" data-i18n="nav_fear_greed">Fear & Greed</a>
-                <a href="gap-study.html" data-i18n="nav_gap_study">Gap Study</a>
-                <a href="inclusion-study.html" class="active" data-i18n="nav_inclusion">Inclusion Effect</a>
+                <a href="index.html#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="index.html#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <a href="inclusion-study.html" class="lang-text" data-en="Inclusion Effect" data-zh="纳入效应" style="color: var(--accent); font-weight: 600;">Inclusion Effect</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
             </div>
-            <button class="lang-toggle" onclick="toggleLanguage()">EN / 中文</button>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
+            </a>
         </div>
     </nav>
 
-    <main class="inclusion-container">
-        <div class="header-section">
-            <h1 data-i18n="inclusion_title">S&P 500 Index Inclusion Effect</h1>
-            <p data-i18n="inclusion_desc">Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.</p>
-            <div class="note" data-i18n="inclusion_disclaimer">
-                <strong>Important Data Note:</strong> Due to the proprietary nature of official "Announcement Dates" (when S&P publicly announces a change), this analysis uses the "Effective Date" (when the stock actually joins the index) as the primary anchor. To estimate the "Announcement Effect", we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.
+    <main>
+        <section class="section-container" style="padding-top: 2rem;">
+            <div class="glass-panel" style="padding: 3rem; margin-top: 2rem; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px) saturate(1.2); -webkit-backdrop-filter: blur(20px) saturate(1.2);">
+                <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+                    <h2 class="lang-text" data-en="S&P 500 Index Inclusion Effect" data-zh="标普500指数纳入效应">S&P 500 Index Inclusion Effect</h2>
+                    <p class="lang-text" data-en="Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion." data-zh="分析历史上被纳入标普500指数的股票表现。我们研究了生效日之前的价格走势，以及纳入后1周和1个月的收益率。">Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.</p>
+                    <div class="note lang-text" data-en="&lt;strong&gt;Important Data Note:&lt;/strong&gt; Due to the proprietary nature of official 'Announcement Dates' (when S&P publicly announces a change), this analysis uses the 'Effective Date' (when the stock actually joins the index) as the primary anchor. To estimate the 'Announcement Effect', we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally." data-zh="&lt;strong&gt;重要数据说明：&lt;/strong&gt; 由于官方“宣布日”（标普公开发布调整新闻的日子）属于受保护的商业数据，本分析使用“生效日”（股票正式加入指数的日子）作为核心锚点。为了估算“宣布效应”，我们使用生效日前5个交易日（T-5至T=0）的收益率，作为宣布日大涨的模糊替代指标。">
+                        <strong>Important Data Note:</strong> Due to the proprietary nature of official "Announcement Dates" (when S&P publicly announces a change), this analysis uses the "Effective Date" (when the stock actually joins the index) as the primary anchor. To estimate the "Announcement Effect", we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.
+                    </div>
+                </div>
+
+                <div class="narrative-box" id="narrative-content">
+                    <p>Loading narrative...</p>
+                </div>
+
+                <div class="stats-grid" id="stats-container">
+                    <!-- Dynamically populated -->
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-box" id="avg-return-chart"></div>
+                    <div class="chart-box" id="win-rate-chart"></div>
+                </div>
+
+                <div class="last-updated" id="last-updated">Last updated: Loading...</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Discord Modal -->
+    <div id="discord-modal" class="modal-overlay">
+        <div class="glass-modal">
+            <h3 class="lang-text" data-en="Notice" data-zh="提示">Notice</h3>
+            <p class="lang-text" data-en="Not enough fans yet, no Discord community available at the moment!" data-zh="粉丝不够，暂时没有discord社区！">Not enough fans yet, no Discord community available at the moment!</p>
+            <button id="close-modal-btn" class="btn primary-btn lang-text" data-en="Got it" data-zh="知道了" style="margin-top: 1.5rem;">Got it</button>
+        </div>
+    </div>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                    <i data-lucide="message-square"></i>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
             </div>
         </div>
-
-        <div class="narrative-box" id="narrative-content">
-            <p>Loading narrative...</p>
-        </div>
-
-        <div class="stats-grid" id="stats-container">
-            <!-- Dynamically populated -->
-        </div>
-
-        <div class="charts-container">
-            <div class="chart-box" id="avg-return-chart"></div>
-            <div class="chart-box" id="win-rate-chart"></div>
-        </div>
-
-        <div class="last-updated" id="last-updated">Last updated: Loading...</div>
-    </main>
+    </footer>
 
     <!-- Base dictionary for dynamic inclusion texts -->
     <script>
         const inclusionDict = {
             "en": {
-                "inclusion_title": "S&P 500 Index Inclusion Effect",
-                "inclusion_desc": "Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.",
-                "inclusion_disclaimer": "<strong>Important Data Note:</strong> Due to the proprietary nature of official 'Announcement Dates' (when S&P publicly announces a change), this analysis uses the 'Effective Date' (when the stock actually joins the index) as the primary anchor. To estimate the 'Announcement Effect', we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.",
                 "stat_pre": "Pre-Inclusion (T-5 to T=0)",
                 "stat_post1w": "Post-Inclusion (T=0 to T+1W)",
                 "stat_post1m": "Post-Inclusion (T=0 to T+1M)",
@@ -226,9 +234,6 @@
                 "series_20y": "Past 20 Years"
             },
             "zh": {
-                "inclusion_title": "标普500指数纳入效应",
-                "inclusion_desc": "分析历史上被纳入标普500指数的股票表现。我们研究了生效日之前的价格走势，以及纳入后1周和1个月的收益率。",
-                "inclusion_disclaimer": "<strong>重要数据说明：</strong> 由于官方“宣布日”（标普公开发布调整新闻的日子）属于受保护的商业数据，本分析使用“生效日”（股票正式加入指数的日子）作为核心锚点。为了估算“宣布效应”，我们使用生效日前5个交易日（T-5至T=0）的收益率，作为宣布日大涨的模糊替代指标。",
                 "stat_pre": "纳入前 (T-5 至 T=0)",
                 "stat_post1w": "纳入后 (T=0 至 T+1周)",
                 "stat_post1m": "纳入后 (T=0 至 T+1月)",
@@ -246,5 +251,8 @@
     </script>
     <script src="script.js"></script>
     <script src="inclusion-study.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
