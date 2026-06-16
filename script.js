@@ -37,6 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mock Data for Data Analysis
     const analyses = [
         {
+            title_en: "News Radar",
+            title_zh: "新闻雷达",
+            excerpt_en: "Automatically tracking and categorizing PRNewswire feed to detect market-moving news.",
+            excerpt_zh: "自动追踪并对美通社新闻进行分类，捕捉影响市场的重磅信息。",
+            tools: "JavaScript, Python, GitHub Actions",
+            icon: "radar",
+            link: "news-radar.html"
+        },
+        {
             title_en: "Fear & Greed Index vs S&P 500",
             title_zh: "恐慌与贪婪指数 vs 标普500",
             excerpt_en: "Daily updated interactive chart comparing market sentiment against S&P 500 performance.",
