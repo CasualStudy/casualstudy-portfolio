@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Radar - CasualStudy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .radar-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+
+        .filter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-tab {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #e5e7eb;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-tab.active, .filter-tab:hover {
+            background: rgba(139, 92, 246, 0.8);
+            border-color: rgba(139, 92, 246, 1);
+            color: white;
+        }
+
+        .news-item {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .news-date {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #f3f4f6;
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .news-title a:hover {
+            color: #a78bfa;
+        }
+
+        .news-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #d1d5db;
+        }
+
+        .tag.m-a { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .tag.earnings { background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
+        .tag.buyback { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .tag.stock-split { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .tag.dividend { background: rgba(217, 70, 239, 0.2); color: #f0abfc; border: 1px solid rgba(217, 70, 239, 0.3); }
+        .tag.offering { background: rgba(236, 72, 153, 0.2); color: #f9a8d4; border: 1px solid rgba(236, 72, 153, 0.3); }
+        .tag.fda { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid rgba(14, 165, 233, 0.3); }
+        .tag.index-changes { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; border: 1px solid rgba(139, 92, 246, 0.3); }
+        .tag.executive-changes { background: rgba(249, 115, 22, 0.2); color: #fdba74; border: 1px solid rgba(249, 115, 22, 0.3); }
+
+        .loading-state {
+            text-align: center;
+            padding: 3rem;
+            color: #9ca3af;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
+            <div class="nav-links">
+                <a href="index.html#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <a href="index.html#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="paper-analysis/index.html" class="lang-text" data-en="Papers" data-zh="论文研究">Papers</a>
+                <a href="news-radar.html" class="lang-text" data-en="News Radar" data-zh="新闻雷达" style="color: #a78bfa;">News Radar</a>
+                <a href="fear-greed.html" class="lang-text" data-en="Fear & Greed" data-zh="恐慌贪婪指数">Fear & Greed</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action">
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-container" style="padding-top: 120px;">
+            <div class="section-header">
+                <h2 class="lang-text" data-en="News Radar" data-zh="新闻雷达">News Radar</h2>
+                <p class="lang-text" data-en="Automatically tracking and categorizing PRNewswire feed to detect market-moving news." data-zh="自动追踪并对美通社新闻进行分类，捕捉影响市场的重磅信息。">Automatically tracking and categorizing PRNewswire feed to detect market-moving news.</p>
+            </div>
+
+            <div class="radar-container glass-panel">
+                <div class="filter-tabs" id="filter-tabs">
+                    <!-- Injected by JS -->
+                </div>
+
+                <div id="loading-state" class="loading-state">
+                    <i data-lucide="loader-2" class="animate-spin" style="margin: 0 auto 1rem; width: 32px; height: 32px;"></i>
+                    <p>Loading news feed...</p>
+                </div>
+
+                <div id="news-feed" class="news-feed">
+                    <!-- News items injected by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 CasualStudy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="news-radar.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
