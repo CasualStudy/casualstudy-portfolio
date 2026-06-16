@@ -129,6 +129,10 @@ function renderColumn(s, title, prefix, dict) {
                 <span class="metric-value ${s[prefix + '_avg'] >= 0 ? 'positive' : 'negative'}">${s[prefix + '_avg'] > 0 ? '+' : ''}${s[prefix + '_avg']}%</span>
             </div>
             <div class="metric">
+                <span class="metric-label">${dict.metric_intraday}</span>
+                <span class="metric-value ${s[prefix + '_intraday'] >= 0 ? 'positive' : 'negative'}">${s[prefix + '_intraday'] > 0 ? '+' : ''}${s[prefix + '_intraday']}%</span>
+            </div>
+            <div class="metric">
                 <span class="metric-label">${dict.metric_win}</span>
                 <span class="metric-value" style="color: #111827">${s[prefix + '_win']}%</span>
             </div>
