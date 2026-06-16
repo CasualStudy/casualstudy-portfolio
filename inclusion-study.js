@@ -1,3 +1,6 @@
+let currentData = null;
+let currentIndex = 'SPX';
+
 document.addEventListener('DOMContentLoaded', () => {
     // If translations exist globally from script.js, merge our local ones
     if (window.translations && window.pageDict) {
@@ -10,17 +13,32 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/inclusion_data.json')
         .then(response => response.json())
         .then(data => {
+            currentData = data;
             const updateTextAndRender = () => {
                 const lang = localStorage.getItem('siteLang') || 'en';
                 document.getElementById('last-updated').textContent = lang === 'zh' 
-                    ? `最后更新: ${data.last_updated}` 
-                    : `Last updated: ${data.last_updated}`;
-                renderContent(data.stats);
+                    ? `最后更新: ${data[currentIndex].last_updated}` 
+                    : `Last updated: ${data[currentIndex].last_updated}`;
+                renderContent(data[currentIndex].stats);
             };
 
             updateTextAndRender();
 
             window.addEventListener('languageChanged', () => {
+                updateTextAndRender();
+            });
+
+            document.getElementById('btn-spx').addEventListener('click', (e) => {
+                e.target.classList.add('active');
+                document.getElementById('btn-ndx').classList.remove('active');
+                currentIndex = 'SPX';
+                updateTextAndRender();
+            });
+
+            document.getElementById('btn-ndx').addEventListener('click', (e) => {
+                e.target.classList.add('active');
+                document.getElementById('btn-spx').classList.remove('active');
+                currentIndex = 'NDX';
                 updateTextAndRender();
             });
         })
@@ -35,21 +53,25 @@ function renderContent(stats) {
     const dict = window.translations ? window.translations[lang] : window.pageDict[lang];
     
     // We expect stats to have "1Y", "10Y" and "20Y"
-    const s1 = stats["1Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
-    const s10 = stats["10Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
-    const s20 = stats["20Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
+    const s20 = stats["20Y"];
+    const s10 = stats["10Y"];
+    const s1 = stats["1Y"];
+
+    if (!s20 || !s10 || !s1) return;
+
+    const indexName = currentIndex === 'SPX' ? dict.index_spx : dict.index_ndx;
 
     // 1. Render Narrative
     const narrativeContainer = document.getElementById('narrative-content');
     if (lang === 'en') {
         narrativeContainer.innerHTML = `
-            <p>Over the past <strong>20 years</strong>, we tracked <strong>${s20.count}</strong> stocks added to the S&P 500 index. In the 5 trading days leading up to the Effective Date (our proxy for the announcement rally), stocks averaged a <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong> return with a <strong>${s20.pre_win}%</strong> ratio of stocks up. The highest pre-inclusion rally was <strong>+${s20.pre_max_val}%</strong> (${s20.pre_max_ticker}), while the worst was <strong>${s20.pre_min_val}%</strong> (${s20.pre_min_ticker}).</p>
+            <p>Over the past <strong>20 years</strong>, we tracked <strong>${s20.count}</strong> stocks added to the <strong>${indexName}</strong>. In the 5 trading days leading up to the Effective Date (our proxy for the announcement rally), stocks averaged a <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong> return with a <strong>${s20.pre_win}%</strong> ratio of stocks up. The highest pre-inclusion rally was <strong>+${s20.pre_max_val}%</strong> (${s20.pre_max_ticker}), while the worst was <strong>${s20.pre_min_val}%</strong> (${s20.pre_min_ticker}).</p>
             <p>However, the "post-inclusion" reality often paints a different picture. Once officially added, the average return over the next 1 week was <strong><span class="${s20.post1w_avg >= 0 ? 'positive' : 'negative'}">${s20.post1w_avg > 0 ? '+' : ''}${s20.post1w_avg}%</span></strong>, and over the next 1 month it was <strong><span class="${s20.post1m_avg >= 0 ? 'positive' : 'negative'}">${s20.post1m_avg > 0 ? '+' : ''}${s20.post1m_avg}%</span></strong> (with <strong>${s20.post1m_win}%</strong> of stocks up). Post-inclusion (1 month), the best performer was <strong>+${s20.post1m_max_val}%</strong> (${s20.post1m_max_ticker}) and the worst was <strong>${s20.post1m_min_val}%</strong> (${s20.post1m_min_ticker}).</p>
             <p>In the more recent <strong>10 years</strong> (${s10.count} events), the pre-inclusion rally averaged <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>, while the 1-month post-inclusion return shifted to <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>. And in the very recent <strong>1 year</strong> (${s1.count} events), the 1-month return was <strong><span class="${s1.post1m_avg >= 0 ? 'positive' : 'negative'}">${s1.post1m_avg > 0 ? '+' : ''}${s1.post1m_avg}%</span></strong>.</p>
         `;
     } else {
         narrativeContainer.innerHTML = `
-            <p>在过去的 <strong>20 年</strong> 中，我们追踪了 <strong>${s20.count}</strong> 只被纳入标普500指数的股票。在正式生效日之前的 5 个交易日内（我们用来模糊替代“宣布日”大涨的指标），这些股票平均上涨了 <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong>，上涨股票占比达到 <strong>${s20.pre_win}%</strong>。其中，纳入前表现最亮眼的是 <strong>${s20.pre_max_ticker}</strong>（大涨 <strong>+${s20.pre_max_val}%</strong>），最差的则是 <strong>${s20.pre_min_ticker}</strong>（跌 <strong>${s20.pre_min_val}%</strong>）。</p>
+            <p>在过去的 <strong>20 年</strong> 中，我们追踪了 <strong>${s20.count}</strong> 只被纳入<strong>${indexName}</strong>的股票。在正式生效日之前的 5 个交易日内（我们用来模糊替代“宣布日”大涨的指标），这些股票平均上涨了 <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong>，上涨股票占比达到 <strong>${s20.pre_win}%</strong>。其中，纳入前表现最亮眼的是 <strong>${s20.pre_max_ticker}</strong>（大涨 <strong>+${s20.pre_max_val}%</strong>），最差的则是 <strong>${s20.pre_min_ticker}</strong>（跌 <strong>${s20.pre_min_val}%</strong>）。</p>
             <p>然而，正式纳入后的表现往往截然不同。从生效日起，未来 1 周的平均涨跌幅为 <strong><span class="${s20.post1w_avg >= 0 ? 'positive' : 'negative'}">${s20.post1w_avg > 0 ? '+' : ''}${s20.post1w_avg}%</span></strong>，而未来 1 个月的平均涨跌幅为 <strong><span class="${s20.post1m_avg >= 0 ? 'positive' : 'negative'}">${s20.post1m_avg > 0 ? '+' : ''}${s20.post1m_avg}%</span></strong>（上涨股票占比为 <strong>${s20.post1m_win}%</strong>）。纳入后一个月，表现最好的是 <strong>${s20.post1m_max_ticker}</strong>（<strong>+${s20.post1m_max_val}%</strong>），最差的则是 <strong>${s20.post1m_min_ticker}</strong>（<strong>${s20.post1m_min_val}%</strong>）。</p>
             <p>在最近的 <strong>10 年</strong>（共 ${s10.count} 起事件）中，纳入前的平均涨幅为 <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>，而纳入后 1 个月的平均表现则变动为 <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>。而在极近的 <strong>1 年内</strong>（${s1.count} 起），1个月收益率为 <strong><span class="${s1.post1m_avg >= 0 ? 'positive' : 'negative'}">${s1.post1m_avg > 0 ? '+' : ''}${s1.post1m_avg}%</span></strong>。</p>
         `;

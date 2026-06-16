@@ -5,26 +5,37 @@ from io import StringIO
 import datetime
 import json
 import os
-import time
 from dateutil.relativedelta import relativedelta
 
-def fetch_sp500_additions():
-    print("Fetching S&P 500 historical additions from Wikipedia...")
-    url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
+def fetch_wiki_additions(url):
+    print(f"Fetching additions from {url}...")
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     dfs = pd.read_html(StringIO(response.text))
-    changes_df = dfs[1]
     
+    changes_df = None
+    for df in dfs:
+        # Check if it has a MultiIndex column with ('Added', 'Ticker') or simple 'Added'
+        if ('Added', 'Ticker') in df.columns:
+            changes_df = df
+            break
+            
+    if changes_df is None:
+        print("Could not find the changes table.")
+        return []
+        
     additions = []
     for index, row in changes_df.iterrows():
         date_col = ('Date', 'Date') if ('Date', 'Date') in changes_df.columns else ('Effective Date', 'Effective Date')
+        if date_col not in changes_df.columns:
+            continue
+            
         date_str = row[date_col]
         ticker = row[('Added', 'Ticker')]
         
         if pd.notna(ticker) and pd.notna(date_str):
             try:
-                clean_date_str = date_str.split('[')[0].strip()
+                clean_date_str = str(date_str).split('[')[0].strip()
                 dt = pd.to_datetime(clean_date_str).date()
                 additions.append((dt, str(ticker).replace('.', '-')))
             except Exception as e:
@@ -33,9 +44,7 @@ def fetch_sp500_additions():
     print(f"Found {len(additions)} additions.")
     return additions
 
-def calculate_returns():
-    additions = fetch_sp500_additions()
-    
+def calculate_returns(additions):
     today = datetime.date.today()
     cutoff_20y = today - relativedelta(years=20)
     cutoff_10y = today - relativedelta(years=10)
@@ -54,7 +63,6 @@ def calculate_returns():
     
     for eff_date, ticker in recent_additions:
         try:
-            # Fetch individually to avoid batch TLS issues
             t = yf.Ticker(ticker)
             df = t.history(start=start_date, auto_adjust=True)
             
@@ -145,11 +153,18 @@ def calculate_returns():
     return stats
 
 if __name__ == "__main__":
-    stats = calculate_returns()
+    spx_additions = fetch_wiki_additions('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
+    print("Processing S&P 500...")
+    spx_stats = calculate_returns(spx_additions)
+    
+    ndx_additions = fetch_wiki_additions('https://en.wikipedia.org/wiki/Nasdaq-100')
+    print("Processing Nasdaq-100...")
+    ndx_stats = calculate_returns(ndx_additions)
     
     output = {
         "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S NY Time"),
-        "stats": stats
+        "SPX": spx_stats,
+        "NDX": ndx_stats
     }
     
     os.makedirs('data', exist_ok=True)
@@ -157,4 +172,3 @@ if __name__ == "__main__":
         json.dump(output, f, indent=4)
         
     print("Data saved to data/inclusion_data.json")
-    print(json.dumps(output, indent=2))

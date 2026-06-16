@@ -1,6 +1,6 @@
 {
-    "last_updated": "2026-06-16 15:15:20 NY Time",
-    "stats": {
+    "last_updated": "2026-06-16 15:27:13 NY Time",
+    "SPX": {
         "1Y": {
             "count": 21,
             "pre_avg": 5.1,
@@ -51,6 +51,59 @@
             "post1m_max_ticker": "COHR",
             "post1m_min_val": -34.04,
             "post1m_min_ticker": "CRM"
+        }
+    },
+    "NDX": {
+        "1Y": {
+            "count": 11,
+            "pre_avg": -1.96,
+            "pre_win": 36.4,
+            "pre_max_val": 5.96,
+            "pre_max_ticker": "SOLS",
+            "pre_min_val": -13.68,
+            "pre_min_ticker": "VSNT",
+            "post1w_avg": -1.24,
+            "post1w_win": 27.3,
+            "post1m_avg": 6.03,
+            "post1m_win": 54.5,
+            "post1m_max_val": 51.51,
+            "post1m_max_ticker": "SNDK",
+            "post1m_min_val": -24.93,
+            "post1m_min_ticker": "VSNT"
+        },
+        "10Y": {
+            "count": 88,
+            "pre_avg": 0.19,
+            "pre_win": 50.0,
+            "pre_max_val": 22.65,
+            "pre_max_ticker": "CEG",
+            "pre_min_val": -20.06,
+            "pre_min_ticker": "ZM",
+            "post1w_avg": -0.0,
+            "post1w_win": 44.3,
+            "post1m_avg": 3.5,
+            "post1m_win": 55.7,
+            "post1m_max_val": 51.51,
+            "post1m_max_ticker": "SNDK",
+            "post1m_min_val": -26.33,
+            "post1m_min_ticker": "RIVN"
+        },
+        "20Y": {
+            "count": 154,
+            "pre_avg": 0.97,
+            "pre_win": 55.2,
+            "pre_max_val": 22.65,
+            "pre_max_ticker": "CEG",
+            "pre_min_val": -20.06,
+            "pre_min_ticker": "ZM",
+            "post1w_avg": 0.08,
+            "post1w_win": 48.7,
+            "post1m_avg": 1.79,
+            "post1m_win": 52.6,
+            "post1m_max_val": 51.51,
+            "post1m_max_ticker": "SNDK",
+            "post1m_min_val": -26.33,
+            "post1m_min_ticker": "RIVN"
         }
     }
 }

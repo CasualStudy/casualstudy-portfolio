@@ -177,17 +177,23 @@
         <section class="section-container" style="padding-top: 2rem;">
             <div class="glass-panel" style="padding: 3rem; margin-top: 2rem; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px) saturate(1.2); -webkit-backdrop-filter: blur(20px) saturate(1.2);">
                 <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-                    <h2 class="lang-text" data-en="S&P 500 Index Inclusion Effect" data-zh="标普500指数纳入效应">S&P 500 Index Inclusion Effect</h2>
-                    <p class="lang-text" data-en="Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion." data-zh="分析历史上被纳入标普500指数的股票表现。我们研究了生效日之前的价格走势，以及纳入后1周和1个月的收益率。">Analyzing the historical performance of stocks added to the S&P 500. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.</p>
-                    <div class="note lang-text" data-en="&lt;strong&gt;Important Data Note:&lt;/strong&gt; Due to the proprietary nature of official 'Announcement Dates' (when S&P publicly announces a change), this analysis uses the 'Effective Date' (when the stock actually joins the index) as the primary anchor. To estimate the 'Announcement Effect', we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally." data-zh="&lt;strong&gt;重要数据说明：&lt;/strong&gt; 由于官方“宣布日”（标普公开发布调整新闻的日子）属于受保护的商业数据，本分析使用“生效日”（股票正式加入指数的日子）作为核心锚点。为了估算“宣布效应”，我们使用生效日前5个交易日（T-5至T=0）的收益率，作为宣布日大涨的模糊替代指标。">
-                        <strong>Important Data Note:</strong> Due to the proprietary nature of official "Announcement Dates" (when S&P publicly announces a change), this analysis uses the "Effective Date" (when the stock actually joins the index) as the primary anchor. To estimate the "Announcement Effect", we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.
+                    <h2 class="lang-text" data-en="Index Inclusion Effect" data-zh="指数纳入效应">Index Inclusion Effect</h2>
+                    <p class="lang-text" data-en="Analyzing the historical performance of stocks added to major indices. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion." data-zh="分析历史上被纳入主要指数的股票表现。我们研究了生效日之前的价格走势，以及纳入后1周和1个月的收益率。">Analyzing the historical performance of stocks added to major indices. We examine the price action before the effective date and the returns 1 week and 1 month after inclusion.</p>
+                </div>
+                
+                <div class="toggle-group" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem;">
+                    <button class="toggle-btn active" id="btn-spx" style="min-width: 120px;">S&P 500</button>
+                    <button class="toggle-btn" id="btn-ndx" style="min-width: 120px;">Nasdaq-100</button>
+                </div>
+
+                <div class="narrative-box">
+                    <div id="narrative-content">
+                        <p>Loading narrative...</p>
+                    </div>
+                    <div class="note lang-text" data-en="&lt;strong&gt;Important Data Note:&lt;/strong&gt; Due to the proprietary nature of official 'Announcement Dates' (when changes are publicly announced), this analysis uses the 'Effective Date' (when the stock actually joins the index) as the primary anchor. To estimate the 'Announcement Effect', we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally." data-zh="&lt;strong&gt;重要数据说明：&lt;/strong&gt; 由于官方“宣布日”（公开发布调整新闻的日子）属于受保护的商业数据，本分析使用“生效日”（股票正式加入指数的日子）作为核心锚点。为了估算“宣布效应”，我们使用生效日前5个交易日（T-5至T=0）的收益率，作为宣布日大涨的模糊替代指标。">
+                        <strong>Important Data Note:</strong> Due to the proprietary nature of official "Announcement Dates" (when changes are publicly announced), this analysis uses the "Effective Date" (when the stock actually joins the index) as the primary anchor. To estimate the "Announcement Effect", we use the return from 5 trading days prior to the Effective Date (T-5 to T=0) as a fuzzy proxy for the announcement rally.
                     </div>
                 </div>
-
-                <div class="narrative-box" id="narrative-content">
-                    <p>Loading narrative...</p>
-                </div>
-
                 <div class="stats-grid" id="stats-container">
                     <!-- Dynamically populated -->
                 </div>
@@ -241,7 +247,9 @@
                 "chart_win_title": "Percentage of Stocks Up by Time Window",
                 "series_1y": "Past 1 Year",
                 "series_10y": "Past 10 Years",
-                "series_20y": "Past 20 Years"
+                "series_20y": "Past 20 Years",
+                "index_spx": "S&P 500 index",
+                "index_ndx": "Nasdaq-100 index"
             },
             "zh": {
                 "stat_pre": "纳入前 (T-5 至 T=0)",
@@ -253,7 +261,9 @@
                 "chart_win_title": "各时间窗口上涨股票占比",
                 "series_1y": "过去 1 年",
                 "series_10y": "过去 10 年",
-                "series_20y": "过去 20 年"
+                "series_20y": "过去 20 年",
+                "index_spx": "标普500指数",
+                "index_ndx": "纳斯达克100指数"
             }
         };
 
