@@ -10,13 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/inclusion_data.json')
         .then(response => response.json())
         .then(data => {
-            document.getElementById('last-updated').textContent = `Last updated: ${data.last_updated}`;
+            const lang = localStorage.getItem('language') || 'en';
+            document.getElementById('last-updated').textContent = lang === 'zh' 
+                ? `最后更新: ${data.last_updated}` 
+                : `Last updated: ${data.last_updated}`;
             renderContent(data.stats);
 
             // Re-render narrative when language changes
             const originalToggle = window.toggleLanguage;
             window.toggleLanguage = () => {
                 if(originalToggle) originalToggle();
+                const newLang = localStorage.getItem('language') || 'en';
+                document.getElementById('last-updated').textContent = newLang === 'zh' 
+                    ? `最后更新: ${data.last_updated}` 
+                    : `Last updated: ${data.last_updated}`;
                 renderContent(data.stats); // Re-generate narrative and cards with new language
             };
         })
@@ -30,11 +37,10 @@ function renderContent(stats) {
     const lang = localStorage.getItem('language') || 'en';
     const dict = window.translations ? window.translations[lang] : window.pageDict[lang];
     
-    // We expect stats to have "10Y" and "20Y"
-    const s10 = stats["10Y"];
-    const s20 = stats["20Y"];
-    
-    if (!s10 || !s20) return;
+    // We expect stats to have "1Y", "10Y" and "20Y"
+    const s1 = stats["1Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
+    const s10 = stats["10Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
+    const s20 = stats["20Y"] || {count: 0, pre_avg: 0, pre_win: 0, post1w_avg: 0, post1m_avg: 0, post1m_win: 0};
 
     // 1. Render Narrative
     const narrativeContainer = document.getElementById('narrative-content');
@@ -42,13 +48,13 @@ function renderContent(stats) {
         narrativeContainer.innerHTML = `
             <p>Over the past <strong>20 years</strong>, we tracked <strong>${s20.count}</strong> stocks added to the S&P 500 index. In the 5 trading days leading up to the Effective Date (our proxy for the announcement rally), stocks averaged a <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong> return with a <strong>${s20.pre_win}%</strong> win rate.</p>
             <p>However, the "post-inclusion" reality often paints a different picture. Once officially added, the average return over the next 1 week was <strong><span class="${s20.post1w_avg >= 0 ? 'positive' : 'negative'}">${s20.post1w_avg > 0 ? '+' : ''}${s20.post1w_avg}%</span></strong>, and over the next 1 month it was <strong><span class="${s20.post1m_avg >= 0 ? 'positive' : 'negative'}">${s20.post1m_avg > 0 ? '+' : ''}${s20.post1m_avg}%</span></strong> (with a win rate of <strong>${s20.post1m_win}%</strong>).</p>
-            <p>In the more recent <strong>10 years</strong> (${s10.count} events), the pre-inclusion rally averaged <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>, while the 1-month post-inclusion return shifted to <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>.</p>
+            <p>In the more recent <strong>10 years</strong> (${s10.count} events), the pre-inclusion rally averaged <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>, while the 1-month post-inclusion return shifted to <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>. And in the very recent <strong>1 year</strong> (${s1.count} events), the 1-month return was <strong><span class="${s1.post1m_avg >= 0 ? 'positive' : 'negative'}">${s1.post1m_avg > 0 ? '+' : ''}${s1.post1m_avg}%</span></strong>.</p>
         `;
     } else {
         narrativeContainer.innerHTML = `
             <p>在过去的 <strong>20 年</strong> 中，我们追踪了 <strong>${s20.count}</strong> 只被纳入标普500指数的股票。在正式生效日之前的 5 个交易日内（我们用来模糊替代“宣布日”大涨的指标），这些股票平均上涨了 <strong><span class="${s20.pre_avg >= 0 ? 'positive' : 'negative'}">${s20.pre_avg > 0 ? '+' : ''}${s20.pre_avg}%</span></strong>，胜率达到 <strong>${s20.pre_win}%</strong>。</p>
             <p>然而，正式纳入后的表现往往截然不同。从生效日起，未来 1 周的平均涨跌幅为 <strong><span class="${s20.post1w_avg >= 0 ? 'positive' : 'negative'}">${s20.post1w_avg > 0 ? '+' : ''}${s20.post1w_avg}%</span></strong>，而未来 1 个月的平均涨跌幅为 <strong><span class="${s20.post1m_avg >= 0 ? 'positive' : 'negative'}">${s20.post1m_avg > 0 ? '+' : ''}${s20.post1m_avg}%</span></strong>（胜率为 <strong>${s20.post1m_win}%</strong>）。</p>
-            <p>在最近的 <strong>10 年</strong>（共 ${s10.count} 起事件）中，纳入前的平均涨幅为 <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>，而纳入后 1 个月的平均表现则变动为 <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>。</p>
+            <p>在最近的 <strong>10 年</strong>（共 ${s10.count} 起事件）中，纳入前的平均涨幅为 <strong><span class="${s10.pre_avg >= 0 ? 'positive' : 'negative'}">${s10.pre_avg > 0 ? '+' : ''}${s10.pre_avg}%</span></strong>，而纳入后 1 个月的平均表现则变动为 <strong><span class="${s10.post1m_avg >= 0 ? 'positive' : 'negative'}">${s10.post1m_avg > 0 ? '+' : ''}${s10.post1m_avg}%</span></strong>。而在极近的 <strong>1 年内</strong>（${s1.count} 起），1个月收益率为 <strong><span class="${s1.post1m_avg >= 0 ? 'positive' : 'negative'}">${s1.post1m_avg > 0 ? '+' : ''}${s1.post1m_avg}%</span></strong>。</p>
         `;
     }
 
@@ -56,10 +62,14 @@ function renderContent(stats) {
     const container = document.getElementById('stats-container');
     container.innerHTML = '';
     
-    const periods = ["20Y", "10Y"];
+    const periods = ["20Y", "10Y", "1Y"];
     periods.forEach(period => {
         const s = stats[period];
-        const title = period === "20Y" ? dict.series_20y : dict.series_10y;
+        if (!s) return;
+        
+        let title = dict.series_20y;
+        if (period === "10Y") title = dict.series_10y;
+        if (period === "1Y") title = dict.series_1y;
         
         const cardHtml = `
             <div class="stat-card">
@@ -101,12 +111,14 @@ function renderContent(stats) {
 }
 
 function renderCharts(stats, dict) {
-    const s10 = stats["10Y"];
-    const s20 = stats["20Y"];
+    const s1 = stats["1Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
+    const s10 = stats["10Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
+    const s20 = stats["20Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, pre_win:0, post1w_win:0, post1m_win:0};
     
     const xLabels = [dict.stat_pre, dict.stat_post1w, dict.stat_post1m];
     
     // Theme colors matching dark mode
+    const color1Y = '#f472b6'; // Pink
     const color10Y = '#818cf8'; // Indigo
     const color20Y = '#34d399'; // Emerald
 
@@ -167,6 +179,12 @@ function renderCharts(stats, dict) {
                 type: 'bar',
                 data: [s10.pre_avg, s10.post1w_avg, s10.post1m_avg],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] }
+            },
+            {
+                name: dict.series_1y,
+                type: 'bar',
+                data: [s1.pre_avg, s1.post1w_avg, s1.post1m_avg],
+                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] }
             }
         ]
     });
@@ -200,6 +218,12 @@ function renderCharts(stats, dict) {
                 type: 'bar',
                 data: [s10.pre_win, s10.post1w_win, s10.post1m_win],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] }
+            },
+            {
+                name: dict.series_1y,
+                type: 'bar',
+                data: [s1.pre_win, s1.post1w_win, s1.post1m_win],
+                itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] }
             }
         ]
     });

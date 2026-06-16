@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateStaticTexts = () => {
         document.querySelectorAll('.lang-text').forEach(el => {
             const text = currentLang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
-            if (text) el.textContent = text;
+            if (text) el.innerHTML = text;
         });
     };
 

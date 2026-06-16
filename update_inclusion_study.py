@@ -39,10 +39,12 @@ def calculate_returns():
     today = datetime.date.today()
     cutoff_20y = today - relativedelta(years=20)
     cutoff_10y = today - relativedelta(years=10)
+    cutoff_1y = today - relativedelta(years=1)
     
     recent_additions = [item for item in additions if item[0] >= cutoff_20y]
     
     results = {
+        "1Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []},
         "10Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []},
         "20Y": {"pre_ret": [], "post1w_ret": [], "post1m_ret": []}
     }
@@ -90,12 +92,17 @@ def calculate_returns():
                 results["10Y"]["pre_ret"].append(ret_pre)
                 results["10Y"]["post1w_ret"].append(ret_post1w)
                 results["10Y"]["post1m_ret"].append(ret_post1m)
+            
+            if eff_date >= cutoff_1y:
+                results["1Y"]["pre_ret"].append(ret_pre)
+                results["1Y"]["post1w_ret"].append(ret_post1w)
+                results["1Y"]["post1m_ret"].append(ret_post1m)
                 
         except Exception as e:
             continue
 
     stats = {}
-    for period in ["10Y", "20Y"]:
+    for period in ["1Y", "10Y", "20Y"]:
         d = results[period]
         count = len(d["pre_ret"])
         if count == 0:
