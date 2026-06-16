@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const updateTextAndRender = () => {
                 const lang = localStorage.getItem('siteLang') || 'en';
                 document.getElementById('last-updated').textContent = lang === 'zh' 
-                    ? `最后更新: ${data[currentIndex].last_updated}` 
-                    : `Last updated: ${data[currentIndex].last_updated}`;
-                renderContent(data[currentIndex].stats);
+                    ? `最后更新: ${data.last_updated}` 
+                    : `Last updated: ${data.last_updated}`;
+                renderContent(data[currentIndex]);
             };
 
             updateTextAndRender();
