@@ -11,14 +11,16 @@
     <style>
         /* Specific overrides for this page while keeping base styles.css */
         .note {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid #ef4444;
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
             padding: 1rem;
-            border-radius: 4px;
-            margin-top: 1.5rem;
-            font-size: 0.95rem;
-            color: #fca5a5;
+            border-radius: 0 8px 8px 0;
+            color: #111827;
+            font-size: 0.9rem;
             text-align: left;
+            margin: 1.5rem auto 0;
+            max-width: 800px;
+            font-weight: 500;
         }
 
         .stats-grid {
@@ -118,12 +120,14 @@
 
         /* Narrative Box */
         .narrative-box {
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
-            border: 1px solid rgba(99, 102, 241, 0.2);
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-radius: 16px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
         .narrative-box p {
@@ -232,9 +236,9 @@
                 "stat_post1w": "Post-Inclusion (T=0 to T+1W)",
                 "stat_post1m": "Post-Inclusion (T=0 to T+1M)",
                 "metric_avg": "Avg Return",
-                "metric_win": "Win Rate (>0%)",
+                "metric_win": "% of Stocks Up",
                 "chart_return_title": "Average Returns by Time Window",
-                "chart_win_title": "Win Rate by Time Window",
+                "chart_win_title": "Percentage of Stocks Up by Time Window",
                 "series_1y": "Past 1 Year",
                 "series_10y": "Past 10 Years",
                 "series_20y": "Past 20 Years"
@@ -244,9 +248,9 @@
                 "stat_post1w": "纳入后 (T=0 至 T+1周)",
                 "stat_post1m": "纳入后 (T=0 至 T+1月)",
                 "metric_avg": "平均涨跌幅",
-                "metric_win": "上涨概率",
+                "metric_win": "上涨股票占比",
                 "chart_return_title": "各时间窗口平均涨跌幅",
-                "chart_win_title": "各时间窗口上涨概率",
+                "chart_win_title": "各时间窗口上涨股票占比",
                 "series_1y": "过去 1 年",
                 "series_10y": "过去 10 年",
                 "series_20y": "过去 20 年"
