@@ -84,7 +84,7 @@ function renderContent(stats) {
                     </div>
                     <div class="metric">
                         <span class="metric-label">${dict.metric_win}</span>
-                        <span class="metric-value" style="color: #e5e7eb">${s.pre_win}%</span>
+                        <span class="metric-value" style="color: #111827">${s.pre_win}%</span>
                     </div>
                 </div>
                 
@@ -98,7 +98,7 @@ function renderContent(stats) {
                     </div>
                     <div class="metric">
                         <span class="metric-label">${dict.metric_win}</span>
-                        <span class="metric-value" style="color: #e5e7eb">${s.post1m_win}%</span>
+                        <span class="metric-value" style="color: #111827">${s.post1m_win}%</span>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ function renderCharts(stats, dict) {
             axisPointer: { type: 'shadow' }
         },
         legend: {
-            textStyle: { color: '#9ca3af' },
+            textStyle: { color: '#111827', fontWeight: 600 },
             top: 0
         },
         grid: {
@@ -142,13 +142,13 @@ function renderCharts(stats, dict) {
         xAxis: {
             type: 'category',
             data: xLabels,
-            axisLabel: { color: '#9ca3af' },
-            axisLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
+            axisLabel: { color: '#111827', fontWeight: 600 },
+            axisLine: { lineStyle: { color: 'rgba(0,0,0,0.2)' } }
         },
         yAxis: {
             type: 'value',
-            axisLabel: { color: '#9ca3af' },
-            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.05)' } }
+            axisLabel: { color: '#111827', fontWeight: 600 },
+            splitLine: { lineStyle: { color: 'rgba(0,0,0,0.1)' } }
         }
     };
 
@@ -158,14 +158,14 @@ function renderCharts(stats, dict) {
         ...commonOptions,
         title: {
             text: dict.chart_return_title,
-            textStyle: { color: '#e5e7eb', fontSize: 16, fontWeight: 600 },
+            textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
             left: 'center',
             top: -5
         },
         grid: { ...commonOptions.grid, top: 40 },
         yAxis: {
             ...commonOptions.yAxis,
-            axisLabel: { formatter: '{value}%', color: '#9ca3af' }
+            axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
         },
         series: [
             {
@@ -195,7 +195,7 @@ function renderCharts(stats, dict) {
         ...commonOptions,
         title: {
             text: dict.chart_win_title,
-            textStyle: { color: '#e5e7eb', fontSize: 16, fontWeight: 600 },
+            textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
             left: 'center',
             top: -5
         },
@@ -204,7 +204,7 @@ function renderCharts(stats, dict) {
             ...commonOptions.yAxis,
             min: 0,
             max: 100,
-            axisLabel: { formatter: '{value}%', color: '#9ca3af' }
+            axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
         },
         series: [
             {
