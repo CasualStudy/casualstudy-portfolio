@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-16 16:41:57 NY Time",
+    "last_updated": "2026-06-17 12:47:58 NY Time",
     "SPX": {
         "1Y": {
             "count": 21,
@@ -33,10 +33,10 @@
             "post1y_min_ticker": "N/A"
         },
         "10Y": {
-            "count": 169,
-            "pre_avg": 1.55,
-            "pre_win": 60.4,
-            "pre_intraday": 0.05,
+            "count": 168,
+            "pre_avg": 1.57,
+            "pre_win": 60.7,
+            "pre_intraday": 0.04,
             "pre_max_val": 30.18,
             "pre_max_ticker": "MRNA",
             "pre_min_val": -19.2,
@@ -64,9 +64,9 @@
             "post1y_min_ticker": "NKTR"
         },
         "20Y": {
-            "count": 272,
+            "count": 271,
             "pre_avg": 1.41,
-            "pre_win": 59.6,
+            "pre_win": 59.8,
             "pre_intraday": -0.5,
             "pre_max_val": 30.18,
             "pre_max_ticker": "MRNA",
