@@ -105,18 +105,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const typeLabelEn = typeStr === "Classic" ? "Classic Gap" : "Range Gap";
         const typeLabelZh = typeStr === "Classic" ? "经典缺口" : "区间缺口";
         
+        const updateRemarkEn = "Updates daily within ~15 minutes after market open.";
+        const updateRemarkZh = "每日开盘后约15分钟内自动更新。";
+        
         const noteTextEn = typeStr === "Classic" ? 
-            "Note: Classic Gap is the difference between today's open and yesterday's close." : 
-            "Note: Range Gap is the difference between today's open and yesterday's high (for gap up) or low (for gap down).";
+            "Note: Classic Gap is the difference between today's open and yesterday's close. " + updateRemarkEn : 
+            "Note: Range Gap is the difference between today's open and yesterday's high (for gap up) or low (for gap down). " + updateRemarkEn;
         const noteTextZh = typeStr === "Classic" ? 
-            "注释：经典缺口是今日开盘价与昨日收盘价的差值。" : 
-            "注释：区间缺口是今日开盘价与昨日最高点(向上跳空)或最低点(向下跳空)的差值。";
+            "注释：经典缺口是今日开盘价与昨日收盘价的差值。" + updateRemarkZh : 
+            "注释：区间缺口是今日开盘价与昨日最高点(向上跳空)或最低点(向下跳空)的差值。" + updateRemarkZh;
+
+        const dateStr = todayObj.date ? `(${todayObj.date})` : "";
 
         if (!dir) {
             return `
                 <div style="font-size:1.1rem; font-weight:600; margin-bottom:0.5rem;" class="lang-text" data-en="${typeLabelEn}" data-zh="${typeLabelZh}">${typeLabelZh}</div>
                 <div style="color:var(--text-muted);">
-                    <span class="lang-text" data-en="Today's ${ticker} open is" data-zh="今日 ${ticker} 开盘价">今日 ${ticker} 开盘价</span> 
+                    <span class="lang-text" data-en="Today's ${dateStr} ${ticker} open is" data-zh="今日${dateStr} ${ticker} 开盘价">今日${dateStr} ${ticker} 开盘价</span> 
                     <strong>$${openPrice}</strong>, 
                     <span class="lang-text" data-en="${prevLabelEn} is" data-zh="${prevLabelZh}"> ${prevLabelZh}</span> 
                     <strong>$${prevPrice}</strong>. 
@@ -136,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return `
             <div style="font-size:1.1rem; font-weight:600; margin-bottom:0.8rem; color:var(--text-main);">
-                <span class="lang-text" data-en="Today's ${ticker} open is" data-zh="今日 ${ticker} 开盘价">今日 ${ticker} 开盘价</span> 
+                <span class="lang-text" data-en="Today's ${dateStr} ${ticker} open is" data-zh="今日${dateStr} ${ticker} 开盘价">今日${dateStr} ${ticker} 开盘价</span> 
                 <strong>$${openPrice}</strong>，
                 <span class="lang-text" data-en="${prevLabelEn} is" data-zh="${prevLabelZh}">${prevLabelZh}</span> 
                 <strong>$${prevPrice}</strong>。<br/>
