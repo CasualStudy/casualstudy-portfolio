@@ -159,11 +159,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const value = params[0].value;
                     const modelIndex = params[0].dataIndex;
                     const fullModelData = top10[modelIndex];
+                    const tokens = fullModelData.total_tokens || fullModelData.prompt_tokens + fullModelData.completion_tokens || 0;
+                    let tokenStr;
+                    if (tokens >= 1e9) tokenStr = (tokens / 1e9).toFixed(2) + 'B';
+                    else if (tokens >= 1e6) tokenStr = (tokens / 1e6).toFixed(2) + 'M';
+                    else tokenStr = tokens.toLocaleString();
                     return `
                         <strong>${fullModelData.name || fullModelData.id}</strong><br/>
                         Revenue: $${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br/>
-                        Prompt Tokens: ${(fullModelData.prompt_tokens / 1000000).toFixed(2)}M<br/>
-                        Completion Tokens: ${(fullModelData.completion_tokens / 1000000).toFixed(2)}M
+                        Total Tokens: ${tokenStr}
                     `;
                 },
                 backgroundColor: isDarkMode ? 'rgba(15, 23, 42, 0.9)' : 'rgba(255, 255, 255, 0.9)',
