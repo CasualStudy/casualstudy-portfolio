@@ -2395,13 +2395,19 @@
   },
   {
     "date": "2026-06-10",
-    "total_revenue": 16662089.94,
+    "total_revenue": 20268171.08,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
         "name": "Anthropic: Claude Opus 4.7",
         "revenue": 4503646.98,
         "total_tokens": 300243131964
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "revenue": 3606081.14,
+        "total_tokens": 120202704536
       },
       {
         "id": "anthropic/claude-sonnet-4.6",
@@ -2510,18 +2516,12 @@
         "name": "MoonshotAI: Kimi K2.6",
         "revenue": 108559.96,
         "total_tokens": 52192288200
-      },
-      {
-        "id": "tencent/hy3-preview",
-        "name": "Tencent: Hy3 preview",
-        "revenue": 96501.95,
-        "total_tokens": 706974022354
       }
     ]
   },
   {
     "date": "2026-06-11",
-    "total_revenue": 18788782.91,
+    "total_revenue": 20563510.41,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2540,6 +2540,12 @@
         "name": "Anthropic: Claude Opus 4.8",
         "revenue": 3251572.01,
         "total_tokens": 216771467533
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "revenue": 1774727.5,
+        "total_tokens": 59157583364
       },
       {
         "id": "openai/gpt-5.5",
@@ -2636,18 +2642,12 @@
         "name": "Tencent: Hy3 preview",
         "revenue": 103164.7,
         "total_tokens": 755785342595
-      },
-      {
-        "id": "xiaomi/mimo-v2.5",
-        "name": "Xiaomi: MiMo-V2.5",
-        "revenue": 100086.9,
-        "total_tokens": 476604307732
       }
     ]
   },
   {
     "date": "2026-06-12",
-    "total_revenue": 17343771.96,
+    "total_revenue": 19081453.8,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2666,6 +2666,12 @@
         "name": "Anthropic: Claude Opus 4.8",
         "revenue": 2597671.73,
         "total_tokens": 173178115408
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "revenue": 1737681.84,
+        "total_tokens": 57922728051
       },
       {
         "id": "openai/gpt-5.5",
@@ -2762,12 +2768,6 @@
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 113116.48,
         "total_tokens": 538649881473
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
-        "revenue": 88535.86,
-        "total_tokens": 655821208137
       }
     ]
   },

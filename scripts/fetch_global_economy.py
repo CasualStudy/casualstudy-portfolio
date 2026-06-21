@@ -1,7 +1,9 @@
 import os
+import re
 import json
 import requests
 from datetime import datetime, timezone
+from collections import defaultdict
 
 # OpenRouter API Endpoints
 MODELS_API_URL = "https://openrouter.ai/api/v1/models"
@@ -72,7 +74,10 @@ def match_model(permaslug, models_dict):
     1. Exact match
     2. Strip :variant suffix and try again
     3. Strip date suffix (e.g. -20260423) and try again
-    4. Try matching base slug (provider/model-name) prefix
+    4. Strip version suffix (e.g. -001, -002) and try again
+    5. Handle Anthropic reversed naming (claude-X.Y-type -> claude-type-X.Y)
+    6. Handle Anthropic new types (claude-N-fable -> claude-fable-N)
+    7. Prefix matching as last resort
     """
     if permaslug in models_dict:
         return permaslug
@@ -83,16 +88,20 @@ def match_model(permaslug, models_dict):
         return base
 
     # Strip trailing date suffix like -20260423 or -20250101
-    import re
     no_date = re.sub(r"-\d{8}$", "", base)
     if no_date in models_dict:
         return no_date
+
+    # Strip trailing version suffix like -001, -002
+    no_ver = re.sub(r"-\d{3}$", "", no_date)
+    if no_ver in models_dict:
+        return no_ver
 
     # Handle Anthropic's reversed naming convention:
     # Rankings API:  anthropic/claude-4.6-sonnet  (version-type)
     # Models API:    anthropic/claude-sonnet-4.6  (type-version)
     flip_match = re.match(
-        r"^(.*?/claude)-(\d+\.\d+)-(sonnet|opus|haiku)(.*?)$", no_date
+        r"^(.*?/claude)-(\d+(?:\.\d+)?)-(sonnet|opus|haiku|fable)(.*?)$", no_date
     )
     if flip_match:
         prefix, version, model_type, suffix = flip_match.groups()
@@ -103,15 +112,17 @@ def match_model(permaslug, models_dict):
         if f"{flipped}-fast" in models_dict:
             return f"{flipped}-fast"
 
+    # Collect all candidate names to try prefix matching on
+    variants = {base, no_date, no_ver}
+
     # Try prefix matching: find the model whose ID is a prefix of the permaslug
     # e.g. "google/gemini-2.5-flash" matches "google/gemini-2.5-flash-preview-05-20"
     candidates = []
     for model_id in models_dict:
-        if base.startswith(model_id) or model_id.startswith(base):
-            candidates.append(model_id)
-        # Also check no_date version
-        elif no_date.startswith(model_id) or model_id.startswith(no_date):
-            candidates.append(model_id)
+        for v in variants:
+            if v.startswith(model_id) or model_id.startswith(v):
+                candidates.append(model_id)
+                break
 
     if candidates:
         # Pick the longest matching ID (most specific)
@@ -126,10 +137,15 @@ def process_rankings(rankings_data, models_dict):
     Process the raw rankings data (which spans ~30 days) into
     per-date revenue entries.
 
-    Returns a dict: { "2026-06-20": { "total_revenue": ..., "models": [...] }, ... }
+    Returns: (result_dict, unmatched_list)
+    - result_dict: { "2026-06-20": { "total_revenue": ..., "models": [...] }, ... }
+    - unmatched_list: [{ "slug": ..., "date": ..., "total_tokens": ... }, ...]
     """
     # Group records by date
     by_date = {}
+    # Track unmatched models for warnings
+    unmatched = defaultdict(lambda: {"dates": [], "total_tokens": 0})
+
     for r in rankings_data:
         slug = r.get("model_permaslug", "")
         # Skip the aggregate "other" row
@@ -146,6 +162,8 @@ def process_rankings(rankings_data, models_dict):
 
         matched_id = match_model(slug, models_dict)
         if not matched_id:
+            unmatched[slug]["dates"].append(date)
+            unmatched[slug]["total_tokens"] += total_tokens
             continue
 
         m_info = models_dict[matched_id]
@@ -177,7 +195,7 @@ def process_rankings(rankings_data, models_dict):
             "model_count": len(model_list),
         }
 
-    return result
+    return result, dict(unmatched)
 
 
 def main():
@@ -193,11 +211,29 @@ def main():
         print("No rankings data available. Exiting.")
         return
 
-    daily_results = process_rankings(rankings_data, models)
+    daily_results, unmatched = process_rankings(rankings_data, models)
 
     if not daily_results:
         print("No revenue data could be calculated (model matching failed). Exiting.")
         return
+
+    # === UNMATCHED MODEL WARNINGS ===
+    if unmatched:
+        print(f"\n⚠️  WARNING: {len(unmatched)} model(s) could not be matched to pricing data!")
+        print("=" * 70)
+        for slug, info in sorted(unmatched.items(), key=lambda x: -x[1]["total_tokens"]):
+            tokens_b = info['total_tokens'] / 1e9
+            days = len(info['dates'])
+            date_range = f"{info['dates'][0]} ~ {info['dates'][-1]}"
+            print(f"  {slug}")
+            print(f"    Days: {days}  |  Tokens: {tokens_b:.1f}B  |  Range: {date_range}")
+            # GitHub Actions annotation format for CI visibility
+            print(f"::warning::Unmatched model: {slug} "
+                  f"({tokens_b:.1f}B tokens over {days} days)")
+        print("=" * 70)
+        print("  These models' revenue is NOT included in the total.")
+        print("  To fix: update match_model() or check if model was removed from /models API.")
+        print()
 
     # Read existing history
     history = []
@@ -240,7 +276,7 @@ def main():
 
     latest_date = sorted(daily_results.keys())[-1]
     latest = daily_results[latest_date]
-    print(f"\nSuccessfully processed {len(daily_results)} days of data.")
+    print(f"\n✅ Successfully processed {len(daily_results)} days of data.")
     print(f"  New dates added: {new_count}")
     print(f"  Existing dates updated: {updated_count}")
     print(f"  Total history entries: {len(history)}")
