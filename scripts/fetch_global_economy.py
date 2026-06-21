@@ -91,8 +91,11 @@ def main():
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     daily_revenue = []
     total_market_revenue = 0.0
-    
+    latest_date = max(r.get("date", "") for r in rankings) if rankings else ""
     for r in rankings:
+        if r.get("date") != latest_date:
+            continue
+            
         model_id = r.get("id") or r.get("model_permaslug")
         if model_id in models:
             m_info = models[model_id]

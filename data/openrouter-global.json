@@ -1,147 +1,70 @@
 [
   {
     "date": "2026-06-21",
-    "total_revenue": 5419434.24,
+    "total_revenue": 148026.54,
     "models": [
       {
         "id": "google/gemini-2.5-flash",
         "name": "Google: Gemini 2.5 Flash",
-        "revenue": 159605.16,
-        "prompt_tokens": 57001844502,
-        "completion_tokens": 57001844502
+        "revenue": 95039.13,
+        "prompt_tokens": 33942546946,
+        "completion_tokens": 33942546946
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 146662.3,
-        "prompt_tokens": 52379394365,
-        "completion_tokens": 52379394365
+        "id": "openai/gpt-4o-mini",
+        "name": "OpenAI: GPT-4o-mini",
+        "revenue": 26284.92,
+        "prompt_tokens": 35046556290,
+        "completion_tokens": 35046556290
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 145189.56,
-        "prompt_tokens": 51853412516,
-        "completion_tokens": 51853412516
+        "id": "google/gemini-2.5-flash-lite",
+        "name": "Google: Gemini 2.5 Flash Lite",
+        "revenue": 19932.19,
+        "prompt_tokens": 39864381967,
+        "completion_tokens": 39864381967
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 142827.85,
-        "prompt_tokens": 51009945393,
-        "completion_tokens": 51009945393
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 4718.8,
+        "prompt_tokens": 21547033781,
+        "completion_tokens": 21547033781
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 138604.6,
-        "prompt_tokens": 49501641139,
-        "completion_tokens": 49501641139
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "revenue": 1196.11,
+        "prompt_tokens": 7077574339,
+        "completion_tokens": 7077574339
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 137207.38,
-        "prompt_tokens": 49002634316,
-        "completion_tokens": 49002634316
+        "id": "mistralai/mistral-nemo",
+        "name": "Mistral: Mistral Nemo",
+        "revenue": 855.39,
+        "prompt_tokens": 17107880856,
+        "completion_tokens": 17107880856
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 136748.21,
-        "prompt_tokens": 48838646749,
-        "completion_tokens": 48838646749
+        "id": "openrouter/owl-alpha",
+        "name": "Owl Alpha",
+        "revenue": 0.0,
+        "prompt_tokens": 211098910911,
+        "completion_tokens": 211098910911
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 134427.76,
-        "prompt_tokens": 48009914382,
-        "completion_tokens": 48009914382
+        "id": "nex-agi/nex-n2-pro:free",
+        "name": "Nex AGI: Nex-N2-Pro (free)",
+        "revenue": 0.0,
+        "prompt_tokens": 28721727314,
+        "completion_tokens": 28721727314
       },
       {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 132568.92,
-        "prompt_tokens": 47346042407,
-        "completion_tokens": 47346042407
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 131351.67,
-        "prompt_tokens": 46911311990,
-        "completion_tokens": 46911311990
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 131007.27,
-        "prompt_tokens": 46788311715,
-        "completion_tokens": 46788311715
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 129838.31,
-        "prompt_tokens": 46370823672,
-        "completion_tokens": 46370823672
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 125232.61,
-        "prompt_tokens": 44725931403,
-        "completion_tokens": 44725931403
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 121611.63,
-        "prompt_tokens": 43432724621,
-        "completion_tokens": 43432724621
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 119718.77,
-        "prompt_tokens": 42756703647,
-        "completion_tokens": 42756703647
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 117066.68,
-        "prompt_tokens": 41809528058,
-        "completion_tokens": 41809528058
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 116982.02,
-        "prompt_tokens": 41779291574,
-        "completion_tokens": 41779291574
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 116055.96,
-        "prompt_tokens": 41448556271,
-        "completion_tokens": 41448556271
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 113010.46,
-        "prompt_tokens": 40360878001,
-        "completion_tokens": 40360878001
-      },
-      {
-        "id": "google/gemini-2.5-flash",
-        "name": "Google: Gemini 2.5 Flash",
-        "revenue": 112482.45,
-        "prompt_tokens": 40172303359,
-        "completion_tokens": 40172303359
+        "id": "openai/gpt-oss-120b:free",
+        "name": "OpenAI: gpt-oss-120b (free)",
+        "revenue": 0.0,
+        "prompt_tokens": 13780119535,
+        "completion_tokens": 13780119535
       }
     ]
   }
