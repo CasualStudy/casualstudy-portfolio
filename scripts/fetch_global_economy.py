@@ -88,11 +88,29 @@ def match_model(permaslug, models_dict):
     if no_date in models_dict:
         return no_date
 
+    # Handle Anthropic's reversed naming convention:
+    # Rankings API:  anthropic/claude-4.6-sonnet  (version-type)
+    # Models API:    anthropic/claude-sonnet-4.6  (type-version)
+    flip_match = re.match(
+        r"^(.*?/claude)-(\d+\.\d+)-(sonnet|opus|haiku)(.*?)$", no_date
+    )
+    if flip_match:
+        prefix, version, model_type, suffix = flip_match.groups()
+        flipped = f"{prefix}-{model_type}-{version}{suffix}"
+        if flipped in models_dict:
+            return flipped
+        # Also try with -fast suffix variant
+        if f"{flipped}-fast" in models_dict:
+            return f"{flipped}-fast"
+
     # Try prefix matching: find the model whose ID is a prefix of the permaslug
     # e.g. "google/gemini-2.5-flash" matches "google/gemini-2.5-flash-preview-05-20"
     candidates = []
     for model_id in models_dict:
         if base.startswith(model_id) or model_id.startswith(base):
+            candidates.append(model_id)
+        # Also check no_date version
+        elif no_date.startswith(model_id) or model_id.startswith(no_date):
             candidates.append(model_id)
 
     if candidates:
