@@ -37,6 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mock Data for Data Analysis
     const analyses = [
         {
+            title_en: "Global AI Economy Tracker",
+            title_zh: "全球 AI 大模型流水监控",
+            excerpt_en: "Estimated daily revenue across top models routed through OpenRouter.",
+            excerpt_zh: "根据全网日调用量估算的 OpenRouter 大模型真实流水大盘。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "globe",
+            link: "openrouter-global.html"
+        },
+        {
             title_en: "News Radar",
             title_zh: "新闻雷达",
             excerpt_en: "Automatically tracking and categorizing PRNewswire feed to detect market-moving news.",
