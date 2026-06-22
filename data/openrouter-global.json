@@ -2269,7 +2269,7 @@
   },
   {
     "date": "2026-06-09",
-    "total_revenue": 16719490.62,
+    "total_revenue": 16758382.76,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2395,7 +2395,7 @@
   },
   {
     "date": "2026-06-10",
-    "total_revenue": 20268171.08,
+    "total_revenue": 20342839.69,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2521,7 +2521,7 @@
   },
   {
     "date": "2026-06-11",
-    "total_revenue": 20563510.41,
+    "total_revenue": 20689316.39,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2626,6 +2626,12 @@
         "total_tokens": 102019890787
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 125805.98,
+        "total_tokens": 83870651341
+      },
+      {
         "id": "anthropic/claude-haiku-4.5",
         "name": "Anthropic: Claude Haiku 4.5",
         "revenue": 119742.27,
@@ -2636,18 +2642,12 @@
         "name": "OpenAI: GPT-5.4 Mini",
         "revenue": 104607.97,
         "total_tokens": 39850655786
-      },
-      {
-        "id": "tencent/hy3-preview",
-        "name": "Tencent: Hy3 preview",
-        "revenue": 103164.7,
-        "total_tokens": 755785342595
       }
     ]
   },
   {
     "date": "2026-06-12",
-    "total_revenue": 19081453.8,
+    "total_revenue": 19246998.1,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2734,6 +2734,12 @@
         "total_tokens": 19329825368
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 165544.3,
+        "total_tokens": 110362864811
+      },
+      {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "revenue": 157005.68,
@@ -2762,18 +2768,12 @@
         "name": "Google: Gemini 2.5 Flash",
         "revenue": 125232.61,
         "total_tokens": 89451862807
-      },
-      {
-        "id": "xiaomi/mimo-v2.5",
-        "name": "Xiaomi: MiMo-V2.5",
-        "revenue": 113116.48,
-        "total_tokens": 538649881473
       }
     ]
   },
   {
     "date": "2026-06-13",
-    "total_revenue": 14078009.54,
+    "total_revenue": 14233884.93,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2842,6 +2842,12 @@
         "total_tokens": 108845584911
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 155875.39,
+        "total_tokens": 103916929235
+      },
+      {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "revenue": 154894.58,
@@ -2888,18 +2894,12 @@
         "name": "DeepSeek: DeepSeek V4 Flash",
         "revenue": 73660.64,
         "total_tokens": 545634393863
-      },
-      {
-        "id": "stepfun/step-3.7-flash",
-        "name": "StepFun: Step 3.7 Flash",
-        "revenue": 66477.22,
-        "total_tokens": 98484772180
       }
     ]
   },
   {
     "date": "2026-06-14",
-    "total_revenue": 13367618.85,
+    "total_revenue": 13543342.75,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2962,6 +2962,12 @@
         "total_tokens": 36072127975
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 175723.9,
+        "total_tokens": 117149263477
+      },
+      {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "revenue": 174908.34,
@@ -3014,18 +3020,12 @@
         "name": "Anthropic: Claude Haiku 4.5",
         "revenue": 77252.75,
         "total_tokens": 25750917076
-      },
-      {
-        "id": "z-ai/glm-5.1",
-        "name": "Z.ai: GLM 5.1",
-        "revenue": 75405.93,
-        "total_tokens": 37145777384
       }
     ]
   },
   {
     "date": "2026-06-15",
-    "total_revenue": 18177303.25,
+    "total_revenue": 18341071.85,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3106,6 +3106,12 @@
         "total_tokens": 79915463541
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 163768.6,
+        "total_tokens": 109179066994
+      },
+      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "name": "NVIDIA: Nemotron 3 Ultra",
         "revenue": 148610.05,
@@ -3140,18 +3146,12 @@
         "name": "Z.ai: GLM 5.1",
         "revenue": 104842.13,
         "total_tokens": 51646368515
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
-        "revenue": 86121.61,
-        "total_tokens": 637937882293
       }
     ]
   },
   {
     "date": "2026-06-16",
-    "total_revenue": 20546825.37,
+    "total_revenue": 20696215.88,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3238,6 +3238,12 @@
         "total_tokens": 16777465531
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 149390.51,
+        "total_tokens": 99593670987
+      },
+      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "name": "NVIDIA: Nemotron 3 Ultra",
         "revenue": 146235.2,
@@ -3266,18 +3272,12 @@
         "name": "MoonshotAI: Kimi K2.6",
         "revenue": 99630.5,
         "total_tokens": 47899278975
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
-        "revenue": 95492.95,
-        "total_tokens": 707355174561
       }
     ]
   },
   {
     "date": "2026-06-17",
-    "total_revenue": 24350126.49,
+    "total_revenue": 24479647.86,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3394,16 +3394,16 @@
         "total_tokens": 99066109934
       },
       {
-        "id": "anthropic/claude-haiku-4.5",
-        "name": "Anthropic: Claude Haiku 4.5",
-        "revenue": 123197.3,
-        "total_tokens": 41065766396
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 129521.37,
+        "total_tokens": 86347577451
       }
     ]
   },
   {
     "date": "2026-06-18",
-    "total_revenue": 22068354.21,
+    "total_revenue": 22215337.21,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3502,6 +3502,12 @@
         "total_tokens": 19390104077
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 146983.0,
+        "total_tokens": 97988665665
+      },
+      {
         "id": "anthropic/claude-haiku-4.5",
         "name": "Anthropic: Claude Haiku 4.5",
         "revenue": 136720.86,
@@ -3518,18 +3524,12 @@
         "name": "OpenAI: GPT-5.3-Codex",
         "revenue": 127777.87,
         "total_tokens": 16225761713
-      },
-      {
-        "id": "nvidia/nemotron-3-ultra-550b-a55b",
-        "name": "NVIDIA: Nemotron 3 Ultra",
-        "revenue": 126811.62,
-        "total_tokens": 93934530611
       }
     ]
   },
   {
     "date": "2026-06-19",
-    "total_revenue": 17808428.75,
+    "total_revenue": 17931466.3,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3622,6 +3622,12 @@
         "total_tokens": 17115987602
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 123037.55,
+        "total_tokens": 82025034886
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 118272.56,
@@ -3644,18 +3650,12 @@
         "name": "Google: Gemini 2.5 Flash",
         "revenue": 113010.46,
         "total_tokens": 80721756003
-      },
-      {
-        "id": "nvidia/nemotron-3-ultra-550b-a55b",
-        "name": "NVIDIA: Nemotron 3 Ultra",
-        "revenue": 103744.64,
-        "total_tokens": 76847884112
       }
     ]
   },
   {
     "date": "2026-06-20",
-    "total_revenue": 14221359.35,
+    "total_revenue": 14307524.53,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -3772,16 +3772,16 @@
         "total_tokens": 67885093893
       },
       {
-        "id": "anthropic/claude-haiku-4.5",
-        "name": "Anthropic: Claude Haiku 4.5",
-        "revenue": 72722.3,
-        "total_tokens": 24240765421
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 86165.18,
+        "total_tokens": 57443454628
       }
     ]
   },
   {
     "date": "2026-06-21",
-    "total_revenue": 13169839.83,
+    "total_revenue": 13245320.0,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -3892,16 +3892,16 @@
         "total_tokens": 676195124830
       },
       {
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "revenue": 75480.17,
+        "total_tokens": 50320111323
+      },
+      {
         "id": "anthropic/claude-haiku-4.5",
         "name": "Anthropic: Claude Haiku 4.5",
         "revenue": 71202.7,
         "total_tokens": 23734233451
-      },
-      {
-        "id": "openai/gpt-5.4-mini",
-        "name": "OpenAI: GPT-5.4 Mini",
-        "revenue": 65481.94,
-        "total_tokens": 24945499653
       }
     ]
   }
