@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/openrouter-global.json
+          git add data/openrouter-global.json data/openrouter-prices.json
           # Only commit if there are changes
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update openrouter global economy data" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update openrouter global economy data and prices" && git push)
