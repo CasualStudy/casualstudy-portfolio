@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             excerpt_zh: "根据全网日调用量估算的 OpenRouter 大模型真实流水大盘。",
             tools: "ECharts, Python, GitHub Actions",
             icon: "globe",
-            link: "openrouter-global.html"
+            link: "ai-revenue-tracker.html"
         },
         {
             title_en: "News Radar",
