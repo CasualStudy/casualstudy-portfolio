@@ -103,7 +103,13 @@
                 </div>
 
                 <!-- Market Trend Chart -->
-                <div id="trend-chart" class="chart-container" style="height: 400px; margin-top: 3rem;"></div>
+                <div class="trend-header" style="display: flex; justify-content: flex-end; align-items: center; margin-top: 3rem; margin-bottom: -2rem; padding: 0 1rem; position: relative; z-index: 10;">
+                    <div class="toggle-group" id="timeframe-toggle" style="display: flex; gap: 0.25rem; background: rgba(128, 128, 128, 0.15); padding: 0.25rem; border-radius: 8px;">
+                        <button class="btn glass-btn active" data-tf="daily" style="padding: 0.3rem 0.8rem; border-radius: 6px; font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.2);">Daily</button>
+                        <button class="btn glass-btn" data-tf="weekly" style="padding: 0.3rem 0.8rem; border-radius: 6px; font-size: 0.85rem; border: 1px solid transparent; background: transparent; box-shadow: none;">Weekly</button>
+                    </div>
+                </div>
+                <div id="trend-chart" class="chart-container" style="height: 400px; margin-top: 1rem;"></div>
                 
                 <!-- Today's Top Models Bar Chart -->
                 <div id="ranking-chart" class="chart-container" style="margin-top: 3rem;"></div>

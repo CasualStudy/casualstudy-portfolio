@@ -2,6 +2,51 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ECharts Instances
     let trendChart = null;
     let rankingChart = null;
+    
+    let rawData = [];
+    let currentTimeframe = 'daily';
+
+    function getWeekIdentifier(dateStr) {
+        const d = new Date(dateStr);
+        const day = d.getUTCDay();
+        const diff = d.getUTCDate() - day + (day === 0 ? -6 : 1);
+        const monday = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), diff));
+        return monday.toISOString().split('T')[0];
+    }
+
+    function aggregateWeeklyData(data) {
+        const weeks = {};
+        data.forEach(day => {
+            const weekStr = getWeekIdentifier(day.date);
+            if (!weeks[weekStr]) {
+                weeks[weekStr] = {
+                    date: `Week of ${weekStr}`,
+                    startDate: weekStr,
+                    total_revenue: 0,
+                    modelMap: {}
+                };
+            }
+            weeks[weekStr].total_revenue += day.total_revenue;
+            
+            if (day.models) {
+                day.models.forEach(m => {
+                    if (!weeks[weekStr].modelMap[m.id]) {
+                        weeks[weekStr].modelMap[m.id] = { ...m, revenue: 0, total_tokens: 0 };
+                    }
+                    weeks[weekStr].modelMap[m.id].revenue += m.revenue;
+                    weeks[weekStr].modelMap[m.id].total_tokens += (m.total_tokens || 0);
+                });
+            }
+        });
+
+        return Object.values(weeks).sort((a, b) => a.startDate.localeCompare(b.startDate)).map(w => {
+            w.models = Object.values(w.modelMap)
+                .sort((a, b) => b.revenue - a.revenue)
+                .slice(0, 10);
+            delete w.modelMap;
+            return w;
+        });
+    }
 
     // Wait for lang-toggle initialization from script.js if needed
     const currentLang = document.documentElement.lang || 'en';
@@ -75,8 +120,35 @@ document.addEventListener('DOMContentLoaded', async () => {
             tooltip: {
                 trigger: 'axis',
                 formatter: function (params) {
-                    const value = params[0].value;
-                    return `${params[0].name}<br/>$${value.toLocaleString('en-US')}`;
+                    const dataIndex = params[0].dataIndex;
+                    const item = data[dataIndex];
+                    const value = item.total_revenue;
+                    
+                    let html = `<div style="margin-bottom: 8px; border-bottom: 1px solid ${axisColor}; padding-bottom: 8px;">`;
+                    html += `<strong style="font-size: 1.1em;">${item.date}</strong><br/>`;
+                    html += `Total Revenue: <span style="font-weight: 600;">$${value.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</span>`;
+                    html += `</div>`;
+                    
+                    if (item.models && item.models.length > 0) {
+                        html += `<div style="font-size: 0.85em; line-height: 1.5;">`;
+                        const limit = Math.min(10, item.models.length);
+                        for (let i = 0; i < limit; i++) {
+                            const m = item.models[i];
+                            let name = m.name || m.id;
+                            if (name.includes(': ')) name = name.split(': ')[1];
+                            if (name.length > 25) name = name.substring(0, 25) + '...';
+                            
+                            let revStr = '$' + (m.revenue >= 1000000 ? (m.revenue / 1000000).toFixed(2) + 'M' : 
+                                         (m.revenue >= 1000 ? (m.revenue / 1000).toFixed(1) + 'k' : m.revenue.toLocaleString('en-US', { maximumFractionDigits: 0 })));
+                                         
+                            html += `<div style="display: flex; justify-content: space-between; gap: 16px;">
+                                        <span style="opacity: 0.9;">${i+1}. ${name}</span>
+                                        <span style="font-weight: 600;">${revStr}</span>
+                                     </div>`;
+                        }
+                        html += `</div>`;
+                    }
+                    return html;
                 },
                 backgroundColor: isDarkMode ? 'rgba(15, 23, 42, 0.9)' : 'rgba(255, 255, 255, 0.9)',
                 borderColor: axisColor,
@@ -148,9 +220,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const option = {
             title: {
-                text: 'Top 10 Grossing Models (Daily)',
+                text: 'Top 10 Grossing Models',
+                subtext: `Data for ${latestData.date}`,
                 left: 'center',
-                textStyle: { color: textColor, fontWeight: '600' }
+                textStyle: { color: textColor, fontWeight: '600' },
+                subtextStyle: { color: textColor, opacity: 0.7, fontSize: 13 }
             },
             tooltip: {
                 trigger: 'axis',
@@ -225,21 +299,51 @@ document.addEventListener('DOMContentLoaded', async () => {
         initCharts();
         const data = await fetchData();
         if (data && data.length > 0) {
+            rawData = data;
             const latestData = data[data.length - 1];
             updateStatsCards(latestData);
-            renderTrendChart(data);
+            renderTrendChart(rawData);
             renderRankingChart(latestData);
+            
+            // Setup toggle buttons
+            const buttons = document.querySelectorAll('#timeframe-toggle button');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    buttons.forEach(b => {
+                        b.classList.remove('active');
+                        b.style.border = '1px solid transparent';
+                        b.style.background = 'transparent';
+                        b.style.boxShadow = 'none';
+                    });
+                    
+                    const target = e.currentTarget;
+                    target.classList.add('active');
+                    target.style.border = '1px solid rgba(255,255,255,0.2)';
+                    target.style.background = 'rgba(128,128,128,0.2)';
+                    target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+                    
+                    currentTimeframe = target.getAttribute('data-tf');
+                    
+                    if (currentTimeframe === 'weekly') {
+                        renderTrendChart(aggregateWeeklyData(rawData));
+                    } else {
+                        renderTrendChart(rawData);
+                    }
+                });
+            });
         }
     }
 
     init();
 
-    // Re-render charts when system theme changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async () => {
-        const data = await fetchData();
-        if (data && data.length > 0) {
-            renderTrendChart(data);
-            renderRankingChart(data[data.length - 1]);
+        if (rawData && rawData.length > 0) {
+            if (currentTimeframe === 'weekly') {
+                renderTrendChart(aggregateWeeklyData(rawData));
+            } else {
+                renderTrendChart(rawData);
+            }
+            renderRankingChart(rawData[rawData.length - 1]);
         }
     });
 });
