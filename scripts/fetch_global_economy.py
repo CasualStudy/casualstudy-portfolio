@@ -145,6 +145,31 @@ def process_rankings(rankings_data, models_dict, prices_history):
     # Track unmatched models for warnings
     unmatched = defaultdict(lambda: {"dates": [], "total_tokens": 0})
 
+    # Step 1: Ensure today's full live pricing snapshot is saved.
+    today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    
+    def snapshot_all_models():
+        return {
+            m_id: (info["prompt_price"] + info["completion_price"]) / 2
+            for m_id, info in models_dict.items()
+        }
+
+    if today_utc not in prices_history:
+        prices_history[today_utc] = snapshot_all_models()
+
+    # Step 2: Ensure any past date present in rankings ALSO gets a full snapshot if missing models.
+    for r in rankings_data:
+        date = r.get("date", "")
+        if date:
+            if date not in prices_history:
+                prices_history[date] = snapshot_all_models()
+            else:
+                # Merge missing models into existing date
+                snapshot = snapshot_all_models()
+                for m_id, price in snapshot.items():
+                    if m_id not in prices_history[date]:
+                        prices_history[date][m_id] = price
+
     for r in rankings_data:
         slug = r.get("model_permaslug", "")
         # Skip the aggregate "other" row
@@ -167,17 +192,11 @@ def process_rankings(rankings_data, models_dict, prices_history):
 
         m_info = models_dict[matched_id]
 
-        # Determine price: use historical price if locked, else live price
-        live_avg_price = (m_info["prompt_price"] + m_info["completion_price"]) / 2
-        
-        if date not in prices_history:
-            prices_history[date] = {}
-            
-        if matched_id in prices_history[date]:
-            avg_price = prices_history[date][matched_id]
-        else:
-            # Lock in the price for this date and model
-            avg_price = live_avg_price
+        # Get historical price from the full snapshot
+        avg_price = prices_history[date].get(matched_id)
+        if avg_price is None:
+            # Fallback if model wasn't in snapshot (e.g. brand new model just added today)
+            avg_price = (m_info["prompt_price"] + m_info["completion_price"]) / 2
             prices_history[date][matched_id] = avg_price
 
         revenue = total_tokens * avg_price
