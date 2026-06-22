@@ -66,6 +66,25 @@ def fetch_rankings(api_key):
         print(f"Error fetching rankings: {e}")
         return all_data, {"latest_date": data.get("latest_date")}
 
+def send_discord_alert(webhook_url, alert_messages):
+    """Send alert to Discord via Webhook."""
+    if not webhook_url:
+        return
+        
+    content = "🚨 **CasualStudy AI Economy Radar Alert** 🚨\n\n"
+    content += "The following new/unmatched models are experiencing explosive growth (Daily Avg > 100M tokens):\n\n"
+    
+    for msg in alert_messages:
+        content += f"- {msg}\n"
+        
+    content += "\n*Action Required*: Please update the model matching rules to track these models."
+    
+    payload = {"content": content}
+    try:
+        requests.post(webhook_url, json=payload, timeout=10)
+    except Exception as e:
+        print(f"Failed to send Discord alert: {e}")
+
 def merge_raw_usage(new_rankings):
     """
     Merge the newly fetched 30-day rankings data with the historical database.
@@ -300,20 +319,42 @@ def main():
     # === UNMATCHED MODEL WARNINGS ===
     if unmatched:
         print(f"\n⚠️  WARNING: {len(unmatched)} model(s) could not be matched to pricing data!")
-        print("=" * 70)
-        for slug, info in sorted(unmatched.items(), key=lambda x: -x[1]["total_tokens"]):
-            tokens_b = info['total_tokens'] / 1e9
-            days = len(info['dates'])
-            date_range = f"{info['dates'][0]} ~ {info['dates'][-1]}"
+        print("="*70)
+        
+        discord_alerts = []
+        
+        for slug, info in unmatched.items():
+            days_count = len(info["dates"])
+            total_t = info["total_tokens"]
+            daily_avg = total_t / days_count if days_count > 0 else 0
+            
+            if total_t >= 1e9:
+                t_str = f"{total_t/1e9:.1f}B"
+            elif total_t >= 1e6:
+                t_str = f"{total_t/1e6:.1f}M"
+            else:
+                t_str = str(total_t)
+                
+            dates_sorted = sorted(info["dates"])
+            date_range = f"{dates_sorted[0]} ~ {dates_sorted[-1]}" if dates_sorted else ""
+            
             print(f"  {slug}")
-            print(f"    Days: {days}  |  Tokens: {tokens_b:.1f}B  |  Range: {date_range}")
-            # GitHub Actions annotation format for CI visibility
-            print(f"::warning::Unmatched model: {slug} "
-                  f"({tokens_b:.1f}B tokens over {days} days)")
-        print("=" * 70)
+            print(f"    Days: {days_count}  |  Tokens: {t_str}  |  Range: {date_range}")
+            # Also output GitHub Actions warning
+            print(f"::warning::Unmatched model: {slug} ({t_str} tokens over {days_count} days)")
+            
+            # Check for Discord alert threshold (100M daily average)
+            if daily_avg >= 100_000_000:
+                discord_alerts.append(f"**{slug}** ({t_str} tokens over {days_count} days. Avg: {daily_avg/1e6:.1f}M/day)")
+                
+        print("="*70)
         print("  These models' revenue is NOT included in the total.")
-        print("  To fix: update match_model() or check if model was removed from /models API.")
-        print()
+        print("  To fix: update match_model() or check if model was removed from /models API.\n")
+        
+        # Send Discord Alert
+        webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
+        if webhook_url and discord_alerts:
+            send_discord_alert(webhook_url, discord_alerts)
 
     # Read existing history
     history = []

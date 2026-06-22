@@ -29,6 +29,7 @@ jobs:
       - name: Run data fetch script
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           python scripts/fetch_global_economy.py
 
