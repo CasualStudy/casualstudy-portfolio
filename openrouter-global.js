@@ -377,7 +377,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             seriesData.push({
                 name: modelName,
                 type: 'line',
-                smooth: true,
                 symbol: 'none', // clean lines without dots everywhere
                 lineStyle: { width: 2 },
                 data: seriesRevenues
