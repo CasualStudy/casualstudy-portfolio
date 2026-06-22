@@ -45,15 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: "globe",
             link: "ai-revenue-tracker.html"
         },
-        {
-            title_en: "News Radar",
-            title_zh: "新闻雷达",
-            excerpt_en: "Automatically tracking and categorizing PRNewswire feed to detect market-moving news.",
-            excerpt_zh: "自动追踪并对美通社新闻进行分类，捕捉影响市场的重磅信息。",
-            tools: "JavaScript, Python, GitHub Actions",
-            icon: "radar",
-            link: "news-radar.html"
-        },
+
         {
             title_en: "Fear & Greed Index vs S&P 500",
             title_zh: "恐慌与贪婪指数 vs 标普500",
@@ -89,6 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "Python, Jupyter",
             icon: "book-open",
             link: "paper-analysis/index.html"
+        }
+    ];
+
+    // Mock Data for In Development
+    const development = [
+        {
+            title_en: "News Radar",
+            title_zh: "新闻雷达",
+            excerpt_en: "Automatically tracking and categorizing PRNewswire feed to detect market-moving news.",
+            excerpt_zh: "自动追踪并对美通社新闻进行分类，捕捉影响市场的重磅信息。",
+            tools: "JavaScript, Python, GitHub Actions",
+            icon: "radar",
+            link: "news-radar.html"
         }
     ];
 
@@ -141,6 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
         updateStaticTexts();
         renderCards(projects, "projects-container", "View Project", "查看项目");
         renderCards(analyses, "analysis-container", "View Analysis", "查看分析");
+        renderCards(development, "development-container", "View Progress", "查看进度");
         lucide.createIcons();
     };
 
