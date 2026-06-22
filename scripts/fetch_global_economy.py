@@ -72,7 +72,7 @@ def send_discord_alert(webhook_url, alert_messages):
         return
         
     content = "🚨 **CasualStudy AI Economy Radar Alert** 🚨\n\n"
-    content += "The following new/unmatched models are experiencing explosive growth (Daily Avg > 100M tokens):\n\n"
+    content += "The following models could not be matched to pricing data:\n\n"
     
     for msg in alert_messages:
         content += f"- {msg}\n"
@@ -343,9 +343,8 @@ def main():
             # Also output GitHub Actions warning
             print(f"::warning::Unmatched model: {slug} ({t_str} tokens over {days_count} days)")
             
-            # Check for Discord alert threshold (100M daily average)
-            if daily_avg >= 100_000_000:
-                discord_alerts.append(f"**{slug}** ({t_str} tokens over {days_count} days. Avg: {daily_avg/1e6:.1f}M/day)")
+            # Add ALL unmatched models to Discord alerts
+            discord_alerts.append(f"**{slug}** ({t_str} tokens over {days_count} days. Avg: {daily_avg/1e6:.1f}M/day)")
                 
         print("="*70)
         print("  These models' revenue is NOT included in the total.")
