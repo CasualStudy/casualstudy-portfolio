@@ -11,6 +11,7 @@ RANKINGS_API_URL = "https://openrouter.ai/api/v1/datasets/rankings-daily"
 
 DATA_FILE = "data/openrouter-global.json"
 PRICES_FILE = "data/openrouter-prices.json"
+USAGE_FILE = "data/openrouter-usage.json"
 
 
 def fetch_models():
@@ -63,8 +64,47 @@ def fetch_rankings(api_key):
             return [], {}
     except Exception as e:
         print(f"Error fetching rankings: {e}")
-        return [], {}
+        return all_data, {"latest_date": data.get("latest_date")}
 
+def merge_raw_usage(new_rankings):
+    """
+    Merge the newly fetched 30-day rankings data with the historical database.
+    This ensures no raw usage data is ever lost.
+    Returns the complete historical rankings data as a flat list.
+    """
+    # Load existing usage
+    usage_history = {}
+    if os.path.exists(USAGE_FILE):
+        try:
+            with open(USAGE_FILE, "r") as f:
+                usage_history = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            usage_history = {}
+
+    # Merge new data
+    for r in new_rankings:
+        date = r.get("date", "")
+        slug = r.get("model_permaslug", "")
+        if not date or not slug:
+            continue
+            
+        if date not in usage_history:
+            usage_history[date] = {}
+            
+        usage_history[date][slug] = r
+
+    # Save merged data
+    os.makedirs(os.path.dirname(USAGE_FILE), exist_ok=True)
+    with open(USAGE_FILE, "w") as f:
+        json.dump(usage_history, f, indent=2)
+
+    # Convert back to flat list for processing
+    flat_list = []
+    for date in sorted(usage_history.keys()):
+        for slug in usage_history[date]:
+            flat_list.append(usage_history[date][slug])
+            
+    return flat_list
 
 def match_model(permaslug, models_dict):
     """
@@ -239,6 +279,9 @@ def main():
         print("No rankings data available. Exiting.")
         return
 
+    # Merge and get full historical usage
+    full_rankings_data = merge_raw_usage(rankings_data)
+
     # Load historical prices
     prices_history = {}
     if os.path.exists(PRICES_FILE):
@@ -248,7 +291,7 @@ def main():
         except (json.JSONDecodeError, FileNotFoundError):
             prices_history = {}
 
-    daily_results, unmatched, updated_prices = process_rankings(rankings_data, models, prices_history)
+    daily_results, unmatched, updated_prices = process_rankings(full_rankings_data, models, prices_history)
 
     if not daily_results:
         print("No revenue data could be calculated (model matching failed). Exiting.")
