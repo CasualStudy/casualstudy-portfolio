@@ -72,16 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "ECharts, Python",
             icon: "trending-up",
             link: "inclusion-study.html"
-        },
-        {
-            title_en: "Quantitative Paper Analysis",
-            title_zh: "量化论文分析库",
-            excerpt_en: "Deep dives into SSRN and Quantpedia trading strategies, replicated and analyzed.",
-            excerpt_zh: "深入剖析 SSRN 和 Quantpedia 前沿交易策略，代码复现与实证分析。",
-            tools: "Python, Jupyter",
-            icon: "book-open",
-            link: "paper-analysis/index.html"
-        }
     ];
 
     // Mock Data for In Development
@@ -94,6 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "JavaScript, Python, GitHub Actions",
             icon: "radar",
             link: "news-radar.html"
+        },
+        {
+            title_en: "Quantitative Paper Analysis",
+            title_zh: "量化论文分析库",
+            excerpt_en: "Deep dives into SSRN and Quantpedia trading strategies, replicated and analyzed.",
+            excerpt_zh: "深入剖析 SSRN 和 Quantpedia 前沿交易策略，代码复现与实证分析。",
+            tools: "Python, Jupyter",
+            icon: "book-open",
+            link: "paper-analysis/index.html"
         }
     ];
 
