@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ECharts Instances
     let trendChart = null;
     let rankingChart = null;
+    let modelTrendChart = null;
     
     let rawData = [];
     let currentTimeframe = 'daily';
@@ -69,13 +70,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     function initCharts() {
         const trendContainer = document.getElementById('trend-chart');
         const rankingContainer = document.getElementById('ranking-chart');
+        const modelTrendContainer = document.getElementById('model-trend-chart');
 
         if (trendContainer) trendChart = echarts.init(trendContainer);
         if (rankingContainer) rankingChart = echarts.init(rankingContainer);
+        if (modelTrendContainer) modelTrendChart = echarts.init(modelTrendContainer);
 
         window.addEventListener('resize', () => {
             if (trendChart) trendChart.resize();
             if (rankingChart) rankingChart.resize();
+            if (modelTrendChart) modelTrendChart.resize();
         });
     }
 
@@ -321,6 +325,118 @@ document.addEventListener('DOMContentLoaded', async () => {
         rankingChart.setOption(option);
     }
 
+    function renderModelTrendChart(data) {
+        if (!modelTrendChart || !data || data.length === 0) return;
+
+        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const textColor = isDarkMode ? '#e2e8f0' : '#1e293b';
+        const axisColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+        const dates = data.map(item => item.date);
+        
+        // 1. Calculate overall revenue for all models across this timeframe
+        const overallModelRev = {};
+        const modelNamesMap = {}; // mapping id to name
+        
+        data.forEach(day => {
+            if (day.models) {
+                day.models.forEach(m => {
+                    if (!overallModelRev[m.id]) {
+                        overallModelRev[m.id] = 0;
+                        let cleanName = m.name || m.id;
+                        if (cleanName.includes(': ')) cleanName = cleanName.split(': ')[1];
+                        modelNamesMap[m.id] = cleanName;
+                    }
+                    overallModelRev[m.id] += m.revenue;
+                });
+            }
+        });
+
+        // 2. Get Top 20 models
+        const top20ModelIds = Object.keys(overallModelRev)
+            .sort((a, b) => overallModelRev[b] - overallModelRev[a])
+            .slice(0, 20);
+
+        // 3. Build series data and legend data
+        const seriesData = [];
+        const legendData = [];
+        const selected = {};
+
+        top20ModelIds.forEach((id, index) => {
+            const modelName = modelNamesMap[id];
+            legendData.push(modelName);
+            
+            // Default select top 5
+            selected[modelName] = index < 5;
+
+            const seriesRevenues = data.map(day => {
+                const modelInDay = day.models ? day.models.find(m => m.id === id) : null;
+                return modelInDay ? modelInDay.revenue : 0;
+            });
+
+            seriesData.push({
+                name: modelName,
+                type: 'line',
+                smooth: true,
+                symbol: 'none', // clean lines without dots everywhere
+                lineStyle: { width: 2 },
+                data: seriesRevenues
+            });
+        });
+
+        const option = {
+            title: {
+                text: 'Top Models Revenue Trend',
+                left: 'center',
+                textStyle: { color: textColor, fontWeight: '600' }
+            },
+            tooltip: {
+                trigger: 'axis',
+                backgroundColor: isDarkMode ? 'rgba(15, 23, 42, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+                borderColor: axisColor,
+                textStyle: { color: textColor },
+                valueFormatter: (value) => '$' + value.toLocaleString('en-US', { maximumFractionDigits: 0 })
+            },
+            legend: {
+                type: 'scroll',
+                orient: 'vertical',
+                right: 10,
+                top: 'middle',
+                data: legendData,
+                selected: selected,
+                textStyle: { color: textColor, fontSize: 11 },
+                formatter: function (name) {
+                    return name.length > 20 ? name.substring(0, 20) + '...' : name;
+                }
+            },
+            grid: {
+                left: '3%',
+                right: 220, // leave space for legend
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: dates,
+                axisLine: { lineStyle: { color: axisColor } },
+                axisLabel: { color: textColor }
+            },
+            yAxis: {
+                type: 'value',
+                axisLine: { show: false },
+                splitLine: { lineStyle: { color: axisColor, type: 'dashed' } },
+                axisLabel: { 
+                    color: textColor,
+                    formatter: (value) => '$' + (value >= 1000 ? (value / 1000).toFixed(1) + 'k' : value)
+                }
+            },
+            series: seriesData
+        };
+
+        modelTrendChart.setOption(option);
+    }
+
     async function init() {
         initCharts();
         const data = await fetchData();
@@ -329,6 +445,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const latestData = data[data.length - 1];
             updateStatsCards(latestData);
             renderTrendChart(rawData);
+            renderModelTrendChart(rawData);
             renderRankingChart(latestData);
             
             // Setup toggle buttons
@@ -351,9 +468,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                     currentTimeframe = target.getAttribute('data-tf');
                     
                     if (currentTimeframe === 'weekly') {
-                        renderTrendChart(aggregateWeeklyData(rawData));
+                        const weeklyData = aggregateWeeklyData(rawData);
+                        renderTrendChart(weeklyData);
+                        renderModelTrendChart(weeklyData);
                     } else {
                         renderTrendChart(rawData);
+                        renderModelTrendChart(rawData);
                     }
                 });
             });
@@ -365,9 +485,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async () => {
         if (rawData && rawData.length > 0) {
             if (currentTimeframe === 'weekly') {
-                renderTrendChart(aggregateWeeklyData(rawData));
+                const weeklyData = aggregateWeeklyData(rawData);
+                renderTrendChart(weeklyData);
+                renderModelTrendChart(weeklyData);
             } else {
                 renderTrendChart(rawData);
+                renderModelTrendChart(rawData);
             }
             renderRankingChart(rawData[rawData.length - 1]);
         }
