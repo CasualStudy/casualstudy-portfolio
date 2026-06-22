@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         const textColor = isDarkMode ? '#e2e8f0' : '#1e293b';
         const axisColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+        const isMobile = window.innerWidth <= 768;
 
         const dates = data.map(item => item.date);
         const revenues = data.map(item => item.total_revenue);
@@ -172,9 +173,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 textStyle: { color: textColor }
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                left: isMobile ? '2%' : '3%',
+                right: isMobile ? '5%' : '4%',
+                bottom: isMobile ? '5%' : '3%',
                 containLabel: true
             },
             xAxis: {
@@ -279,9 +280,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 textStyle: { color: textColor }
             },
             grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
+                left: isMobile ? '2%' : '3%',
+                right: isMobile ? '5%' : '8%',
+                bottom: isMobile ? '5%' : '3%',
                 containLabel: true
             },
             xAxis: {
@@ -398,9 +399,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
             legend: {
                 type: 'scroll',
-                orient: 'vertical',
-                right: 10,
-                top: 'middle',
+                orient: isMobile ? 'horizontal' : 'vertical',
+                right: isMobile ? 'center' : 10,
+                bottom: isMobile ? 0 : 'auto',
+                top: isMobile ? 'auto' : 'middle',
                 data: legendData,
                 selected: selected,
                 textStyle: { color: textColor, fontSize: 11 },
@@ -409,9 +411,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             },
             grid: {
-                left: '3%',
-                right: 220, // leave space for legend
-                bottom: '3%',
+                left: isMobile ? '2%' : '3%',
+                right: isMobile ? '5%' : 220,
+                bottom: isMobile ? 50 : '3%',
                 containLabel: true
             },
             xAxis: {
