@@ -180,17 +180,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 {
                     name: 'Revenue',
                     type: 'line',
-                    smooth: true,
                     symbol: 'circle',
-                    symbolSize: 8,
+                    symbolSize: 6,
                     itemStyle: {
-                        color: '#6366f1' // Indigo-500
+                        color: '#3b82f6' // Blue-500
                     },
-                    areaStyle: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                            { offset: 0, color: 'rgba(99, 102, 241, 0.5)' },
-                            { offset: 1, color: 'rgba(99, 102, 241, 0.05)' }
-                        ])
+                    lineStyle: {
+                        width: 2
                     },
                     data: revenues
                 }
