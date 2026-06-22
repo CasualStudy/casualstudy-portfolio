@@ -108,6 +108,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const excerpt = currentLang === 'zh' ? item.excerpt_zh : item.excerpt_en;
             let footerInfo = item.date || item.tech || item.tools;
 
+            card.style.cursor = "pointer";
+            card.onclick = () => {
+                if (item.link) window.location.href = item.link;
+            };
+
             card.innerHTML = `
                 <div class="card-icon">
                     <i data-lucide="${item.icon}"></i>
