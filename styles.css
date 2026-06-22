@@ -378,8 +378,14 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.projects-grid, .analysis-grid {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+.projects-grid, .analysis-grid, .development-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 600px) {
+    .projects-grid, .analysis-grid, .development-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================
