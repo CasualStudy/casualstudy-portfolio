@@ -332,6 +332,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         const textColor = isDarkMode ? '#e2e8f0' : '#1e293b';
         const axisColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+        const isMobile = window.innerWidth <= 768;
 
         const dates = data.map(item => item.date);
         
