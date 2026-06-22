@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "ECharts, Python",
             icon: "trending-up",
             link: "inclusion-study.html"
+        }
     ];
 
     // Mock Data for In Development
