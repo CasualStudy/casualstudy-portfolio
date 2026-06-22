@@ -10,6 +10,7 @@ MODELS_API_URL = "https://openrouter.ai/api/v1/models"
 RANKINGS_API_URL = "https://openrouter.ai/api/v1/datasets/rankings-daily"
 
 DATA_FILE = "data/openrouter-global.json"
+PRICES_FILE = "data/openrouter-prices.json"
 
 
 def fetch_models():
@@ -132,14 +133,12 @@ def match_model(permaslug, models_dict):
     return None
 
 
-def process_rankings(rankings_data, models_dict):
+def process_rankings(rankings_data, models_dict, prices_history):
     """
     Process the raw rankings data (which spans ~30 days) into
-    per-date revenue entries.
+    per-date revenue entries, using historical prices if available.
 
-    Returns: (result_dict, unmatched_list)
-    - result_dict: { "2026-06-20": { "total_revenue": ..., "models": [...] }, ... }
-    - unmatched_list: [{ "slug": ..., "date": ..., "total_tokens": ... }, ...]
+    Returns: (result_dict, unmatched_list, updated_prices_history)
     """
     # Group records by date
     by_date = {}
@@ -168,9 +167,19 @@ def process_rankings(rankings_data, models_dict):
 
         m_info = models_dict[matched_id]
 
-        # Estimate revenue: use average of prompt and completion price
-        # since the API only provides total_tokens (not split by prompt/completion)
-        avg_price = (m_info["prompt_price"] + m_info["completion_price"]) / 2
+        # Determine price: use historical price if locked, else live price
+        live_avg_price = (m_info["prompt_price"] + m_info["completion_price"]) / 2
+        
+        if date not in prices_history:
+            prices_history[date] = {}
+            
+        if matched_id in prices_history[date]:
+            avg_price = prices_history[date][matched_id]
+        else:
+            # Lock in the price for this date and model
+            avg_price = live_avg_price
+            prices_history[date][matched_id] = avg_price
+
         revenue = total_tokens * avg_price
 
         if date not in by_date:
@@ -195,7 +204,7 @@ def process_rankings(rankings_data, models_dict):
             "model_count": len(model_list),
         }
 
-    return result, dict(unmatched)
+    return result, dict(unmatched), prices_history
 
 
 def main():
@@ -211,7 +220,16 @@ def main():
         print("No rankings data available. Exiting.")
         return
 
-    daily_results, unmatched = process_rankings(rankings_data, models)
+    # Load historical prices
+    prices_history = {}
+    if os.path.exists(PRICES_FILE):
+        try:
+            with open(PRICES_FILE, "r") as f:
+                prices_history = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            prices_history = {}
+
+    daily_results, unmatched, updated_prices = process_rankings(rankings_data, models, prices_history)
 
     if not daily_results:
         print("No revenue data could be calculated (model matching failed). Exiting.")
@@ -270,9 +288,13 @@ def main():
     # Ensure directory exists
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
-    # Save
+    # Save global economy data
     with open(DATA_FILE, "w") as f:
         json.dump(history, f, indent=2)
+
+    # Save updated prices history
+    with open(PRICES_FILE, "w") as f:
+        json.dump(updated_prices, f, indent=2)
 
     latest_date = sorted(daily_results.keys())[-1]
     latest = daily_results[latest_date]
