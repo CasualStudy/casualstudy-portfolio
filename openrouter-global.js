@@ -132,8 +132,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (item.models && item.models.length > 0) {
                         html += `<div style="font-size: 0.85em; line-height: 1.5;">`;
                         const limit = Math.min(10, item.models.length);
+                        let top10Revenue = 0;
                         for (let i = 0; i < limit; i++) {
                             const m = item.models[i];
+                            top10Revenue += m.revenue;
                             let name = m.name || m.id;
                             if (name.includes(': ')) name = name.split(': ')[1];
                             if (name.length > 25) name = name.substring(0, 25) + '...';
@@ -146,6 +148,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         <span style="font-weight: 600;">${revStr}</span>
                                      </div>`;
                         }
+                        
+                        const othersRevenue = item.total_revenue - top10Revenue;
+                        if (othersRevenue > 0) {
+                            let revStr = '$' + (othersRevenue >= 1000000 ? (othersRevenue / 1000000).toFixed(2) + 'M' : 
+                                         (othersRevenue >= 1000 ? (othersRevenue / 1000).toFixed(1) + 'k' : othersRevenue.toLocaleString('en-US', { maximumFractionDigits: 0 })));
+                            html += `<div style="display: flex; justify-content: space-between; gap: 16px; margin-top: 4px; padding-top: 4px; border-top: 1px dashed rgba(128,128,128,0.4);">
+                                        <span style="opacity: 0.8; font-style: italic;">11. Others</span>
+                                        <span style="font-weight: 600; opacity: 0.8;">${revStr}</span>
+                                     </div>`;
+                        }
+                        
                         html += `</div>`;
                     }
                     return html;
@@ -206,7 +219,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Top 10 models for cleaner display
         const top10 = latestData.models.slice(0, 10).reverse(); // Reverse for horizontal bar chart (highest at top)
 
+        // Calculate "Others" revenue
+        let top10Revenue = top10.reduce((sum, m) => sum + m.revenue, 0);
+        let othersRevenue = latestData.total_revenue - top10Revenue;
+
+        if (othersRevenue > 0) {
+            top10.unshift({ name: 'Others', revenue: othersRevenue });
+        }
+
         const modelNames = top10.map(m => {
+            if (m.name === 'Others') return 'Others';
             let name = m.name || m.id;
             if (name.includes(': ')) name = name.split(': ')[1];
             // Truncate long names
@@ -229,6 +251,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const value = params[0].value;
                     const modelIndex = params[0].dataIndex;
                     const fullModelData = top10[modelIndex];
+                    
+                    if (fullModelData.name === 'Others') {
+                        return `
+                            <strong>Others (Models 11+)</strong><br/>
+                            Revenue: $${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                        `;
+                    }
+
                     const tokens = fullModelData.total_tokens || fullModelData.prompt_tokens + fullModelData.completion_tokens || 0;
                     let tokenStr;
                     if (tokens >= 1e9) tokenStr = (tokens / 1e9).toFixed(2) + 'B';
