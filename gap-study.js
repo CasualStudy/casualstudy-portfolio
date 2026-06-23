@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             xAxis: {
                 type: 'category',
-                data: ['30Y', '10Y', '5Y'],
+                data: ['5Y', '10Y', '30Y'],
                 splitArea: { show: true },
                 axisLabel: { color: '#000', fontWeight: 'bold', fontSize: 13 }
             },
