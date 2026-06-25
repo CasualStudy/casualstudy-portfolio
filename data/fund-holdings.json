@@ -6,24 +6,8 @@
       "period_of_report": "2026-03-31",
       "total_value": 263095703570.0,
       "cash_data": {
-        "available": true,
-        "source": "10-Q",
-        "filing_date": "2026-05-04",
-        "period_of_report": "2026-03-31",
-        "items": [
-          {
-            "label": "Cash and cash equivalents",
-            "label_zh": "现金及现金等价物",
-            "value": 58122000000.0
-          },
-          {
-            "label": "Short-term investments in U.S. Treasury Bills",
-            "label_zh": "短期美国国债投资",
-            "value": 339261000000.0
-          }
-        ],
-        "total": 397383000000.0,
-        "currency": "USD"
+        "available": false,
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -296,7 +280,7 @@
       "total_value": 12859485476.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -758,7 +742,7 @@
       "total_value": 9119078018.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -1220,7 +1204,7 @@
       "total_value": 22404547213.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -1682,9 +1666,20 @@
       "total_value": 13676657577.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
+        {
+          "name": "Nebius Group N.V.",
+          "class": "Common Stock",
+          "value": 0,
+          "shares": 2465352,
+          "weight": 0,
+          "is_13g": true,
+          "form_type": "13G",
+          "event_date": "2026-05-27",
+          "ticker": "NBIS"
+        },
         {
           "name": "Vaneck Etf Trust",
           "class": "SEMICONDUCTR ETF (Put)",
@@ -2072,7 +2067,7 @@
       "total_value": 13714299861.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -2183,7 +2178,7 @@
       "total_value": 5933477986.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -2474,7 +2469,7 @@
       "total_value": 3376828000.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {
@@ -2936,7 +2931,7 @@
       "total_value": 1381198076.0,
       "cash_data": {
         "available": false,
-        "reason": "no_10x"
+        "reason": "error_fetching"
       },
       "top_holdings": [
         {

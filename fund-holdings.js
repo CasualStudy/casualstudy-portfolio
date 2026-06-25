@@ -51,11 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
         'soros': 'assets/fund-portraits/soros.jpg',
         'bridgewater': 'assets/fund-portraits/bridgewater.jpg',
         'pershing_square': 'assets/fund-portraits/pershing_square.jpg',
-        'appaloosa': 'assets/fund-portraits/appaloosa.jpg'
-        // situational_awareness: no freely licensed portrait available
-        // (Leopold Aschenbrenner is a private individual with no Wikimedia Commons image)
-        // duquesne / scion: Stanley Druckenmiller and Michael Burry are famously
-        // private — no freely licensed portrait exists on Wikimedia Commons.
+        'appaloosa': 'assets/fund-portraits/appaloosa.jpg',
+        'situational_awareness': 'https://pbs.twimg.com/profile_images/1798031520665518080/j-U7aF9H_400x400.jpg' // Leopold's Twitter avatar
     };
 
     // Initials shown in the donut center when no portrait image is available.
