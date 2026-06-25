@@ -1,2 +1,8 @@
 paper-analysis/scripts/
 node_modules/
+# edgartools cache (created by scripts/fetch_13f.py)
+.edgar_data/
+.edgar_cache/
+.venv/
+test_api.py
+.github/

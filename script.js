@@ -72,6 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "ECharts, Python",
             icon: "trending-up",
             link: "inclusion-study.html"
+        },
+        {
+            title_en: "Institutional Holdings Tracker",
+            title_zh: "机构持仓追踪",
+            excerpt_en: "Interactive dashboard tracking 13F filings of top funds like Buffett, Soros and ARK.",
+            excerpt_zh: "交互式仪表盘，追踪巴菲特、索罗斯和 ARK 等顶级基金的最新的 13F 季度持仓。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "pie-chart",
+            link: "fund-holdings.html"
         }
     ];
 

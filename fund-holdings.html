@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Holdings Tracker - CasualStudy023</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="libs/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        /* ============ Page Shell — matches homepage visionOS light glass ============ */
+        body {
+            color: var(--text-primary, #1d1d1f);
+            font-feature-settings: "tnum" 1;
+        }
+
+        .tracker-container {
+            max-width: 1280px;
+            margin: 90px auto 40px;
+            padding: 0 24px;
+        }
+
+        /* ============ Glass Panels (use homepage variables) ============ */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 24px;
+            box-shadow:
+                0 8px 32px rgba(31, 38, 135, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(30px) saturate(1.5);
+            -webkit-backdrop-filter: blur(30px) saturate(1.5);
+            padding: 28px;
+        }
+
+        /* ============ Controls Panel ============ */
+        .controls-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 20px 28px;
+        }
+
+        .select-group {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .select-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6e6e73;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        select.glass-select {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            color: #1d1d1f;
+            padding: 10px 36px 10px 16px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236e6e73' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+        }
+        select.glass-select:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-color: rgba(0, 113, 227, 0.3);
+        }
+        select.glass-select:focus {
+            border-color: #0071e3;
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+        }
+        select.glass-select option {
+            background: #fff;
+            color: #1d1d1f;
+        }
+
+        /* Total Value Display */
+        .controls-panel .value-block {
+            text-align: right;
+        }
+        #fund-total-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0;
+            color: #1d1d1f;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.02em;
+        }
+        .fund-meta {
+            color: #515154;
+            font-size: 0.8rem;
+            margin-top: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ============ Dashboard Grid ============ */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 24px;
+        }
+
+        #chart-container {
+            width: 100%;
+            height: 460px;
+        }
+
+        /* ============ Panel Titles ============ */
+        h3.panel-title {
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #515154;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            padding-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Cutoff date badge in chart panel title */
+        .cutoff-date {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #0071e3;
+            background: rgba(0, 113, 227, 0.08);
+            padding: 3px 10px;
+            border-radius: 99px;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+
+        /* ============ Sudden Stakes (13G/13D) Panel ============ */
+        .sudden-stakes-panel {
+            margin-top: 24px;
+        }
+
+        .stakes-count-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #fff;
+            background: #0071e3;
+            padding: 3px 10px;
+            border-radius: 99px;
+            text-transform: none;
+            letter-spacing: 0.02em;
+        }
+        .stakes-count-badge.empty {
+            background: rgba(0, 0, 0, 0.1);
+            color: #86868b;
+        }
+
+        .stakes-explainer {
+            font-size: 0.82rem;
+            color: #515154;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            background: rgba(0, 113, 227, 0.04);
+            border-left: 3px solid #0071e3;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .stakes-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+
+        .stake-card {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            padding: 18px 20px;
+            transition: all 0.25s ease;
+        }
+        .stake-card:hover {
+            background: rgba(255, 255, 255, 0.6);
+            border-color: rgba(0, 113, 227, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(31, 38, 135, 0.1);
+        }
+
+        .stake-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .stake-card-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            line-height: 1.3;
+        }
+        .stake-card-type {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #fff;
+            background: #0071e3;
+            padding: 3px 8px;
+            border-radius: 6px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .stake-card-meta {
+            font-size: 0.8rem;
+            color: #515154;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .stake-card-date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: #0071e3;
+            font-weight: 600;
+            padding-top: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .stake-card-date::before {
+            content: '📅';
+            font-size: 0.9em;
+        }
+
+        .stakes-empty {
+            text-align: center;
+            padding: 32px 16px;
+            color: #86868b;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* ============ Cash Position Panel ============ */
+        .cash-panel {
+            margin-top: 24px;
+        }
+
+        .cash-explainer {
+            font-size: 0.82rem;
+            color: #515154;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            background: rgba(34, 197, 94, 0.06);
+            border-left: 3px solid #22c55e;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .cash-summary {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(0, 113, 227, 0.04));
+            border-radius: 14px;
+            border: 1px solid rgba(34, 197, 94, 0.15);
+            flex-wrap: wrap;
+        }
+        .cash-summary-total {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+            font-variant-numeric: tabular-nums;
+        }
+        .cash-summary-label {
+            font-size: 0.78rem;
+            color: #515154;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .cash-summary-period {
+            margin-left: auto;
+            font-size: 0.8rem;
+            color: #0071e3;
+            font-weight: 600;
+        }
+
+        .cash-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .cash-item-card {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            padding: 18px 20px;
+            transition: all 0.25s ease;
+        }
+        .cash-item-card:hover {
+            background: rgba(255, 255, 255, 0.7);
+            border-color: rgba(34, 197, 94, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(31, 38, 135, 0.08);
+        }
+        .cash-item-label {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+        .cash-item-label-zh {
+            font-size: 0.78rem;
+            color: #86868b;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .cash-item-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 4px;
+        }
+        .cash-item-pct {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #22c55e;
+        }
+
+        .cash-source-badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #22c55e;
+            background: rgba(34, 197, 94, 0.1);
+            padding: 3px 10px;
+            border-radius: 99px;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+
+        .cash-unavailable {
+            text-align: center;
+            padding: 32px 16px;
+            color: #86868b;
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        .cash-unavailable-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 600px) {
+            .cash-summary-total {
+                font-size: 1.6rem;
+            }
+            .cash-summary-period {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+
+        /* ============ Holdings Table ============ */
+        .holdings-note {
+            font-size: 0.78rem;
+            color: #515154;
+            margin-top: -12px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .holdings-table-wrapper {
+            max-height: 460px;
+            overflow-y: auto;
+            border-radius: 12px;
+        }
+        .holdings-table-wrapper::-webkit-scrollbar {
+            width: 6px;
+        }
+        .holdings-table-wrapper::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .holdings-table-wrapper::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+        .holdings-table-wrapper::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        table.glass-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-variant-numeric: tabular-nums;
+        }
+        table.glass-table th {
+            position: sticky;
+            top: 0;
+            background: rgba(245, 245, 247, 0.95);
+            padding: 12px 16px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #6e6e73;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+        table.glass-table td {
+            padding: 13px 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            color: #1d1d1f;
+            vertical-align: middle;
+            font-size: 0.92rem;
+        }
+        /* Zebra striping for easier row scanning */
+        table.glass-table tbody tr:nth-child(even) {
+            background: rgba(0, 0, 0, 0.018);
+        }
+        table.glass-table tr:hover {
+            background: rgba(0, 113, 227, 0.06) !important;
+        }
+
+        .company-name {
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 0.95rem;
+        }
+        .company-ticker {
+            font-size: 0.78rem;
+            color: #515154;
+            margin-top: 3px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* 13G highlight — subtle accent instead of harsh yellow */
+        tr.is-13g-row td {
+            background: rgba(0, 113, 227, 0.04);
+        }
+        tr.is-13g-row .company-name::after {
+            content: ' ✨';
+            font-size: 0.8em;
+        }
+
+        /* ============ Section Header ============ */
+        .section-header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+        }
+        .section-header p {
+            color: #6e6e73;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        /* ============ Responsive ============ */
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            .controls-panel {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            .controls-panel .value-block {
+                text-align: left;
+            }
+            #fund-total-value {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo lang-text" data-en="← Back to Home" data-zh="← 返回主页">← Back to Home</a>
+            <div class="nav-links">
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="tracker-container">
+        <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+            <h1 class="lang-text" data-en="Institutional Holdings Tracker" data-zh="机构持仓追踪">Institutional Holdings Tracker</h1>
+            <p class="lang-text" data-en="13F Filings analysis for top funds." data-zh="顶级基金 13F 文件持仓分析。">13F Filings analysis for top funds.</p>
+        </div>
+
+        <div class="glass-panel controls-panel">
+            <div class="select-group">
+                <label for="fund-select" class="lang-text" data-en="Select Fund" data-zh="选择基金">Select Fund</label>
+                <select id="fund-select" class="glass-select">
+                    <!-- Options populated by JS -->
+                </select>
+            </div>
+            <div class="value-block">
+                <h3 id="fund-total-value">$0.00</h3>
+                <div class="fund-meta" id="fund-meta-info">Filing Date: -</div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="glass-panel">
+                <h3 class="panel-title">
+                    <span class="lang-text" data-en="Portfolio Distribution" data-zh="投资组合分布">Portfolio Distribution</span>
+                    <span id="chart-cutoff-date" class="cutoff-date"></span>
+                </h3>
+                <div style="position: relative; width: 100%; height: 460px;">
+                    <div id="chart-container" style="width: 100%; height: 100%;"></div>
+                    <img id="fund-center-img" src="" style="display:none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.6); pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 10;">
+                    <div id="fund-center-initials" style="display:none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 140px; height: 140px; border-radius: 50%; display: none; align-items: center; justify-content: center; font-size: 3rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; border: 3px solid rgba(255,255,255,0.6); pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 10; background: linear-gradient(135deg, #0071e3 0%, #5e5ce6 100%);"></div>
+                </div>
+            </div>
+            <div class="glass-panel">
+                <h3 class="panel-title lang-text" data-en="Top Holdings" data-zh="主要重仓股">Top Holdings</h3>
+                <div class="holdings-table-wrapper">
+                    <table class="glass-table">
+                        <thead>
+                            <tr>
+                                <th class="lang-text" data-en="Company" data-zh="公司">Company</th>
+                                <th class="lang-text" data-en="Value" data-zh="价值" style="text-align: right;">Value</th>
+                                <th class="lang-text" data-en="Weight" data-zh="权重" style="text-align: right;">Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody id="holdings-tbody">
+                            <!-- Rows populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cash Position Panel (from 10-K / 10-Q balance sheet) -->
+        <div class="glass-panel cash-panel" id="cash-panel">
+            <h3 class="panel-title">
+                <span class="lang-text" data-en="Cash Position" data-zh="现金头寸">Cash Position</span>
+                <span id="cash-source-badge" class="cash-source-badge"></span>
+            </h3>
+            <p class="cash-explainer lang-text" data-en="Cash and short-term U.S. Treasury Bill holdings from the fund's latest 10-K / 10-Q balance sheet. 13F filings do not report cash (cash is not a 13F-reportable security), so this section is the authoritative source. Private investment advisers (e.g. ARK, Soros, Bridgewater) do not file 10-K / 10-Q, in which case cash is not publicly disclosed." data-zh="现金与短期美国国债头寸，来自该基金最新的 10-K / 10-Q 资产负债表。13F 文件不披露现金（现金不属于 13F 报告范围内的证券），因此本板块才是权威数据来源。私人投资顾问（如 ARK、索罗斯、桥水）不提交 10-K / 10-Q，其现金头寸不予公开披露。">Cash and short-term U.S. Treasury Bill holdings from the fund's latest 10-K / 10-Q balance sheet. 13F filings do not report cash (cash is not a 13F-reportable security), so this section is the authoritative source. Private investment advisers (e.g. ARK, Soros, Bridgewater) do not file 10-K / 10-Q, in which case cash is not publicly disclosed.</p>
+            <div id="cash-content">
+                <!-- populated by JS -->
+            </div>
+        </div>
+
+        <!-- 13G/13D Sudden Stakes Panel -->
+        <div class="glass-panel sudden-stakes-panel" id="sudden-stakes-panel">
+            <h3 class="panel-title">
+                <span class="lang-text" data-en="Recent 13G/13D Activity" data-zh="近期 13G/13D 动态">Recent 13G/13D Activity</span>
+                <span id="stakes-count-badge" class="stakes-count-badge"></span>
+            </h3>
+            <p class="stakes-explainer lang-text" data-en="These are sudden >5% ownership stakes disclosed via 13G/13D filings submitted AFTER the latest 13F quarterly report. Because the purchase price is not reported, these positions cannot be valued and are therefore excluded from the pie chart and total portfolio value above." data-zh="以下是通过 13G/13D 文件披露的突发举牌（持股 >5%），提交时间晚于最新的 13F 季度报告。由于购买价格未披露，无法估值，因此不计入上方饼图和组合总市值。">These are sudden >5% ownership stakes disclosed via 13G/13D filings submitted AFTER the latest 13F quarterly report. Because the purchase price is not reported, these positions cannot be valued and are therefore excluded from the pie chart and total portfolio value above.</p>
+            <div id="sudden-stakes-content" class="stakes-content">
+                <!-- Cards populated by JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-nav glass-footer" style="margin-top: 60px;">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. Data sourced via SEC EDGAR." data-zh="&copy; 2024 随意研究. 数据源自 SEC EDGAR。">&copy; 2024 CasualStudy. Data sourced via SEC EDGAR.</p>
+        </div>
+    </footer>
+
+    <script src="fund-holdings.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
