@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'bridgewater': 'assets/fund-portraits/bridgewater.jpg',
         'pershing_square': 'assets/fund-portraits/pershing_square.jpg',
         'appaloosa': 'assets/fund-portraits/appaloosa.jpg',
-        'situational_awareness': 'assets/fund-portraits/situational_awareness.png'
+        'situational_awareness': 'assets/fund-portraits/situational_awareness.webp'
     };
 
     // Initials shown in the donut center when no portrait image is available.
