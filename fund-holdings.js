@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
         'soros': 'assets/fund-portraits/soros.jpg',
         'bridgewater': 'assets/fund-portraits/bridgewater.jpg',
         'pershing_square': 'assets/fund-portraits/pershing_square.jpg',
-        'appaloosa': 'assets/fund-portraits/appaloosa.jpg'
+        'appaloosa': 'assets/fund-portraits/appaloosa.jpg',
+        'situational_awareness': 'assets/fund-portraits/situational_awareness.png'
     };
 
     // Initials shown in the donut center when no portrait image is available.
