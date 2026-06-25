@@ -13,10 +13,48 @@
     <style>
         .chart-container {
             width: 100%;
-            height: 800px;
-            margin-top: 2rem;
+            height: 640px;
+            margin-top: 1rem;
             position: relative;
             z-index: 2;
+        }
+
+        .chart-legend-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.42);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: var(--radius-md);
+        }
+
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .legend-hint {
+            margin-left: auto;
+            font-size: 0.78rem;
+            color: #3a3a42;
+            opacity: 0.85;
+        }
+
+        .legend-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .legend-dot.up, .legend-dot.down {
+            border-radius: 2px;
         }
         
         .stats-grid {
@@ -29,11 +67,19 @@
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.1);
-            border: 0.5px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.62);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: var(--radius-md);
             padding: 1.5rem;
             text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(0, 0, 0, 0.16);
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .stat-value {
@@ -45,15 +91,51 @@
 
         .stat-label {
             font-size: 0.9rem;
-            color: var(--text-secondary);
+            color: #3a3a42;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .glass-panel.tracker-panel {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(20px) saturate(1.2);
+            -webkit-backdrop-filter: blur(20px) saturate(1.2);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .section-header p {
+            color: #3a3a42;
         }
 
         /* ECharts dark mode optimizations */
         @media (prefers-color-scheme: dark) {
             .stat-card {
-                background: rgba(0, 0, 0, 0.2);
+                background: rgba(20, 22, 30, 0.62);
+                border-color: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            }
+            .stat-card:hover {
+                background: rgba(28, 31, 42, 0.82);
+                border-color: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            }
+            .stat-label {
+                color: #cbd5e1;
+            }
+            .glass-panel.tracker-panel {
+                background: rgba(17, 19, 28, 0.78);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+            .section-header p {
+                color: #cbd5e1;
+            }
+            .chart-legend-row {
+                background: rgba(255, 255, 255, 0.03);
+                border-color: rgba(255, 255, 255, 0.08);
+            }
+            .legend-hint {
+                color: #cbd5e1;
             }
         }
     </style>
@@ -84,7 +166,7 @@
 
     <main>
         <section class="section-container" style="padding-top: 2rem;">
-            <div class="glass-panel" style="padding: 3rem; margin-top: 2rem; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px) saturate(1.2); -webkit-backdrop-filter: blur(20px) saturate(1.2);">
+            <div class="glass-panel tracker-panel" style="padding: 3rem; margin-top: 2rem;">
                 <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
                     <h2 class="lang-text" data-en="Fear & Greed Index vs S&P 500" data-zh="恐慌与贪婪指数 vs 标普500">Fear & Greed Index vs S&P 500</h2>
                     <p class="lang-text" data-en="Daily updated data comparing market sentiment against index performance." data-zh="每日更新数据：对比市场情绪与大盘表现。">Daily updated data comparing market sentiment against index performance.</p>
@@ -106,6 +188,18 @@
                     </div>
                 </div>
 
+                <div class="chart-legend-row">
+                    <span class="legend-item">
+                        <span class="legend-dot up" style="background:#26A69A;"></span>
+                        <span class="legend-dot down" style="background:#EF5350;"></span>
+                        <span class="lang-text" data-en="S&P 500 (top)" data-zh="标普 500（上图）">S&P 500 (top)</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#2962FF;"></span>
+                        <span class="lang-text" data-en="Fear & Greed Index (bottom, with zone shading)" data-zh="恐慌贪婪指数（下图，含分区背景）">Fear & Greed Index (bottom, with zone shading)</span>
+                    </span>
+                    <span class="legend-hint lang-text" data-en="One shared time slider below controls both charts." data-zh="下方一个共享时间滑块同时控制两个图。">One shared time slider below controls both charts.</span>
+                </div>
                 <div id="chart" class="chart-container"></div>
             </div>
         </section>
