@@ -51,8 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'soros': 'assets/fund-portraits/soros.jpg',
         'bridgewater': 'assets/fund-portraits/bridgewater.jpg',
         'pershing_square': 'assets/fund-portraits/pershing_square.jpg',
-        'appaloosa': 'assets/fund-portraits/appaloosa.jpg',
-        'situational_awareness': 'https://pbs.twimg.com/profile_images/1798031520665518080/j-U7aF9H_400x400.jpg' // Leopold's Twitter avatar
+        'appaloosa': 'assets/fund-portraits/appaloosa.jpg'
     };
 
     // Initials shown in the donut center when no portrait image is available.
