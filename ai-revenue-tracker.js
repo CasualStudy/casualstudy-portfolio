@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         'amazon':      '#ff9900',  // Amazon orange
         'alibaba':     '#ff6a00',  // Qwen orange
         '01-ai':       '#0ea5e9',  // Yi sky-blue
+        'z-ai':        '#e91e63',  // Zhipu GLM prominent magenta
         'other':       '#94a3b8'   // slate-400
     };
 
