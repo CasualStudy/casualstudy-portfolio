@@ -81,6 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "ECharts, Python, GitHub Actions",
             icon: "pie-chart",
             link: "fund-holdings.html"
+        },
+        {
+            title_en: "Korea Margin Loan Balance",
+            title_zh: "韩国融资融券余额",
+            excerpt_en: "Daily margin loan balance and leverage ratio for KOSPI and KOSDAQ.",
+            excerpt_zh: "每日更新的韩国 KOSPI 和 KOSDAQ 融资余额及杠杆比率跟踪。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "trending-down",
+            link: "korea-margin.html"
         }
     ];
 

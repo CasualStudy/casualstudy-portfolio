@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea Margin Loan Balance - CasualStudy023</title>
+    <meta name="description" content="Korea KOSPI/KOSDAQ margin loan balance history from KOFIA.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="libs/lucide.min.js"></script>
+    <!-- Include ECharts -->
+    <script src="libs/echarts.min.js"></script>
+    <style>
+        .chart-container {
+            width: 100%;
+            height: 560px;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chart-container.chart-leverage {
+            height: 420px;
+        }
+
+        .chart-legend-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.42);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: var(--radius-md);
+        }
+
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .legend-hint {
+            margin-left: auto;
+            font-size: 0.78rem;
+            color: #3a3a42;
+            opacity: 0.85;
+        }
+
+        .legend-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.62);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(0, 0, 0, 0.16);
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #3a3a42;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .stat-sub {
+            font-size: 0.78rem;
+            color: #3a3a42;
+            opacity: 0.85;
+            margin-top: 0.25rem;
+        }
+
+        .stat-delta.up { color: #1f9d44; background: rgba(31,157,68,0.18); padding: 0.1rem 0.4rem; border-radius: 4px; }
+        .stat-delta.down { color: #d62d24; background: rgba(214,45,36,0.18); padding: 0.1rem 0.4rem; border-radius: 4px; }
+        .stat-delta.flat { color: #6e6e73; }
+
+        .glass-panel.tracker-panel {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(20px) saturate(1.2);
+            -webkit-backdrop-filter: blur(20px) saturate(1.2);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .section-header p {
+            color: #3a3a42;
+        }
+
+        .disclaimer {
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            background: rgba(0, 0, 0, 0.04);
+            border-left: 3px solid var(--accent);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #3a3a42;
+            line-height: 1.5;
+        }
+
+        /* ECharts dark mode optimizations */
+        @media (prefers-color-scheme: dark) {
+            .stat-card {
+                background: rgba(20, 22, 30, 0.62);
+                border-color: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            }
+            .stat-card:hover {
+                background: rgba(28, 31, 42, 0.82);
+                border-color: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            }
+            .stat-label {
+                color: #cbd5e1;
+            }
+            .stat-sub {
+                color: #cbd5e1;
+            }
+            .glass-panel.tracker-panel {
+                background: rgba(17, 19, 28, 0.78);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+            .section-header p {
+                color: #cbd5e1;
+            }
+            .chart-legend-row {
+                background: rgba(255, 255, 255, 0.03);
+                border-color: rgba(255, 255, 255, 0.08);
+            }
+            .legend-hint {
+                color: #cbd5e1;
+            }
+            .disclaimer {
+                background: rgba(255, 255, 255, 0.04);
+                color: #cbd5e1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rich background wallpaper -->
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
+            <div class="nav-links">
+                <a href="index.html#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <a href="index.html#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-container" style="padding-top: 2rem;">
+            <div class="glass-panel tracker-panel" style="padding: 3rem; margin-top: 2rem;">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="lang-text" data-en="Korea Margin Loan Balance" data-zh="韩国融资融券余额">Korea Margin Loan Balance</h2>
+                    <p class="lang-text" data-en="Daily margin loan balance for KOSPI and KOSDAQ from KOFIA. All amounts in trillion KRW." data-zh="来自韩国金融投资协会（KOFIA）的 KOSPI 与 KOSDAQ 每日融资余额，单位为万亿韩元。">Daily margin loan balance for KOSPI and KOSDAQ from KOFIA. All amounts in trillion KRW.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Latest Date" data-zh="更新日期">Latest Date</div>
+                        <div class="stat-value" id="stat-date">--</div>
+                        <div class="stat-sub" id="stat-date-sub">&nbsp;</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Total Balance" data-zh="融资余额合计">Total Balance</div>
+                        <div class="stat-value" id="stat-total">--</div>
+                        <div class="stat-sub" id="stat-total-sub">&nbsp;</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="KOSPI Balance" data-zh="KOSPI 融资余额">KOSPI Balance</div>
+                        <div class="stat-value" id="stat-kospi">--</div>
+                        <div class="stat-sub" id="stat-kospi-sub">&nbsp;</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="KOSDAQ Balance" data-zh="KOSDAQ 融资余额">KOSDAQ Balance</div>
+                        <div class="stat-value" id="stat-kosdaq">--</div>
+                        <div class="stat-sub" id="stat-kosdaq-sub">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="chart-legend-row">
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#2962FF;"></span>
+                        <span class="lang-text" data-en="Total" data-zh="合计">Total</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#26A69A;"></span>
+                        <span class="lang-text" data-en="KOSPI" data-zh="KOSPI">KOSPI</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#FF9800;"></span>
+                        <span class="lang-text" data-en="KOSDAQ" data-zh="KOSDAQ">KOSDAQ</span>
+                    </span>
+                    <span class="legend-hint lang-text" data-en="Drag the slider below to zoom. Values in trillion KRW." data-zh="拖动下方滑块可缩放时间范围。单位：万亿韩元。">Drag the slider below to zoom. Values in trillion KRW.</span>
+                </div>
+                <div id="chart" class="chart-container"></div>
+
+                <div class="section-header" style="text-align: left; margin-top: 2.5rem; margin-bottom: 1rem;">
+                    <h3 class="lang-text" data-en="KOSPI Leverage Ratio" data-zh="KOSPI 杠杆比率">KOSPI Leverage Ratio</h3>
+                    <p class="lang-text" data-en="KOSPI margin loan balance divided by total market capitalization. A higher ratio signals more leveraged speculative positioning." data-zh="KOSPI 融资余额 ÷ KOSPI 总市值。比率越高，说明融资杠杆越激进。">KOSPI margin loan balance divided by total market capitalization. A higher ratio signals more leveraged speculative positioning.</p>
+                </div>
+
+                <div class="chart-legend-row">
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#7E57C2;"></span>
+                        <span class="lang-text" data-en="Leverage Ratio %" data-zh="杠杆比率 %">Leverage Ratio %</span>
+                    </span>
+                    <span class="legend-hint lang-text" data-en="Drag the slider to zoom. Ratio = margin balance / total market cap." data-zh="拖动滑块可缩放。比率 = 融资余额 / 总市值。">Drag the slider to zoom. Ratio = margin balance / total market cap.</span>
+                </div>
+                <div id="chart-leverage" class="chart-container chart-leverage"></div>
+
+                <div class="disclaimer">
+                    <span class="lang-text" data-en="Data source: KOFIA (Korea Financial Investment Association). Balance is the outstanding margin loan amount in millions of KRW; displayed converted to trillion KRW. Updated daily by an automated script." data-zh="数据来源：韩国金融投资协会（KOFIA）。余额为融资融券未平仓余额，原始单位为百万韩元，展示时已换算为万亿韩元。由自动化脚本每日更新。">Data source: KOFIA (Korea Financial Investment Association). Balance is the outstanding margin loan amount in millions of KRW; displayed converted to trillion KRW. Updated daily by an automated script.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                    <i data-lucide="message-square"></i>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="korea-margin.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
