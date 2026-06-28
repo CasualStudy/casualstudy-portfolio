@@ -93,6 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
+    // Mock Data for TradingView Indicators
+    const indicators = [
+        {
+            title_en: "Smart Money RVOL System (Smart RVOL)",
+            title_zh: "Smart Money RVOL System (Smart RVOL)",
+            excerpt_en: "A custom TradingView indicator for analyzing relative volume and smart money footprints.",
+            excerpt_zh: "用于分析相对成交量和聪明钱足迹的自定义 TradingView 指标。",
+            tools: "Pine Script",
+            icon: "activity",
+            link: "https://www.tradingview.com/script/rRpmHLGr-Smart-Money-RVOL-System/"
+        }
+    ];
+
     // Mock Data for In Development
     const development = [
         {
@@ -164,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         updateStaticTexts();
         renderCards(projects, "projects-container", "View Project", "查看项目");
         renderCards(analyses, "analysis-container", "View Analysis", "查看分析");
+        renderCards(indicators, "indicators-container", "View Indicator", "查看指标");
         renderCards(development, "development-container", "View Progress", "查看进度");
         lucide.createIcons();
     };
