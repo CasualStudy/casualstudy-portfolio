@@ -378,7 +378,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.projects-grid, .analysis-grid, .development-grid {
+.projects-grid, .analysis-grid, .development-grid, .indicators-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -565,7 +565,8 @@ main {
     .posts-grid,
     .projects-grid,
     .analysis-grid,
-    .development-grid {
+    .development-grid,
+    .indicators-grid {
         grid-template-columns: 1fr;
     }
 
