@@ -37,6 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mock Data for Data Analysis
     const analyses = [
         {
+            title_en: "CFM Flash Market Index",
+            title_zh: "CFM 闪存市场价格指数",
+            excerpt_en: "NAND/DRAM price index and memory product spot price tracking.",
+            excerpt_zh: "NAND/DRAM 价格指数与存储产品现货报价追踪。",
+            tools: "ECharts, Python, GitHub Actions",
+            icon: "database",
+            link: "cfm-market.html"
+        },
+        {
             title_en: "Korea Margin Loan Balance",
             title_zh: "韩国融资融券余额",
             excerpt_en: "Daily margin loan balance and leverage ratio for KOSPI and KOSDAQ.",
@@ -90,6 +99,15 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "ECharts, Python, GitHub Actions",
             icon: "pie-chart",
             link: "fund-holdings.html"
+        },
+        {
+            title_en: "Flash Memory Market Index",
+            title_zh: "闪存市场价格指数",
+            excerpt_en: "NAND & DRAM weekly price index and 100+ storage product prices from CFM (chinaflashmarket.com).",
+            excerpt_zh: "来自 CFM 闪存市场的 NAND/DRAM 周度价格指数，以及 100+ 存储产品现货报价与历史走势。",
+            tools: "ECharts, Python",
+            icon: "memory-stick",
+            link: "cfm-market.html"
         }
     ];
 

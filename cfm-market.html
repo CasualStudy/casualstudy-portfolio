@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFM 闪存市场价格指数 - CasualStudy023</title>
+    <meta name="description" content="NAND/DRAM 价格指数与存储产品现货报价追踪。">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="libs/lucide.min.js"></script>
+    <script src="libs/echarts.min.js"></script>
+    <style>
+        .tracker-panel {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(20px) saturate(1.2);
+            -webkit-backdrop-filter: blur(20px) saturate(1.2);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .section-header p { color: #3a3a42; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.62);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(0, 0, 0, 0.16);
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #3a3a42;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .stat-change {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-top: 0.3rem;
+        }
+        .stat-change.up { color: #e53935; }
+        .stat-change.down { color: #43a047; }
+        .stat-change.flat { color: #757575; }
+
+        .chart-container {
+            width: 100%;
+            height: 480px;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chart-container-sm {
+            width: 100%;
+            height: 400px;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chart-legend-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.42);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: var(--radius-md);
+        }
+
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .legend-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .legend-hint {
+            margin-left: auto;
+            font-size: 0.78rem;
+            color: #3a3a42;
+            opacity: 0.85;
+        }
+
+        .category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tier-separator {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            padding: 0.5rem 0 0.25rem;
+            margin-top: 0.25rem;
+            gap: 0.5rem;
+        }
+        .tier-separator::before {
+            content: '';
+            width: 3px;
+            height: 14px;
+            background: var(--accent);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+        .tier-separator:first-of-type { margin-top: 0; }
+
+        .filter-btn {
+            padding: 0.4rem 1rem;
+            border-radius: 99px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.5);
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover {
+            background: rgba(0, 113, 227, 0.1);
+            border-color: rgba(0, 113, 227, 0.3);
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0, 113, 227, 0.3);
+        }
+
+        .product-select-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .product-select-row label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .styled-select {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            max-width: 320px;
+        }
+
+        .styled-select:focus { border-color: var(--accent); }
+        .styled-select option { background: #fff; color: #1d1d1f; }
+
+        .data-source {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 2;
+        }
+
+        .data-source a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* 当前选中产品的产业链上下文卡片 */
+        .product-context-card {
+            margin: 0.5rem 0 1rem;
+            padding: 1.25rem 1.5rem;
+            background: rgba(255,255,255,0.55);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: var(--radius-md);
+            position: relative;
+            z-index: 2;
+            display: none;
+        }
+        .product-context-card.show { display: block; }
+        .product-context-card .pc-head {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .product-context-card .pc-tier-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            letter-spacing: 0.04em;
+        }
+        .product-context-card .pc-tier-badge.t1 { background: rgba(0,113,227,0.12); color: #0071e3; }
+        .product-context-card .pc-tier-badge.t2 { background: rgba(52,199,89,0.14); color: #1a8c3a; }
+        .product-context-card .pc-tier-badge.t3 { background: rgba(255,149,0,0.14); color: #c66800; }
+        .product-context-card .pc-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+        .product-context-card .pc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .product-context-card .pc-item {
+            font-size: 0.82rem;
+        }
+        .product-context-card .pc-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 0.2rem;
+        }
+        .product-context-card .pc-value {
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+        @media (prefers-color-scheme: dark) {
+            .product-context-card {
+                background: rgba(255,255,255,0.04);
+                border-color: rgba(255,255,255,0.08);
+            }
+            .product-context-card .pc-tier-badge.t1 { background: rgba(0,113,227,0.18); }
+            .product-context-card .pc-tier-badge.t2 { background: rgba(52,199,89,0.18); }
+            .product-context-card .pc-tier-badge.t3 { background: rgba(255,149,0,0.18); }
+        }
+
+        .section-divider {
+            margin: 4rem 0 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .stat-card {
+                background: rgba(20, 22, 30, 0.62);
+                border-color: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            }
+            .stat-card:hover {
+                background: rgba(28, 31, 42, 0.82);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+            .stat-label { color: #cbd5e1; }
+            .tracker-panel {
+                background: rgba(17, 19, 28, 0.78);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+            .section-header p { color: #cbd5e1; }
+            .chart-legend-row {
+                background: rgba(255, 255, 255, 0.03);
+                border-color: rgba(255, 255, 255, 0.08);
+            }
+            .legend-hint { color: #cbd5e1; }
+            .filter-btn {
+                background: rgba(255, 255, 255, 0.06);
+                border-color: rgba(255, 255, 255, 0.12);
+                color: #e2e8f0;
+            }
+            .filter-btn:hover {
+                background: rgba(0, 113, 227, 0.2);
+                border-color: rgba(0, 113, 227, 0.4);
+            }
+            .styled-select {
+                background: rgba(255, 255, 255, 0.06);
+                border-color: rgba(255, 255, 255, 0.12);
+                color: #e2e8f0;
+            }
+            .styled-select option { background: #1e1e2f; color: #fff; }
+        }
+
+        /* 产业链解读 */
+        .chain-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        .chain-node {
+            background: rgba(255,255,255,0.5);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: var(--radius-md);
+            padding: 0.75rem 1.25rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            min-width: 140px;
+        }
+        .chain-node .chain-sub {
+            display: block;
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+            line-height: 1.4;
+        }
+        .chain-arrow {
+            color: var(--accent);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        .tier-card {
+            background: rgba(255,255,255,0.45);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            transition: var(--transition);
+        }
+        .tier-card:hover {
+            background: rgba(255,255,255,0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .tier-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.04em;
+        }
+        .tier-badge.t1 { background: rgba(0,113,227,0.12); color: #0071e3; }
+        .tier-badge.t2 { background: rgba(52,199,89,0.14); color: #1a8c3a; }
+        .tier-badge.t3 { background: rgba(255,149,0,0.14); color: #c66800; }
+        .tier-card h3 { font-size: 1.15rem; margin-bottom: 0.75rem; }
+        .tier-section { margin-bottom: 1rem; }
+        .tier-section:last-child { margin-bottom: 0; }
+        .tier-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 0.35rem;
+        }
+        .tier-value {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        .tier-cats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .tier-cat {
+            background: rgba(0,113,227,0.08);
+            color: var(--accent);
+            font-size: 0.76rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+        }
+        .insight-box {
+            margin-top: 2rem;
+            padding: 1.5rem 1.75rem;
+            background: rgba(0,113,227,0.06);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-md);
+            position: relative;
+            z-index: 2;
+        }
+        .insight-box h4 {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent);
+        }
+        .insight-box p {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: 0.6rem;
+        }
+        .insight-box p:last-child { margin-bottom: 0; }
+        .insight-box b { font-weight: 700; }
+        @media (prefers-color-scheme: dark) {
+            .chain-node {
+                background: rgba(255,255,255,0.05);
+                border-color: rgba(255,255,255,0.1);
+                color: #e2e8f0;
+            }
+            .chain-node .chain-sub { color: #94a3b8; }
+            .tier-card {
+                background: rgba(255,255,255,0.04);
+                border-color: rgba(255,255,255,0.08);
+            }
+            .tier-card:hover { background: rgba(255,255,255,0.07); }
+            .tier-badge.t1 { background: rgba(0,113,227,0.18); }
+            .tier-badge.t2 { background: rgba(52,199,89,0.18); }
+            .tier-badge.t3 { background: rgba(255,149,0,0.18); }
+            .tier-cat { background: rgba(0,113,227,0.15); }
+            .insight-box { background: rgba(0,113,227,0.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    
+    <nav class="glass-nav" id="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo lang-text" data-en="CasualStudy" data-zh="随意研究">CasualStudy</a>
+            <div class="nav-links">
+                <a href="index.html#analysis" class="lang-text" data-en="Analysis" data-zh="数据分析">Analysis</a>
+                <a href="index.html#projects" class="lang-text" data-en="Projects" data-zh="项目">Projects</a>
+                <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-left: 1rem; cursor: pointer;">中</button>
+            </div>
+            <a href="https://x.com/casualstudy023" target="_blank" class="nav-action" id="nav-follow-btn">
+                <i data-lucide="twitter"></i> <span class="lang-text" data-en="Follow" data-zh="关注">Follow</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-container" style="padding-top: 2rem;">
+            <div class="glass-panel tracker-panel" style="padding: 3rem; margin-top: 2rem;">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="lang-text" data-en="Flash Memory Market Index" data-zh="闪存市场价格指数">Flash Memory Market Index</h2>
+                    <p class="lang-text" data-en="Weekly NAND & DRAM price index, approximating China's consumer-market wholesale (spot) prices. Contract prices that big buyers pay are not public." data-zh="NAND 与 DRAM 周度价格指数，接近中国消费类市场的批发（现货）价格。大客户锁定的合约价不公开。">NAND 与 DRAM 周度价格指数，接近中国消费类市场的批发（现货）价格。大客户锁定的合约价不公开。</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="NAND Index" data-zh="NAND 指数">NAND Index</div>
+                        <div class="stat-value" id="stat-nand">--</div>
+                        <div class="stat-change" id="stat-nand-change">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="DRAM Index" data-zh="DRAM 指数">DRAM Index</div>
+                        <div class="stat-value" id="stat-dram">--</div>
+                        <div class="stat-change" id="stat-dram-change">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Latest Update" data-zh="最新更新">Latest Update</div>
+                        <div class="stat-value" id="stat-date" style="font-size: 1.5rem;">--</div>
+                        <div class="stat-change flat" id="stat-range">--</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label lang-text" data-en="Products Tracked" data-zh="追踪产品数">Products Tracked</div>
+                        <div class="stat-value" id="stat-products">--</div>
+                        <div class="stat-change flat lang-text" data-en="across 15 categories" data-zh="覆盖 15 个分类">across 15 categories</div>
+                    </div>
+                </div>
+
+                <div class="chart-legend-row">
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#0071e3;"></span>
+                        <span class="lang-text" data-en="NAND Index" data-zh="NAND 指数">NAND Index</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-dot" style="background:#34c759;"></span>
+                        <span class="lang-text" data-en="DRAM Index" data-zh="DRAM 指数">DRAM Index</span>
+                    </span>
+                    <span class="legend-hint lang-text" data-en="Drag to zoom · Scroll to pan" data-zh="拖动缩放 · 滚动平移">Drag to zoom · Scroll to pan</span>
+                </div>
+                <div id="index-chart" class="chart-container"></div>
+
+                <div class="insight-box">
+                    <h4 class="lang-text" data-en="How the Index is Calculated" data-zh="指数怎么算的">指数怎么算的</h4>
+                    <p class="lang-text" data-en="<b>Type:</b> A weighted composite price index (similar to CPI logic) tracking a basket of representative spot products relative to a base period (base = 1000)." data-zh="<b>类型：</b>加权综合价格指数（类似 CPI 逻辑），追踪一篮子代表性现货产品相对基期的变化（基期值 = 1000）。"><b>类型：</b>加权综合价格指数（类似 CPI 逻辑），追踪一篮子代表性现货产品相对基期的变化（基期值 = 1000）。</p>
+                    <p class="lang-text" data-en="<b>NAND Index basket:</b> Flash Wafer (256Gb/512Gb/1Tb) + eMMC + UFS + SSD + Flash Card — weighted by domestic consumption volume." data-zh="<b>NAND 指数篮子：</b>Flash Wafer（256Gb/512Gb/1Tb）+ eMMC + UFS + SSD + 闪存卡，按国内消费类出货量加权。"><b>NAND 指数篮子：</b>Flash Wafer（256Gb/512Gb/1Tb）+ eMMC + UFS + SSD + 闪存卡，按国内消费类出货量加权。</p>
+                    <p class="lang-text" data-en="<b>DRAM Index basket:</b> DDR4/DDR5 particles + UDIMM/SODIMM/RDIMM module — weighted by domestic consumption volume." data-zh="<b>DRAM 指数篮子：</b>DDR4/DDR5 颗粒 + UDIMM/SODIMM/RDIMM 内存条，按国内消费类出货量加权。"><b>DRAM 指数篮子：</b>DDR4/DDR5 颗粒 + UDIMM/SODIMM/RDIMM 内存条，按国内消费类出货量加权。</p>
+                    <p class="lang-text" data-en="<b>Frequency:</b> Weekly (updated every Monday). <b>Scope:</b> Consumer spot market (Huaqiangbei), not fab contract prices." data-zh="<b>频率：</b>周度（每周一更新）。<b>范围：</b>消费类现货市场（华强北），不是原厂合约价。"><b>频率：</b>周度（每周一更新）。<b>范围：</b>消费类现货市场（华强北），不是原厂合约价。</p>
+                    <p class="lang-text" data-en="<b>Read the trend, not the absolute number.</b> Index up = spot market overall rising; Index flat = supply-demand balanced. It's a leading indicator for next-quarter contract prices (1-2 quarters ahead)." data-zh="<b>看趋势，不看绝对值。</b>指数涨 = 现货市场整体上涨；指数走平 = 供需平衡。它是下季度合约价的领先指标（领先 1-2 个季度）。"><b>看趋势，不看绝对值。</b>指数涨 = 现货市场整体上涨；指数走平 = 供需平衡。它是下季度合约价的领先指标（领先 1-2 个季度）。</p>
+                </div>
+
+                <div class="data-source">
+                    <span class="lang-text" data-en="Data source: " data-zh="数据来源：">Data source: </span>
+                    <a href="https://www.chinaflashmarket.com/price" target="_blank">chinaflashmarket.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" style="padding-top: 1rem;">
+            <div class="glass-panel tracker-panel" style="padding: 3rem;">
+                <div class="section-header" style="text-align: left; margin-bottom: 1rem;">
+                    <h2 class="lang-text" data-en="Product Price History" data-zh="产品历史价格">Product Price History</h2>
+                    <p class="lang-text" data-en="Daily / weekly close price for individual storage products." data-zh="各存储产品的日线 / 周线收盘价格走势。">Daily / weekly close price for individual storage products.</p>
+                </div>
+
+                <div class="category-filter" id="category-filter"></div>
+
+                <div class="product-select-row">
+                    <label class="lang-text" data-en="Product:" data-zh="产品：">Product:</label>
+                    <select id="product-select" class="styled-select"></select>
+                </div>
+
+                <div class="product-context-card" id="product-context"></div>
+
+                <div id="product-chart" class="chart-container-sm"></div>
+
+                <div class="data-source">
+                    <span class="lang-text" data-en="These prices approximate China's consumer-market wholesale (spot) prices, not fab contract prices. " data-zh="这些价格接近中国消费类市场的批发（现货）价格，并非原厂合约价。">这些价格接近中国消费类市场的批发（现货）价格，并非原厂合约价。</span>
+                    <span class="lang-text" data-en="Data source: " data-zh="数据来源：">Data source: </span>
+                    <a href="https://www.chinaflashmarket.com/price" target="_blank">chinaflashmarket.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="chain-explainer" style="padding-top: 1rem;">
+            <div class="glass-panel tracker-panel" style="padding: 3rem;">
+                <div class="section-header" style="text-align: left; margin-bottom: 1rem;">
+                    <h2 class="lang-text" data-en="Supply Chain Guide" data-zh="产业链解读">Supply Chain Guide</h2>
+                    <p class="lang-text" data-en="Where each product sits in the storage value chain — who makes it, who buys it, and what drives the price." data-zh="每种产品在存储产业链中的位置 —— 谁生产、谁采购、价格由什么决定。">每种产品在存储产业链中的位置 —— 谁生产、谁采购、价格由什么决定。</p>
+                </div>
+
+                <div class="chain-flow">
+                    <div class="chain-node">
+                        <span class="lang-text" data-en="Fabricators" data-zh="原厂">原厂</span>
+                        <span class="chain-sub lang-text" data-en="Samsung · Hynix · Micron · Kioxia · WD/SanDisk" data-zh="三星·海力士·美光·铠侠·西数/闪迪">三星·海力士·美光·铠侠·西数/闪迪</span>
+                    </div>
+                    <span class="chain-arrow">→</span>
+                    <div class="chain-node">
+                        <span class="lang-text" data-en="Module Makers" data-zh="模组厂">模组厂</span>
+                        <span class="chain-sub lang-text" data-en="Longsys · ADATA · Biwin · Transcend · Innodisk" data-zh="江波龙·威刚·佰维·创见·宜鼎">江波龙·威刚·佰维·创见·宜鼎</span>
+                    </div>
+                    <span class="chain-arrow">→</span>
+                    <div class="chain-node">
+                        <span class="lang-text" data-en="Traders / End Users" data-zh="贸易商 / 终端">贸易商 / 终端</span>
+                        <span class="chain-sub lang-text" data-en="Huaqiangbei traders · OEMs · Retail" data-zh="华强北贸易商·品牌OEM·零售渠道">华强北贸易商·品牌OEM·零售渠道</span>
+                    </div>
+                </div>
+
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <span class="tier-badge t1 lang-text" data-en="TIER 1 · UPSTREAM" data-zh="第一档 · 上游">第一档 · 上游</span>
+                        <h3 class="lang-text" data-en="Bare Wafer / Chip Spot" data-zh="原厂颗粒现货">原厂颗粒现货</h3>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="CFM Categories" data-zh="CFM 对应分类">CFM 对应分类</div>
+                            <div class="tier-cats">
+                                <span class="tier-cat">Flash Wafer</span>
+                                <span class="tier-cat">DDR</span>
+                                <span class="tier-cat">LPDDR</span>
+                            </div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Sellers" data-zh="卖方">卖方</div>
+                            <div class="tier-value lang-text" data-en="Five NAND/DRAM fabricators sell spot wafer/chips outside their long-term contracts." data-zh="NAND/DRAM 五大原厂在合约之外的现货出货。">NAND/DRAM 五大原厂在合约之外的现货出货。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Buyers" data-zh="买方">买方</div>
+                            <div class="tier-value lang-text" data-en="Module makers topping up inventory + Huaqiangbei traders flipping stock." data-zh="模组厂临时补货 + 华强北贸易商倒库。">模组厂临时补货 + 华强北贸易商倒库。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Price Logic" data-zh="价格规律">价格规律</div>
+                            <div class="tier-value lang-text" data-en="Supply: fab utilization &amp; cuts. Demand: phone/PC/server shipments. This is the leading indicator for contract prices (1-2 quarters ahead)." data-zh="供给端看原厂产能利用率与减产动作；需求端看手机/PC/服务器出货。是合约价的领先指标（领先 1-2 个季度）。">供给端看原厂产能利用率与减产动作；需求端看手机/PC/服务器出货。是合约价的领先指标（领先 1-2 个季度）。</div>
+                        </div>
+                    </div>
+
+                    <div class="tier-card">
+                        <span class="tier-badge t2 lang-text" data-en="TIER 2 · MIDSTREAM" data-zh="第二档 · 中游">第二档 · 中游</span>
+                        <h3 class="lang-text" data-en="Packaged IC (BGA)" data-zh="原厂封装芯片">原厂封装芯片</h3>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="CFM Categories" data-zh="CFM 对应分类">CFM 对应分类</div>
+                            <div class="tier-cats">
+                                <span class="tier-cat">eMMC</span>
+                                <span class="tier-cat">eMCP</span>
+                                <span class="tier-cat">UFS</span>
+                                <span class="tier-cat">uMCP</span>
+                            </div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Sellers" data-zh="卖方">卖方</div>
+                            <div class="tier-value lang-text" data-en="Same five fabricators (packaging outsourced to ASE, PTI, JCET, UTAC, SPIL, TSH)." data-zh="同样五大原厂（封测外包给日月光、力成、长电、华泰、通富微电、华天）。">同样五大原厂（封测外包给日月光、力成、长电、华泰、通富微电、华天）。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Buyers" data-zh="买方">买方</div>
+                            <div class="tier-value lang-text" data-en="Phone/tablet OEMs (Xiaomi, OPPO, vivo, Honor) and some module traders." data-zh="手机/平板品牌厂（小米、OPPO、vivo、荣耀）及部分模组贸易商。">手机/平板品牌厂（小米、OPPO、vivo、荣耀）及部分模组贸易商。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Price Logic" data-zh="价格规律">价格规律</div>
+                            <div class="tier-value lang-text" data-en="Tracks Tier 1 with a lag. Volume goes through annual LTAs. eMCP/uMCP are combo packages (NAND+LPDRAM), so unit price is higher and less volatile." data-zh="跟随第一档颗粒价但滞后。量大走年度长协。eMCP/uMCP 是合封产品（NAND+LPDDR），单价更高、波动更小。">跟随第一档颗粒价但滞后。量大走年度长协。eMCP/uMCP 是合封产品（NAND+LPDDR），单价更高、波动更小。</div>
+                        </div>
+                    </div>
+
+                    <div class="tier-card">
+                        <span class="tier-badge t3 lang-text" data-en="TIER 3 · DOWNSTREAM" data-zh="第三档 · 下游">第三档 · 下游</span>
+                        <h3 class="lang-text" data-en="Module / Finished Goods" data-zh="模组成品">模组成品</h3>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="CFM Categories" data-zh="CFM 对应分类">CFM 对应分类</div>
+                            <div class="tier-cats">
+                                <span class="tier-cat lang-text" data-en="RDIMM" data-zh="内存条(服务器)">内存条(服务器)</span>
+                                <span class="tier-cat lang-text" data-en="DDR Channel" data-zh="内存条(渠道)">内存条(渠道)</span>
+                                <span class="tier-cat lang-text" data-en="DDR OEM" data-zh="内存条(行业)">内存条(行业)</span>
+                                <span class="tier-cat lang-text" data-en="SSD Channel" data-zh="SSD(渠道)">SSD(渠道)</span>
+                                <span class="tier-cat lang-text" data-en="SSD OEM" data-zh="SSD(行业)">SSD(行业)</span>
+                                <span class="tier-cat lang-text" data-en="Flash Card" data-zh="闪存卡">闪存卡</span>
+                                <span class="tier-cat">USB 2.0</span>
+                                <span class="tier-cat">USB 3.0</span>
+                            </div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Sellers" data-zh="卖方">卖方</div>
+                            <div class="tier-value lang-text" data-en="Module brands (Longsys, ADATA, Biwin, Transcend, Innodisk, Netac) + original brands (Samsung/Micron/WD/SanDisk). SSD controllers: Phison, SMI, Maxio, ASolid." data-zh="模组品牌（江波龙、威刚、佰维、创见、宜鼎、朗科）+ 原厂品牌（三星/美光/西数/闪迪）。SSD 主控：群联、慧荣、联芸、点序。">模组品牌（江波龙、威刚、佰维、创见、宜鼎、朗科）+ 原厂品牌（三星/美光/西数/闪迪）。SSD 主控：群联、慧荣、联芸、点序。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Buyers" data-zh="买方">买方</div>
+                            <div class="tier-value lang-text" data-en="Channel = retail/wholesale; Industry = brand OEM spot buys. End users are PC/server OEMs and consumers." data-zh="渠道市场 = 零售批发；行业市场 = 品牌厂 OEM 现货。终端是 PC/服务器 OEM 与消费者。">渠道市场 = 零售批发；行业市场 = 品牌厂 OEM 现货。终端是 PC/服务器 OEM 与消费者。</div>
+                        </div>
+                        <div class="tier-section">
+                            <div class="tier-label lang-text" data-en="Price Logic" data-zh="价格规律">价格规律</div>
+                            <div class="tier-value lang-text" data-en="Lags wafer cost by 1-2 months. Thin margins (5-15%) make module makers very sensitive to chip cost. Industry prices are stickier; channel prices swing more." data-zh="滞后颗粒成本 1-2 个月。毛利率薄（5-15%），对颗粒成本极敏感。行业价更黏，渠道价波动更大。">滞后颗粒成本 1-2 个月。毛利率薄（5-15%），对颗粒成本极敏感。行业价更黏，渠道价波动更大。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <h4 class="lang-text" data-en="How to Read This Data" data-zh="如何解读这些数据">如何解读这些数据</h4>
+                    <p class="lang-text" data-en="<b>Spot ≠ Contract.</b> CFM prices reflect Huaqiangbei spot trades — the marginal replenishment cost for module makers, not the locked-in contract price that big buyers (e.g. Apple) pay." data-zh="<b>现货价 ≠ 合约价。</b>CFM 价格反映的是华强北现货交易 —— 模组厂的边际补货成本，而非苹果等大客户锁定的合约价。"><b>现货价 ≠ 合约价。</b>CFM 价格反映的是华强北现货交易 —— 模组厂的边际补货成本，而非苹果等大客户锁定的合约价。</p>
+                    <p class="lang-text" data-en="<b>Spot flat = marginal cost stable, for now.</b> If spot stays flat for a few weeks, the module maker's spot replenishment cost is temporarily stable. But the locked contract price for the quarter is unknown — check fab ASP in earnings + utilization/cut actions." data-zh="<b>现货走平 = 边际成本暂时稳定。</b>如果现货走平几周，模组厂的现货补货成本暂时稳定。但本季度锁定的合约价是否变化未知 —— 结合原厂财报 ASP 与产能利用率/减产动作判断。"><b>现货走平 = 边际成本暂时稳定。</b>如果现货走平几周，模组厂的现货补货成本暂时稳定。但本季度锁定的合约价是否变化未知 —— 结合原厂财报 ASP 与产能利用率/减产动作判断。</p>
+                    <p class="lang-text" data-en="<b>Spot is a leading indicator.</b> Sustained spot moves tend to flow into next-quarter contract talks: spot up for weeks → contract likely up; spot down → contract likely flat/down. Lead time ~1-2 quarters, magnitude not 1:1." data-zh="<b>现货是领先指标。</b>现货持续单边走势通常会传导到下季度合约谈判：连涨数周 → 合约大概率跟涨；连跌 → 合约持稳或小跌。领先 1-2 个季度，幅度并非一一对应。"><b>现货是领先指标。</b>现货持续单边走势通常会传导到下季度合约谈判：连涨数周 → 合约大概率跟涨；连跌 → 合约持稳或小跌。领先 1-2 个季度，幅度并非一一对应。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-nav glass-footer" id="site-footer">
+        <div class="footer-content">
+            <p class="lang-text" data-en="&copy; 2024 CasualStudy. All rights reserved." data-zh="&copy; 2024 随意研究. 保留所有权利。">&copy; 2024 CasualStudy. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://x.com/casualstudy023" target="_blank" aria-label="X (Twitter)">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord">
+                    <i data-lucide="message-square"></i>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cfm-market.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
