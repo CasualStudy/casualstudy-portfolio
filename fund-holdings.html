@@ -500,6 +500,42 @@
                 font-size: 1.5rem;
             }
         }
+        @media (max-width: 768px) {
+            .tracker-container {
+                padding: 0 12px;
+                margin-top: 70px;
+            }
+            .glass-panel {
+                padding: 16px !important;
+                border-radius: 16px !important;
+            }
+            .controls-panel {
+                padding: 14px 16px;
+                margin-bottom: 14px;
+            }
+            .select-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                width: 100%;
+            }
+            select.glass-select {
+                width: 100%;
+                font-size: 14px;
+            }
+            #fund-total-value {
+                font-size: 1.3rem;
+            }
+            #chart-container {
+                height: 300px !important;
+            }
+            .holdings-table-wrapper {
+                overflow-x: auto;
+            }
+            .stakes-content {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>

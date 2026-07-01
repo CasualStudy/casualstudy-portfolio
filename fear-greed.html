@@ -138,6 +138,31 @@
                 color: #cbd5e1;
             }
         }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 400px !important;
+            }
+            .glass-panel.tracker-panel {
+                padding: 1.25rem !important;
+                margin-top: 1rem !important;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            .stat-value {
+                font-size: 1.4rem;
+            }
+            .legend-hint {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>

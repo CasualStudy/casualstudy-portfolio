@@ -143,8 +143,29 @@
         }
         
         @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
             .charts-container {
                 grid-template-columns: 1fr;
+            }
+            .chart-box {
+                height: 300px;
+                padding: 1rem;
+            }
+            .glass-panel {
+                padding: 1.5rem !important;
+            }
+            .narrative-box {
+                padding: 1.25rem;
+            }
+            .narrative-box p {
+                font-size: 0.97rem;
+            }
+            .stat-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
             }
         }
     </style>
