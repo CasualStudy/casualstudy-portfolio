@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mock Data for Data Analysis
     const analyses = [
         {
-            title_en: "CFM Flash Market Index",
-            title_zh: "CFM 闪存市场价格指数",
+            title_en: "Flash Market Index",
+            title_zh: "闪存市场价格指数",
             excerpt_en: "NAND/DRAM price index and memory product spot price tracking.",
             excerpt_zh: "NAND/DRAM 价格指数与存储产品现货报价追踪。",
             tools: "ECharts, Python, GitHub Actions",
