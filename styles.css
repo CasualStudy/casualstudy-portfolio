@@ -580,10 +580,16 @@ main {
         text-align: center;
     }
 
-    /* Sub-page glass panel inline padding override */
+    /* Sub-page glass panel inline padding override and full-width breakout */
     .glass-panel[style*="padding: 3rem"],
-    .glass-panel.tracker-panel[style*="padding: 3rem"] {
-        padding: 1.25rem !important;
+    .glass-panel.tracker-panel[style*="padding: 3rem"],
+    .glass-panel.tracker-panel {
+        padding: 1.25rem 0.8rem !important;
+        margin-left: -1rem !important;
+        width: calc(100% + 2rem) !important;
+        border-radius: 0 !important;
+        border-left: none !important;
+        border-right: none !important;
     }
 
     /* Tighten section container on sub-pages */
