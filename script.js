@@ -112,6 +112,15 @@ document.addEventListener("DOMContentLoaded", () => {
             tools: "Pine Script",
             icon: "activity",
             link: "https://www.tradingview.com/script/rRpmHLGr-Smart-Money-RVOL-System/"
+        },
+        {
+            title_en: "CNN Fear and Greedy Index",
+            title_zh: "CNN 恐慌与贪婪指数",
+            excerpt_en: "A custom TradingView indicator porting the CNN Fear and Greed Index directly into your charts.",
+            excerpt_zh: "将 CNN 恐慌与贪婪指数直接引入图表的自定义 TradingView 指标。",
+            tools: "Pine Script",
+            icon: "bar-chart",
+            link: "https://www.tradingview.com/script/bJ9E8wB1-CNN-Fear-and-Greedy-Index/"
         }
     ];
 
