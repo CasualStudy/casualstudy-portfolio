@@ -232,6 +232,108 @@
                 min-height: 320px !important;
             }
         }
+        /* Model Selector Panel */
+        .model-selector {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.45);
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            border-radius: 14px;
+            position: relative;
+            z-index: 2;
+        }
+        .model-selector-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.65rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .model-selector-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #6e6e73;
+        }
+        .model-selector-actions {
+            display: flex;
+            gap: 0.4rem;
+        }
+        .model-sel-action-btn {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.65rem;
+            border-radius: 99px;
+            border: 1px solid rgba(0,0,0,0.12);
+            background: rgba(255,255,255,0.7);
+            color: var(--accent);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .model-sel-action-btn:hover {
+            background: rgba(0,113,227,0.1);
+            border-color: rgba(0,113,227,0.3);
+        }
+        .model-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .model-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.75rem 0.3rem 0.55rem;
+            border-radius: 99px;
+            border: 1.5px solid transparent;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.18s;
+            background: rgba(0,0,0,0.04);
+            color: #6e6e73;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .model-pill.active {
+            color: var(--pill-color, #1d1d1f);
+            background: color-mix(in srgb, var(--pill-color, #0071e3) 14%, transparent);
+            border-color: color-mix(in srgb, var(--pill-color, #0071e3) 50%, transparent);
+        }
+        .model-pill .pill-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--pill-color, #94a3b8);
+            flex-shrink: 0;
+            opacity: 0.45;
+            transition: opacity 0.18s;
+        }
+        .model-pill.active .pill-dot {
+            opacity: 1;
+        }
+        @media (prefers-color-scheme: dark) {
+            .model-selector {
+                background: rgba(255,255,255,0.04);
+                border-color: rgba(255,255,255,0.08);
+            }
+            .model-selector-label { color: #94a3b8; }
+            .model-sel-action-btn {
+                background: rgba(255,255,255,0.06);
+                border-color: rgba(255,255,255,0.12);
+            }
+            .model-pill {
+                background: rgba(255,255,255,0.05);
+                color: #94a3b8;
+            }
+            .model-pill.active {
+                background: color-mix(in srgb, var(--pill-color, #3b82f6) 20%, transparent);
+                border-color: color-mix(in srgb, var(--pill-color, #3b82f6) 55%, transparent);
+                color: color-mix(in srgb, var(--pill-color, #e2e8f0) 90%, white);
+            }
+        }
     </style>
 </head>
 <body>
@@ -336,6 +438,18 @@
                         </div>
                     </div>
                     <div id="model-trend-chart" class="chart-container" style="height: 500px; min-height: 500px; display: block;"></div>
+                    <!-- HTML model selector — works on both desktop and mobile -->
+                    <div class="model-selector" id="rev-model-selector">
+                        <div class="model-selector-header">
+                            <span class="model-selector-label lang-text" data-en="Select Models" data-zh="选择模型">Select Models</span>
+                            <div class="model-selector-actions">
+                                <button class="model-sel-action-btn" id="rev-top5-btn" onclick="revSelectorSelectTop5()">Top 5</button>
+                                <button class="model-sel-action-btn" id="rev-all-btn" onclick="revSelectorSelectAll()">All</button>
+                                <button class="model-sel-action-btn" id="rev-none-btn" onclick="revSelectorSelectNone()">None</button>
+                            </div>
+                        </div>
+                        <div class="model-pills" id="rev-model-pills"></div>
+                    </div>
                 </div>
 
                 <!-- Today's Top Models Bar Chart -->
@@ -369,6 +483,18 @@
                         </div>
                     </div>
                     <div id="model-usage-trend-chart" class="chart-container" style="height: 500px; min-height: 500px; display: block;"></div>
+                    <!-- HTML model selector for usage trend -->
+                    <div class="model-selector" id="usage-model-selector">
+                        <div class="model-selector-header">
+                            <span class="model-selector-label lang-text" data-en="Select Models" data-zh="选择模型">Select Models</span>
+                            <div class="model-selector-actions">
+                                <button class="model-sel-action-btn" onclick="usageSelectorSelectTop5()">Top 5</button>
+                                <button class="model-sel-action-btn" onclick="usageSelectorSelectAll()">All</button>
+                                <button class="model-sel-action-btn" onclick="usageSelectorSelectNone()">None</button>
+                            </div>
+                        </div>
+                        <div class="model-pills" id="usage-model-pills"></div>
+                    </div>
                 </div>
             </div>
         </section>

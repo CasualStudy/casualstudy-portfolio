@@ -578,28 +578,24 @@ document.addEventListener('DOMContentLoaded', async () => {
             .sort((a, b) => overallModelRev[b] - overallModelRev[a])
             .slice(0, 20);
 
-        // 3. Build series data and legend data
+        // 3. Build series data + color map (no ECharts legend — we use HTML pills)
         const seriesData = [];
-        const legendData = [];
         const selected = {};
+        const modelColorMap = {}; // modelName -> lineColor
 
         top20ModelIds.forEach((id, index) => {
             const modelName = modelNamesMap[id];
-            legendData.push(modelName);
-            
+            const color = modelColor(id, modelName);
+            const lineColor = (color === '#0f0f0f' && isDarkMode) ? '#94a3b8' : color;
+            modelColorMap[modelName] = lineColor;
+
             // Default select top 5
             selected[modelName] = index < 5;
 
             const seriesRevenues = data.map(day => {
                 const modelInDay = day.models ? day.models.find(m => m.id === id) : null;
-                // null => line breaks (model dropped out of Top 20 that day), not 0
                 return modelInDay ? modelInDay.revenue : null;
             });
-            // connectNulls=false so missing Top20 days show as gaps, not dips to 0
-
-            const color = modelColor(id, modelName);
-            // xAI's pure black is invisible in dark mode — bump to slate
-            const lineColor = (color === '#0f0f0f' && isDarkMode) ? '#94a3b8' : color;
 
             seriesData.push({
                 name: modelName,
@@ -627,39 +623,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 confine: true,
                 valueFormatter: (value) => fmtCompactUSD(value)
             },
-            legend: {
-                type: 'scroll',
-                orient: isMobile ? 'horizontal' : 'vertical',
-                right: isMobile ? 'center' : 8,
-                left: isMobile ? '5%' : 'auto',
-                bottom: isMobile ? 4 : 'auto',
-                top: isMobile ? 'auto' : 'middle',
-                width: isMobile ? '90%' : 220,
-                itemGap: isMobile ? 6 : 10,
-                itemWidth: 16,
-                itemHeight: 10,
-                padding: [4, 8],
-                data: legendData,
-                selected: selected,
-                formatter: function (name) {
-                    const id = top20ModelIds.find(i => modelNamesMap[i] === name);
-                    const total = id ? overallModelRev[id] : 0;
-                    const totalStr = fmtCompactUSD(total);
-                    const truncName = name.length > 20 ? name.substring(0, 20) + '…' : name;
-                    return `${truncName}  {sub|${totalStr}}`;
-                },
-                textStyle: {
-                    color: textColor,
-                    fontSize: 11,
-                    rich: {
-                        sub: { fontSize: 10, color: isDarkMode ? '#94a3b8' : '#64748b' }
-                    }
-                }
-            },
+            // Hide built-in legend — interaction driven by HTML pills below the chart
+            legend: { show: false, data: Object.keys(modelColorMap), selected },
             grid: {
-                left: isMobile ? '2%' : '3%',
-                right: isMobile ? '5%' : 240,
-                bottom: isMobile ? '25%' : '12%',
+                left: '3%',
+                right: '2%',
+                bottom: '12%',
                 top: 12,
                 containLabel: true
             },
@@ -712,6 +681,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         modelTrendChart.setOption(option, true);
+
+        // Build HTML pill selector for revenue chart
+        buildModelPills(
+            'rev-model-pills',
+            top20ModelIds,
+            modelNamesMap,
+            modelColorMap,
+            overallModelRev,
+            selected,
+            modelTrendChart,
+            fmtCompactUSD
+        );
+
+        // Expose quick-select helpers for button onclick handlers
+        window.revSelectorSelectTop5 = () => batchSelectPills('rev-model-pills', modelTrendChart, Object.keys(modelColorMap), (n, i) => i < 5);
+        window.revSelectorSelectAll  = () => batchSelectPills('rev-model-pills', modelTrendChart, Object.keys(modelColorMap), () => true);
+        window.revSelectorSelectNone = () => batchSelectPills('rev-model-pills', modelTrendChart, Object.keys(modelColorMap), () => false);
     }
 
     // --- Total market usage trend (token volume) -----------------------------
@@ -891,24 +877,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             .sort((a, b) => overallModelTokens[b] - overallModelTokens[a])
             .slice(0, 20);
 
-        // 3. Build series + legend
+        // 3. Build series + color map (no ECharts legend — we use HTML pills)
         const seriesData = [];
-        const legendData = [];
         const selected = {};
+        const modelColorMap = {};
 
         top20ModelIds.forEach((id, index) => {
             const modelName = modelNamesMap[id];
-            legendData.push(modelName);
+            const color = modelColor(id, modelName);
+            const lineColor = (color === '#0f0f0f' && isDarkMode) ? '#94a3b8' : color;
+            modelColorMap[modelName] = lineColor;
             selected[modelName] = index < 5;
 
             const seriesTokens = data.map(day => {
                 const modelInDay = day.models ? day.models.find(m => m.id === id) : null;
-                // null => line breaks (model dropped out of Top 20 that day), not 0
                 return modelInDay ? (modelInDay.total_tokens || 0) : null;
             });
-
-            const color = modelColor(id, modelName);
-            const lineColor = (color === '#0f0f0f' && isDarkMode) ? '#94a3b8' : color;
 
             seriesData.push({
                 name: modelName,
@@ -935,39 +919,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 confine: true,
                 valueFormatter: (value) => fmtCompactInt(value)
             },
-            legend: {
-                type: 'scroll',
-                orient: isMobile ? 'horizontal' : 'vertical',
-                right: isMobile ? 'center' : 8,
-                left: isMobile ? '5%' : 'auto',
-                bottom: isMobile ? 4 : 'auto',
-                top: isMobile ? 'auto' : 'middle',
-                width: isMobile ? '90%' : 220,
-                itemGap: isMobile ? 6 : 10,
-                itemWidth: 16,
-                itemHeight: 10,
-                padding: [4, 8],
-                data: legendData,
-                selected: selected,
-                formatter: function (name) {
-                    const id = top20ModelIds.find(i => modelNamesMap[i] === name);
-                    const total = id ? overallModelTokens[id] : 0;
-                    const totalStr = fmtCompactInt(total);
-                    const truncName = name.length > 20 ? name.substring(0, 20) + '…' : name;
-                    return `${truncName}  {sub|${totalStr}}`;
-                },
-                textStyle: {
-                    color: textColor,
-                    fontSize: 11,
-                    rich: {
-                        sub: { fontSize: 10, color: isDarkMode ? '#94a3b8' : '#64748b' }
-                    }
-                }
-            },
+            legend: { show: false, data: Object.keys(modelColorMap), selected },
             grid: {
-                left: isMobile ? '2%' : '3%',
-                right: isMobile ? '5%' : 240,
-                bottom: isMobile ? '25%' : '12%',
+                left: '3%',
+                right: '2%',
+                bottom: '12%',
                 top: 12,
                 containLabel: true
             },
@@ -1020,6 +976,89 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         modelUsageTrendChart.setOption(option, true);
+
+        // Build HTML pill selector for usage chart
+        buildModelPills(
+            'usage-model-pills',
+            top20ModelIds,
+            modelNamesMap,
+            modelColorMap,
+            overallModelTokens,
+            selected,
+            modelUsageTrendChart,
+            fmtCompactInt
+        );
+
+        window.usageSelectorSelectTop5 = () => batchSelectPills('usage-model-pills', modelUsageTrendChart, Object.keys(modelColorMap), (n, i) => i < 5);
+        window.usageSelectorSelectAll  = () => batchSelectPills('usage-model-pills', modelUsageTrendChart, Object.keys(modelColorMap), () => true);
+        window.usageSelectorSelectNone = () => batchSelectPills('usage-model-pills', modelUsageTrendChart, Object.keys(modelColorMap), () => false);
+    }
+
+    // -------------------------------------------------------------------------
+    // HTML Pill Selector Helpers
+    // -------------------------------------------------------------------------
+
+    /**
+     * Build pill buttons for a model trend chart.
+     * @param {string} containerId - ID of the .model-pills container div
+     * @param {string[]} top20Ids  - ordered model IDs (index 0 = top grossing)
+     * @param {object} namesMap    - { id: shortName }
+     * @param {object} colorMap    - { shortName: hexColor }
+     * @param {object} totalsMap   - { id: totalValue } for the sub-label
+     * @param {object} selected    - initial { shortName: bool } map
+     * @param {object} chart       - ECharts instance
+     * @param {function} fmtFn     - value formatter
+     */
+    function buildModelPills(containerId, top20Ids, namesMap, colorMap, totalsMap, selected, chart, fmtFn) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+
+        top20Ids.forEach((id, index) => {
+            const name = namesMap[id];
+            const color = colorMap[name] || '#94a3b8';
+            const total = totalsMap[id] || 0;
+            const isActive = selected[name] !== false;
+
+            const pill = document.createElement('button');
+            pill.className = 'model-pill' + (isActive ? ' active' : '');
+            pill.style.setProperty('--pill-color', color);
+            pill.dataset.name = name;
+            pill.dataset.index = index;
+            pill.innerHTML = `<span class="pill-dot"></span>${name} <span style="opacity:0.6;font-size:0.72rem;font-weight:400;">${fmtFn(total)}</span>`;
+
+            pill.addEventListener('click', () => {
+                const nowActive = pill.classList.toggle('active');
+                chart.dispatchAction({
+                    type: nowActive ? 'legendSelect' : 'legendUnSelect',
+                    name
+                });
+            });
+
+            container.appendChild(pill);
+        });
+    }
+
+    /**
+     * Batch-set pill states and sync the chart legend.
+     * @param {string} containerId
+     * @param {object} chart
+     * @param {string[]} allNames  - all model names in top20 order
+     * @param {function} predicate - (name, index) => bool, true = select
+     */
+    function batchSelectPills(containerId, chart, allNames, predicate) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        const pills = container.querySelectorAll('.model-pill');
+        pills.forEach((pill, i) => {
+            const name = pill.dataset.name;
+            const shouldSelect = predicate(name, i);
+            pill.classList.toggle('active', shouldSelect);
+            chart.dispatchAction({
+                type: shouldSelect ? 'legendSelect' : 'legendUnSelect',
+                name
+            });
+        });
     }
 
     async function init() {
