@@ -630,17 +630,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             legend: {
                 type: 'scroll',
                 orient: isMobile ? 'horizontal' : 'vertical',
-                right: isMobile ? 'center' : 6,
-                bottom: isMobile ? 0 : 'auto',
+                right: isMobile ? 'center' : 8,
+                left: isMobile ? '5%' : 'auto',
+                bottom: isMobile ? 4 : 'auto',
                 top: isMobile ? 'auto' : 'middle',
+                width: isMobile ? '90%' : 220,
+                itemGap: isMobile ? 6 : 10,
+                itemWidth: 16,
+                itemHeight: 10,
+                padding: [4, 8],
                 data: legendData,
                 selected: selected,
-                // Show total revenue alongside name so users can pick the biggest at a glance
                 formatter: function (name) {
                     const id = top20ModelIds.find(i => modelNamesMap[i] === name);
                     const total = id ? overallModelRev[id] : 0;
                     const totalStr = fmtCompactUSD(total);
-                    const truncName = name.length > 22 ? name.substring(0, 22) + '...' : name;
+                    const truncName = name.length > 20 ? name.substring(0, 20) + '…' : name;
                     return `${truncName}  {sub|${totalStr}}`;
                 },
                 textStyle: {
@@ -653,8 +658,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
             grid: {
                 left: isMobile ? '2%' : '3%',
-                right: isMobile ? '5%' : 230,
-                bottom: isMobile ? '20%' : '12%',
+                right: isMobile ? '5%' : 240,
+                bottom: isMobile ? '25%' : '12%',
                 top: 12,
                 containLabel: true
             },
@@ -933,16 +938,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             legend: {
                 type: 'scroll',
                 orient: isMobile ? 'horizontal' : 'vertical',
-                right: isMobile ? 'center' : 6,
-                bottom: isMobile ? 0 : 'auto',
+                right: isMobile ? 'center' : 8,
+                left: isMobile ? '5%' : 'auto',
+                bottom: isMobile ? 4 : 'auto',
                 top: isMobile ? 'auto' : 'middle',
+                width: isMobile ? '90%' : 220,
+                itemGap: isMobile ? 6 : 10,
+                itemWidth: 16,
+                itemHeight: 10,
+                padding: [4, 8],
                 data: legendData,
                 selected: selected,
                 formatter: function (name) {
                     const id = top20ModelIds.find(i => modelNamesMap[i] === name);
                     const total = id ? overallModelTokens[id] : 0;
                     const totalStr = fmtCompactInt(total);
-                    const truncName = name.length > 22 ? name.substring(0, 22) + '...' : name;
+                    const truncName = name.length > 20 ? name.substring(0, 20) + '…' : name;
                     return `${truncName}  {sub|${totalStr}}`;
                 },
                 textStyle: {
@@ -955,8 +966,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             },
             grid: {
                 left: isMobile ? '2%' : '3%',
-                right: isMobile ? '5%' : 230,
-                bottom: isMobile ? '20%' : '12%',
+                right: isMobile ? '5%' : 240,
+                bottom: isMobile ? '25%' : '12%',
                 top: 12,
                 containLabel: true
             },
