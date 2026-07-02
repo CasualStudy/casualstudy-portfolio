@@ -5,7 +5,7 @@
 
 *A comprehensive quantitative finance, AI market tracking, and personal research portfolio website.*
 
-**🌐 [Live Website | 在线访问](https://casualstudy.com/)** (Replace with your actual CNAME/Domain)
+**🌐 [Live Website | 在线访问](https://casualstudy.site/)**
 
 ---
 
