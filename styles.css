@@ -296,6 +296,7 @@ main {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 2;
 }
@@ -555,7 +556,12 @@ main {
 
     .hero-actions {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .hero-actions .btn {
+        justify-content: center;
     }
 
     h2 {
