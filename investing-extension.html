@@ -21,12 +21,12 @@
     --green: #34c759;
     --amber: #f4a518;
 
-    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-bg: rgba(255, 255, 255, 0.55);
     --glass-blur: blur(30px) saturate(1.5);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.4);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.6);
     --glass-shadow:
         0 8px 32px rgba(31, 38, 135, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
 
     --radius-xl: 32px;
     --radius-lg: 24px;
@@ -60,7 +60,7 @@ body {
 .wallpaper {
     position: fixed; inset: 0; z-index: -1;
     background:
-        linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
         url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop') center/cover no-repeat;
     filter: saturate(0.85);
 }
@@ -110,10 +110,10 @@ h2 { font-size: 2.5rem; margin-bottom: .5rem; }
 /* 导航 */
 .glass-nav {
     position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
-    background: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.75);
     backdrop-filter: blur(40px) saturate(200%);
     -webkit-backdrop-filter: blur(40px) saturate(200%);
-    border-bottom: 0.5px solid rgba(255,255,255,0.5);
+    border-bottom: 0.5px solid rgba(255,255,255,0.6);
     box-shadow: 0 1px 12px rgba(0,0,0,0.04);
 }
 @media (prefers-color-scheme: dark) {
@@ -175,13 +175,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem 2rem; }
 /* 卡片 — visionOS 窗口材质 */
 .item-card {
     position: relative;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.6);
     backdrop-filter: blur(50px) saturate(180%);
     -webkit-backdrop-filter: blur(50px) saturate(180%);
-    border: 0.5px solid rgba(255,255,255,0.45);
+    border: 0.5px solid rgba(255,255,255,0.6);
     border-radius: var(--radius-lg);
     padding: 2rem;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.05), 0 8px 40px rgba(0,0,0,0.03), inset 0 1px 0 rgba(255,255,255,0.55);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05), 0 8px 40px rgba(0,0,0,0.03), inset 0 1px 0 rgba(255,255,255,0.7);
     transition: var(--transition);
     display: flex; flex-direction: column; height: 100%; overflow: hidden;
 }
@@ -227,9 +227,9 @@ main { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem 2rem; }
 .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
 .plan {
     position: relative; padding: 2rem;
-    background: rgba(255,255,255,0.2); backdrop-filter: blur(50px) saturate(180%); -webkit-backdrop-filter: blur(50px) saturate(180%);
-    border: 0.5px solid rgba(255,255,255,0.45); border-radius: var(--radius-lg);
-    box-shadow: 0 2px 16px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.55);
+    background: rgba(255,255,255,0.6); backdrop-filter: blur(50px) saturate(180%); -webkit-backdrop-filter: blur(50px) saturate(180%);
+    border: 0.5px solid rgba(255,255,255,0.6); border-radius: var(--radius-lg);
+    box-shadow: 0 2px 16px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.7);
     overflow: hidden;
 }
 @media (prefers-color-scheme: dark) { .plan { background: rgba(40,40,55,0.25); border-color: rgba(255,255,255,.12); } }
@@ -248,7 +248,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem 2rem; }
 .plan .btn { width: 100%; justify-content: center; position: relative; z-index: 2; }
 
 /* 页脚 */
-.glass-footer { position: relative; margin-top: 4rem; border-bottom: none; border-top: 0.5px solid rgba(255,255,255,0.4); padding: 2rem 0; background: rgba(255,255,255,0.45); backdrop-filter: blur(40px) saturate(200%); -webkit-backdrop-filter: blur(40px) saturate(200%); }
+.glass-footer { position: relative; margin-top: 4rem; border-bottom: none; border-top: 0.5px solid rgba(255,255,255,0.6); padding: 2rem 0; background: rgba(255,255,255,0.75); backdrop-filter: blur(40px) saturate(200%); -webkit-backdrop-filter: blur(40px) saturate(200%); }
 @media (prefers-color-scheme: dark) { .glass-footer { background: rgba(20,20,28,.55); border-top-color: rgba(255,255,255,.08); } }
 .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
 .footer-content p { color: var(--text-secondary); font-size: .9rem; }
@@ -285,14 +285,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 <nav class="glass-nav">
     <div class="nav-content">
-        <a href="#" class="logo">📈 AI Reader <span class="badge-pro">PRO</span></a>
+        <a href="index.html" class="logo lang-text" data-en="← CasualStudy" data-zh="← 返回主页">← CasualStudy</a>
         <div class="nav-links">
-            <a href="#features">功能</a>
-            <a href="#ai">AI 处理</a>
-            <a href="#pricing">定价</a>
-            <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="nav-action">
-                <i data-lucide="download"></i> 安装
-            </a>
+            <button id="lang-toggle" class="btn glass-btn lang-text" data-en="中" data-zh="EN" style="padding: .4rem .8rem; font-size: .9rem; cursor: pointer;">中</button>
         </div>
     </div>
 </nav>
@@ -302,17 +297,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <section id="hero" class="hero">
         <div class="hero-content glass-panel">
             <div class="ext-avatar">📈</div>
-            <h1>AI Reader for <span class="highlight">Investing.com</span></h1>
-            <p class="hero-desc">自动监控 Investing.com 新闻，实时检测新文章，AI 总结翻译，多渠道推送。专为金融资讯投资者打造的 Chrome 扩展。</p>
+            <h1 class="lang-text" data-en="AI Reader for Investing.com" data-zh="AI Reader for Investing.com">AI Reader for <span class="highlight">Investing.com</span></h1>
+            <p class="hero-desc lang-text" data-en="Auto-monitor Investing.com news, detect new articles in real time, summarize & translate with AI, push to Discord/Email. A Chrome extension built for financial investors." data-zh="自动监控 Investing.com 新闻，实时检测新文章，AI 总结翻译，多渠道推送。专为金融资讯投资者打造的 Chrome 扩展。">自动监控 Investing.com 新闻，实时检测新文章，AI 总结翻译，多渠道推送。专为金融资讯投资者打造的 Chrome 扩展。</p>
             <div class="hero-actions">
-                <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="btn primary-btn">
-                    <i data-lucide="download"></i> 免费安装 (30 次体验)
+                <a href="https://chromewebstore.google.com/detail/nebjfamenkoddjjmpaiehkkiibdjhkeh?utm_source=item-share-cb" target="_blank" class="btn primary-btn">
+                    <i data-lucide="download"></i> <span class="lang-text" data-en="Install Free (30 scans)" data-zh="免费安装 (30 次体验)">免费安装 (30 次体验)</span>
                 </a>
                 <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="btn amber-btn">
-                    <i data-lucide="crown"></i> 升级 Pro
+                    <i data-lucide="crown"></i> <span class="lang-text" data-en="Upgrade Pro" data-zh="升级 Pro">升级 Pro</span>
                 </a>
                 <a href="#features" class="btn glass-btn">
-                    <i data-lucide="arrow-down"></i> 了解更多
+                    <i data-lucide="arrow-down"></i> <span class="lang-text" data-en="Learn More" data-zh="了解更多">了解更多</span>
                 </a>
             </div>
         </div>
@@ -322,10 +317,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <section class="section-container" style="padding-top:1rem">
         <div class="glass-panel" style="padding:2rem">
             <div class="stats-strip">
-                <div class="stat-box"><div class="stat-num">v1.1</div><div class="stat-lab">当前版本</div></div>
-                <div class="stat-box"><div class="stat-num">15s</div><div class="stat-lab">检测间隔</div></div>
-                <div class="stat-box"><div class="stat-num">30</div><div class="stat-lab">免费扫描次数</div></div>
-                <div class="stat-box"><div class="stat-num">∞</div><div class="stat-lab">Pro 无限次</div></div>
+                <div class="stat-box"><div class="stat-num">v1.1</div><div class="stat-lab lang-text" data-en="Version" data-zh="当前版本">当前版本</div></div>
+                <div class="stat-box"><div class="stat-num lang-text" data-en="4 tiers" data-zh="4 档">4 档</div><div class="stat-lab lang-text" data-en="Refresh Rates" data-zh="刷新频率">刷新频率</div></div>
+                <div class="stat-box"><div class="stat-num">30</div><div class="stat-lab lang-text" data-en="Free Scans" data-zh="免费扫描次数">免费扫描次数</div></div>
+                <div class="stat-box"><div class="stat-num">∞</div><div class="stat-lab lang-text" data-en="Pro Unlimited" data-zh="Pro 无限次">Pro 无限次</div></div>
             </div>
         </div>
     </section>
@@ -333,67 +328,68 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <!-- Features -->
     <section id="features" class="section-container">
         <div class="section-header">
-            <h2>核心功能</h2>
-            <p>从实时监控到防反爬，覆盖资讯抓取全流程</p>
+            <h2 class="lang-text" data-en="Core Features" data-zh="核心功能">核心功能</h2>
+            <p class="lang-text" data-en="From real-time monitoring to anti-bot bypass — the full news scraping pipeline" data-zh="从实时监控到防反爬，覆盖资讯抓取全流程">从实时监控到防反爬，覆盖资讯抓取全流程</p>
         </div>
         <div class="grid cards-grid">
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="zap"></i></div>
-                <h3>实时监控</h3>
-                <p>后台静默运行，每 15 秒检测新文章。首次启动设基准去重，仅推送真正的新内容，历史记录持久化（最多 200 条）。</p>
+                <h3 class="lang-text" data-en="Real-time Monitoring" data-zh="实时监控">实时监控</h3>
+                <p class="lang-text" data-en="Runs silently in the background, refreshes pages on a scheduled/random basis to discover new articles, polls DOM every 15s. First launch sets a dedup baseline, only pushes genuinely new content, history persisted (up to 200 entries)." data-zh="后台静默运行，定时/随机刷新页面发现新文章，页内 15 秒轮询 DOM。首次启动设基准去重，仅推送真正的新内容，历史记录持久化（最多 200 条）。">后台静默运行，定时/随机刷新页面发现新文章，页内 15 秒轮询 DOM。首次启动设基准去重，仅推送真正的新内容，历史记录持久化（最多 200 条）。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">检测间隔</span><span class="val">15 秒</span></div>
-                    <div class="spec-row"><span class="lab">去重机制</span><span class="val">基准 + 持久化</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Page Refresh" data-zh="页面刷新">页面刷新</span><span class="val lang-text" data-en="Scheduled / Random" data-zh="定时 / 随机">定时 / 随机</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="DOM Polling" data-zh="页内轮询">页内轮询</span><span class="val">15s</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Dedup" data-zh="去重机制">去重机制</span><span class="val lang-text" data-en="Baseline + Persist" data-zh="基准 + 持久化">基准 + 持久化</span></div>
                 </div>
                 <div class="card-footer">
-                    <span class="tag tag-free">免费</span>
-                    <span class="read-more">核心功能 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="tag tag-free lang-text" data-en="Free" data-zh="免费">免费</span>
+                    <span class="read-more lang-text" data-en="Core" data-zh="核心功能">核心功能 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="shuffle"></i></div>
-                <h3>刷新策略</h3>
-                <p>定时扫描与随机扫描双模式。随机模式 4 档频率适配不同时段，防封号设计。</p>
+                <h3 class="lang-text" data-en="Refresh Strategy" data-zh="刷新策略">刷新策略</h3>
+                <p class="lang-text" data-en="Dual mode: scheduled scan (fixed daily time, skips weekends) and random scan. Random mode offers 4 frequency tiers for different trading sessions, anti-ban design." data-zh="定时扫描与随机扫描双模式。随机模式 4 档频率适配不同时段，防封号设计。">定时扫描与随机扫描双模式。随机模式 4 档频率适配不同时段，防封号设计。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">高频</span><span class="val">5~15 分钟</span></div>
-                    <div class="spec-row"><span class="lab">标准</span><span class="val">20~40 分钟</span></div>
-                    <div class="spec-row"><span class="lab">保守</span><span class="val">60~120 分钟</span></div>
-                    <div class="spec-row"><span class="lab">极保守</span><span class="val">120~240 分钟</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="High" data-zh="高频">高频</span><span class="val">5~15 min</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Standard" data-zh="标准">标准</span><span class="val">20~40 min</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Conservative" data-zh="保守">保守</span><span class="val">60~120 min</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Ultra-conservative" data-zh="极保守">极保守</span><span class="val">120~240 min</span></div>
                 </div>
                 <div class="card-footer">
-                    <span class="tag tag-free">免费</span>
-                    <span class="read-more">防封设计 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="tag tag-free lang-text" data-en="Free" data-zh="免费">免费</span>
+                    <span class="read-more lang-text" data-en="Anti-ban" data-zh="防封设计">防封设计 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="file-text"></i></div>
-                <h3>手动扫描</h3>
-                <p>在任意 Investing.com 新闻列表页一键提取全部文章正文（自动过滤 InvestingPro 付费墙），带浮动进度条实时显示抓取进度。</p>
+                <h3 class="lang-text" data-en="Manual Scan" data-zh="手动扫描">手动扫描</h3>
+                <p class="lang-text" data-en="One-click extract all article bodies on any Investing.com news listing page (auto-filters InvestingPro paywalled articles), with a floating progress bar showing real-time scraping progress." data-zh="在任意 Investing.com 新闻列表页一键提取全部文章正文（自动过滤 InvestingPro 付费墙），带浮动进度条实时显示抓取进度。">在任意 Investing.com 新闻列表页一键提取全部文章正文（自动过滤 InvestingPro 付费墙），带浮动进度条实时显示抓取进度。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">范围</span><span class="val">当前页全部文章</span></div>
-                    <div class="spec-row"><span class="lab">过滤</span><span class="val">付费墙文章</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Scope" data-zh="范围">范围</span><span class="val lang-text" data-en="All articles on page" data-zh="当前页全部文章">当前页全部文章</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Filter" data-zh="过滤">过滤</span><span class="val lang-text" data-en="Paywalled articles" data-zh="付费墙文章">付费墙文章</span></div>
                 </div>
                 <div class="card-footer">
-                    <span class="tag tag-free">免费</span>
-                    <span class="read-more">一键抓取 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="tag tag-free lang-text" data-en="Free" data-zh="免费">免费</span>
+                    <span class="read-more lang-text" data-en="One-click" data-zh="一键抓取">一键抓取 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="shield"></i></div>
-                <h3>防反爬 & 验证页</h3>
-                <p>内置 Anti-Adblock 模块：CSS 预隐藏 + MutationObserver + 滚动解锁。Cloudflare 验证页自动检测并重试（最多 2 次），复用持久 Tab 保留 Cookie。</p>
+                <h3 class="lang-text" data-en="Anti-Bot & Verification" data-zh="防反爬 & 验证页">防反爬 & 验证页</h3>
+                <p class="lang-text" data-en="Built-in Anti-Adblock module: CSS pre-hide + MutationObserver + scroll unlock. Cloudflare verification pages auto-detected and retried (up to 2 times), persistent Tab reused to retain cookies." data-zh="内置 Anti-Adblock 模块：CSS 预隐藏 + MutationObserver + 滚动解锁。Cloudflare 验证页自动检测并重试（最多 2 次），复用持久 Tab 保留 Cookie。">内置 Anti-Adblock 模块：CSS 预隐藏 + MutationObserver + 滚动解锁。Cloudflare 验证页自动检测并重试（最多 2 次），复用持久 Tab 保留 Cookie。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">Adblock 弹窗</span><span class="val">自动关闭</span></div>
-                    <div class="spec-row"><span class="lab">Cloudflare</span><span class="val">检测+重试</span></div>
-                    <div class="spec-row"><span class="lab">持久 Tab</span><span class="val">Cookie 复用</span></div>
+                    <div class="spec-row"><span class="lab">Adblock</span><span class="val lang-text" data-en="Auto-dismiss" data-zh="自动关闭">自动关闭</span></div>
+                    <div class="spec-row"><span class="lab">Cloudflare</span><span class="val lang-text" data-en="Detect + Retry" data-zh="检测+重试">检测+重试</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Persistent Tab" data-zh="持久 Tab">持久 Tab</span><span class="val lang-text" data-en="Cookie reuse" data-zh="Cookie 复用">Cookie 复用</span></div>
                 </div>
                 <div class="card-footer">
-                    <span class="tag tag-free">免费</span>
-                    <span class="read-more">自动绕过 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="tag tag-free lang-text" data-en="Free" data-zh="免费">免费</span>
+                    <span class="read-more lang-text" data-en="Auto-bypass" data-zh="自动绕过">自动绕过 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
@@ -403,37 +399,37 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <!-- AI -->
     <section id="ai" class="section-container">
         <div class="section-header">
-            <h2>AI 处理</h2>
-            <p>DeepSeek 引擎驱动，总结翻译一键完成</p>
+            <h2 class="lang-text" data-en="AI Processing" data-zh="AI 处理">AI 处理</h2>
+            <p class="lang-text" data-en="Powered by DeepSeek — summarize & translate in one click" data-zh="DeepSeek 引擎驱动，总结翻译一键完成">DeepSeek 引擎驱动，总结翻译一键完成</p>
         </div>
         <div class="grid cards-grid">
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="sparkles"></i></div>
-                <h3>AI 总结</h3>
-                <p>抓取的原文由 DeepSeek 自动精简总结，作为消息正文推送，帮你快速过滤重点。</p>
+                <h3 class="lang-text" data-en="AI Summary" data-zh="AI 总结">AI 总结</h3>
+                <p class="lang-text" data-en="Scraped articles are auto-summarized by DeepSeek into a concise message body for quick filtering of key points." data-zh="抓取的原文由 DeepSeek 自动精简总结，作为消息正文推送，帮你快速过滤重点。">抓取的原文由 DeepSeek 自动精简总结，作为消息正文推送，帮你快速过滤重点。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">引擎</span><span class="val">DeepSeek</span></div>
-                    <div class="spec-row"><span class="lab">输出</span><span class="val">精简版 → 消息正文</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Engine" data-zh="引擎">引擎</span><span class="val">DeepSeek</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Output" data-zh="输出">输出</span><span class="val lang-text" data-en="Summary → Message body" data-zh="精简版 → 消息正文">精简版 → 消息正文</span></div>
                 </div>
                 <div class="card-footer">
                     <span class="tag tag-pro">Pro</span>
-                    <span class="read-more">智能总结 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="read-more lang-text" data-en="Smart summary" data-zh="智能总结">智能总结 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="languages"></i></div>
-                <h3>AI 翻译</h3>
-                <p>完整翻译生成 TXT 附件，支持中文、英文、日文、韩文等多语言。API Key 藏在服务器端，安全无忧。</p>
+                <h3 class="lang-text" data-en="AI Translation" data-zh="AI 翻译">AI 翻译</h3>
+                <p class="lang-text" data-en="Full translation generated as a TXT attachment, supporting Chinese, English, Japanese, Korean and more. API Key kept server-side for security." data-zh="完整翻译生成 TXT 附件，支持中文、英文、日文、韩文等多语言。API Key 藏在服务器端，安全无忧。">完整翻译生成 TXT 附件，支持中文、英文、日文、韩文等多语言。API Key 藏在服务器端，安全无忧。</p>
                 <div class="spec-rows">
-                    <div class="spec-row"><span class="lab">引擎</span><span class="val">DeepSeek</span></div>
-                    <div class="spec-row"><span class="lab">输出</span><span class="val">完整翻译 → TXT</span></div>
-                    <div class="spec-row"><span class="lab">密钥</span><span class="val">服务器端保管</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Engine" data-zh="引擎">引擎</span><span class="val">DeepSeek</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="Output" data-zh="输出">输出</span><span class="val lang-text" data-en="Full translation → TXT" data-zh="完整翻译 → TXT">完整翻译 → TXT</span></div>
+                    <div class="spec-row"><span class="lab lang-text" data-en="API Key" data-zh="密钥">密钥</span><span class="val lang-text" data-en="Server-side" data-zh="服务器端保管">服务器端保管</span></div>
                 </div>
                 <div class="card-footer">
                     <span class="tag tag-pro">Pro</span>
-                    <span class="read-more">多语言 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="read-more lang-text" data-en="Multi-language" data-zh="多语言">多语言 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
@@ -443,48 +439,48 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <!-- Push -->
     <section id="push" class="section-container">
         <div class="section-header">
-            <h2>推送渠道</h2>
-            <p>本地保存 · Discord · Email，三路触达不漏快讯</p>
+            <h2 class="lang-text" data-en="Push Channels" data-zh="推送渠道">推送渠道</h2>
+            <p class="lang-text" data-en="Local save · Discord · Email — three-way delivery, never miss a headline" data-zh="本地保存 · Discord · Email，三路触达不漏快讯">本地保存 · Discord · Email，三路触达不漏快讯</p>
         </div>
         <div class="grid cards-grid">
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="save"></i></div>
-                <h3>本地 TXT 保存</h3>
-                <p>静默下载至系统 Downloads 文件夹，无需配置即开即用。</p>
+                <h3 class="lang-text" data-en="Local TXT Save" data-zh="本地 TXT 保存">本地 TXT 保存</h3>
+                <p class="lang-text" data-en="Silently downloads to the system Downloads folder, no configuration needed — works out of the box." data-zh="静默下载至系统 Downloads 文件夹，无需配置即开即用。">静默下载至系统 Downloads 文件夹，无需配置即开即用。</p>
                 <div class="card-footer">
-                    <span class="tag tag-free">免费</span>
-                    <span class="read-more">默认开启 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="tag tag-free lang-text" data-en="Free" data-zh="免费">免费</span>
+                    <span class="read-more lang-text" data-en="Default on" data-zh="默认开启">默认开启 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="message-circle"></i></div>
-                <h3>Discord 推送</h3>
-                <p>推送总结卡片 + TXT 附件。带 429 限流重试、指数退避，保证送达。监控模式每篇一张卡片，手动扫描分批发送。</p>
+                <h3 class="lang-text" data-en="Discord Push" data-zh="Discord 推送">Discord 推送</h3>
+                <p class="lang-text" data-en="Pushes summary card + TXT attachment. With 429 rate-limit retry and exponential backoff for guaranteed delivery. Monitor mode sends one card per article, manual scan sends in batches." data-zh="推送总结卡片 + TXT 附件。带 429 限流重试、指数退避，保证送达。监控模式每篇一张卡片，手动扫描分批发送。">推送总结卡片 + TXT 附件。带 429 限流重试、指数退避，保证送达。监控模式每篇一张卡片，手动扫描分批发送。</p>
                 <div class="card-footer">
                     <span class="tag tag-pro">Pro</span>
-                    <span class="read-more">卡片+附件 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="read-more lang-text" data-en="Card + Attachment" data-zh="卡片+附件">卡片+附件 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="mail"></i></div>
-                <h3>Email 推送</h3>
-                <p>通过后端中转发送邮件，附带原文 TXT 附件。出差离线也能收到快讯。</p>
+                <h3 class="lang-text" data-en="Email Push" data-zh="Email 推送">Email 推送</h3>
+                <p class="lang-text" data-en="Sends emails via backend relay, with original TXT attachment. Receive headlines even when offline or traveling." data-zh="通过后端中转发送邮件，附带原文 TXT 附件。出差离线也能收到快讯。">通过后端中转发送邮件，附带原文 TXT 附件。出差离线也能收到快讯。</p>
                 <div class="card-footer">
                     <span class="tag tag-pro">Pro</span>
-                    <span class="read-more">后端中转 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="read-more lang-text" data-en="Backend relay" data-zh="后端中转">后端中转 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
             <div class="item-card">
                 <div class="card-icon"><i data-lucide="paperclip"></i></div>
-                <h3>附带原文</h3>
-                <p>作为 Discord/Email 附件发送，本地保存也会包含原始正文，方便回溯查证。</p>
+                <h3 class="lang-text" data-en="Original Attached" data-zh="附带原文">附带原文</h3>
+                <p class="lang-text" data-en="Sent as Discord/Email attachment, local save also includes the original body text for easy traceability." data-zh="作为 Discord/Email 附件发送，本地保存也会包含原始正文，方便回溯查证。">作为 Discord/Email 附件发送，本地保存也会包含原始正文，方便回溯查证。</p>
                 <div class="card-footer">
                     <span class="tag tag-pro">Pro</span>
-                    <span class="read-more">原文留存 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
+                    <span class="read-more lang-text" data-en="Original retained" data-zh="原文留存">原文留存 <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></span>
                 </div>
             </div>
 
@@ -494,42 +490,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     <!-- Pricing -->
     <section id="pricing" class="section-container">
         <div class="section-header">
-            <h2>选择方案</h2>
-            <p>免费体验，按需升级</p>
+            <h2 class="lang-text" data-en="Choose Your Plan" data-zh="选择方案">选择方案</h2>
+            <p class="lang-text" data-en="Try free, upgrade as needed" data-zh="免费体验，按需升级">免费体验，按需升级</p>
         </div>
         <div class="plans">
 
             <div class="plan">
-                <div class="plan-name">🆓 Free</div>
-                <div class="plan-price">$0<small> /永久</small></div>
-                <div class="plan-desc">免费体验，无需注册</div>
+                <div class="plan-name lang-text" data-en="🆓 Free" data-zh="🆓 Free">🆓 Free</div>
+                <div class="plan-price">$0<small class="lang-text" data-en=" /forever" data-zh=" /永久"> /永久</small></div>
+                <div class="plan-desc lang-text" data-en="Free trial, no registration needed" data-zh="免费体验，无需注册">免费体验，无需注册</div>
                 <ul>
-                    <li class="on"><i data-lucide="check"></i> 30 次免费扫描</li>
-                    <li class="on"><i data-lucide="check"></i> 实时监控 + 手动扫描</li>
-                    <li class="on"><i data-lucide="check"></i> 本地 TXT 保存</li>
-                    <li class="on"><i data-lucide="check"></i> 中英双语切换</li>
-                    <li class="off"><i data-lucide="x"></i> AI 总结 / 翻译</li>
-                    <li class="off"><i data-lucide="x"></i> Discord / Email 推送</li>
-                    <li class="off"><i data-lucide="x"></i> 无限次抓取</li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="30 free scans" data-zh="30 次免费扫描">30 次免费扫描</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Monitor + Manual scan" data-zh="实时监控 + 手动扫描">实时监控 + 手动扫描</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Local TXT save" data-zh="本地 TXT 保存">本地 TXT 保存</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Bilingual (EN/ZH)" data-zh="中英双语切换">中英双语切换</span></li>
+                    <li class="off"><i data-lucide="x"></i> <span class="lang-text" data-en="AI summary / translation" data-zh="AI 总结 / 翻译">AI 总结 / 翻译</span></li>
+                    <li class="off"><i data-lucide="x"></i> <span class="lang-text" data-en="Discord / Email push" data-zh="Discord / Email 推送">Discord / Email 推送</span></li>
+                    <li class="off"><i data-lucide="x"></i> <span class="lang-text" data-en="Unlimited scraping" data-zh="无限次抓取">无限次抓取</span></li>
                 </ul>
-                <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="btn glass-btn">免费使用</a>
+                <a href="https://chromewebstore.google.com/detail/nebjfamenkoddjjmpaiehkkiibdjhkeh?utm_source=item-share-cb" target="_blank" class="btn glass-btn lang-text" data-en="Use Free" data-zh="免费使用">免费使用</a>
             </div>
 
             <div class="plan featured">
-                <div class="plan-name">👑 Pro</div>
-                <div class="plan-price">$9.9<small> /一次性</small></div>
-                <div class="plan-desc">解锁全部高级功能</div>
+                <div class="plan-name lang-text" data-en="👑 Pro" data-zh="👑 Pro">👑 Pro</div>
+                <div class="plan-price">$7.9<small class="lang-text" data-en=" /month" data-zh=" /月"> /月</small></div>
+                <div class="plan-desc lang-text" data-en="Unlock all advanced features" data-zh="解锁全部高级功能">解锁全部高级功能</div>
                 <ul>
-                    <li class="on"><i data-lucide="check"></i> 无限次扫描</li>
-                    <li class="on"><i data-lucide="check"></i> 实时监控 + 手动扫描</li>
-                    <li class="on"><i data-lucide="check"></i> 本地 TXT 保存</li>
-                    <li class="on"><i data-lucide="check"></i> 中英双语切换</li>
-                    <li class="on"><i data-lucide="check"></i> AI 总结（DeepSeek）</li>
-                    <li class="on"><i data-lucide="check"></i> AI 多语言翻译</li>
-                    <li class="on"><i data-lucide="check"></i> Discord 推送 + 附件</li>
-                    <li class="on"><i data-lucide="check"></i> Email 邮件推送</li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Unlimited scans" data-zh="无限次扫描">无限次扫描</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Monitor + Manual scan" data-zh="实时监控 + 手动扫描">实时监控 + 手动扫描</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Local TXT save" data-zh="本地 TXT 保存">本地 TXT 保存</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Bilingual (EN/ZH)" data-zh="中英双语切换">中英双语切换</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="AI summary (DeepSeek)" data-zh="AI 总结（DeepSeek）">AI 总结（DeepSeek）</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="AI multi-language translation" data-zh="AI 多语言翻译">AI 多语言翻译</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Discord push + attachments" data-zh="Discord 推送 + 附件">Discord 推送 + 附件</span></li>
+                    <li class="on"><i data-lucide="check"></i> <span class="lang-text" data-en="Email push" data-zh="Email 邮件推送">Email 邮件推送</span></li>
                 </ul>
-                <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="btn primary-btn">升级 Pro</a>
+                <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" class="btn primary-btn lang-text" data-en="Upgrade Pro" data-zh="升级 Pro">升级 Pro</a>
             </div>
 
         </div>
@@ -538,18 +534,41 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 <footer class="glass-footer">
     <div class="footer-content">
-        <p>© 2026 AI Reader for Investing.com · Powered by DeepSeek</p>
+        <p class="lang-text" data-en="© 2026 AI Reader for Investing.com · Powered by DeepSeek" data-zh="© 2026 AI Reader for Investing.com · Powered by DeepSeek">© 2026 AI Reader for Investing.com · Powered by DeepSeek</p>
         <div class="footer-socials">
             <a href="https://reggaeleet.gumroad.com/l/lgnywj" target="_blank" aria-label="Gumroad"><i data-lucide="shopping-bag"></i></a>
-            <a href="#" aria-label="Chrome Web Store"><i data-lucide="chrome"></i></a>
-            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            <a href="https://chromewebstore.google.com/detail/nebjfamenkoddjjmpaiehkkiibdjhkeh?utm_source=item-share-cb" target="_blank" aria-label="Chrome Web Store"><i data-lucide="chrome"></i></a>
         </div>
     </div>
 </footer>
 
 <script>
     lucide.createIcons();
-    // 平滑滚动
+
+    // Language toggle (same pattern as index.html)
+    let currentLang = localStorage.getItem("siteLang");
+    if (!currentLang) {
+        currentLang = navigator.language.toLowerCase().includes("zh") ? "zh" : "en";
+    }
+
+    function updateTexts() {
+        document.querySelectorAll('.lang-text').forEach(el => {
+            const text = currentLang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+            if (text) el.innerHTML = text;
+        });
+    }
+    updateTexts();
+
+    const langBtn = document.getElementById('lang-toggle');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            localStorage.setItem("siteLang", currentLang);
+            updateTexts();
+        });
+    }
+
+    // Smooth scrolling for in-page anchors
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', e => {
             const id = a.getAttribute('href');
