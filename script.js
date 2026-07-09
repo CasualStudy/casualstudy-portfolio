@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title_en: "AI Reader for Investing.com",
             title_zh: "Investing.com AI 助读插件",
-            excerpt_en: "A Chrome extension that uses AI to summarize and analyze financial articles.",
-            excerpt_zh: "基于大模型的 Chrome 浏览器插件，用于一键总结和分析财经长文与新闻。",
-            tech: "JavaScript, Chrome Extension API",
-            icon: "puzzle",
+            excerpt_en: "Chrome extension that auto-monitors Investing.com news, detects new articles in real time, summarizes & translates with AI, then pushes to Discord/Email. Never miss a market-moving headline.",
+            excerpt_zh: "自动监控 Investing.com 新闻，实时检测新文章，AI 总结翻译，多渠道推送。专为金融资讯投资者打造的 Chrome 扩展，从此不再错过任何一条重磅快讯。",
+            tech: "Chrome Extension, DeepSeek AI, Discord/Email",
+            icon: "newspaper",
             link: "investing-extension.html"
         },
         {
