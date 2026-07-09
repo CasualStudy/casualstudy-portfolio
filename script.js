@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mock Data for Projects
     const projects = [
         {
-            title_en: "Project 1 (TBD)",
-            title_zh: "项目 1 (TBD)",
-            excerpt_en: "TBD - Coming soon.",
-            excerpt_zh: "敬请期待 - 建设中。",
-            tech: "TBD",
-            icon: "layout-dashboard"
+            title_en: "AI Reader for Investing.com",
+            title_zh: "Investing.com AI 助读插件",
+            excerpt_en: "A Chrome extension that uses AI to summarize and analyze financial articles.",
+            excerpt_zh: "基于大模型的 Chrome 浏览器插件，用于一键总结和分析财经长文与新闻。",
+            tech: "JavaScript, Chrome Extension API",
+            icon: "puzzle",
+            link: "investing-extension.html"
         },
         {
             title_en: "Project 2 (TBD)",
