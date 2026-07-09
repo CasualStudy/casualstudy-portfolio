@@ -12,16 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
         rangeDown: echarts.init(document.getElementById('range-down-chart'))
     };
 
+    const getIsDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const getIsSmall = () => window.innerWidth <= 768;
+
     const getHeatmapOption = (dataSeries, title) => {
-        // Find max value to scale color
-        let maxVal = 0;
-        dataSeries.forEach(item => {
-            if (item[2] > maxVal) maxVal = item[2];
-        });
-        
+        const isDark = getIsDark();
+        const isSmall = getIsSmall();
+        const textColor = isDark ? '#e2e8f0' : '#1e293b';
+        const cellLabelColor = isDark ? '#f1f5f9' : '#111';
+
         return {
             tooltip: {
                 position: 'top',
+                backgroundColor: isDark ? 'rgba(15,23,42,0.95)' : 'rgba(255,255,255,0.98)',
+                borderColor: isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.1)',
+                borderWidth: 1,
+                textStyle: { color: textColor, fontSize: 12 },
                 formatter: function (params) {
                     const d = params.data;
                     return `
@@ -33,19 +39,22 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             grid: {
                 height: '70%',
-                top: '10%'
+                top: '6%',
+                left: isSmall ? 2 : '10%',
+                right: isSmall ? 8 : '5%',
+                containLabel: true
             },
             xAxis: {
                 type: 'category',
                 data: ['5Y', '10Y', '30Y'],
                 splitArea: { show: true },
-                axisLabel: { color: '#000', fontWeight: 'bold', fontSize: 13 }
+                axisLabel: { color: textColor, fontWeight: 'bold', fontSize: isSmall ? 12 : 13 }
             },
             yAxis: {
                 type: 'category',
                 data: ['<0.5%', '0.5%-1%', '1%-2%', '2%-3%', '3%+'],
                 splitArea: { show: true },
-                axisLabel: { color: '#000', fontWeight: 'bold', fontSize: 13 }
+                axisLabel: { color: textColor, fontWeight: 'bold', fontSize: isSmall ? 12 : 13 }
             },
             visualMap: {
                 min: 0,
@@ -54,11 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 orient: 'horizontal',
                 left: 'center',
                 bottom: '0%',
+                itemWidth: isSmall ? 14 : 20,
+                itemHeight: isSmall ? 110 : 140,
                 inRange: {
                     // Deepen the colors slightly: Slate 400 -> Blue 400 -> Red 400
                     color: ['#94a3b8', '#60a5fa', '#f87171']
                 },
-                textStyle: { color: '#000', fontWeight: 'bold' }
+                textStyle: { color: textColor, fontWeight: 'bold' }
             },
             series: [{
                 name: title,
@@ -69,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     formatter: function(params) {
                         return params.data[2] > 0 ? params.data[2] + '%' : '-';
                     },
-                    color: '#111',
-                    fontSize: 15,
+                    color: cellLabelColor,
+                    fontSize: isSmall ? 12 : 15,
                     fontWeight: 'bold'
                 },
                 emphasis: {
@@ -235,8 +246,23 @@ document.addEventListener("DOMContentLoaded", () => {
         updateUI();
     });
 
-    // Resize
+    // Re-render when the OS theme flips so heatmap text stays readable
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => updateUI());
+    }
+
+    // Resize; re-render when crossing the mobile/desktop breakpoint so
+    // font sizes and grid paddings adapt
+    let wasSmall = getIsSmall();
+    let resizeTimer = null;
     window.addEventListener('resize', () => {
         Object.values(charts).forEach(c => c.resize());
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            if (getIsSmall() !== wasSmall) {
+                wasSmall = getIsSmall();
+                updateUI();
+            }
+        }, 200);
     });
 });

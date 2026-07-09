@@ -29,6 +29,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateTextAndRender();
             });
 
+            // Re-render on OS theme change so chart text stays readable
+            if (window.matchMedia) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => updateTextAndRender());
+            }
+
+            // Re-render when crossing the mobile/desktop breakpoint so
+            // bar labels show/hide appropriately
+            let wasSmall = window.innerWidth <= 768;
+            let resizeTimer = null;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    const nowSmall = window.innerWidth <= 768;
+                    if (nowSmall !== wasSmall) {
+                        wasSmall = nowSmall;
+                        updateTextAndRender();
+                    }
+                }, 200);
+            });
+
             document.getElementById('btn-spx').addEventListener('click', (e) => {
                 e.target.classList.add('active');
                 document.getElementById('btn-ndx').classList.remove('active');
@@ -146,21 +166,37 @@ function renderCharts(stats, dict) {
     const s20 = stats["20Y"] || {pre_avg:0, post1w_avg:0, post1m_avg:0, post1y_avg:0, pre_win:0, post1w_win:0, post1m_win:0, post1y_win:0};
     
     const xLabels = [dict.stat_pre, dict.select_1w, dict.select_1m, dict.select_1y];
-    
+
     // Theme colors matching dark mode
     const color1Y = '#f472b6'; // Pink
     const color10Y = '#818cf8'; // Indigo
     const color20Y = '#34d399'; // Emerald
+
+    const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isSmall = window.innerWidth <= 768;
+    const textColor = isDark ? '#e2e8f0' : '#111827';
+    const axisLineColor = isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)';
+    const splitLineColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+    // On phones the bars are narrow — per-bar value labels overlap, so
+    // hide them and rely on the tooltip instead.
+    const barLabel = isSmall
+        ? { show: false }
+        : { show: true, position: 'top', color: textColor, fontWeight: 600, formatter: '{c}%' };
 
     // Common options
     const commonOptions = {
         backgroundColor: 'transparent',
         tooltip: {
             trigger: 'axis',
-            axisPointer: { type: 'shadow' }
+            axisPointer: { type: 'shadow' },
+            backgroundColor: isDark ? 'rgba(15,23,42,0.95)' : 'rgba(255,255,255,0.98)',
+            borderColor: isDark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.1)',
+            borderWidth: 1,
+            textStyle: { color: textColor, fontSize: 12 },
+            valueFormatter: (v) => v == null ? '-' : v + '%'
         },
         legend: {
-            textStyle: { color: '#111827', fontWeight: 600 },
+            textStyle: { color: textColor, fontWeight: 600 },
             top: 30
         },
         grid: {
@@ -172,30 +208,41 @@ function renderCharts(stats, dict) {
         xAxis: {
             type: 'category',
             data: xLabels,
-            axisLabel: { color: '#111827', fontWeight: 600 },
-            axisLine: { lineStyle: { color: 'rgba(0,0,0,0.2)' } }
+            axisLabel: {
+                color: textColor,
+                fontWeight: 600,
+                interval: 0,
+                fontSize: isSmall ? 10 : 12,
+                rotate: isSmall ? 25 : 0
+            },
+            axisLine: { lineStyle: { color: axisLineColor } }
         },
         yAxis: {
             type: 'value',
-            axisLabel: { color: '#111827', fontWeight: 600 },
-            splitLine: { lineStyle: { color: 'rgba(0,0,0,0.1)' } }
+            axisLabel: { color: textColor, fontWeight: 600 },
+            splitLine: { lineStyle: { color: splitLineColor } }
         }
     };
 
+    // Reuse existing chart instances on re-render (language / index /
+    // theme switches) instead of re-initializing over the same DOM node.
+    const returnDom = document.getElementById('avg-return-chart');
+    const winDom = document.getElementById('win-rate-chart');
+
     // Chart 1: Average Returns
-    const returnChart = echarts.init(document.getElementById('avg-return-chart'));
+    const returnChart = echarts.getInstanceByDom(returnDom) || echarts.init(returnDom);
     returnChart.setOption({
         ...commonOptions,
         title: {
             text: dict.chart_return_title,
-            textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
+            textStyle: { color: textColor, fontSize: 16, fontWeight: 700 },
             left: 'center',
             top: 0
         },
         grid: { ...commonOptions.grid, top: 80 },
         yAxis: {
             ...commonOptions.yAxis,
-            axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
+            axisLabel: { formatter: '{value}%', color: textColor, fontWeight: 600 }
         },
         series: [
             {
@@ -203,32 +250,32 @@ function renderCharts(stats, dict) {
                 type: 'bar',
                 data: [s20.pre_avg, s20.post1w_avg, s20.post1m_avg, s20.post1y_avg],
                 itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
                 data: [s10.pre_avg, s10.post1w_avg, s10.post1m_avg, s10.post1y_avg],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
                 data: [s1.pre_avg, s1.post1w_avg, s1.post1m_avg, s1.post1y_avg],
                 itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             }
         ]
-    });
+    }, true);
 
     // Chart 2: Win Rates
-    const winChart = echarts.init(document.getElementById('win-rate-chart'));
+    const winChart = echarts.getInstanceByDom(winDom) || echarts.init(winDom);
     winChart.setOption({
         ...commonOptions,
         title: {
             text: dict.chart_win_title,
-            textStyle: { color: '#111827', fontSize: 16, fontWeight: 700 },
+            textStyle: { color: textColor, fontSize: 16, fontWeight: 700 },
             left: 'center',
             top: 0
         },
@@ -237,7 +284,7 @@ function renderCharts(stats, dict) {
             ...commonOptions.yAxis,
             min: 0,
             max: 100,
-            axisLabel: { formatter: '{value}%', color: '#111827', fontWeight: 600 }
+            axisLabel: { formatter: '{value}%', color: textColor, fontWeight: 600 }
         },
         series: [
             {
@@ -245,27 +292,22 @@ function renderCharts(stats, dict) {
                 type: 'bar',
                 data: [s20.pre_win, s20.post1w_win, s20.post1m_win, s20.post1y_win],
                 itemStyle: { color: color20Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             },
             {
                 name: dict.series_10y,
                 type: 'bar',
                 data: [s10.pre_win, s10.post1w_win, s10.post1m_win, s10.post1y_win],
                 itemStyle: { color: color10Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             },
             {
                 name: dict.series_1y,
                 type: 'bar',
                 data: [s1.pre_win, s1.post1w_win, s1.post1m_win, s1.post1y_win],
                 itemStyle: { color: color1Y, borderRadius: [4, 4, 0, 0] },
-                label: { show: true, position: 'top', color: '#111827', fontWeight: 600, formatter: '{c}%' }
+                label: barLabel
             }
         ]
-    });
-
-    window.addEventListener('resize', () => {
-        returnChart.resize();
-        winChart.resize();
-    });
+    }, true);
 }

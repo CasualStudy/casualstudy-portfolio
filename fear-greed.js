@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 axisPointer: { link: [{ xAxisIndex: 'all' }] },
                 // Two grids: SPX on top, F&G on bottom
                 grid: [
-                    { left: '3%', right: '3%', top: '6%',  height: '46%' },
-                    { left: '3%', right: '3%', top: '58%', height: '30%' }
+                    { left: '3%', right: '3%', top: '6%',  height: '46%', containLabel: true },
+                    { left: '3%', right: '3%', top: '58%', height: '30%', containLabel: true }
                 ],
                 // ONE shared dataZoom controlling both xAxis[0] (SPX) and xAxis[1] (F&G)
                 dataZoom: [
