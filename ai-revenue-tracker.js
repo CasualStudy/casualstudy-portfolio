@@ -426,27 +426,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Reset vendor shade cache so colors are deterministic per render
         Object.keys(_vendorShadeCache).forEach(k => delete _vendorShadeCache[k]);
 
-        // Top 10 models for cleaner display
-        const top10 = latestData.models.slice(0, 10).reverse(); // Reverse for horizontal bar chart (highest at top)
+        // Top 15 models for cleaner display
+        const top15 = latestData.models.slice(0, 15).reverse(); // Reverse for horizontal bar chart (highest at top)
 
         // Calculate "Others" revenue
-        let top10Revenue = top10.reduce((sum, m) => sum + m.revenue, 0);
-        let othersRevenue = latestData.total_revenue - top10Revenue;
+        let top15Revenue = top15.reduce((sum, m) => sum + m.revenue, 0);
+        let othersRevenue = latestData.total_revenue - top15Revenue;
 
         const hasOthers = othersRevenue > 0;
         if (hasOthers) {
-            top10.unshift({ name: 'Others', revenue: othersRevenue, id: 'other/others' });
+            top15.unshift({ name: 'Others', revenue: othersRevenue, id: 'other/others' });
         }
 
         const totalRev = latestData.total_revenue;
-        const modelNames = top10.map(m => {
+        const modelNames = top15.map(m => {
             if (m.name === 'Others' || m.id === 'other/others') return 'Others';
             const name = shortModelName(m.name || m.id);
             return name.length > 25 ? name.substring(0, 25) + '...' : name;
         });
-        const revenues = top10.map(m => m.revenue);
-        const shares = top10.map(m => totalRev > 0 ? (m.revenue / totalRev * 100) : 0);
-        const barColors = top10.map(m => {
+        const revenues = top15.map(m => m.revenue);
+        const shares = top15.map(m => totalRev > 0 ? (m.revenue / totalRev * 100) : 0);
+        const barColors = top15.map(m => {
             if (m.id === 'other/others') return isDarkMode ? '#475569' : '#94a3b8';
             return modelColor(m.id, m.name);
         });
@@ -458,12 +458,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 formatter: function (params) {
                     const value = params[0].value;
                     const modelIndex = params[0].dataIndex;
-                    const fullModelData = top10[modelIndex];
+                    const fullModelData = top15[modelIndex];
                     const sharePct = shares[modelIndex].toFixed(2);
                     
                     if (fullModelData.id === 'other/others') {
                         return `
-                            <strong>Others (Models 11+)</strong><br/>
+                            <strong>Others (Models 16+)</strong><br/>
                             Revenue: ${fmtCompactUSD(value)} <span style="opacity:0.6">($${value.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })})</span><br/>
                             Market Share: ${sharePct}%
                         `;
@@ -573,10 +573,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        // 2. Get Top 20 models
-        const top20ModelIds = Object.keys(overallModelRev)
+        // 2. Get Top 20 overall models + Top 10 latest day models
+        const overallTop20 = Object.keys(overallModelRev)
             .sort((a, b) => overallModelRev[b] - overallModelRev[a])
             .slice(0, 20);
+            
+        const latestDayModels = data[data.length - 1]?.models || [];
+        const latestTop10 = latestDayModels.slice(0, 10).map(m => m.id);
+        
+        // Merge and deduplicate
+        const top20ModelIds = [...new Set([...overallTop20, ...latestTop10])];
 
         // 3. Build series data + color map (no ECharts legend — we use HTML pills)
         const seriesData = [];
@@ -872,10 +878,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        // 2. Top 20 models by token usage
-        const top20ModelIds = Object.keys(overallModelTokens)
+        // 2. Get Top 20 overall models + Top 10 latest day models
+        const overallTop20 = Object.keys(overallModelTokens)
             .sort((a, b) => overallModelTokens[b] - overallModelTokens[a])
             .slice(0, 20);
+            
+        const latestDayModels = data[data.length - 1]?.models || [];
+        const latestTop10 = latestDayModels.slice(0, 10).map(m => m.id);
+        
+        const top20ModelIds = [...new Set([...overallTop20, ...latestTop10])];
 
         // 3. Build series + color map (no ECharts legend — we use HTML pills)
         const seriesData = [];
