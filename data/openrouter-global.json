@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-05-24",
-    "total_revenue": 9051002.55,
+    "total_revenue": 9053538.3,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -244,6 +244,12 @@
         "total_tokens": 39741145183
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2535.75,
+        "total_tokens": 23157537205
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 2286.29,
@@ -284,18 +290,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 37352083940
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 23157537205
       }
     ]
   },
   {
     "date": "2026-05-25",
-    "total_revenue": 12225407.44,
+    "total_revenue": 12228578.21,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -538,6 +538,12 @@
         "total_tokens": 22580003968
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3170.77,
+        "total_tokens": 28956777761
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 3080.22,
@@ -578,18 +584,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 42218750412
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28956777761
       }
     ]
   },
   {
     "date": "2026-05-26",
-    "total_revenue": 19191019.17,
+    "total_revenue": 19194381.55,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -844,6 +844,12 @@
         "total_tokens": 16234127369
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3362.38,
+        "total_tokens": 30706675702
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 3081.24,
@@ -872,18 +878,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 73654102192
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30706675702
       }
     ]
   },
   {
     "date": "2026-05-27",
-    "total_revenue": 14637263.01,
+    "total_revenue": 14640651.25,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1144,6 +1144,12 @@
         "total_tokens": 29284062720
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3388.24,
+        "total_tokens": 30942845287
+      },
+      {
         "id": "qwen/qwen3.5-flash-02-23",
         "name": "Qwen: Qwen3.5-Flash",
         "revenue": 2118.36,
@@ -1166,18 +1172,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 87486066262
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30942845287
       }
     ]
   },
   {
     "date": "2026-05-28",
-    "total_revenue": 14362767.65,
+    "total_revenue": 14366001.77,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1432,6 +1432,12 @@
         "total_tokens": 57982035214
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3234.12,
+        "total_tokens": 29535302650
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 508.96,
@@ -1454,18 +1460,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 87815431123
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29535302650
       }
     ]
   },
   {
     "date": "2026-05-29",
-    "total_revenue": 13234077.73,
+    "total_revenue": 13237189.67,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1720,6 +1720,12 @@
         "total_tokens": 47697815843
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3111.94,
+        "total_tokens": 28419574917
+      },
+      {
         "id": "inclusionai/ling-2.6-flash",
         "name": "inclusionAI: Ling-2.6-flash",
         "revenue": 538.43,
@@ -1742,18 +1748,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 86396133094
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28419574917
       }
     ]
   },
   {
     "date": "2026-05-30",
-    "total_revenue": 9255351.61,
+    "total_revenue": 9258324.97,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2008,6 +2008,12 @@
         "total_tokens": 27903197510
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2973.36,
+        "total_tokens": 27154003138
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 562.93,
@@ -2030,18 +2036,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 81649379490
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27154003138
       }
     ]
   },
   {
     "date": "2026-05-31",
-    "total_revenue": 10817189.17,
+    "total_revenue": 10820094.86,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2302,6 +2302,12 @@
         "total_tokens": 28247175369
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2905.69,
+        "total_tokens": 26536005115
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 613.47,
@@ -2324,18 +2330,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 71468745721
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 26536005115
       }
     ]
   },
   {
     "date": "2026-06-01",
-    "total_revenue": 12516629.65,
+    "total_revenue": 12519678.94,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2596,6 +2596,12 @@
         "total_tokens": 27520159642
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3049.29,
+        "total_tokens": 27847415182
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 556.47,
@@ -2618,18 +2624,12 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 76233198473
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27847415182
       }
     ]
   },
   {
     "date": "2026-06-02",
-    "total_revenue": 12455617.47,
+    "total_revenue": 12458665.26,
     "models": [
       {
         "id": "anthropic/claude-sonnet-4.6",
@@ -2890,6 +2890,12 @@
         "total_tokens": 63420998985
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3047.79,
+        "total_tokens": 27833719487
+      },
+      {
         "id": "meta-llama/llama-3.1-8b-instruct",
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 551.34,
@@ -2912,12 +2918,6 @@
         "name": "Poolside: Laguna M.1 (free)",
         "revenue": 0.0,
         "total_tokens": 75519912615
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27833719487
       }
     ]
   },
@@ -3217,7 +3217,7 @@
   },
   {
     "date": "2026-06-04",
-    "total_revenue": 14744055.91,
+    "total_revenue": 14747109.19,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3472,6 +3472,12 @@
         "total_tokens": 64060896430
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3053.28,
+        "total_tokens": 27883837445
+      },
+      {
         "id": "meta-llama/llama-3.1-8b-instruct",
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 585.78,
@@ -3496,12 +3502,6 @@
         "total_tokens": 77835901495
       },
       {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27883837445
-      },
-      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
@@ -3511,7 +3511,7 @@
   },
   {
     "date": "2026-06-05",
-    "total_revenue": 13933474.4,
+    "total_revenue": 13936643.03,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -3766,6 +3766,12 @@
         "total_tokens": 32503736886
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3168.63,
+        "total_tokens": 28937279794
+      },
+      {
         "id": "meta-llama/llama-3.1-8b-instruct",
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 1152.63,
@@ -3794,18 +3800,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 63685038805
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28937279794
       }
     ]
   },
   {
     "date": "2026-06-06",
-    "total_revenue": 10961420.01,
+    "total_revenue": 10964543.35,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4054,6 +4054,12 @@
         "total_tokens": 49970349280
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3123.34,
+        "total_tokens": 28523646591
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 585.6,
@@ -4088,18 +4094,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 54044904717
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28523646591
       }
     ]
   },
   {
     "date": "2026-06-07",
-    "total_revenue": 12621073.01,
+    "total_revenue": 12624380.03,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4342,6 +4342,12 @@
         "total_tokens": 44741120599
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3307.02,
+        "total_tokens": 30201056685
+      },
+      {
         "id": "qwen/qwen3.5-flash-02-23",
         "name": "Qwen: Qwen3.5-Flash",
         "revenue": 2093.26,
@@ -4376,18 +4382,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 55372727500
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30201056685
       }
     ]
   },
   {
     "date": "2026-06-08",
-    "total_revenue": 16467916.61,
+    "total_revenue": 16471113.05,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4636,6 +4636,12 @@
         "total_tokens": 21114738190
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3196.44,
+        "total_tokens": 29191255256
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 604.41,
@@ -4670,18 +4676,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 55596076883
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29191255256
       }
     ]
   },
   {
     "date": "2026-06-09",
-    "total_revenue": 16553327.71,
+    "total_revenue": 16556409.37,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4936,6 +4936,12 @@
         "total_tokens": 63931016156
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3081.66,
+        "total_tokens": 28143031146
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 569.77,
@@ -4964,18 +4970,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 56236548741
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28143031146
       }
     ]
   },
   {
     "date": "2026-06-10",
-    "total_revenue": 20148686.48,
+    "total_revenue": 20151740.9,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5230,6 +5230,12 @@
         "total_tokens": 55105829330
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3054.42,
+        "total_tokens": 27894289788
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 563.91,
@@ -5258,18 +5264,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 46749183066
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27894289788
       }
     ]
   },
   {
     "date": "2026-06-11",
-    "total_revenue": 20494417.4,
+    "total_revenue": 20497752.31,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5524,6 +5524,12 @@
         "total_tokens": 55812694426
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3334.91,
+        "total_tokens": 30455800665
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 595.14,
@@ -5546,18 +5552,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 52998623862
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30455800665
       }
     ]
   },
   {
     "date": "2026-06-12",
-    "total_revenue": 19058950.04,
+    "total_revenue": 19062179.62,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5812,6 +5812,12 @@
         "total_tokens": 17738645802
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3229.58,
+        "total_tokens": 29493849606
+      },
+      {
         "id": "qwen/qwen3.5-flash-02-23",
         "name": "Qwen: Qwen3.5-Flash",
         "revenue": 2693.07,
@@ -5840,18 +5846,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 50148889303
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29493849606
       }
     ]
   },
   {
     "date": "2026-06-13",
-    "total_revenue": 14044009.43,
+    "total_revenue": 14046975.6,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6100,6 +6100,12 @@
         "total_tokens": 15152332631
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2966.17,
+        "total_tokens": 27088314790
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 648.05,
@@ -6128,18 +6134,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 48775761908
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27088314790
       }
     ]
   },
   {
     "date": "2026-06-14",
-    "total_revenue": 13353548.12,
+    "total_revenue": 13356597.56,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6394,6 +6394,12 @@
         "total_tokens": 14975659874
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3049.44,
+        "total_tokens": 27848781994
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 721.69,
@@ -6416,18 +6422,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 51132451263
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27848781994
       }
     ]
   },
   {
     "date": "2026-06-15",
-    "total_revenue": 18149398.56,
+    "total_revenue": 18152644.28,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6676,6 +6676,12 @@
         "total_tokens": 56562839140
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3245.72,
+        "total_tokens": 29641300290
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 2758.49,
@@ -6704,18 +6710,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 52757893587
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29641300290
       }
     ]
   },
   {
     "date": "2026-06-16",
-    "total_revenue": 20490577.61,
+    "total_revenue": 20493961.14,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6970,6 +6970,12 @@
         "total_tokens": 59686036802
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3383.53,
+        "total_tokens": 30899816176
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 758.33,
@@ -6992,18 +6998,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 53639809443
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30899816176
       }
     ]
   },
   {
     "date": "2026-06-17",
-    "total_revenue": 24179091.16,
+    "total_revenue": 24182386.42,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -7264,6 +7264,12 @@
         "total_tokens": 17813668308
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3295.26,
+        "total_tokens": 30093696292
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 737.74,
@@ -7286,18 +7292,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 53126538181
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 30093696292
       }
     ]
   },
   {
     "date": "2026-06-18",
-    "total_revenue": 21902970.36,
+    "total_revenue": 21906180.63,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -7558,6 +7558,12 @@
         "total_tokens": 49998737755
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3210.27,
+        "total_tokens": 29317495550
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 733.98,
@@ -7580,18 +7586,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 50371359718
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29317495550
       }
     ]
   },
   {
     "date": "2026-06-19",
-    "total_revenue": 17659966.87,
+    "total_revenue": 17663181.02,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -7846,6 +7846,12 @@
         "total_tokens": 23333312694
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3214.15,
+        "total_tokens": 29353006386
+      },
+      {
         "id": "qwen/qwen3.5-flash-02-23",
         "name": "Qwen: Qwen3.5-Flash",
         "revenue": 2184.74,
@@ -7874,18 +7880,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 50422395578
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29353006386
       }
     ]
   },
   {
     "date": "2026-06-20",
-    "total_revenue": 14074739.0,
+    "total_revenue": 14077756.85,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -8134,6 +8134,12 @@
         "total_tokens": 43094067562
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3017.85,
+        "total_tokens": 27560239071
+      },
+      {
         "id": "bytedance-seed/seed-2.0-mini",
         "name": "ByteDance Seed: Seed-2.0-Mini",
         "revenue": 2949.31,
@@ -8168,18 +8174,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 48155677289
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27560239071
       }
     ]
   },
   {
     "date": "2026-06-21",
-    "total_revenue": 13021657.65,
+    "total_revenue": 13024647.71,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -8428,6 +8428,12 @@
         "total_tokens": 17927164145
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2990.06,
+        "total_tokens": 27306506018
+      },
+      {
         "id": "openai/gpt-oss-20b",
         "name": "OpenAI: gpt-oss-20b",
         "revenue": 1121.97,
@@ -8456,18 +8462,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 47347175190
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 27306506018
       }
     ]
   },
   {
     "date": "2026-06-22",
-    "total_revenue": 19112958.76,
+    "total_revenue": 19116044.01,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -8716,6 +8716,12 @@
         "total_tokens": 17009168571
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3085.25,
+        "total_tokens": 28175843786
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 887.49,
@@ -8738,18 +8744,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 47060948544
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28175843786
       }
     ]
   },
   {
     "date": "2026-06-23",
-    "total_revenue": 22021446.41,
+    "total_revenue": 22024622.99,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -9004,6 +9004,12 @@
         "total_tokens": 51536473937
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3176.58,
+        "total_tokens": 29009894395
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 838.2,
@@ -9026,18 +9032,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 59976534163
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 29009894395
       }
     ]
   },
   {
     "date": "2026-06-24",
-    "total_revenue": 22599051.79,
+    "total_revenue": 22602192.24,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -9292,6 +9292,12 @@
         "total_tokens": 59059923039
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 3140.45,
+        "total_tokens": 28679874581
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 834.99,
@@ -9314,18 +9320,12 @@
         "name": "NVIDIA: Nemotron 3 Super (free)",
         "revenue": 0.0,
         "total_tokens": 60714954859
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 28679874581
       }
     ]
   },
   {
     "date": "2026-06-25",
-    "total_revenue": 19047369.59,
+    "total_revenue": 19049969.4,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -9580,6 +9580,12 @@
         "total_tokens": 14640228928
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 2599.81,
+        "total_tokens": 23742514696
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 867.03,
@@ -9608,18 +9614,12 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 24014781687
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 23742514696
       }
     ]
   },
   {
     "date": "2026-06-26",
-    "total_revenue": 18938156.39,
+    "total_revenue": 18940128.25,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -9874,6 +9874,12 @@
         "total_tokens": 60169714014
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 1971.86,
+        "total_tokens": 21909572804
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 836.21,
@@ -9902,18 +9908,12 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 21957700456
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 21909572804
       }
     ]
   },
   {
     "date": "2026-06-27",
-    "total_revenue": 12406743.24,
+    "total_revenue": 12407766.62,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -10162,6 +10162,12 @@
         "total_tokens": 51950641482
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 1023.38,
+        "total_tokens": 11370884944
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 868.6,
@@ -10190,12 +10196,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 18569432443
-      },
-      {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 11370884944
       }
     ]
   },
@@ -14287,7 +14287,7 @@
   },
   {
     "date": "2026-07-12",
-    "total_revenue": 13598903.65,
+    "total_revenue": 13600430.8,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -14536,6 +14536,12 @@
         "total_tokens": 63832184637
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 1527.15,
+        "total_tokens": 14140315354
+      },
+      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 1005.42,
@@ -14572,16 +14578,304 @@
         "total_tokens": 15599201824
       },
       {
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
-        "revenue": 0.0,
-        "total_tokens": 14140315354
-      },
-      {
         "id": "poolside/laguna-xs-2.1:free",
         "name": "Poolside: Laguna XS 2.1 (free)",
         "revenue": 0.0,
         "total_tokens": 13417092265
+      }
+    ]
+  },
+  {
+    "date": "2026-07-13",
+    "total_revenue": 22910545.45,
+    "models": [
+      {
+        "id": "anthropic/claude-opus-4.8",
+        "name": "Anthropic: Claude Opus 4.8",
+        "revenue": 5979580.15,
+        "total_tokens": 398638676364
+      },
+      {
+        "id": "anthropic/claude-opus-4.7",
+        "name": "Anthropic: Claude Opus 4.7",
+        "revenue": 4816793.46,
+        "total_tokens": 321119564197
+      },
+      {
+        "id": "openai/gpt-5.5",
+        "name": "OpenAI: GPT-5.5",
+        "revenue": 2000801.39,
+        "total_tokens": 114331508241
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "revenue": 1956245.19,
+        "total_tokens": 65208173131
+      },
+      {
+        "id": "anthropic/claude-sonnet-4.6",
+        "name": "Anthropic: Claude Sonnet 4.6",
+        "revenue": 1335032.68,
+        "total_tokens": 148336964279
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "revenue": 1155804.2,
+        "total_tokens": 66045954159
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "revenue": 856140.73,
+        "total_tokens": 142690120968
+      },
+      {
+        "id": "openai/gpt-5.4",
+        "name": "OpenAI: GPT-5.4",
+        "revenue": 657744.16,
+        "total_tokens": 75170761528
+      },
+      {
+        "id": "anthropic/claude-opus-4.6",
+        "name": "Anthropic: Claude Opus 4.6",
+        "revenue": 477077.97,
+        "total_tokens": 31805198081
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "revenue": 461140.54,
+        "total_tokens": 614854054152
+      },
+      {
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "revenue": 439329.45,
+        "total_tokens": 504976378050
+      },
+      {
+        "id": "google/gemini-3-flash-preview",
+        "name": "Google: Gemini 3 Flash Preview",
+        "revenue": 254119.82,
+        "total_tokens": 145211326273
+      },
+      {
+        "id": "xiaomi/mimo-v2.5",
+        "name": "Xiaomi: MiMo-V2.5",
+        "revenue": 244883.96,
+        "total_tokens": 1272124491327
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro",
+        "revenue": 240515.8,
+        "total_tokens": 368606596006
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "revenue": 211263.2,
+        "total_tokens": 40240609882
+      },
+      {
+        "id": "x-ai/grok-4.5",
+        "name": "xAI: Grok 4.5",
+        "revenue": 210548.53,
+        "total_tokens": 52637132070
+      },
+      {
+        "id": "google/gemini-3.1-pro-preview",
+        "name": "Google: Gemini 3.1 Pro Preview",
+        "revenue": 209269.67,
+        "total_tokens": 29895667406
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "revenue": 170365.94,
+        "total_tokens": 19470393444
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "revenue": 149412.06,
+        "total_tokens": 42689160750
+      },
+      {
+        "id": "google/gemini-2.5-flash",
+        "name": "Google: Gemini 2.5 Flash",
+        "revenue": 126135.46,
+        "total_tokens": 90096760427
+      },
+      {
+        "id": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "revenue": 123019.58,
+        "total_tokens": 97634587174
+      },
+      {
+        "id": "anthropic/claude-haiku-4.5",
+        "name": "Anthropic: Claude Haiku 4.5",
+        "revenue": 104899.5,
+        "total_tokens": 34966499810
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash",
+        "revenue": 88142.85,
+        "total_tokens": 763141561837
+      },
+      {
+        "id": "stepfun/step-3.7-flash",
+        "name": "StepFun: Step 3.7 Flash",
+        "revenue": 78958.56,
+        "total_tokens": 116975651080
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite",
+        "name": "Google: Gemini 3.1 Flash Lite",
+        "revenue": 77340.37,
+        "total_tokens": 88388996457
+      },
+      {
+        "id": "openai/gpt-5.4-mini",
+        "name": "OpenAI: GPT-5.4 Mini",
+        "revenue": 73739.6,
+        "total_tokens": 28091276247
+      },
+      {
+        "id": "xiaomi/mimo-v2.5-pro",
+        "name": "Xiaomi: MiMo-V2.5-Pro",
+        "revenue": 64706.28,
+        "total_tokens": 99166718046
+      },
+      {
+        "id": "moonshotai/kimi-k2.6",
+        "name": "MoonshotAI: Kimi K2.6",
+        "revenue": 57782.37,
+        "total_tokens": 28394286176
+      },
+      {
+        "id": "qwen/qwen3.7-max",
+        "name": "Qwen: Qwen3.7 Max",
+        "revenue": 56178.57,
+        "total_tokens": 22471427298
+      },
+      {
+        "id": "moonshotai/kimi-k2.7-code",
+        "name": "MoonshotAI: Kimi K2.7 Code",
+        "revenue": 48960.44,
+        "total_tokens": 23204002016
+      },
+      {
+        "id": "moonshotai/kimi-k2.5",
+        "name": "MoonshotAI: Kimi K2.5",
+        "revenue": 24872.14,
+        "total_tokens": 20726781363
+      },
+      {
+        "id": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "revenue": 23283.01,
+        "total_tokens": 20696007195
+      },
+      {
+        "id": "google/gemini-2.5-flash-lite",
+        "name": "Google: Gemini 2.5 Flash Lite",
+        "revenue": 22143.82,
+        "total_tokens": 88575295717
+      },
+      {
+        "id": "openai/gpt-5.4-nano",
+        "name": "OpenAI: GPT-5.4 Nano",
+        "revenue": 16469.7,
+        "total_tokens": 22716833548
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite-preview",
+        "name": "Google: Gemini 3.1 Flash Lite Preview",
+        "revenue": 16456.71,
+        "total_tokens": 18807666521
+      },
+      {
+        "id": "qwen/qwen3.7-plus",
+        "name": "Qwen: Qwen3.7 Plus",
+        "revenue": 14564.68,
+        "total_tokens": 18205846404
+      },
+      {
+        "id": "deepseek/deepseek-v3.2",
+        "name": "DeepSeek: DeepSeek V3.2",
+        "revenue": 13724.7,
+        "total_tokens": 51187688701
+      },
+      {
+        "id": "google/gemma-4-31b-it",
+        "name": "Google: Gemma 4 31B",
+        "revenue": 11494.94,
+        "total_tokens": 48914648025
+      },
+      {
+        "id": "openai/gpt-4o-mini",
+        "name": "OpenAI: GPT-4o-mini",
+        "revenue": 11314.38,
+        "total_tokens": 30171682097
+      },
+      {
+        "id": "minimax/minimax-m2.7",
+        "name": "MiniMax: MiniMax M2.7",
+        "revenue": 11193.03,
+        "total_tokens": 18655054696
+      },
+      {
+        "id": "google/gemma-4-26b-a4b-it",
+        "name": "Google: Gemma 4 26B A4B ",
+        "revenue": 8282.15,
+        "total_tokens": 42472556352
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 7773.69,
+        "total_tokens": 71978644807
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "revenue": 2063.12,
+        "total_tokens": 24415640183
+      },
+      {
+        "id": "mistralai/mistral-nemo",
+        "name": "Mistral: Mistral Nemo",
+        "revenue": 976.9,
+        "total_tokens": 39075925950
+      },
+      {
+        "id": "tencent/hy3:free",
+        "name": "Tencent: Hy3 (free)",
+        "revenue": 0.0,
+        "total_tokens": 1431171276365
+      },
+      {
+        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "name": "NVIDIA: Nemotron 3 Ultra (free)",
+        "revenue": 0.0,
+        "total_tokens": 480429903613
+      },
+      {
+        "id": "poolside/laguna-m.1:free",
+        "name": "Poolside: Laguna M.1 (free)",
+        "revenue": 0.0,
+        "total_tokens": 82012339933
+      },
+      {
+        "id": "nvidia/nemotron-3-super-120b-a12b:free",
+        "name": "NVIDIA: Nemotron 3 Super (free)",
+        "revenue": 0.0,
+        "total_tokens": 45933775964
       }
     ]
   }
