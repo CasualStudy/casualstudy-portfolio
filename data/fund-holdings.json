@@ -27,6 +27,17 @@
       },
       "top_holdings": [
         {
+          "name": "Berkshire Hathaway Inc",
+          "class": "Common Stock",
+          "value": 0,
+          "shares": 11,
+          "weight": 0,
+          "is_13g": true,
+          "form_type": "13D/A",
+          "event_date": "2026-07-15",
+          "ticker": "BRK.A"
+        },
+        {
           "name": "Apple Inc",
           "class": "COM",
           "value": 57843260493.0,
@@ -610,7 +621,7 @@
           "class": "ADR",
           "value": 124827258.0,
           "shares": 1120331,
-          "ticker": "BIDU",
+          "ticker": "BAIDF",
           "weight": 0.9707018078831259,
           "is_13g": false
         },
@@ -646,7 +657,7 @@
           "class": "ADR",
           "value": 98256590.0,
           "shares": 783171,
-          "ticker": "BABA",
+          "ticker": "BBAAY",
           "weight": 0.764078704263704,
           "is_13g": false
         },
@@ -892,7 +903,7 @@
           "class": "NOTE 0.250% 6/0",
           "value": 149880473.0,
           "shares": 150158000,
-          "ticker": "JD",
+          "ticker": "JDCMF",
           "weight": 1.6435923972155229,
           "is_13g": false
         },
@@ -1336,7 +1347,7 @@
           "class": "COM",
           "value": 250776388.0,
           "shares": 2316641,
-          "ticker": "NEM",
+          "ticker": "NEMCL",
           "weight": 1.1193102258031338,
           "is_13g": false
         },
@@ -1980,7 +1991,7 @@
           "class": "COM CL A  ADDED",
           "value": 18095535.0,
           "shares": 796108,
-          "ticker": "SHAZ",
+          "ticker": "SHAZW",
           "weight": 0.13230962973315363,
           "is_13g": false
         },
@@ -2247,7 +2258,7 @@
           "class": "SPONSORED ADS",
           "value": 434718900.0,
           "shares": 3465000,
-          "ticker": "BABA",
+          "ticker": "BBAAY",
           "weight": 7.326544415024648,
           "is_13g": false
         },
@@ -2346,7 +2357,7 @@
           "class": "SPON ADR REP A",
           "value": 77113782.0,
           "shares": 692100,
-          "ticker": "BIDU",
+          "ticker": "BAIDF",
           "weight": 1.299638798390243,
           "is_13g": false
         },
@@ -2409,7 +2420,7 @@
           "class": "SPON ADS CL A",
           "value": 38588850.0,
           "shares": 1305000,
-          "ticker": "JD",
+          "ticker": "JDCMF",
           "weight": 0.6503580208951668,
           "is_13g": false
         },
@@ -2454,7 +2465,7 @@
           "class": "COM UNIT REP LTD",
           "value": 28675392.0,
           "shares": 502460,
-          "ticker": "MPLX",
+          "ticker": "MPLXP",
           "weight": 0.4832813413593071,
           "is_13g": false
         },
@@ -2592,7 +2603,7 @@
           "class": "NY REGISTRY",
           "value": 90275000.0,
           "shares": 2612880,
-          "ticker": "STM",
+          "ticker": "STMEF",
           "weight": 2.6733668401233346,
           "is_13g": false
         },
@@ -2610,7 +2621,7 @@
           "class": "SPONSORED ADS",
           "value": 71604000.0,
           "shares": 2377285,
-          "ticker": "TEVA",
+          "ticker": "TEVJF",
           "weight": 2.1204515006390614,
           "is_13g": false
         },
@@ -2682,7 +2693,7 @@
           "class": "COM CL A",
           "value": 39057000.0,
           "shares": 1150415,
-          "ticker": "FIGR",
+          "ticker": "FGRS",
           "weight": 1.156617985873133,
           "is_13g": false
         },
