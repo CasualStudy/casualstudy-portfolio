@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
             excerpt_zh: "用于分析相对成交量和聪明钱足迹的自定义 TradingView 指标。",
             tools: "Pine Script",
             icon: "activity",
-            link: "https://www.tradingview.com/script/rRpmHLGr-Smart-Money-RVOL-System/"
+            link: "https://www.tradingview.com/script/UW71ZD6a-Smart-Money-Relative-Volume-System/"
         },
         {
             title_en: "CNN Fear and Greedy Index",
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
             excerpt_zh: "将 CNN 恐慌与贪婪指数直接引入图表的自定义 TradingView 指标。",
             tools: "Pine Script",
             icon: "bar-chart",
-            link: "https://www.tradingview.com/script/bJ9E8wB1-CNN-Fear-and-Greedy-Index/"
+            link: "https://www.tradingview.com/script/jqLCfWXV-CNN-Fear-and-Greedy-Index/"
         }
     ];
 
