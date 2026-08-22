@@ -811,7 +811,7 @@
           "class": "COM",
           "value": 199091790.0,
           "shares": 970990,
-          "ticker": "EA",
+          "ticker": null,
           "weight": 2.444755210518175,
           "is_13g": false
         },
@@ -901,7 +901,7 @@
           "class": "COM",
           "value": 105070080.0,
           "shares": 768000,
-          "ticker": null,
+          "ticker": "AEP",
           "weight": 1.2902120451554608,
           "is_13g": false
         },
