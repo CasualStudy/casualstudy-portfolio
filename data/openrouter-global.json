@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-05-24",
-    "total_revenue": 9036380.13,
+    "total_revenue": 9061443.85,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -154,6 +154,12 @@
         "total_tokens": 70181025332
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25063.72,
+        "total_tokens": 92828593791
+      },
+      {
         "id": "qwen/qwen3.5-397b-a17b",
         "name": "Qwen: Qwen3.5 397B A17B",
         "revenue": 20271.97,
@@ -272,18 +278,12 @@
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 320.01,
         "total_tokens": 12800426845
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 92828593791
       }
     ]
   },
   {
     "date": "2026-05-25",
-    "total_revenue": 12213078.02,
+    "total_revenue": 12239304.46,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -436,6 +436,12 @@
         "total_tokens": 32482794930
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 26226.44,
+        "total_tokens": 97134958001
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 25356.01,
@@ -548,18 +554,12 @@
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 347.16,
         "total_tokens": 13886559733
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 97134958001
       }
     ]
   },
   {
     "date": "2026-05-26",
-    "total_revenue": 19165674.29,
+    "total_revenue": 19191475.82,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -736,6 +736,12 @@
         "total_tokens": 71185493051
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25801.53,
+        "total_tokens": 95561203937
+      },
+      {
         "id": "moonshotai/kimi-k2.5",
         "name": "MoonshotAI: Kimi K2.5",
         "revenue": 24212.45,
@@ -824,18 +830,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 503.32,
         "total_tokens": 20132800956
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 95561203937
       }
     ]
   },
   {
     "date": "2026-05-27",
-    "total_revenue": 14613001.55,
+    "total_revenue": 14638962.68,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1018,6 +1018,12 @@
         "total_tokens": 14160136648
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25961.13,
+        "total_tokens": 96152320245
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 24800.43,
@@ -1106,18 +1112,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 523.51,
         "total_tokens": 20940409361
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 96152320245
       }
     ]
   },
   {
     "date": "2026-05-28",
-    "total_revenue": 14320541.35,
+    "total_revenue": 14346983.64,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1312,6 +1312,12 @@
         "total_tokens": 30299054744
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 26442.29,
+        "total_tokens": 97934394657
+      },
+      {
         "id": "moonshotai/kimi-k2.5",
         "name": "MoonshotAI: Kimi K2.5",
         "revenue": 26340.36,
@@ -1376,18 +1382,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 508.96,
         "total_tokens": 20358448282
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 97934394657
       }
     ]
   },
   {
     "date": "2026-05-29",
-    "total_revenue": 13198888.51,
+    "total_revenue": 13225492.01,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1564,6 +1564,12 @@
         "total_tokens": 24040280763
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 26603.5,
+        "total_tokens": 98531488639
+      },
+      {
         "id": "google/gemini-3.1-flash-lite-preview",
         "name": "Google: Gemini 3.1 Flash Lite Preview",
         "revenue": 26194.94,
@@ -1646,18 +1652,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 509.92,
         "total_tokens": 20396754184
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 98531488639
       }
     ]
   },
   {
     "date": "2026-05-30",
-    "total_revenue": 9232091.56,
+    "total_revenue": 9257112.68,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -1816,6 +1816,12 @@
         "total_tokens": 21880435156
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25021.12,
+        "total_tokens": 92670817927
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 24804.63,
@@ -1922,18 +1928,12 @@
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 254.91,
         "total_tokens": 10196588122
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 92670817927
       }
     ]
   },
   {
     "date": "2026-05-31",
-    "total_revenue": 10789062.33,
+    "total_revenue": 10813264.83,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2098,6 +2098,12 @@
         "total_tokens": 24240984479
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 24202.5,
+        "total_tokens": 89638875872
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 22830.14,
@@ -2204,18 +2210,12 @@
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 349.32,
         "total_tokens": 13972735672
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 89638875872
       }
     ]
   },
   {
     "date": "2026-06-01",
-    "total_revenue": 12461185.21,
+    "total_revenue": 12485505.75,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2416,6 +2416,12 @@
         "total_tokens": 72857101233
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 24320.54,
+        "total_tokens": 90076079525
+      },
+      {
         "id": "moonshotai/kimi-k2.5",
         "name": "MoonshotAI: Kimi K2.5",
         "revenue": 23299.51,
@@ -2486,18 +2492,12 @@
         "name": "Meta: Llama 3.1 8B Instruct",
         "revenue": 358.11,
         "total_tokens": 14324235692
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 90076079525
       }
     ]
   },
   {
     "date": "2026-06-02",
-    "total_revenue": 12404680.03,
+    "total_revenue": 12429110.35,
     "models": [
       {
         "id": "anthropic/claude-sonnet-4.6",
@@ -2704,6 +2704,12 @@
         "total_tokens": 21291716470
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 24430.32,
+        "total_tokens": 90482664672
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 23166.12,
@@ -2768,18 +2774,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 538.3,
         "total_tokens": 21531817026
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 90482664672
       }
     ]
   },
   {
     "date": "2026-06-03",
-    "total_revenue": 14283837.43,
+    "total_revenue": 14309338.09,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -2974,6 +2974,12 @@
         "total_tokens": 32071996960
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25500.66,
+        "total_tokens": 94446904296
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 23721.59,
@@ -3050,18 +3056,12 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 520.42,
         "total_tokens": 20816810635
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 94446904296
       }
     ]
   },
   {
     "date": "2026-06-04",
-    "total_revenue": 14690316.64,
+    "total_revenue": 14712767.41,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3256,6 +3256,12 @@
         "total_tokens": 91204138171
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 22450.77,
+        "total_tokens": 83151006006
+      },
+      {
         "id": "openai/gpt-5-mini",
         "name": "OpenAI: GPT-5 Mini",
         "revenue": 18542.13,
@@ -3328,12 +3334,6 @@
         "total_tokens": 21232855855
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 83151006006
-      },
-      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
@@ -3343,7 +3343,7 @@
   },
   {
     "date": "2026-06-05",
-    "total_revenue": 13873110.99,
+    "total_revenue": 13891164.03,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -3550,6 +3550,12 @@
         "total_tokens": 35653411189
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 18053.04,
+        "total_tokens": 66863126421
+      },
+      {
         "id": "z-ai/glm-4.7",
         "name": "Z.ai: GLM 4.7",
         "revenue": 16541.02,
@@ -3610,12 +3616,6 @@
         "total_tokens": 23152920161
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 66863126421
-      },
-      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
@@ -3625,7 +3625,7 @@
   },
   {
     "date": "2026-06-06",
-    "total_revenue": 10918547.19,
+    "total_revenue": 10933139.31,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -3826,6 +3826,12 @@
         "total_tokens": 27973152588
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14592.12,
+        "total_tokens": 54044904717
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 10279.01,
@@ -3890,18 +3896,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 101056072901
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 54044904717
       }
     ]
   },
   {
     "date": "2026-06-07",
-    "total_revenue": 12611613.91,
+    "total_revenue": 12626564.55,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4096,6 +4096,12 @@
         "total_tokens": 12903082309
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14950.64,
+        "total_tokens": 55372727500
+      },
+      {
         "id": "minimax/minimax-m2.5",
         "name": "MiniMax: MiniMax M2.5",
         "revenue": 14700.95,
@@ -4160,18 +4166,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 109162512458
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55372727500
       }
     ]
   },
   {
     "date": "2026-06-08",
-    "total_revenue": 16423182.89,
+    "total_revenue": 16438193.83,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4372,6 +4372,12 @@
         "total_tokens": 43809510543
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15010.94,
+        "total_tokens": 55596076883
+      },
+      {
         "id": "minimax/minimax-m2.5",
         "name": "MiniMax: MiniMax M2.5",
         "revenue": 12691.99,
@@ -4436,18 +4442,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 118596097986
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55596076883
       }
     ]
   },
   {
     "date": "2026-06-09",
-    "total_revenue": 16467042.39,
+    "total_revenue": 16482226.26,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4660,6 +4660,12 @@
         "total_tokens": 20618479564
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15183.87,
+        "total_tokens": 56236548741
+      },
+      {
         "id": "minimax/minimax-m2.5",
         "name": "MiniMax: MiniMax M2.5",
         "revenue": 13659.15,
@@ -4706,18 +4712,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 118563229139
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 56236548741
       }
     ]
   },
   {
     "date": "2026-06-10",
-    "total_revenue": 20051797.36,
+    "total_revenue": 20064419.64,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -4936,6 +4936,12 @@
         "total_tokens": 18048424684
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12622.28,
+        "total_tokens": 46749183066
+      },
+      {
         "id": "minimax/minimax-m2.5",
         "name": "MiniMax: MiniMax M2.5",
         "revenue": 11639.93,
@@ -4976,18 +4982,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 113038857834
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 46749183066
       }
     ]
   },
   {
     "date": "2026-06-11",
-    "total_revenue": 20354810.27,
+    "total_revenue": 20369119.9,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5194,6 +5194,12 @@
         "total_tokens": 35364312055
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14309.63,
+        "total_tokens": 52998623862
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 10186.81,
@@ -5246,18 +5252,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 111073309109
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 52998623862
       }
     ]
   },
   {
     "date": "2026-06-12",
-    "total_revenue": 18874437.55,
+    "total_revenue": 18887977.75,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5476,6 +5476,12 @@
         "total_tokens": 20489154212
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13540.2,
+        "total_tokens": 50148889303
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 9906.87,
@@ -5522,18 +5528,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 110621094039
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50148889303
       }
     ]
   },
   {
     "date": "2026-06-13",
-    "total_revenue": 13875880.95,
+    "total_revenue": 13889050.41,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -5734,6 +5734,12 @@
         "total_tokens": 23232972451
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13169.46,
+        "total_tokens": 48775761908
+      },
+      {
         "id": "qwen/qwen3.7-plus",
         "name": "Qwen: Qwen3.7 Plus",
         "revenue": 10677.64,
@@ -5786,18 +5792,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 111246883673
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48775761908
       }
     ]
   },
   {
     "date": "2026-06-14",
-    "total_revenue": 13168603.44,
+    "total_revenue": 13182409.2,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6004,6 +6004,12 @@
         "total_tokens": 18327487962
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13805.76,
+        "total_tokens": 51132451263
+      },
+      {
         "id": "minimax/minimax-m2.7",
         "name": "MiniMax: MiniMax M2.7",
         "revenue": 13582.86,
@@ -6056,18 +6062,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 111154535074
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51132451263
       }
     ]
   },
   {
     "date": "2026-06-15",
-    "total_revenue": 17988875.68,
+    "total_revenue": 18003120.31,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6286,6 +6286,12 @@
         "total_tokens": 14246735553
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14244.63,
+        "total_tokens": 52757893587
+      },
+      {
         "id": "qwen/qwen3.7-plus",
         "name": "Qwen: Qwen3.7 Plus",
         "revenue": 13488.71,
@@ -6332,18 +6338,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 110081518855
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 52757893587
       }
     ]
   },
   {
     "date": "2026-06-16",
-    "total_revenue": 20327129.69,
+    "total_revenue": 20341612.44,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6556,6 +6556,12 @@
         "total_tokens": 38691291470
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14482.75,
+        "total_tokens": 53639809443
+      },
+      {
         "id": "qwen/qwen3.7-plus",
         "name": "Qwen: Qwen3.7 Plus",
         "revenue": 14425.51,
@@ -6602,18 +6608,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 108322371378
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 53639809443
       }
     ]
   },
   {
     "date": "2026-06-17",
-    "total_revenue": 24052865.05,
+    "total_revenue": 24067209.22,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -6844,6 +6844,12 @@
         "total_tokens": 16383309257
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14344.17,
+        "total_tokens": 53126538181
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 8651.47,
@@ -6884,18 +6890,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 99066109934
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 53126538181
       }
     ]
   },
   {
     "date": "2026-06-18",
-    "total_revenue": 21759197.63,
+    "total_revenue": 21772797.9,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -7126,6 +7126,12 @@
         "total_tokens": 13855043464
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13600.27,
+        "total_tokens": 50371359718
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 11323.65,
@@ -7166,18 +7172,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 93934530611
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50371359718
       }
     ]
   },
   {
     "date": "2026-06-19",
-    "total_revenue": 17540143.47,
+    "total_revenue": 17553757.52,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -7396,6 +7396,12 @@
         "total_tokens": 52529326994
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13614.05,
+        "total_tokens": 50422395578
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 9998.45,
@@ -7448,18 +7454,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 76847884112
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50422395578
       }
     ]
   },
   {
     "date": "2026-06-20",
-    "total_revenue": 13991591.67,
+    "total_revenue": 14004593.7,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -7672,6 +7672,12 @@
         "total_tokens": 11503183798
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13002.03,
+        "total_tokens": 48155677289
+      },
+      {
         "id": "qwen/qwen3-next-80b-a3b-instruct",
         "name": "Qwen: Qwen3 Next 80B A3B Instruct",
         "revenue": 8689.65,
@@ -7730,18 +7736,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 73134952995
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48155677289
       }
     ]
   },
   {
     "date": "2026-06-21",
-    "total_revenue": 12949167.54,
+    "total_revenue": 12961951.28,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -7948,6 +7948,12 @@
         "total_tokens": 13574432974
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12783.74,
+        "total_tokens": 47347175190
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 8445.39,
@@ -8006,18 +8012,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 67661392669
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47347175190
       }
     ]
   },
   {
     "date": "2026-06-22",
-    "total_revenue": 19100893.95,
+    "total_revenue": 19113600.41,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -8230,6 +8230,12 @@
         "total_tokens": 23199239755
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12706.46,
+        "total_tokens": 47060948544
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 10202.63,
@@ -8276,18 +8282,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 61538114106
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47060948544
       }
     ]
   },
   {
     "date": "2026-06-23",
-    "total_revenue": 22024622.99,
+    "total_revenue": 22040816.65,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -8512,6 +8512,12 @@
         "total_tokens": 16953883845
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16193.66,
+        "total_tokens": 59976534163
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 12788.03,
@@ -8558,18 +8564,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 115768634205
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 59976534163
       }
     ]
   },
   {
     "date": "2026-06-24",
-    "total_revenue": 22583550.25,
+    "total_revenue": 22599943.29,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -8776,6 +8776,12 @@
         "total_tokens": 19111357031
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16393.04,
+        "total_tokens": 60714954859
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 16341.86,
@@ -8834,18 +8840,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 101520391728
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 60714954859
       }
     ]
   },
   {
     "date": "2026-06-25",
-    "total_revenue": 19049969.4,
+    "total_revenue": 19066356.95,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -9070,6 +9070,12 @@
         "total_tokens": 24634352953
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16387.55,
+        "total_tokens": 60694630719
+      },
+      {
         "id": "minimax/minimax-m2.7",
         "name": "MiniMax: MiniMax M2.7",
         "revenue": 14183.09,
@@ -9118,12 +9124,6 @@
         "total_tokens": 97970200319
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 60694630719
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -9133,7 +9133,7 @@
   },
   {
     "date": "2026-06-26",
-    "total_revenue": 18925258.36,
+    "total_revenue": 18939342.36,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -9358,6 +9358,12 @@
         "total_tokens": 22361886028
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14084.0,
+        "total_tokens": 58078346178
+      },
+      {
         "id": "minimax/minimax-m2.7",
         "name": "MiniMax: MiniMax M2.7",
         "revenue": 9105.51,
@@ -9400,12 +9406,6 @@
         "total_tokens": 83095967158
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 58078346178
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -9415,7 +9415,7 @@
   },
   {
     "date": "2026-06-27",
-    "total_revenue": 12407766.62,
+    "total_revenue": 12421149.84,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -9628,6 +9628,12 @@
         "total_tokens": 11275316039
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13383.22,
+        "total_tokens": 55188522569
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 12484.6,
@@ -9682,12 +9688,6 @@
         "total_tokens": 132239698850
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55188522569
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -9697,7 +9697,7 @@
   },
   {
     "date": "2026-06-28",
-    "total_revenue": 13818312.81,
+    "total_revenue": 13831363.58,
     "models": [
       {
         "id": "openai/gpt-5.5",
@@ -9904,6 +9904,12 @@
         "total_tokens": 11268172388
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13050.77,
+        "total_tokens": 53817616580
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 12471.75,
@@ -9958,12 +9964,6 @@
         "total_tokens": 122502857169
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 53817616580
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -9973,7 +9973,7 @@
   },
   {
     "date": "2026-06-29",
-    "total_revenue": 18303713.04,
+    "total_revenue": 18317366.91,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -10192,6 +10192,12 @@
         "total_tokens": 40181005830
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13653.87,
+        "total_tokens": 56304616164
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 13299.7,
@@ -10234,12 +10240,6 @@
         "total_tokens": 123993393668
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 56304616164
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -10249,7 +10249,7 @@
   },
   {
     "date": "2026-06-30",
-    "total_revenue": 19490887.32,
+    "total_revenue": 19506937.72,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -10462,6 +10462,12 @@
         "total_tokens": 25460502696
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16050.4,
+        "total_tokens": 66187204286
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 15078.93,
@@ -10510,12 +10516,6 @@
         "total_tokens": 145940293342
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 66187204286
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -10525,7 +10525,7 @@
   },
   {
     "date": "2026-07-01",
-    "total_revenue": 20517864.79,
+    "total_revenue": 20533099.38,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -10762,6 +10762,12 @@
         "total_tokens": 40632712887
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15234.59,
+        "total_tokens": 62823057801
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 15200.57,
@@ -10798,12 +10804,6 @@
         "total_tokens": 156139585894
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 62823057801
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -10813,7 +10813,7 @@
   },
   {
     "date": "2026-07-02",
-    "total_revenue": 23600532.9,
+    "total_revenue": 23616156.71,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -11044,6 +11044,12 @@
         "total_tokens": 59990106912
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15623.81,
+        "total_tokens": 64428063706
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 14164.3,
@@ -11086,12 +11092,6 @@
         "total_tokens": 128395185951
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 64428063706
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -11101,7 +11101,7 @@
   },
   {
     "date": "2026-07-03",
-    "total_revenue": 22493018.86,
+    "total_revenue": 22508777.64,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -11314,6 +11314,12 @@
         "total_tokens": 55893689295
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15758.78,
+        "total_tokens": 64984645023
+      },
+      {
         "id": "qwen/qwen3.7-plus",
         "name": "Qwen: Qwen3.7 Plus",
         "revenue": 15658.51,
@@ -11362,12 +11368,6 @@
         "total_tokens": 143939479393
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 64984645023
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -11383,7 +11383,7 @@
   },
   {
     "date": "2026-07-04",
-    "total_revenue": 16265472.69,
+    "total_revenue": 16280106.09,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -11596,6 +11596,12 @@
         "total_tokens": 14574408470
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14633.4,
+        "total_tokens": 60343914235
+      },
+      {
         "id": "qwen/qwen3.7-plus",
         "name": "Qwen: Qwen3.7 Plus",
         "revenue": 12957.33,
@@ -11644,12 +11650,6 @@
         "total_tokens": 137134351038
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 60343914235
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -11665,7 +11665,7 @@
   },
   {
     "date": "2026-07-05",
-    "total_revenue": 17263390.98,
+    "total_revenue": 17279058.77,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -11866,6 +11866,12 @@
         "total_tokens": 64834239752
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15667.79,
+        "total_tokens": 59123728990
+      },
+      {
         "id": "openai/gpt-5-mini",
         "name": "OpenAI: GPT-5 Mini",
         "revenue": 15015.35,
@@ -11926,12 +11932,6 @@
         "total_tokens": 141378070231
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 59123728990
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -11947,7 +11947,7 @@
   },
   {
     "date": "2026-07-06",
-    "total_revenue": 22235179.97,
+    "total_revenue": 22251525.3,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -12172,6 +12172,12 @@
         "total_tokens": 62259548781
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16345.33,
+        "total_tokens": 61680485682
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 15633.22,
@@ -12220,12 +12226,6 @@
         "total_tokens": 135992635582
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 61680485682
-      },
-      {
         "id": "poolside/laguna-xs-2.1:free",
         "name": "Poolside: Laguna XS 2.1 (free)",
         "revenue": 0.0,
@@ -12235,7 +12235,7 @@
   },
   {
     "date": "2026-07-07",
-    "total_revenue": 23513303.66,
+    "total_revenue": 23528646.6,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -12460,6 +12460,12 @@
         "total_tokens": 112449515842
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15342.94,
+        "total_tokens": 57897868153
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 14773.9,
@@ -12508,12 +12514,6 @@
         "total_tokens": 126493371200
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 57897868153
-      },
-      {
         "id": "poolside/laguna-xs-2.1:free",
         "name": "Poolside: Laguna XS 2.1 (free)",
         "revenue": 0.0,
@@ -12523,7 +12523,7 @@
   },
   {
     "date": "2026-07-08",
-    "total_revenue": 24312246.52,
+    "total_revenue": 24326902.68,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -12748,6 +12748,12 @@
         "total_tokens": 20632062106
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14656.16,
+        "total_tokens": 55306245961
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 10729.69,
@@ -12796,12 +12802,6 @@
         "total_tokens": 125422867538
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55306245961
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -12811,7 +12811,7 @@
   },
   {
     "date": "2026-07-09",
-    "total_revenue": 21475446.31,
+    "total_revenue": 21490041.82,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -13036,6 +13036,12 @@
         "total_tokens": 52254701305
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14595.51,
+        "total_tokens": 55077401477
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 13068.23,
@@ -13084,12 +13090,6 @@
         "total_tokens": 220971389592
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55077401477
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -13099,7 +13099,7 @@
   },
   {
     "date": "2026-07-10",
-    "total_revenue": 19910492.21,
+    "total_revenue": 19921087.68,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -13342,6 +13342,12 @@
         "total_tokens": 18280599407
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10595.47,
+        "total_tokens": 39982888179
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9728.81,
@@ -13372,12 +13378,6 @@
         "total_tokens": 440743609785
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 39982888179
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -13387,7 +13387,7 @@
   },
   {
     "date": "2026-07-11",
-    "total_revenue": 14108111.29,
+    "total_revenue": 14120458.18,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -13606,6 +13606,12 @@
         "total_tokens": 15991583332
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12346.89,
+        "total_tokens": 46592044428
+      },
+      {
         "id": "openai/gpt-5.4-nano",
         "name": "OpenAI: GPT-5.4 Nano",
         "revenue": 11978.05,
@@ -13660,12 +13666,6 @@
         "total_tokens": 491787811290
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 46592044428
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -13675,7 +13675,7 @@
   },
   {
     "date": "2026-07-12",
-    "total_revenue": 14009534.92,
+    "total_revenue": 14021381.3,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -13900,6 +13900,12 @@
         "total_tokens": 17419203887
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11846.38,
+        "total_tokens": 44703320354
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 9523.98,
@@ -13948,12 +13954,6 @@
         "total_tokens": 499370800330
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 44703320354
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -13969,7 +13969,7 @@
   },
   {
     "date": "2026-07-13",
-    "total_revenue": 23425932.58,
+    "total_revenue": 23438105.14,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -14200,6 +14200,12 @@
         "total_tokens": 51187834050
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12172.56,
+        "total_tokens": 45934202896
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 11495.25,
@@ -14246,18 +14252,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 480431181301
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 45934202896
       }
     ]
   },
   {
     "date": "2026-07-14",
-    "total_revenue": 23784258.86,
+    "total_revenue": 23796753.3,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -14494,6 +14494,12 @@
         "total_tokens": 50031329380
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12494.44,
+        "total_tokens": 47148829731
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 10743.5,
@@ -14534,18 +14540,12 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 468947447694
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47148829731
       }
     ]
   },
   {
     "date": "2026-07-15",
-    "total_revenue": 24832243.73,
+    "total_revenue": 24838166.15,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -14806,6 +14806,12 @@
         "total_tokens": 93945024760
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 5922.42,
+        "total_tokens": 22348761821
+      },
+      {
         "id": "openai/gpt-oss-20b",
         "name": "OpenAI: gpt-oss-20b",
         "revenue": 2715.78,
@@ -14822,12 +14828,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 453478288034
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 22348761821
       },
       {
         "id": "cohere/north-mini-code:free",
@@ -15133,7 +15133,7 @@
   },
   {
     "date": "2026-07-17",
-    "total_revenue": 25830144.58,
+    "total_revenue": 25842447.69,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -15388,6 +15388,12 @@
         "total_tokens": 35232317368
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12303.11,
+        "total_tokens": 37001831363
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 11145.74,
@@ -15412,12 +15418,6 @@
         "total_tokens": 425886836305
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 37001831363
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -15427,7 +15427,7 @@
   },
   {
     "date": "2026-07-18",
-    "total_revenue": 18015485.46,
+    "total_revenue": 18029065.19,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -15646,6 +15646,12 @@
         "total_tokens": 47677026526
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13579.73,
+        "total_tokens": 40841287860
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 13515.13,
@@ -15700,12 +15706,6 @@
         "total_tokens": 433814098127
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 40841287860
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -15721,7 +15721,7 @@
   },
   {
     "date": "2026-07-19",
-    "total_revenue": 14974247.56,
+    "total_revenue": 14988275.74,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -15946,6 +15946,12 @@
         "total_tokens": 20162807129
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14028.18,
+        "total_tokens": 42190023446
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 11986.99,
@@ -15994,12 +16000,6 @@
         "total_tokens": 441977131751
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 42190023446
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -16015,7 +16015,7 @@
   },
   {
     "date": "2026-07-20",
-    "total_revenue": 20705817.92,
+    "total_revenue": 20716817.93,
     "models": [
       {
         "id": "anthropic/claude-opus-4.7",
@@ -16264,6 +16264,12 @@
         "total_tokens": 17689561725
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11000.01,
+        "total_tokens": 45360874489
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9968.94,
@@ -16288,12 +16294,6 @@
         "total_tokens": 252529587680
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 45360874489
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -16303,7 +16303,7 @@
   },
   {
     "date": "2026-07-21",
-    "total_revenue": 23500410.34,
+    "total_revenue": 23515366.79,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -16534,6 +16534,12 @@
         "total_tokens": 20910759803
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14956.45,
+        "total_tokens": 61676098545
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 13526.54,
@@ -16564,12 +16570,6 @@
         "total_tokens": 219504757630
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 61676098545
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -16585,7 +16585,7 @@
   },
   {
     "date": "2026-07-22",
-    "total_revenue": 22521674.69,
+    "total_revenue": 22537131.91,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -16804,6 +16804,12 @@
         "total_tokens": 51179035400
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15457.22,
+        "total_tokens": 58329124265
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 14635.3,
@@ -16846,12 +16852,6 @@
         "total_tokens": 257415918417
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 58329124265
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -16867,7 +16867,7 @@
   },
   {
     "date": "2026-07-23",
-    "total_revenue": 20131915.71,
+    "total_revenue": 20146633.62,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -17104,6 +17104,12 @@
         "total_tokens": 20798397173
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14717.91,
+        "total_tokens": 55539294474
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 13443.6,
@@ -17140,12 +17146,6 @@
         "total_tokens": 365520327453
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55539294474
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -17167,7 +17167,7 @@
   },
   {
     "date": "2026-07-24",
-    "total_revenue": 17490679.59,
+    "total_revenue": 17504274.69,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -17404,6 +17404,12 @@
         "total_tokens": 37054189041
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13595.1,
+        "total_tokens": 51302260233
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12914.79,
@@ -17440,12 +17446,6 @@
         "total_tokens": 131307890451
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51302260233
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -17461,7 +17461,7 @@
   },
   {
     "date": "2026-07-25",
-    "total_revenue": 12250743.52,
+    "total_revenue": 12262491.13,
     "models": [
       {
         "id": "moonshotai/kimi-k3",
@@ -17692,6 +17692,12 @@
         "total_tokens": 46328267209
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11747.61,
+        "total_tokens": 48443769370
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9434.25,
@@ -17728,12 +17734,6 @@
         "total_tokens": 128259849326
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48443769370
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -17755,7 +17755,7 @@
   },
   {
     "date": "2026-07-26",
-    "total_revenue": 11094751.95,
+    "total_revenue": 11106513.2,
     "models": [
       {
         "id": "moonshotai/kimi-k3",
@@ -17980,6 +17980,12 @@
         "total_tokens": 19554821108
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11761.25,
+        "total_tokens": 48500014946
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 11347.59,
@@ -18022,12 +18028,6 @@
         "total_tokens": 151466126407
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48500014946
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -18049,7 +18049,7 @@
   },
   {
     "date": "2026-07-27",
-    "total_revenue": 15269674.8,
+    "total_revenue": 15282144.65,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -18286,6 +18286,12 @@
         "total_tokens": 35198347246
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12469.85,
+        "total_tokens": 51422081523
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 11854.64,
@@ -18316,12 +18322,6 @@
         "total_tokens": 195323310330
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51422081523
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -18343,7 +18343,7 @@
   },
   {
     "date": "2026-07-28",
-    "total_revenue": 17100478.97,
+    "total_revenue": 17112446.61,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -18586,6 +18586,12 @@
         "total_tokens": 35203795174
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11967.64,
+        "total_tokens": 49351098663
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 8998.53,
@@ -18616,12 +18622,6 @@
         "total_tokens": 50980773818
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 49351098663
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -18637,7 +18637,7 @@
   },
   {
     "date": "2026-07-29",
-    "total_revenue": 17652783.3,
+    "total_revenue": 17665194.74,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -18880,6 +18880,12 @@
         "total_tokens": 34766158474
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12411.44,
+        "total_tokens": 51181204316
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 7910.55,
@@ -18916,12 +18922,6 @@
         "total_tokens": 55816320468
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51181204316
-      },
-      {
         "id": "poolside/laguna-xs-2.1:free",
         "name": "Poolside: Laguna XS 2.1 (free)",
         "revenue": 0.0,
@@ -18931,7 +18931,7 @@
   },
   {
     "date": "2026-07-30",
-    "total_revenue": 17809343.74,
+    "total_revenue": 17821252.91,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -19168,6 +19168,12 @@
         "total_tokens": 32638002324
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11909.17,
+        "total_tokens": 49109960130
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 11458.05,
@@ -19204,12 +19210,6 @@
         "total_tokens": 119292683508
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 49109960130
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -19225,7 +19225,7 @@
   },
   {
     "date": "2026-07-31",
-    "total_revenue": 16221902.22,
+    "total_revenue": 16233460.07,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -19456,6 +19456,12 @@
         "total_tokens": 67704518305
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11557.85,
+        "total_tokens": 47661224780
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 11230.62,
@@ -19492,12 +19498,6 @@
         "total_tokens": 181705532748
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47661224780
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -19513,7 +19513,7 @@
   },
   {
     "date": "2026-08-01",
-    "total_revenue": 10198537.07,
+    "total_revenue": 10209170.96,
     "models": [
       {
         "id": "moonshotai/kimi-k3",
@@ -19732,6 +19732,12 @@
         "total_tokens": 59832944881
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10633.89,
+        "total_tokens": 43851107195
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 8787.59,
@@ -19786,12 +19792,6 @@
         "total_tokens": 170448688685
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 43851107195
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -19807,7 +19807,7 @@
   },
   {
     "date": "2026-08-02",
-    "total_revenue": 10037668.83,
+    "total_revenue": 10048459.15,
     "models": [
       {
         "id": "moonshotai/kimi-k3",
@@ -20020,6 +20020,12 @@
         "total_tokens": 16141311346
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10790.32,
+        "total_tokens": 44496171745
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9453.84,
@@ -20074,12 +20080,6 @@
         "total_tokens": 156626737753
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 44496171745
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -20095,7 +20095,7 @@
   },
   {
     "date": "2026-08-03",
-    "total_revenue": 16172662.09,
+    "total_revenue": 16183738.3,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -20344,6 +20344,12 @@
         "total_tokens": 32510518687
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11076.21,
+        "total_tokens": 45675075918
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9158.25,
@@ -20380,12 +20386,6 @@
         "total_tokens": 173363800066
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 45675075918
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -20395,7 +20395,7 @@
   },
   {
     "date": "2026-08-04",
-    "total_revenue": 16861102.52,
+    "total_revenue": 16871620.42,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -20632,6 +20632,12 @@
         "total_tokens": 31956892855
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10517.9,
+        "total_tokens": 43372789883
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 8708.27,
@@ -20674,12 +20680,6 @@
         "total_tokens": 181153844225
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 43372789883
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -20695,7 +20695,7 @@
   },
   {
     "date": "2026-08-05",
-    "total_revenue": 21881108.3,
+    "total_revenue": 21891119.46,
     "models": [
       {
         "id": "google/gemini-3.6-flash",
@@ -20944,6 +20944,12 @@
         "total_tokens": 31890108970
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10011.16,
+        "total_tokens": 41283135424
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9294.9,
@@ -20980,12 +20986,6 @@
         "total_tokens": 173332212125
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 41283135424
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -20995,7 +20995,7 @@
   },
   {
     "date": "2026-08-06",
-    "total_revenue": 21808178.32,
+    "total_revenue": 21820061.55,
     "models": [
       {
         "id": "google/gemini-3.6-flash",
@@ -21238,6 +21238,12 @@
         "total_tokens": 59946744190
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11883.23,
+        "total_tokens": 49003023084
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 11478.27,
@@ -21274,12 +21280,6 @@
         "total_tokens": 98834648479
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 49003023084
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -21295,7 +21295,7 @@
   },
   {
     "date": "2026-08-07",
-    "total_revenue": 18359110.05,
+    "total_revenue": 18372375.65,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -21532,6 +21532,12 @@
         "total_tokens": 62261223176
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13265.6,
+        "total_tokens": 54703496754
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 11816.88,
@@ -21574,12 +21580,6 @@
         "total_tokens": 272516097267
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 54703496754
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -21595,7 +21595,7 @@
   },
   {
     "date": "2026-08-08",
-    "total_revenue": 13387336.9,
+    "total_revenue": 13399484.76,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -21826,6 +21826,12 @@
         "total_tokens": 59781700630
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12147.86,
+        "total_tokens": 50094252045
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 9467.81,
@@ -21874,12 +21880,6 @@
         "total_tokens": 238478159148
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50094252045
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -21895,7 +21895,7 @@
   },
   {
     "date": "2026-08-09",
-    "total_revenue": 13836272.98,
+    "total_revenue": 13847824.76,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -22132,6 +22132,12 @@
         "total_tokens": 57228554496
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11551.78,
+        "total_tokens": 47636218399
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 9745.29,
@@ -22174,12 +22180,6 @@
         "total_tokens": 230658660186
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47636218399
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -22195,7 +22195,7 @@
   },
   {
     "date": "2026-08-10",
-    "total_revenue": 17949744.02,
+    "total_revenue": 17978422.92,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -22390,6 +22390,12 @@
         "total_tokens": 30488886754
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 28678.9,
+        "total_tokens": 47798171022
+      },
+      {
         "id": "openai/gpt-5.6-luna-pro",
         "name": "OpenAI: GPT-5.6 Luna Pro",
         "revenue": 27689.99,
@@ -22474,12 +22480,6 @@
         "total_tokens": 250513004746
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47798171022
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -22495,7 +22495,7 @@
   },
   {
     "date": "2026-08-11",
-    "total_revenue": 20414601.75,
+    "total_revenue": 20426439.08,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -22732,6 +22732,12 @@
         "total_tokens": 32232021495
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11837.33,
+        "total_tokens": 48813737580
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 7936.79,
@@ -22762,12 +22768,6 @@
         "total_tokens": 210879586233
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48813737580
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -22789,7 +22789,7 @@
   },
   {
     "date": "2026-08-12",
-    "total_revenue": 23219777.97,
+    "total_revenue": 23230151.47,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -23032,6 +23032,12 @@
         "total_tokens": 30092412627
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10373.5,
+        "total_tokens": 42777325981
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 7401.45,
@@ -23068,12 +23074,6 @@
         "total_tokens": 111563869170
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 42777325981
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -23089,7 +23089,7 @@
   },
   {
     "date": "2026-08-13",
-    "total_revenue": 22737101.8,
+    "total_revenue": 22747864.36,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -23338,6 +23338,12 @@
         "total_tokens": 31700734002
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 10762.56,
+        "total_tokens": 44381679825
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 6771.33,
@@ -23374,12 +23380,6 @@
         "total_tokens": 122977713539
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 44381679825
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -23389,7 +23389,7 @@
   },
   {
     "date": "2026-08-14",
-    "total_revenue": 23922084.1,
+    "total_revenue": 23934736.33,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -23632,6 +23632,12 @@
         "total_tokens": 49563625318
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12652.23,
+        "total_tokens": 52174161257
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12001.88,
@@ -23680,12 +23686,6 @@
         "total_tokens": 118284596555
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 52174161257
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -23695,7 +23695,7 @@
   },
   {
     "date": "2026-08-15",
-    "total_revenue": 21398610.89,
+    "total_revenue": 21411321.28,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -23914,6 +23914,12 @@
         "total_tokens": 60547780436
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12710.39,
+        "total_tokens": 52413974634
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 12347.34,
@@ -23974,12 +23980,6 @@
         "total_tokens": 122038947195
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 52413974634
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -23995,7 +23995,7 @@
   },
   {
     "date": "2026-08-16",
-    "total_revenue": 24093064.82,
+    "total_revenue": 24104769.26,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -24220,6 +24220,12 @@
         "total_tokens": 50853260583
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11704.44,
+        "total_tokens": 48265731318
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 10048.98,
@@ -24280,12 +24286,6 @@
         "total_tokens": 106772519524
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48265731318
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -24301,7 +24301,7 @@
   },
   {
     "date": "2026-08-17",
-    "total_revenue": 23483272.18,
+    "total_revenue": 23497899.91,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -24538,6 +24538,12 @@
         "total_tokens": 59881966269
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14627.73,
+        "total_tokens": 60320555178
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 12330.75,
@@ -24592,12 +24598,6 @@
         "total_tokens": 121464475551
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 60320555178
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -24607,7 +24607,7 @@
   },
   {
     "date": "2026-08-18",
-    "total_revenue": 21916698.65,
+    "total_revenue": 21933225.95,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -24838,6 +24838,12 @@
         "total_tokens": 59004645636
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16527.3,
+        "total_tokens": 68153818477
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 12624.08,
@@ -24898,12 +24904,6 @@
         "total_tokens": 132716842160
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 68153818477
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -24913,7 +24913,7 @@
   },
   {
     "date": "2026-08-19",
-    "total_revenue": 21120495.02,
+    "total_revenue": 21137691.89,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -25144,6 +25144,12 @@
         "total_tokens": 57068876933
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 17196.87,
+        "total_tokens": 70914912789
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 13011.64,
@@ -25204,12 +25210,6 @@
         "total_tokens": 129081451646
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 70914912789
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -25219,7 +25219,7 @@
   },
   {
     "date": "2026-08-20",
-    "total_revenue": 20799646.27,
+    "total_revenue": 20814845.28,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -25456,6 +25456,12 @@
         "total_tokens": 84264076321
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15199.01,
+        "total_tokens": 62676312840
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 14167.3,
@@ -25510,12 +25516,6 @@
         "total_tokens": 123598431221
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 62676312840
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -25525,7 +25525,7 @@
   },
   {
     "date": "2026-08-21",
-    "total_revenue": 18715808.83,
+    "total_revenue": 18727448.8,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -25768,6 +25768,12 @@
         "total_tokens": 54266275128
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11639.97,
+        "total_tokens": 47999893665
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 9666.53,
@@ -25810,12 +25816,6 @@
         "total_tokens": 159824878915
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47999893665
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -25825,7 +25825,7 @@
   },
   {
     "date": "2026-08-22",
-    "total_revenue": 13012014.12,
+    "total_revenue": 13024445.54,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -26044,6 +26044,12 @@
         "total_tokens": 60459188761
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12431.42,
+        "total_tokens": 51263600229
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 11512.54,
@@ -26110,12 +26116,6 @@
         "total_tokens": 146069435431
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51263600229
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -26125,7 +26125,7 @@
   },
   {
     "date": "2026-08-23",
-    "total_revenue": 13831655.33,
+    "total_revenue": 13844857.72,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -26338,6 +26338,12 @@
         "total_tokens": 66379193311
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13202.39,
+        "total_tokens": 54442865233
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 12844.16,
@@ -26404,12 +26410,6 @@
         "total_tokens": 158807859139
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 54442865233
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -26419,7 +26419,7 @@
   },
   {
     "date": "2026-08-24",
-    "total_revenue": 19185616.83,
+    "total_revenue": 19200667.98,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -26638,6 +26638,12 @@
         "total_tokens": 32001731278
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15051.15,
+        "total_tokens": 62066584642
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 13348.01,
@@ -26704,12 +26710,6 @@
         "total_tokens": 176905066283
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 62066584642
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -26719,7 +26719,7 @@
   },
   {
     "date": "2026-08-25",
-    "total_revenue": 20496792.07,
+    "total_revenue": 20511739.14,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -26938,6 +26938,12 @@
         "total_tokens": 66151031920
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14947.07,
+        "total_tokens": 61637382690
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 14357.49,
@@ -27004,12 +27010,6 @@
         "total_tokens": 174588333545
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 61637382690
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -27019,7 +27019,7 @@
   },
   {
     "date": "2026-08-26",
-    "total_revenue": 20469264.44,
+    "total_revenue": 20484715.01,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -27238,6 +27238,12 @@
         "total_tokens": 62355931026
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15450.57,
+        "total_tokens": 63713707690
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 14510.04,
@@ -27308,18 +27314,12 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 141049675701
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 63713707690
       }
     ]
   },
   {
     "date": "2026-08-27",
-    "total_revenue": 20336092.06,
+    "total_revenue": 20355031.62,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -27526,6 +27526,12 @@
         "total_tokens": 61736330342
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 18939.56,
+        "total_tokens": 78101261405
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 13905.29,
@@ -27598,12 +27604,6 @@
         "total_tokens": 93808374248
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 78101261405
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -27619,7 +27619,7 @@
   },
   {
     "date": "2026-08-28",
-    "total_revenue": 19410662.02,
+    "total_revenue": 19427952.22,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -27844,6 +27844,12 @@
         "total_tokens": 59849041536
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 17290.2,
+        "total_tokens": 71299812249
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 13408.77,
@@ -27910,12 +27916,6 @@
         "total_tokens": 192760486556
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 71299812249
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -27925,7 +27925,7 @@
   },
   {
     "date": "2026-08-29",
-    "total_revenue": 15664119.44,
+    "total_revenue": 15679377.03,
     "models": [
       {
         "id": "tencent/hy4-preview",
@@ -28132,6 +28132,12 @@
         "total_tokens": 59049850327
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15257.59,
+        "total_tokens": 62917890698
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 11123.64,
@@ -28210,12 +28216,6 @@
         "total_tokens": 159765405532
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 62917890698
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -28231,7 +28231,7 @@
   },
   {
     "date": "2026-08-30",
-    "total_revenue": 15231851.25,
+    "total_revenue": 15246390.39,
     "models": [
       {
         "id": "moonshotai/kimi-k3",
@@ -28438,6 +28438,12 @@
         "total_tokens": 61310931092
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14539.14,
+        "total_tokens": 59955226270
+      },
+      {
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
         "revenue": 11950.27,
@@ -28522,12 +28528,6 @@
         "total_tokens": 182176807896
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 59955226270
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -28537,7 +28537,7 @@
   },
   {
     "date": "2026-08-31",
-    "total_revenue": 19704950.93,
+    "total_revenue": 19712486.08,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -28786,6 +28786,12 @@
         "total_tokens": 43651687071
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 7535.15,
+        "total_tokens": 31072768191
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 6714.0,
@@ -28826,12 +28832,6 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 160189341594
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 31072768191
       },
       {
         "id": "thinkingmachines/inkling:free",
@@ -29149,7 +29149,7 @@
   },
   {
     "date": "2026-09-02",
-    "total_revenue": 27266872.69,
+    "total_revenue": 27276046.6,
     "models": [
       {
         "id": "tencent/hy4-preview",
@@ -29410,6 +29410,12 @@
         "total_tokens": 66999270494
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 9173.91,
+        "total_tokens": 37830545892
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 8483.97,
@@ -29444,18 +29450,12 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 131927237138
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 37830545892
       }
     ]
   },
   {
     "date": "2026-09-03",
-    "total_revenue": 30378464.79,
+    "total_revenue": 30392362.51,
     "models": [
       {
         "id": "tencent/hy4-preview",
@@ -29698,6 +29698,12 @@
         "total_tokens": 141395587365
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13897.72,
+        "total_tokens": 57310190892
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12252.12,
@@ -29750,18 +29756,12 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 147731949041
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 57310190892
       }
     ]
   },
   {
     "date": "2026-09-04",
-    "total_revenue": 30133594.77,
+    "total_revenue": 30146554.54,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -29992,6 +29992,12 @@
         "total_tokens": 63331352468
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12959.77,
+        "total_tokens": 53442329907
+      },
+      {
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "revenue": 12624.75,
@@ -30052,12 +30058,6 @@
         "total_tokens": 164569839037
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 53442329907
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -30067,7 +30067,7 @@
   },
   {
     "date": "2026-09-05",
-    "total_revenue": 24578065.5,
+    "total_revenue": 24591167.55,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -30292,6 +30292,12 @@
         "total_tokens": 196863280105
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13102.05,
+        "total_tokens": 54029056205
+      },
+      {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
         "revenue": 11399.15,
@@ -30358,12 +30364,6 @@
         "total_tokens": 167254705529
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 54029056205
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -30373,7 +30373,7 @@
   },
   {
     "date": "2026-09-06",
-    "total_revenue": 21981953.83,
+    "total_revenue": 21995801.66,
     "models": [
       {
         "id": "anthropic/claude-opus-5",
@@ -30598,6 +30598,12 @@
         "total_tokens": 238829019155
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13847.83,
+        "total_tokens": 57104473403
+      },
+      {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
         "revenue": 10445.12,
@@ -30662,12 +30668,6 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 155716043373
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 57104473403
       },
       {
         "id": "thinkingmachines/inkling:free",
@@ -31291,7 +31291,7 @@
   },
   {
     "date": "2026-09-09",
-    "total_revenue": 28480125.06,
+    "total_revenue": 28494189.52,
     "models": [
       {
         "id": "tencent/hy4-preview",
@@ -31510,6 +31510,12 @@
         "total_tokens": 240789791726
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 14064.46,
+        "total_tokens": 57997753141
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 11951.85,
@@ -31586,18 +31592,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 58630162761
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 57997753141
       }
     ]
   },
   {
     "date": "2026-09-10",
-    "total_revenue": 28281805.08,
+    "total_revenue": 28295267.83,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -31822,6 +31822,12 @@
         "total_tokens": 64312586568
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13462.75,
+        "total_tokens": 55516485389
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12497.66,
@@ -31892,18 +31898,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 56946738249
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 55516485389
       }
     ]
   },
   {
     "date": "2026-09-11",
-    "total_revenue": 25383627.87,
+    "total_revenue": 25397287.16,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -32134,6 +32134,12 @@
         "total_tokens": 50817088560
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13659.29,
+        "total_tokens": 56326951633
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 11640.49,
@@ -32198,18 +32204,12 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 78808392163
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 56326951633
       }
     ]
   },
   {
     "date": "2026-09-12",
-    "total_revenue": 19216147.81,
+    "total_revenue": 19229469.51,
     "models": [
       {
         "id": "openai/gpt-5.6-luna",
@@ -32428,6 +32428,12 @@
         "total_tokens": 36277764898
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13321.7,
+        "total_tokens": 54934839182
+      },
+      {
         "id": "nex-agi/nex-n2.5-pro",
         "name": "Nex AGI: Nex-N2.5-Pro",
         "revenue": 12646.99,
@@ -32500,12 +32506,6 @@
         "total_tokens": 95255881379
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 54934839182
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -32515,7 +32515,7 @@
   },
   {
     "date": "2026-09-13",
-    "total_revenue": 18512100.8,
+    "total_revenue": 18525193.54,
     "models": [
       {
         "id": "openai/gpt-5.6-luna",
@@ -32728,6 +32728,12 @@
         "total_tokens": 59549055487
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13092.74,
+        "total_tokens": 53990662418
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 9287.29,
@@ -32806,12 +32812,6 @@
         "total_tokens": 73487721811
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 53990662418
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -32821,7 +32821,7 @@
   },
   {
     "date": "2026-09-14",
-    "total_revenue": 26786471.73,
+    "total_revenue": 26798687.91,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -33040,6 +33040,12 @@
         "total_tokens": 58437949283
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12216.18,
+        "total_tokens": 50375997506
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 11693.13,
@@ -33116,12 +33122,6 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 54234810935
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50375997506
       }
     ]
   },
@@ -33433,7 +33433,7 @@
   },
   {
     "date": "2026-09-16",
-    "total_revenue": 31612355.03,
+    "total_revenue": 31624622.35,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -33670,6 +33670,12 @@
         "total_tokens": 77927539891
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12267.32,
+        "total_tokens": 46291774498
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 11923.41,
@@ -33722,18 +33728,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 48235721477
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 46291774498
       }
     ]
   },
   {
     "date": "2026-09-17",
-    "total_revenue": 49725860.35,
+    "total_revenue": 49738416.77,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -33958,6 +33958,12 @@
         "total_tokens": 83391907830
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12556.42,
+        "total_tokens": 47382700616
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12311.05,
@@ -34022,18 +34028,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 52384479006
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 47382700616
       }
     ]
   },
   {
     "date": "2026-09-18",
-    "total_revenue": 31691315.85,
+    "total_revenue": 31705039.48,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -34264,6 +34264,12 @@
         "total_tokens": 53944149780
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13723.63,
+        "total_tokens": 51787288705
+      },
+      {
         "id": "nex-agi/nex-n2.5-pro",
         "name": "Nex AGI: Nex-N2.5-Pro",
         "revenue": 13569.39,
@@ -34318,12 +34324,6 @@
         "total_tokens": 106366615441
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 51787288705
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -34333,7 +34333,7 @@
   },
   {
     "date": "2026-09-19",
-    "total_revenue": 20335877.48,
+    "total_revenue": 20348123.25,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -34552,6 +34552,12 @@
         "total_tokens": 77608304586
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12245.77,
+        "total_tokens": 46210444996
+      },
+      {
         "id": "inclusionai/ling-3.0-flash-vl",
         "name": "inclusionAI: Ling 3.0 Flash VL",
         "revenue": 10773.89,
@@ -34622,18 +34628,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 48518946309
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 46210444996
       }
     ]
   },
   {
     "date": "2026-09-20",
-    "total_revenue": 18952946.29,
+    "total_revenue": 18965713.69,
     "models": [
       {
         "id": "tencent/hy4-preview",
@@ -34852,6 +34852,12 @@
         "total_tokens": 102070593530
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 12767.4,
+        "total_tokens": 48178859671
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 10879.56,
@@ -34922,18 +34928,12 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 57669083973
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 48178859671
       }
     ]
   },
   {
     "date": "2026-09-21",
-    "total_revenue": 26156195.14,
+    "total_revenue": 26167674.88,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -35170,6 +35170,12 @@
         "total_tokens": 60695896767
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 11479.74,
+        "total_tokens": 43319757439
+      },
+      {
         "id": "inclusionai/ling-3.0-flash-vl",
         "name": "inclusionAI: Ling 3.0 Flash VL",
         "revenue": 10469.52,
@@ -35222,12 +35228,6 @@
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
         "total_tokens": 53742039170
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 43319757439
       }
     ]
   },
@@ -36415,7 +36415,7 @@
   },
   {
     "date": "2026-09-26",
-    "total_revenue": 21903523.71,
+    "total_revenue": 21916784.86,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -36646,6 +36646,12 @@
         "total_tokens": 46546501242
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13261.15,
+        "total_tokens": 50042071401
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 12476.12,
@@ -36698,18 +36704,12 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 54591868526
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50042071401
       }
     ]
   },
   {
     "date": "2026-09-27",
-    "total_revenue": 18147925.25,
+    "total_revenue": 18161048.89,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -36934,6 +36934,12 @@
         "total_tokens": 50067655144
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13123.64,
+        "total_tokens": 49523181357
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 13090.53,
@@ -36992,12 +36998,6 @@
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
         "total_tokens": 71084958557
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 49523181357
       }
     ]
   },
@@ -37591,7 +37591,7 @@
   },
   {
     "date": "2026-09-30",
-    "total_revenue": 31392438.97,
+    "total_revenue": 31405712.81,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -37840,6 +37840,12 @@
         "total_tokens": 68051662773
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 13273.84,
+        "total_tokens": 50089943439
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 10806.86,
@@ -37874,18 +37880,12 @@
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
         "total_tokens": 63339180674
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 50089943439
       }
     ]
   },
   {
     "date": "2026-10-01",
-    "total_revenue": 35588555.82,
+    "total_revenue": 35603629.55,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -38128,6 +38128,12 @@
         "total_tokens": 71271670453
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15073.73,
+        "total_tokens": 56881987341
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 7455.11,
@@ -38164,12 +38170,6 @@
         "total_tokens": 62847948369
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 56881987341
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -38179,7 +38179,7 @@
   },
   {
     "date": "2026-10-02",
-    "total_revenue": 32215502.56,
+    "total_revenue": 32230776.3,
     "models": [
       {
         "id": "openai/gpt-6-astra",
@@ -38410,6 +38410,12 @@
         "total_tokens": 56329497734
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 15273.74,
+        "total_tokens": 57636773056
+      },
+      {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
         "revenue": 13687.47,
@@ -38458,12 +38464,6 @@
         "total_tokens": 87567375888
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 57636773056
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -38473,7 +38473,7 @@
   },
   {
     "date": "2026-10-03",
-    "total_revenue": 22824844.8,
+    "total_revenue": 22840950.87,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -38704,6 +38704,12 @@
         "total_tokens": 398288266740
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16106.07,
+        "total_tokens": 60777622201
+      },
+      {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
         "revenue": 14651.88,
@@ -38756,18 +38762,12 @@
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
         "total_tokens": 61419416707
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 60777622201
       }
     ]
   },
   {
     "date": "2026-10-04",
-    "total_revenue": 20988712.25,
+    "total_revenue": 21005088.08,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -38986,6 +38986,12 @@
         "total_tokens": 135139799713
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 16375.83,
+        "total_tokens": 61795569788
+      },
+      {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "revenue": 15935.12,
@@ -39046,12 +39052,6 @@
         "total_tokens": 81052275771
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 61795569788
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -39061,7 +39061,7 @@
   },
   {
     "date": "2026-10-05",
-    "total_revenue": 33723844.33,
+    "total_revenue": 33745017.83,
     "models": [
       {
         "id": "deepseek/deepseek-v4.1-flash",
@@ -39268,6 +39268,12 @@
         "total_tokens": 86739898167
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 21173.5,
+        "total_tokens": 79899981945
+      },
+      {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
         "revenue": 20682.04,
@@ -39334,12 +39340,6 @@
         "total_tokens": 113046874530
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 79899981945
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -39355,7 +39355,7 @@
   },
   {
     "date": "2026-10-06",
-    "total_revenue": 36971708.8,
+    "total_revenue": 36997399.55,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -39556,6 +39556,12 @@
         "total_tokens": 201335454195
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25690.75,
+        "total_tokens": 96946229126
+      },
+      {
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "revenue": 24803.15,
@@ -39640,12 +39646,6 @@
         "total_tokens": 110562110630
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 96946229126
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -39655,7 +39655,7 @@
   },
   {
     "date": "2026-10-07",
-    "total_revenue": 37692255.14,
+    "total_revenue": 37717276.3,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -39862,6 +39862,12 @@
         "total_tokens": 113664022354
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25021.16,
+        "total_tokens": 94419465669
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 23257.53,
@@ -39940,12 +39946,6 @@
         "total_tokens": 103974169343
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 94419465669
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -39955,7 +39955,7 @@
   },
   {
     "date": "2026-10-08",
-    "total_revenue": 38569734.57,
+    "total_revenue": 38592636.92,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -40174,6 +40174,12 @@
         "total_tokens": 101213950087
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 22902.35,
+        "total_tokens": 94442661452
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 22016.96,
@@ -40240,12 +40246,6 @@
         "total_tokens": 111808991056
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 94442661452
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -40255,7 +40255,7 @@
   },
   {
     "date": "2026-10-09",
-    "total_revenue": 42851451.22,
+    "total_revenue": 42877460.19,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -40474,6 +40474,12 @@
         "total_tokens": 150434965991
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 26008.97,
+        "total_tokens": 98147044540
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 22764.78,
@@ -40540,12 +40546,6 @@
         "total_tokens": 129017044120
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 98147044540
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -40555,7 +40555,7 @@
   },
   {
     "date": "2026-10-10",
-    "total_revenue": 37931482.58,
+    "total_revenue": 37952482.84,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -40774,6 +40774,12 @@
         "total_tokens": 71246281224
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 21000.26,
+        "total_tokens": 79246247903
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 18938.69,
@@ -40844,18 +40850,12 @@
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
         "total_tokens": 114015538402
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 79246247903
       }
     ]
   },
   {
     "date": "2026-10-11",
-    "total_revenue": 38823737.38,
+    "total_revenue": 38845471.04,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -41074,6 +41074,12 @@
         "total_tokens": 98865514164
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 21733.66,
+        "total_tokens": 82013822524
+      },
+      {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
         "revenue": 21236.55,
@@ -41144,18 +41150,12 @@
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
         "total_tokens": 115050790554
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 82013822524
       }
     ]
   },
   {
     "date": "2026-10-12",
-    "total_revenue": 42398454.79,
+    "total_revenue": 42421863.38,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -41374,6 +41374,12 @@
         "total_tokens": 82613762446
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 23408.59,
+        "total_tokens": 88334286703
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 22656.07,
@@ -41438,18 +41444,12 @@
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
         "total_tokens": 106986671095
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 88334286703
       }
     ]
   },
   {
     "date": "2026-10-13",
-    "total_revenue": 40502351.51,
+    "total_revenue": 40527781.37,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -41674,6 +41674,12 @@
         "total_tokens": 125615121308
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25429.86,
+        "total_tokens": 95961751526
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 23536.9,
@@ -41728,12 +41734,6 @@
         "total_tokens": 146796589510
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 95961751526
-      },
-      {
         "id": "inclusionai/ling-3.1-flash",
         "name": "inclusionAI: Ling 3.1 Flash",
         "revenue": 0.0,
@@ -41749,7 +41749,7 @@
   },
   {
     "date": "2026-10-14",
-    "total_revenue": 38775503.41,
+    "total_revenue": 38819583.87,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -41968,6 +41968,12 @@
         "total_tokens": 433991389597
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 44080.46,
+        "total_tokens": 166341346672
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 36030.58,
@@ -42028,12 +42034,6 @@
         "total_tokens": 214557470141
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 166341346672
-      },
-      {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
@@ -42049,7 +42049,7 @@
   },
   {
     "date": "2026-10-15",
-    "total_revenue": 37957273.16,
+    "total_revenue": 37993030.37,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -42262,6 +42262,12 @@
         "total_tokens": 434315002589
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 35757.21,
+        "total_tokens": 134932875654
+      },
+      {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
         "revenue": 28412.08,
@@ -42328,12 +42334,6 @@
         "total_tokens": 147172727844
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 134932875654
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -42343,7 +42343,7 @@
   },
   {
     "date": "2026-10-16",
-    "total_revenue": 35180461.16,
+    "total_revenue": 35208336.37,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -42556,6 +42556,12 @@
         "total_tokens": 86234339891
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 27875.21,
+        "total_tokens": 105189455164
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 25636.97,
@@ -42616,12 +42622,6 @@
         "total_tokens": 107768862523
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 105189455164
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -42637,7 +42637,7 @@
   },
   {
     "date": "2026-10-17",
-    "total_revenue": 24603803.98,
+    "total_revenue": 24628908.87,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -42832,6 +42832,12 @@
         "total_tokens": 89214129380
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 25104.89,
+        "total_tokens": 94735451560
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
         "revenue": 25091.43,
@@ -42910,12 +42916,6 @@
         "total_tokens": 111542484241
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 94735451560
-      },
-      {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
@@ -42931,7 +42931,7 @@
   },
   {
     "date": "2026-10-18",
-    "total_revenue": 22488986.99,
+    "total_revenue": 22509957.09,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -43126,6 +43126,12 @@
         "total_tokens": 70853806816
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 20970.1,
+        "total_tokens": 79132452582
+      },
+      {
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "revenue": 18478.33,
@@ -43210,12 +43216,6 @@
         "total_tokens": 102482016867
       },
       {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 79132452582
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -43225,7 +43225,7 @@
   },
   {
     "date": "2026-10-19",
-    "total_revenue": 30550379.9,
+    "total_revenue": 30569911.61,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
@@ -43450,6 +43450,12 @@
         "total_tokens": 85086098495
       },
       {
+        "id": "nvidia/nemotron-3-super-120b-a12b",
+        "name": "NVIDIA: Nemotron 3 Super",
+        "revenue": 19531.71,
+        "total_tokens": 73704559305
+      },
+      {
         "id": "upstage/solar-mini4",
         "name": "Upstage: Solar Mini 4",
         "revenue": 19233.87,
@@ -43508,12 +43514,6 @@
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
         "total_tokens": 88737040790
-      },
-      {
-        "id": "nvidia/nemotron-3-super-120b-a12b:free",
-        "name": "NVIDIA: Nemotron 3 Super (free)",
-        "revenue": 0.0,
-        "total_tokens": 73704559305
       }
     ]
   },
@@ -45283,43 +45283,43 @@
   },
   {
     "date": "2026-10-26",
-    "total_revenue": 34785072.02,
+    "total_revenue": 34785345.16,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
         "name": "Anthropic: Claude Opus 5.5",
-        "revenue": 12484265.05,
-        "total_tokens": 1040355420494
+        "revenue": 12484287.16,
+        "total_tokens": 1040357263476
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 2765627.5,
-        "total_tokens": 5422799015154
+        "revenue": 2765633.48,
+        "total_tokens": 5422810747352
       },
       {
         "id": "openai/gpt-6.1-sol",
         "name": "OpenAI: GPT-6.1 Sol",
-        "revenue": 2225490.63,
-        "total_tokens": 370915104628
+        "revenue": 2225528.29,
+        "total_tokens": 370921381856
       },
       {
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
-        "revenue": 2099749.53,
-        "total_tokens": 1399133453212
+        "revenue": 2099752.59,
+        "total_tokens": 1399135495316
       },
       {
         "id": "anthropic/claude-sonnet-5.5",
         "name": "Anthropic: Claude Sonnet 5.5",
-        "revenue": 2050212.34,
-        "total_tokens": 341702056010
+        "revenue": 2050216.94,
+        "total_tokens": 341702822609
       },
       {
         "id": "openai/gpt-6-astra",
         "name": "OpenAI: GPT-6 Astra",
-        "revenue": 1541879.49,
-        "total_tokens": 51395983040
+        "revenue": 1541881.9,
+        "total_tokens": 51396063431
       },
       {
         "id": "stepfun/step-5-preview",
@@ -45330,44 +45330,44 @@
       {
         "id": "moonshotai/kimi-k3.1-pro",
         "name": "MoonshotAI: Kimi K3.1 Pro",
-        "revenue": 1149427.41,
-        "total_tokens": 191571235205
+        "revenue": 1149551.96,
+        "total_tokens": 191591992528
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 1128607.99,
-        "total_tokens": 2212956847088
+        "revenue": 1128614.17,
+        "total_tokens": 2212968961555
       },
       {
         "id": "moonshotai/kimi-k3",
         "name": "MoonshotAI: Kimi K3",
-        "revenue": 1084967.97,
-        "total_tokens": 196569974083
+        "revenue": 1084977.42,
+        "total_tokens": 196571686110
       },
       {
         "id": "z-ai/glm-5.3-flash",
         "name": "Z.ai: GLM 5.3 Flash",
-        "revenue": 738658.83,
-        "total_tokens": 2272796394976
+        "revenue": 738668.22,
+        "total_tokens": 2272825293576
       },
       {
         "id": "google/gemini-4-argon",
         "name": "Google: Gemini 4 Argon",
-        "revenue": 724789.15,
-        "total_tokens": 120798191653
+        "revenue": 724789.68,
+        "total_tokens": 120798279234
       },
       {
         "id": "z-ai/glm-5.3",
         "name": "Z.ai: GLM 5.3",
-        "revenue": 659426.28,
-        "total_tokens": 891719109353
+        "revenue": 659438.07,
+        "total_tokens": 891735046885
       },
       {
         "id": "google/gemini-3.8-flash",
         "name": "Google: Gemini 3.8 Flash",
-        "revenue": 595361.55,
-        "total_tokens": 240550120810
+        "revenue": 595361.85,
+        "total_tokens": 240550240713
       },
       {
         "id": "anthropic/claude-sonnet-5",
@@ -45378,14 +45378,14 @@
       {
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
-        "revenue": 488803.49,
-        "total_tokens": 138981104245
+        "revenue": 488804.44,
+        "total_tokens": 138981372716
       },
       {
         "id": "openai/gpt-6-luna",
         "name": "OpenAI: GPT-6 Luna",
-        "revenue": 455956.26,
-        "total_tokens": 1519854187056
+        "revenue": 455956.87,
+        "total_tokens": 1519856222129
       },
       {
         "id": "openai/gpt-6-sol",
@@ -45396,14 +45396,14 @@
       {
         "id": "minimax/minimax-m3.1-flash",
         "name": "MiniMax: MiniMax M3.1 Flash",
-        "revenue": 254329.25,
-        "total_tokens": 678211338092
+        "revenue": 254329.84,
+        "total_tokens": 678212906127
       },
       {
         "id": "openai/gpt-5.6-luna",
         "name": "OpenAI: GPT-5.6 Luna",
-        "revenue": 223577.98,
-        "total_tokens": 319397108204
+        "revenue": 223578.03,
+        "total_tokens": 319397178654
       },
       {
         "id": "google/gemini-3-flash-preview",
@@ -45414,26 +45414,26 @@
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 166627.74,
-        "total_tokens": 117141367194
+        "revenue": 166631.75,
+        "total_tokens": 117144186270
       },
       {
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
-        "revenue": 164214.86,
-        "total_tokens": 218953145107
+        "revenue": 164215.69,
+        "total_tokens": 218954249474
       },
       {
         "id": "xiaomi/mimo-v2.6-pro",
         "name": "Xiaomi: MiMo-V2.6-Pro",
-        "revenue": 138555.67,
-        "total_tokens": 212345851723
+        "revenue": 138569.46,
+        "total_tokens": 212366985329
       },
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 124426.5,
-        "total_tokens": 87473374694
+        "revenue": 124427.86,
+        "total_tokens": 87474329794
       },
       {
         "id": "google/gemini-3.7-flash",
@@ -45444,8 +45444,8 @@
       {
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
-        "revenue": 108046.3,
-        "total_tokens": 523860836195
+        "revenue": 108046.36,
+        "total_tokens": 523861140636
       },
       {
         "id": "anthropic/claude-haiku-5.5",
@@ -45456,14 +45456,14 @@
       {
         "id": "xiaomi/mimo-v2.6-flash",
         "name": "Xiaomi: MiMo-V2.6-Flash",
-        "revenue": 100264.17,
-        "total_tokens": 477448425653
+        "revenue": 100264.73,
+        "total_tokens": 477451090246
       },
       {
         "id": "qwen/qwen3.8-27b",
         "name": "Qwen: Qwen3.8 27B",
-        "revenue": 99829.07,
-        "total_tokens": 73947461793
+        "revenue": 99834.98,
+        "total_tokens": 73951836552
       },
       {
         "id": "google/gemini-3.1-flash-lite",
@@ -45474,8 +45474,8 @@
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 85359.82,
-        "total_tokens": 625346634839
+        "revenue": 85361.03,
+        "total_tokens": 625355522444
       },
       {
         "id": "meta/muse-spark-1.3-contributor",
@@ -45486,92 +45486,386 @@
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 55257.94,
-        "total_tokens": 404820072236
+        "revenue": 55260.93,
+        "total_tokens": 404841995411
       },
       {
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
-        "revenue": 37450.55,
-        "total_tokens": 55482289120
+        "revenue": 37450.58,
+        "total_tokens": 55482337417
       },
       {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
-        "revenue": 27035.54,
-        "total_tokens": 87211433158
+        "revenue": 27036.58,
+        "total_tokens": 87214770643
       },
       {
         "id": "openai/gpt-6-luna-pro",
         "name": "OpenAI: GPT-6 Luna Pro",
-        "revenue": 25338.28,
-        "total_tokens": 84460918176
+        "revenue": 25338.37,
+        "total_tokens": 84461230143
       },
       {
         "id": "upstage/solar-pro4",
         "name": "Upstage: Solar Pro 4",
-        "revenue": 25337.74,
-        "total_tokens": 67567300016
+        "revenue": 25337.79,
+        "total_tokens": 67567441201
       },
       {
         "id": "upstage/solar-mini4",
         "name": "Upstage: Solar Mini 4",
-        "revenue": 25011.23,
-        "total_tokens": 200089801308
+        "revenue": 25011.29,
+        "total_tokens": 200090317018
       },
       {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
-        "revenue": 19923.67,
-        "total_tokens": 66412247904
+        "revenue": 19923.9,
+        "total_tokens": 66412986425
       },
       {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
-        "revenue": 19456.91,
-        "total_tokens": 51885096356
+        "revenue": 19457.59,
+        "total_tokens": 51886899546
       },
       {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
-        "revenue": 7937.16,
-        "total_tokens": 54271148391
+        "revenue": 7937.19,
+        "total_tokens": 54271409005
       },
       {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
-        "total_tokens": 437521814777
+        "total_tokens": 437522314293
       },
       {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
-        "total_tokens": 214494234453
+        "total_tokens": 214501996785
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
-        "total_tokens": 140597082181
+        "total_tokens": 140597591687
       },
       {
         "id": "poolside/laguna-s-2.1:free",
         "name": "Poolside: Laguna S 2.1 (free)",
         "revenue": 0.0,
-        "total_tokens": 125629201691
+        "total_tokens": 125636297024
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
-        "total_tokens": 100352311891
+        "total_tokens": 100353661844
       },
       {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
-        "total_tokens": 52837679089
+        "total_tokens": 52845024567
+      }
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "total_revenue": 36595620.82,
+    "models": [
+      {
+        "id": "anthropic/claude-opus-5.5",
+        "name": "Anthropic: Claude Opus 5.5",
+        "revenue": 13183860.64,
+        "total_tokens": 1098655053743
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "revenue": 3024399.41,
+        "total_tokens": 300054507370
+      },
+      {
+        "id": "anthropic/claude-sonnet-5.5",
+        "name": "Anthropic: Claude Sonnet 5.5",
+        "revenue": 2564274.02,
+        "total_tokens": 427379002775
+      },
+      {
+        "id": "openai/gpt-6.1-sol",
+        "name": "OpenAI: GPT-6.1 Sol",
+        "revenue": 2298798.33,
+        "total_tokens": 383133054571
+      },
+      {
+        "id": "tencent/hy4-preview",
+        "name": "Tencent: Hy4 preview",
+        "revenue": 2026409.64,
+        "total_tokens": 1350264630240
+      },
+      {
+        "id": "openai/gpt-6-astra",
+        "name": "OpenAI: GPT-6 Astra",
+        "revenue": 1836974.6,
+        "total_tokens": 61232486805
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 1692024.25,
+        "total_tokens": 6042943756198
+      },
+      {
+        "id": "stepfun/step-5-preview",
+        "name": "StepFun: Step 5 Preview",
+        "revenue": 1483132.14,
+        "total_tokens": 801693051154
+      },
+      {
+        "id": "moonshotai/kimi-k3.1-pro",
+        "name": "MoonshotAI: Kimi K3.1 Pro",
+        "revenue": 1310497.39,
+        "total_tokens": 218416231478
+      },
+      {
+        "id": "google/gemini-4-argon",
+        "name": "Google: Gemini 4 Argon",
+        "revenue": 814948.41,
+        "total_tokens": 135824735810
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 660799.48,
+        "total_tokens": 2359998129449
+      },
+      {
+        "id": "google/gemini-3.8-flash",
+        "name": "Google: Gemini 3.8 Flash",
+        "revenue": 647843.32,
+        "total_tokens": 261754877272
+      },
+      {
+        "id": "z-ai/glm-5.3-flash",
+        "name": "Z.ai: GLM 5.3 Flash",
+        "revenue": 609267.34,
+        "total_tokens": 1874668726799
+      },
+      {
+        "id": "z-ai/glm-5.3",
+        "name": "Z.ai: GLM 5.3",
+        "revenue": 518450.86,
+        "total_tokens": 705423305207
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "revenue": 511649.18,
+        "total_tokens": 85274863336
+      },
+      {
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "revenue": 500084.98,
+        "total_tokens": 142188759774
+      },
+      {
+        "id": "openai/gpt-6-luna",
+        "name": "OpenAI: GPT-6 Luna",
+        "revenue": 324919.15,
+        "total_tokens": 1083063834494
+      },
+      {
+        "id": "minimax/minimax-m3.1-flash",
+        "name": "MiniMax: MiniMax M3.1 Flash",
+        "revenue": 316605.87,
+        "total_tokens": 844282332750
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "revenue": 268783.03,
+        "total_tokens": 383975752766
+      },
+      {
+        "id": "openai/gpt-6.1-terra",
+        "name": "OpenAI: GPT-6.1 Terra",
+        "revenue": 249877.31,
+        "total_tokens": 83292438114
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 174002.66,
+        "total_tokens": 121434761427
+      },
+      {
+        "id": "google/gemini-3-flash-preview",
+        "name": "Google: Gemini 3 Flash Preview",
+        "revenue": 164332.28,
+        "total_tokens": 93904158551
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-pro",
+        "name": "Xiaomi: MiMo-V2.6-Pro",
+        "revenue": 158636.7,
+        "total_tokens": 243121371852
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 139255.71,
+        "total_tokens": 663122409696
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "revenue": 134202.31,
+        "total_tokens": 59645469510
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 127327.44,
+        "total_tokens": 88860579778
+      },
+      {
+        "id": "anthropic/claude-haiku-5.5",
+        "name": "Anthropic: Claude Haiku 5.5",
+        "revenue": 110388.85,
+        "total_tokens": 367962834250
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-flash",
+        "name": "Xiaomi: MiMo-V2.6-Flash",
+        "revenue": 109269.34,
+        "total_tokens": 520330196572
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite",
+        "name": "Google: Gemini 3.1 Flash Lite",
+        "revenue": 98458.42,
+        "total_tokens": 112523907347
+      },
+      {
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "revenue": 95636.82,
+        "total_tokens": 463693685671
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 91858.94,
+        "total_tokens": 437423544114
+      },
+      {
+        "id": "meta/muse-spark-1.3-contributor",
+        "name": "Meta: Muse Spark 1.3 Contributor",
+        "revenue": 57447.2,
+        "total_tokens": 382981312837
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "revenue": 49927.53,
+        "total_tokens": 66570042178
+      },
+      {
+        "id": "stepfun/step-3.7-flash",
+        "name": "StepFun: Step 3.7 Flash",
+        "revenue": 47423.54,
+        "total_tokens": 70257090682
+      },
+      {
+        "id": "qwen/qwen3.8-27b",
+        "name": "Qwen: Qwen3.8 27B",
+        "revenue": 44037.56,
+        "total_tokens": 68328251845
+      },
+      {
+        "id": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "revenue": 27441.91,
+        "total_tokens": 73178437494
+      },
+      {
+        "id": "upstage/solar-mini4",
+        "name": "Upstage: Solar Mini 4",
+        "revenue": 25928.35,
+        "total_tokens": 207426826706
+      },
+      {
+        "id": "qwen/qwen3.8-flash",
+        "name": "Qwen: Qwen3.8 Flash",
+        "revenue": 25662.87,
+        "total_tokens": 82783450976
+      },
+      {
+        "id": "openai/gpt-6-luna-pro",
+        "name": "OpenAI: GPT-6 Luna Pro",
+        "revenue": 25419.82,
+        "total_tokens": 84732729709
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "revenue": 21029.6,
+        "total_tokens": 56078940138
+      },
+      {
+        "id": "google/gemma-4-31b-it",
+        "name": "Google: Gemma 4 31B",
+        "revenue": 18824.53,
+        "total_tokens": 62748419313
+      },
+      {
+        "id": "qwen/qwen3.7-flash",
+        "name": "Qwen: Qwen3.7 Flash",
+        "revenue": 5509.09,
+        "total_tokens": 68863635634
+      },
+      {
+        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "name": "NVIDIA: Nemotron 3 Ultra (free)",
+        "revenue": 0.0,
+        "total_tokens": 441771854274
+      },
+      {
+        "id": "nvidia/nemotron-3.5-super-vl:free",
+        "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+        "revenue": 0.0,
+        "total_tokens": 337528330067
+      },
+      {
+        "id": "poolside/laguna-s-2.1:free",
+        "name": "Poolside: Laguna S 2.1 (free)",
+        "revenue": 0.0,
+        "total_tokens": 129908945861
+      },
+      {
+        "id": "nvidia/nemotron-3.5-lightning:free",
+        "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+        "revenue": 0.0,
+        "total_tokens": 127586733799
+      },
+      {
+        "id": "dots-studio/dots-3-note-preview:free",
+        "name": "Dots Studio: Dots3-Note Preview (free)",
+        "revenue": 0.0,
+        "total_tokens": 103818334954
+      },
+      {
+        "id": "thinkingmachines/inkling:free",
+        "name": "Thinking Machines: Inkling (free)",
+        "revenue": 0.0,
+        "total_tokens": 55069250413
       }
     ]
   }
