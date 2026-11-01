@@ -11372,12 +11372,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 24477552399
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 19979741760
       }
     ]
   },
@@ -11654,12 +11648,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 21821443011
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 17339232313
       }
     ]
   },
@@ -11936,12 +11924,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 22035348986
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 18146928173
       }
     ]
   },
@@ -12224,12 +12206,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 135992635582
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 19432702261
       }
     ]
   },
@@ -12512,12 +12488,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 126493371200
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 16279636212
       }
     ]
   },
@@ -13958,12 +13928,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 15599201824
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 13417092265
       }
     ]
   },
@@ -15710,12 +15674,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 16213864252
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 12963581662
       }
     ]
   },
@@ -16004,12 +15962,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 15477664236
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 13287406570
       }
     ]
   },
@@ -16574,18 +16526,12 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 32953281498
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 27677145788
       }
     ]
   },
   {
     "date": "2026-07-22",
-    "total_revenue": 22537131.91,
+    "total_revenue": 22532808.4,
     "models": [
       {
         "id": "anthropic/claude-opus-4.8",
@@ -16834,12 +16780,6 @@
         "total_tokens": 72432675614
       },
       {
-        "id": "poolside/laguna-s-2.1",
-        "name": "Poolside: Laguna S 2.1",
-        "revenue": 4323.51,
-        "total_tokens": 28823415309
-      },
-      {
         "id": "mistralai/mistral-nemo",
         "name": "Mistral: Mistral Nemo",
         "revenue": 816.46,
@@ -16850,12 +16790,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 257415918417
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 55270818310
       },
       {
         "id": "cohere/north-mini-code:free",
@@ -17146,22 +17080,10 @@
         "total_tokens": 365520327453
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 40798258159
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 29182633123
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 21959035041
       }
     ]
   },
@@ -17446,12 +17368,6 @@
         "total_tokens": 131307890451
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28201267918
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
@@ -17734,22 +17650,10 @@
         "total_tokens": 128259849326
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28128788742
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 23535987803
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 21616826859
       }
     ]
   },
@@ -18032,18 +17936,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 44813778923
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28369642428
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 22769817355
       }
     ]
   },
@@ -18326,18 +18218,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 39498423930
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28247020855
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 24583993469
       }
     ]
   },
@@ -18620,18 +18500,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 50980773818
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 31502595258
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 27218504235
       }
     ]
   },
@@ -18910,22 +18778,10 @@
         "total_tokens": 226948826536
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 58053864850
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 55816320468
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 25852696859
       }
     ]
   },
@@ -19204,22 +19060,10 @@
         "total_tokens": 233233334522
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 119292683508
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 35594911214
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28151886974
       }
     ]
   },
@@ -19486,12 +19330,6 @@
         "total_tokens": 306414043153
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 246144672814
-      },
-      {
         "id": "inclusionai/ling-3.0-flash",
         "name": "inclusionAI: Ling 3.0 Flash",
         "revenue": 0.0,
@@ -19502,12 +19340,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 35670402081
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 28661058808
       }
     ]
   },
@@ -19780,12 +19612,6 @@
         "total_tokens": 339579464679
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 211339334301
-      },
-      {
         "id": "inclusionai/ling-3.0-flash",
         "name": "inclusionAI: Ling 3.0 Flash",
         "revenue": 0.0,
@@ -19796,12 +19622,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 32774357228
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 23199332845
       }
     ]
   },
@@ -20068,12 +19888,6 @@
         "total_tokens": 333118241994
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 235714278119
-      },
-      {
         "id": "inclusionai/ling-3.0-flash",
         "name": "inclusionAI: Ling 3.0 Flash",
         "revenue": 0.0,
@@ -20084,12 +19898,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 34619087211
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 22371422462
       }
     ]
   },
@@ -20372,12 +20180,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 320933723475
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 268579110659
       },
       {
         "id": "inclusionai/ling-3.0-flash",
@@ -20668,12 +20470,6 @@
         "total_tokens": 326424239673
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 299333173388
-      },
-      {
         "id": "inclusionai/ling-3.0-flash",
         "name": "inclusionAI: Ling 3.0 Flash",
         "revenue": 0.0,
@@ -20684,12 +20480,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 40437516092
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 23904589094
       }
     ]
   },
@@ -20972,12 +20762,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 339341223116
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 282317715274
       },
       {
         "id": "inclusionai/ling-3.0-flash",
@@ -21268,12 +21052,6 @@
         "total_tokens": 366629203833
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 277862906789
-      },
-      {
         "id": "inclusionai/ling-3.0-flash",
         "name": "inclusionAI: Ling 3.0 Flash",
         "revenue": 0.0,
@@ -21284,12 +21062,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 40095663123
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 23410269277
       }
     ]
   },
@@ -21574,22 +21346,10 @@
         "total_tokens": 363200717936
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 272516097267
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30384097523
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 24439681325
       }
     ]
   },
@@ -21874,22 +21634,10 @@
         "total_tokens": 338775107292
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 238478159148
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30586944732
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 24609045238
       }
     ]
   },
@@ -22174,22 +21922,10 @@
         "total_tokens": 351642033564
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 230658660186
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30305729734
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 22859200167
       }
     ]
   },
@@ -22474,22 +22210,10 @@
         "total_tokens": 270691274102
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 250513004746
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30546097236
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 23186184510
       }
     ]
   },
@@ -22762,22 +22486,10 @@
         "total_tokens": 212273636544
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 210879586233
-      },
-      {
         "id": "cohere/north-mini-code:free",
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 31643917687
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 23173444123
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -23062,12 +22774,6 @@
         "total_tokens": 256699636472
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 230457546563
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -23078,12 +22784,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 31883808717
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 22010053242
       }
     ]
   },
@@ -23360,12 +23060,6 @@
         "name": "Mistral: Mistral Nemo",
         "revenue": 601.81,
         "total_tokens": 24563749528
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 248306103565
       },
       {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -23674,12 +23368,6 @@
         "total_tokens": 355377397298
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 241601126526
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -23968,12 +23656,6 @@
         "total_tokens": 399559087450
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 239687268409
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -23984,12 +23666,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30579397910
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 21250062784
       }
     ]
   },
@@ -24274,12 +23950,6 @@
         "total_tokens": 505026275508
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 242475024662
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -24290,12 +23960,6 @@
         "name": "Cohere: North Mini Code (free)",
         "revenue": 0.0,
         "total_tokens": 30283984306
-      },
-      {
-        "id": "poolside/laguna-xs-2.1:free",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 20560164446
       }
     ]
   },
@@ -24584,12 +24248,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 516573022598
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 220162839574
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -24892,12 +24550,6 @@
         "total_tokens": 514264797997
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 248140915435
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -25196,12 +24848,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 728223852045
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 271465377748
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -25504,12 +25150,6 @@
         "total_tokens": 733005036217
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 242885768268
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -25802,12 +25442,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 682997093248
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 235929618722
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -26104,12 +25738,6 @@
         "total_tokens": 737065315484
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 190083830968
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -26396,12 +26024,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 834875720361
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 192561963078
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -26698,12 +26320,6 @@
         "total_tokens": 894130300523
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 212246094008
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -26996,12 +26612,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 788168309290
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 185134896339
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -27304,12 +26914,6 @@
         "total_tokens": 766630212179
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 193486145776
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -27590,12 +27194,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 814552282811
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 203488082479
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -27910,12 +27508,6 @@
         "total_tokens": 750226968483
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 192760486556
-      },
-      {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
@@ -28202,12 +27794,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 775532827816
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 183458083294
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -28516,12 +28102,6 @@
         "total_tokens": 536828032204
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 182299786478
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -28822,12 +28402,6 @@
         "total_tokens": 493342907846
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 199739564514
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -29126,12 +28700,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 492576023028
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 209265573814
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -29440,12 +29008,6 @@
         "total_tokens": 540508021627
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 200143536732
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -29746,12 +29308,6 @@
         "total_tokens": 513074509704
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 194980466319
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -30044,12 +29600,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 523454168971
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 194522149328
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -30352,12 +29902,6 @@
         "total_tokens": 548998797857
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 170060326670
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -30658,12 +30202,6 @@
         "total_tokens": 523781591207
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 162782920342
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -30956,12 +30494,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 568988197265
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 161825175158
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -31264,12 +30796,6 @@
         "total_tokens": 476902732436
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 161578276416
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -31570,12 +31096,6 @@
         "total_tokens": 476708248207
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 161212913129
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -31874,12 +31394,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 514249464767
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 162828485705
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -32188,12 +31702,6 @@
         "total_tokens": 460899632397
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 162574803809
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -32486,12 +31994,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 592429273907
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 167912110677
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -32794,12 +32296,6 @@
         "total_tokens": 470367674438
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 159768515934
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -33098,12 +32594,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 455036739575
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 165303473185
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -33406,12 +32896,6 @@
         "total_tokens": 442497528444
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 173383794656
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -33704,12 +33188,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 553919049971
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 171695978944
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -34006,12 +33484,6 @@
         "total_tokens": 660319408625
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 167903301947
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -34304,12 +33776,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 807469387005
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 169891178391
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -34606,12 +34072,6 @@
         "total_tokens": 795563070126
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 170959118787
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -34906,12 +34366,6 @@
         "total_tokens": 779140413047
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 171565950370
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -35204,12 +34658,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 743895363643
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 169493483643
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -35512,12 +34960,6 @@
         "total_tokens": 750397778931
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 171741740539
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -35804,12 +35246,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 482563441106
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 166291831841
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -36100,12 +35536,6 @@
         "total_tokens": 625818438314
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 158598202840
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -36392,12 +35822,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 983612537317
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 155000781470
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -36688,12 +36112,6 @@
         "total_tokens": 1078671358433
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 150014104987
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -36980,12 +36398,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 1009590310067
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 148253446898
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -37276,12 +36688,6 @@
         "total_tokens": 964310962281
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 146354072410
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -37568,12 +36974,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 710978231022
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 140951404620
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -37864,12 +37264,6 @@
         "total_tokens": 685972498074
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 134441165859
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -38156,12 +37550,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 755803809994
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 130057457929
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -38452,12 +37840,6 @@
         "total_tokens": 782804716601
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 120100844619
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -38746,12 +38128,6 @@
         "total_tokens": 833570193278
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 118094022800
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -39032,12 +38408,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 915630463354
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 127397586797
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -39326,12 +38696,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 845005564428
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 115981212051
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -39628,12 +38992,6 @@
         "total_tokens": 857572433452
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 136263350275
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -39926,12 +39284,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 956972194446
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 148850397963
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -40228,12 +39580,6 @@
         "total_tokens": 966558368269
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 151555013165
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -40526,12 +39872,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 1008964303598
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 149201255695
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -40828,12 +40168,6 @@
         "total_tokens": 1074936966774
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 147244172672
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -41126,12 +40460,6 @@
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
         "total_tokens": 1163204635430
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 143959732209
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -41428,12 +40756,6 @@
         "total_tokens": 223351011161
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 145072263385
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -41726,12 +41048,6 @@
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
         "total_tokens": 216410691208
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 146796589510
       },
       {
         "id": "inclusionai/ling-3.1-flash",
@@ -42034,12 +41350,6 @@
         "total_tokens": 214557470141
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 148307236004
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -42328,12 +41638,6 @@
         "total_tokens": 211815128534
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 147172727844
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -42608,12 +41912,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 287588000719
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 141195114863
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -42902,12 +42200,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 229888947396
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 143846818387
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -43204,12 +42496,6 @@
         "total_tokens": 232247669057
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 141739567177
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -43496,12 +42782,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 208652444167
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 138503456827
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -43798,12 +43078,6 @@
         "total_tokens": 152946901051
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 131220234197
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -44090,12 +43364,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 133828356575
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 120380928796
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
@@ -44386,12 +43654,6 @@
         "total_tokens": 138596010085
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 119388961714
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -44680,12 +43942,6 @@
         "total_tokens": 155521173198
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 130142669054
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -44960,12 +44216,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 254713501266
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 127426504309
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -45254,12 +44504,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 238558146484
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 126579326851
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -45556,12 +44800,6 @@
         "total_tokens": 140597591687
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 125636297024
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -45842,12 +45080,6 @@
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
         "total_tokens": 337528816648
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 129910460839
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
@@ -46144,12 +45376,6 @@
         "total_tokens": 356939028155
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 127182882706
-      },
-      {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
@@ -46432,12 +45658,6 @@
         "total_tokens": 149981366686
       },
       {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 123306491866
-      },
-      {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
@@ -46453,19 +45673,19 @@
   },
   {
     "date": "2026-10-30",
-    "total_revenue": 40093193.43,
+    "total_revenue": 40093419.1,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
         "name": "Anthropic: Claude Opus 5.5",
-        "revenue": 11921561.32,
-        "total_tokens": 993463443079
+        "revenue": 11921651.61,
+        "total_tokens": 993470967412
       },
       {
         "id": "openai/gpt-6.1-sol",
         "name": "OpenAI: GPT-6.1 Sol",
-        "revenue": 3208456.96,
-        "total_tokens": 534742827296
+        "revenue": 3208466.66,
+        "total_tokens": 534744443937
       },
       {
         "id": "moonshotai/kimi-k3.1-pro",
@@ -46476,20 +45696,20 @@
       {
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
-        "revenue": 2496665.2,
-        "total_tokens": 1497250496226
+        "revenue": 2496672.72,
+        "total_tokens": 1497255007073
       },
       {
         "id": "openai/gpt-6-astra",
         "name": "OpenAI: GPT-6 Astra",
-        "revenue": 2331045.55,
-        "total_tokens": 77701518392
+        "revenue": 2331052.64,
+        "total_tokens": 77701754606
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 2224766.05,
-        "total_tokens": 8164279080197
+        "revenue": 2224769.75,
+        "total_tokens": 8164292655887
       },
       {
         "id": "anthropic/claude-sonnet-5.5",
@@ -46506,44 +45726,44 @@
       {
         "id": "moonshotai/kimi-k3",
         "name": "MoonshotAI: Kimi K3",
-        "revenue": 1735988.52,
-        "total_tokens": 228539826453
+        "revenue": 1736052.29,
+        "total_tokens": 228548221968
       },
       {
         "id": "google/gemini-4-argon",
         "name": "Google: Gemini 4 Argon",
-        "revenue": 1693022.39,
-        "total_tokens": 282170398744
+        "revenue": 1693024.17,
+        "total_tokens": 282170695683
       },
       {
         "id": "z-ai/glm-5.3",
         "name": "Z.ai: GLM 5.3",
-        "revenue": 996163.54,
-        "total_tokens": 541393227154
+        "revenue": 996177.09,
+        "total_tokens": 541400590383
       },
       {
         "id": "z-ai/glm-5.3-flash",
         "name": "Z.ai: GLM 5.3 Flash",
-        "revenue": 865711.11,
-        "total_tokens": 2663726488452
+        "revenue": 865717.99,
+        "total_tokens": 2663747650665
       },
       {
         "id": "openai/gpt-5.6-luna",
         "name": "OpenAI: GPT-5.6 Luna",
-        "revenue": 805122.45,
-        "total_tokens": 1150174931871
+        "revenue": 805122.87,
+        "total_tokens": 1150175522949
       },
       {
         "id": "google/gemini-3.8-flash",
         "name": "Google: Gemini 3.8 Flash",
-        "revenue": 524298.51,
-        "total_tokens": 211837783484
+        "revenue": 524299.41,
+        "total_tokens": 211838144016
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 497848.71,
-        "total_tokens": 1826967726964
+        "revenue": 497849.27,
+        "total_tokens": 1826969782874
       },
       {
         "id": "openai/gpt-6.1-terra",
@@ -46554,32 +45774,32 @@
       {
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
-        "revenue": 458420.48,
-        "total_tokens": 130865111138
+        "revenue": 458421.16,
+        "total_tokens": 130865304551
       },
       {
         "id": "anthropic/claude-sonnet-5",
         "name": "Anthropic: Claude Sonnet 5",
-        "revenue": 453842.95,
-        "total_tokens": 75640491844
+        "revenue": 453843.74,
+        "total_tokens": 75640622864
       },
       {
         "id": "minimax/minimax-m3.1-flash",
         "name": "MiniMax: MiniMax M3.1 Flash",
-        "revenue": 394794.55,
-        "total_tokens": 1052785460615
+        "revenue": 394794.82,
+        "total_tokens": 1052786177350
       },
       {
         "id": "openai/gpt-6-luna",
         "name": "OpenAI: GPT-6 Luna",
-        "revenue": 357533.93,
-        "total_tokens": 1191779772364
+        "revenue": 357534.12,
+        "total_tokens": 1191780388636
       },
       {
         "id": "anthropic/claude-haiku-5.5",
         "name": "Anthropic: Claude Haiku 5.5",
-        "revenue": 159537.98,
-        "total_tokens": 531793276744
+        "revenue": 159538.22,
+        "total_tokens": 531794072629
       },
       {
         "id": "google/gemini-3.7-flash",
@@ -46596,32 +45816,32 @@
       {
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
-        "revenue": 139929.05,
-        "total_tokens": 424027425419
+        "revenue": 139929.12,
+        "total_tokens": 424027636372
       },
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 134471.61,
-        "total_tokens": 109830928267
+        "revenue": 134472.05,
+        "total_tokens": 109831286462
       },
       {
         "id": "xiaomi/mimo-v2.6-pro",
         "name": "Xiaomi: MiMo-V2.6-Pro",
-        "revenue": 120552.25,
-        "total_tokens": 184754413055
+        "revenue": 120559.36,
+        "total_tokens": 184765300371
       },
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 102150.77,
-        "total_tokens": 83432588037
+        "revenue": 102152.19,
+        "total_tokens": 83433743514
       },
       {
         "id": "xiaomi/mimo-v2.6-flash",
         "name": "Xiaomi: MiMo-V2.6-Flash",
-        "revenue": 80327.13,
-        "total_tokens": 382510163763
+        "revenue": 80327.71,
+        "total_tokens": 382512896539
       },
       {
         "id": "google/gemini-3.1-flash-lite",
@@ -46632,8 +45852,8 @@
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 73638.26,
-        "total_tokens": 539474427527
+        "revenue": 73640.49,
+        "total_tokens": 539490740578
       },
       {
         "id": "meta/muse-spark-1.3-contributor",
@@ -46644,20 +45864,20 @@
       {
         "id": "qwen/qwen3.8-27b",
         "name": "Qwen: Qwen3.8 27B",
-        "revenue": 50449.5,
-        "total_tokens": 78276962590
+        "revenue": 50450.37,
+        "total_tokens": 78278312758
       },
       {
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
-        "revenue": 48293.12,
-        "total_tokens": 71545364850
+        "revenue": 48293.26,
+        "total_tokens": 71545563359
       },
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 48246.09,
-        "total_tokens": 353451207755
+        "revenue": 48246.61,
+        "total_tokens": 353454982306
       },
       {
         "id": "openai/gpt-6-luna-pro",
@@ -46668,20 +45888,20 @@
       {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
-        "revenue": 25682.82,
-        "total_tokens": 82847801989
+        "revenue": 25685.42,
+        "total_tokens": 82856194441
       },
       {
         "id": "upstage/solar-mini4",
         "name": "Upstage: Solar Mini 4",
-        "revenue": 24814.18,
-        "total_tokens": 198513410129
+        "revenue": 24814.29,
+        "total_tokens": 198514283013
       },
       {
         "id": "openai/gpt-oss-120b",
         "name": "OpenAI: gpt-oss-120b",
-        "revenue": 23842.76,
-        "total_tokens": 63580681640
+        "revenue": 23843.47,
+        "total_tokens": 63582598607
       },
       {
         "id": "openai/gpt-6-luna",
@@ -46692,14 +45912,14 @@
       {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
-        "revenue": 23266.14,
-        "total_tokens": 77553808720
+        "revenue": 23266.34,
+        "total_tokens": 77554470458
       },
       {
         "id": "upstage/solar-pro4",
         "name": "Upstage: Solar Pro 4",
-        "revenue": 21676.91,
-        "total_tokens": 57805101263
+        "revenue": 21677.25,
+        "total_tokens": 57806004317
       },
       {
         "id": "qwen/qwen3.7-flash",
@@ -46711,37 +45931,319 @@
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
-        "total_tokens": 411871849283
+        "total_tokens": 411873595103
       },
       {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
-        "total_tokens": 326712012355
+        "total_tokens": 326715358323
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
-        "total_tokens": 154594784316
-      },
-      {
-        "id": "poolside/laguna-s-2.1:free",
-        "name": "Poolside: Laguna S 2.1 (free)",
-        "revenue": 0.0,
-        "total_tokens": 130884561284
+        "total_tokens": 154594909814
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
-        "total_tokens": 103426955889
+        "total_tokens": 103428038877
       },
       {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
-        "total_tokens": 54264044920
+        "total_tokens": 54281831360
+      }
+    ]
+  },
+  {
+    "date": "2026-10-31",
+    "total_revenue": 26618324.52,
+    "models": [
+      {
+        "id": "anthropic/claude-opus-5.5",
+        "name": "Anthropic: Claude Opus 5.5",
+        "revenue": 7451096.41,
+        "total_tokens": 620924700420
+      },
+      {
+        "id": "openai/gpt-6.1-sol",
+        "name": "OpenAI: GPT-6.1 Sol",
+        "revenue": 2229722.49,
+        "total_tokens": 371620415441
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 1933363.46,
+        "total_tokens": 7094911795424
+      },
+      {
+        "id": "tencent/hy4-preview",
+        "name": "Tencent: Hy4 preview",
+        "revenue": 1598895.74,
+        "total_tokens": 958858014406
+      },
+      {
+        "id": "openai/gpt-6-astra",
+        "name": "OpenAI: GPT-6 Astra",
+        "revenue": 1567291.09,
+        "total_tokens": 52243036383
+      },
+      {
+        "id": "stepfun/step-5-preview",
+        "name": "StepFun: Step 5 Preview",
+        "revenue": 1479440.74,
+        "total_tokens": 799697698812
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "revenue": 1441791.2,
+        "total_tokens": 189809267399
+      },
+      {
+        "id": "moonshotai/kimi-k3.1-pro",
+        "name": "MoonshotAI: Kimi K3.1 Pro",
+        "revenue": 1407926.28,
+        "total_tokens": 234654380078
+      },
+      {
+        "id": "anthropic/claude-sonnet-5.5",
+        "name": "Anthropic: Claude Sonnet 5.5",
+        "revenue": 1326999.74,
+        "total_tokens": 221166622559
+      },
+      {
+        "id": "google/gemini-4-argon",
+        "name": "Google: Gemini 4 Argon",
+        "revenue": 781385.65,
+        "total_tokens": 130230940983
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "revenue": 771933.73,
+        "total_tokens": 1102762466683
+      },
+      {
+        "id": "anthropic/claude-sonnet-4.5",
+        "name": "Anthropic: Claude Sonnet 4.5",
+        "revenue": 502270.21,
+        "total_tokens": 55807800688
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 454952.55,
+        "total_tokens": 1669550651841
+      },
+      {
+        "id": "google/gemini-3.8-flash",
+        "name": "Google: Gemini 3.8 Flash",
+        "revenue": 410499.44,
+        "total_tokens": 165858357780
+      },
+      {
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "revenue": 341671.97,
+        "total_tokens": 97536959266
+      },
+      {
+        "id": "z-ai/glm-5.3",
+        "name": "Z.ai: GLM 5.3",
+        "revenue": 296208.34,
+        "total_tokens": 403031955440
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "revenue": 282151.24,
+        "total_tokens": 47025206029
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 249876.28,
+        "total_tokens": 104115115623
+      },
+      {
+        "id": "openai/gpt-6-luna",
+        "name": "OpenAI: GPT-6 Luna",
+        "revenue": 243120.69,
+        "total_tokens": 810402293937
+      },
+      {
+        "id": "openai/gpt-6.1-terra",
+        "name": "OpenAI: GPT-6.1 Terra",
+        "revenue": 218833.66,
+        "total_tokens": 72944553833
+      },
+      {
+        "id": "minimax/minimax-m3.1-flash",
+        "name": "MiniMax: MiniMax M3.1 Flash",
+        "revenue": 167235.46,
+        "total_tokens": 891922444727
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 154456.83,
+        "total_tokens": 64357010964
+      },
+      {
+        "id": "google/gemini-3-flash-preview",
+        "name": "Google: Gemini 3 Flash Preview",
+        "revenue": 138295.8,
+        "total_tokens": 79026174236
+      },
+      {
+        "id": "z-ai/glm-5.3-flash",
+        "name": "Z.ai: GLM 5.3 Flash",
+        "revenue": 133226.79,
+        "total_tokens": 1832555521430
+      },
+      {
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "revenue": 121319.21,
+        "total_tokens": 367633977843
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "revenue": 120142.84,
+        "total_tokens": 53396815784
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-pro",
+        "name": "Xiaomi: MiMo-V2.6-Pro",
+        "revenue": 105845.8,
+        "total_tokens": 162215781040
+      },
+      {
+        "id": "anthropic/claude-haiku-5.5",
+        "name": "Anthropic: Claude Haiku 5.5",
+        "revenue": 102242.59,
+        "total_tokens": 340808633314
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-flash",
+        "name": "Xiaomi: MiMo-V2.6-Flash",
+        "revenue": 93463.16,
+        "total_tokens": 445062675589
+      },
+      {
+        "id": "qwen/qwen3.8-27b",
+        "name": "Qwen: Qwen3.8 27B",
+        "revenue": 74853.68,
+        "total_tokens": 73929562933
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 71965.81,
+        "total_tokens": 527222038403
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "revenue": 59565.06,
+        "total_tokens": 79420085203
+      },
+      {
+        "id": "meta/muse-spark-1.3-contributor",
+        "name": "Meta: Muse Spark 1.3 Contributor",
+        "revenue": 50455.17,
+        "total_tokens": 336367823078
+      },
+      {
+        "id": "stepfun/step-3.7-flash",
+        "name": "StepFun: Step 3.7 Flash",
+        "revenue": 50243.35,
+        "total_tokens": 74434594926
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite",
+        "name": "Google: Gemini 3.1 Flash Lite",
+        "revenue": 46651.02,
+        "total_tokens": 53315447756
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 42764.12,
+        "total_tokens": 313290234731
+      },
+      {
+        "id": "upstage/solar-mini4",
+        "name": "Upstage: Solar Mini 4",
+        "revenue": 22667.84,
+        "total_tokens": 181342748527
+      },
+      {
+        "id": "openai/gpt-6-luna-pro",
+        "name": "OpenAI: GPT-6 Luna Pro",
+        "revenue": 21235.54,
+        "total_tokens": 70785128799
+      },
+      {
+        "id": "google/gemma-4-31b-it",
+        "name": "Google: Gemma 4 31B",
+        "revenue": 20233.7,
+        "total_tokens": 67445666427
+      },
+      {
+        "id": "qwen/qwen3.8-flash",
+        "name": "Qwen: Qwen3.8 Flash",
+        "revenue": 19087.03,
+        "total_tokens": 61571057598
+      },
+      {
+        "id": "google/gemma-4-26b-a4b-it",
+        "name": "Google: Gemma 4 26B A4B ",
+        "revenue": 7052.12,
+        "total_tokens": 48219644801
+      },
+      {
+        "id": "qwen/qwen3.7-flash",
+        "name": "Qwen: Qwen3.7 Flash",
+        "revenue": 5890.69,
+        "total_tokens": 73633642549
+      },
+      {
+        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "name": "NVIDIA: Nemotron 3 Ultra (free)",
+        "revenue": 0.0,
+        "total_tokens": 436900105623
+      },
+      {
+        "id": "nvidia/nemotron-3.5-super-vl:free",
+        "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+        "revenue": 0.0,
+        "total_tokens": 354457132707
+      },
+      {
+        "id": "nvidia/nemotron-3.5-lightning:free",
+        "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+        "revenue": 0.0,
+        "total_tokens": 146914252568
+      },
+      {
+        "id": "dots-studio/dots-3-note-preview:free",
+        "name": "Dots Studio: Dots3-Note Preview (free)",
+        "revenue": 0.0,
+        "total_tokens": 104412494301
+      },
+      {
+        "id": "thinkingmachines/inkling:free",
+        "name": "Thinking Machines: Inkling (free)",
+        "revenue": 0.0,
+        "total_tokens": 46897056306
       }
     ]
   }
