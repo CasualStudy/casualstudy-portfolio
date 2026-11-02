@@ -45961,37 +45961,37 @@
   },
   {
     "date": "2026-10-31",
-    "total_revenue": 26618324.52,
+    "total_revenue": 26618546.01,
     "models": [
       {
         "id": "anthropic/claude-opus-5.5",
         "name": "Anthropic: Claude Opus 5.5",
-        "revenue": 7451096.41,
-        "total_tokens": 620924700420
+        "revenue": 7451125.61,
+        "total_tokens": 620927134149
       },
       {
         "id": "openai/gpt-6.1-sol",
         "name": "OpenAI: GPT-6.1 Sol",
-        "revenue": 2229722.49,
-        "total_tokens": 371620415441
+        "revenue": 2229726.03,
+        "total_tokens": 371621004299
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 1933363.46,
-        "total_tokens": 7094911795424
+        "revenue": 1933365.79,
+        "total_tokens": 7094920339114
       },
       {
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
-        "revenue": 1598895.74,
-        "total_tokens": 958858014406
+        "revenue": 1598896.99,
+        "total_tokens": 958858767218
       },
       {
         "id": "openai/gpt-6-astra",
         "name": "OpenAI: GPT-6 Astra",
-        "revenue": 1567291.09,
-        "total_tokens": 52243036383
+        "revenue": 1567302.48,
+        "total_tokens": 52243415993
       },
       {
         "id": "stepfun/step-5-preview",
@@ -46002,44 +46002,44 @@
       {
         "id": "moonshotai/kimi-k3",
         "name": "MoonshotAI: Kimi K3",
-        "revenue": 1441791.2,
-        "total_tokens": 189809267399
+        "revenue": 1441798.07,
+        "total_tokens": 189810173007
       },
       {
         "id": "moonshotai/kimi-k3.1-pro",
         "name": "MoonshotAI: Kimi K3.1 Pro",
-        "revenue": 1407926.28,
-        "total_tokens": 234654380078
+        "revenue": 1407998.02,
+        "total_tokens": 234666337287
       },
       {
         "id": "anthropic/claude-sonnet-5.5",
         "name": "Anthropic: Claude Sonnet 5.5",
-        "revenue": 1326999.74,
-        "total_tokens": 221166622559
+        "revenue": 1327005.13,
+        "total_tokens": 221167521652
       },
       {
         "id": "google/gemini-4-argon",
         "name": "Google: Gemini 4 Argon",
-        "revenue": 781385.65,
-        "total_tokens": 130230940983
+        "revenue": 781445.77,
+        "total_tokens": 130240961355
       },
       {
         "id": "openai/gpt-5.6-luna",
         "name": "OpenAI: GPT-5.6 Luna",
-        "revenue": 771933.73,
-        "total_tokens": 1102762466683
+        "revenue": 771934.06,
+        "total_tokens": 1102762937048
       },
       {
         "id": "anthropic/claude-sonnet-4.5",
         "name": "Anthropic: Claude Sonnet 4.5",
-        "revenue": 502270.21,
-        "total_tokens": 55807800688
+        "revenue": 502271.25,
+        "total_tokens": 55807916856
       },
       {
         "id": "deepseek/deepseek-v4.1-flash",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
-        "revenue": 454952.55,
-        "total_tokens": 1669550651841
+        "revenue": 454953.84,
+        "total_tokens": 1669555386291
       },
       {
         "id": "google/gemini-3.8-flash",
@@ -46050,14 +46050,14 @@
       {
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
-        "revenue": 341671.97,
-        "total_tokens": 97536959266
+        "revenue": 341673.15,
+        "total_tokens": 97537295688
       },
       {
         "id": "z-ai/glm-5.3",
         "name": "Z.ai: GLM 5.3",
-        "revenue": 296208.34,
-        "total_tokens": 403031955440
+        "revenue": 296211.04,
+        "total_tokens": 403035636386
       },
       {
         "id": "anthropic/claude-sonnet-5",
@@ -46068,14 +46068,14 @@
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 249876.28,
-        "total_tokens": 104115115623
+        "revenue": 249877.4,
+        "total_tokens": 104115583390
       },
       {
         "id": "openai/gpt-6-luna",
         "name": "OpenAI: GPT-6 Luna",
-        "revenue": 243120.69,
-        "total_tokens": 810402293937
+        "revenue": 243125.94,
+        "total_tokens": 810419813210
       },
       {
         "id": "openai/gpt-6.1-terra",
@@ -46086,74 +46086,74 @@
       {
         "id": "minimax/minimax-m3.1-flash",
         "name": "MiniMax: MiniMax M3.1 Flash",
-        "revenue": 167235.46,
-        "total_tokens": 891922444727
+        "revenue": 167235.81,
+        "total_tokens": 891924343000
       },
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "revenue": 154456.83,
-        "total_tokens": 64357010964
+        "revenue": 154456.88,
+        "total_tokens": 64357034414
       },
       {
         "id": "google/gemini-3-flash-preview",
         "name": "Google: Gemini 3 Flash Preview",
-        "revenue": 138295.8,
-        "total_tokens": 79026174236
+        "revenue": 138296.16,
+        "total_tokens": 79026376905
       },
       {
         "id": "z-ai/glm-5.3-flash",
         "name": "Z.ai: GLM 5.3 Flash",
-        "revenue": 133226.79,
-        "total_tokens": 1832555521430
+        "revenue": 133227.57,
+        "total_tokens": 1832566329594
       },
       {
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
-        "revenue": 121319.21,
-        "total_tokens": 367633977843
+        "revenue": 121319.28,
+        "total_tokens": 367634182394
       },
       {
         "id": "google/gemini-3.7-flash",
         "name": "Google: Gemini 3.7 Flash",
         "revenue": 120142.84,
-        "total_tokens": 53396815784
+        "total_tokens": 53396816546
       },
       {
         "id": "xiaomi/mimo-v2.6-pro",
         "name": "Xiaomi: MiMo-V2.6-Pro",
-        "revenue": 105845.8,
-        "total_tokens": 162215781040
+        "revenue": 105852.47,
+        "total_tokens": 162226007859
       },
       {
         "id": "anthropic/claude-haiku-5.5",
         "name": "Anthropic: Claude Haiku 5.5",
-        "revenue": 102242.59,
-        "total_tokens": 340808633314
+        "revenue": 102242.65,
+        "total_tokens": 340808840087
       },
       {
         "id": "xiaomi/mimo-v2.6-flash",
         "name": "Xiaomi: MiMo-V2.6-Flash",
-        "revenue": 93463.16,
-        "total_tokens": 445062675589
+        "revenue": 93464.55,
+        "total_tokens": 445069287174
       },
       {
         "id": "qwen/qwen3.8-27b",
         "name": "Qwen: Qwen3.8 27B",
-        "revenue": 74853.68,
-        "total_tokens": 73929562933
+        "revenue": 74854.24,
+        "total_tokens": 73930117462
       },
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 71965.81,
-        "total_tokens": 527222038403
+        "revenue": 71966.84,
+        "total_tokens": 527229571441
       },
       {
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
-        "revenue": 59565.06,
-        "total_tokens": 79420085203
+        "revenue": 59566.13,
+        "total_tokens": 79421506229
       },
       {
         "id": "meta/muse-spark-1.3-contributor",
@@ -46164,26 +46164,26 @@
       {
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
-        "revenue": 50243.35,
-        "total_tokens": 74434594926
+        "revenue": 50243.6,
+        "total_tokens": 74434968084
       },
       {
         "id": "google/gemini-3.1-flash-lite",
         "name": "Google: Gemini 3.1 Flash Lite",
-        "revenue": 46651.02,
-        "total_tokens": 53315447756
+        "revenue": 46651.51,
+        "total_tokens": 53316014510
       },
       {
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "revenue": 42764.12,
-        "total_tokens": 313290234731
+        "revenue": 42764.53,
+        "total_tokens": 313293238222
       },
       {
         "id": "upstage/solar-mini4",
         "name": "Upstage: Solar Mini 4",
-        "revenue": 22667.84,
-        "total_tokens": 181342748527
+        "revenue": 22667.89,
+        "total_tokens": 181343095716
       },
       {
         "id": "openai/gpt-6-luna-pro",
@@ -46194,56 +46194,350 @@
       {
         "id": "google/gemma-4-31b-it",
         "name": "Google: Gemma 4 31B",
-        "revenue": 20233.7,
-        "total_tokens": 67445666427
+        "revenue": 20235.22,
+        "total_tokens": 67450727526
       },
       {
         "id": "qwen/qwen3.8-flash",
         "name": "Qwen: Qwen3.8 Flash",
-        "revenue": 19087.03,
-        "total_tokens": 61571057598
+        "revenue": 19087.14,
+        "total_tokens": 61571408072
       },
       {
         "id": "google/gemma-4-26b-a4b-it",
         "name": "Google: Gemma 4 26B A4B ",
-        "revenue": 7052.12,
-        "total_tokens": 48219644801
+        "revenue": 7053.64,
+        "total_tokens": 48229989182
       },
       {
         "id": "qwen/qwen3.7-flash",
         "name": "Qwen: Qwen3.7 Flash",
-        "revenue": 5890.69,
-        "total_tokens": 73633642549
+        "revenue": 5890.7,
+        "total_tokens": 73633708705
       },
       {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
         "revenue": 0.0,
-        "total_tokens": 436900105623
+        "total_tokens": 436902265597
       },
       {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
         "revenue": 0.0,
-        "total_tokens": 354457132707
+        "total_tokens": 354458832948
       },
       {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
         "revenue": 0.0,
-        "total_tokens": 146914252568
+        "total_tokens": 146914846177
       },
       {
         "id": "dots-studio/dots-3-note-preview:free",
         "name": "Dots Studio: Dots3-Note Preview (free)",
         "revenue": 0.0,
-        "total_tokens": 104412494301
+        "total_tokens": 104414177519
       },
       {
         "id": "thinkingmachines/inkling:free",
         "name": "Thinking Machines: Inkling (free)",
         "revenue": 0.0,
-        "total_tokens": 46897056306
+        "total_tokens": 46902314437
+      }
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "total_revenue": 26641999.08,
+    "models": [
+      {
+        "id": "anthropic/claude-opus-5.5",
+        "name": "Anthropic: Claude Opus 5.5",
+        "revenue": 7848689.73,
+        "total_tokens": 654057477431
+      },
+      {
+        "id": "moonshotai/kimi-k3.1-pro",
+        "name": "MoonshotAI: Kimi K3.1 Pro",
+        "revenue": 3429296.7,
+        "total_tokens": 571549449813
+      },
+      {
+        "id": "openai/gpt-6.1-sol",
+        "name": "OpenAI: GPT-6.1 Sol",
+        "revenue": 2550412.65,
+        "total_tokens": 425068774703
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 1636286.4,
+        "total_tokens": 6004720732867
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "revenue": 1531086.41,
+        "total_tokens": 201564824975
+      },
+      {
+        "id": "stepfun/step-5-preview",
+        "name": "StepFun: Step 5 Preview",
+        "revenue": 1383478.64,
+        "total_tokens": 747826294244
+      },
+      {
+        "id": "anthropic/claude-sonnet-5.5",
+        "name": "Anthropic: Claude Sonnet 5.5",
+        "revenue": 1344184.94,
+        "total_tokens": 224030822680
+      },
+      {
+        "id": "tencent/hy4-preview",
+        "name": "Tencent: Hy4 preview",
+        "revenue": 1224941.88,
+        "total_tokens": 734597826196
+      },
+      {
+        "id": "google/gemini-4-argon",
+        "name": "Google: Gemini 4 Argon",
+        "revenue": 856504.79,
+        "total_tokens": 142750798186
+      },
+      {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "name": "DeepSeek: DeepSeek V4.1 Flash",
+        "revenue": 583101.03,
+        "total_tokens": 2139820295374
+      },
+      {
+        "id": "google/gemini-3.8-flash",
+        "name": "Google: Gemini 3.8 Flash",
+        "revenue": 418194.39,
+        "total_tokens": 168967431257
+      },
+      {
+        "id": "anthropic/claude-sonnet-4.5",
+        "name": "Anthropic: Claude Sonnet 4.5",
+        "revenue": 409496.53,
+        "total_tokens": 45499614797
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "revenue": 399594.67,
+        "total_tokens": 570849529984
+      },
+      {
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "revenue": 333267.29,
+        "total_tokens": 97933379602
+      },
+      {
+        "id": "z-ai/glm-5.3",
+        "name": "Z.ai: GLM 5.3",
+        "revenue": 278676.06,
+        "total_tokens": 379176893008
+      },
+      {
+        "id": "openai/gpt-6.1-terra",
+        "name": "OpenAI: GPT-6.1 Terra",
+        "revenue": 276005.77,
+        "total_tokens": 92001924394
+      },
+      {
+        "id": "openai/gpt-6-luna",
+        "name": "OpenAI: GPT-6 Luna",
+        "revenue": 240857.37,
+        "total_tokens": 802857896737
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 193772.28,
+        "total_tokens": 80738448795
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "revenue": 177804.37,
+        "total_tokens": 74085153575
+      },
+      {
+        "id": "minimax/minimax-m3.1-flash",
+        "name": "MiniMax: MiniMax M3.1 Flash",
+        "revenue": 168806.81,
+        "total_tokens": 900302968715
+      },
+      {
+        "id": "google/gemini-3-flash-preview",
+        "name": "Google: Gemini 3 Flash Preview",
+        "revenue": 154149.85,
+        "total_tokens": 88085626365
+      },
+      {
+        "id": "qwen/qwen3.8-27b",
+        "name": "Qwen: Qwen3.8 27B",
+        "revenue": 127720.14,
+        "total_tokens": 126143344240
+      },
+      {
+        "id": "z-ai/glm-5.3-flash",
+        "name": "Z.ai: GLM 5.3 Flash",
+        "revenue": 119321.15,
+        "total_tokens": 1410415434365
+      },
+      {
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "revenue": 119219.28,
+        "total_tokens": 361270553630
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "revenue": 109949.63,
+        "total_tokens": 48866500002
+      },
+      {
+        "id": "anthropic/claude-haiku-5.5",
+        "name": "Anthropic: Claude Haiku 5.5",
+        "revenue": 89612.61,
+        "total_tokens": 298708712327
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-pro",
+        "name": "Xiaomi: MiMo-V2.6-Pro",
+        "revenue": 85056.65,
+        "total_tokens": 130355018924
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 67571.93,
+        "total_tokens": 495032486092
+      },
+      {
+        "id": "xiaomi/mimo-v2.6-flash",
+        "name": "Xiaomi: MiMo-V2.6-Flash",
+        "revenue": 67077.03,
+        "total_tokens": 319414415299
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "revenue": 60486.64,
+        "total_tokens": 80648851463
+      },
+      {
+        "id": "stepfun/step-3.7-flash",
+        "name": "StepFun: Step 3.7 Flash",
+        "revenue": 53706.21,
+        "total_tokens": 79564749444
+      },
+      {
+        "id": "meta/muse-spark-1.3-contributor",
+        "name": "Meta: Muse Spark 1.3 Contributor",
+        "revenue": 52704.72,
+        "total_tokens": 351364781950
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite",
+        "name": "Google: Gemini 3.1 Flash Lite",
+        "revenue": 44498.53,
+        "total_tokens": 50855465913
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "revenue": 44134.94,
+        "total_tokens": 323332914369
+      },
+      {
+        "id": "qwen/qwen3.6-35b-a3b",
+        "name": "Qwen: Qwen3.6 35B A3B",
+        "revenue": 42367.54,
+        "total_tokens": 84735075226
+      },
+      {
+        "id": "upstage/solar-mini4",
+        "name": "Upstage: Solar Mini 4",
+        "revenue": 25747.97,
+        "total_tokens": 205983784862
+      },
+      {
+        "id": "openai/gpt-6-luna-pro",
+        "name": "OpenAI: GPT-6 Luna Pro",
+        "revenue": 20765.43,
+        "total_tokens": 69218100719
+      },
+      {
+        "id": "google/gemma-4-31b-it",
+        "name": "Google: Gemma 4 31B",
+        "revenue": 20511.74,
+        "total_tokens": 68372460762
+      },
+      {
+        "id": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "revenue": 20466.09,
+        "total_tokens": 54576235474
+      },
+      {
+        "id": "qwen/qwen3.8-flash",
+        "name": "Qwen: Qwen3.8 Flash",
+        "revenue": 19717.76,
+        "total_tokens": 63605685572
+      },
+      {
+        "id": "google/gemma-4-26b-a4b-it",
+        "name": "Google: Gemma 4 26B A4B ",
+        "revenue": 7035.46,
+        "total_tokens": 48105679091
+      },
+      {
+        "id": "qwen/qwen3.7-flash",
+        "name": "Qwen: Qwen3.7 Flash",
+        "revenue": 4275.24,
+        "total_tokens": 53440547600
+      },
+      {
+        "id": "mistralai/mistral-nemo",
+        "name": "Mistral: Mistral Nemo",
+        "revenue": 1443.83,
+        "total_tokens": 48943375636
+      },
+      {
+        "id": "nvidia/nemotron-3.5-super-vl:free",
+        "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+        "revenue": 0.0,
+        "total_tokens": 405221804175
+      },
+      {
+        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "name": "NVIDIA: Nemotron 3 Ultra (free)",
+        "revenue": 0.0,
+        "total_tokens": 390184168831
+      },
+      {
+        "id": "nvidia/nemotron-3.5-lightning:free",
+        "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+        "revenue": 0.0,
+        "total_tokens": 145614749623
+      },
+      {
+        "id": "dots-studio/dots-3-note-preview:free",
+        "name": "Dots Studio: Dots3-Note Preview (free)",
+        "revenue": 0.0,
+        "total_tokens": 105881278722
+      },
+      {
+        "id": "thinkingmachines/inkling:free",
+        "name": "Thinking Machines: Inkling (free)",
+        "revenue": 0.0,
+        "total_tokens": 52769430555
       }
     ]
   }
