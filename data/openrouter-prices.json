@@ -620,7 +620,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-24": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -1243,7 +1246,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-25": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -1866,7 +1872,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-26": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -2489,7 +2498,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-27": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -3112,7 +3124,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-28": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -3735,7 +3750,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-29": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -4358,7 +4376,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-30": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -4981,7 +5002,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-05-31": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -5604,7 +5628,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-01": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -6227,7 +6254,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-02": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -6850,7 +6880,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-03": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -7473,7 +7506,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-04": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -8096,7 +8132,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-05": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -8719,7 +8758,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-06": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -9342,7 +9384,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-07": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -9965,7 +10010,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-08": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -10588,7 +10636,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-09": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -11211,7 +11262,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-10": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -11834,7 +11888,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-11": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -12457,7 +12514,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-12": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -13080,7 +13140,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-13": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -13703,7 +13766,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-14": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -14326,7 +14392,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-15": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -14949,7 +15018,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-16": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -15572,7 +15644,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-17": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -16195,7 +16270,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-18": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -16818,7 +16896,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-19": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -17441,7 +17522,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-20": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -18064,7 +18148,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-21": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -18687,7 +18774,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-22": {
     "google/gemini-3.1-flash-image": 1.75e-06,
@@ -19310,7 +19400,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-24": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -19931,7 +20024,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-25": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -20552,7 +20648,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-26": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -21173,7 +21272,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-27": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -21794,7 +21896,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-28": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -22415,7 +22520,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-29": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -23036,7 +23144,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-06-30": {
     "sakana/fugu-ultra": 1.7500000000000002e-05,
@@ -23656,7 +23767,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-01": {
     "anthropic/claude-sonnet-5": 6e-06,
@@ -24274,7 +24388,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-02": {
     "anthropic/claude-sonnet-5": 6e-06,
@@ -24892,7 +25009,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-03": {
     "poolside/laguna-xs-2.1:free": 0.0,
@@ -25510,7 +25630,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-04": {
     "poolside/laguna-xs-2.1:free": 0.0,
@@ -26128,7 +26251,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-05": {
     "poolside/laguna-xs-2.1:free": 0.0,
@@ -26746,7 +26872,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-06": {
     "poolside/laguna-xs-2.1:free": 0.0,
@@ -27364,7 +27493,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-07": {
     "tencent/hy3:free": 0.0,
@@ -27982,7 +28114,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-08": {
     "aion-labs/aion-3.0-mini": 1.05e-06,
@@ -28598,7 +28733,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-09": {
     "x-ai/grok-4.5": 4e-06,
@@ -29214,7 +29352,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-10": {
     "openai/gpt-5.6-luna-pro": 3.5e-06,
@@ -29825,7 +29966,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-11": {
     "openai/gpt-5.6-luna-pro": 3.5e-06,
@@ -30435,7 +30579,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-12": {
     "openai/gpt-5.6-luna-pro": 3.5e-06,
@@ -31044,7 +31191,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-13": {
     "openai/gpt-5.6-luna-pro": 3.5e-06,
@@ -31653,7 +31803,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-14": {
     "openai/gpt-5.6-luna-pro": 3.5e-06,
@@ -32259,7 +32412,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-15": {
     "kwaipilot/kat-coder-air-v2.5": 3.75e-07,
@@ -32864,7 +33020,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-16": {
     "kwaipilot/kat-coder-air-v2.5": 3.75e-07,
@@ -33468,7 +33627,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-17": {
     "moonshotai/kimi-k3": 9e-06,
@@ -34072,7 +34234,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-18": {
     "thinkingmachines/inkling": 2.525e-06,
@@ -34674,7 +34839,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-19": {
     "thinkingmachines/inkling": 2.525e-06,
@@ -35276,7 +35444,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-21": {
     "meituan/longcat-2.0": 7.5e-07,
@@ -35872,7 +36043,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-20": {
     "meituan/longcat-2.0": 7.5e-07,
@@ -36468,7 +36642,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-22": {
     "poolside/laguna-s-2.1": 1.5e-07,
@@ -37063,7 +37240,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-23": {
     "poolside/laguna-s-2.1": 1.5e-07,
@@ -37658,7 +37838,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-24": {
     "inclusionai/ling-3.0-flash:free": 0.0,
@@ -38253,7 +38436,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-25": {
     "anthropic/claude-opus-5-fast": 3e-05,
@@ -38848,7 +39034,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-26": {
     "anthropic/claude-opus-5-fast": 3e-05,
@@ -39443,7 +39632,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-27": {
     "anthropic/claude-opus-5-fast": 3e-05,
@@ -40036,7 +40228,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-28": {
     "anthropic/claude-opus-5-fast": 3e-05,
@@ -40626,7 +40821,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-29": {
     "qwen/qwen3.7-flash": 8e-08,
@@ -41214,7 +41412,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-30": {
     "qwen/qwen3.7-flash": 8e-08,
@@ -41802,7 +42003,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-07-31": {
     "qwen/qwen3.7-flash": 8e-08,
@@ -42387,7 +42591,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-01": {
     "deepseek/deepseek-v4-flash-0731": 2.1e-07,
@@ -42971,7 +43178,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-02": {
     "~deepseek/deepseek-v4-flash-latest": 1.35e-07,
@@ -43555,7 +43765,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-03": {
     "~deepseek/deepseek-v4-flash-latest": 1.35e-07,
@@ -44139,7 +44352,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-04": {
     "qwen/qwen3.8-max": 4e-06,
@@ -44723,7 +44939,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-05": {
     "qwen/qwen3.8-max": 4e-06,
@@ -45307,7 +45526,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-06": {
     "meta/muse-spark-1.2": 2.75e-06,
@@ -45891,7 +46113,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-07": {
     "inclusionai/ling-3.0-tiny:free": 0.0,
@@ -46474,7 +46699,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-08": {
     "inclusionai/ling-3.0-tiny:free": 0.0,
@@ -47057,7 +47285,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-09": {
     "inclusionai/ling-3.0-tiny:free": 0.0,
@@ -47640,7 +47871,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-10": {
     "inclusionai/ling-3.0-tiny:free": 0.0,
@@ -48223,7 +48457,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-11": {
     "meta/muse-glimmer-30b": 9.25e-07,
@@ -48805,7 +49042,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-12": {
     "liquid/lfm-2.5-2.6b:free": 0.0,
@@ -49387,7 +49627,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-13": {
     "bytedance-seed/seed-2-1-turbo": 1.5e-06,
@@ -49969,7 +50212,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-14": {
     "google/gemini-3.7-flash": 1.125e-06,
@@ -50550,7 +50796,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-15": {
     "google/gemini-3.7-flash": 1.125e-06,
@@ -51131,7 +51380,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-16": {
     "qwen/qwen3.8-27b": 1.8249999999999999e-06,
@@ -51712,7 +51964,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-17": {
     "qwen/qwen3.8-27b": 1.8249999999999999e-06,
@@ -52293,7 +52548,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-18": {
     "qwen/qwen3.8-27b": 1.8249999999999999e-06,
@@ -52874,7 +53132,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-19": {
     "z-ai/glm-5.3": 2.9e-06,
@@ -53455,7 +53716,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-20": {
     "~z-ai/glm-latest": 2.9e-06,
@@ -54035,7 +54299,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-21": {
     "stealth/ox-alpha": 0.0,
@@ -54615,7 +54882,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-22": {
     "meta/muse-spark-1.2-contributor": 1.5e-07,
@@ -55193,7 +55463,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-23": {
     "meta/muse-spark-1.2-contributor": 1.5e-07,
@@ -55771,7 +56044,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-24": {
     "meta/muse-spark-1.2-contributor": 1.5e-07,
@@ -56349,7 +56625,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-25": {
     "meta/muse-spark-1.2-contributor": 1.5e-07,
@@ -56921,7 +57200,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-26": {
     "meta/muse-spark-1.2-contributor": 1.5e-07,
@@ -57491,7 +57773,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-27": {
     "qwen/qwen3.8-flash": 3.15e-07,
@@ -58060,7 +58345,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-28": {
     "inclusionai/ling-3.0-flash-fin:free": 0.0,
@@ -58626,7 +58914,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-29": {
     "tencent/hy4-preview": 1.6675e-06,
@@ -59184,7 +59475,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-30": {
     "tencent/hy4-preview": 1.6675e-06,
@@ -59742,7 +60036,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-08-31": {
     "tencent/hy4-preview": 1.6675e-06,
@@ -60300,7 +60597,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-01": {
     "ibm-granite/granite-4.2-8b": 1.25e-07,
@@ -60857,7 +61157,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-02": {
     "anthropic/claude-fable-5.1": 3e-05,
@@ -61411,7 +61714,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-03": {
     "meta/muse-spark-1.3-contributor": 1.5e-07,
@@ -61965,7 +62271,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-04": {
     "meta/muse-spark-1.3-contributor": 1.5e-07,
@@ -62518,7 +62827,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-05": {
     "openai/gpt-6-astra": 3e-05,
@@ -63070,7 +63382,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-06": {
     "openai/gpt-6-astra": 3e-05,
@@ -63621,7 +63936,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-07": {
     "openai/gpt-6-astra": 3e-05,
@@ -64172,7 +64490,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-08": {
     "openai/gpt-6-astra": 3e-05,
@@ -64721,7 +65042,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-09": {
     "inception/mercury-2.5": 9.499999999999999e-08,
@@ -65267,7 +65591,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-10": {
     "inception/mercury-2.5": 9.499999999999999e-08,
@@ -65812,7 +66139,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-11": {
     "inclusionai/ling-3.0-flash-vl:free": 0.0,
@@ -66357,7 +66687,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-12": {
     "~openai/gpt-astra-latest": 3e-05,
@@ -66901,7 +67234,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-13": {
     "inference-net/schematron-v2-turbo": 9e-08,
@@ -67445,7 +67781,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-14": {
     "inference-net/schematron-v2-turbo": 9e-08,
@@ -67989,7 +68328,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-15": {
     "~deepseek/deepseek-pro-latest": 1.32e-06,
@@ -68531,7 +68873,10 @@
     "openrouter/auto-code": -1.0,
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-16": {
     "~deepseek/deepseek-pro-latest": 1.32e-06,
@@ -69072,7 +69417,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-17": {
     "stealth/union-alpha": 0.0,
@@ -69613,7 +69961,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-18": {
     "unbiased/pareto": 5e-06,
@@ -70153,7 +70504,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-19": {
     "prism-ml/ternary-bonsai-2-27b": 2.875e-07,
@@ -70693,7 +71047,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-20": {
     "prism-ml/ternary-bonsai-2-27b": 2.875e-07,
@@ -71233,7 +71590,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-21": {
     "prism-ml/ternary-bonsai-2-27b": 2.875e-07,
@@ -71772,7 +72132,10 @@
     "qwen/qwen3.8-27b:batch": 1.08e-06,
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-22": {
     "xiaomi/mimo-v2.6-pro-ultraspeed": 6.524999999999999e-06,
@@ -72307,7 +72670,10 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-23": {
     "cohere/command-a-plus": 9.000000000000001e-07,
@@ -72838,7 +73204,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-24": {
     "z-ai/glm-5.3-prime": 5.8e-06,
@@ -73368,7 +73738,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-25": {
     "fireworks/ember-1": 9e-06,
@@ -73898,7 +74272,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-26": {
     "typesafe/jev-router": -1.0,
@@ -74425,7 +74803,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-27": {
     "typesafe/jev-router": -1.0,
@@ -74951,7 +75333,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-28": {
     "typesafe/jev-router": -1.0,
@@ -75477,7 +75863,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-29": {
     "anthropic/claude-sonnet-5.5": 6e-06,
@@ -76001,7 +76391,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-09-30": {
     "openai/gpt-6.1-sol-pro": 6e-06,
@@ -76525,7 +76919,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-01": {
     "openai/gpt-6.1-sol-pro": 6e-06,
@@ -77049,7 +77447,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-02": {
     "apodex/apodex-1.1-mini:free": 0.0,
@@ -77573,7 +77975,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-03": {
     "inclusionai/ling-3.1-flash": 0.0,
@@ -78097,7 +78503,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-04": {
     "inclusionai/ling-3.1-flash": 0.0,
@@ -78621,7 +79031,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-05": {
     "inclusionai/ling-3.1-flash": 0.0,
@@ -79145,7 +79559,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-06": {
     "inclusionai/ling-3.1-flash": 0.0,
@@ -79667,7 +80085,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-07": {
     "google/gemini-nano-banana-2.1": 4.5e-06,
@@ -80189,7 +80611,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-08": {
     "anthropic/claude-haiku-5.5": 3e-07,
@@ -80710,7 +81136,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-09": {
     "stepfun/step-5-preview": 1.85e-06,
@@ -81229,7 +81659,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-10": {
     "stepfun/step-5-preview": 1.85e-06,
@@ -81737,7 +82171,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-11": {
     "stepfun/step-5-preview": 1.85e-06,
@@ -82245,7 +82683,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-12": {
     "stepfun/step-5-preview": 1.85e-06,
@@ -82753,7 +83195,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-13": {
     "meta/muse-wonder": 1.2e-05,
@@ -83261,7 +83707,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-14": {
     "~unbiased/pareto-latest": 5e-06,
@@ -83766,7 +84216,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-15": {
     "~unbiased/pareto-latest": 5e-06,
@@ -84270,7 +84724,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-16": {
     "moondream/moondream3-preview": 1.4000000000000001e-06,
@@ -84772,7 +85230,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-17": {
     "xingchen-agi/xing4.0-29b-a4b:free": 0.0,
@@ -85274,7 +85736,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-18": {
     "deepseek/deepseek-v4.1-flash-1017": 3.75e-07,
@@ -85776,7 +86242,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-19": {
     "deepseek/deepseek-v4.1-flash-1017": 3.75e-07,
@@ -86278,7 +86748,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-20": {
     "minimax/minimax-m3.1-flash:free": 0.0,
@@ -86777,7 +87251,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-21": {
     "minimax/minimax-m3.1-flash:free": 0.0,
@@ -87274,7 +87752,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-22": {
     "recursive/flint-v1.0:free": 0.0,
@@ -87770,7 +88252,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-23": {
     "recursive/flint-v1.0:free": 0.0,
@@ -88265,7 +88751,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-24": {
     "moonshotai/kimi-k3.1-pro": 6e-06,
@@ -88760,7 +89250,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-25": {
     "moonshotai/kimi-k3.1-pro": 6e-06,
@@ -89252,7 +89746,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-26": {
     "moonshotai/kimi-k3.1-pro": 6e-06,
@@ -89744,7 +90242,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-27": {
     "openai/gpt-6.1-terra": 3e-06,
@@ -90229,7 +90731,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-28": {
     "openai/gpt-6.1-terra-pro": 3e-06,
@@ -90713,7 +91219,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-29": {
     "particle-ai/particle-1": 6.249999999999999e-07,
@@ -91189,7 +91699,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-30": {
     "particle-ai/particle-1": 6.249999999999999e-07,
@@ -91664,7 +92178,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-10-31": {
     "particle-ai/particle-1": 2.75e-07,
@@ -92139,7 +92657,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-01": {
     "particle-ai/particle-1": 2.75e-07,
@@ -92610,7 +93132,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-02": {
     "particle-ai/particle-1": 2.75e-07,
@@ -93081,7 +93607,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-03": {
     "z-ai/glm-5.3-flashx-legal": 8.100000000000001e-07,
@@ -93550,7 +94080,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-04": {
     "stealth/crouton-alpha": 0.0,
@@ -94019,7 +94553,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-05": {
     "ricursiveai/ripple-65b-preview": 4e-07,
@@ -94486,7 +95024,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-06": {
     "google/gemini-omni-1.2-flash": 5.2500000000000006e-06,
@@ -94949,7 +95491,11 @@
     "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
     "minimax/minimax-m3:batch": 5.52e-07,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-07": {
     "google/gemini-omni-1.2-flash": 5.2500000000000006e-06,
@@ -95411,7 +95957,11 @@
     "openrouter/free": 0.0,
     "openrouter/bodybuilder": -1.0,
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
-    "liquid/lfm-3-1.7b:free": 0.0
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
   },
   "2026-11-08": {
     "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
@@ -95848,6 +96398,473 @@
     "openai/gpt-4o-2024-08-06": 6.25e-06,
     "meta-llama/llama-3.1-70b-instruct": 7.2e-07,
     "meta-llama/llama-3.1-8b-instruct": 6.5e-08,
+    "mistralai/mistral-nemo": 2.95e-08,
+    "openai/gpt-4o-mini": 3.75e-07,
+    "openai/gpt-4o-mini-2024-07-18": 3.75e-07,
+    "openai/gpt-4o-mini:batch": 1.875e-07,
+    "google/gemma-2-27b-it": 6.5e-07,
+    "openai/gpt-4o": 6.25e-06,
+    "openai/gpt-4o-2024-05-13": 1e-05,
+    "openai/gpt-4o:batch": 3.125e-06,
+    "mistralai/mixtral-8x22b-instruct": 4e-06,
+    "openai/gpt-4-turbo:batch": 1e-05,
+    "mistralai/mistral-large": 4e-06,
+    "openai/gpt-3.5-turbo-0613": 1.5e-06,
+    "openai/gpt-3.5-turbo-16k": 3.5e-06,
+    "mancer/weaver": 5.75e-07,
+    "undi95/remm-slerp-l2-13b": 5e-07,
+    "gryphe/mythomax-l2-13b": 9.5e-08,
+    "openai/gpt-4": 4.5e-05,
+    "openrouter/auto": -1.0,
+    "openrouter/auto-code": -1.0,
+    "typesafe/jev-router": -1.0,
+    "nvidia/switchyard": -1.0,
+    "openrouter/auto-beta": -1.0,
+    "openrouter/fusion": -1.0,
+    "openrouter/pareto-code": -1.0,
+    "openrouter/free": 0.0,
+    "openrouter/bodybuilder": -1.0,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast:batch": 5e-07
+  },
+  "2026-11-09": {
+    "liquid/lfm-3-1.7b": 1.3999999999999998e-07,
+    "liquid/lfm-3-1.7b:free": 0.0,
+    "google/gemini-omni-1.2-flash": 5.2500000000000006e-06,
+    "google/gemini-omni-1.1-flash": 5.2500000000000006e-06,
+    "ricursiveai/ripple-65b-preview": 4e-07,
+    "tencent/hy4": 8.3375e-07,
+    "stealth/crouton-alpha": 0.0,
+    "z-ai/glm-5.3-flashx-legal": 8.100000000000001e-07,
+    "particle-ai/particle-1": 2.75e-07,
+    "openai/gpt-6.1-terra-pro": 3e-06,
+    "openai/gpt-6.1-terra-pro:batch": 1.5e-06,
+    "openai/gpt-6.1-terra": 3e-06,
+    "openai/gpt-6.1-terra:batch": 1.5e-06,
+    "moonshotai/kimi-k3.1-pro": 6e-06,
+    "recursive/flint-v1.0:free": 0.0,
+    "minimax/minimax-m3.1-flash": 1.875e-07,
+    "deepseek/deepseek-v4.1-flash-1017": 2.53e-07,
+    "deepseek/deepseek-v4.1-flash-1017:batch": 1.055e-07,
+    "elorian/glimpse": 1.8000000000000001e-06,
+    "xingchen-agi/xing4.0-29b-a4b:free": 0.0,
+    "reflection/beam-1.0-501b-a23b": 6.499999999999999e-07,
+    "prism-ml/ternary-bonsai-2-9b": 1.05e-07,
+    "moondream/moondream3-preview": 1.4000000000000001e-06,
+    "moondream/moondream3.1-9b-a2b": 1.4000000000000001e-06,
+    "meta/muse-spark-open": 2.75e-06,
+    "nvidia/nemotron-3.5-super-vl": 3.2499999999999996e-07,
+    "nvidia/nemotron-3.5-super-vl:free": 0.0,
+    "unbiased/pareto-26.10": 2e-06,
+    "~unbiased/pareto-latest": 2e-06,
+    "unbiased/pareto-26.9": 5e-06,
+    "liquid/lfm-2.5-24b-a2b": 3.75e-07,
+    "google/gemini-4-argon": 6e-06,
+    "google/gemini-4-argon:batch": 3e-06,
+    "scaledown/summarize": 2e-08,
+    "scaledown/extract": 2e-08,
+    "meta/muse-wonder": 1.2e-05,
+    "stepfun/step-5-preview": 1.85e-06,
+    "anthropic/claude-haiku-5.5": 3e-07,
+    "anthropic/claude-haiku-5.5:batch": 1.5e-07,
+    "google/gemini-nano-banana-2.1": 4.5e-06,
+    "mistralai/mistral-large-4-0": 1.4e-06,
+    "inclusionai/ling-3.1-flash": 9e-08,
+    "openai/gpt-6.1-sol-pro": 6e-06,
+    "openai/gpt-6.1-sol-pro:batch": 3e-06,
+    "openai/gpt-6.1-sol": 6e-06,
+    "openai/gpt-6.1-sol:batch": 3e-06,
+    "anthropic/claude-sonnet-5.5": 6e-06,
+    "anthropic/claude-sonnet-5.5:batch": 3e-06,
+    "perceptron/perceptron-mk1.5": 8.25e-07,
+    "fireworks/ember-1": 9e-06,
+    "z-ai/glm-5.3-prime": 5.8e-06,
+    "qwen/qwen3.8-max-prime": 8e-06,
+    "aion-labs/aion-3.5-mini": 1.05e-06,
+    "aion-labs/aion-3.5": 4.5e-06,
+    "upstage/solar-mini4": 1.25e-07,
+    "cohere/command-a-plus": 9.000000000000001e-07,
+    "openai/gpt-6-luna-pro": 3e-07,
+    "openai/gpt-6-luna-pro:batch": 1.5e-07,
+    "openai/gpt-6-luna": 3e-07,
+    "openai/gpt-6-luna:batch": 1.5e-07,
+    "openai/gpt-6-sol-pro": 6e-06,
+    "openai/gpt-6-sol-pro:batch": 3e-06,
+    "openai/gpt-6-sol": 6e-06,
+    "openai/gpt-6-sol:batch": 3e-06,
+    "anthropic/claude-opus-5.5": 1.2e-05,
+    "anthropic/claude-opus-5.5:batch": 6e-06,
+    "xiaomi/mimo-v2.6-pro-ultraspeed": 6.524999999999999e-06,
+    "xiaomi/mimo-v2.6-flash": 2.1e-07,
+    "xiaomi/mimo-v2.6-pro": 6.525e-07,
+    "x-ai/grok-4.7": 4e-06,
+    "x-ai/grok-4.7:batch": 3.2e-06,
+    "qwen/qwen3.8-omni-flash": 3.1e-07,
+    "prism-ml/ternary-bonsai-2-27b": 2.875e-07,
+    "z-ai/glm-5.3-flashx": 8.100000000000001e-07,
+    "~deepseek/deepseek-pro-latest": 4.04995e-06,
+    "~deepseek/deepseek-flash-latest": 2.53e-07,
+    "inference-net/schematron-v2-turbo": 9e-08,
+    "inference-net/schematron-v2-small": 1.3999999999999998e-07,
+    "~openai/gpt-astra-latest": 3e-05,
+    "~openai/gpt-sol-latest": 6e-06,
+    "~openai/gpt-terra-latest": 3e-06,
+    "~openai/gpt-luna-latest": 3e-07,
+    "sakana/fugu-ultra-v2": 1.7500000000000002e-05,
+    "sakana/fugu-max": 4e-06,
+    "inclusionai/ling-3.0-flash-vl": 1.2e-07,
+    "deepseek/deepseek-v4.1-flash": 3.0900000000000003e-07,
+    "deepseek/deepseek-v4.1-flash:batch": 1.055e-07,
+    "nex-agi/nex-n2.5-mini": 6.25e-08,
+    "nex-agi/nex-n2.5-pro": 1.6249999999999998e-07,
+    "openai/gpt-6-astra": 3e-05,
+    "openai/gpt-6-astra:batch": 1.5e-05,
+    "openai/gpt-6-astra-pro": 3e-05,
+    "openai/gpt-6-astra-pro:batch": 1.5e-05,
+    "qwen/qwen3.8-max-0902": 4e-06,
+    "meta/muse-spark-1.3-contributor": 1.5e-07,
+    "meta/muse-spark-1.3": 2.75e-06,
+    "google/gemini-3.8-flash": 2.475e-06,
+    "google/gemini-3.8-flash:batch": 1.125e-06,
+    "anthropic/claude-fable-5.1": 3e-05,
+    "anthropic/claude-fable-5.1:batch": 1.5e-05,
+    "ibm-granite/granite-4.2-8b": 1.55e-07,
+    "tencent/hy4-preview": 1.6675e-06,
+    "~z-ai/glm-flash-latest": 5.825e-08,
+    "qwen/qwen3.8-flash": 3.1e-07,
+    "z-ai/glm-5.3-flash": 5.825e-08,
+    "z-ai/glm-5.3-flash:batch": 1.15e-07,
+    "meta/muse-spark-1.2-contributor": 1.5e-07,
+    "deepseek/deepseek-v4-flash-vision-exp": 8.8e-07,
+    "tencent/hy-mt2-1.8b": 1.105e-07,
+    "tencent/hy-mt2-30b-a3b": 1.845e-07,
+    "~z-ai/glm-latest": 7.3495e-07,
+    "tencent/hy-mt2-7b": 1.845e-07,
+    "z-ai/glm-5.3": 7.3495e-07,
+    "z-ai/glm-5.3:batch": 8.51e-07,
+    "qwen/qwen3.8-27b": 1.0125e-06,
+    "qwen/qwen3.8-27b:batch": 1.08e-06,
+    "dots-studio/dots-3-note-preview:free": 0.0,
+    "google/gemini-3.7-flash": 2.25e-06,
+    "google/gemini-3.7-flash:batch": 1.125e-06,
+    "bytedance-seed/seed-2-1-turbo": 1.5e-06,
+    "qwen/qwen3.8-2.4t-a95b": 4e-06,
+    "bytedance-seed/seed-2.0-code": 1.75e-06,
+    "deepseek/deepseek-v4-pro-0813": 2.2755e-06,
+    "x-ai/grok-4.6": 4e-06,
+    "x-ai/grok-4.6:batch": 3.2e-06,
+    "liquid/lfm-2.5-2.6b": 4.2499999999999995e-07,
+    "liquid/lfm-2.5-2.6b:free": 0.0,
+    "nvidia/nemotron-3.5-lightning": 1.35e-07,
+    "nvidia/nemotron-3.5-lightning:free": 0.0,
+    "sakana/sakana-namazu": 2.475e-06,
+    "upstage/solar-pro4": 3.75e-07,
+    "meta/muse-glimmer-30b": 7.5e-07,
+    "meta/muse-glimmer-30b:batch": 6e-07,
+    "inclusionai/ling-3.0-tiny": 3e-08,
+    "meta/muse-spark-1.2": 2.75e-06,
+    "~deepseek/deepseek-v4-flash-latest": 1.7169999999999998e-07,
+    "deepseek/deepseek-v4-flash-0731": 1.7169999999999998e-07,
+    "deepseek/deepseek-v4-flash-0731:batch": 9.6e-08,
+    "thinkingmachines/inkling-small": 8.249999999999999e-07,
+    "thinkingmachines/inkling-small:batch": 6.599999999999999e-07,
+    "qwen/qwen3.7-flash": 8e-08,
+    "anthropic/claude-opus-5": 1.5e-05,
+    "anthropic/claude-opus-5:batch": 7.5e-06,
+    "inclusionai/ling-3.0-flash": 4.2e-08,
+    "google/gemini-3.6-flash": 2.25e-06,
+    "google/gemini-3.6-flash:batch": 1.125e-06,
+    "google/gemini-3.5-flash-lite": 1.4000000000000001e-06,
+    "google/gemini-3.5-flash-lite:batch": 7.000000000000001e-07,
+    "meituan/longcat-2.0": 7.5e-07,
+    "thinkingmachines/inkling": 2.525e-06,
+    "moonshotai/kimi-k3": 8.096e-06,
+    "moonshotai/kimi-k3:batch": 3.4585e-06,
+    "meta/muse-spark-1.1": 2.75e-06,
+    "openai/gpt-5.6-luna-pro": 7e-07,
+    "openai/gpt-5.6-luna-pro:batch": 3.5e-07,
+    "openai/gpt-5.6-luna": 7e-07,
+    "openai/gpt-5.6-luna:batch": 3.5e-07,
+    "openai/gpt-5.6-terra-pro": 7e-06,
+    "openai/gpt-5.6-terra-pro:batch": 3.5e-06,
+    "openai/gpt-5.6-terra": 7e-06,
+    "openai/gpt-5.6-terra:batch": 3.5e-06,
+    "openai/gpt-5.6-sol-pro": 1.2e-05,
+    "openai/gpt-5.6-sol-pro:batch": 6e-06,
+    "openai/gpt-5.6-sol": 1.2e-05,
+    "openai/gpt-5.6-sol:batch": 6e-06,
+    "x-ai/grok-4.5": 4e-06,
+    "~x-ai/grok-latest": 4e-06,
+    "aion-labs/aion-3.0-mini": 1.05e-06,
+    "aion-labs/aion-3.0": 4.5e-06,
+    "tencent/hy3": 3.2999999999999996e-07,
+    "anthropic/claude-sonnet-5": 6e-06,
+    "anthropic/claude-sonnet-5:batch": 3e-06,
+    "google/gemini-3.1-flash-lite-image": 8.75e-07,
+    "sakana/fugu-ultra": 1.7500000000000002e-05,
+    "google/gemini-3.1-flash-image": 1.75e-06,
+    "google/gemini-3-pro-image": 7e-06,
+    "cohere/north-mini-code:free": 0.0,
+    "z-ai/glm-5.2": 3.403e-06,
+    "z-ai/glm-5.2:batch": 8.51e-07,
+    "moonshotai/kimi-k2.7-code": 2.05e-06,
+    "~anthropic/claude-fable-latest": 3e-05,
+    "anthropic/claude-fable-5": 3e-05,
+    "anthropic/claude-fable-5:batch": 1.5e-05,
+    "nvidia/nemotron-3.5-content-safety": 2e-07,
+    "nvidia/nemotron-3-ultra-550b-a55b": 1.5e-06,
+    "nvidia/nemotron-3-ultra-550b-a55b:free": 0.0,
+    "qwen/qwen3.7-plus": 8e-07,
+    "qwen/qwen3.7-plus:batch": 5.75e-07,
+    "minimax/minimax-m3": 7.5e-07,
+    "minimax/minimax-m3:batch": 5.52e-07,
+    "stepfun/step-3.7-flash": 6.75e-07,
+    "anthropic/claude-opus-4.8": 1.5e-05,
+    "anthropic/claude-opus-4.8:batch": 7.5e-06,
+    "qwen/qwen3.7-max": 2.95e-06,
+    "x-ai/grok-build-0.1": 1.5e-06,
+    "google/gemini-3.5-flash": 5.2500000000000006e-06,
+    "google/gemini-3.5-flash:batch": 2.6250000000000003e-06,
+    "perceptron/perceptron-mk1": 8.25e-07,
+    "google/gemini-3.1-flash-lite": 8.75e-07,
+    "google/gemini-3.1-flash-lite:batch": 4.375e-07,
+    "openai/gpt-chat-latest": 1.7500000000000002e-05,
+    "x-ai/grok-4.3": 1.8750000000000003e-06,
+    "x-ai/grok-4.3:batch": 1.5e-06,
+    "mistralai/mistral-medium-3-5": 4.5e-06,
+    "mistralai/mistral-medium-3-5:batch": 2.25e-06,
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": 0.0,
+    "~anthropic/claude-haiku-latest": 3e-07,
+    "~openai/gpt-mini-latest": 2.6250000000000003e-06,
+    "~google/gemini-pro-latest": 6e-06,
+    "~moonshotai/kimi-latest": 4.7606e-06,
+    "~google/gemini-flash-latest": 2.25e-06,
+    "~anthropic/claude-sonnet-latest": 6e-06,
+    "qwen/qwen3.5-plus-20260420": 1.05e-06,
+    "qwen/qwen3.6-flash": 6.562500000000001e-07,
+    "qwen/qwen3.6-35b-a3b": 5e-07,
+    "qwen/qwen3.6-27b": 1.7599999999999999e-06,
+    "openai/gpt-5.5-pro": 0.000105,
+    "openai/gpt-5.5-pro:batch": 5.25e-05,
+    "openai/gpt-5.5": 1.7500000000000002e-05,
+    "openai/gpt-5.5:batch": 8.750000000000001e-06,
+    "deepseek/deepseek-v4-pro": 1.42245e-06,
+    "deepseek/deepseek-v4-flash": 1.3649999999999998e-07,
+    "tencent/hy3-preview": 3.8999999999999997e-07,
+    "xiaomi/mimo-v2.5-pro": 1.1399999999999999e-06,
+    "xiaomi/mimo-v2.5": 1.2e-06,
+    "openai/gpt-5.4-image-2": 1.15e-05,
+    "~anthropic/claude-opus-latest": 1.2e-05,
+    "moonshotai/kimi-k2.6": 2.03e-06,
+    "anthropic/claude-opus-4.7": 1.5e-05,
+    "anthropic/claude-opus-4.7:batch": 7.5e-06,
+    "z-ai/glm-5.1": 2.9e-06,
+    "google/gemma-4-26b-a4b-it": 1.4625e-07,
+    "google/gemma-4-26b-a4b-it:free": 0.0,
+    "google/gemma-4-31b-it": 3e-07,
+    "google/gemma-4-31b-it:free": 0.0,
+    "qwen/qwen3.6-plus": 1.1375e-06,
+    "z-ai/glm-5v-turbo": 2.5999999999999997e-06,
+    "x-ai/grok-4.20-multi-agent": 1.8750000000000003e-06,
+    "x-ai/grok-4.20": 1.8750000000000003e-06,
+    "google/lyria-3-pro-preview": 0.0,
+    "google/lyria-3-clip-preview": 0.0,
+    "rekaai/reka-edge": 1e-07,
+    "minimax/minimax-m2.7": 5.250000000000001e-07,
+    "openai/gpt-5.4-nano": 7.25e-07,
+    "openai/gpt-5.4-nano:batch": 3.625e-07,
+    "openai/gpt-5.4-mini": 2.6250000000000003e-06,
+    "openai/gpt-5.4-mini:batch": 1.3125000000000001e-06,
+    "mistralai/mistral-small-2603": 3.75e-07,
+    "z-ai/glm-5-turbo": 2.5999999999999997e-06,
+    "nvidia/nemotron-3-super-120b-a12b": 2.375e-07,
+    "bytedance-seed/seed-2.0-lite": 1.125e-06,
+    "qwen/qwen3.5-9b": 2.1e-07,
+    "openai/gpt-5.4-pro": 0.000105,
+    "openai/gpt-5.4-pro:batch": 5.25e-05,
+    "openai/gpt-5.4": 8.750000000000001e-06,
+    "openai/gpt-5.4:batch": 4.3750000000000005e-06,
+    "google/gemini-3.1-flash-lite-preview": 8.75e-07,
+    "bytedance-seed/seed-2.0-mini": 2.5e-07,
+    "google/gemini-3.1-flash-image-preview": 1.75e-06,
+    "qwen/qwen3.5-35b-a3b": 5.699999999999999e-07,
+    "qwen/qwen3.5-27b": 1.43e-06,
+    "qwen/qwen3.5-122b-a10b": 1.17e-06,
+    "qwen/qwen3.5-flash-02-23": 1.625e-07,
+    "google/gemini-3.1-pro-preview-customtools": 7e-06,
+    "openai/gpt-5.3-codex": 7.875e-06,
+    "aion-labs/aion-2.0": 1.2e-06,
+    "google/gemini-3.1-pro-preview": 7e-06,
+    "google/gemini-3.1-pro-preview:batch": 3.5e-06,
+    "anthropic/claude-sonnet-4.6": 9e-06,
+    "anthropic/claude-sonnet-4.6:batch": 4.5e-06,
+    "qwen/qwen3.5-plus-02-15": 9.100000000000001e-07,
+    "qwen/qwen3.5-397b-a17b": 2.1e-06,
+    "minimax/minimax-m2.5": 7.5e-07,
+    "z-ai/glm-5": 2.1e-06,
+    "anthropic/claude-opus-4.6": 1.5e-05,
+    "anthropic/claude-opus-4.6:batch": 7.5e-06,
+    "qwen/qwen3-coder-next": 4.6e-07,
+    "stepfun/step-3.5-flash": 2e-07,
+    "moonshotai/kimi-k2.5": 1.9285e-06,
+    "writer/palmyra-x5": 3.3e-06,
+    "openai/gpt-audio": 6.25e-06,
+    "openai/gpt-audio-mini": 1.5e-06,
+    "z-ai/glm-4.7-flash": 2.3025e-07,
+    "openai/gpt-5.2-codex": 7.875e-06,
+    "bytedance-seed/seed-1.6-flash": 1.875e-07,
+    "bytedance-seed/seed-1.6": 1.125e-06,
+    "z-ai/glm-4.7": 1.4000000000000001e-06,
+    "google/gemini-3-flash-preview": 1.75e-06,
+    "google/gemini-3-flash-preview:batch": 8.75e-07,
+    "nvidia/nemotron-3-nano-30b-a3b": 1.5e-07,
+    "openai/gpt-5.2-chat": 7.875e-06,
+    "openai/gpt-5.2-pro": 9.449999999999999e-05,
+    "openai/gpt-5.2-pro:batch": 4.7249999999999997e-05,
+    "openai/gpt-5.2": 7.875e-06,
+    "openai/gpt-5.2:batch": 3.9375e-06,
+    "mistralai/devstral-2512": 1.2e-06,
+    "relace/relace-search": 2e-06,
+    "z-ai/glm-4.6v": 6e-07,
+    "openai/gpt-5.1-codex-max": 5.625e-06,
+    "amazon/nova-2-lite-v1": 1.4000000000000001e-06,
+    "mistralai/ministral-14b-2512": 2e-07,
+    "mistralai/ministral-8b-2512": 1.5e-07,
+    "mistralai/ministral-3b-2512": 1e-07,
+    "mistralai/mistral-large-2512": 1e-06,
+    "deepseek/deepseek-v3.2": 3.2e-07,
+    "anthropic/claude-opus-4.5": 1.5e-05,
+    "anthropic/claude-opus-4.5:batch": 7.5e-06,
+    "google/gemini-3-pro-image-preview": 7e-06,
+    "openai/gpt-5.1": 5.625e-06,
+    "openai/gpt-5.1:batch": 2.8125e-06,
+    "openai/gpt-5.1-codex": 5.625e-06,
+    "openai/gpt-5.1-codex-mini": 1.125e-06,
+    "moonshotai/kimi-k2-thinking": 1.55e-06,
+    "amazon/nova-premier-v1": 7.5e-06,
+    "perplexity/sonar-pro-search": 9e-06,
+    "mistralai/voxtral-small-24b-2507": 2e-07,
+    "openai/gpt-oss-safeguard-20b": 1.875e-07,
+    "openai/gpt-5-image-mini": 2.25e-06,
+    "anthropic/claude-haiku-4.5": 3e-06,
+    "anthropic/claude-haiku-4.5:batch": 1.5e-06,
+    "qwen/qwen3-vl-8b-instruct": 5e-07,
+    "openai/gpt-5-image": 1e-05,
+    "google/gemini-2.5-flash-image": 1.4000000000000001e-06,
+    "qwen/qwen3-vl-30b-a3b-thinking": 6.45e-07,
+    "qwen/qwen3-vl-30b-a3b-instruct": 3.75e-07,
+    "openai/gpt-5-pro": 6.75e-05,
+    "openai/gpt-5-pro:batch": 3.375e-05,
+    "z-ai/glm-4.6": 1.2499999999999999e-06,
+    "anthropic/claude-sonnet-4.5": 9e-06,
+    "anthropic/claude-sonnet-4.5:batch": 4.5e-06,
+    "deepseek/deepseek-v3.2-exp": 3.4000000000000003e-07,
+    "thedrummer/cydonia-24b-v4.1": 4e-07,
+    "relace/relace-apply-3": 1.0500000000000001e-06,
+    "qwen/qwen3-vl-235b-a22b-instruct": 1.055e-06,
+    "deepseek/deepseek-v3.1-terminus": 6.35e-07,
+    "qwen/qwen3-coder-flash": 5.85e-07,
+    "qwen/qwen3-next-80b-a3b-instruct": 5.95e-07,
+    "moonshotai/kimi-k2-0905": 1.55e-06,
+    "nousresearch/hermes-4-405b": 2e-06,
+    "deepseek/deepseek-chat-v3.1": 6e-07,
+    "mistralai/mistral-medium-3.1": 1.2e-06,
+    "z-ai/glm-4.5v": 1.2e-06,
+    "openai/gpt-5": 5.625e-06,
+    "openai/gpt-5:batch": 2.8125e-06,
+    "openai/gpt-5-mini": 1.125e-06,
+    "openai/gpt-5-mini:batch": 5.625e-07,
+    "openai/gpt-5-nano": 2.25e-07,
+    "openai/gpt-5-nano:batch": 1.125e-07,
+    "openai/gpt-oss-120b": 3.75e-07,
+    "openai/gpt-oss-120b:batch": 8.28e-08,
+    "openai/gpt-oss-20b": 8e-08,
+    "openai/gpt-oss-20b:batch": 6.8e-08,
+    "anthropic/claude-opus-4.1": 4.4999999999999996e-05,
+    "anthropic/claude-opus-4.1:batch": 2.2499999999999998e-05,
+    "mistralai/codestral-2508": 6e-07,
+    "qwen/qwen3-coder-30b-a3b-instruct": 3.75e-07,
+    "qwen/qwen3-30b-a3b-instruct-2507": 2e-07,
+    "z-ai/glm-4.5": 1.4000000000000001e-06,
+    "z-ai/glm-4.5-air": 4.9e-07,
+    "qwen/qwen3-235b-a22b-thinking-2507": 1.975e-06,
+    "qwen/qwen3-coder": 6.499999999999999e-07,
+    "bytedance/ui-tars-1.5-7b": 1.5e-07,
+    "google/gemini-2.5-flash-lite": 2.5e-07,
+    "qwen/qwen3-235b-a22b-2507": 4.7e-07,
+    "moonshotai/kimi-k2": 1.435e-06,
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition": 5.5e-07,
+    "tencent/hunyuan-a13b-instruct": 3.5500000000000004e-07,
+    "morph/morph-v3-large": 1.4e-06,
+    "morph/morph-v3-large:batch": 7e-07,
+    "morph/morph-v3-fast": 1e-06,
+    "morph/morph-v3-fast:batch": 5e-07,
+    "mistralai/mistral-small-3.2-24b-instruct": 1.375e-07,
+    "minimax/minimax-m1": 1.375e-06,
+    "google/gemini-2.5-flash": 1.4000000000000001e-06,
+    "google/gemini-2.5-pro": 5.625e-06,
+    "openai/o3-pro": 5e-05,
+    "google/gemini-2.5-pro-preview": 5.625e-06,
+    "deepseek/deepseek-r1-0528": 1.325e-06,
+    "mistralai/mistral-medium-3": 1.2e-06,
+    "meta-llama/llama-guard-4-12b": 1.8e-07,
+    "qwen/qwen3-30b-a3b": 3.1e-07,
+    "qwen/qwen3-14b": 1.7999999999999997e-07,
+    "qwen/qwen3-32b": 1.8000000000000002e-07,
+    "openai/o3": 4.9999999999999996e-06,
+    "openai/o3:batch": 2.4999999999999998e-06,
+    "openai/o4-mini:batch": 1.375e-06,
+    "openai/gpt-4.1": 4.9999999999999996e-06,
+    "openai/gpt-4.1:batch": 2.4999999999999998e-06,
+    "openai/gpt-4.1-mini": 1e-06,
+    "openai/gpt-4.1-mini:batch": 5e-07,
+    "openai/gpt-4.1-nano": 2.5e-07,
+    "openai/gpt-4.1-nano:batch": 1.25e-07,
+    "meta-llama/llama-4-maverick": 6.75e-07,
+    "meta-llama/llama-4-scout": 2e-07,
+    "deepseek/deepseek-chat-v3-0324": 7.15e-07,
+    "mistralai/mistral-small-3.1-24b-instruct": 4.53e-07,
+    "google/gemma-3-4b-it": 7.5e-08,
+    "google/gemma-3-12b-it": 1e-07,
+    "cohere/command-a": 6.25e-06,
+    "rekaai/reka-flash-3": 1.5e-07,
+    "google/gemma-3-27b-it": 2.15e-07,
+    "thedrummer/skyfall-36b-v2": 6.75e-07,
+    "perplexity/sonar-reasoning-pro": 4.9999999999999996e-06,
+    "perplexity/sonar-pro": 9e-06,
+    "perplexity/sonar-deep-research": 4.9999999999999996e-06,
+    "mistralai/mistral-saba": 4e-07,
+    "aion-labs/aion-rp-llama-3.1-8b": 1.2e-06,
+    "qwen/qwen2.5-vl-72b-instruct": 9e-07,
+    "qwen/qwen-plus": 5.2e-07,
+    "openai/o3-mini:batch": 1.375e-06,
+    "mistralai/mistral-small-24b-instruct-2501": 6.5e-08,
+    "perplexity/sonar": 1e-06,
+    "microsoft/phi-4": 1.05e-07,
+    "deepseek/deepseek-chat": 6.049999999999999e-07,
+    "cohere/command-r7b-12-2024": 9.375e-08,
+    "meta-llama/llama-3.3-70b-instruct": 6.9e-07,
+    "amazon/nova-lite-v1": 1.5e-07,
+    "amazon/nova-micro-v1": 8.750000000000001e-08,
+    "amazon/nova-pro-v1": 2e-06,
+    "openai/gpt-4o-2024-11-20": 6.25e-06,
+    "mistralai/mistral-large-2407": 4e-06,
+    "qwen/qwen-2.5-coder-32b-instruct": 8.3e-07,
+    "thedrummer/unslopnemo-12b": 4e-07,
+    "anthracite-org/magnum-v4-72b": 3.7500000000000005e-06,
+    "qwen/qwen-2.5-7b-instruct": 1.5e-07,
+    "meta-llama/llama-3.2-1b-instruct": 1.14e-07,
+    "meta-llama/llama-3.2-3b-instruct": 1.9e-07,
+    "qwen/qwen-2.5-72b-instruct": 3.7999999999999996e-07,
+    "cohere/command-r-08-2024": 3.75e-07,
+    "cohere/command-r-plus-08-2024": 6.25e-06,
+    "sao10k/l3.1-euryale-70b": 8.5e-07,
+    "sao10k/l3-lunaris-8b": 4.5e-08,
+    "openai/gpt-4o-2024-08-06": 6.25e-06,
+    "meta-llama/llama-3.1-70b-instruct": 7.2e-07,
+    "meta-llama/llama-3.1-8b-instruct": 3.0000000000000004e-08,
     "mistralai/mistral-nemo": 2.95e-08,
     "openai/gpt-4o-mini": 3.75e-07,
     "openai/gpt-4o-mini-2024-07-18": 3.75e-07,
