@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-11-11 08:31:26 EST",
+  "last_updated": "2026-11-12 08:31:30 EST",
   "data": {
     "SPY": {
       "today": {
-        "date": "2026-11-10",
-        "classic_dir": "Down",
-        "classic_pct": 0.63,
+        "date": "2026-11-11",
+        "classic_dir": "Up",
+        "classic_pct": 0.92,
         "classic_bucket": "0.5%-1%",
-        "range_dir": null,
-        "range_pct": 0.0,
-        "range_bucket": null,
-        "open": 747.94,
-        "prev_close": 752.69,
-        "prev_high": 755.42,
-        "prev_low": 741.03
+        "range_dir": "Up",
+        "range_pct": 0.62,
+        "range_bucket": "0.5%-1%",
+        "open": 756.8,
+        "prev_close": 749.92,
+        "prev_high": 752.14,
+        "prev_low": 744.86
       },
       "stats": {
         "5Y": {
@@ -21,13 +21,13 @@
             "Up": {
               "<0.5%": {
                 "total": 486,
-                "filled": 361,
-                "prob": 74.3
+                "filled": 359,
+                "prob": 73.9
               },
               "0.5%-1%": {
                 "total": 152,
-                "filled": 56,
-                "prob": 36.8
+                "filled": 57,
+                "prob": 37.5
               },
               "1%-2%": {
                 "total": 49,
@@ -47,14 +47,14 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 375,
-                "filled": 288,
-                "prob": 76.8
+                "total": 374,
+                "filled": 285,
+                "prob": 76.2
               },
               "0.5%-1%": {
-                "total": 110,
+                "total": 111,
                 "filled": 38,
-                "prob": 34.5
+                "prob": 34.2
               },
               "1%-2%": {
                 "total": 63,
@@ -76,9 +76,9 @@
           "Range": {
             "Up": {
               "<0.5%": {
-                "total": 246,
+                "total": 247,
                 "filled": 203,
-                "prob": 82.5
+                "prob": 82.2
               },
               "0.5%-1%": {
                 "total": 44,
@@ -134,14 +134,14 @@
           "Classic": {
             "Up": {
               "<0.5%": {
-                "total": 1043,
-                "filled": 733,
-                "prob": 70.3
+                "total": 1044,
+                "filled": 731,
+                "prob": 70.0
               },
               "0.5%-1%": {
                 "total": 287,
-                "filled": 94,
-                "prob": 32.8
+                "filled": 95,
+                "prob": 33.1
               },
               "1%-2%": {
                 "total": 92,
@@ -161,14 +161,14 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 748,
-                "filled": 570,
-                "prob": 76.2
+                "total": 747,
+                "filled": 566,
+                "prob": 75.8
               },
               "0.5%-1%": {
                 "total": 200,
-                "filled": 75,
-                "prob": 37.5
+                "filled": 74,
+                "prob": 37.0
               },
               "1%-2%": {
                 "total": 96,
@@ -190,9 +190,9 @@
           "Range": {
             "Up": {
               "<0.5%": {
-                "total": 571,
-                "filled": 440,
-                "prob": 77.1
+                "total": 570,
+                "filled": 438,
+                "prob": 76.8
               },
               "0.5%-1%": {
                 "total": 89,
@@ -217,9 +217,9 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 264,
-                "filled": 213,
-                "prob": 80.7
+                "total": 263,
+                "filled": 212,
+                "prob": 80.6
               },
               "0.5%-1%": {
                 "total": 73,
@@ -248,24 +248,24 @@
           "Classic": {
             "Up": {
               "<0.5%": {
-                "total": 2996,
-                "filled": 2256,
+                "total": 2991,
+                "filled": 2253,
                 "prob": 75.3
               },
               "0.5%-1%": {
                 "total": 888,
-                "filled": 415,
-                "prob": 46.7
+                "filled": 420,
+                "prob": 47.3
               },
               "1%-2%": {
                 "total": 281,
-                "filled": 82,
-                "prob": 29.2
+                "filled": 84,
+                "prob": 29.9
               },
               "2%-3%": {
                 "total": 49,
-                "filled": 15,
-                "prob": 30.6
+                "filled": 16,
+                "prob": 32.7
               },
               ">=3%": {
                 "total": 18,
@@ -275,19 +275,19 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 2324,
-                "filled": 1848,
-                "prob": 79.5
+                "total": 2329,
+                "filled": 1850,
+                "prob": 79.4
               },
               "0.5%-1%": {
-                "total": 624,
-                "filled": 291,
-                "prob": 46.6
+                "total": 626,
+                "filled": 294,
+                "prob": 47.0
               },
               "1%-2%": {
-                "total": 288,
+                "total": 287,
                 "filled": 113,
-                "prob": 39.2
+                "prob": 39.4
               },
               "2%-3%": {
                 "total": 55,
@@ -304,19 +304,19 @@
           "Range": {
             "Up": {
               "<0.5%": {
-                "total": 1378,
-                "filled": 1121,
-                "prob": 81.3
+                "total": 1376,
+                "filled": 1116,
+                "prob": 81.1
               },
               "0.5%-1%": {
                 "total": 253,
-                "filled": 113,
-                "prob": 44.7
+                "filled": 114,
+                "prob": 45.1
               },
               "1%-2%": {
                 "total": 70,
-                "filled": 19,
-                "prob": 27.1
+                "filled": 18,
+                "prob": 25.7
               },
               "2%-3%": {
                 "total": 18,
@@ -331,14 +331,14 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 766,
-                "filled": 643,
-                "prob": 83.9
+                "total": 765,
+                "filled": 639,
+                "prob": 83.5
               },
               "0.5%-1%": {
                 "total": 192,
-                "filled": 115,
-                "prob": 59.9
+                "filled": 114,
+                "prob": 59.4
               },
               "1%-2%": {
                 "total": 78,
@@ -362,17 +362,17 @@
     },
     "QQQ": {
       "today": {
-        "date": "2026-11-10",
-        "classic_dir": "Down",
-        "classic_pct": 1.0,
+        "date": "2026-11-11",
+        "classic_dir": "Up",
+        "classic_pct": 1.86,
         "classic_bucket": "1%-2%",
-        "range_dir": null,
-        "range_pct": 0.0,
-        "range_bucket": null,
-        "open": 672.54,
-        "prev_close": 679.35,
-        "prev_high": 682.48,
-        "prev_low": 662.02
+        "range_dir": "Up",
+        "range_pct": 0.93,
+        "range_bucket": "0.5%-1%",
+        "open": 687.28,
+        "prev_close": 674.76,
+        "prev_high": 680.95,
+        "prev_low": 667.05
       },
       "stats": {
         "5Y": {
@@ -385,8 +385,8 @@
               },
               "0.5%-1%": {
                 "total": 176,
-                "filled": 85,
-                "prob": 48.3
+                "filled": 83,
+                "prob": 47.2
               },
               "1%-2%": {
                 "total": 97,
@@ -406,9 +406,9 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 307,
-                "filled": 247,
-                "prob": 80.5
+                "total": 306,
+                "filled": 246,
+                "prob": 80.4
               },
               "0.5%-1%": {
                 "total": 153,
@@ -416,9 +416,9 @@
                 "prob": 49.7
               },
               "1%-2%": {
-                "total": 95,
-                "filled": 21,
-                "prob": 22.1
+                "total": 96,
+                "filled": 22,
+                "prob": 22.9
               },
               "2%-3%": {
                 "total": 10,
@@ -493,14 +493,14 @@
           "Classic": {
             "Up": {
               "<0.5%": {
-                "total": 866,
-                "filled": 638,
-                "prob": 73.7
+                "total": 869,
+                "filled": 642,
+                "prob": 73.9
               },
               "0.5%-1%": {
                 "total": 361,
-                "filled": 160,
-                "prob": 44.3
+                "filled": 158,
+                "prob": 43.8
               },
               "1%-2%": {
                 "total": 164,
@@ -520,9 +520,9 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 633,
-                "filled": 494,
-                "prob": 78.0
+                "total": 630,
+                "filled": 492,
+                "prob": 78.1
               },
               "0.5%-1%": {
                 "total": 259,
@@ -549,9 +549,9 @@
           "Range": {
             "Up": {
               "<0.5%": {
-                "total": 466,
-                "filled": 363,
-                "prob": 77.9
+                "total": 465,
+                "filled": 362,
+                "prob": 77.8
               },
               "0.5%-1%": {
                 "total": 143,
@@ -576,8 +576,8 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 212,
-                "filled": 179,
+                "total": 211,
+                "filled": 178,
                 "prob": 84.4
               },
               "0.5%-1%": {
@@ -607,19 +607,19 @@
           "Classic": {
             "Up": {
               "<0.5%": {
-                "total": 2344,
-                "filled": 1831,
-                "prob": 78.1
+                "total": 2356,
+                "filled": 1842,
+                "prob": 78.2
               },
               "0.5%-1%": {
-                "total": 943,
-                "filled": 494,
-                "prob": 52.4
+                "total": 942,
+                "filled": 489,
+                "prob": 51.9
               },
               "1%-2%": {
                 "total": 463,
-                "filled": 180,
-                "prob": 38.9
+                "filled": 182,
+                "prob": 39.3
               },
               "2%-3%": {
                 "total": 96,
@@ -634,38 +634,38 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 1821,
-                "filled": 1491,
-                "prob": 81.9
+                "total": 1810,
+                "filled": 1479,
+                "prob": 81.7
               },
               "0.5%-1%": {
                 "total": 696,
-                "filled": 393,
-                "prob": 56.5
+                "filled": 395,
+                "prob": 56.8
               },
               "1%-2%": {
-                "total": 428,
-                "filled": 182,
-                "prob": 42.5
+                "total": 429,
+                "filled": 184,
+                "prob": 42.9
               },
               "2%-3%": {
                 "total": 85,
-                "filled": 25,
-                "prob": 29.4
+                "filled": 24,
+                "prob": 28.2
               },
               ">=3%": {
                 "total": 41,
-                "filled": 12,
-                "prob": 29.3
+                "filled": 11,
+                "prob": 26.8
               }
             }
           },
           "Range": {
             "Up": {
               "<0.5%": {
-                "total": 1055,
-                "filled": 847,
-                "prob": 80.3
+                "total": 1065,
+                "filled": 857,
+                "prob": 80.5
               },
               "0.5%-1%": {
                 "total": 313,
@@ -674,8 +674,8 @@
               },
               "1%-2%": {
                 "total": 129,
-                "filled": 49,
-                "prob": 38.0
+                "filled": 48,
+                "prob": 37.2
               },
               "2%-3%": {
                 "total": 23,
@@ -690,9 +690,9 @@
             },
             "Down": {
               "<0.5%": {
-                "total": 564,
-                "filled": 489,
-                "prob": 86.7
+                "total": 567,
+                "filled": 493,
+                "prob": 86.9
               },
               "0.5%-1%": {
                 "total": 206,
@@ -706,8 +706,8 @@
               },
               "2%-3%": {
                 "total": 31,
-                "filled": 12,
-                "prob": 38.7
+                "filled": 11,
+                "prob": 35.5
               },
               ">=3%": {
                 "total": 17,
