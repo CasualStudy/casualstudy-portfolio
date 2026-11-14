@@ -8,21 +8,21 @@
       "cash_data": {
         "available": true,
         "source": "10-Q",
-        "filing_date": "2026-08-10",
-        "period_of_report": "2026-06-30",
+        "filing_date": "2026-11-09",
+        "period_of_report": "2026-09-30",
         "items": [
           {
             "label": "Cash and cash equivalents",
             "label_zh": "现金及现金等价物",
-            "value": 40609000000.0
+            "value": 40700000000.0
           },
           {
             "label": "Short-term investments in U.S. Treasury Bills",
             "label_zh": "短期美国国债投资",
-            "value": 324905000000.0
+            "value": 336735000000.0
           }
         ],
-        "total": 365514000000.0,
+        "total": 377435000000.0,
         "currency": "USD"
       },
       "top_holdings": [
@@ -291,9 +291,9 @@
       "name": "Berkshire Hathaway (Warren Buffett)"
     },
     "ark": {
-      "filing_date": "2026-08-14",
-      "period_of_report": "2026-06-30",
-      "total_value": 15402788184.0,
+      "filing_date": "2026-11-13",
+      "period_of_report": "2026-09-30",
+      "total_value": 17374380716.0,
       "cash_data": {
         "available": false,
         "reason": "no_10x"
@@ -302,913 +302,913 @@
         {
           "name": "Tesla Inc",
           "class": "Common Stock",
-          "value": 1160772073.0,
-          "shares": 2759800,
+          "value": 1196306136.0,
+          "shares": 3371681,
           "ticker": "TSLA",
-          "weight": 7.5361165727499815,
+          "weight": 6.885460584493387,
           "is_13g": false
         },
         {
-          "name": "Advanced Micro Devices Inc",
+          "name": "Space Exploration Technologies",
           "class": "Common Stock",
-          "value": 822826048.0,
-          "shares": 1416443,
-          "ticker": "AMD",
-          "weight": 5.342059101057622,
-          "is_13g": false
-        },
-        {
-          "name": "Space Exploration Technologies Corp",
-          "class": "Common Stock",
-          "value": 765113281.0,
-          "shares": 4478013,
+          "value": 1017764417.0,
+          "shares": 6746417,
           "ticker": "SPCX",
-          "weight": 4.967368711820494,
+          "weight": 5.857845719144077,
           "is_13g": false
         },
         {
           "name": "Tempus Ai Inc",
           "class": "Common Stock",
-          "value": 580611200.0,
-          "shares": 10022634,
+          "value": 766382941.0,
+          "shares": 9357545,
           "ticker": "TEM",
-          "weight": 3.769520122357608,
-          "is_13g": false
-        },
-        {
-          "name": "Robinhood Markets Inc",
-          "class": "Common Stock",
-          "value": 525069168.0,
-          "shares": 5236031,
-          "ticker": "HOOD",
-          "weight": 3.408922863364619,
-          "is_13g": false
-        },
-        {
-          "name": "Crispr Therapeutics Ag",
-          "class": "Common Stock",
-          "value": 515999631.0,
-          "shares": 9460939,
-          "ticker": "CRSP",
-          "weight": 3.350040426680713,
-          "is_13g": false
-        },
-        {
-          "name": "Shopify Inc",
-          "class": "Common Stock",
-          "value": 474523465.0,
-          "shares": 4155925,
-          "ticker": "SHOP",
-          "weight": 3.0807634262796793,
+          "weight": 4.410994288240967,
           "is_13g": false
         },
         {
           "name": "Twist Bioscience Corp",
           "class": "Common Stock",
-          "value": 468083756.0,
-          "shares": 4549803,
+          "value": 656640575.0,
+          "shares": 3398057,
           "ticker": "TWST",
-          "weight": 3.03895470357914,
-          "is_13g": false
-        },
-        {
-          "name": "Alphabet Inc",
-          "class": "Common Stock",
-          "value": 418716711.0,
-          "shares": 1183456,
-          "ticker": "GOOGL",
-          "weight": 2.7184475044261895,
-          "is_13g": false
-        },
-        {
-          "name": "10X Genomics Inc",
-          "class": "Common Stock",
-          "value": 383517223.0,
-          "shares": 10003057,
-          "ticker": "TXG",
-          "weight": 2.489920775502109,
-          "is_13g": false
-        },
-        {
-          "name": "Amazon.Com Inc",
-          "class": "Common Stock",
-          "value": 379241133.0,
-          "shares": 1591177,
-          "ticker": "AMZN",
-          "weight": 2.4621589836179494,
-          "is_13g": false
-        },
-        {
-          "name": "Palantir Technologies Inc",
-          "class": "Common Stock",
-          "value": 374777381.0,
-          "shares": 3212286,
-          "ticker": "PLTR",
-          "weight": 2.4331788279040842,
-          "is_13g": false
-        },
-        {
-          "name": "Coinbase Global Inc",
-          "class": "Common Stock",
-          "value": 367129713.0,
-          "shares": 2511319,
-          "ticker": "COIN",
-          "weight": 2.383527635479428,
-          "is_13g": false
-        },
-        {
-          "name": "Roblox Corp",
-          "class": "Common Stock",
-          "value": 351615103.0,
-          "shares": 6465890,
-          "ticker": "RBLX",
-          "weight": 2.2828016512312246,
-          "is_13g": false
-        },
-        {
-          "name": "Beam Therapeutics Inc",
-          "class": "Common Stock",
-          "value": 351260447.0,
-          "shares": 10234862,
-          "ticker": "BEAM",
-          "weight": 2.2804991070699776,
-          "is_13g": false
-        },
-        {
-          "name": "Teradyne Inc",
-          "class": "Common Stock",
-          "value": 311971420.0,
-          "shares": 644782,
-          "ticker": "TER",
-          "weight": 2.025421737111645,
-          "is_13g": false
-        },
-        {
-          "name": "Intellia Therapeutics Inc",
-          "class": "Common Stock",
-          "value": 285536575.0,
-          "shares": 16875684,
-          "ticker": "NTLA",
-          "weight": 1.8537979720879867,
-          "is_13g": false
-        },
-        {
-          "name": "Circle Internet Group Inc",
-          "class": "Common Stock",
-          "value": 285477674.0,
-          "shares": 4558162,
-          "ticker": "CRCL",
-          "weight": 1.8534155672967476,
+          "weight": 3.7793610358457395,
           "is_13g": false
         },
         {
           "name": "Nvidia Corp",
           "class": "Common Stock",
-          "value": 276373746.0,
-          "shares": 1381247,
+          "value": 584932116.0,
+          "shares": 2561223,
           "ticker": "NVDA",
-          "weight": 1.794309852855664,
+          "weight": 3.3666357699951766,
+          "is_13g": false
+        },
+        {
+          "name": "10X Genomics Inc",
+          "class": "Common Stock",
+          "value": 566828112.0,
+          "shares": 6272998,
+          "ticker": "TXG",
+          "weight": 3.262436349619127,
+          "is_13g": false
+        },
+        {
+          "name": "Circle Internet Group Inc",
+          "class": "Common Stock",
+          "value": 563479299.0,
+          "shares": 6857482,
+          "ticker": "CRCL",
+          "weight": 3.2431619187502556,
+          "is_13g": false
+        },
+        {
+          "name": "Crispr Therapeutics Ag",
+          "class": "Common Stock",
+          "value": 556344632.0,
+          "shares": 10056844,
+          "ticker": "CRSP",
+          "weight": 3.2020976234719223,
+          "is_13g": false
+        },
+        {
+          "name": "Coinbase Global Inc",
+          "class": "Common Stock",
+          "value": 545771189.0,
+          "shares": 2927800,
+          "ticker": "COIN",
+          "weight": 3.1412411062076098,
+          "is_13g": false
+        },
+        {
+          "name": "Robinhood Markets Inc",
+          "class": "Common Stock",
+          "value": 517972160.0,
+          "shares": 4604197,
+          "ticker": "HOOD",
+          "weight": 2.9812409919336083,
+          "is_13g": false
+        },
+        {
+          "name": "Palantir Technologies Inc",
+          "class": "Common Stock",
+          "value": 487773444.0,
+          "shares": 2607717,
+          "ticker": "PLTR",
+          "weight": 2.8074292371803002,
+          "is_13g": false
+        },
+        {
+          "name": "Shopify Inc",
+          "class": "Common Stock",
+          "value": 466477128.0,
+          "shares": 3145496,
+          "ticker": "SHOP",
+          "weight": 2.6848561432202476,
+          "is_13g": false
+        },
+        {
+          "name": "Amazon.Com Inc",
+          "class": "Common Stock",
+          "value": 422994246.0,
+          "shares": 1697749,
+          "ticker": "AMZN",
+          "weight": 2.4345860316648076,
+          "is_13g": false
+        },
+        {
+          "name": "Advanced Micro Devices Inc",
+          "class": "Common Stock",
+          "value": 413346374.0,
+          "shares": 675668,
+          "ticker": "AMD",
+          "weight": 2.3790567316126032,
           "is_13g": false
         },
         {
           "name": "Coreweave Inc",
           "class": "Common Stock",
-          "value": 264496911.0,
-          "shares": 2657192,
+          "value": 366812897.0,
+          "shares": 4210433,
           "ticker": "CRWV",
-          "weight": 1.7172015081967578,
-          "is_13g": false
-        },
-        {
-          "name": "Deere & Co",
-          "class": "Common Stock",
-          "value": 249307586.0,
-          "shares": 393025,
-          "ticker": "DE",
-          "weight": 1.6185873818545007,
-          "is_13g": false
-        },
-        {
-          "name": "Block Inc",
-          "class": "Common Stock",
-          "value": 235445950.0,
-          "shares": 3097973,
-          "ticker": "SQ",
-          "weight": 1.5285930520331046,
-          "is_13g": false
-        },
-        {
-          "name": "Kratos Defense & Security Solutions Inc.",
-          "class": "Common Stock",
-          "value": 232974116.0,
-          "shares": 4672566,
-          "ticker": "KTOS",
-          "weight": 1.51254508740182,
-          "is_13g": false
-        },
-        {
-          "name": "Taiwan Semiconductor Manufacturing Company Ltd",
-          "class": "ADR",
-          "value": 230325325.0,
-          "shares": 482286,
-          "ticker": "TSM",
-          "weight": 1.4953482593447316,
-          "is_13g": false
-        },
-        {
-          "name": "Natera Inc",
-          "class": "Common Stock",
-          "value": 186989592.0,
-          "shares": 688855,
-          "ticker": "NTRA",
-          "weight": 1.2139983343680578,
-          "is_13g": false
-        },
-        {
-          "name": "Illumina Inc",
-          "class": "Common Stock",
-          "value": 183744158.0,
-          "shares": 1045010,
-          "ticker": "ILMN",
-          "weight": 1.1929279024356672,
-          "is_13g": false
-        },
-        {
-          "name": "Cerebras Systems Inc",
-          "class": "Common Stock",
-          "value": 168979473.0,
-          "shares": 764613,
-          "ticker": "CBRS",
-          "weight": 1.0970706795509355,
-          "is_13g": false
-        },
-        {
-          "name": "Rocket Lab Corp",
-          "class": "Common Stock",
-          "value": 165812192.0,
-          "shares": 1631207,
-          "ticker": "RKLB",
-          "weight": 1.0765076427671791,
-          "is_13g": false
-        },
-        {
-          "name": "Bullish",
-          "class": "Common Stock",
-          "value": 158063147.0,
-          "shares": 6746186,
-          "ticker": "BLSH",
-          "weight": 1.0261982772975593,
-          "is_13g": false
-        },
-        {
-          "name": "Broadcom Inc",
-          "class": "Common Stock",
-          "value": 153820556.0,
-          "shares": 407202,
-          "ticker": "AVGO",
-          "weight": 0.9986539720112794,
-          "is_13g": false
-        },
-        {
-          "name": "Recursion Pharmaceuticals Inc",
-          "class": "Common Stock",
-          "value": 151709111.0,
-          "shares": 41337632,
-          "ticker": "RXRX",
-          "weight": 0.9849457720751579,
-          "is_13g": false
-        },
-        {
-          "name": "Archer Aviation Inc",
-          "class": "Common Stock",
-          "value": 151189352.0,
-          "shares": 31963922,
-          "ticker": "ACHR",
-          "weight": 0.9815713245803862,
-          "is_13g": false
-        },
-        {
-          "name": "Absci Corp",
-          "class": "Common Stock",
-          "value": 149803896.0,
-          "shares": 12925271,
-          "ticker": "ABSI",
-          "weight": 0.9725764855716983,
-          "is_13g": false
-        },
-        {
-          "name": "Veracyte Inc",
-          "class": "Common Stock",
-          "value": 134841222.0,
-          "shares": 2295951,
-          "ticker": "VCYT",
-          "weight": 0.8754338525544967,
+          "weight": 2.111228612955416,
           "is_13g": false
         },
         {
           "name": "Meta Platforms Inc",
           "class": "Common Stock",
-          "value": 134610910.0,
-          "shares": 238973,
+          "value": 355295103.0,
+          "shares": 489941,
           "ticker": "META",
-          "weight": 0.8739385908054632,
+          "weight": 2.0449367882954825,
           "is_13g": false
         },
         {
-          "name": "Ark 21Shares Bitcoin Etf",
-          "class": "ETP",
-          "value": 125605835.0,
-          "shares": 6454565,
-          "ticker": "ARKB",
-          "weight": 0.8154746627657707,
-          "is_13g": false
-        },
-        {
-          "name": "L3Harris Technologies Inc",
+          "name": "Alphabet Inc",
           "class": "Common Stock",
-          "value": 125296306.0,
-          "shares": 431179,
-          "ticker": "LHX",
-          "weight": 0.813465098027865,
+          "value": 348585617.0,
+          "shares": 1023024,
+          "ticker": "GOOGL",
+          "weight": 2.0063196651319424,
+          "is_13g": false
+        },
+        {
+          "name": "Block Inc",
+          "class": "Common Stock",
+          "value": 339846908.0,
+          "shares": 4621881,
+          "ticker": "SQ",
+          "weight": 1.956023144393494,
+          "is_13g": false
+        },
+        {
+          "name": "Beam Therapeutics Inc",
+          "class": "Common Stock",
+          "value": 288641356.0,
+          "shares": 11805372,
+          "ticker": "BEAM",
+          "weight": 1.6613044270072388,
+          "is_13g": false
+        },
+        {
+          "name": "Broadcom Inc",
+          "class": "Common Stock",
+          "value": 274672400.0,
+          "shares": 782119,
+          "ticker": "AVGO",
+          "weight": 1.5809046923154806,
+          "is_13g": false
+        },
+        {
+          "name": "Cerebras Systems Inc",
+          "class": "Common Stock",
+          "value": 264522069.0,
+          "shares": 1489007,
+          "ticker": "CBRS",
+          "weight": 1.522483438827852,
+          "is_13g": false
+        },
+        {
+          "name": "Teradyne Inc",
+          "class": "Common Stock",
+          "value": 259353089.0,
+          "shares": 646911,
+          "ticker": "TER",
+          "weight": 1.4927328532703483,
+          "is_13g": false
+        },
+        {
+          "name": "Bullish",
+          "class": "Common Stock",
+          "value": 251173322.0,
+          "shares": 7199006,
+          "ticker": "BLSH",
+          "weight": 1.4456533795687776,
+          "is_13g": false
+        },
+        {
+          "name": "Rocket Lab Corp",
+          "class": "Common Stock",
+          "value": 247883675.0,
+          "shares": 3557458,
+          "ticker": "RKLB",
+          "weight": 1.4267194845783764,
           "is_13g": false
         },
         {
           "name": "Bitmine Immersion Technologies",
           "class": "Common Stock",
-          "value": 117282236.0,
-          "shares": 8811588,
+          "value": 244470945.0,
+          "shares": 9249752,
           "ticker": "BMNP",
-          "weight": 0.7614351025214358,
+          "weight": 1.40707717297151,
           "is_13g": false
         },
         {
-          "name": "Personalis Inc",
+          "name": "Taiwan Semiconductor Manufactu",
+          "class": "ADR",
+          "value": 242997815.0,
+          "shares": 532668,
+          "ticker": "TSMWF",
+          "weight": 1.3985984247267258,
+          "is_13g": false
+        },
+        {
+          "name": "Illumina Inc",
           "class": "Common Stock",
-          "value": 110835941.0,
-          "shares": 8271339,
-          "ticker": "PSNL",
-          "weight": 0.7195836213285942,
+          "value": 233116470.0,
+          "shares": 851785,
+          "ticker": "ILMN",
+          "weight": 1.3417253472828758,
+          "is_13g": false
+        },
+        {
+          "name": "Natera Inc",
+          "class": "Common Stock",
+          "value": 225726826.0,
+          "shares": 546144,
+          "ticker": "NTRA",
+          "weight": 1.2991935061727353,
+          "is_13g": false
+        },
+        {
+          "name": "Kratos Defense & Security Solu",
+          "class": "Common Stock",
+          "value": 224312131.0,
+          "shares": 5254442,
+          "ticker": "KTOS",
+          "weight": 1.2910510864622173,
+          "is_13g": false
+        },
+        {
+          "name": "Cloudflare Inc",
+          "class": "Common Stock",
+          "value": 195576483.0,
+          "shares": 563167,
+          "ticker": "NET",
+          "weight": 1.1256601670981825,
+          "is_13g": false
+        },
+        {
+          "name": "Intellia Therapeutics Inc",
+          "class": "Common Stock",
+          "value": 192058167.0,
+          "shares": 15925221,
+          "ticker": "NTLA",
+          "weight": 1.1054101446225038,
+          "is_13g": false
+        },
+        {
+          "name": "Recursion Pharmaceuticals Inc",
+          "class": "Common Stock",
+          "value": 184796952.0,
+          "shares": 44745025,
+          "ticker": "RXRX",
+          "weight": 1.063617489570844,
+          "is_13g": false
+        },
+        {
+          "name": "Archer Aviation Inc",
+          "class": "Common Stock",
+          "value": 168096179.0,
+          "shares": 33822169,
+          "ticker": "ACHR",
+          "weight": 0.9674945066974437,
           "is_13g": false
         },
         {
           "name": "Genedx Holdings Corp",
           "class": "Common Stock",
-          "value": 110539494.0,
-          "shares": 1610189,
+          "value": 138318822.0,
+          "shares": 1913123,
           "ticker": "WGS",
-          "weight": 0.7176589892654983,
+          "weight": 0.7961079261525721,
           "is_13g": false
         },
         {
-          "name": "Bwx Technologies Inc",
+          "name": "Veracyte Inc",
           "class": "Common Stock",
-          "value": 107034337.0,
-          "shares": 549881,
-          "ticker": "BWXT",
-          "weight": 0.6949023496355314,
+          "value": 136492485.0,
+          "shares": 2964650,
+          "ticker": "VCYT",
+          "weight": 0.7855962594068437,
           "is_13g": false
         },
         {
-          "name": "Aerovironment Inc",
+          "name": "Ark 21Shares Bitcoin Etf",
+          "class": "ETP",
+          "value": 135553266.0,
+          "shares": 4895387,
+          "ticker": "ARKB",
+          "weight": 0.7801904897546623,
+          "is_13g": false
+        },
+        {
+          "name": "Absci Corp",
           "class": "Common Stock",
-          "value": 100280355.0,
-          "shares": 607502,
-          "ticker": "AVAV",
-          "weight": 0.65105326257858,
+          "value": 128474441.0,
+          "shares": 11928917,
+          "ticker": "ABSI",
+          "weight": 0.7394475987376539,
           "is_13g": false
         },
         {
           "name": "X-Energy Inc",
           "class": "Common Stock",
-          "value": 99361493.0,
-          "shares": 5411846,
+          "value": 128389705.0,
+          "shares": 9054281,
           "ticker": "XE",
-          "weight": 0.6450877062843339,
+          "weight": 0.7389598921460632,
           "is_13g": false
         },
         {
           "name": "Eli Lilly & Co",
           "class": "Common Stock",
-          "value": 92660897.0,
-          "shares": 77254,
+          "value": 124776742.0,
+          "shares": 107838,
           "ticker": "LLY",
-          "weight": 0.6015852188128746,
+          "weight": 0.7181651193190073,
           "is_13g": false
         },
         {
-          "name": "Roku Inc",
+          "name": "Personalis Inc",
           "class": "Common Stock",
-          "value": 82314834.0,
-          "shares": 595880,
-          "ticker": "ROKU",
-          "weight": 0.5344151527416733,
+          "value": 115903674.0,
+          "shares": 7119390,
+          "ticker": "PSNL",
+          "weight": 0.6670952818091799,
           "is_13g": false
         },
         {
           "name": "Guardant Health Inc",
           "class": "Common Stock",
-          "value": 75977634.0,
-          "shares": 506416,
+          "value": 108295449.0,
+          "shares": 607173,
           "ticker": "GH",
-          "weight": 0.4932719524048478,
+          "weight": 0.6233053757148946,
+          "is_13g": false
+        },
+        {
+          "name": "Caredx Inc",
+          "class": "Common Stock",
+          "value": 104588493.0,
+          "shares": 1609054,
+          "ticker": "CDNA",
+          "weight": 0.6019696166994019,
+          "is_13g": false
+        },
+        {
+          "name": "Bwx Technologies Inc",
+          "class": "Common Stock",
+          "value": 103313618.0,
+          "shares": 754114,
+          "ticker": "BWXT",
+          "weight": 0.5946319450963734,
+          "is_13g": false
+        },
+        {
+          "name": "Deere & Co",
+          "class": "Common Stock",
+          "value": 101874612.0,
+          "shares": 151701,
+          "ticker": "DE",
+          "weight": 0.5863496009741749,
+          "is_13g": false
+        },
+        {
+          "name": "L3Harris Technologies Inc",
+          "class": "Common Stock",
+          "value": 100160308.0,
+          "shares": 423010,
+          "ticker": "LHX",
+          "weight": 0.5764827514557843,
+          "is_13g": false
+        },
+        {
+          "name": "Aerovironment Inc",
+          "class": "Common Stock",
+          "value": 88796764.0,
+          "shares": 624362,
+          "ticker": "AVAV",
+          "weight": 0.5110787282232593,
+          "is_13g": false
+        },
+        {
+          "name": "Crowdstrike Holdings Inc",
+          "class": "Common Stock",
+          "value": 74472851.0,
+          "shares": 281295,
+          "ticker": "CRWD",
+          "weight": 0.42863600272911156,
+          "is_13g": false
+        },
+        {
+          "name": "Schrodinger Inc/United States",
+          "class": "Common Stock",
+          "value": 73740830.0,
+          "shares": 2374906,
+          "ticker": null,
+          "weight": 0.4244227820568727,
           "is_13g": false
         },
         {
           "name": "Doordash Inc",
           "class": "Common Stock",
-          "value": 70147050.0,
-          "shares": 380139,
+          "value": 71282927.0,
+          "shares": 388357,
           "ticker": "DASH",
-          "weight": 0.45541787085579,
+          "weight": 0.4102760735198799,
           "is_13g": false
         },
         {
-          "name": "Snowflake Inc",
+          "name": "Pacific Biosciences Of Califor",
           "class": "Common Stock",
-          "value": 68597731.0,
-          "shares": 269539,
-          "ticker": "SNOW",
-          "weight": 0.44535917900408106,
-          "is_13g": false
-        },
-        {
-          "name": "Trimble Inc",
-          "class": "Common Stock",
-          "value": 68155382.0,
-          "shares": 1331680,
-          "ticker": "TRMB",
-          "weight": 0.4424873028559723,
-          "is_13g": false
-        },
-        {
-          "name": "Sofi Technologies Inc",
-          "class": "Common Stock",
-          "value": 67102642.0,
-          "shares": 3742479,
-          "ticker": "SOFI",
-          "weight": 0.4356525662652715,
+          "value": 70507247.0,
+          "shares": 29749893,
+          "ticker": "PACB",
+          "weight": 0.4058115690711793,
           "is_13g": false
         }
       ],
       "name": "ARK Investment (Cathie Wood)"
     },
     "soros": {
-      "filing_date": "2026-08-14",
-      "period_of_report": "2026-06-30",
-      "total_value": 8143628824.0,
+      "filing_date": "2026-11-13",
+      "period_of_report": "2026-09-30",
+      "total_value": 8508315961.0,
       "cash_data": {
         "available": false,
         "reason": "no_10x"
       },
       "top_holdings": [
         {
+          "name": "Select Sector Spdr Tr",
+          "class": "ST STR ENERG ETF (Put)",
+          "value": 670245450.0,
+          "shares": 10898300,
+          "ticker": null,
+          "weight": 7.87753361619665,
+          "is_13g": false
+        },
+        {
+          "name": "Intel Corp",
+          "class": "COM",
+          "value": 340250900.0,
+          "shares": 2830000,
+          "ticker": "INTC",
+          "weight": 3.9990393111824405,
+          "is_13g": false
+        },
+        {
+          "name": "Spdr Series Trust",
+          "class": "SP O&G EXPL PRO (Put)",
+          "value": 327546245.0,
+          "shares": 1826500,
+          "ticker": null,
+          "weight": 3.8497188691791697,
+          "is_13g": false
+        },
+        {
           "name": "Amazon Com Inc",
           "class": "COM",
-          "value": 281843962.0,
-          "shares": 1182529,
+          "value": 262939456.0,
+          "shares": 1055346,
           "ticker": "AMZN",
-          "weight": 3.460913655216956,
+          "weight": 3.0903818946692736,
           "is_13g": false
         },
         {
           "name": "Taiwan Semiconductor Manufac",
           "class": "SPONSORED ADS",
-          "value": 249366996.0,
-          "shares": 522158,
+          "value": 250409534.0,
+          "shares": 548915,
           "ticker": "TSM",
-          "weight": 3.062111515508826,
+          "weight": 2.943115125811205,
           "is_13g": false
         },
         {
-          "name": "Global Pmts Inc",
-          "class": "NOTE 1.500% 3/0",
-          "value": 222694485.0,
-          "shares": 247500000,
-          "ticker": "GPN",
-          "weight": 2.73458540182602,
-          "is_13g": false
-        },
-        {
-          "name": "Alphabet Inc",
-          "class": "CAP STK CL A",
-          "value": 213094728.0,
-          "shares": 596286,
-          "ticker": "GOOGL",
-          "weight": 2.616704820484829,
-          "is_13g": false
-        },
-        {
-          "name": "Nvidia Corporation",
-          "class": "COM",
-          "value": 213022817.0,
-          "shares": 1064635,
-          "ticker": "NVDA",
-          "weight": 2.6158217866241986,
-          "is_13g": false
-        },
-        {
-          "name": "Electronic Arts Inc",
-          "class": "COM",
-          "value": 199091790.0,
-          "shares": 970990,
+          "name": "Ishares Tr",
+          "class": "20 YR TR BD ETF (Call)",
+          "value": 237229000.0,
+          "shares": 3050000,
           "ticker": null,
-          "weight": 2.444755210518175,
-          "is_13g": false
-        },
-        {
-          "name": "Bill Holdings Inc",
-          "class": "NOTE 4/0",
-          "value": 181356254.0,
-          "shares": 209679000,
-          "ticker": "BILL",
-          "weight": 2.2269710213894687,
+          "weight": 2.788201579341889,
           "is_13g": false
         },
         {
           "name": "Pg&E Corp",
           "class": "NOTE 4.250%12/0",
-          "value": 179601903.0,
-          "shares": 175000000,
+          "value": 218712746.0,
+          "shares": 222500000,
           "ticker": "PCG-PX",
-          "weight": 2.2054284015339354,
+          "weight": 2.5705762104102003,
+          "is_13g": false
+        },
+        {
+          "name": "Select Sector Spdr Tr",
+          "class": "ST STR UTIL ETF (Call)",
+          "value": 214790240.0,
+          "shares": 5446000,
+          "ticker": null,
+          "weight": 2.52447418483922,
+          "is_13g": false
+        },
+        {
+          "name": "Alphabet Inc",
+          "class": "CAP STK CL A",
+          "value": 206778317.0,
+          "shares": 600960,
+          "ticker": "GOOGL",
+          "weight": 2.4303083941383967,
+          "is_13g": false
+        },
+        {
+          "name": "Nvidia Corporation",
+          "class": "COM",
+          "value": 196137768.0,
+          "shares": 858822,
+          "ticker": "NVDA",
+          "weight": 2.3052478175357694,
+          "is_13g": false
+        },
+        {
+          "name": "Zscaler Inc",
+          "class": "NOTE 7/1",
+          "value": 178164060.0,
+          "shares": 188480000,
+          "ticker": "ZS",
+          "weight": 2.0939991041312953,
+          "is_13g": false
+        },
+        {
+          "name": "Bill Holdings Inc",
+          "class": "NOTE 4/0",
+          "value": 177979507.0,
+          "shares": 210000000,
+          "ticker": "BILL",
+          "weight": 2.0918300144918653,
           "is_13g": false
         },
         {
           "name": "Rivian Automotive Inc",
           "class": "NOTE 4.625% 3/1",
-          "value": 155838659.0,
-          "shares": 131565000,
+          "value": 132051809.0,
+          "shares": 119478000,
           "ticker": "RIVN",
-          "weight": 1.9136267426718856,
+          "weight": 1.5520322659065857,
+          "is_13g": false
+        },
+        {
+          "name": "Expedia Group Inc",
+          "class": "COM NEW (Put)",
+          "value": 131680000.0,
+          "shares": 500000,
+          "ticker": "EXPE",
+          "weight": 1.5476623177087958,
           "is_13g": false
         },
         {
           "name": "Apple Inc",
           "class": "COM",
-          "value": 153227116.0,
-          "shares": 529538,
+          "value": 131103314.0,
+          "shares": 393680,
           "ticker": "AAPL",
-          "weight": 1.8815582010371843,
+          "weight": 1.540884407689429,
           "is_13g": false
         },
         {
-          "name": "Linde Plc",
-          "class": "SHS",
-          "value": 138738090.0,
-          "shares": 267349,
-          "ticker": "LIN",
-          "weight": 1.7036396549794421,
-          "is_13g": false
-        },
-        {
-          "name": "Lumentum Hldgs Inc",
-          "class": "NOTE 0.500% 6/1",
-          "value": 119272441.0,
-          "shares": 18256000,
-          "ticker": "LITE",
-          "weight": 1.46461047743843,
-          "is_13g": false
-        },
-        {
-          "name": "Tko Group Holdings Inc",
+          "name": "Meta Platforms Inc",
           "class": "CL A",
-          "value": 116388786.0,
-          "shares": 578157,
-          "ticker": "TKO",
-          "weight": 1.4292005261461804,
-          "is_13g": false
-        },
-        {
-          "name": "Super Micro Computer Inc",
-          "class": "7 DEP CM SR A WI",
-          "value": 111471398.0,
-          "shares": 2175408,
-          "ticker": "SMCIP",
-          "weight": 1.3688172730992338,
-          "is_13g": false
-        },
-        {
-          "name": "Select Sector Spdr Tr",
-          "class": "ST STR ENERG ETF (Put)",
-          "value": 106220000.0,
-          "shares": 2000000,
-          "ticker": null,
-          "weight": 1.3043325315485916,
-          "is_13g": false
-        },
-        {
-          "name": "American Elec Pwr Co Inc",
-          "class": "COM",
-          "value": 105070080.0,
-          "shares": 768000,
-          "ticker": "AEP",
-          "weight": 1.2902120451554608,
+          "value": 109868396.0,
+          "shares": 151505,
+          "ticker": "META",
+          "weight": 1.2913060175904296,
           "is_13g": false
         },
         {
           "name": "Entergy Corp New",
           "class": "COM",
-          "value": 104971932.0,
-          "shares": 913912,
+          "value": 105786941.0,
+          "shares": 1065756,
           "ticker": "ETR",
-          "weight": 1.2890068330550424,
+          "weight": 1.2433358314959266,
           "is_13g": false
         },
         {
-          "name": "Dropbox Inc",
-          "class": "NOTE 3/0",
-          "value": 104610636.0,
-          "shares": 103500000,
-          "ticker": "DBX",
-          "weight": 1.284570285076146,
-          "is_13g": false
-        },
-        {
-          "name": "Jd.Com Inc",
-          "class": "NOTE 0.250% 6/0",
-          "value": 98546765.0,
-          "shares": 100000000,
-          "ticker": "JDCMF",
-          "weight": 1.2101087504083425,
-          "is_13g": false
-        },
-        {
-          "name": "Itron Inc",
-          "class": "COM",
-          "value": 98458420.0,
-          "shares": 1137853,
-          "ticker": "ITRI",
-          "weight": 1.209023914619417,
-          "is_13g": false
-        },
-        {
-          "name": "Digital Rlty Tr Inc",
-          "class": "COM",
-          "value": 96904600.0,
-          "shares": 539618,
+          "name": "State Str Spdr S&P 500 Etf T",
+          "class": "TR UNIT",
+          "value": 103761150.0,
+          "shares": 136057,
           "ticker": null,
-          "weight": 1.1899437228083567,
+          "weight": 1.2195262902272934,
           "is_13g": false
         },
         {
-          "name": "Blackline Inc",
-          "class": "NOTE 1.000% 6/0",
-          "value": 93258284.0,
-          "shares": 101000000,
-          "ticker": "BL",
-          "weight": 1.145168646748235,
-          "is_13g": false
-        },
-        {
-          "name": "Lumentum Hldgs Inc",
-          "class": "NOTE 0.500%12/1",
-          "value": 88270935.0,
-          "shares": 10250000,
-          "ticker": "LITE",
-          "weight": 1.0839263049398529,
-          "is_13g": false
-        },
-        {
-          "name": "Chart Inds Inc",
-          "class": "COM",
-          "value": 86967723.0,
-          "shares": 416233,
-          "ticker": null,
-          "weight": 1.067923463600138,
-          "is_13g": false
-        },
-        {
-          "name": "Nebius Group N.V.",
-          "class": "SHS CLASS A",
-          "value": 85612700.0,
-          "shares": 310000,
-          "ticker": "NBIS",
-          "weight": 1.0512844071145746,
-          "is_13g": false
-        },
-        {
-          "name": "Webster Finl Corp",
-          "class": "COM",
-          "value": 85092677.0,
-          "shares": 1113487,
-          "ticker": null,
-          "weight": 1.0448987648997987,
-          "is_13g": false
-        },
-        {
-          "name": "Idacorp Inc",
-          "class": "COM",
-          "value": 82622661.0,
-          "shares": 546085,
-          "ticker": "IDA",
-          "weight": 1.0145681094465362,
-          "is_13g": false
-        },
-        {
-          "name": "Taiwan Semiconductor Manufac",
-          "class": "SPONSORED ADS (Put)",
-          "value": 81186900.0,
-          "shares": 170000,
-          "ticker": "TSM",
-          "weight": 0.9969376276179849,
-          "is_13g": false
-        },
-        {
-          "name": "Nvidia Corporation",
-          "class": "COM (Put)",
-          "value": 80036000.0,
-          "shares": 400000,
-          "ticker": "NVDA",
-          "weight": 0.9828051072775661,
-          "is_13g": false
-        },
-        {
-          "name": "Nextera Energy Inc",
-          "class": "UNIT 02/15/2029",
-          "value": 77944001.0,
-          "shares": 1627578,
-          "ticker": "NEE-PS",
-          "weight": 0.9571163259589152,
-          "is_13g": false
-        },
-        {
-          "name": "H2O America",
-          "class": "COM",
-          "value": 76227943.0,
-          "shares": 1254368,
-          "ticker": "HTO",
-          "weight": 0.9360439264538858,
-          "is_13g": false
-        },
-        {
-          "name": "Apogee Therapeutics Inc",
-          "class": "COM",
-          "value": 74926085.0,
-          "shares": 564500,
-          "ticker": "ALLO",
-          "weight": 0.9200577116086892,
-          "is_13g": false
-        },
-        {
-          "name": "Cms Energy Corp",
-          "class": "COM",
-          "value": 74232693.0,
-          "shares": 970362,
-          "ticker": "CMS-PC",
-          "weight": 0.9115431781619227,
-          "is_13g": false
-        },
-        {
-          "name": "Snap Inc",
-          "class": "NOTE 0.500% 5/0",
-          "value": 71946418.0,
-          "shares": 88000000,
-          "ticker": "SNAP",
-          "weight": 0.8834687773092936,
-          "is_13g": false
-        },
-        {
-          "name": "Microsoft Corp",
-          "class": "COM",
-          "value": 70862982.0,
-          "shares": 189971,
-          "ticker": "MSFT",
-          "weight": 0.8701646837238022,
-          "is_13g": false
-        },
-        {
-          "name": "Brighthouse Finl Inc",
-          "class": "COM",
-          "value": 70658625.0,
-          "shares": 1116250,
-          "ticker": "BHFAP",
-          "weight": 0.8676552741667539,
-          "is_13g": false
-        },
-        {
-          "name": "Smurfit Westrock Plc",
-          "class": "SHS",
-          "value": 69982035.0,
-          "shares": 1512798,
-          "ticker": "SW",
-          "weight": 0.8593470615182841,
-          "is_13g": false
-        },
-        {
-          "name": "Berkshire Hathaway Inc Del",
-          "class": "CL B NEW",
-          "value": 66690478.0,
-          "shares": 133277,
-          "ticker": "BRK.A",
-          "weight": 0.8189282620968334,
-          "is_13g": false
-        },
-        {
-          "name": "Southern Co",
-          "class": "NOTE 3.250% 6/1",
-          "value": 65774926.0,
-          "shares": 65000000,
-          "ticker": "SOJE",
-          "weight": 0.807685706477135,
-          "is_13g": false
-        },
-        {
-          "name": "Digitalbridge Group Inc",
-          "class": "CL A NEW",
-          "value": 64994554.0,
-          "shares": 4118793,
-          "ticker": "DBRIP",
-          "weight": 0.7981030988108796,
-          "is_13g": false
-        },
-        {
-          "name": "Coreweave Inc",
-          "class": "COM CL A (Put)",
-          "value": 64701000.0,
-          "shares": 650000,
-          "ticker": "CRWV",
-          "weight": 0.7944983912984883,
-          "is_13g": false
-        },
-        {
-          "name": "Medline Inc",
-          "class": "COM CL A",
-          "value": 64612343.0,
-          "shares": 1638244,
-          "ticker": "MDLN",
-          "weight": 0.7934097242936916,
-          "is_13g": false
-        },
-        {
-          "name": "Dexcom Inc",
-          "class": "NOTE 0.375% 5/1",
-          "value": 63521812.0,
-          "shares": 67977000,
-          "ticker": "DXCM",
-          "weight": 0.7800185073857437,
-          "is_13g": false
-        },
-        {
-          "name": "Broadcom Inc",
-          "class": "COM",
-          "value": 62421677.0,
-          "shares": 165246,
-          "ticker": "AVGO",
-          "weight": 0.7665093577943748,
-          "is_13g": false
-        },
-        {
-          "name": "Wec Energy Group Inc",
-          "class": "COM",
-          "value": 61697648.0,
-          "shares": 528369,
-          "ticker": "WEC",
-          "weight": 0.7576186161404058,
-          "is_13g": false
-        },
-        {
-          "name": "Alphabet Inc",
-          "class": "DEP SHS RP1/20 B",
-          "value": 60171083.0,
-          "shares": 1200000,
-          "ticker": "GOOGL",
-          "weight": 0.7388731031388668,
+          "name": "Workday Inc",
+          "class": "CL A (Call)",
+          "value": 95230000.0,
+          "shares": 500000,
+          "ticker": "WDAY",
+          "weight": 1.119257917036821,
           "is_13g": false
         },
         {
           "name": "Elastic N V",
           "class": "ORD SHS (Call)",
-          "value": 56888854.0,
+          "value": 91489090.0,
           "shares": 997700,
           "ticker": "ESTC",
-          "weight": 0.6985688472483358,
+          "weight": 1.075290226871724,
           "is_13g": false
         },
         {
-          "name": "State Str Spdr S&P 500 Etf T",
-          "class": "TR UNIT (Put)",
-          "value": 56007750.0,
-          "shares": 75000,
-          "ticker": null,
-          "weight": 0.6877492971553439,
+          "name": "American Elec Pwr Co Inc",
+          "class": "COM",
+          "value": 91442017.0,
+          "shares": 770752,
+          "ticker": "AEP",
+          "weight": 1.0747369681514816,
           "is_13g": false
         },
         {
-          "name": "Spirit Aerosystems Inc",
-          "class": "NOTE 3.250%11/0",
-          "value": 53916813.0,
-          "shares": 34500000,
+          "name": "Alnylam Pharmaceuticals Inc",
+          "class": "NOTE 9/1",
+          "value": 90690917.0,
+          "shares": 99000000,
+          "ticker": "ALNY",
+          "weight": 1.065909134259994,
+          "is_13g": false
+        },
+        {
+          "name": "Tko Group Holdings Inc",
+          "class": "CL A",
+          "value": 87970604.0,
+          "shares": 489487,
+          "ticker": "TKO",
+          "weight": 1.0339367320540906,
+          "is_13g": false
+        },
+        {
+          "name": "Blackline Inc",
+          "class": "NOTE 1.000% 6/0",
+          "value": 82884728.0,
+          "shares": 92500000,
+          "ticker": "BL",
+          "weight": 0.9741613778792765,
+          "is_13g": false
+        },
+        {
+          "name": "Marketaxess Hldgs Inc",
+          "class": "COM",
+          "value": 80124752.0,
+          "shares": 488804,
+          "ticker": "MKTX",
+          "weight": 0.9417228082181232,
+          "is_13g": false
+        },
+        {
+          "name": "Nvidia Corporation",
+          "class": "COM (Put)",
+          "value": 79933000.0,
+          "shares": 350000,
+          "ticker": "NVDA",
+          "weight": 0.9394691072404099,
+          "is_13g": false
+        },
+        {
+          "name": "Arcosa Inc",
+          "class": "COM",
+          "value": 79788839.0,
+          "shares": 545938,
           "ticker": null,
-          "weight": 0.6620735567061007,
+          "weight": 0.9377747531442432,
+          "is_13g": false
+        },
+        {
+          "name": "Jd.Com Inc",
+          "class": "NOTE 0.250% 6/0",
+          "value": 72569151.0,
+          "shares": 74000000,
+          "ticker": "JDCMF",
+          "weight": 0.8529202645110843,
+          "is_13g": false
+        },
+        {
+          "name": "Datadog Inc",
+          "class": "CL A COM",
+          "value": 70857866.0,
+          "shares": 258747,
+          "ticker": "DDOG",
+          "weight": 0.832807177410839,
+          "is_13g": false
+        },
+        {
+          "name": "Ncr Atleos Corporation",
+          "class": "COM SHS",
+          "value": 70308935.0,
+          "shares": 1556196,
+          "ticker": "NATL",
+          "weight": 0.826355477655962,
+          "is_13g": false
+        },
+        {
+          "name": "Sunbelt Rentals Holdings Inc",
+          "class": "SHS",
+          "value": 70189136.0,
+          "shares": 958737,
+          "ticker": "SUNB",
+          "weight": 0.8249474551924201,
+          "is_13g": false
+        },
+        {
+          "name": "Snap Inc",
+          "class": "NOTE 0.500% 5/0",
+          "value": 70119174.0,
+          "shares": 84061000,
+          "ticker": "SNAP",
+          "weight": 0.8241251773136872,
           "is_13g": false
         },
         {
           "name": "Kenvue Inc",
           "class": "COM",
-          "value": 52488214.0,
-          "shares": 2746636,
+          "value": 66987665.0,
+          "shares": 3793186,
           "ticker": "KVUE",
-          "weight": 0.644531020929055,
+          "weight": 0.7873199033399179,
+          "is_13g": false
+        },
+        {
+          "name": "Idacorp Inc",
+          "class": "COM",
+          "value": 66704852.0,
+          "shares": 510249,
+          "ticker": "IDA",
+          "weight": 0.7839959435657823,
+          "is_13g": false
+        },
+        {
+          "name": "Nextera Energy Inc",
+          "class": "UNIT 02/15/2029",
+          "value": 66691752.0,
+          "shares": 1554928,
+          "ticker": "NEE-PS",
+          "weight": 0.7838419765520975,
+          "is_13g": false
+        },
+        {
+          "name": "Warner Bros Discovery Inc",
+          "class": "COM SER A",
+          "value": 65100230.0,
+          "shares": 2103400,
+          "ticker": null,
+          "weight": 0.7651364887999368,
+          "is_13g": false
+        },
+        {
+          "name": "Microsoft Corp",
+          "class": "COM",
+          "value": 62658941.0,
+          "shares": 122166,
+          "ticker": "MSFT",
+          "weight": 0.7364435134662719,
+          "is_13g": false
+        },
+        {
+          "name": "Sk Hynix Inc",
+          "class": "AMERICAN DEPOSIT",
+          "value": 59848750.0,
+          "shares": 325000,
+          "ticker": "HXSCL",
+          "weight": 0.7034147565080064,
+          "is_13g": false
+        },
+        {
+          "name": "Expedia Group Inc",
+          "class": "COM NEW",
+          "value": 59478012.0,
+          "shares": 225843,
+          "ticker": "EXPE",
+          "weight": 0.6990573959950757,
+          "is_13g": false
+        },
+        {
+          "name": "Broadcom Inc",
+          "class": "COM",
+          "value": 57364428.0,
+          "shares": 163343,
+          "ticker": "AVGO",
+          "weight": 0.6742160054109914,
+          "is_13g": false
+        },
+        {
+          "name": "Aes Corp",
+          "class": "COM",
+          "value": 54056991.0,
+          "shares": 3627986,
+          "ticker": "AES",
+          "weight": 0.6353430132094738,
+          "is_13g": false
+        },
+        {
+          "name": "Acadian Asset Management Inc",
+          "class": "COM",
+          "value": 53552037.0,
+          "shares": 583928,
+          "ticker": "AAMI",
+          "weight": 0.629408184245498,
+          "is_13g": false
+        },
+        {
+          "name": "Coreweave Inc",
+          "class": "COM CL A",
+          "value": 53291304.0,
+          "shares": 611700,
+          "ticker": "CRWV",
+          "weight": 0.6263437352852674,
+          "is_13g": false
+        },
+        {
+          "name": "Berkshire Hathaway Inc Del",
+          "class": "CL B NEW",
+          "value": 49453406.0,
+          "shares": 99314,
+          "ticker": "BRK.A",
+          "weight": 0.581236125064961,
+          "is_13g": false
+        },
+        {
+          "name": "Ishares Tr",
+          "class": "CORE MSCI EAFE",
+          "value": 48478171.0,
+          "shares": 500394,
+          "ticker": null,
+          "weight": 0.5697739860885733,
+          "is_13g": false
+        },
+        {
+          "name": "Coreweave Inc",
+          "class": "COM CL A (Put)",
+          "value": 47916000.0,
+          "shares": 550000,
+          "ticker": "CRWV",
+          "weight": 0.5631666738710105,
+          "is_13g": false
+        },
+        {
+          "name": "Taiwan Semiconductor Manufac",
+          "class": "SPONSORED ADS (Put)",
+          "value": 45619000.0,
+          "shares": 100000,
+          "ticker": "TSM",
+          "weight": 0.5361695570440276,
+          "is_13g": false
+        },
+        {
+          "name": "Oge Energy Corp",
+          "class": "COM",
+          "value": 45445844.0,
+          "shares": 1000569,
+          "ticker": "OGE",
+          "weight": 0.5341344187065034,
+          "is_13g": false
+        },
+        {
+          "name": "Doordash Inc",
+          "class": "CL A",
+          "value": 45336116.0,
+          "shares": 246996,
+          "ticker": "DASH",
+          "weight": 0.5328447627921842,
+          "is_13g": false
+        },
+        {
+          "name": "Celestica Inc",
+          "class": "COM",
+          "value": 45178750.0,
+          "shares": 125000,
+          "ticker": "CLS",
+          "weight": 0.5309952075955822,
           "is_13g": false
         }
       ],
